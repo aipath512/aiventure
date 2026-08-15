@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cum devine un site inteligibil pentru AI | AiVenture</title>
+<meta name="description" content="Explicat simplu: același site poate vorbi în același timp cu omul și cu mașina. Fără să schimbi nimic din ce vede omul.">
+<link rel="canonical" href="https://aiventure.ro/cum/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AiVenture">
+<meta property="og:title" content="Cum devine un site inteligibil pentru AI | AiVenture">
+<meta property="og:description" content="Explicat simplu: același site poate vorbi în același timp cu omul și cu mașina. Fără să schimbi nimic din ce vede omul.">
+<meta property="og:url" content="https://aiventure.ro/cum/">
+<meta property="og:locale" content="ro_RO">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@400;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>/* AiVenture.ro v2.0 — shared stylesheet */
+:root{
+  --bg:#0A0A0A; --bg-2:#121212; --bg-3:#1A1A18;
+  --text:#ffffff; --muted:#9a9a94; --line:#2a2a28;
+  --gold:#D4AF37; --gold-2:#F2C94C; --red:#C0392B;
+  --l1:#5BA85B; --l2:#E0B84C; --l3:#8B5E3C;
+  --serif:"Playfair Display",Georgia,"Times New Roman",serif;
+  --sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  --max:1120px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+
+/* ---------- LAYOUT ---------- */
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+section{padding:76px 0;border-bottom:1px solid var(--line)}
+section:last-of-type{border-bottom:none}
+.center{text-align:center}
+
+/* ---------- STATUS BAR ---------- */
+.statusbar{background:#000;border-bottom:1px solid var(--line);font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);padding:9px 0}
+.statusbar .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.statusbar .ver{color:var(--gold);opacity:.75}
+.statusbar .clock{color:var(--gold)}
+
+/* ---------- HEADER ---------- */
+header{position:sticky;top:0;z-index:60;background:rgba(10,10,10,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;gap:22px;padding-top:14px;padding-bottom:14px}
+.logo{font-family:var(--serif);font-size:23px;font-weight:700;text-decoration:none;color:var(--text);white-space:nowrap}
+.logo em{color:var(--gold);font-style:italic}
+nav{margin-left:auto;display:flex;align-items:center;gap:22px}
+nav a{color:var(--muted);text-decoration:none;font-size:14.5px;white-space:nowrap}
+nav a:hover,nav a[aria-current=page]{color:var(--gold)}
+.navtoggle{display:none;background:none;border:1px solid var(--line);color:var(--text);border-radius:8px;padding:6px 10px;font-size:18px;cursor:pointer;margin-left:auto}
+
+/* ---------- BUTTONS ---------- */
+.btn{display:inline-block;border-radius:999px;padding:14px 30px;font-weight:600;font-size:15.5px;text-decoration:none;cursor:pointer;border:1px solid transparent;transition:.18s}
+.btn-primary{background:var(--gold);color:#0a0a0a}
+.btn-primary:hover{background:var(--gold-2)}
+.btn-ghost{border-color:var(--gold);color:var(--gold);background:transparent}
+.btn-ghost:hover{background:rgba(212,175,55,.1)}
+.btn-sm{padding:9px 20px;font-size:14px}
+
+/* ---------- TYPE ---------- */
+h1,h2,h3{font-family:var(--serif);font-weight:700;line-height:1.18}
+h1{font-size:clamp(34px,5.6vw,62px);letter-spacing:-.01em}
+h2{font-size:clamp(27px,3.6vw,40px);margin-bottom:18px}
+h3{font-size:20px;margin-bottom:10px}
+h1 em,h2 em{color:var(--gold);font-style:italic}
+.gold{color:var(--gold)}
+.lead{font-size:19px;color:var(--muted);max-width:720px}
+.center .lead{margin-left:auto;margin-right:auto}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:20px}
+.muted{color:var(--muted)}
+.small{font-size:14px}
+p+p{margin-top:14px}
+
+/* ---------- HERO ---------- */
+.hero{padding:96px 0 84px;text-align:center;border-bottom:1px solid var(--line)}
+.tagline{font-family:var(--serif);font-style:italic;font-size:clamp(20px,2.6vw,28px);color:var(--gold);margin:18px 0 22px}
+.cta-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:32px}
+.flow{font-family:var(--mono);font-size:12.5px;letter-spacing:.24em;color:var(--muted);margin-top:26px;text-transform:uppercase}
+
+/* ---------- ALERT BAND ---------- */
+.band{background:var(--bg-3);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:13px 0;font-family:var(--mono);font-size:13px;letter-spacing:.06em;text-align:center}
+.band a{color:var(--gold)}
+
+/* ---------- GRID + CARDS ---------- */
+.grid{display:grid;gap:20px}
+.g2{grid-template-columns:repeat(2,1fr)}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g4{grid-template-columns:repeat(4,1fr)}
+.card{background:var(--bg-2);border:1px solid var(--line);border-radius:14px;padding:28px}
+.card.link{text-decoration:none;color:inherit;display:block;transition:.18s}
+.card.link:hover{border-color:var(--gold);transform:translateY(-2px)}
+.card .dot{width:11px;height:11px;border-radius:50%;display:inline-block;margin-right:9px;vertical-align:middle}
+.d1{background:var(--l1)}.d2{background:var(--l2)}.d3{background:var(--l3)}.d4{background:#555}
+.card .q{color:var(--gold);font-style:italic;margin-top:12px}
+
+/* ---------- TRIAD ---------- */
+.triad{border-left:3px solid var(--gold);padding:22px 0 22px 28px;max-width:760px;margin:0 auto;text-align:left}
+.triad p{font-size:19px}
+.triad strong{color:var(--gold)}
+
+/* ---------- STEPS / TIMELINE ---------- */
+.steps{display:grid;gap:2px;font-family:var(--mono);font-size:14px}
+.step{background:var(--bg-2);border:1px solid var(--line);padding:16px 20px;display:flex;gap:18px;align-items:baseline;flex-wrap:wrap}
+.step b{color:var(--gold);min-width:130px}
+
+/* ---------- SCORE MOCK ---------- */
+.scorebox{background:var(--bg-2);border:1px solid var(--line);border-radius:14px;padding:28px;font-family:var(--mono);font-size:14.5px;max-width:640px;margin:0 auto}
+.scorerow{display:flex;justify-content:space-between;gap:14px;padding:9px 0;border-bottom:1px dashed var(--line)}
+.scorerow:last-child{border-bottom:none}
+.scorerow b{color:var(--gold)}
+.badge{display:inline-block;background:var(--red);color:#fff !important;font-family:var(--mono);font-size:11px;letter-spacing:.14em;padding:4px 10px;border-radius:5px;text-transform:uppercase;margin-bottom:18px}
+
+/* ---------- FORM ---------- */
+.lensform{display:flex;gap:12px;max-width:560px;margin:26px auto 0;flex-wrap:wrap}
+.lensform input,.field{flex:1;min-width:230px;background:var(--bg-2);border:1px solid var(--line);border-radius:999px;padding:14px 24px;color:var(--text);font-family:var(--mono);font-size:15px}
+.lensform input:focus,.field:focus{outline:none;border-color:var(--gold)}
+form.stack{max-width:560px;margin:0 auto;display:grid;gap:14px;text-align:left}
+form.stack .field{border-radius:12px;width:100%}
+form.stack label{font-size:14px;color:var(--muted)}
+.checks{display:grid;gap:10px;font-size:15px}
+.checks label{display:flex;gap:10px;align-items:center;cursor:pointer}
+
+/* ---------- TABLE ---------- */
+table{width:100%;border-collapse:collapse;font-size:15px;margin-top:18px}
+th,td{border:1px solid var(--line);padding:13px 16px;text-align:left;vertical-align:top}
+th{background:var(--bg-2);font-family:var(--mono);font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold)}
+
+/* ---------- ASCII DIAGRAM ---------- */
+pre.dia{background:var(--bg-2);border:1px solid var(--line);border-radius:12px;padding:24px;overflow-x:auto;font-family:var(--mono);font-size:13.5px;line-height:1.7;color:var(--muted)}
+
+/* ---------- FAQ ---------- */
+details{background:var(--bg-2);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin-bottom:12px}
+summary{cursor:pointer;font-weight:600;font-size:16.5px;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";float:right;color:var(--gold);font-family:var(--mono)}
+details[open] summary::after{content:"−"}
+details p{margin-top:12px;color:var(--muted)}
+
+/* ---------- FOOTER ---------- */
+footer{background:var(--bg-2);border-top:1px solid var(--line);padding:60px 0 32px;font-size:14.5px}
+.footquote{font-family:var(--serif);font-size:19px;max-width:700px;margin-bottom:44px;line-height:1.55}
+.footgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:30px}
+footer h4{font-family:var(--mono);font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
+footer a{display:block;color:var(--muted);text-decoration:none;padding:4px 0}
+footer a:hover{color:var(--gold)}
+.footbottom{margin-top:44px;padding-top:22px;border-top:1px solid var(--line);color:var(--muted);font-family:var(--mono);font-size:12px;letter-spacing:.08em;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+/* ---------- CONTROLS ---------- */
+.langsel{background:var(--bg-2);border:1px solid var(--line);color:var(--text);border-radius:999px;padding:7px 12px;font-family:var(--mono);font-size:12px;cursor:pointer}
+
+/* ---------- RESPONSIVE ---------- */
+@media(max-width:900px){.g3,.g4{grid-template-columns:repeat(2,1fr)}.footgrid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:680px){
+  .g2,.g3,.g4{grid-template-columns:1fr}
+  nav{display:none;position:absolute;top:100%;left:0;right:0;background:var(--bg-2);border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start;gap:0;padding:12px 24px 20px}
+  nav.open{display:flex}
+  nav a{padding:11px 0;width:100%}
+  .navtoggle{display:block}
+  section{padding:56px 0}
+  .hero{padding:64px 0 56px}
+  }
+
+/* ---------- BREADCRUMB (unic, între head și h1) ---------- */
+.crumbs{border-bottom:1px solid var(--line);background:var(--bg-2);padding:11px 0;
+  font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+.crumbs a{color:var(--muted);text-decoration:none}
+.crumbs a:hover{color:var(--gold)}
+.crumbs .sep{color:var(--line);margin:0 2px}
+.crumbs [aria-current=page]{color:var(--gold)}
+
+/* ---------- H4 ---------- */
+h4{font-family:var(--sans);font-size:15px;font-weight:600;margin-bottom:8px;letter-spacing:.01em}
+
+/* ---------- FAQ: h3 în summary ---------- */
+summary h3{display:inline;font-family:var(--sans);font-size:16.5px;font-weight:600;margin:0}
+details summary{padding-right:24px}
+
+/* ---------- FORM: textarea + status ---------- */
+textarea.field{border-radius:12px;font-family:var(--sans);resize:vertical}
+#form-status:empty{display:none}
+#form-status{margin-top:4px}
+form.stack button[disabled]{opacity:.5;cursor:wait}
+
+/* ---------- TABEL DE ROLURI ---------- */
+table.worlds td,table.chain td{font-size:14.5px}
+table.worlds th.mine,table.chain th.mine{background:rgba(212,175,55,.14);color:var(--gold)}
+table.worlds td.mine,table.chain td.mine{background:rgba(212,175,55,.05);border-left:2px solid var(--gold);border-right:2px solid var(--gold)}
+table.chain{min-width:860px}
+table.chain td:first-child{white-space:nowrap}
+@media(max-width:680px){
+  table.worlds{display:block;overflow-x:auto;min-width:0}
+  table.worlds thead,table.worlds tbody,table.worlds tr{display:block}
+  table.worlds th{display:none}
+  table.worlds td{display:block;border-top:none}
+  table.worlds tr{border:1px solid var(--line);border-radius:12px;margin-bottom:14px;padding:6px 0}
+}
+
+/* ---------- BUCLA (imediat sub hero) ---------- */
+.loop{max-width:840px;margin:36px auto 0;position:relative}
+.loop-row{display:grid;grid-template-columns:1fr 40px 1fr;align-items:center;gap:0;
+  background:var(--bg-2);border:1px solid var(--line);border-radius:14px;
+  padding:18px 22px;margin-bottom:10px;position:relative}
+.loop-row.mine{border-color:var(--gold);background:rgba(212,175,55,.07)}
+.loop-row:not(:last-of-type)::after{content:"";position:absolute;left:50%;bottom:-10px;
+  width:1px;height:10px;background:var(--line)}
+.loop-who{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.loop-n{width:26px;height:26px;flex:none;border-radius:50%;background:var(--line);color:var(--muted);
+  font-family:var(--mono);font-size:12px;display:grid;place-items:center}
+.loop-row.mine .loop-n{background:var(--gold);color:#0a0a0a;font-weight:600}
+.loop-who b{font-family:var(--serif);font-size:19px}
+.loop-row.mine .loop-who b{color:var(--gold)}
+.loop-tag{font-family:var(--mono);font-size:11.5px;letter-spacing:.08em;color:var(--muted);
+  text-transform:uppercase;width:100%}
+.loop-arrow{text-align:center;color:var(--gold);font-size:17px}
+.loop-gain{font-size:15px;color:var(--muted);text-align:right}
+.loop-gain b{color:var(--text);font-weight:600}
+.loop-row.mine .loop-gain b{color:var(--gold)}
+.loop-base{margin-top:16px;padding:16px 22px;border:1px dashed var(--gold);border-radius:14px;
+  text-align:center;font-size:14.5px;color:var(--muted)}
+.loop-base b{color:var(--gold)}
+@media(max-width:680px){
+  .loop-row{grid-template-columns:1fr;gap:10px;text-align:left}
+  .loop-arrow{display:none}
+  .loop-gain{text-align:left;padding-left:38px;font-size:14px}
+  .loop-row:not(:last-of-type)::after{left:26px}
+}
+
+/* link „vezi cum" în buclă */
+.loop-how{display:inline-block;margin-left:10px;font-family:var(--mono);font-size:11.5px;
+  letter-spacing:.08em;text-transform:uppercase;color:var(--gold);text-decoration:none;
+  border-bottom:1px solid rgba(212,175,55,.4);padding-bottom:1px;white-space:nowrap}
+.loop-how:hover{border-bottom-color:var(--gold)}
+@media(max-width:680px){.loop-how{display:block;margin:8px 0 0}}
+
+/* fișiere de semnal — carduri cu link extern */
+.card.sigfile h3{font-family:var(--mono);font-size:15px;color:var(--gold);letter-spacing:.02em}
+.card.sigfile::after{content:"↗";float:right;color:var(--muted);font-size:13px;margin-top:-38px}
+.card.sigfile:hover::after{color:var(--gold)}
+
+body{padding-bottom:76px}</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://aiventure.ro/#organization", "name": "AiVenture S.R.L.", "alternateName": "AiVenture", "url": "https://aiventure.ro/", "logo": {"@id": "https://aiventure.ro/#logo"}, "slogan": "AI pentru firma ta", "description": "Operator român care pregătește firmele pentru tranziția Web → AI → Agenți.", "identifier": [{"@type": "PropertyValue", "name": "CUI", "value": "51415878"}, {"@type": "PropertyValue", "name": "EUID", "value": "ROONRC.J2025016406000"}], "address": {"@id": "https://aiventure.ro/#address"}, "contactPoint": {"@id": "https://aiventure.ro/#contactpoint"}, "areaServed": {"@type": "Country", "name": "România"}, "knowsLanguage": ["ro", "en", "fr"], "hasOfferCatalog": {"@id": "https://aiventure.ro/#offercatalog"}}, {"@type": "PostalAddress", "@id": "https://aiventure.ro/#address", "addressCountry": "RO", "addressLocality": "București", "addressRegion": "Sectorul 1", "streetAddress": "Drumul Pădurea Pustnicu 141C, Corp A, Etaj 2, Ap. 5"}, {"@type": "ContactPoint", "@id": "https://aiventure.ro/#contactpoint", "contactType": "sales", "availableLanguage": ["ro", "en", "fr"], "areaServed": "RO", "url": "https://aiventure.ro/contact/"}, {"@type": "ImageObject", "@id": "https://aiventure.ro/#logo", "url": "https://aiventure.ro/assets/logo.png", "caption": "AiVenture"}, {"@type": "WebSite", "@id": "https://aiventure.ro/#website", "url": "https://aiventure.ro/", "name": "AiVenture", "inLanguage": "ro-RO", "publisher": {"@id": "https://aiventure.ro/#organization"}, "potentialAction": {"@type": "SearchAction", "target": {"@type": "EntryPoint", "urlTemplate": "https://aiventure.ro/verifica/?domain={search_term_string}"}, "query-input": "required name=search_term_string"}}, {"@type": "WebPage", "@id": "https://aiventure.ro/cum/#webpage", "url": "https://aiventure.ro/cum/", "name": "Cum devine un site inteligibil pentru AI | AiVenture", "description": "Explicat simplu: același site poate vorbi în același timp cu omul și cu mașina. Fără să schimbi nimic din ce vede omul.", "inLanguage": "ro-RO", "isPartOf": {"@id": "https://aiventure.ro/#website"}, "about": {"@id": "https://aiventure.ro/#organization"}, "breadcrumb": {"@id": "https://aiventure.ro/cum/#breadcrumb"}, "primaryImageOfPage": {"@id": "https://aiventure.ro/#logo"}, "speakable": {"@type": "SpeakableSpecification", "cssSelector": ["h1", ".lead"]}}, {"@type": "BreadcrumbList", "@id": "https://aiventure.ro/cum/#breadcrumb", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Acasă", "item": "https://aiventure.ro/"}, {"@type": "ListItem", "position": 2, "name": "Cum funcționează", "item": "https://aiventure.ro/cum/"}]}, {"@type": "SiteNavigationElement", "@id": "https://aiventure.ro/#nav", "name": ["Cum funcționează", "Nivelurile AI", "Soluții", "Pentru cine", "Rezultate", "Întrebări", "Resurse"], "url": ["https://aiventure.ro/cum/", "https://aiventure.ro/niveluri/", "https://aiventure.ro/solutii/", "https://aiventure.ro/pentru-cine/", "https://aiventure.ro/rezultate/", "https://aiventure.ro/intrebari/", "https://aiventure.ro/resurse/"]}, {"@type": "OfferCatalog", "@id": "https://aiventure.ro/#offercatalog", "name": "Scara AiVenture", "inLanguage": "ro-RO", "itemListElement": [{"@id": "https://aiventure.ro/solutii/ai-lens/#service"}, {"@id": "https://aiventure.ro/solutii/ai-audit/#service"}, {"@id": "https://aiventure.ro/solutii/ai-ready/#service"}, {"@id": "https://aiventure.ro/solutii/ai-edge/#service"}, {"@id": "https://aiventure.ro/solutii/agent-ready/#service"}, {"@id": "https://aiventure.ro/solutii/a2a/#service"}, {"@id": "https://aiventure.ro/eu-ai-act-ready/#service"}]}, {"@type": "Service", "@id": "https://aiventure.ro/solutii/ai-lens/#service", "name": "AI LENS", "description": "Diagnostic: cum apare firma în răspunsurile sistemelor AI", "serviceType": "AI LENS", "url": "https://aiventure.ro/solutii/ai-lens/", "provider": {"@id": "https://aiventure.ro/#organization"}, "areaServed": {"@type": "Country", "name": "România"}, "inLanguage": "ro-RO"}, {"@type": "Service", "@id": "https://aiventure.ro/solutii/ai-audit/#service", "name": "AI AUDIT", "description": "Analiza semnalelor lipsă sau contradictorii despre firmă", "serviceType": "AI AUDIT", "url": "https://aiventure.ro/solutii/ai-audit/", "provider": {"@id": "https://aiventure.ro/#organization"}, "areaServed": {"@type": "Country", "name": "România"}, "inLanguage": "ro-RO"}, {"@type": "Service", "@id": "https://aiventure.ro/solutii/ai-ready/#service", "name": "AI READY", "description": "Structurarea informației firmei pentru sisteme AI", "serviceType": "AI READY", "url": "https://aiventure.ro/solutii/ai-ready/", "provider": {"@id": "https://aiventure.ro/#organization"}, "areaServed": {"@type": "Country", "name": "România"}, "inLanguage": "ro-RO"}, {"@type": "Service", "@id": "https://aiventure.ro/solutii/ai-edge/#service", "name": "AI EDGE", "description": "Stratul AI adăugat fără reconstruirea site-ului", "serviceType": "AI EDGE", "url": "https://aiventure.ro/solutii/ai-edge/", "provider": {"@id": "https://aiventure.ro/#organization"}, "areaServed": {"@type": "Country", "name": "România"}, "inLanguage": "ro-RO"}, {"@type": "Service", "@id": "https://aiventure.ro/solutii/agent-ready/#service", "name": "AGENT READY", "description": "Expunerea capabilităților firmei pentru agenți AI", "serviceType": "AGENT READY", "url": "https://aiventure.ro/solutii/agent-ready/", "provider": {"@id": "https://aiventure.ro/#organization"}, "areaServed": {"@type": "Country", "name": "România"}, "inLanguage": "ro-RO"}, {"@type": "Service", "@id": "https://aiventure.ro/solutii/a2a/#service", "name": "A2A READY", "description": "Interoperabilitate agent-to-agent", "serviceType": "A2A READY", "url": "https://aiventure.ro/solutii/a2a/", "provider": {"@id": "https://aiventure.ro/#organization"}, "areaServed": {"@type": "Country", "name": "România"}, "inLanguage": "ro-RO"}, {"@type": "Service", "@id": "https://aiventure.ro/eu-ai-act-ready/#service", "name": "EU AI ACT READY", "description": "Pregătirea documentară pentru Regulamentul european privind AI", "serviceType": "EU AI ACT READY", "url": "https://aiventure.ro/eu-ai-act-ready/", "provider": {"@id": "https://aiventure.ro/#organization"}, "areaServed": {"@type": "Country", "name": "România"}, "inLanguage": "ro-RO"}, {"@type": "Brand", "@id": "https://aiventure.ro/#brand", "name": "AiVenture", "slogan": "AI pentru firma ta", "url": "https://aiventure.ro/", "logo": {"@id": "https://aiventure.ro/#logo"}}, {"@type": "WebPageElement", "@id": "https://aiventure.ro/cum/#faqblock", "name": "Întrebări frecvente", "cssSelector": "#intrebari", "isPartOf": {"@id": "https://aiventure.ro/cum/#webpage"}}, {"@type": "ItemList", "@id": "https://aiventure.ro/#maturitate", "name": "Nivelurile de maturitate AI", "itemListOrder": "https://schema.org/ItemListOrderAscending", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Vizibilă", "description": "AI-ul găsește firma ta?"}, {"@type": "ListItem", "position": 2, "name": "Înțeleasă", "description": "AI-ul înțelege și recomandă firma ta?"}, {"@type": "ListItem", "position": 3, "name": "Acționabilă", "description": "Poate un agent să lucreze cu firma ta?"}, {"@type": "ListItem", "position": 4, "name": "A2A", "description": "Pot agenții să comunice între ei?"}]}, {"@type": "HowTo", "@id": "https://aiventure.ro/#traseu", "name": "Cum urci o treaptă de maturitate AI", "inLanguage": "ro-RO", "step": [{"@type": "HowToStep", "position": 1, "name": "Află", "text": "Verifici ce știe AI-ul despre firmă."}, {"@type": "HowToStep", "position": 2, "name": "Înțelege", "text": "Identifici ce lipsește sau ce se contrazice."}, {"@type": "HowToStep", "position": 3, "name": "Pregătește", "text": "Pui informația în ordine."}, {"@type": "HowToStep", "position": 4, "name": "Acționează", "text": "Expui capabilitățile pentru agenți."}, {"@type": "HowToStep", "position": 5, "name": "Conectează", "text": "Pregătești comunicarea între agenți."}]}, {"@type": "FAQPage", "@id": "https://aiventure.ro/cum/#faq", "inLanguage": "ro-RO", "isPartOf": {"@id": "https://aiventure.ro/cum/#webpage"}, "mainEntity": [{"@id": "https://aiventure.ro/cum/#q1"}, {"@id": "https://aiventure.ro/cum/#q2"}, {"@id": "https://aiventure.ro/cum/#q3"}, {"@id": "https://aiventure.ro/cum/#q4"}, {"@id": "https://aiventure.ro/cum/#q5"}, {"@id": "https://aiventure.ro/cum/#q6"}, {"@id": "https://aiventure.ro/cum/#q7"}, {"@id": "https://aiventure.ro/cum/#q8"}, {"@id": "https://aiventure.ro/cum/#q9"}, {"@id": "https://aiventure.ro/cum/#q10"}, {"@id": "https://aiventure.ro/cum/#q11"}, {"@id": "https://aiventure.ro/cum/#q12"}, {"@id": "https://aiventure.ro/cum/#q13"}, {"@id": "https://aiventure.ro/cum/#q14"}, {"@id": "https://aiventure.ro/cum/#q15"}, {"@id": "https://aiventure.ro/cum/#q16"}, {"@id": "https://aiventure.ro/cum/#q17"}, {"@id": "https://aiventure.ro/cum/#q18"}, {"@id": "https://aiventure.ro/cum/#q19"}]}, {"@type": "Question", "@id": "https://aiventure.ro/cum/#q1", "name": "Ce rezolvă felul în care mașinile citesc un site?", "position": 1, "acceptedAnswer": {"@type": "Answer", "text": "Răspunde la o singură întrebare din traseul firmei tale în era AI, iar restul treptelor rămân separate."}}, {"@type": "Question", "@id": "https://aiventure.ro/cum/#q2", "name": "Pentru cine este felul în care mașinile citesc un site?", "position": 2, "acceptedAnswer": {"@type": "Answer", "text": "Pentru firme care au trecut de treapta anterioară și au nevoie de următorul pas, nu de tot pachetul deodată."}}, {"@type": "Question", "@id": "https://aiventure.ro/cum/#q3", "name": "Este felul în care mașinile citesc un site obligatoriu?", "position": 3, "acceptedAnswer": {"@type": "Answer", "text": "Nu. Fiecare treaptă are sens doar dacă cea de dinaintea ei este acoperită."}}, {"@type": "Question", "@id": "https://aiventure.ro/cum/#q4", "name": "Ce primesc concret?", "position": 4, "acceptedAnswer": {"@type": "Answer", "text": "Un rezultat pe care îl poți verifica: raport, documentație sau infrastructură livrată, în funcție de treaptă."}}, {"@type": "Question", "@id": "https://aiventure.ro/cum/#q5", "name": "Cum știu dacă am nevoie acum?", "position": 5, "acceptedAnswer": {"@type": "Answer", "text": "Verificarea gratuită îți arată la ce nivel ești și dacă această treaptă este cea potrivită."}}, {"@type": "Question", "@id": "https://aiventure.ro/cum/#q6", "name": "Cât costă?", "position": 6, "acceptedAnswer": {"@type": "Answer", "text": "Verificarea inițială este gratuită. Restul se stabilește după ce știm ce lipsește."}}, {"@type": "Question", "@id": "https://aiventure.ro/cum/#q7", "name": "Cât durează?", "position": 7, "acceptedAnswer": {"@type": "Answer", "text": "Se stabilește după diagnostic, nu înainte. Nu promitem intervale fixe fără să știm ce găsim."}}, {"@type": "Question", "@id": "https://aiventure.ro/cum/#q8", "name": "Trebuie să-mi refac site-ul?", "position": 8, "acceptedAnswer": {"@type": "Answer", "text": "Nu. Lucrăm peste infrastructura pe care o ai deja."}}, {"@type": "Question", "@id": "https://aiventure.ro/cum/#q9", "name": "Îmi trebuie cunoștințe tehnice?", "position": 9, "acceptedAnswer": {"@type": "Answer", "text": "Nu. Partea tehnică rămâne la noi."}}, {"@type": "Question", "@id": "https://aiventure.ro/cum/#q10", "name": "Cu ce începe colaborarea?", "position": 10, "acceptedAnswer": {"@type": "Answer", "text": "Cu verificarea gratuită a firmei tale."}}, {"@type": "Question", "@id": "https://aiventure.ro/cum/#q11", "name": "Este același lucru cu SEO?", "position": 11, "acceptedAnswer": {"@type": "Answer", "text": "Nu. SEO ține de cum găsesc oamenii pagini. Noi lucrăm la ce înțelege un sistem AI despre firmă."}}, {"@type": "Question", "@id": "https://aiventure.ro/cum/#q12", "name": "Lucrați și cu firme mici?", "position": 12, "acceptedAnswer": {"@type": "Answer", "text": "Da. Dimensiunea contează mai puțin decât claritatea a ceea ce faci."}}, {"@type": "Question", "@id": "https://aiventure.ro/cum/#q13", "name": "Ce sisteme AI verificați?", "position": 13, "acceptedAnswer": {"@type": "Answer", "text": "ChatGPT, Gemini, Perplexity și Google AI."}}, {"@type": "Question", "@id": "https://aiventure.ro/cum/#q14", "name": "Rezultatele sunt garantate?", "position": 14, "acceptedAnswer": {"@type": "Answer", "text": "Garantăm partea pe care o controlăm: infrastructura livrată și măsurarea ei. Selecția făcută de un sistem AI extern nu poate fi garantată de nimeni."}}, {"@type": "Question", "@id": "https://aiventure.ro/cum/#q15", "name": "Pot renunța oricând?", "position": 15, "acceptedAnswer": {"@type": "Answer", "text": "Da. Nu există obligații după diagnostic."}}, {"@type": "Question", "@id": "https://aiventure.ro/cum/#q16", "name": "Îmi păstrați datele?", "position": 16, "acceptedAnswer": {"@type": "Answer", "text": "Doar ce este necesar ca să îți răspundem și să livrăm ce ai cerut."}}, {"@type": "Question", "@id": "https://aiventure.ro/cum/#q17", "name": "Ce se întâmplă dacă nu fac nimic?", "position": 17, "acceptedAnswer": {"@type": "Answer", "text": "Rămâi la nivelul actual. Riscul nu este imediat, ci cumulativ."}}, {"@type": "Question", "@id": "https://aiventure.ro/cum/#q18", "name": "Cum măsor rezultatul?", "position": 18, "acceptedAnswer": {"@type": "Answer", "text": "Prin rescanare și comparație cu starea inițială."}}, {"@type": "Question", "@id": "https://aiventure.ro/cum/#q19", "name": "Aveți exemple reale?", "position": 19, "acceptedAnswer": {"@type": "Answer", "text": "Da — ECBTAX este demonstrația publică."}}]}</script>
+</head>
+<body>
+<div class="statusbar"><div class="wrap">
+  <span>AIVENTURE · AI PENTRU FIRMA TA</span>
+  <span>ROMÂNIA · WEB → AI → AGENȚI</span>
+  <span class="ver">v2.0.0</span>
+  <span class="clock">--.--.---- --:--:--</span>
+</div></div>
+
+<header><div class="wrap">
+  <a class="logo" href="/">Ai<em>Venture</em></a>
+  <button class="navtoggle" aria-expanded="false" aria-label="Meniu">☰</button>
+  <nav>
+    <a href="/cum/" aria-current="page">Cum funcționează</a>
+    <a href="/niveluri/">Nivelurile AI</a>
+    <a href="/solutii/">Soluții</a>
+    <a href="/pentru-cine/">Pentru cine</a>
+    <a href="/rezultate/">Rezultate</a>
+    <a href="/intrebari/">Întrebări</a>
+    <a href="/resurse/">Resurse</a>
+    <select class="langsel" aria-label="Limbă">
+      <option value="ro" selected>RO</option>
+      <option value="en">EN</option>
+      <option value="fr">FR</option>
+    </select>
+    <a class="btn btn-primary btn-sm" href="/verifica/">VERIFICĂ FIRMA</a>
+  </nav>
+</div></header>
+<nav class="crumbs" aria-label="Breadcrumb"><div class="wrap"><a href="/">Acasă</a> <span class="sep">/</span> <span aria-current="page">Cum funcționează</span></div></nav><section class="hero"><div class="wrap"><div class="eyebrow">CUM FUNCȚIONEAZĂ</div><h1>Cerneala <em>simpatică</em> digitală</h1><p class="lead center">Aceeași informație poate fi pusă pe un site într-un loc în care omul nu o vede, dar mașina o poate citi.</p><div class="flow">WEB → AI → AGENȚI</div></div></section><section><div class="wrap"><h2>De la papirus la JSON</h2><p class="lead">Oamenii au folosit dintotdeauna cuvinte scrise — pe papirus, pe hârtie, apoi digital — ca să comunice între ei, inclusiv la distanță.</p><p class="muted">Pentru comunicarea dintre om și computer, și mai ales dintre computere între ele, a fost nevoie de un format lipsit de ambiguitatea limbajului natural. Unul dintre ele se numește <b class="gold">JSON</b>.</p><pre class="dia" style="max-width:420px;margin-top:24px">{
+  "produs": "X",
+  "pret": 500,
+  "moneda": "USD"
+}</pre><div class="grid g2" style="margin-top:22px"><div class="card"><h3>👤 Omul vede</h3><p class="muted">Produsul X costă 500 USD.</p></div><div class="card"><h3>🤖 Mașina vede</h3><p class="muted" style="font-family:var(--mono);font-size:14px">produs = X<br>preț = 500<br>monedă = USD</p></div></div><h3 style="margin-top:30px">Aceeași informație, două cititori</h3><p class="muted">Diferența nu este în conținut. Este în forma în care este exprimat. Omul are nevoie de o propoziție. Mașina are nevoie de câmpuri fără interpretare posibilă.</p></div></section><section><div class="wrap"><h2>Partea care surprinde</h2><p class="lead">Textul acesta poate fi pus pe un site fără să fie vizibil omului. Doar mașinile îl citesc.</p><p class="muted">De aceea îi spunem cerneală simpatică digitală: e acolo, e citibilă, dar nu se vede. Pagina ta arată exact la fel pentru vizitatori. Nu se schimbă niciun cuvânt, nicio imagine, niciun buton.</p><pre class="dia" style="margin-top:24px">ACELAȘI SITE
+
+   |---> pentru OM      : text, imagini, butoane
+   |
+   |---> pentru MAȘINĂ  : câmpuri structurate, invizibile</pre><h3 style="margin-top:28px">Ce înseamnă asta practic</h3><p class="muted">Nu trebuie să-ți refaci site-ul ca să devii inteligibil pentru AI. Trebuie doar să adaugi stratul pe care mașinile îl citesc. Restul rămâne neatins.</p></div></section><section><div class="wrap"><h2>Când mașinile își pun întrebări între ele</h2><p class="lead">O mașină poate trimite alteia o întrebare sau o intenție, iar cealaltă poate răspunde într-un format pe care prima îl înțelege.</p><pre class="dia" style="margin-top:22px">MAȘINA A      "Cine este firma X și ce oferă?"
+     |
+     v
+SITE-UL X     răspunde cu informațiile structurate
+     |
+     v
+MAȘINA A      înțelege răspunsul și îl prezintă omului</pre><h3 style="margin-top:28px">Iar omul face același lucru, prin AI</h3><pre class="dia" style="max-width:520px">OM  →  AI  →  SITE  →  AI  →  OM</pre><h4 style="margin-top:18px">În paralel, fără niciun om implicat</h4><pre class="dia" style="max-width:520px">SOFTWARE A  →  SITE  →  SOFTWARE B</pre><p class="muted" style="margin-top:20px">Asta poate să pară inteligență, pentru că mașinile nu mai schimbă doar pagini și fișiere, ci întrebări, intenții și răspunsuri.</p></div></section><section><div class="wrap"><h2>O precizare onestă</h2><p class="lead">JSON singur nu face mașinile inteligente.</p><p class="muted">JSON le oferă doar un mod structurat de a comunica. Inteligența apare din combinația dintre <b>date</b> + <b>reguli și interfețe</b> + <b>software care interpretează și decide ce urmează</b>.</p><h3 style="margin-top:28px">Ce face de fapt un sistem AI</h3><div class="steps" style="margin-top:20px"><div class="step"><b>MEMORIE</b><span class="muted">Are acces la cantități enorme de informație</span></div><div class="step"><b>CAUTĂ</b><span class="muted">Găsește ce este relevant pentru întrebare</span></div><div class="step"><b>COMPARĂ</b><span class="muted">Leagă între ele informații asemănătoare</span></div><div class="step"><b>SINTETIZEAZĂ</b><span class="muted">Adună din mai multe locuri și formează un răspuns</span></div><div class="step"><b>COMUNICĂ</b><span class="muted">Primește întrebări de la oameni sau de la alt software și răspunde</span></div></div><h3 style="margin-top:28px">Nu este o memorie ca a omului</h3><p class="muted">Un model nu păstrează textele originale ca într-o arhivă din care le scoate la cerere. A învățat tipare din datele de antrenare, iar când primește un context calculează ce urmează, bucată cu bucată. O metaforă utilă: un autocomplete probabilistic foarte performant.</p><h4 style="margin-top:20px">De ce contează pentru tine</h4><p class="muted">Pentru că un model nu „știe" firma ta din memorie. Ori găsește informația când caută, ori o aproximează. Iar când aproximează, greșește — și nu are cum să știe că a greșit.</p></div></section><section><div class="wrap"><h2>Ce s-a schimbat, de fapt</h2><div class="grid g2" style="margin-top:24px"><div class="card"><h3>Internetul vechi</h3><pre class="dia" style="font-size:12.5px;padding:16px">OM → BROWSER → PAGINĂ → OM</pre><p class="muted small" style="margin-top:12px">Site-ul este conceput în primul rând pentru lectura umană.</p></div><div class="card" style="border-color:var(--gold)"><h3>Ce se întâmplă acum</h3><pre class="dia" style="font-size:12.5px;padding:16px">OM → AI → SITE → AI → OM
+
+și, în paralel:
+
+AI A → SITE → AI B</pre><p class="muted small" style="margin-top:12px">Site-ul nu mai este doar o destinație pentru oameni. Devine și o interfață pentru software.</p></div></div><p class="center gold" style="margin-top:32px;font-family:var(--serif);font-size:20px;max-width:740px;margin-left:auto;margin-right:auto">Orice site poate deveni lizibil pentru mașini, oriunde s-ar afla ele, fără să schimbi nimic din ce vede omul.</p><p class="center muted" style="margin-top:18px">Nimic magic. Doar un strat în plus.</p></div></section><section><div class="wrap"><div class="center"><div class="eyebrow">PARTEA A DOUA</div><h2>Ce sunt, concret, <em>semnalele AI</em></h2><p class="lead center">Nu există un singur „semnal AI”. Este orice informație lizibilă de mașină care reduce incertitudinea unui sistem despre un site, o firmă, un serviciu sau o afirmație.</p></div></div></section><section><div class="wrap"><h2>Cele patru niveluri</h2><p class="lead">Fiecare nivel răspunde la altă întrebare a sistemului AI.</p><div style="overflow-x:auto;margin-top:24px"><table class="chain"><thead><tr><th>Nivel</th><th>Semnale principale</th><th class="mine">Întrebarea la care răspund</th></tr></thead><tbody><tr><td><b>1. Discovery</b></td><td class="muted">robots.txt · sitemap.xml · crawlabilitate · status HTTP · indexabilitate · llms.txt</td><td class="mine gold">„Pot să găsesc site-ul și conținutul?”</td></tr><tr><td><b>2. Understanding</b></td><td class="muted">HTML semantic · H1/H2 · title · meta description · Schema.org · JSON-LD · entități · FAQ · breadcrumb · linkuri interne</td><td class="mine gold">„Ce este această firmă și ce oferă?”</td></tr><tr><td><b>3. Verification</b></td><td class="muted">Organization/LocalBusiness · nume-adresă-telefon · date de contact · autoritate · politici · surse · consecvență între site și restul webului</td><td class="mine gold">„Pot verifica faptul că informația este adevărată?”</td></tr><tr><td><b>4. Decision</b></td><td class="muted">servicii · industrie · locație · client ideal · use cases · prețuri · disponibilitate · diferențiatori · dovezi · relații între entități</td><td class="mine gold">„Este această firmă potrivită pentru utilizator?”</td></tr></tbody></table></div></div></section><section><div class="wrap"><h2>Familiile de semnale</h2><div class="grid g2" style="margin-top:26px"><div class="card"><h3 class="gold">A · Tehnice</h3><h4>Poate fi accesat?</h4><p class="muted small" style="font-family:var(--mono);font-size:12.5px;line-height:2">crawlabil · indexabil · HTTP 200 · permisiuni robots · sitemap · canonical · hreflang · acces mobil · viteză · URL-uri stabile · navigație structurată</p></div><div class="card"><h3 class="gold">B · Semantice</h3><h4>Ce înseamnă ce scrie?</h4><p class="muted small" style="font-family:var(--mono);font-size:12.5px;line-height:2">title · H1 · H2/H3 · nume de entități · servicii · industrie · locație · relații semantice · definiții explicite · FAQ · linkuri interne cu sens</p></div><div class="card"><h3 class="gold">C · Date structurate</h3><h4>În ce formă e exprimat?</h4><p class="muted small" style="font-family:var(--mono);font-size:12.5px;line-height:2">Organization · LocalBusiness · WebSite · WebPage · Service · Product · Person · Article · BreadcrumbList · FAQPage · ContactPoint · Offer · Review</p></div><div class="card"><h3 class="gold">D · Încredere</h3><h4>Se poate verifica?</h4><p class="muted small" style="font-family:var(--mono);font-size:12.5px;line-height:2">identitate · CUI/TVA · denumire legală · adresă · telefon · email · consecvență de domeniu · autor · acreditări · dovezi de la clienți · referințe externe · politici · prospețime</p></div><div class="card"><h3 class="gold">E · Business</h3><h4>Ce vinde și cui?</h4><p class="muted small" style="font-family:var(--mono);font-size:12.5px;line-height:2">ce vinde · cui vinde · unde vinde · pentru ce industrie · pentru ce problemă · pentru ce tip de client · diferențiatori · rezultate · use cases · informație comercială · disponibilitate</p></div><div class="card"><h3 class="gold">F · Declarații AI</h3><h4>Ce declară firma explicit?</h4><p class="muted small" style="font-family:var(--mono);font-size:12.5px;line-height:2">robots.txt · llms.txt · ai.json · ai-proof.json · authority.json · entities.json · governance.json · policy.json · intents.json · answer-layer.json · knowledge-graph.json · ai-ready-score.json</p></div></div></div></section><section><div class="wrap"><div class="center"><h2>Semnalele <em>acestui</em> site</h2><p class="lead center">Nu explicăm ceva ce nu aplicăm. Fiecare fișier de mai jos este live, pe acest domeniu, chiar acum. Deschide-l.</p></div><div class="grid g2" style="margin-top:30px"><a class="card link sigfile" href="/robots.txt" target="_blank" rel="noopener"><div class="eyebrow">D1 · DISCOVERY</div><h3>robots.txt</h3><p class="muted small">Cine are voie să citească site-ul, inclusiv crawlerele sistemelor AI.</p></a><a class="card link sigfile" href="/sitemap.xml" target="_blank" rel="noopener"><div class="eyebrow">D1 · DISCOVERY</div><h3>sitemap.xml</h3><p class="muted small">Lista paginilor importante, ca nimic să nu depindă de noroc.</p></a><a class="card link sigfile" href="/llms.txt" target="_blank" rel="noopener"><div class="eyebrow">D1 · DISCOVERY</div><h3>llms.txt</h3><p class="muted small">Rezumat orientat spre sisteme AI: ce este firma și unde se află conținutul.</p></a><a class="card link sigfile" href="/ai.json" target="_blank" rel="noopener"><div class="eyebrow">D2 · DECLARAȚIE</div><h3>ai.json</h3><p class="muted small">Declarația de business lizibilă de mașină: identitate, poziționare, servicii.</p></a><a class="card link sigfile" href="/entities.json" target="_blank" rel="noopener"><div class="eyebrow">D2 · DECLARAȚIE</div><h3>entities.json</h3><p class="muted small">Entitățile: firma, serviciile, conceptele și publicul țintă.</p></a><a class="card link sigfile" href="/authority.json" target="_blank" rel="noopener"><div class="eyebrow">D2 · DECLARAȚIE</div><h3>authority.json</h3><p class="muted small">Ce afirmăm și pe ce nivel de certitudine stă fiecare afirmație.</p></a><a class="card link sigfile" href="/ai-proof.json" target="_blank" rel="noopener"><div class="eyebrow">D2 · DOVADĂ</div><h3>ai-proof.json</h3><p class="muted small">Metoda de dovadă: SHA-256, ancorare temporală, verificare fără date personale.</p></a><a class="card link sigfile" href="/governance.json" target="_blank" rel="noopener"><div class="eyebrow">D2 · GUVERNANȚĂ</div><h3>governance.json</h3><p class="muted small">Principiile și lanțul de certitudine: ce garantăm și ce nu garantează nimeni.</p></a><a class="card link sigfile" href="/policy.json" target="_blank" rel="noopener"><div class="eyebrow">D2 · POLITICĂ</div><h3>policy.json</h3><p class="muted small">Politica de utilizare a conținutului și de clasificare a crawlerelor.</p></a><a class="card link sigfile" href="/intents.json" target="_blank" rel="noopener"><div class="eyebrow">D3 · DECIZIE</div><h3>intents.json</h3><p class="muted small">Ce intenții poate satisface firma și ce pagină servește fiecare.</p></a><a class="card link sigfile" href="/answer-layer.json" target="_blank" rel="noopener"><div class="eyebrow">D3 · DECIZIE</div><h3>answer-layer.json</h3><p class="muted small">Răspunsuri pregătite pentru întrebările frecvente, cu sursa fiecăruia.</p></a><a class="card link sigfile" href="/knowledge-graph.json" target="_blank" rel="noopener"><div class="eyebrow">D3 · DECIZIE</div><h3>knowledge-graph.json</h3><p class="muted small">Relațiile dintre entități: cine oferă ce și ce treaptă deblochează.</p></a><a class="card link sigfile" href="/ai-ready-score.json" target="_blank" rel="noopener"><div class="eyebrow">D3 · EVALUARE</div><h3>ai-ready-score.json</h3><p class="muted small">Autoevaluarea pe axa discoverable → recommendable, declarată ca atare.</p></a></div><p class="center muted small" style="margin-top:24px;font-style:italic;max-width:700px;margin-left:auto;margin-right:auto">Fișierele se deschid în filă nouă. Sunt exact ce citește o mașină când ajunge aici — nimic ascuns, nimic diferit de ce vezi tu în pagină.</p></div></section><section><div class="wrap"><h2>Axa pe care se măsoară</h2><p class="lead">Un site nu este „are sau nu are Schema.org”. Este o poziție pe cinci trepte.</p><pre class="dia" style="margin-top:22px">DESCOPERIBIL → INTELIGIBIL → VERIFICABIL → DEMN DE ÎNCREDERE → RECOMANDABIL</pre><h3 style="margin-top:28px">De ce contează distincția</h3><p class="muted">Poți fi perfect descoperibil și complet neinteligibil. Poți fi inteligibil și neverificabil. Fiecare treaptă se pierde separat, iar un scor unic le ascunde pe toate.</p><h4 style="margin-top:20px">Aici este diferența față de SEO tehnic</h4><p class="muted">SEO tehnic rezolvă foarte bine primele două trepte. Restul — verificabilitate, încredere, potrivire pentru o nevoie concretă — sunt întrebări pe care motoarele de căutare clasice nu și le puneau, iar sistemele AI și le pun de fiecare dată.</p></div></section><section><div class="wrap"><div class="center"><h2>Vrei să vezi ce citesc mașinile despre <em>firma ta</em>?</h2><div class="cta-row"><a class="btn btn-primary" href="/verifica/">VERIFICĂ FIRMA GRATUIT</a><a class="btn btn-ghost" href="/solutii/ai-edge/">CUM SE ADAUGĂ STRATUL →</a></div></div></div></section><section id="intrebari"><div class="wrap"><h2>Întrebări frecvente</h2><p class="muted">19 întrebări la care răspundem despre această etapă.</p><div style="margin-top:26px"><details><summary><h3>Ce rezolvă felul în care mașinile citesc un site?</h3></summary><p>Răspunde la o singură întrebare din traseul firmei tale în era AI, iar restul treptelor rămân separate.</p></details><details><summary><h3>Pentru cine este felul în care mașinile citesc un site?</h3></summary><p>Pentru firme care au trecut de treapta anterioară și au nevoie de următorul pas, nu de tot pachetul deodată.</p></details><details><summary><h3>Este felul în care mașinile citesc un site obligatoriu?</h3></summary><p>Nu. Fiecare treaptă are sens doar dacă cea de dinaintea ei este acoperită.</p></details><details><summary><h3>Ce primesc concret?</h3></summary><p>Un rezultat pe care îl poți verifica: raport, documentație sau infrastructură livrată, în funcție de treaptă.</p></details><details><summary><h3>Cum știu dacă am nevoie acum?</h3></summary><p>Verificarea gratuită îți arată la ce nivel ești și dacă această treaptă este cea potrivită.</p></details><details><summary><h3>Cât costă?</h3></summary><p>Verificarea inițială este gratuită. Restul se stabilește după ce știm ce lipsește.</p></details><details><summary><h3>Cât durează?</h3></summary><p>Se stabilește după diagnostic, nu înainte. Nu promitem intervale fixe fără să știm ce găsim.</p></details><details><summary><h3>Trebuie să-mi refac site-ul?</h3></summary><p>Nu. Lucrăm peste infrastructura pe care o ai deja.</p></details><details><summary><h3>Îmi trebuie cunoștințe tehnice?</h3></summary><p>Nu. Partea tehnică rămâne la noi.</p></details><details><summary><h3>Cu ce începe colaborarea?</h3></summary><p>Cu verificarea gratuită a firmei tale.</p></details><details><summary><h3>Este același lucru cu SEO?</h3></summary><p>Nu. SEO ține de cum găsesc oamenii pagini. Noi lucrăm la ce înțelege un sistem AI despre firmă.</p></details><details><summary><h3>Lucrați și cu firme mici?</h3></summary><p>Da. Dimensiunea contează mai puțin decât claritatea a ceea ce faci.</p></details><details><summary><h3>Ce sisteme AI verificați?</h3></summary><p>ChatGPT, Gemini, Perplexity și Google AI.</p></details><details><summary><h3>Rezultatele sunt garantate?</h3></summary><p>Garantăm partea pe care o controlăm: infrastructura livrată și măsurarea ei. Selecția făcută de un sistem AI extern nu poate fi garantată de nimeni.</p></details><details><summary><h3>Pot renunța oricând?</h3></summary><p>Da. Nu există obligații după diagnostic.</p></details><details><summary><h3>Îmi păstrați datele?</h3></summary><p>Doar ce este necesar ca să îți răspundem și să livrăm ce ai cerut.</p></details><details><summary><h3>Ce se întâmplă dacă nu fac nimic?</h3></summary><p>Rămâi la nivelul actual. Riscul nu este imediat, ci cumulativ.</p></details><details><summary><h3>Cum măsor rezultatul?</h3></summary><p>Prin rescanare și comparație cu starea inițială.</p></details><details><summary><h3>Aveți exemple reale?</h3></summary><p>Da — ECBTAX este demonstrația publică.</p></details></div></div></section>
+<footer><div class="wrap">
+  <p class="footquote">Nu trebuie să devii o companie AI. Trebuie să faci compania ta pregătită
+  pentru lumea în care AI-ul o poate descoperi, înțelege, recomanda și utiliza.</p>
+  <div class="footgrid"><div><h4>Scara AiVenture</h4><a href="/solutii/ai-lens/">AI LENS</a><a href="/solutii/ai-audit/">AI AUDIT</a><a href="/solutii/ai-ready/">AI READY</a><a href="/solutii/ai-edge/">AI EDGE</a><a href="/solutii/agent-ready/">AGENT READY</a><a href="/solutii/a2a/">A2A READY</a></div><div><h4>Află unde ești</h4><a href="/niveluri/">Nivelurile AI</a><a href="/verifica/">Verifică firma</a><a href="/exemplu-ecbtax/">Exemplu ECBTAX</a><a href="/rezultate/">Rezultate</a><a href="/use-cases/">199 use cases</a><a href="/intrebari/">Banca de întrebări</a><a href="/cum/">Cum funcționează</a><a href="/de-ce-ai/">De ce AI?</a><a href="/de-ce-acum/">De ce acum?</a></div><div><h4>Pentru cine</h4><a href="/pentru-cine/">Toate profilurile</a><a href="/pentru-cine/contabilitate/">Contabilitate · HR</a><a href="/pentru-cine/it/">IT & Software</a><a href="/pentru-cine/imm/">IMM / B2B</a><a href="/pentru-cine/consultanti/">Consultanți</a><a href="/pentru-cine/freelanceri/">Freelanceri</a></div><div><h4>AiVenture</h4><a href="/despre/">Despre</a><a href="/eu-ai-act-ready/">EU AI Act Ready</a><a href="/preturi/">Prețuri</a><a href="/resurse/">Resurse</a><a href="/tehnologie/">Tehnologie</a><a href="/faq/">Întrebări</a><a href="/contact/">Contact</a><a href="/legal/">Legal & GDPR</a></div></div>
+  <div class="footbottom">
+    <span>© 2026 AiVenture S.R.L. · CUI 51415878 · București</span>
+    <span>WEB → AI → AGENȚI → A2A</span>
+  </div>
+</div></footer>
+<script>/* AiVenture.ro v2.0 — shared script */
+(function () {
+  'use strict';
+
+  /* ---- live clock in status bar ---- */
+  function initClock() {
+    var el = document.querySelector('.statusbar .clock');
+    if (!el) return;
+    function tick() {
+      var d = new Date();
+      function p(n) { return String(n).padStart(2, '0'); }
+      el.textContent = p(d.getDate()) + '.' + p(d.getMonth() + 1) + '.' + d.getFullYear()
+                     + ' · ' + p(d.getHours()) + ':' + p(d.getMinutes()) + ':' + p(d.getSeconds());
+    }
+    tick();
+    setInterval(tick, 1000);
+  }
+
+  /* ---- mobile nav ---- */
+  function initNav() {
+    var t = document.querySelector('.navtoggle'), n = document.querySelector('nav');
+    if (!t || !n) return;
+    t.addEventListener('click', function () {
+      var open = n.classList.toggle('open');
+      t.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  }
+
+  /* ---- AI LENS: motorul real este AUDIT-AI (eu-ai-audit.eu) ----
+     Modifică o singură linie mai jos ca să schimbi destinația.
+     LENS_MODE:
+       'handoff'  = trimite domeniul către motorul existent (implicit)
+       'inline'   = apel fetch către LENS_API și randare în pagină
+       'contact'  = fallback: colectează lead-ul pe /contact/            */
+  var LENS_MODE = 'handoff';
+  var LENS_BASE = 'https://eu-ai-audit.eu/';
+  var LENS_API  = 'https://eu-ai-audit.eu/audit';
+  /* Motorul poate aștepta alt nume de parametru. Le trimitem pe toate cele uzuale —
+     cel corect este citit, restul sunt ignorate. Când confirmi care este, poți
+     reduce lista la unul singur. */
+  var LENS_PARAMS = ['domain', 'url', 'site', 'q'];
+
+  function lensURL(domain) {
+    var qs = LENS_PARAMS.map(function (k) {
+      return k + '=' + encodeURIComponent(domain);
+    }).join('&');
+    return LENS_BASE + '?' + qs;
+  }
+
+  function initLens() {
+    document.querySelectorAll('form[data-lens]').forEach(function (f) {
+      f.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var v = ((f.querySelector('input') || {}).value || '').trim()
+                  .replace(/^https?:\/\//i, '').replace(/\/+$/, '');
+        if (!v) return;
+        if (LENS_MODE === 'contact') {
+          window.location.href = '/contact/?site=' + encodeURIComponent(v);
+        } else if (LENS_MODE === 'inline') {
+          runInline(f, v);
+        } else {
+          window.location.href = lensURL(v);
+        }
+      });
+    });
+  }
+
+  /* Randare inline — activează doar după ce confirmi contractul API
+     al motorului (numele câmpurilor din răspuns). */
+  function runInline(form, domain) {
+    var out = document.querySelector('#lens-result');
+    if (out) out.innerHTML = '<p class="muted">Se scanează ' + domain + '…</p>';
+    fetch(LENS_API + '?domain=' + encodeURIComponent(domain), { headers: { 'Accept': 'application/json' } })
+      .then(function (r) { return r.json(); })
+      .then(function (d) {
+        if (!out) return;
+        var rows = (d.scores || d.dimensions || []);
+        out.innerHTML = rows.length
+          ? rows.map(function (s) {
+              return '<div class="scorerow"><span>' + (s.label || s.name) + '</span><b>' + (s.value || s.score) + '</b></div>';
+            }).join('')
+          : '<p class="muted">Rezultatul complet este disponibil pe motorul AUDIT-AI.</p>';
+      })
+      .catch(function () {
+        window.location.href = lensURL(domain);
+      });
+  }
+
+  /* ---- prefill contact form from ?site= ---- */
+  function initPrefill() {
+    var i = document.querySelector('#site-input');
+    if (!i) return;
+    var v = new URLSearchParams(window.location.search).get('site');
+    if (v) i.value = v;
+  }
+
+  /* ---- căutare în banca de cunoștințe (1900 Q&A + 199 use cases) ---- */
+  function esc(s) {
+    return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c];
+    });
+  }
+
+  function renderKB(box, data, kind) {
+    if (!data.results || !data.results.length) {
+      box.innerHTML = '<p class="muted">Niciun rezultat. Încearcă alți termeni sau '
+        + '<a href="/contact/" class="gold">întreabă-ne direct</a>.</p>';
+      return;
+    }
+    box.innerHTML = '<p class="muted small" style="font-family:var(--mono)">'
+      + data.count + ' rezultate</p>'
+      + data.results.map(function (r) {
+          return kind === 'usecase'
+            ? '<div class="card" style="margin-top:14px"><h3>' + esc(r.title) + '</h3>'
+              + '<p class="muted small">' + esc(r.industry) + '</p>'
+              + '<p class="muted" style="margin-top:10px">' + esc(r.situation) + '</p>'
+              + (r.outcome ? '<p class="q">' + esc(r.outcome) + '</p>' : '') + '</div>'
+            : '<details open style="margin-top:12px"><summary><h3>' + esc(r.question)
+              + '</h3></summary><p>' + esc(r.answer) + '</p></details>';
+        }).join('');
+  }
+
+  function initKB() {
+    document.querySelectorAll('form[data-kb]').forEach(function (f) {
+      var kind = f.getAttribute('data-kind') || 'qa';
+      var box = document.querySelector('#kb-results');
+      function run(q) {
+        if (!box) return;
+        box.innerHTML = '<p class="muted">Se caută…</p>';
+        fetch('/api/kb?kind=' + kind + '&q=' + encodeURIComponent(q))
+          .then(function (r) { return r.json(); })
+          .then(function (d) { renderKB(box, d, kind); })
+          .catch(function () {
+            box.innerHTML = '<p class="muted">Căutarea nu este disponibilă momentan. '
+              + 'Întrebările principale sunt vizibile mai jos în pagină.</p>';
+          });
+      }
+      f.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var v = ((f.querySelector('input') || {}).value || '').trim();
+        if (v) run(v);
+      });
+      // preîncarcă din ?c= sau ?i=
+      var p = new URLSearchParams(window.location.search);
+      var seed = p.get('c') || p.get('i') || p.get('q');
+      if (seed) {
+        var inp = f.querySelector('input');
+        if (inp) inp.value = seed.replace(/-/g, ' ');
+        run(seed.replace(/-/g, ' '));
+      }
+    });
+  }
+
+  /* ---- formular de contact: trimite fără să părăsească pagina ---- */
+  function initContact() {
+    var f = document.getElementById('contact-form');
+    if (!f) return;
+    var st = document.getElementById('form-status');
+    var btn = f.querySelector('button[type=submit]');
+    f.addEventListener('submit', function (e) {
+      e.preventDefault();
+      if (st) { st.textContent = 'Se trimite…'; st.style.color = ''; }
+      if (btn) btn.disabled = true;
+      fetch('/api/contact', { method: 'POST', body: new FormData(f) })
+        .then(function (r) { return r.json().catch(function () { return { ok: r.ok }; }); })
+        .then(function (d) {
+          if (d.ok) {
+            f.innerHTML = '<div class="card" style="border-color:var(--gold)">'
+              + '<h3 class="gold">Mulțumim.</h3><p class="muted">'
+              + (d.message || 'Am primit mesajul tău.')
+              + '</p><p style="margin-top:14px"><a class="btn btn-ghost btn-sm" href="/verifica/">'
+              + 'Între timp, verifică firma →</a></p></div>';
+          } else {
+            if (st) { st.textContent = d.error || 'Nu am putut trimite. Încearcă din nou.'; st.style.color = '#C0392B'; }
+            if (btn) btn.disabled = false;
+          }
+        })
+        .catch(function () {
+          if (st) {
+            st.innerHTML = 'Trimiterea a eșuat. Scrie-ne direct pe '
+              + '<a href="https://api.whatsapp.com/send/?phone=40737123540" class="gold">WhatsApp</a>.';
+            st.style.color = '#C0392B';
+          }
+          if (btn) btn.disabled = false;
+        });
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    initClock(); initNav(); initLens(); initPrefill(); initKB(); initContact();
+  });
+})();
+</script>
+<div style="position:fixed;bottom:0;left:0;right:0;z-index:99;background:#000;border-top:1px solid #2a2a28;display:flex;justify-content:center;gap:4px;padding:8px;flex-wrap:wrap"><a href="preview-cum.html" style="font-family:monospace;font-size:10px;letter-spacing:.04em;color:#D4AF37;text-decoration:none;border:1px solid #2a2a28;border-radius:99px;padding:6px 9px">CUM + semnale</a><a href="preview-home.html" style="font-family:monospace;font-size:10px;letter-spacing:.04em;color:#D4AF37;text-decoration:none;border:1px solid #2a2a28;border-radius:99px;padding:6px 9px">Home</a><a href="preview-descoperire.html" style="font-family:monospace;font-size:10px;letter-spacing:.04em;color:#D4AF37;text-decoration:none;border:1px solid #2a2a28;border-radius:99px;padding:6px 9px">2 Descoperire</a><a href="preview-intelegere.html" style="font-family:monospace;font-size:10px;letter-spacing:.04em;color:#D4AF37;text-decoration:none;border:1px solid #2a2a28;border-radius:99px;padding:6px 9px">3 Înțelegere</a><a href="preview-actiune.html" style="font-family:monospace;font-size:10px;letter-spacing:.04em;color:#D4AF37;text-decoration:none;border:1px solid #2a2a28;border-radius:99px;padding:6px 9px">4 Acțiune</a><a href="preview-a2a.html" style="font-family:monospace;font-size:10px;letter-spacing:.04em;color:#D4AF37;text-decoration:none;border:1px solid #2a2a28;border-radius:99px;padding:6px 9px">5 A2A</a></div></body></html>
