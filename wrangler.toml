@@ -1,0 +1,15 @@
+name = "aiventure-ro"
+compatibility_date = "2026-08-01"
+pages_build_output_dir = "."
+
+[[d1_databases]]
+binding = "DB"
+database_name = "aiventure-kb"
+database_id = "PUNE_AICI_ID_UL_DIN_WRANGLER"
+
+[[vectorize]]
+binding = "VEC"
+index_name = "aiventure-kb"
+
+[ai]
+binding = "AI"
