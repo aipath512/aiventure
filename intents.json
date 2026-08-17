@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0",
+  "entity": "https://aiventure.ro/#organization",
+  "intents": [
+    {
+      "intent": "afla_ce_stie_ai_despre_firma",
+      "question": "Ce știe AI-ul despre firma mea?",
+      "served_by": "https://aiventure.ro/verifica/",
+      "service": "ai-lens"
+    },
+    {
+      "intent": "afla_de_ce_nu_sunt_recomandat",
+      "question": "De ce AI-ul nu îmi recomandă firma?",
+      "served_by": "https://aiventure.ro/solutii/ai-audit/",
+      "service": "ai-audit"
+    },
+    {
+      "intent": "devino_inteligibil_pentru_ai",
+      "question": "Cum fac firma inteligibilă pentru AI?",
+      "served_by": "https://aiventure.ro/solutii/ai-ready/",
+      "service": "ai-ready"
+    },
+    {
+      "intent": "adauga_strat_fara_refacere_site",
+      "question": "Pot adăuga stratul fără să-mi refac site-ul?",
+      "served_by": "https://aiventure.ro/solutii/ai-edge/",
+      "service": "ai-edge"
+    },
+    {
+      "intent": "pregatire_pentru_agenti",
+      "question": "Poate un agent AI să lucreze cu firma mea?",
+      "served_by": "https://aiventure.ro/solutii/agent-ready/",
+      "service": "agent-ready"
+    },
+    {
+      "intent": "interoperabilitate_agenti",
+      "question": "Pot agenții să comunice între ei?",
+      "served_by": "https://aiventure.ro/solutii/a2a/",
+      "service": "a2a-ready"
+    },
+    {
+      "intent": "pregatire_eu_ai_act",
+      "question": "Cum mă pregătesc pentru Regulamentul european privind AI?",
+      "served_by": "https://aiventure.ro/eu-ai-act-ready/",
+      "service": "eu-ai-act-ready"
+    },
+    {
+      "intent": "intelege_mecanismul",
+      "question": "Cum devine un site lizibil pentru mașini?",
+      "served_by": "https://aiventure.ro/cum/"
+    }
+  ]
+}

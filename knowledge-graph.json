@@ -1,0 +1,138 @@
+{
+  "schema_version": "1.0",
+  "@context": "https://schema.org",
+  "nodes": [
+    {
+      "id": "https://aiventure.ro/#organization",
+      "type": "Organization",
+      "label": "AiVenture"
+    },
+    {
+      "id": "https://aiventure.ro/solutii/ai-lens/#service",
+      "type": "Service",
+      "label": "AI LENS"
+    },
+    {
+      "id": "https://aiventure.ro/solutii/ai-audit/#service",
+      "type": "Service",
+      "label": "AI AUDIT"
+    },
+    {
+      "id": "https://aiventure.ro/solutii/ai-ready/#service",
+      "type": "Service",
+      "label": "AI READY"
+    },
+    {
+      "id": "https://aiventure.ro/solutii/ai-edge/#service",
+      "type": "Service",
+      "label": "AI EDGE"
+    },
+    {
+      "id": "https://aiventure.ro/solutii/agent-ready/#service",
+      "type": "Service",
+      "label": "AGENT READY"
+    },
+    {
+      "id": "https://aiventure.ro/solutii/a2a/#service",
+      "type": "Service",
+      "label": "A2A READY"
+    },
+    {
+      "id": "https://aiventure.ro/eu-ai-act-ready/#service",
+      "type": "Service",
+      "label": "EU AI ACT READY"
+    },
+    {
+      "id": "https://aiventure.ro/#stage-1",
+      "type": "DefinedTerm",
+      "label": "Vizibilă"
+    },
+    {
+      "id": "https://aiventure.ro/#stage-2",
+      "type": "DefinedTerm",
+      "label": "Înțeleasă"
+    },
+    {
+      "id": "https://aiventure.ro/#stage-3",
+      "type": "DefinedTerm",
+      "label": "Acționabilă"
+    },
+    {
+      "id": "https://aiventure.ro/#stage-4",
+      "type": "DefinedTerm",
+      "label": "A2A"
+    }
+  ],
+  "edges": [
+    {
+      "from": "https://aiventure.ro/#organization",
+      "rel": "provides",
+      "to": "https://aiventure.ro/solutii/ai-lens/#service"
+    },
+    {
+      "from": "https://aiventure.ro/#organization",
+      "rel": "provides",
+      "to": "https://aiventure.ro/solutii/ai-audit/#service"
+    },
+    {
+      "from": "https://aiventure.ro/#organization",
+      "rel": "provides",
+      "to": "https://aiventure.ro/solutii/ai-ready/#service"
+    },
+    {
+      "from": "https://aiventure.ro/#organization",
+      "rel": "provides",
+      "to": "https://aiventure.ro/solutii/ai-edge/#service"
+    },
+    {
+      "from": "https://aiventure.ro/#organization",
+      "rel": "provides",
+      "to": "https://aiventure.ro/solutii/agent-ready/#service"
+    },
+    {
+      "from": "https://aiventure.ro/#organization",
+      "rel": "provides",
+      "to": "https://aiventure.ro/solutii/a2a/#service"
+    },
+    {
+      "from": "https://aiventure.ro/#organization",
+      "rel": "provides",
+      "to": "https://aiventure.ro/eu-ai-act-ready/#service"
+    },
+    {
+      "from": "https://aiventure.ro/solutii/ai-lens/#service",
+      "rel": "diagnoses",
+      "to": "https://aiventure.ro/#stage-1"
+    },
+    {
+      "from": "https://aiventure.ro/solutii/ai-ready/#service",
+      "rel": "enables",
+      "to": "https://aiventure.ro/#stage-2"
+    },
+    {
+      "from": "https://aiventure.ro/solutii/agent-ready/#service",
+      "rel": "enables",
+      "to": "https://aiventure.ro/#stage-3"
+    },
+    {
+      "from": "https://aiventure.ro/solutii/a2a/#service",
+      "rel": "enables",
+      "to": "https://aiventure.ro/#stage-4"
+    },
+    {
+      "from": "https://aiventure.ro/#stage-1",
+      "rel": "precedes",
+      "to": "https://aiventure.ro/#stage-2"
+    },
+    {
+      "from": "https://aiventure.ro/#stage-2",
+      "rel": "precedes",
+      "to": "https://aiventure.ro/#stage-3"
+    },
+    {
+      "from": "https://aiventure.ro/#stage-3",
+      "rel": "precedes",
+      "to": "https://aiventure.ro/#stage-4"
+    }
+  ]
+}

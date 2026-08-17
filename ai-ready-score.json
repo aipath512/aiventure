@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.0",
+  "entity": "https://aiventure.ro/#organization",
+  "axis": [
+    "discoverable",
+    "understandable",
+    "verifiable",
+    "trustable",
+    "recommendable"
+  ],
+  "self_assessment": {
+    "discoverable": {
+      "signals": [
+        "robots.txt",
+        "sitemap.xml",
+        "llms.txt",
+        "HTTP 200",
+        "canonical"
+      ],
+      "present": true
+    },
+    "understandable": {
+      "signals": [
+        "schema @graph",
+        "H1-H4",
+        "breadcrumb",
+        "FAQPage",
+        "entities.json"
+      ],
+      "present": true
+    },
+    "verifiable": {
+      "signals": [
+        "identificatori legali",
+        "adresă",
+        "politici publicate"
+      ],
+      "present": true
+    },
+    "trustable": {
+      "signals": [
+        "nivel epistemic declarat",
+        "limita garanției explicită"
+      ],
+      "present": true
+    },
+    "recommendable": {
+      "signals": [
+        "servicii",
+        "public țintă",
+        "intenții",
+        "answer layer"
+      ],
+      "present": true
+    }
+  },
+  "note": "Autoevaluare declarată de operator. Nu este un audit independent.",
+  "epistemic_status": "self_declared"
+}

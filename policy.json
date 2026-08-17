@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0",
+  "entity": "https://aiventure.ro/#organization",
+  "content_usage": {
+    "ai_training": "allowed",
+    "ai_search_indexing": "allowed",
+    "attribution_requested": true,
+    "canonical": "https://aiventure.ro/"
+  },
+  "crawler_policy": {
+    "default": "allow",
+    "classification": [
+      "productiv",
+      "informativ",
+      "necunoscut",
+      "extractiv",
+      "ostil"
+    ],
+    "note": "Clasificarea se face după valoarea observată, nu după nume."
+  },
+  "data_protection": {
+    "tracking_cookies": false,
+    "advertising_pixels": false,
+    "policy_url": "https://aiventure.ro/legal/"
+  }
+}

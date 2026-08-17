@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0",
+  "entity": "https://aiventure.ro/#organization",
+  "claims": [
+    {
+      "claim": "Societate înregistrată în România",
+      "level": "publicly_verifiable",
+      "basis": "registrul comerțului",
+      "identifier": "J2025016406000"
+    },
+    {
+      "claim": "Operează infrastructură de discovery pentru AI",
+      "level": "self_declared"
+    },
+    {
+      "claim": "Produse operaționale: audit agentic, generare documentație, registru de verificare, punte A2A",
+      "level": "self_declared"
+    }
+  ],
+  "disclaimer": "Sprijinim pregătirea. Nu certificăm conformitatea și nu înlocuim o evaluare de specialitate.",
+  "epistemic_levels": [
+    "self_declared",
+    "publicly_verifiable",
+    "independently_certified"
+  ]
+}

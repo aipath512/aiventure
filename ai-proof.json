@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.1",
+  "entity": "https://aiventure.ro/#organization",
+  "verification_endpoint": null,
+  "note": "Registrul de verificare a documentelor rulează pe proprietatea dedicată conformității. Acest fișier declară metoda, nu conține amprente de documente ale clienților.",
+  "method": {
+    "hash": "SHA-256",
+    "computed_on": "reprezentarea Markdown canonică",
+    "timestamping": "OpenTimestamps",
+    "identifier_format": "COD-FIRMA_SLUG-8HEX"
+  },
+  "privacy": {
+    "personal_data_exposed": false,
+    "client_enumeration_possible": false,
+    "lookup": "doar căutare exactă după identificator sau amprentă"
+  },
+  "status": "self_declared"
+}

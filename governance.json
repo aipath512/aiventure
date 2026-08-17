@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0",
+  "entity": "https://aiventure.ro/#organization",
+  "principles": [
+    "Sprijinim pregătirea, nu certificăm.",
+    "Nu inventăm informație despre firma clientului.",
+    "Marcăm explicit nivelul de certitudine al fiecărei afirmații.",
+    "Garantăm doar partea controlabilă: infrastructura livrată și măsurarea ei."
+  ],
+  "certainty_chain": [
+    "access",
+    "visibility",
+    "citation",
+    "traffic",
+    "lead",
+    "revenue"
+  ],
+  "guaranteed_segment": [
+    "access",
+    "visibility"
+  ],
+  "not_guaranteed_by_anyone": [
+    "citation",
+    "traffic",
+    "lead",
+    "revenue"
+  ],
+  "human_in_the_loop": true
+}

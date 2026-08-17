@@ -1,0 +1,27 @@
+# AiVenture
+
+> AI pentru firma ta. AiVenture pregătește firmele B2B din România pentru tranziția
+> Web → AI → Agenți: de la a fi găsite pe Google, la a fi înțelese și recomandate de
+> sisteme AI, până la a putea fi utilizate de agenți autonomi.
+
+## Ce facem
+- AI LENS — diagnostic: ce știe AI-ul despre o firmă
+- AI AUDIT — ce informații lipsesc sau se contrazic
+- AI READY — structurarea informației pentru sisteme AI
+- AI EDGE — stratul AI adăugat fără reconstruirea site-ului
+- AGENT READY — expunerea capabilităților pentru agenți AI
+- A2A READY — interoperabilitate agent-to-agent
+
+## Pagini principale
+- [Acasă](https://aiventure.ro/): unde este firma ta în Era AI
+- [Nivelurile AI](https://aiventure.ro/niveluri/): vizibilă, înțeleasă, acționabilă, A2A
+- [Soluții](https://aiventure.ro/solutii/): scara completă AiVenture
+- [Verifică firma](https://aiventure.ro/verifica/): diagnostic gratuit
+- [Exemplu ECBTAX](https://aiventure.ro/exemplu-ecbtax/): demonstrație pe o firmă reală
+- [Pentru cine](https://aiventure.ro/pentru-cine/): IMM, IT, contabilitate, consultanți, agenții, freelanceri
+- [Prețuri](https://aiventure.ro/preturi/)
+- [Întrebări](https://aiventure.ro/faq/)
+- [Contact](https://aiventure.ro/contact/)
+
+## Organizație
+AiVenture S.R.L. — CUI 51415878 — București, România.

@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "entity": "https://aiventure.ro/#organization",
+  "language": "ro",
+  "answers": [
+    {
+      "q": "Ce face AiVenture?",
+      "a": "Pregătește firmele B2B din România pentru felul în care sistemele AI le descoperă, înțeleg, recomandă și, în timp, le pot utiliza.",
+      "source": "https://aiventure.ro/despre/"
+    },
+    {
+      "q": "Pentru cine este?",
+      "a": "IMM-uri B2B, firme de contabilitate, fiscalitate și HR, firme IT, consultanți, agenții și freelanceri din România.",
+      "source": "https://aiventure.ro/pentru-cine/"
+    },
+    {
+      "q": "Cum începe colaborarea?",
+      "a": "Cu o verificare gratuită care arată ce știe AI-ul despre firmă și care este pasul următor.",
+      "source": "https://aiventure.ro/verifica/"
+    },
+    {
+      "q": "Trebuie refăcut site-ul?",
+      "a": "Nu. Stratul de semnale se adaugă peste site-ul existent, fără să îl modifice.",
+      "source": "https://aiventure.ro/solutii/ai-edge/"
+    },
+    {
+      "q": "Ce garantează AiVenture?",
+      "a": "Infrastructura livrată, funcționarea ei și măsurarea rezultatului. Selecția făcută de un sistem AI extern nu poate fi garantată de nimeni.",
+      "source": "https://aiventure.ro/tehnologie/"
+    },
+    {
+      "q": "Certifică AiVenture conformitatea?",
+      "a": "Nu. Sprijină pregătirea, nu emite certificate și nu oferă consultanță juridică.",
+      "source": "https://aiventure.ro/eu-ai-act-ready/"
+    },
+    {
+      "q": "Unde este firma mea în tranziția AI?",
+      "a": "Pe o scară cu patru trepte: vizibilă, înțeleasă, acționabilă și A2A. Verificarea gratuită arată treapta curentă.",
+      "source": "https://aiventure.ro/niveluri/"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema_version": "1.0",
+  "organization": {
+    "name": "AiVenture S.R.L.",
+    "brand": "AiVenture",
+    "url": "https://aiventure.ro/",
+    "identifier": {
+      "cui": "51415878",
+      "euid": "ROONRC.J2025016406000"
+    },
+    "areaServed": "RO",
+    "language": [
+      "ro"
+    ]
+  },
+  "positioning": "AI pentru firma ta — pregătirea firmelor B2B pentru tranziția Web → AI → Agenți",
+  "maturity_model": [
+    {
+      "level": 1,
+      "name": "Vizibilă",
+      "question": "AI-ul găsește firma ta?"
+    },
+    {
+      "level": 2,
+      "name": "Înțeleasă",
+      "question": "AI-ul înțelege și recomandă firma ta?"
+    },
+    {
+      "level": 3,
+      "name": "Acționabilă",
+      "question": "Poate un agent să lucreze cu firma ta?"
+    },
+    {
+      "level": 4,
+      "name": "A2A",
+      "question": "Pot agenții să comunice între ei?"
+    }
+  ],
+  "services": [
+    {
+      "id": "ai-lens",
+      "name": "AI LENS",
+      "url": "https://aiventure.ro/solutii/ai-lens/"
+    },
+    {
+      "id": "ai-audit",
+      "name": "AI AUDIT",
+      "url": "https://aiventure.ro/solutii/ai-audit/"
+    },
+    {
+      "id": "ai-ready",
+      "name": "AI READY",
+      "url": "https://aiventure.ro/solutii/ai-ready/"
+    },
+    {
+      "id": "ai-edge",
+      "name": "AI EDGE",
+      "url": "https://aiventure.ro/solutii/ai-edge/"
+    },
+    {
+      "id": "agent-ready",
+      "name": "AGENT READY",
+      "url": "https://aiventure.ro/solutii/agent-ready/"
+    },
+    {
+      "id": "a2a-ready",
+      "name": "A2A READY",
+      "url": "https://aiventure.ro/solutii/a2a/"
+    }
+  ],
+  "epistemic_status": "self_declared",
+  "disclaimer": "Scorurile afișate ca exemplu pe site sunt ilustrative până la activarea motorului de evaluare."
+}
