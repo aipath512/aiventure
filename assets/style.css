@@ -1,0 +1,224 @@
+/* AiVenture.ro v2.0 — shared stylesheet */
+:root{
+  --bg:#0A0A0A; --bg-2:#121212; --bg-3:#1A1A18;
+  --text:#ffffff; --muted:#9a9a94; --line:#2a2a28;
+  --gold:#D4AF37; --gold-2:#F2C94C; --red:#C0392B;
+  --l1:#5BA85B; --l2:#E0B84C; --l3:#8B5E3C;
+  --serif:"Playfair Display",Georgia,"Times New Roman",serif;
+  --sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  --max:1120px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+
+/* ---------- LAYOUT ---------- */
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+section{padding:76px 0;border-bottom:1px solid var(--line)}
+section:last-of-type{border-bottom:none}
+.center{text-align:center}
+
+/* ---------- STATUS BAR ---------- */
+.statusbar{background:#000;border-bottom:1px solid var(--line);font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);padding:9px 0}
+.statusbar .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.statusbar .ver{color:var(--gold);opacity:.75}
+.statusbar .clock{color:var(--gold)}
+
+/* ---------- HEADER ---------- */
+header{position:sticky;top:0;z-index:60;background:rgba(10,10,10,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;gap:22px;padding-top:14px;padding-bottom:14px}
+.logo{font-family:var(--serif);font-size:23px;font-weight:700;text-decoration:none;color:var(--text);white-space:nowrap}
+.logo em{color:var(--gold);font-style:italic}
+nav{margin-left:auto;display:flex;align-items:center;gap:22px}
+nav a{color:var(--muted);text-decoration:none;font-size:14.5px;white-space:nowrap}
+nav a:hover,nav a[aria-current=page]{color:var(--gold)}
+.navtoggle{display:none;background:none;border:1px solid var(--line);color:var(--text);border-radius:8px;padding:6px 10px;font-size:18px;cursor:pointer;margin-left:auto}
+
+/* ---------- BUTTONS ---------- */
+.btn{display:inline-block;border-radius:999px;padding:14px 30px;font-weight:600;font-size:15.5px;text-decoration:none;cursor:pointer;border:1px solid transparent;transition:.18s}
+.btn-primary{background:var(--gold);color:#0a0a0a}
+.btn-primary:hover{background:var(--gold-2)}
+.btn-ghost{border-color:var(--gold);color:var(--gold);background:transparent}
+.btn-ghost:hover{background:rgba(212,175,55,.1)}
+.btn-sm{padding:9px 20px;font-size:14px}
+
+/* ---------- TYPE ---------- */
+h1,h2,h3{font-family:var(--serif);font-weight:700;line-height:1.18}
+h1{font-size:clamp(34px,5.6vw,62px);letter-spacing:-.01em}
+h2{font-size:clamp(27px,3.6vw,40px);margin-bottom:18px}
+h3{font-size:20px;margin-bottom:10px}
+h1 em,h2 em{color:var(--gold);font-style:italic}
+.gold{color:var(--gold)}
+.lead{font-size:19px;color:var(--muted);max-width:720px}
+.center .lead{margin-left:auto;margin-right:auto}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:20px}
+.muted{color:var(--muted)}
+.small{font-size:14px}
+p+p{margin-top:14px}
+
+/* ---------- HERO ---------- */
+.hero{padding:96px 0 84px;text-align:center;border-bottom:1px solid var(--line)}
+.tagline{font-family:var(--serif);font-style:italic;font-size:clamp(20px,2.6vw,28px);color:var(--gold);margin:18px 0 22px}
+.cta-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:32px}
+.flow{font-family:var(--mono);font-size:12.5px;letter-spacing:.24em;color:var(--muted);margin-top:26px;text-transform:uppercase}
+
+/* ---------- ALERT BAND ---------- */
+.band{background:var(--bg-3);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:13px 0;font-family:var(--mono);font-size:13px;letter-spacing:.06em;text-align:center}
+.band a{color:var(--gold)}
+
+/* ---------- GRID + CARDS ---------- */
+.grid{display:grid;gap:20px}
+.g2{grid-template-columns:repeat(2,1fr)}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g4{grid-template-columns:repeat(4,1fr)}
+.card{background:var(--bg-2);border:1px solid var(--line);border-radius:14px;padding:28px}
+.card.link{text-decoration:none;color:inherit;display:block;transition:.18s}
+.card.link:hover{border-color:var(--gold);transform:translateY(-2px)}
+.card .dot{width:11px;height:11px;border-radius:50%;display:inline-block;margin-right:9px;vertical-align:middle}
+.d1{background:var(--l1)}.d2{background:var(--l2)}.d3{background:var(--l3)}.d4{background:#555}
+.card .q{color:var(--gold);font-style:italic;margin-top:12px}
+
+/* ---------- TRIAD ---------- */
+.triad{border-left:3px solid var(--gold);padding:22px 0 22px 28px;max-width:760px;margin:0 auto;text-align:left}
+.triad p{font-size:19px}
+.triad strong{color:var(--gold)}
+
+/* ---------- STEPS / TIMELINE ---------- */
+.steps{display:grid;gap:2px;font-family:var(--mono);font-size:14px}
+.step{background:var(--bg-2);border:1px solid var(--line);padding:16px 20px;display:flex;gap:18px;align-items:baseline;flex-wrap:wrap}
+.step b{color:var(--gold);min-width:130px}
+
+/* ---------- SCORE MOCK ---------- */
+.scorebox{background:var(--bg-2);border:1px solid var(--line);border-radius:14px;padding:28px;font-family:var(--mono);font-size:14.5px;max-width:640px;margin:0 auto}
+.scorerow{display:flex;justify-content:space-between;gap:14px;padding:9px 0;border-bottom:1px dashed var(--line)}
+.scorerow:last-child{border-bottom:none}
+.scorerow b{color:var(--gold)}
+.badge{display:inline-block;background:var(--red);color:#fff !important;font-family:var(--mono);font-size:11px;letter-spacing:.14em;padding:4px 10px;border-radius:5px;text-transform:uppercase;margin-bottom:18px}
+
+/* ---------- FORM ---------- */
+.lensform{display:flex;gap:12px;max-width:560px;margin:26px auto 0;flex-wrap:wrap}
+.lensform input,.field{flex:1;min-width:230px;background:var(--bg-2);border:1px solid var(--line);border-radius:999px;padding:14px 24px;color:var(--text);font-family:var(--mono);font-size:15px}
+.lensform input:focus,.field:focus{outline:none;border-color:var(--gold)}
+form.stack{max-width:560px;margin:0 auto;display:grid;gap:14px;text-align:left}
+form.stack .field{border-radius:12px;width:100%}
+form.stack label{font-size:14px;color:var(--muted)}
+.checks{display:grid;gap:10px;font-size:15px}
+.checks label{display:flex;gap:10px;align-items:center;cursor:pointer}
+
+/* ---------- TABLE ---------- */
+table{width:100%;border-collapse:collapse;font-size:15px;margin-top:18px}
+th,td{border:1px solid var(--line);padding:13px 16px;text-align:left;vertical-align:top}
+th{background:var(--bg-2);font-family:var(--mono);font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold)}
+
+/* ---------- ASCII DIAGRAM ---------- */
+pre.dia{background:var(--bg-2);border:1px solid var(--line);border-radius:12px;padding:24px;overflow-x:auto;font-family:var(--mono);font-size:13.5px;line-height:1.7;color:var(--muted)}
+
+/* ---------- FAQ ---------- */
+details{background:var(--bg-2);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin-bottom:12px}
+summary{cursor:pointer;font-weight:600;font-size:16.5px;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";float:right;color:var(--gold);font-family:var(--mono)}
+details[open] summary::after{content:"−"}
+details p{margin-top:12px;color:var(--muted)}
+
+/* ---------- FOOTER ---------- */
+footer{background:var(--bg-2);border-top:1px solid var(--line);padding:60px 0 32px;font-size:14.5px}
+.footquote{font-family:var(--serif);font-size:19px;max-width:700px;margin-bottom:44px;line-height:1.55}
+.footgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:30px}
+footer h4{font-family:var(--mono);font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
+footer a{display:block;color:var(--muted);text-decoration:none;padding:4px 0}
+footer a:hover{color:var(--gold)}
+.footbottom{margin-top:44px;padding-top:22px;border-top:1px solid var(--line);color:var(--muted);font-family:var(--mono);font-size:12px;letter-spacing:.08em;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+/* ---------- CONTROLS ---------- */
+.langsel{background:var(--bg-2);border:1px solid var(--line);color:var(--text);border-radius:999px;padding:7px 12px;font-family:var(--mono);font-size:12px;cursor:pointer}
+
+/* ---------- RESPONSIVE ---------- */
+@media(max-width:900px){.g3,.g4{grid-template-columns:repeat(2,1fr)}.footgrid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:680px){
+  .g2,.g3,.g4{grid-template-columns:1fr}
+  nav{display:none;position:absolute;top:100%;left:0;right:0;background:var(--bg-2);border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start;gap:0;padding:12px 24px 20px}
+  nav.open{display:flex}
+  nav a{padding:11px 0;width:100%}
+  .navtoggle{display:block}
+  section{padding:56px 0}
+  .hero{padding:64px 0 56px}
+  }
+
+/* ---------- BREADCRUMB (unic, între head și h1) ---------- */
+.crumbs{border-bottom:1px solid var(--line);background:var(--bg-2);padding:11px 0;
+  font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+.crumbs a{color:var(--muted);text-decoration:none}
+.crumbs a:hover{color:var(--gold)}
+.crumbs .sep{color:var(--line);margin:0 2px}
+.crumbs [aria-current=page]{color:var(--gold)}
+
+/* ---------- H4 ---------- */
+h4{font-family:var(--sans);font-size:15px;font-weight:600;margin-bottom:8px;letter-spacing:.01em}
+
+/* ---------- FAQ: h3 în summary ---------- */
+summary h3{display:inline;font-family:var(--sans);font-size:16.5px;font-weight:600;margin:0}
+details summary{padding-right:24px}
+
+/* ---------- FORM: textarea + status ---------- */
+textarea.field{border-radius:12px;font-family:var(--sans);resize:vertical}
+#form-status:empty{display:none}
+#form-status{margin-top:4px}
+form.stack button[disabled]{opacity:.5;cursor:wait}
+
+/* ---------- TABEL DE ROLURI ---------- */
+table.worlds td,table.chain td{font-size:14.5px}
+table.worlds th.mine,table.chain th.mine{background:rgba(212,175,55,.14);color:var(--gold)}
+table.worlds td.mine,table.chain td.mine{background:rgba(212,175,55,.05);border-left:2px solid var(--gold);border-right:2px solid var(--gold)}
+table.chain{min-width:860px}
+table.chain td:first-child{white-space:nowrap}
+@media(max-width:680px){
+  table.worlds{display:block;overflow-x:auto;min-width:0}
+  table.worlds thead,table.worlds tbody,table.worlds tr{display:block}
+  table.worlds th{display:none}
+  table.worlds td{display:block;border-top:none}
+  table.worlds tr{border:1px solid var(--line);border-radius:12px;margin-bottom:14px;padding:6px 0}
+}
+
+/* ---------- BUCLA (imediat sub hero) ---------- */
+.loop{max-width:840px;margin:36px auto 0;position:relative}
+.loop-row{display:grid;grid-template-columns:1fr 40px 1fr;align-items:center;gap:0;
+  background:var(--bg-2);border:1px solid var(--line);border-radius:14px;
+  padding:18px 22px;margin-bottom:10px;position:relative}
+.loop-row.mine{border-color:var(--gold);background:rgba(212,175,55,.07)}
+.loop-row:not(:last-of-type)::after{content:"";position:absolute;left:50%;bottom:-10px;
+  width:1px;height:10px;background:var(--line)}
+.loop-who{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.loop-n{width:26px;height:26px;flex:none;border-radius:50%;background:var(--line);color:var(--muted);
+  font-family:var(--mono);font-size:12px;display:grid;place-items:center}
+.loop-row.mine .loop-n{background:var(--gold);color:#0a0a0a;font-weight:600}
+.loop-who b{font-family:var(--serif);font-size:19px}
+.loop-row.mine .loop-who b{color:var(--gold)}
+.loop-tag{font-family:var(--mono);font-size:11.5px;letter-spacing:.08em;color:var(--muted);
+  text-transform:uppercase;width:100%}
+.loop-arrow{text-align:center;color:var(--gold);font-size:17px}
+.loop-gain{font-size:15px;color:var(--muted);text-align:right}
+.loop-gain b{color:var(--text);font-weight:600}
+.loop-row.mine .loop-gain b{color:var(--gold)}
+.loop-base{margin-top:16px;padding:16px 22px;border:1px dashed var(--gold);border-radius:14px;
+  text-align:center;font-size:14.5px;color:var(--muted)}
+.loop-base b{color:var(--gold)}
+@media(max-width:680px){
+  .loop-row{grid-template-columns:1fr;gap:10px;text-align:left}
+  .loop-arrow{display:none}
+  .loop-gain{text-align:left;padding-left:38px;font-size:14px}
+  .loop-row:not(:last-of-type)::after{left:26px}
+}
+
+/* link „vezi cum" în buclă */
+.loop-how{display:inline-block;margin-left:10px;font-family:var(--mono);font-size:11.5px;
+  letter-spacing:.08em;text-transform:uppercase;color:var(--gold);text-decoration:none;
+  border-bottom:1px solid rgba(212,175,55,.4);padding-bottom:1px;white-space:nowrap}
+.loop-how:hover{border-bottom-color:var(--gold)}
+@media(max-width:680px){.loop-how{display:block;margin:8px 0 0}}
+
+/* fișiere de semnal — carduri cu link extern */
+.card.sigfile h3{font-family:var(--mono);font-size:15px;color:var(--gold);letter-spacing:.02em}
+.card.sigfile::after{content:"↗";float:right;color:var(--muted);font-size:13px;margin-top:-38px}
+.card.sigfile:hover::after{color:var(--gold)}
