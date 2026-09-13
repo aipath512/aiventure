@@ -29,3 +29,12 @@ Allow: /
 
 User-agent: CCBot
 Allow: /
+
+User-agent: DeepSeekBot
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: Coherebot
+Allow: /
