@@ -1,0 +1,213 @@
+{
+  "document_id": "AIV-AIO-SIGNALS-0001",
+  "session": "0002H",
+  "version": "1.0",
+  "date": "2026-09-13",
+  "name": "AiVenture AIO — AI Optimization Signals",
+  "definition": "Măsoară dacă site-ul și serviciile sunt ușor de interpretat, rezumat, citat, comparat și utilizat de modele AI.",
+  "scoring": {
+    "PASS": 1,
+    "PARTIAL": 0.5,
+    "FAIL": 0,
+    "NA": "excluded_from_denominator"
+  },
+  "families": [
+    {
+      "id": "A",
+      "name": "Identity & Positioning",
+      "weight_percent": 20,
+      "signals": [
+        {
+          "id": "AIO001",
+          "name": "AI-readable primary proposition",
+          "checks": "Propunerea principală poate fi înțeleasă fără ambiguitate"
+        },
+        {
+          "id": "AIO002",
+          "name": "Canonical business identity",
+          "checks": "AI poate identifica exact cine este AiVenture"
+        },
+        {
+          "id": "AIO003",
+          "name": "Canonical category definition",
+          "checks": "Categoria Agent-Ready B2B Services este explicit definită"
+        },
+        {
+          "id": "AIO004",
+          "name": "Canonical product definition",
+          "checks": "Produsul principal este explicat într-o propoziție clară"
+        },
+        {
+          "id": "AIO005",
+          "name": "Primary audience clarity",
+          "checks": "Este clar cui se adresează serviciul"
+        },
+        {
+          "id": "AIO006",
+          "name": "Problem clarity",
+          "checks": "Problema rezolvată este exprimată explicit"
+        },
+        {
+          "id": "AIO007",
+          "name": "Outcome clarity",
+          "checks": "Rezultatul promis este explicit"
+        },
+        {
+          "id": "AIO008",
+          "name": "Differentiator clarity",
+          "checks": "Diferențiatorii sunt formulați explicit, nu implicit"
+        },
+        {
+          "id": "AIO009",
+          "name": "Negative positioning clarity",
+          "checks": "Este explicit ce NU oferă AiVenture"
+        },
+        {
+          "id": "AIO010",
+          "name": "Service-level granularity",
+          "checks": "AI poate separa firma de serviciile individuale"
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "name": "Offer Structure",
+      "weight_percent": 25,
+      "signals": [
+        {
+          "id": "AIO011",
+          "name": "Structured service definition",
+          "checks": "Fiecare serviciu are câmpuri structurabile clare"
+        },
+        {
+          "id": "AIO012",
+          "name": "Offer completeness",
+          "checks": "Oferta conține rezultat, livrabile, excluderi, termene, condiții"
+        },
+        {
+          "id": "AIO013",
+          "name": "Eligibility clarity",
+          "checks": "AI poate determina cine este eligibil"
+        },
+        {
+          "id": "AIO014",
+          "name": "Ineligibility clarity",
+          "checks": "AI poate determina cine nu este eligibil"
+        },
+        {
+          "id": "AIO015",
+          "name": "Geography clarity",
+          "checks": "Teritoriul și jurisdicția sunt explicite"
+        },
+        {
+          "id": "AIO016",
+          "name": "Language clarity",
+          "checks": "Limba serviciului este explicită"
+        },
+        {
+          "id": "AIO017",
+          "name": "Pricing clarity",
+          "checks": "Prețul sau regula de calcul este explicită"
+        },
+        {
+          "id": "AIO018",
+          "name": "Availability clarity",
+          "checks": "Disponibilitatea și capacitatea pot fi determinate"
+        },
+        {
+          "id": "AIO019",
+          "name": "Version freshness",
+          "checks": "AI poate vedea versiunea și data actualizării"
+        }
+      ]
+    },
+    {
+      "id": "C",
+      "name": "Consistency & Evidence",
+      "weight_percent": 20,
+      "signals": [
+        {
+          "id": "AIO020",
+          "name": "Source-of-truth consistency",
+          "checks": "Site, Schema.org, service.json, Agent Card și API nu se contrazic"
+        },
+        {
+          "id": "AIO021",
+          "name": "Claim-to-evidence linkage",
+          "checks": "Afirmațiile importante au dovezi asociate"
+        },
+        {
+          "id": "AIO022",
+          "name": "Evidence freshness",
+          "checks": "Dovezile sunt actualizate și versionate"
+        }
+      ]
+    },
+    {
+      "id": "D",
+      "name": "Answerability & Intent Coverage",
+      "weight_percent": 15,
+      "signals": [
+        {
+          "id": "AIO023",
+          "name": "FAQ answerability",
+          "checks": "Întrebările comerciale principale au răspunsuri directe"
+        },
+        {
+          "id": "AIO024",
+          "name": "Intent coverage",
+          "checks": "Cele 50 TOF/MOF/BOF sunt acoperite semantic"
+        },
+        {
+          "id": "AIO025",
+          "name": "Conversational answer formatting",
+          "checks": "Conținutul permite răspunsuri scurte, clare, extragibile"
+        }
+      ]
+    },
+    {
+      "id": "E",
+      "name": "Comparison & Citation",
+      "weight_percent": 10,
+      "signals": [
+        {
+          "id": "AIO026",
+          "name": "Comparison readiness",
+          "checks": "Serviciul poate fi comparat după dimensiuni explicite"
+        },
+        {
+          "id": "AIO027",
+          "name": "Citation readiness",
+          "checks": "Informațiile importante sunt ușor de citat și atribuit"
+        }
+      ]
+    },
+    {
+      "id": "F",
+      "name": "Agentic Understanding & Actionability",
+      "weight_percent": 10,
+      "signals": [
+        {
+          "id": "AIO028",
+          "name": "Entity relationship clarity",
+          "checks": "Relațiile firmă → serviciu → ofertă → RRVI → Evidence sunt explicite"
+        },
+        {
+          "id": "AIO029",
+          "name": "AI action boundary clarity",
+          "checks": "AI poate determina ce acțiuni sunt permise/interzise"
+        },
+        {
+          "id": "AIO030",
+          "name": "Human escalation clarity",
+          "checks": "Este explicit când trebuie intervenție umană"
+        },
+        {
+          "id": "AIO031",
+          "name": "Machine-reconstructible commercial model",
+          "checks": "Un model AI poate reconstrui complet oferta și lifecycle-ul fără presupuneri majore"
+        }
+      ]
+    }
+  ]
+}

@@ -1,26 +1,26 @@
 {
-  "schema_version": "1.0",
-  "entity": "https://aiventure.ro/#organization",
-  "content_usage": {
-    "ai_training": "allowed",
-    "ai_search_indexing": "allowed",
-    "attribution_requested": true,
-    "canonical": "https://aiventure.ro/"
-  },
-  "crawler_policy": {
-    "default": "allow",
-    "classification": [
-      "productiv",
-      "informativ",
-      "necunoscut",
-      "extractiv",
-      "ostil"
-    ],
-    "note": "Clasificarea se face după valoarea observată, nu după nume."
-  },
-  "data_protection": {
-    "tracking_cookies": false,
-    "advertising_pixels": false,
-    "policy_url": "https://aiventure.ro/legal/"
-  }
+  "schema": "AIVENTURE_POLICY",
+  "version": "2.0",
+  "session": "0002H",
+  "principles": [
+    "regulation-before-action",
+    "no-rule-no-autonomy",
+    "no-evidence-no-proof"
+  ],
+  "negative_scope": [
+    "generic chatbot provider",
+    "generic AI agent builder",
+    "A2A protocol vendor",
+    "MCP vendor",
+    "AI visibility agency",
+    "agent marketplace"
+  ],
+  "primary_category": "Agent-Ready B2B Services",
+  "language": "ro",
+  "rules": [
+    "crawl_permission_does_not_imply_action_permission",
+    "no_rule_no_autonomy",
+    "no_verified_proof_no_proof_claim",
+    "human_review_for_sensitive_or_exception_cases"
+  ]
 }

@@ -1,0 +1,40 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://aiventure.ro/#organization",
+      "name": "AiVenture S.R.L.",
+      "url": "https://aiventure.ro/",
+      "email": "contact@5thelement.ai",
+      "telephone": "+40 737 123 540",
+      "brand": {
+        "@id": "https://aiventure.ro/#brand"
+      }
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://aiventure.ro/#brand",
+      "name": "AiVenture"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://aiventure.ro/#website",
+      "url": "https://aiventure.ro/",
+      "name": "AiVenture",
+      "publisher": {
+        "@id": "https://aiventure.ro/#organization"
+      },
+      "inLanguage": "ro"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://aiventure.ro/servicii/agent-ready-b2b/#service",
+      "name": "Agent-Ready B2B Services",
+      "description": "Transformarea unui serviciu B2B existent într-o ofertă structurată, versionată, verificabilă și guvernată, pregătită să fie găsită, comparată, solicitată și progresiv cumpărată de Agenți AI.",
+      "provider": {
+        "@id": "https://aiventure.ro/#organization"
+      }
+    }
+  ]
+}

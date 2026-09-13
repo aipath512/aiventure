@@ -1,29 +1,44 @@
 {
-  "schema_version": "1.0",
-  "entity": "https://aiventure.ro/#organization",
-  "principles": [
-    "Sprijinim pregătirea, nu certificăm.",
-    "Nu inventăm informație despre firma clientului.",
-    "Marcăm explicit nivelul de certitudine al fiecărei afirmații.",
-    "Garantăm doar partea controlabilă: infrastructura livrată și măsurarea ei."
+  "schema": "AIVENTURE_GOVERNANCE",
+  "version": "2.0",
+  "session": "0002H",
+  "principle": "AiVenture pune reglementarea înaintea acțiunii.",
+  "autonomy_levels": {
+    "L1": "DISCOVER",
+    "L2": "COMPARE",
+    "L3": "REQUEST",
+    "L4": "QUOTE",
+    "L5": "ORDER"
+  },
+  "canonical_rules": [
+    "Fără regulă explicită → fără autonomie.",
+    "Fără jurisdicție identificată → fără acțiune sensibilă.",
+    "Fără aprobare unde este necesară → fără angajament comercial.",
+    "Fără Evidence → fără dovada deciziei."
   ],
-  "certainty_chain": [
-    "access",
-    "visibility",
-    "citation",
-    "traffic",
-    "lead",
-    "revenue"
+  "allowed_actions": [
+    "discover",
+    "compare",
+    "check_eligibility",
+    "create_request",
+    "request_quote",
+    "generate_quote_draft",
+    "create_order_draft",
+    "order"
   ],
-  "guaranteed_segment": [
-    "access",
-    "visibility"
+  "forbidden_by_default": true,
+  "human_review_required_for": [
+    "discounts",
+    "special_terms",
+    "sensitive_cases",
+    "ambiguous_cases",
+    "financial_exceptions",
+    "jurisdiction_uncertainty"
   ],
-  "not_guaranteed_by_anyone": [
-    "citation",
-    "traffic",
-    "lead",
-    "revenue"
-  ],
-  "human_in_the_loop": true
+  "language": "ro",
+  "primary_service_id": "E_SERVICE_AGENT_READY_B2B",
+  "soc_id": "E_SOC_AGENT_READY_B2B_V1_0",
+  "rrvi_id": "E_RRVI",
+  "default_max_autonomy": "L3_REQUEST",
+  "order_policy": "DENY_UNLESS_EXPLICITLY_AUTHORIZED"
 }

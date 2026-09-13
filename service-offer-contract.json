@@ -1,0 +1,81 @@
+{
+  "schema": "AIVENTURE_SERVICE_OFFER_CONTRACT",
+  "version": "2.0",
+  "session": "0002H",
+  "document_id": "AIV-SOC-CANONICAL-0001",
+  "entity_id": "E_SOC_AGENT_READY_B2B_V1_0",
+  "name": "Service Offer Contract™",
+  "definition": "Sursa unică, versionată, de adevăr comercial, operațional și machine-readable pentru o ofertă de servicii.",
+  "status": "DRAFT",
+  "offer_version": "1.0",
+  "updated_at": "2026-09-13",
+  "valid_from": null,
+  "valid_until": null,
+  "provider": {
+    "id": "E_ORG_AIVENTURE",
+    "name": "AiVenture S.R.L."
+  },
+  "service": {
+    "id": "E_SERVICE_AGENT_READY_B2B",
+    "name": "Agent-Ready B2B Services",
+    "uri": "https://aiventure.ro/service.json"
+  },
+  "audience": {
+    "id": "E_AUDIENCE_B2B",
+    "status": "GENERIC_UNTIL_CONCRETE_SERVICE_DEFINED"
+  },
+  "eligibility": {
+    "status": "TO_BE_DEFINED_PER_CONCRETE_SERVICE",
+    "rules": []
+  },
+  "ineligibility": {
+    "status": "TO_BE_DEFINED_PER_CONCRETE_SERVICE",
+    "rules": []
+  },
+  "commerce": {
+    "price": null,
+    "pricing_rule": "NOT_PUBLISHED",
+    "currency": null,
+    "taxes": "TO_BE_DEFINED",
+    "payment_terms": "TO_BE_DEFINED",
+    "validity": "TO_BE_DEFINED"
+  },
+  "capacity": {
+    "availability": "NOT_PUBLISHED",
+    "capacity": null,
+    "sla": "TO_BE_DEFINED",
+    "delivery_time": "TO_BE_DEFINED"
+  },
+  "autonomy": {
+    "max_level": "L3_REQUEST_DEFAULT_FOR_PILOT",
+    "allowed": [
+      "discover",
+      "compare",
+      "check_eligibility",
+      "create_request"
+    ],
+    "conditional": [
+      "request_quote"
+    ],
+    "forbidden_without_explicit_rule": [
+      "generate_quote_draft",
+      "create_order_draft",
+      "order"
+    ]
+  },
+  "approval_policy": {
+    "human_review_required_for": [
+      "discounts",
+      "special_terms",
+      "sensitive_cases",
+      "ambiguous_cases",
+      "financial_exceptions",
+      "jurisdiction_uncertainty"
+    ]
+  },
+  "evidence_policy": {
+    "required": true,
+    "registry": "https://aiventure.ro/evidence.json"
+  },
+  "rrvi": "https://aiventure.ro/rrvi.json"
+}

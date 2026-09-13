@@ -1,0 +1,33 @@
+{
+  "schema": "AIVENTURE_CAPABILITIES",
+  "version": "2.0",
+  "session": "0002H",
+  "capabilities": [
+    "discover",
+    "compare",
+    "check_eligibility",
+    "create_request",
+    "request_quote",
+    "generate_quote_draft",
+    "create_order_draft",
+    "order"
+  ],
+  "governed_by": "https://aiventure.ro/governance.json",
+  "gated_by": "https://aiventure.ro/rrvi.json",
+  "buyer_agent": {
+    "discover_services": true,
+    "compare_services": true,
+    "request_services": true,
+    "human_interface": "https://aiventure.ro/buyer-agent/",
+    "a2a_endpoint": "https://aiventure.ro/api/a2a"
+  },
+  "primary_service_id": "E_SERVICE_AGENT_READY_B2B",
+  "authority": "https://aiventure.ro/authority.json",
+  "commercial_action_boundary": {
+    "discover": "allowed",
+    "compare": "allowed",
+    "request": "allowed_under_policy",
+    "quote": "conditional",
+    "order": "deny_by_default"
+  }
+}

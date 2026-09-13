@@ -1,0 +1,3315 @@
+{
+  "schema": "AIVENTURE_ONSITE_SIGNALS",
+  "version": "1.0",
+  "session": "0002H",
+  "scope": "on-site",
+  "domain": "https://aiventure.ro/",
+  "total_signals": 252,
+  "families": {
+    "technical_indexability": 20,
+    "html_document": 20,
+    "navigation_internal_linking": 15,
+    "content_clarity": 20,
+    "aeo": 15,
+    "geo_ere": 20,
+    "schema_org": 20,
+    "aio_ai_readability": 12,
+    "ai_discovery_files": 24,
+    "ai_crawler_access": 12,
+    "trust_proof": 15,
+    "governance_agent_ready": 21,
+    "performance_accessibility": 15,
+    "social_metadata": 8,
+    "site_architecture": 15
+  },
+  "status_model": [
+    "PASS",
+    "PARTIAL",
+    "FAIL",
+    "NA"
+  ],
+  "scoring": {
+    "PASS": 1,
+    "PARTIAL": 0.5,
+    "FAIL": 0,
+    "NA": "excluded"
+  },
+  "signals": [
+    {
+      "id": "OS001",
+      "family": "technical_indexability",
+      "name": "HTTPS available",
+      "check": "Site-ul public este disponibil prin HTTPS.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS002",
+      "family": "technical_indexability",
+      "name": "HTTP to HTTPS redirect",
+      "check": "HTTP redirecționează permanent către HTTPS.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS003",
+      "family": "technical_indexability",
+      "name": "Canonical host consistency",
+      "check": "www/non-www este unificat pe hostul canonic.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS004",
+      "family": "technical_indexability",
+      "name": "200 status on canonical pages",
+      "check": "Paginile indexabile canonice răspund HTTP 200.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS005",
+      "family": "technical_indexability",
+      "name": "No accidental noindex",
+      "check": "Paginile publice importante nu au noindex accidental.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS006",
+      "family": "technical_indexability",
+      "name": "No accidental nofollow",
+      "check": "Paginile importante nu blochează inutil urmărirea linkurilor.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS007",
+      "family": "technical_indexability",
+      "name": "robots.txt present",
+      "check": "/robots.txt există și poate fi citit.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS008",
+      "family": "technical_indexability",
+      "name": "robots default allow policy",
+      "check": "Politica User-agent:* este explicită pentru conținutul public.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS009",
+      "family": "technical_indexability",
+      "name": "robots sitemap declaration",
+      "check": "robots.txt declară sitemap.xml.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS010",
+      "family": "technical_indexability",
+      "name": "sitemap.xml present",
+      "check": "/sitemap.xml există.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS011",
+      "family": "technical_indexability",
+      "name": "sitemap valid XML",
+      "check": "Sitemap-ul este XML valid.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS012",
+      "family": "technical_indexability",
+      "name": "sitemap canonical URLs only",
+      "check": "Sitemap-ul conține numai URL-uri canonice.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS013",
+      "family": "technical_indexability",
+      "name": "sitemap no broken URLs",
+      "check": "URL-urile din sitemap nu sunt 4xx/5xx.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS014",
+      "family": "technical_indexability",
+      "name": "sitemap freshness",
+      "check": "Sitemap-ul reflectă paginile publice actuale.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS015",
+      "family": "technical_indexability",
+      "name": "canonical tag present",
+      "check": "Fiecare pagină indexabilă are canonical.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS016",
+      "family": "technical_indexability",
+      "name": "self-canonical correctness",
+      "check": "Canonical indică URL-ul canonic real al paginii.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS017",
+      "family": "technical_indexability",
+      "name": "duplicate URL control",
+      "check": "Parametri/variante duplicate sunt canonicalizate sau redirecționate.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS018",
+      "family": "technical_indexability",
+      "name": "redirect chain control",
+      "check": "Nu există lanțuri inutile de redirect.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS019",
+      "family": "technical_indexability",
+      "name": "404 correctness",
+      "check": "URL-urile inexistente întorc 404 real, nu soft-404.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS020",
+      "family": "technical_indexability",
+      "name": "410 handling where applicable",
+      "check": "Conținutul retras definitiv poate folosi 410 unde este justificat.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS021",
+      "family": "html_document",
+      "name": "HTML5 doctype",
+      "check": "Documentul folosește <!doctype html>.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS022",
+      "family": "html_document",
+      "name": "html lang",
+      "check": "Elementul html declară limba corectă.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS023",
+      "family": "html_document",
+      "name": "UTF-8 charset",
+      "check": "Charset UTF-8 este declarat.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS024",
+      "family": "html_document",
+      "name": "viewport meta",
+      "check": "Viewport este configurat pentru mobile.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS025",
+      "family": "html_document",
+      "name": "unique title",
+      "check": "Fiecare pagină are <title> unic.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS026",
+      "family": "html_document",
+      "name": "title intent alignment",
+      "check": "Title reflectă clar intenția principală a paginii.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS027",
+      "family": "html_document",
+      "name": "title entity clarity",
+      "check": "Entitatea/serviciul principal este identificabil din title.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS028",
+      "family": "html_document",
+      "name": "unique meta description",
+      "check": "Fiecare pagină are meta description proprie.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS029",
+      "family": "html_document",
+      "name": "meta description answerability",
+      "check": "Description explică în mod direct valoarea paginii.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS030",
+      "family": "html_document",
+      "name": "robots meta consistency",
+      "check": "Meta robots este coerent cu politica de indexare.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS031",
+      "family": "html_document",
+      "name": "single primary H1",
+      "check": "Există un H1 principal unic.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS032",
+      "family": "html_document",
+      "name": "H1 intent alignment",
+      "check": "H1 corespunde scopului paginii.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS033",
+      "family": "html_document",
+      "name": "heading hierarchy",
+      "check": "H2/H3 urmează o ierarhie semantică.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS034",
+      "family": "html_document",
+      "name": "no heading level misuse",
+      "check": "Heading-urile nu sunt folosite doar pentru styling.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS035",
+      "family": "html_document",
+      "name": "main landmark",
+      "check": "Conținutul principal este în <main>.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS036",
+      "family": "html_document",
+      "name": "header landmark",
+      "check": "Header-ul principal este semantic.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS037",
+      "family": "html_document",
+      "name": "nav landmark",
+      "check": "Navigația principală folosește <nav>.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS038",
+      "family": "html_document",
+      "name": "footer landmark",
+      "check": "Footer-ul este semantic.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS039",
+      "family": "html_document",
+      "name": "article/section semantics",
+      "check": "Article/section sunt folosite unde ajută semantica.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS040",
+      "family": "html_document",
+      "name": "DOM text availability",
+      "check": "Conținutul critic există în DOM și este parsabil.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS041",
+      "family": "navigation_internal_linking",
+      "name": "primary navigation clarity",
+      "check": "Navigația principală exprimă arhitectura reală a site-ului.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS042",
+      "family": "navigation_internal_linking",
+      "name": "visible breadcrumb",
+      "check": "Paginile interne au breadcrumb vizibil.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS043",
+      "family": "navigation_internal_linking",
+      "name": "BreadcrumbList match",
+      "check": "BreadcrumbList JSON-LD corespunde breadcrumb-ului vizibil.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS044",
+      "family": "navigation_internal_linking",
+      "name": "hub to child linking",
+      "check": "Hub-urile leagă paginile detaliate.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS045",
+      "family": "navigation_internal_linking",
+      "name": "child to hub linking",
+      "check": "Paginile detaliate leagă înapoi către hub.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS046",
+      "family": "navigation_internal_linking",
+      "name": "contextual internal links",
+      "check": "Conținutul folosește linkuri contextuale relevante.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS047",
+      "family": "navigation_internal_linking",
+      "name": "descriptive anchor text",
+      "check": "Anchor text-ul descrie ținta.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS048",
+      "family": "navigation_internal_linking",
+      "name": "orphan page prevention",
+      "check": "Nu există pagini importante fără linkuri interne.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS049",
+      "family": "navigation_internal_linking",
+      "name": "click depth control",
+      "check": "Paginile esențiale sunt accesibile la adâncime rezonabilă.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS050",
+      "family": "navigation_internal_linking",
+      "name": "related content links",
+      "check": "Există legături către conținut relevant asociat.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS051",
+      "family": "navigation_internal_linking",
+      "name": "footer quick links",
+      "check": "Footer-ul global oferă quick links utile.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS052",
+      "family": "navigation_internal_linking",
+      "name": "contact link consistency",
+      "check": "Contactul este ușor accesibil și consecvent.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS053",
+      "family": "navigation_internal_linking",
+      "name": "legal link accessibility",
+      "check": "Pagini legale sunt accesibile din footer.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS054",
+      "family": "navigation_internal_linking",
+      "name": "questions hub linkage",
+      "check": "Hub-ul /intrebari/ este legat coerent.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS055",
+      "family": "navigation_internal_linking",
+      "name": "resources hub linkage",
+      "check": "Hub-ul /resurse/ este legat coerent.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS056",
+      "family": "content_clarity",
+      "name": "clear primary proposition",
+      "check": "Propunerea principală este explicită.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS057",
+      "family": "content_clarity",
+      "name": "audience clarity",
+      "check": "Este clar cui se adresează pagina/oferta.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS058",
+      "family": "content_clarity",
+      "name": "problem clarity",
+      "check": "Problema rezolvată este exprimată explicit.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS059",
+      "family": "content_clarity",
+      "name": "outcome clarity",
+      "check": "Rezultatul este exprimat explicit.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS060",
+      "family": "content_clarity",
+      "name": "deliverables clarity",
+      "check": "Livrabilele sunt precizate unde se aplică.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS061",
+      "family": "content_clarity",
+      "name": "exclusions clarity",
+      "check": "Excluderile/ce nu include oferta sunt explicite.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS062",
+      "family": "content_clarity",
+      "name": "differentiator clarity",
+      "check": "Diferențiatorii sunt formulați explicit.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS063",
+      "family": "content_clarity",
+      "name": "negative scope clarity",
+      "check": "Este clar ce NU oferă AiVenture.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS064",
+      "family": "content_clarity",
+      "name": "geography clarity",
+      "check": "Țara/teritoriul relevant este explicit.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS065",
+      "family": "content_clarity",
+      "name": "jurisdiction clarity",
+      "check": "Jurisdicția este explicită unde contează.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS066",
+      "family": "content_clarity",
+      "name": "language clarity",
+      "check": "Limba serviciului este explicită.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS067",
+      "family": "content_clarity",
+      "name": "pricing clarity",
+      "check": "Prețul sau regula de preț este explicită unde se aplică.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS068",
+      "family": "content_clarity",
+      "name": "availability clarity",
+      "check": "Disponibilitatea/capacitatea este clară unde se aplică.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS069",
+      "family": "content_clarity",
+      "name": "SLA clarity",
+      "check": "SLA/termenele sunt precizate unde se aplică.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS070",
+      "family": "content_clarity",
+      "name": "version clarity",
+      "check": "Versiunea obiectului/ofertelor canonice este vizibilă sau accesibilă.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS071",
+      "family": "content_clarity",
+      "name": "updated date clarity",
+      "check": "Data actualizării este disponibilă unde contează.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS072",
+      "family": "content_clarity",
+      "name": "answer-first copy",
+      "check": "Răspunsul principal apare devreme.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS073",
+      "family": "content_clarity",
+      "name": "definition blocks",
+      "check": "Termenii proprii au definiții directe.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS074",
+      "family": "content_clarity",
+      "name": "quotable statements",
+      "check": "Există propoziții scurte, clare și citabile.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS075",
+      "family": "content_clarity",
+      "name": "comparison dimensions",
+      "check": "Serviciul poate fi comparat după criterii explicite.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS076",
+      "family": "aeo",
+      "name": "question-led coverage",
+      "check": "Pagina răspunde întrebărilor reale ale utilizatorului.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS077",
+      "family": "aeo",
+      "name": "visible FAQ",
+      "check": "FAQ-ul este vizibil în pagină.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS078",
+      "family": "aeo",
+      "name": "FAQ relevance",
+      "check": "FAQ-urile sunt specifice paginii, nu boilerplate irelevant.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS079",
+      "family": "aeo",
+      "name": "direct answer blocks",
+      "check": "Întrebările au răspunsuri directe.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS080",
+      "family": "aeo",
+      "name": "what intent",
+      "check": "Pagina răspunde clar la «Ce este?»",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS081",
+      "family": "aeo",
+      "name": "who intent",
+      "check": "Pagina răspunde la «Pentru cine?»",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS082",
+      "family": "aeo",
+      "name": "why intent",
+      "check": "Pagina răspunde la «De ce?»",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS083",
+      "family": "aeo",
+      "name": "how intent",
+      "check": "Pagina răspunde la «Cum?»",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS084",
+      "family": "aeo",
+      "name": "where intent",
+      "check": "Pagina răspunde la «Unde?»",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS085",
+      "family": "aeo",
+      "name": "when intent",
+      "check": "Pagina răspunde la «Când?»",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS086",
+      "family": "aeo",
+      "name": "cost intent",
+      "check": "Pagina răspunde la «Cât costă?» unde se aplică.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS087",
+      "family": "aeo",
+      "name": "eligibility intent",
+      "check": "Pagina explică eligibilitatea.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS088",
+      "family": "aeo",
+      "name": "comparison intent",
+      "check": "Pagina susține comparația.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS089",
+      "family": "aeo",
+      "name": "decision intent",
+      "check": "Pagina oferă informațiile necesare deciziei.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS090",
+      "family": "aeo",
+      "name": "next-step intent",
+      "check": "Pagina are următorul pas clar.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS091",
+      "family": "geo_ere",
+      "name": "primary entity explicit",
+      "check": "Entitatea principală este explicit identificată.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS092",
+      "family": "geo_ere",
+      "name": "organization-service relation",
+      "check": "Relația Organization → Service este exprimată.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS093",
+      "family": "geo_ere",
+      "name": "service-provider inverse",
+      "check": "Relația Service → Provider este exprimată.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS094",
+      "family": "geo_ere",
+      "name": "service-offer relation",
+      "check": "Service ↔ Offer este exprimată.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS095",
+      "family": "geo_ere",
+      "name": "service-SOC relation",
+      "check": "Service ↔ Service Offer Contract™ este exprimată.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS096",
+      "family": "geo_ere",
+      "name": "SOC-RRVI relation",
+      "check": "SOC ↔ RRVI este exprimată.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS097",
+      "family": "geo_ere",
+      "name": "service-audience relation",
+      "check": "Service ↔ Audience este exprimată.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS098",
+      "family": "geo_ere",
+      "name": "service-jurisdiction relation",
+      "check": "Service ↔ Jurisdiction este exprimată.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS099",
+      "family": "geo_ere",
+      "name": "jurisdiction-regulation relation",
+      "check": "Jurisdiction ↔ Regulation este exprimată.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS100",
+      "family": "geo_ere",
+      "name": "service-autonomy relation",
+      "check": "Service ↔ Autonomy Policy este exprimată.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS101",
+      "family": "geo_ere",
+      "name": "action-autonomy relation",
+      "check": "Action ↔ Autonomy Level este exprimată.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS102",
+      "family": "geo_ere",
+      "name": "request-service relation",
+      "check": "Request ↔ Service este exprimată.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS103",
+      "family": "geo_ere",
+      "name": "request-quote relation",
+      "check": "Request ↔ Quote este exprimată.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS104",
+      "family": "geo_ere",
+      "name": "quote-order relation",
+      "check": "Quote ↔ Order este exprimată.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS105",
+      "family": "geo_ere",
+      "name": "order-delivery relation",
+      "check": "Order ↔ Delivery este exprimată.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS106",
+      "family": "geo_ere",
+      "name": "action-evidence relation",
+      "check": "Action ↔ Evidence este exprimată.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS107",
+      "family": "geo_ere",
+      "name": "stable entity identifiers",
+      "check": "Entitățile au ID-uri stabile.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS108",
+      "family": "geo_ere",
+      "name": "cross-source entity consistency",
+      "check": "ID-urile sunt identice în toate suprafețele.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS109",
+      "family": "geo_ere",
+      "name": "relationship directionality",
+      "check": "Relațiile critice sunt bidirecționale.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS110",
+      "family": "geo_ere",
+      "name": "cardinality explicitness",
+      "check": "Cardinalitățile relevante pot fi determinate.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS111",
+      "family": "schema_org",
+      "name": "Organization schema",
+      "check": "Organization JSON-LD este prezent și valid.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS112",
+      "family": "schema_org",
+      "name": "Brand schema",
+      "check": "Brand este definit unde se aplică.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS113",
+      "family": "schema_org",
+      "name": "WebSite schema",
+      "check": "WebSite este prezent.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS114",
+      "family": "schema_org",
+      "name": "WebPage schema",
+      "check": "WebPage este specific paginii.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS115",
+      "family": "schema_org",
+      "name": "Service schema",
+      "check": "Serviciile reale folosesc Service.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS116",
+      "family": "schema_org",
+      "name": "Offer schema",
+      "check": "Ofertele reale folosesc Offer.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS117",
+      "family": "schema_org",
+      "name": "OfferCatalog schema",
+      "check": "Catalogul de ofertă este modelat coerent.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS118",
+      "family": "schema_org",
+      "name": "FAQPage schema",
+      "check": "FAQPage reflectă FAQ vizibil.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS119",
+      "family": "schema_org",
+      "name": "BreadcrumbList schema",
+      "check": "BreadcrumbList este corect.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS120",
+      "family": "schema_org",
+      "name": "DefinedTerm schema",
+      "check": "Termenii proprii sunt modelați ca DefinedTerm.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS121",
+      "family": "schema_org",
+      "name": "DefinedTermSet schema",
+      "check": "Termenii sunt grupați coerent.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS122",
+      "family": "schema_org",
+      "name": "ImageObject schema",
+      "check": "Imaginea principală este reprezentată unde ajută.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS123",
+      "family": "schema_org",
+      "name": "BlogPosting/Article schema",
+      "check": "Articolele folosesc tipul editorial adecvat.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS124",
+      "family": "schema_org",
+      "name": "mainEntity correctness",
+      "check": "mainEntity indică obiectul principal.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS125",
+      "family": "schema_org",
+      "name": "about correctness",
+      "check": "about leagă pagina de entitatea corectă.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS126",
+      "family": "schema_org",
+      "name": "mentions correctness",
+      "check": "mentions este folosit pentru entități secundare reale.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS127",
+      "family": "schema_org",
+      "name": "sameAs integrity",
+      "check": "sameAs folosește numai profiluri reale.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS128",
+      "family": "schema_org",
+      "name": "schema-visible-content parity",
+      "check": "JSON-LD nu declară fapte absente/contradictorii.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS129",
+      "family": "schema_org",
+      "name": "stable @id",
+      "check": "Aceeași entitate păstrează același @id.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS130",
+      "family": "schema_org",
+      "name": "no invented schema types",
+      "check": "Nu sunt inventate tipuri/proprietăți Schema.org.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS131",
+      "family": "aio_ai_readability",
+      "name": "AI-readable summary",
+      "check": "Pagina are un rezumat clar pentru interpretare AI.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS132",
+      "family": "aio_ai_readability",
+      "name": "canonical category clarity",
+      "check": "Categoria de piață este explicită.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS133",
+      "family": "aio_ai_readability",
+      "name": "canonical product definition",
+      "check": "Definiția produsului/serviciului este stabilă.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS134",
+      "family": "aio_ai_readability",
+      "name": "machine-readable differentiators",
+      "check": "Diferențiatorii pot fi extrași fără inferență.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS135",
+      "family": "aio_ai_readability",
+      "name": "claim-evidence pairing",
+      "check": "Afirmațiile importante trimit la dovezi.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS136",
+      "family": "aio_ai_readability",
+      "name": "citation readiness",
+      "check": "Propozițiile importante au context și atribuire.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS137",
+      "family": "aio_ai_readability",
+      "name": "conversational formatting",
+      "check": "Conținutul poate fi transformat ușor în răspuns conversațional.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS138",
+      "family": "aio_ai_readability",
+      "name": "cross-page consistency",
+      "check": "Definițiile importante nu se contrazic între pagini.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS139",
+      "family": "aio_ai_readability",
+      "name": "source-of-truth alignment",
+      "check": "Conținutul vizibil corespunde obiectelor canonice.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS140",
+      "family": "aio_ai_readability",
+      "name": "AI action boundaries",
+      "check": "Limitele acțiunilor Agentului sunt explicite.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS141",
+      "family": "aio_ai_readability",
+      "name": "human escalation clarity",
+      "check": "Condițiile de escaladare către om sunt explicite.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS142",
+      "family": "aio_ai_readability",
+      "name": "machine reconstructability",
+      "check": "AI poate reconstrui oferta fără presupuneri majore.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS143",
+      "family": "ai_discovery_files",
+      "name": "llms.txt present",
+      "check": "/llms.txt există.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS144",
+      "family": "ai_discovery_files",
+      "name": "llms.txt canonical summary",
+      "check": "llms.txt descrie corect entitatea și oferta.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS145",
+      "family": "ai_discovery_files",
+      "name": "llms.txt priority URLs",
+      "check": "llms.txt indică URL-urile prioritare.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS146",
+      "family": "ai_discovery_files",
+      "name": "llms.txt negative scope",
+      "check": "llms.txt declară limitele relevante.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS147",
+      "family": "ai_discovery_files",
+      "name": "ai.txt present",
+      "check": "/ai.txt există dacă este folosit în arhitectura AiVenture.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS148",
+      "family": "ai_discovery_files",
+      "name": "ai.json present",
+      "check": "/ai.json există.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS149",
+      "family": "ai_discovery_files",
+      "name": "ai.json identity consistency",
+      "check": "ai.json folosește identitatea canonică.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS150",
+      "family": "ai_discovery_files",
+      "name": "entities.json present",
+      "check": "/entities.json există.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS151",
+      "family": "ai_discovery_files",
+      "name": "ere-dictionary.json present",
+      "check": "/ere-dictionary.json există.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS152",
+      "family": "ai_discovery_files",
+      "name": "intents.json present",
+      "check": "/intents.json există.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS153",
+      "family": "ai_discovery_files",
+      "name": "service.json present",
+      "check": "/service.json există.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS154",
+      "family": "ai_discovery_files",
+      "name": "service-offer-contract.json present",
+      "check": "SOC machine-readable există.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS155",
+      "family": "ai_discovery_files",
+      "name": "governance.json present",
+      "check": "/governance.json există.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS156",
+      "family": "ai_discovery_files",
+      "name": "rrvi.json present",
+      "check": "/rrvi.json există.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS157",
+      "family": "ai_discovery_files",
+      "name": "proof.json present",
+      "check": "/proof.json există.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS158",
+      "family": "ai_discovery_files",
+      "name": "evidence.json present",
+      "check": "/evidence.json există.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS159",
+      "family": "ai_discovery_files",
+      "name": "signals-catalog.json present",
+      "check": "Catalogul de semnale există.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS160",
+      "family": "ai_discovery_files",
+      "name": "signal-assessment.json present",
+      "check": "Assessment-ul semnalelor există.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS161",
+      "family": "ai_discovery_files",
+      "name": "capabilities.json present",
+      "check": "Capabilitățile agentice sunt expuse.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS162",
+      "family": "ai_discovery_files",
+      "name": "authority.json present",
+      "check": "Autoritatea/aprobările sunt expuse.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS163",
+      "family": "ai_discovery_files",
+      "name": "policy.json present",
+      "check": "Politicile publice sunt expuse.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS164",
+      "family": "ai_discovery_files",
+      "name": "allow-lane-matrix.json present",
+      "check": "Matricea de acces există.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS165",
+      "family": "ai_discovery_files",
+      "name": "agent-card present",
+      "check": "/.well-known/agent-card.json există.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS166",
+      "family": "ai_discovery_files",
+      "name": "cross-file canonical consistency",
+      "check": "Fișierele machine-readable nu se contrazic.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS167",
+      "family": "ai_crawler_access",
+      "name": "GPTBot policy",
+      "check": "robots.txt declară politica GPTBot.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS168",
+      "family": "ai_crawler_access",
+      "name": "OAI-SearchBot policy",
+      "check": "robots.txt declară politica OAI-SearchBot.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS169",
+      "family": "ai_crawler_access",
+      "name": "ChatGPT-User policy",
+      "check": "robots.txt declară politica ChatGPT-User.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS170",
+      "family": "ai_crawler_access",
+      "name": "ClaudeBot policy",
+      "check": "robots.txt declară politica ClaudeBot.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS171",
+      "family": "ai_crawler_access",
+      "name": "Claude-SearchBot policy",
+      "check": "robots.txt declară politica Claude-SearchBot.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS172",
+      "family": "ai_crawler_access",
+      "name": "PerplexityBot policy",
+      "check": "robots.txt declară politica PerplexityBot.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS173",
+      "family": "ai_crawler_access",
+      "name": "Google-Extended policy",
+      "check": "robots.txt declară politica Google-Extended.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS174",
+      "family": "ai_crawler_access",
+      "name": "Applebot-Extended policy",
+      "check": "robots.txt declară politica Applebot-Extended.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS175",
+      "family": "ai_crawler_access",
+      "name": "CCBot policy",
+      "check": "robots.txt declară politica CCBot.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS176",
+      "family": "ai_crawler_access",
+      "name": "DeepSeekBot policy",
+      "check": "robots.txt declară politica DeepSeekBot.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS177",
+      "family": "ai_crawler_access",
+      "name": "YouBot policy",
+      "check": "robots.txt declară politica YouBot.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS178",
+      "family": "ai_crawler_access",
+      "name": "Cohere-AI policy",
+      "check": "robots.txt declară politica Cohere-AI.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS179",
+      "family": "trust_proof",
+      "name": "legal identity visible",
+      "check": "Entitatea juridică poate fi identificată.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS180",
+      "family": "trust_proof",
+      "name": "contact visible",
+      "check": "Contactul este vizibil și consistent.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS181",
+      "family": "trust_proof",
+      "name": "legal pages present",
+      "check": "Legal/Terms/Privacy/Cookies există unde se aplică.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS182",
+      "family": "trust_proof",
+      "name": "AI transparency page",
+      "check": "Utilizarea AI este explicată unde este relevant.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS183",
+      "family": "trust_proof",
+      "name": "EU AI Act-first disclosure",
+      "check": "Poziționarea EU AI Act-first este formulată fără pretenții false.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS184",
+      "family": "trust_proof",
+      "name": "no automatic compliance claim",
+      "check": "Nu se promite conformitate legală automată.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS185",
+      "family": "trust_proof",
+      "name": "no false certification",
+      "check": "Nu se declară certificări inexistente.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS186",
+      "family": "trust_proof",
+      "name": "proof references",
+      "check": "Afirmațiile probatorii au referințe.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS187",
+      "family": "trust_proof",
+      "name": "SHA-256 field support",
+      "check": "Obiectele canonice pot publica SHA-256 real.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS188",
+      "family": "trust_proof",
+      "name": "OTS field support",
+      "check": "Obiectele canonice pot publica referință OTS reală.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS189",
+      "family": "trust_proof",
+      "name": "proof status distinction",
+      "check": "DECLARED/PENDING/VERIFIED/BLOCK CONFIRMED sunt distincte.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS190",
+      "family": "trust_proof",
+      "name": "publication date",
+      "check": "Conținutul relevant are data publicării.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS191",
+      "family": "trust_proof",
+      "name": "modified date",
+      "check": "Conținutul relevant are data modificării.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS192",
+      "family": "trust_proof",
+      "name": "session identifier",
+      "check": "SESSION 0002H este disponibil conform regulii site-ului.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS193",
+      "family": "trust_proof",
+      "name": "timestamp header",
+      "check": "Timestamp-ul este prezent în header conform regulii stabilite.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS194",
+      "family": "governance_agent_ready",
+      "name": "L1 Discover defined",
+      "check": "L1 Discover este definit.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS195",
+      "family": "governance_agent_ready",
+      "name": "L2 Compare defined",
+      "check": "L2 Compare este definit.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS196",
+      "family": "governance_agent_ready",
+      "name": "L3 Request defined",
+      "check": "L3 Request este definit.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS197",
+      "family": "governance_agent_ready",
+      "name": "L4 Quote defined",
+      "check": "L4 Quote este definit.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS198",
+      "family": "governance_agent_ready",
+      "name": "L5 Order defined",
+      "check": "L5 Order este definit.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS199",
+      "family": "governance_agent_ready",
+      "name": "max autonomy explicit",
+      "check": "Nivelul maxim de autonomie este explicit.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS200",
+      "family": "governance_agent_ready",
+      "name": "allowed actions explicit",
+      "check": "Acțiunile permise sunt enumerate.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS201",
+      "family": "governance_agent_ready",
+      "name": "forbidden actions explicit",
+      "check": "Acțiunile interzise sunt enumerate.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS202",
+      "family": "governance_agent_ready",
+      "name": "financial threshold support",
+      "check": "Există suport pentru prag financiar.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS203",
+      "family": "governance_agent_ready",
+      "name": "human review cases",
+      "check": "Cazurile de human review sunt definite.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS204",
+      "family": "governance_agent_ready",
+      "name": "sensitive data cases",
+      "check": "Cazurile cu date sensibile sunt definite.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS205",
+      "family": "governance_agent_ready",
+      "name": "jurisdiction required",
+      "check": "Acțiunile sensibile cer jurisdicție.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS206",
+      "family": "governance_agent_ready",
+      "name": "RRVI publish gate",
+      "check": "Publish Gate este definit.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS207",
+      "family": "governance_agent_ready",
+      "name": "RRVI runtime gate",
+      "check": "Runtime Gate este definit.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS208",
+      "family": "governance_agent_ready",
+      "name": "RRVI allow decision",
+      "check": "Decizia allow este suportată.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS209",
+      "family": "governance_agent_ready",
+      "name": "RRVI conditional decision",
+      "check": "allow_with_conditions este suportată.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS210",
+      "family": "governance_agent_ready",
+      "name": "RRVI review decision",
+      "check": "human_review_required este suportată.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS211",
+      "family": "governance_agent_ready",
+      "name": "RRVI block decision",
+      "check": "block este suportată.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS212",
+      "family": "governance_agent_ready",
+      "name": "no rule no autonomy",
+      "check": "Regula Fără regulă explicită → fără autonomie este reprezentată.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS213",
+      "family": "governance_agent_ready",
+      "name": "no approval no commitment",
+      "check": "Lipsa aprobării oprește angajamentul.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS214",
+      "family": "governance_agent_ready",
+      "name": "no evidence no proof",
+      "check": "Lipsa Evidence oprește declararea dovezii.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS215",
+      "family": "performance_accessibility",
+      "name": "mobile responsive",
+      "check": "Pagina este utilizabilă pe mobil.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS216",
+      "family": "performance_accessibility",
+      "name": "mobile content parity",
+      "check": "Conținutul esențial este prezent și pe mobil.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS217",
+      "family": "performance_accessibility",
+      "name": "image alt text",
+      "check": "Imaginile informative au alt relevant.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS218",
+      "family": "performance_accessibility",
+      "name": "explicit image dimensions",
+      "check": "Imaginile declară dimensiuni unde este util.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS219",
+      "family": "performance_accessibility",
+      "name": "lazy loading hygiene",
+      "check": "Resursele non-critice pot fi încărcate lazy.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS220",
+      "family": "performance_accessibility",
+      "name": "LCP hygiene",
+      "check": "Conținutul principal nu este blocat inutil.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS221",
+      "family": "performance_accessibility",
+      "name": "CLS hygiene",
+      "check": "Layout-ul este stabil.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS222",
+      "family": "performance_accessibility",
+      "name": "INP hygiene",
+      "check": "Interacțiunile principale sunt responsive.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS223",
+      "family": "performance_accessibility",
+      "name": "critical content not JS-only",
+      "check": "Conținutul semantic critic nu depinde exclusiv de JS.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS224",
+      "family": "performance_accessibility",
+      "name": "crawlable anchor links",
+      "check": "Linkurile importante sunt <a href>.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS225",
+      "family": "performance_accessibility",
+      "name": "accessible navigation",
+      "check": "Navigația este accesibilă semantic.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS226",
+      "family": "performance_accessibility",
+      "name": "ARIA correctness",
+      "check": "ARIA nu contrazice semantica nativă.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS227",
+      "family": "performance_accessibility",
+      "name": "contrast/readability",
+      "check": "Textul esențial este lizibil.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS228",
+      "family": "performance_accessibility",
+      "name": "keyboard reachability",
+      "check": "Elementele interactive esențiale sunt accesibile din tastatură.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS229",
+      "family": "performance_accessibility",
+      "name": "no intrusive blocking overlay",
+      "check": "Conținutul nu este blocat inutil de overlay-uri.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS230",
+      "family": "social_metadata",
+      "name": "Open Graph title",
+      "check": "og:title este prezent și specific paginii.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS231",
+      "family": "social_metadata",
+      "name": "Open Graph description",
+      "check": "og:description este prezent și specific.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS232",
+      "family": "social_metadata",
+      "name": "Open Graph URL",
+      "check": "og:url coincide cu canonical.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS233",
+      "family": "social_metadata",
+      "name": "Open Graph image",
+      "check": "og:image există și este valid.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS234",
+      "family": "social_metadata",
+      "name": "Twitter/X card",
+      "check": "Metadata Twitter/X este prezentă.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS235",
+      "family": "social_metadata",
+      "name": "social image dimensions",
+      "check": "Dimensiunile imaginii sociale sunt declarate unde este util.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS236",
+      "family": "social_metadata",
+      "name": "social identity consistency",
+      "check": "Titlurile sociale nu schimbă poziționarea canonică.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS237",
+      "family": "social_metadata",
+      "name": "social profile links",
+      "check": "Linkurile către profiluri sociale reale sunt prezente.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS238",
+      "family": "site_architecture",
+      "name": "home page canonical role",
+      "check": "Homepage exprimă poziționarea principală.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS239",
+      "family": "site_architecture",
+      "name": "services hub",
+      "check": "/servicii/ există și organizează serviciile.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS240",
+      "family": "site_architecture",
+      "name": "products hub",
+      "check": "/produse/ există și separă produsele.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS241",
+      "family": "site_architecture",
+      "name": "offer page",
+      "check": "/oferta/ explică oferta comercială.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS242",
+      "family": "site_architecture",
+      "name": "agent-ready page",
+      "check": "/agent-ready/ definește categoria.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS243",
+      "family": "site_architecture",
+      "name": "SOC page",
+      "check": "/service-offer-contract/ definește SOC.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS244",
+      "family": "site_architecture",
+      "name": "RRVI page",
+      "check": "/rrvi/ definește RRVI.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS245",
+      "family": "site_architecture",
+      "name": "EU AI Act page",
+      "check": "/eu-ai-act/ explică poziționarea relevantă.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS246",
+      "family": "site_architecture",
+      "name": "questions hub",
+      "check": "/intrebari/ există.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS247",
+      "family": "site_architecture",
+      "name": "resources hub",
+      "check": "/resurse/ există.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS248",
+      "family": "site_architecture",
+      "name": "innovations hub",
+      "check": "/inovatii/ există.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS249",
+      "family": "site_architecture",
+      "name": "blog hub",
+      "check": "/blog/ există.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS250",
+      "family": "site_architecture",
+      "name": "mission page",
+      "check": "/misiune/ există.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS251",
+      "family": "site_architecture",
+      "name": "vision page",
+      "check": "/viziune/ există.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OS252",
+      "family": "site_architecture",
+      "name": "contact page",
+      "check": "/contact/ există.",
+      "scope": "on-site",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    }
+  ]
+}

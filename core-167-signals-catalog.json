@@ -1,0 +1,1035 @@
+{
+  "schema": "AIVENTURE_167_AI_SIGNALS_CATALOG",
+  "version": "1.0",
+  "session": "0002H",
+  "generated_at": "2026-09-12T15:17:00+03:00",
+  "domain": "https://aiventure.ro/",
+  "total_signals": 167,
+  "families": {
+    "identity_entity": 48,
+    "trust_proof": 61,
+    "intent_governance": 58
+  },
+  "status_model": [
+    "PASS",
+    "PARTIAL",
+    "FAIL",
+    "NA"
+  ],
+  "scoring": {
+    "PASS": 1,
+    "PARTIAL": 0.5,
+    "FAIL": 0,
+    "NA": "excluded"
+  },
+  "principles": [
+    "Claim != Proof",
+    "Generated != Deployed",
+    "Deployed != Valid",
+    "Valid != Verified"
+  ],
+  "signals": [
+    {
+      "id": "S001",
+      "family": "identity_entity",
+      "name": "Canonical Organization Identity",
+      "check": "Există o entitate principală unică: AiVenture S.R.L."
+    },
+    {
+      "id": "S002",
+      "family": "identity_entity",
+      "name": "Legal Name",
+      "check": "Numele juridic este public și consecvent"
+    },
+    {
+      "id": "S003",
+      "family": "identity_entity",
+      "name": "Brand Identity",
+      "check": "Brandul AiVenture este definit separat de entitatea legală"
+    },
+    {
+      "id": "S004",
+      "family": "identity_entity",
+      "name": "Canonical Organization URL",
+      "check": "https://aiventure.ro/ este URL-ul canonic"
+    },
+    {
+      "id": "S005",
+      "family": "identity_entity",
+      "name": "Canonical HTTPS Identity",
+      "check": "Identitatea folosește exclusiv HTTPS"
+    },
+    {
+      "id": "S006",
+      "family": "identity_entity",
+      "name": "Organization JSON-LD",
+      "check": "Există Organization valid"
+    },
+    {
+      "id": "S007",
+      "family": "identity_entity",
+      "name": "WebSite JSON-LD",
+      "check": "Există WebSite valid"
+    },
+    {
+      "id": "S008",
+      "family": "identity_entity",
+      "name": "WebPage Identity",
+      "check": "Fiecare pagină are WebPage și @id propriu"
+    },
+    {
+      "id": "S009",
+      "family": "identity_entity",
+      "name": "Canonical Logo",
+      "check": "Logo-ul are URL și identitate stabile"
+    },
+    {
+      "id": "S010",
+      "family": "identity_entity",
+      "name": "Canonical Contact Point",
+      "check": "Contactul oficial este identificabil"
+    },
+    {
+      "id": "S011",
+      "family": "identity_entity",
+      "name": "Country Identity",
+      "check": "România este declarată explicit"
+    },
+    {
+      "id": "S012",
+      "family": "identity_entity",
+      "name": "Language Identity",
+      "check": "ro / ro-RO este declarat coerent"
+    },
+    {
+      "id": "S013",
+      "family": "identity_entity",
+      "name": "Market Identity",
+      "check": "Piața adresată este explicită"
+    },
+    {
+      "id": "S014",
+      "family": "identity_entity",
+      "name": "Category Identity",
+      "check": "Agent-Ready B2B Services este categoria principală"
+    },
+    {
+      "id": "S015",
+      "family": "identity_entity",
+      "name": "Canonical Mission",
+      "check": "Misiunea este publică și neambiguă"
+    },
+    {
+      "id": "S016",
+      "family": "identity_entity",
+      "name": "Canonical Vision",
+      "check": "Viziunea este publică și neambiguă"
+    },
+    {
+      "id": "S017",
+      "family": "identity_entity",
+      "name": "Founder / Responsible Person",
+      "check": "Persoana relevantă poate fi legată de organizație când este publicată"
+    },
+    {
+      "id": "S018",
+      "family": "identity_entity",
+      "name": "sameAs Resolution",
+      "check": "Profilele externe reale sunt legate prin sameAs"
+    },
+    {
+      "id": "S019",
+      "family": "identity_entity",
+      "name": "Commercial Identifier",
+      "check": "Identificatorii comerciali publicabili sunt consistenți"
+    },
+    {
+      "id": "S020",
+      "family": "identity_entity",
+      "name": "Service Catalog Identity",
+      "check": "Catalogul de servicii poate fi identificat"
+    },
+    {
+      "id": "S021",
+      "family": "identity_entity",
+      "name": "Individual Service Entity",
+      "check": "Fiecare serviciu are identitate proprie"
+    },
+    {
+      "id": "S022",
+      "family": "identity_entity",
+      "name": "Product Entity",
+      "check": "Fiecare produs este separat de serviciile comerciale"
+    },
+    {
+      "id": "S023",
+      "family": "identity_entity",
+      "name": "Innovation Entity",
+      "check": "Fiecare inovație are entitate și definiție proprie"
+    },
+    {
+      "id": "S024",
+      "family": "identity_entity",
+      "name": "Business Audience Entity",
+      "check": "Publicul B2B este reprezentat explicit"
+    },
+    {
+      "id": "S025",
+      "family": "identity_entity",
+      "name": "Jurisdiction Entity",
+      "check": "Jurisdicția este reprezentată ca obiect distinct"
+    },
+    {
+      "id": "S026",
+      "family": "identity_entity",
+      "name": "Regulation Entity",
+      "check": "Reglementările relevante sunt entități identificabile"
+    },
+    {
+      "id": "S027",
+      "family": "identity_entity",
+      "name": "Service Offer Contract™ Entity",
+      "check": "SOC este identificabil semantic"
+    },
+    {
+      "id": "S028",
+      "family": "identity_entity",
+      "name": "RRVI™ Entity",
+      "check": "RRVI este identificabil semantic"
+    },
+    {
+      "id": "S029",
+      "family": "identity_entity",
+      "name": "Autonomy Model Entity",
+      "check": "L1–L5 este reprezentat ca model propriu"
+    },
+    {
+      "id": "S030",
+      "family": "identity_entity",
+      "name": "Evidence Entity",
+      "check": "Evidence este definit ca obiect distinct"
+    },
+    {
+      "id": "S031",
+      "family": "identity_entity",
+      "name": "Agent Entity",
+      "check": "Agentul poate avea identitate proprie"
+    },
+    {
+      "id": "S032",
+      "family": "identity_entity",
+      "name": "Agent Card Identity",
+      "check": "Agent Card indică aceeași entitate/furnizor"
+    },
+    {
+      "id": "S033",
+      "family": "identity_entity",
+      "name": "Capability Identity",
+      "check": "Capabilitățile Agentului sunt identificabile"
+    },
+    {
+      "id": "S034",
+      "family": "identity_entity",
+      "name": "Service Channel Identity",
+      "check": "Canalul digital de acces la serviciu este explicit"
+    },
+    {
+      "id": "S035",
+      "family": "identity_entity",
+      "name": "Offer Entity",
+      "check": "Oferta este separată semantic de serviciu"
+    },
+    {
+      "id": "S036",
+      "family": "identity_entity",
+      "name": "OfferCatalog Entity",
+      "check": "Ofertele sunt grupate într-un catalog coerent"
+    },
+    {
+      "id": "S037",
+      "family": "identity_entity",
+      "name": "service.json",
+      "check": "Există reprezentare machine-readable a serviciului"
+    },
+    {
+      "id": "S038",
+      "family": "identity_entity",
+      "name": "ai.json",
+      "check": "Există identitatea AI canonică"
+    },
+    {
+      "id": "S039",
+      "family": "identity_entity",
+      "name": "entities.json",
+      "check": "Există registrul machine-readable de entități"
+    },
+    {
+      "id": "S040",
+      "family": "identity_entity",
+      "name": "ERE Dictionary",
+      "check": "Există dicționar Entities–Relationships–Cardinalities"
+    },
+    {
+      "id": "S041",
+      "family": "identity_entity",
+      "name": "Stable Entity IDs",
+      "check": "Aceeași entitate păstrează același ID"
+    },
+    {
+      "id": "S042",
+      "family": "identity_entity",
+      "name": "Cross-Source Identity Consistency",
+      "check": "HTML, JSON-LD, JSON și Agent Card folosesc aceeași identitate"
+    },
+    {
+      "id": "S043",
+      "family": "identity_entity",
+      "name": "Entity Disambiguation",
+      "check": "Entitățile similare pot fi diferențiate fără presupuneri"
+    },
+    {
+      "id": "S044",
+      "family": "identity_entity",
+      "name": "Relationship Directionality",
+      "check": "Relațiile importante sunt exprimate și invers"
+    },
+    {
+      "id": "S045",
+      "family": "identity_entity",
+      "name": "Relationship Cardinality",
+      "check": "1:1, 1:N și N:N sunt explicite unde contează"
+    },
+    {
+      "id": "S046",
+      "family": "identity_entity",
+      "name": "Primary Entity / mainEntity",
+      "check": "Obiectul principal al paginii este explicit"
+    },
+    {
+      "id": "S047",
+      "family": "identity_entity",
+      "name": "about / mentions Resolution",
+      "check": "Entitățile secundare sunt legate semantic"
+    },
+    {
+      "id": "S048",
+      "family": "identity_entity",
+      "name": "Machine-Reconstructible Entity Graph",
+      "check": "AI poate reconstrui firma, serviciile și relațiile fără deducții majore"
+    },
+    {
+      "id": "S049",
+      "family": "trust_proof",
+      "name": "Canonical Claim Source",
+      "check": "Afirmațiile principale au sursă canonică"
+    },
+    {
+      "id": "S050",
+      "family": "trust_proof",
+      "name": "Claim-to-Evidence Link",
+      "check": "Claim important → dovadă identificabilă"
+    },
+    {
+      "id": "S051",
+      "family": "trust_proof",
+      "name": "proof.json",
+      "check": "Există registry public de proof"
+    },
+    {
+      "id": "S052",
+      "family": "trust_proof",
+      "name": "Evidence Registry",
+      "check": "Există registru de Evidence"
+    },
+    {
+      "id": "S053",
+      "family": "trust_proof",
+      "name": "Document ID",
+      "check": "Documentele canonice au DOCUMENT_ID"
+    },
+    {
+      "id": "S054",
+      "family": "trust_proof",
+      "name": "Version Number",
+      "check": "Documentele/oferta au versiune"
+    },
+    {
+      "id": "S055",
+      "family": "trust_proof",
+      "name": "Version History",
+      "check": "Istoricul versiunilor este păstrat"
+    },
+    {
+      "id": "S056",
+      "family": "trust_proof",
+      "name": "Updated Timestamp",
+      "check": "Data ultimei modificări este disponibilă"
+    },
+    {
+      "id": "S057",
+      "family": "trust_proof",
+      "name": "valid_from",
+      "check": "Începutul valabilității este explicit"
+    },
+    {
+      "id": "S058",
+      "family": "trust_proof",
+      "name": "valid_until",
+      "check": "Sfârșitul valabilității este explicit"
+    },
+    {
+      "id": "S059",
+      "family": "trust_proof",
+      "name": "SHA-256 Fingerprint",
+      "check": "Documentele probatorii au hash calculat"
+    },
+    {
+      "id": "S060",
+      "family": "trust_proof",
+      "name": "SHA Source Integrity",
+      "check": "Hash-ul este calculat pe fișierul canonic exact"
+    },
+    {
+      "id": "S061",
+      "family": "trust_proof",
+      "name": "OpenTimestamps Proof",
+      "check": ".ots poate fi asociat documentului"
+    },
+    {
+      "id": "S062",
+      "family": "trust_proof",
+      "name": "OTS Verification Status",
+      "check": "PENDING/VERIFIED este explicit"
+    },
+    {
+      "id": "S063",
+      "family": "trust_proof",
+      "name": "Bitcoin Block Confirmation",
+      "check": "Block-ul este afișat doar dacă este confirmat"
+    },
+    {
+      "id": "S064",
+      "family": "trust_proof",
+      "name": "Proof File Availability",
+      "check": "Fișierele .txt / .ots sunt accesibile unde trebuie"
+    },
+    {
+      "id": "S065",
+      "family": "trust_proof",
+      "name": "Claim ≠ Proof Rule",
+      "check": "Site-ul nu confundă declarația cu dovada"
+    },
+    {
+      "id": "S066",
+      "family": "trust_proof",
+      "name": "Evidence Actor",
+      "check": "Este păstrat actorul acțiunii"
+    },
+    {
+      "id": "S067",
+      "family": "trust_proof",
+      "name": "Evidence Timestamp",
+      "check": "Este păstrat momentul acțiunii"
+    },
+    {
+      "id": "S068",
+      "family": "trust_proof",
+      "name": "Evidence Rule Applied",
+      "check": "Este păstrată regula folosită"
+    },
+    {
+      "id": "S069",
+      "family": "trust_proof",
+      "name": "Evidence Decision",
+      "check": "Este păstrată decizia"
+    },
+    {
+      "id": "S070",
+      "family": "trust_proof",
+      "name": "Evidence Approval",
+      "check": "Este păstrată aprobarea când există"
+    },
+    {
+      "id": "S071",
+      "family": "trust_proof",
+      "name": "Evidence Outcome",
+      "check": "Este păstrat rezultatul"
+    },
+    {
+      "id": "S072",
+      "family": "trust_proof",
+      "name": "Evidence Offer Version",
+      "check": "Evidence indică versiunea ofertei"
+    },
+    {
+      "id": "S073",
+      "family": "trust_proof",
+      "name": "Evidence Jurisdiction",
+      "check": "Evidence indică jurisdicția relevantă"
+    },
+    {
+      "id": "S074",
+      "family": "trust_proof",
+      "name": "Evidence RRVI Decision",
+      "check": "Este păstrată decizia RRVI"
+    },
+    {
+      "id": "S075",
+      "family": "trust_proof",
+      "name": "Proof Provenance",
+      "check": "Proveniența dovezii este identificabilă"
+    },
+    {
+      "id": "S076",
+      "family": "trust_proof",
+      "name": "Source Attribution",
+      "check": "Sursele externe sunt atribuite"
+    },
+    {
+      "id": "S077",
+      "family": "trust_proof",
+      "name": "Author / Publisher",
+      "check": "Autorul sau publisher-ul este identificabil"
+    },
+    {
+      "id": "S078",
+      "family": "trust_proof",
+      "name": "Publication Date",
+      "check": "Conținutul editorial are dată"
+    },
+    {
+      "id": "S079",
+      "family": "trust_proof",
+      "name": "Modified Date",
+      "check": "Modificările sunt semnalate"
+    },
+    {
+      "id": "S080",
+      "family": "trust_proof",
+      "name": "Canonical Content Version",
+      "check": "Conținutul canonic are versiune stabilă"
+    },
+    {
+      "id": "S081",
+      "family": "trust_proof",
+      "name": "Organization Contact Consistency",
+      "check": "Contactul nu diferă între surse"
+    },
+    {
+      "id": "S082",
+      "family": "trust_proof",
+      "name": "Legal Entity Consistency",
+      "check": "Entitatea legală este aceeași peste tot"
+    },
+    {
+      "id": "S083",
+      "family": "trust_proof",
+      "name": "Service Description Consistency",
+      "check": "Serviciul nu este descris contradictoriu"
+    },
+    {
+      "id": "S084",
+      "family": "trust_proof",
+      "name": "Price Consistency",
+      "check": "Prețul/regula de preț nu se contrazice"
+    },
+    {
+      "id": "S085",
+      "family": "trust_proof",
+      "name": "Availability Consistency",
+      "check": "Disponibilitatea este coerentă"
+    },
+    {
+      "id": "S086",
+      "family": "trust_proof",
+      "name": "Terms Consistency",
+      "check": "Termenii publici și machine-readable coincid"
+    },
+    {
+      "id": "S087",
+      "family": "trust_proof",
+      "name": "Jurisdiction Consistency",
+      "check": "Jurisdicțiile declarate sunt coerente"
+    },
+    {
+      "id": "S088",
+      "family": "trust_proof",
+      "name": "Autonomy Consistency",
+      "check": "Nivelul declarat coincide cu acțiunile reale"
+    },
+    {
+      "id": "S089",
+      "family": "trust_proof",
+      "name": "Security Contact",
+      "check": "security.txt oferă contact relevant"
+    },
+    {
+      "id": "S090",
+      "family": "trust_proof",
+      "name": "humans.txt",
+      "check": "Responsabilitatea umană poate fi identificată"
+    },
+    {
+      "id": "S091",
+      "family": "trust_proof",
+      "name": "Legal Page",
+      "check": "Există pagină Legal"
+    },
+    {
+      "id": "S092",
+      "family": "trust_proof",
+      "name": "Terms Page",
+      "check": "Există Termeni și condiții"
+    },
+    {
+      "id": "S093",
+      "family": "trust_proof",
+      "name": "Privacy Page",
+      "check": "Există politică de confidențialitate"
+    },
+    {
+      "id": "S094",
+      "family": "trust_proof",
+      "name": "Cookies Page",
+      "check": "Există politică cookies când se aplică"
+    },
+    {
+      "id": "S095",
+      "family": "trust_proof",
+      "name": "AI Transparency",
+      "check": "Utilizarea AI este descrisă unde este relevant"
+    },
+    {
+      "id": "S096",
+      "family": "trust_proof",
+      "name": "EU AI Act Transparency",
+      "check": "Poziționarea EU AI Act-first este explicată corect"
+    },
+    {
+      "id": "S097",
+      "family": "trust_proof",
+      "name": "No False Compliance Claim",
+      "check": "Nu se afirmă conformitate automată"
+    },
+    {
+      "id": "S098",
+      "family": "trust_proof",
+      "name": "No False Certification",
+      "check": "Nu se declară certificare juridică inexistentă"
+    },
+    {
+      "id": "S099",
+      "family": "trust_proof",
+      "name": "Human Review Disclosure",
+      "check": "Este clar când intervine omul"
+    },
+    {
+      "id": "S100",
+      "family": "trust_proof",
+      "name": "Sensitive Data Disclosure",
+      "check": "Regulile pentru date sensibile sunt explicite"
+    },
+    {
+      "id": "S101",
+      "family": "trust_proof",
+      "name": "HTTPS Transport",
+      "check": "Conținutul public este servit securizat"
+    },
+    {
+      "id": "S102",
+      "family": "trust_proof",
+      "name": "Canonical Redirect Integrity",
+      "check": "HTTP/www/duplicate → canonical corect"
+    },
+    {
+      "id": "S103",
+      "family": "trust_proof",
+      "name": "Security Header Hygiene",
+      "check": "Politicile de securitate nu sunt evident contradictorii"
+    },
+    {
+      "id": "S104",
+      "family": "trust_proof",
+      "name": "Broken Proof Link Check",
+      "check": "Linkurile către dovezi funcționează"
+    },
+    {
+      "id": "S105",
+      "family": "trust_proof",
+      "name": "No Fabricated Review",
+      "check": "Nu există review-uri inventate"
+    },
+    {
+      "id": "S106",
+      "family": "trust_proof",
+      "name": "No Fabricated Rating",
+      "check": "Nu există rating-uri fabricate"
+    },
+    {
+      "id": "S107",
+      "family": "trust_proof",
+      "name": "No Fabricated Certification",
+      "check": "Nu există certificate inexistente"
+    },
+    {
+      "id": "S108",
+      "family": "trust_proof",
+      "name": "Proof Freshness",
+      "check": "Dovada este suficient de actuală pentru claim"
+    },
+    {
+      "id": "S109",
+      "family": "trust_proof",
+      "name": "End-to-End Verifiability",
+      "check": "Un terț poate urmări Claim → Version → Evidence → Proof"
+    },
+    {
+      "id": "S110",
+      "family": "intent_governance",
+      "name": "intents.json",
+      "check": "Există registrul canonic de intenții"
+    },
+    {
+      "id": "S111",
+      "family": "intent_governance",
+      "name": "Intent IDs",
+      "check": "Fiecare intent are ID stabil"
+    },
+    {
+      "id": "S112",
+      "family": "intent_governance",
+      "name": "Intent Stage",
+      "check": "TOF/MOF/BOF este explicit"
+    },
+    {
+      "id": "S113",
+      "family": "intent_governance",
+      "name": "Intent Hub",
+      "check": "Intentul aparține unui cluster"
+    },
+    {
+      "id": "S114",
+      "family": "intent_governance",
+      "name": "Intent Question",
+      "check": "Există formularea întrebării"
+    },
+    {
+      "id": "S115",
+      "family": "intent_governance",
+      "name": "Intent Answer",
+      "check": "Există răspuns direct"
+    },
+    {
+      "id": "S116",
+      "family": "intent_governance",
+      "name": "Intent URL Mapping",
+      "check": "Intentul indică o pagină reală"
+    },
+    {
+      "id": "S117",
+      "family": "intent_governance",
+      "name": "TOF Coverage",
+      "check": "Top-of-funnel este acoperit"
+    },
+    {
+      "id": "S118",
+      "family": "intent_governance",
+      "name": "MOF Coverage",
+      "check": "Middle-of-funnel este acoperit"
+    },
+    {
+      "id": "S119",
+      "family": "intent_governance",
+      "name": "BOF Coverage",
+      "check": "Bottom-of-funnel este acoperit"
+    },
+    {
+      "id": "S120",
+      "family": "intent_governance",
+      "name": "50 Canonical Intents Coverage",
+      "check": "Cele 50 de intenții frozen sunt publicate/mapate"
+    },
+    {
+      "id": "S121",
+      "family": "intent_governance",
+      "name": "Questions Hub",
+      "check": "Există /intrebari/"
+    },
+    {
+      "id": "S122",
+      "family": "intent_governance",
+      "name": "Question Category Hubs",
+      "check": "Cele 7 categorii au hub-uri"
+    },
+    {
+      "id": "S123",
+      "family": "intent_governance",
+      "name": "Individual Q&A Pages",
+      "check": "Întrebările importante au pagini proprii"
+    },
+    {
+      "id": "S124",
+      "family": "intent_governance",
+      "name": "Visible FAQ",
+      "check": "FAQ-ul este vizibil omului"
+    },
+    {
+      "id": "S125",
+      "family": "intent_governance",
+      "name": "FAQPage Match",
+      "check": "JSON-LD coincide cu FAQ vizibil"
+    },
+    {
+      "id": "S126",
+      "family": "intent_governance",
+      "name": "10 FAQ/Page Rule",
+      "check": "Pagina are set contextual de FAQ când regula se aplică"
+    },
+    {
+      "id": "S127",
+      "family": "intent_governance",
+      "name": "Answer-First Format",
+      "check": "Răspunsul principal apare rapid"
+    },
+    {
+      "id": "S128",
+      "family": "intent_governance",
+      "name": "Quotable Answer",
+      "check": "Există propoziție clară, ușor citabilă"
+    },
+    {
+      "id": "S129",
+      "family": "intent_governance",
+      "name": "Definition Block",
+      "check": "Termenii proprii au definiții"
+    },
+    {
+      "id": "S130",
+      "family": "intent_governance",
+      "name": "Negative Scope",
+      "check": "Este clar ce NU oferă AiVenture"
+    },
+    {
+      "id": "S131",
+      "family": "intent_governance",
+      "name": "Primary Audience Intent",
+      "check": "Este clar cui se adresează"
+    },
+    {
+      "id": "S132",
+      "family": "intent_governance",
+      "name": "Problem Intent",
+      "check": "Problema este explicită"
+    },
+    {
+      "id": "S133",
+      "family": "intent_governance",
+      "name": "Outcome Intent",
+      "check": "Rezultatul este explicit"
+    },
+    {
+      "id": "S134",
+      "family": "intent_governance",
+      "name": "Price Intent",
+      "check": "Costul sau regula de preț poate fi explicată"
+    },
+    {
+      "id": "S135",
+      "family": "intent_governance",
+      "name": "Geography Intent",
+      "check": "Unde? poate primi răspuns"
+    },
+    {
+      "id": "S136",
+      "family": "intent_governance",
+      "name": "Eligibility Intent",
+      "check": "Pentru cine? poate primi răspuns"
+    },
+    {
+      "id": "S137",
+      "family": "intent_governance",
+      "name": "Availability Intent",
+      "check": "Când? poate primi răspuns"
+    },
+    {
+      "id": "S138",
+      "family": "intent_governance",
+      "name": "Process Intent",
+      "check": "Cum? poate primi răspuns"
+    },
+    {
+      "id": "S139",
+      "family": "intent_governance",
+      "name": "Why Intent",
+      "check": "De ce? poate primi răspuns"
+    },
+    {
+      "id": "S140",
+      "family": "intent_governance",
+      "name": "What Intent",
+      "check": "Ce este? poate primi răspuns"
+    },
+    {
+      "id": "S141",
+      "family": "intent_governance",
+      "name": "governance.json",
+      "check": "Există guvernanță machine-readable"
+    },
+    {
+      "id": "S142",
+      "family": "intent_governance",
+      "name": "RRVI Policy",
+      "check": "RRVI este integrat în model"
+    },
+    {
+      "id": "S143",
+      "family": "intent_governance",
+      "name": "Publish Gate",
+      "check": "Există control înainte de expunerea serviciului"
+    },
+    {
+      "id": "S144",
+      "family": "intent_governance",
+      "name": "Runtime Gate",
+      "check": "Există control înainte de acțiune"
+    },
+    {
+      "id": "S145",
+      "family": "intent_governance",
+      "name": "Jurisdiction Check",
+      "check": "Acțiunea verifică jurisdicția"
+    },
+    {
+      "id": "S146",
+      "family": "intent_governance",
+      "name": "Regulation Check",
+      "check": "Acțiunea verifică regulile relevante"
+    },
+    {
+      "id": "S147",
+      "family": "intent_governance",
+      "name": "Autonomy Check",
+      "check": "Nivelul L1–L5 este verificat"
+    },
+    {
+      "id": "S148",
+      "family": "intent_governance",
+      "name": "Financial Threshold",
+      "check": "Pragurile financiare sunt controlabile"
+    },
+    {
+      "id": "S149",
+      "family": "intent_governance",
+      "name": "Human Review Rule",
+      "check": "Cazurile care cer om sunt explicite"
+    },
+    {
+      "id": "S150",
+      "family": "intent_governance",
+      "name": "Allowed Actions",
+      "check": "Acțiunile permise sunt listate"
+    },
+    {
+      "id": "S151",
+      "family": "intent_governance",
+      "name": "Forbidden Actions",
+      "check": "Acțiunile interzise sunt listate"
+    },
+    {
+      "id": "S152",
+      "family": "intent_governance",
+      "name": "L1 Discover",
+      "check": "Discovery este definit și autorizabil"
+    },
+    {
+      "id": "S153",
+      "family": "intent_governance",
+      "name": "L2 Compare",
+      "check": "Compare este definit și autorizabil"
+    },
+    {
+      "id": "S154",
+      "family": "intent_governance",
+      "name": "L3 Request",
+      "check": "Request este definit și autorizabil"
+    },
+    {
+      "id": "S155",
+      "family": "intent_governance",
+      "name": "L4 Quote",
+      "check": "Quote este definit și autorizabil"
+    },
+    {
+      "id": "S156",
+      "family": "intent_governance",
+      "name": "L5 Order",
+      "check": "Order este definit și autorizabil"
+    },
+    {
+      "id": "S157",
+      "family": "intent_governance",
+      "name": "No Rule → No Autonomy",
+      "check": "Regula canonică este aplicabilă"
+    },
+    {
+      "id": "S158",
+      "family": "intent_governance",
+      "name": "No Jurisdiction → No Sensitive Action",
+      "check": "Lipsa jurisdicției oprește acțiunea sensibilă"
+    },
+    {
+      "id": "S159",
+      "family": "intent_governance",
+      "name": "Approval Required → No Commitment",
+      "check": "Lipsa aprobării oprește angajamentul"
+    },
+    {
+      "id": "S160",
+      "family": "intent_governance",
+      "name": "No Evidence → No Proof",
+      "check": "Lipsa Evidence împiedică declararea dovezii"
+    },
+    {
+      "id": "S161",
+      "family": "intent_governance",
+      "name": "allow",
+      "check": "RRVI poate returna allow"
+    },
+    {
+      "id": "S162",
+      "family": "intent_governance",
+      "name": "allow_with_conditions",
+      "check": "RRVI poate returna allow_with_conditions"
+    },
+    {
+      "id": "S163",
+      "family": "intent_governance",
+      "name": "human_review_required",
+      "check": "RRVI poate escalada"
+    },
+    {
+      "id": "S164",
+      "family": "intent_governance",
+      "name": "block",
+      "check": "RRVI poate bloca"
+    },
+    {
+      "id": "S165",
+      "family": "intent_governance",
+      "name": "Agent Card / Governance Consistency",
+      "check": "Capabilitățile publicate corespund politicii"
+    },
+    {
+      "id": "S166",
+      "family": "intent_governance",
+      "name": "Service Offer Contract / Governance Consistency",
+      "check": "SOC și governance descriu aceleași limite"
+    },
+    {
+      "id": "S167",
+      "family": "intent_governance",
+      "name": "End-to-End Governed Agent Readiness",
+      "check": "AI poate Discover → Compare → Request → Quote → Order numai în limitele SOC + RRVI + Evidence"
+    }
+  ]
+}

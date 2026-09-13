@@ -1,0 +1,9 @@
+# AiVenture
+Organization: AiVenture S.R.L.
+Brand: AiVenture
+Category: Agent-Ready B2B Services
+Session: 0002H
+Language: ro
+Contact: contact@5thelement.ai
+Site: https://aiventure.ro/
+Responsibility: Human-approved governed autonomy; no-rule-no-autonomy.

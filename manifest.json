@@ -1,0 +1,13 @@
+{
+  "name": "AiVenture",
+  "short_name": "AiVenture",
+  "id": "https://aiventure.ro/",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "lang": "ro",
+  "dir": "ltr",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "description": "Agent-Ready B2B Services · A2A Business Infrastructure"
+}

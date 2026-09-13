@@ -1,81 +1,201 @@
 {
-  "schema_version": "1.0",
-  "generated_for": "https://aiventure.ro/",
-  "primary_entity": {
-    "id": "https://aiventure.ro/#organization",
-    "type": "Organization",
-    "name": "AiVenture S.R.L.",
-    "brand": "AiVenture",
-    "legal_identifiers": {
-      "cui": "51415878",
-      "reg_com": "J2025016406000",
-      "euid": "ROONRC.J2025016406000"
-    },
-    "country": "RO",
-    "locality": "București",
-    "language": "ro"
-  },
-  "service_entities": [
+  "schema": "AIVENTURE_ENTITIES",
+  "version": "2.0",
+  "session": "0002H",
+  "identity_resolution_rule": "Reuse the same stable IDs across HTML, JSON-LD, machine-readable files, Agent Card, API, RRVI and Evidence.",
+  "entities": [
     {
-      "id": "ai-lens",
-      "name": "AI LENS",
-      "url": "https://aiventure.ro/solutii/ai-lens/"
-    },
-    {
-      "id": "ai-audit",
-      "name": "AI AUDIT",
-      "url": "https://aiventure.ro/solutii/ai-audit/"
+      "id": "E_ORG_AIVENTURE",
+      "type": "Organization",
+      "canonical_uri": "https://aiventure.ro/#organization",
+      "name": "AiVenture S.R.L.",
+      "relationships": {
+        "HAS_BRAND": [
+          "E_BRAND_AIVENTURE"
+        ],
+        "PROVIDES": [
+          "E_SERVICE_AGENT_READY_B2B"
+        ],
+        "USES": [
+          "E_RRVI"
+        ]
+      }
     },
     {
-      "id": "ai-ready",
-      "name": "AI READY",
-      "url": "https://aiventure.ro/solutii/ai-ready/"
+      "id": "E_BRAND_AIVENTURE",
+      "type": "Brand",
+      "canonical_uri": "https://aiventure.ro/#brand",
+      "name": "AiVenture",
+      "relationships": {
+        "BELONGS_TO": [
+          "E_ORG_AIVENTURE"
+        ]
+      }
     },
     {
-      "id": "ai-edge",
-      "name": "AI EDGE",
-      "url": "https://aiventure.ro/solutii/ai-edge/"
+      "id": "E_SERVICE_AGENT_READY_B2B",
+      "type": "Service",
+      "canonical_uri": "https://aiventure.ro/servicii/agent-ready-b2b/#service",
+      "name": "Agent-Ready B2B Services",
+      "relationships": {
+        "PROVIDED_BY": [
+          "E_ORG_AIVENTURE"
+        ],
+        "DEFINED_BY": [
+          "E_SOC_AGENT_READY_B2B_V1_0"
+        ],
+        "CONTROLLED_BY": [
+          "E_RRVI"
+        ],
+        "HAS_AUTONOMY_POLICY": [
+          "E_AUTONOMY_POLICY_DEFAULT"
+        ],
+        "GENERATES": [
+          "E_EVIDENCE_REGISTRY"
+        ]
+      }
     },
     {
-      "id": "agent-ready",
-      "name": "AGENT READY",
-      "url": "https://aiventure.ro/solutii/agent-ready/"
+      "id": "E_SOC_AGENT_READY_B2B_V1_0",
+      "type": "ServiceOfferContract",
+      "canonical_uri": "https://aiventure.ro/service-offer-contract/#soc-v1-0",
+      "name": "Service Offer Contract™",
+      "version": "1.0",
+      "status": "DRAFT",
+      "relationships": {
+        "DEFINES_SERVICE": [
+          "E_SERVICE_AGENT_READY_B2B"
+        ],
+        "ISSUED_BY": [
+          "E_ORG_AIVENTURE"
+        ],
+        "CHECKED_BY": [
+          "E_RRVI"
+        ]
+      }
     },
     {
-      "id": "a2a-ready",
-      "name": "A2A READY",
-      "url": "https://aiventure.ro/solutii/a2a/"
+      "id": "E_RRVI",
+      "type": "RRVI",
+      "canonical_uri": "https://aiventure.ro/rrvi/#rrvi",
+      "name": "RRVI™",
+      "relationships": {
+        "CHECKS": [
+          "E_SOC_AGENT_READY_B2B_V1_0"
+        ],
+        "GENERATES": [
+          "E_EVIDENCE_REGISTRY"
+        ]
+      }
     },
     {
-      "id": "eu-ai-act-ready",
-      "name": "EU AI ACT READY",
-      "url": "https://aiventure.ro/eu-ai-act-ready/"
+      "id": "E_AUTONOMY_POLICY_DEFAULT",
+      "type": "AutonomyPolicy",
+      "canonical_uri": "https://aiventure.ro/governance.json#autonomy",
+      "name": "L1–L5 governed autonomy"
+    },
+    {
+      "id": "E_ACTION_MODEL",
+      "type": "Action",
+      "canonical_uri": "https://aiventure.ro/governance.json#actions",
+      "members": [
+        "discover",
+        "compare",
+        "check_eligibility",
+        "create_request",
+        "request_quote",
+        "generate_quote_draft",
+        "create_order_draft",
+        "order"
+      ]
+    },
+    {
+      "id": "E_AUDIENCE_B2B",
+      "type": "BusinessAudience",
+      "canonical_uri": "https://aiventure.ro/service.json#audience",
+      "name": "B2B organizations",
+      "status": "GENERIC_UNTIL_CONCRETE_SERVICE_DEFINED"
+    },
+    {
+      "id": "E_ELIGIBILITY_RULESET",
+      "type": "EligibilityRule",
+      "canonical_uri": "https://aiventure.ro/service-offer-contract.json#eligibility",
+      "status": "TO_BE_DEFINED_PER_CONCRETE_SERVICE"
+    },
+    {
+      "id": "E_OFFER_AGENT_READY",
+      "type": "Offer",
+      "canonical_uri": "https://aiventure.ro/service-offer-contract.json#offer",
+      "status": "DRAFT",
+      "price": null,
+      "currency": null
+    },
+    {
+      "id": "E_REQUEST_MODEL",
+      "type": "Request",
+      "canonical_uri": "https://aiventure.ro/evidence.json#request-model"
+    },
+    {
+      "id": "E_QUOTE_MODEL",
+      "type": "Quote",
+      "canonical_uri": "https://aiventure.ro/evidence.json#quote-model"
+    },
+    {
+      "id": "E_ORDER_MODEL",
+      "type": "Order",
+      "canonical_uri": "https://aiventure.ro/evidence.json#order-model"
+    },
+    {
+      "id": "E_DELIVERY_MODEL",
+      "type": "Delivery",
+      "canonical_uri": "https://aiventure.ro/evidence.json#delivery-model"
+    },
+    {
+      "id": "E_EVIDENCE_REGISTRY",
+      "type": "Evidence",
+      "canonical_uri": "https://aiventure.ro/evidence.json",
+      "name": "AiVenture Evidence Registry"
+    },
+    {
+      "id": "E_REGULATION_MODEL",
+      "type": "Regulation",
+      "canonical_uri": "https://aiventure.ro/rrvi.json#regulation-scope",
+      "members": [
+        "EU AI Act",
+        "GDPR",
+        "labor law",
+        "tax law",
+        "professional regulation",
+        "contracts",
+        "confidentiality",
+        "security",
+        "sector rules",
+        "internal policies",
+        "jurisdiction rules"
+      ]
+    },
+    {
+      "id": "E_JURISDICTION_MODEL",
+      "type": "Jurisdiction",
+      "canonical_uri": "https://aiventure.ro/rrvi.json#jurisdiction",
+      "status": "RESOLVED_PER_RUNTIME_REQUEST"
+    },
+    {
+      "id": "E_AGENT_AIVENTURE_BUYER",
+      "type": "Agent",
+      "canonical_uri": "https://aiventure.ro/.well-known/agent-card.json#buyer-agent",
+      "name": "AiVenture Service Buyer Agent",
+      "relationships": {
+        "REPRESENTS": [
+          "E_ORG_AIVENTURE"
+        ],
+        "DISCOVERS": [
+          "E_SERVICE_AGENT_READY_B2B"
+        ],
+        "SUBJECT_TO": [
+          "E_RRVI"
+        ]
+      }
     }
-  ],
-  "concept_entities": [
-    {
-      "id": "ai-readiness",
-      "name": "AI readiness",
-      "definition": "Gradul în care informația unei firme poate fi descoperită, înțeleasă și verificată de sisteme AI."
-    },
-    {
-      "id": "agent-readiness",
-      "name": "Agent readiness",
-      "definition": "Gradul în care capabilitățile unei firme pot fi apelate de un agent autonom."
-    },
-    {
-      "id": "a2a",
-      "name": "Agent-to-Agent",
-      "definition": "Comunicare directă între agentul unui client și agentul unei firme."
-    }
-  ],
-  "audience_entities": [
-    "IMM B2B",
-    "firme de contabilitate/fiscalitate/HR",
-    "firme IT",
-    "consultanți",
-    "agenții de marketing",
-    "freelanceri"
-  ],
-  "epistemic_status": "self_declared"
+  ]
 }

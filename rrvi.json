@@ -1,0 +1,53 @@
+{
+  "schema": "AIVENTURE_RRVI",
+  "version": "2.0",
+  "session": "0002H",
+  "name": "RRVI™",
+  "full_name": "Remote Reglementation Verification Interface",
+  "publish_gate": [
+    "jurisdiction",
+    "offer",
+    "content",
+    "eligibility",
+    "data",
+    "disclaimers",
+    "autonomy",
+    "allowed_actions",
+    "forbidden_actions",
+    "approval_conditions"
+  ],
+  "runtime_gate": [
+    "requester",
+    "request",
+    "service",
+    "jurisdiction",
+    "data",
+    "autonomy_level",
+    "threshold",
+    "risk",
+    "human_review_required"
+  ],
+  "decisions": [
+    "allow",
+    "allow_with_conditions",
+    "human_review_required",
+    "block"
+  ],
+  "regulation_scope": [
+    "EU AI Act",
+    "GDPR",
+    "labor law",
+    "tax law",
+    "professional regulation",
+    "contracts",
+    "confidentiality",
+    "security",
+    "sector rules",
+    "internal policies",
+    "jurisdiction rules"
+  ],
+  "entity_id": "E_RRVI",
+  "language": "ro",
+  "principle": "capability != permission",
+  "default_decision_when_rule_missing": "block"
+}

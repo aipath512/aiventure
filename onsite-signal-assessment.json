@@ -1,0 +1,2026 @@
+{
+  "schema": "AIVENTURE_ONSITE_SIGNAL_ASSESSMENT",
+  "version": "1.0",
+  "session": "0002H",
+  "domain": "https://aiventure.ro/",
+  "total_signals": 252,
+  "note": "Template inițial. UNKNOWN până la deploy și verificare publică.",
+  "signals": [
+    {
+      "id": "OS001",
+      "family": "technical_indexability",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS002",
+      "family": "technical_indexability",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS003",
+      "family": "technical_indexability",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS004",
+      "family": "technical_indexability",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS005",
+      "family": "technical_indexability",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS006",
+      "family": "technical_indexability",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS007",
+      "family": "technical_indexability",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS008",
+      "family": "technical_indexability",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS009",
+      "family": "technical_indexability",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS010",
+      "family": "technical_indexability",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS011",
+      "family": "technical_indexability",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS012",
+      "family": "technical_indexability",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS013",
+      "family": "technical_indexability",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS014",
+      "family": "technical_indexability",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS015",
+      "family": "technical_indexability",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS016",
+      "family": "technical_indexability",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS017",
+      "family": "technical_indexability",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS018",
+      "family": "technical_indexability",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS019",
+      "family": "technical_indexability",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS020",
+      "family": "technical_indexability",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS021",
+      "family": "html_document",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS022",
+      "family": "html_document",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS023",
+      "family": "html_document",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS024",
+      "family": "html_document",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS025",
+      "family": "html_document",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS026",
+      "family": "html_document",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS027",
+      "family": "html_document",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS028",
+      "family": "html_document",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS029",
+      "family": "html_document",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS030",
+      "family": "html_document",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS031",
+      "family": "html_document",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS032",
+      "family": "html_document",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS033",
+      "family": "html_document",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS034",
+      "family": "html_document",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS035",
+      "family": "html_document",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS036",
+      "family": "html_document",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS037",
+      "family": "html_document",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS038",
+      "family": "html_document",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS039",
+      "family": "html_document",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS040",
+      "family": "html_document",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS041",
+      "family": "navigation_internal_linking",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS042",
+      "family": "navigation_internal_linking",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS043",
+      "family": "navigation_internal_linking",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS044",
+      "family": "navigation_internal_linking",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS045",
+      "family": "navigation_internal_linking",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS046",
+      "family": "navigation_internal_linking",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS047",
+      "family": "navigation_internal_linking",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS048",
+      "family": "navigation_internal_linking",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS049",
+      "family": "navigation_internal_linking",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS050",
+      "family": "navigation_internal_linking",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS051",
+      "family": "navigation_internal_linking",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS052",
+      "family": "navigation_internal_linking",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS053",
+      "family": "navigation_internal_linking",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS054",
+      "family": "navigation_internal_linking",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS055",
+      "family": "navigation_internal_linking",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS056",
+      "family": "content_clarity",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS057",
+      "family": "content_clarity",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS058",
+      "family": "content_clarity",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS059",
+      "family": "content_clarity",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS060",
+      "family": "content_clarity",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS061",
+      "family": "content_clarity",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS062",
+      "family": "content_clarity",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS063",
+      "family": "content_clarity",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS064",
+      "family": "content_clarity",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS065",
+      "family": "content_clarity",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS066",
+      "family": "content_clarity",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS067",
+      "family": "content_clarity",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS068",
+      "family": "content_clarity",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS069",
+      "family": "content_clarity",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS070",
+      "family": "content_clarity",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS071",
+      "family": "content_clarity",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS072",
+      "family": "content_clarity",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS073",
+      "family": "content_clarity",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS074",
+      "family": "content_clarity",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS075",
+      "family": "content_clarity",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS076",
+      "family": "aeo",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS077",
+      "family": "aeo",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS078",
+      "family": "aeo",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS079",
+      "family": "aeo",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS080",
+      "family": "aeo",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS081",
+      "family": "aeo",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS082",
+      "family": "aeo",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS083",
+      "family": "aeo",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS084",
+      "family": "aeo",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS085",
+      "family": "aeo",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS086",
+      "family": "aeo",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS087",
+      "family": "aeo",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS088",
+      "family": "aeo",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS089",
+      "family": "aeo",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS090",
+      "family": "aeo",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS091",
+      "family": "geo_ere",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS092",
+      "family": "geo_ere",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS093",
+      "family": "geo_ere",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS094",
+      "family": "geo_ere",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS095",
+      "family": "geo_ere",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS096",
+      "family": "geo_ere",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS097",
+      "family": "geo_ere",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS098",
+      "family": "geo_ere",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS099",
+      "family": "geo_ere",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS100",
+      "family": "geo_ere",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS101",
+      "family": "geo_ere",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS102",
+      "family": "geo_ere",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS103",
+      "family": "geo_ere",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS104",
+      "family": "geo_ere",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS105",
+      "family": "geo_ere",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS106",
+      "family": "geo_ere",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS107",
+      "family": "geo_ere",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS108",
+      "family": "geo_ere",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS109",
+      "family": "geo_ere",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS110",
+      "family": "geo_ere",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS111",
+      "family": "schema_org",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS112",
+      "family": "schema_org",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS113",
+      "family": "schema_org",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS114",
+      "family": "schema_org",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS115",
+      "family": "schema_org",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS116",
+      "family": "schema_org",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS117",
+      "family": "schema_org",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS118",
+      "family": "schema_org",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS119",
+      "family": "schema_org",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS120",
+      "family": "schema_org",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS121",
+      "family": "schema_org",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS122",
+      "family": "schema_org",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS123",
+      "family": "schema_org",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS124",
+      "family": "schema_org",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS125",
+      "family": "schema_org",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS126",
+      "family": "schema_org",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS127",
+      "family": "schema_org",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS128",
+      "family": "schema_org",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS129",
+      "family": "schema_org",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS130",
+      "family": "schema_org",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS131",
+      "family": "aio_ai_readability",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS132",
+      "family": "aio_ai_readability",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS133",
+      "family": "aio_ai_readability",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS134",
+      "family": "aio_ai_readability",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS135",
+      "family": "aio_ai_readability",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS136",
+      "family": "aio_ai_readability",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS137",
+      "family": "aio_ai_readability",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS138",
+      "family": "aio_ai_readability",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS139",
+      "family": "aio_ai_readability",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS140",
+      "family": "aio_ai_readability",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS141",
+      "family": "aio_ai_readability",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS142",
+      "family": "aio_ai_readability",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS143",
+      "family": "ai_discovery_files",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS144",
+      "family": "ai_discovery_files",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS145",
+      "family": "ai_discovery_files",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS146",
+      "family": "ai_discovery_files",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS147",
+      "family": "ai_discovery_files",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS148",
+      "family": "ai_discovery_files",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS149",
+      "family": "ai_discovery_files",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS150",
+      "family": "ai_discovery_files",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS151",
+      "family": "ai_discovery_files",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS152",
+      "family": "ai_discovery_files",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS153",
+      "family": "ai_discovery_files",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS154",
+      "family": "ai_discovery_files",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS155",
+      "family": "ai_discovery_files",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS156",
+      "family": "ai_discovery_files",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS157",
+      "family": "ai_discovery_files",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS158",
+      "family": "ai_discovery_files",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS159",
+      "family": "ai_discovery_files",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS160",
+      "family": "ai_discovery_files",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS161",
+      "family": "ai_discovery_files",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS162",
+      "family": "ai_discovery_files",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS163",
+      "family": "ai_discovery_files",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS164",
+      "family": "ai_discovery_files",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS165",
+      "family": "ai_discovery_files",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS166",
+      "family": "ai_discovery_files",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS167",
+      "family": "ai_crawler_access",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS168",
+      "family": "ai_crawler_access",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS169",
+      "family": "ai_crawler_access",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS170",
+      "family": "ai_crawler_access",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS171",
+      "family": "ai_crawler_access",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS172",
+      "family": "ai_crawler_access",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS173",
+      "family": "ai_crawler_access",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS174",
+      "family": "ai_crawler_access",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS175",
+      "family": "ai_crawler_access",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS176",
+      "family": "ai_crawler_access",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS177",
+      "family": "ai_crawler_access",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS178",
+      "family": "ai_crawler_access",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS179",
+      "family": "trust_proof",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS180",
+      "family": "trust_proof",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS181",
+      "family": "trust_proof",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS182",
+      "family": "trust_proof",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS183",
+      "family": "trust_proof",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS184",
+      "family": "trust_proof",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS185",
+      "family": "trust_proof",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS186",
+      "family": "trust_proof",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS187",
+      "family": "trust_proof",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS188",
+      "family": "trust_proof",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS189",
+      "family": "trust_proof",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS190",
+      "family": "trust_proof",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS191",
+      "family": "trust_proof",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS192",
+      "family": "trust_proof",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS193",
+      "family": "trust_proof",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS194",
+      "family": "governance_agent_ready",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS195",
+      "family": "governance_agent_ready",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS196",
+      "family": "governance_agent_ready",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS197",
+      "family": "governance_agent_ready",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS198",
+      "family": "governance_agent_ready",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS199",
+      "family": "governance_agent_ready",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS200",
+      "family": "governance_agent_ready",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS201",
+      "family": "governance_agent_ready",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS202",
+      "family": "governance_agent_ready",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS203",
+      "family": "governance_agent_ready",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS204",
+      "family": "governance_agent_ready",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS205",
+      "family": "governance_agent_ready",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS206",
+      "family": "governance_agent_ready",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS207",
+      "family": "governance_agent_ready",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS208",
+      "family": "governance_agent_ready",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS209",
+      "family": "governance_agent_ready",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS210",
+      "family": "governance_agent_ready",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS211",
+      "family": "governance_agent_ready",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS212",
+      "family": "governance_agent_ready",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS213",
+      "family": "governance_agent_ready",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS214",
+      "family": "governance_agent_ready",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS215",
+      "family": "performance_accessibility",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS216",
+      "family": "performance_accessibility",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS217",
+      "family": "performance_accessibility",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS218",
+      "family": "performance_accessibility",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS219",
+      "family": "performance_accessibility",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS220",
+      "family": "performance_accessibility",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS221",
+      "family": "performance_accessibility",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS222",
+      "family": "performance_accessibility",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS223",
+      "family": "performance_accessibility",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS224",
+      "family": "performance_accessibility",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS225",
+      "family": "performance_accessibility",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS226",
+      "family": "performance_accessibility",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS227",
+      "family": "performance_accessibility",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS228",
+      "family": "performance_accessibility",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS229",
+      "family": "performance_accessibility",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS230",
+      "family": "social_metadata",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS231",
+      "family": "social_metadata",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS232",
+      "family": "social_metadata",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS233",
+      "family": "social_metadata",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS234",
+      "family": "social_metadata",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS235",
+      "family": "social_metadata",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS236",
+      "family": "social_metadata",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS237",
+      "family": "social_metadata",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS238",
+      "family": "site_architecture",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS239",
+      "family": "site_architecture",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS240",
+      "family": "site_architecture",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS241",
+      "family": "site_architecture",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS242",
+      "family": "site_architecture",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS243",
+      "family": "site_architecture",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS244",
+      "family": "site_architecture",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS245",
+      "family": "site_architecture",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS246",
+      "family": "site_architecture",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS247",
+      "family": "site_architecture",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS248",
+      "family": "site_architecture",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS249",
+      "family": "site_architecture",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS250",
+      "family": "site_architecture",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS251",
+      "family": "site_architecture",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    },
+    {
+      "id": "OS252",
+      "family": "site_architecture",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "verified_at": null
+    }
+  ]
+}

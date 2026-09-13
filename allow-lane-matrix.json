@@ -1,0 +1,191 @@
+{
+  "schema": "AIVENTURE_ALLOW_LANE_MATRIX",
+  "version": "2.0",
+  "session": "0002H",
+  "source": "https://aiventure.ro/robots.txt",
+  "principle": "crawl permission != transaction authority",
+  "lanes": [
+    {
+      "agent": "*",
+      "crawl": {
+        "allow": true,
+        "path": "/"
+      },
+      "commercial_actions": {
+        "discover": true,
+        "compare": true,
+        "request": "subject_to_policy",
+        "quote": "subject_to_RRVI_and_authorization",
+        "order": "deny_by_default"
+      }
+    },
+    {
+      "agent": "GPTBot",
+      "crawl": {
+        "allow": true,
+        "path": "/"
+      },
+      "commercial_actions": {
+        "discover": true,
+        "compare": true,
+        "request": "subject_to_policy",
+        "quote": "subject_to_RRVI_and_authorization",
+        "order": "deny_by_default"
+      }
+    },
+    {
+      "agent": "OAI-SearchBot",
+      "crawl": {
+        "allow": true,
+        "path": "/"
+      },
+      "commercial_actions": {
+        "discover": true,
+        "compare": true,
+        "request": "subject_to_policy",
+        "quote": "subject_to_RRVI_and_authorization",
+        "order": "deny_by_default"
+      }
+    },
+    {
+      "agent": "ChatGPT-User",
+      "crawl": {
+        "allow": true,
+        "path": "/"
+      },
+      "commercial_actions": {
+        "discover": true,
+        "compare": true,
+        "request": "subject_to_policy",
+        "quote": "subject_to_RRVI_and_authorization",
+        "order": "deny_by_default"
+      }
+    },
+    {
+      "agent": "ClaudeBot",
+      "crawl": {
+        "allow": true,
+        "path": "/"
+      },
+      "commercial_actions": {
+        "discover": true,
+        "compare": true,
+        "request": "subject_to_policy",
+        "quote": "subject_to_RRVI_and_authorization",
+        "order": "deny_by_default"
+      }
+    },
+    {
+      "agent": "Claude-SearchBot",
+      "crawl": {
+        "allow": true,
+        "path": "/"
+      },
+      "commercial_actions": {
+        "discover": true,
+        "compare": true,
+        "request": "subject_to_policy",
+        "quote": "subject_to_RRVI_and_authorization",
+        "order": "deny_by_default"
+      }
+    },
+    {
+      "agent": "PerplexityBot",
+      "crawl": {
+        "allow": true,
+        "path": "/"
+      },
+      "commercial_actions": {
+        "discover": true,
+        "compare": true,
+        "request": "subject_to_policy",
+        "quote": "subject_to_RRVI_and_authorization",
+        "order": "deny_by_default"
+      }
+    },
+    {
+      "agent": "Google-Extended",
+      "crawl": {
+        "allow": true,
+        "path": "/"
+      },
+      "commercial_actions": {
+        "discover": true,
+        "compare": true,
+        "request": "subject_to_policy",
+        "quote": "subject_to_RRVI_and_authorization",
+        "order": "deny_by_default"
+      }
+    },
+    {
+      "agent": "Applebot-Extended",
+      "crawl": {
+        "allow": true,
+        "path": "/"
+      },
+      "commercial_actions": {
+        "discover": true,
+        "compare": true,
+        "request": "subject_to_policy",
+        "quote": "subject_to_RRVI_and_authorization",
+        "order": "deny_by_default"
+      }
+    },
+    {
+      "agent": "CCBot",
+      "crawl": {
+        "allow": true,
+        "path": "/"
+      },
+      "commercial_actions": {
+        "discover": true,
+        "compare": true,
+        "request": "subject_to_policy",
+        "quote": "subject_to_RRVI_and_authorization",
+        "order": "deny_by_default"
+      }
+    },
+    {
+      "agent": "DeepSeekBot",
+      "crawl": {
+        "allow": true,
+        "path": "/"
+      },
+      "commercial_actions": {
+        "discover": true,
+        "compare": true,
+        "request": "subject_to_policy",
+        "quote": "subject_to_RRVI_and_authorization",
+        "order": "deny_by_default"
+      }
+    },
+    {
+      "agent": "YouBot",
+      "crawl": {
+        "allow": true,
+        "path": "/"
+      },
+      "commercial_actions": {
+        "discover": true,
+        "compare": true,
+        "request": "subject_to_policy",
+        "quote": "subject_to_RRVI_and_authorization",
+        "order": "deny_by_default"
+      }
+    },
+    {
+      "agent": "Coherebot",
+      "crawl": {
+        "allow": true,
+        "path": "/"
+      },
+      "commercial_actions": {
+        "discover": true,
+        "compare": true,
+        "request": "subject_to_policy",
+        "quote": "subject_to_RRVI_and_authorization",
+        "order": "deny_by_default"
+      }
+    }
+  ]
+}

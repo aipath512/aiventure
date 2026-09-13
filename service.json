@@ -1,0 +1,71 @@
+{
+  "schema": "AIVENTURE_SERVICE",
+  "version": "1.0",
+  "session": "0002H",
+  "id": "E_SERVICE_AGENT_READY_B2B",
+  "canonical_uri": "https://aiventure.ro/servicii/agent-ready-b2b/#service",
+  "service_id": "agent-ready-b2b-services",
+  "name": "Agent-Ready B2B Services",
+  "category": "Agent-Ready B2B Services",
+  "definition": "Transformarea unui serviciu B2B existent într-o ofertă structurată, versionată, verificabilă și guvernată, pregătită să fie găsită, comparată, solicitată și progresiv cumpărată de Agenți AI.",
+  "provider": {
+    "id": "E_ORG_AIVENTURE",
+    "name": "AiVenture S.R.L.",
+    "canonical_uri": "https://aiventure.ro/#organization"
+  },
+  "problem": "Serviciile B2B existente pot fi descrise pentru oameni, dar insuficient structurate, guvernate sau verificabile pentru AI și Agenți.",
+  "outcome": "Un serviciu B2B structurat și guvernat pentru Discover, Compare și Request, extensibil controlat către Quote și Order.",
+  "audience": {
+    "id": "E_AUDIENCE_B2B",
+    "type": "B2B organizations",
+    "details": "Specific audience is defined per concrete service transformation."
+  },
+  "eligibility": {
+    "status": "TO_BE_DEFINED_PER_CONCRETE_SERVICE",
+    "rules_uri": "https://aiventure.ro/service-offer-contract.json#eligibility"
+  },
+  "ineligibility": {
+    "status": "TO_BE_DEFINED_PER_CONCRETE_SERVICE"
+  },
+  "territory": {
+    "status": "TO_BE_DEFINED_PER_CONCRETE_SERVICE"
+  },
+  "jurisdiction": {
+    "status": "RESOLVED_BY_RRVI_PER_SERVICE_AND_ACTION"
+  },
+  "language": "ro",
+  "pricing": {
+    "status": "NOT_PUBLISHED",
+    "price": null,
+    "currency": null,
+    "rule": "Defined per concrete engagement; no public canonical price is asserted here."
+  },
+  "availability": {
+    "status": "NOT_PUBLISHED",
+    "capacity": null
+  },
+  "updated_at": "2026-09-13",
+  "lifecycle": [
+    "SERVICE",
+    "SERVICE_OFFER_CONTRACT",
+    "RRVI",
+    "AGENT_READY",
+    "DISCOVER",
+    "COMPARE",
+    "REQUEST",
+    "QUOTE",
+    "APPROVAL",
+    "ORDER",
+    "DELIVERY",
+    "EVIDENCE"
+  ],
+  "defined_by": {
+    "id": "E_SOC_AGENT_READY_B2B_V1_0",
+    "uri": "https://aiventure.ro/service-offer-contract.json"
+  },
+  "controlled_by": {
+    "id": "E_RRVI",
+    "uri": "https://aiventure.ro/rrvi.json"
+  },
+  "evidence": "https://aiventure.ro/evidence.json"
+}

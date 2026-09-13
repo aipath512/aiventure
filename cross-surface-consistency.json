@@ -1,0 +1,98 @@
+{
+  "schema": "AIVENTURE_CROSS_SURFACE_CONSISTENCY",
+  "version": "1.0",
+  "session": "0002H",
+  "generated_at": "2026-09-13",
+  "rule": "Declaration alone never produces PASS; relevant surfaces must agree.",
+  "checks": [
+    {
+      "field": "organization.legal_name",
+      "expected": "AiVenture S.R.L.",
+      "status": "PASS",
+      "surfaces": [
+        {
+          "surface": "ai.json",
+          "value": "AiVenture S.R.L.",
+          "match": true
+        },
+        {
+          "surface": "entities.json",
+          "value": "AiVenture S.R.L.",
+          "match": true
+        },
+        {
+          "surface": "service.json",
+          "value": "AiVenture S.R.L.",
+          "match": true
+        },
+        {
+          "surface": "agent-card.json",
+          "value": "AiVenture S.R.L.",
+          "match": true
+        }
+      ]
+    },
+    {
+      "field": "primary_category",
+      "expected": "Agent-Ready B2B Services",
+      "status": "PASS",
+      "surfaces": [
+        {
+          "surface": "ai.json",
+          "value": "Agent-Ready B2B Services",
+          "match": true
+        },
+        {
+          "surface": "service.json",
+          "value": "Agent-Ready B2B Services",
+          "match": true
+        }
+      ]
+    },
+    {
+      "field": "primary_service.name",
+      "expected": "Agent-Ready B2B Services",
+      "status": "PASS",
+      "surfaces": [
+        {
+          "surface": "ai.json",
+          "value": "Agent-Ready B2B Services",
+          "match": true
+        },
+        {
+          "surface": "service.json",
+          "value": "Agent-Ready B2B Services",
+          "match": true
+        },
+        {
+          "surface": "entities.json",
+          "value": "Agent-Ready B2B Services",
+          "match": true
+        },
+        {
+          "surface": "service-offer-contract.json",
+          "value": "Agent-Ready B2B Services",
+          "match": true
+        }
+      ]
+    },
+    {
+      "field": "language",
+      "expected": "ro",
+      "status": "PASS",
+      "surfaces": [
+        {
+          "surface": "ai.json",
+          "value": "ro",
+          "match": true
+        },
+        {
+          "surface": "service.json",
+          "value": "ro",
+          "match": true
+        }
+      ]
+    }
+  ],
+  "status": "PASS"
+}

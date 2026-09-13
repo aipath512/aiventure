@@ -1,0 +1,37 @@
+{
+  "schema": "AIVENTURE_PROOF_REGISTRY",
+  "version": "2.1",
+  "session": "0002H",
+  "principle": "Claim != Proof",
+  "proofs": [
+    {
+      "proof_id": "AIV-PROOF-GEMINI-ADI-20260912",
+      "subject": "AI Delivery Infrastructure (ADI)",
+      "document_type": "ADI Canonical Text Trust Certificate",
+      "issuer_declared": "Gemini",
+      "date_issued_declared": "2026-09-12",
+      "sha256_declared": "31aa7a564ad93f21752e6c8d1b31f105688156182cfb1bcd6fb65ef1c756bc36",
+      "manifest_hash_declared": "82c79d0e82e678cdbc4f3d3990f73a7ac5f3452ca02706f99779ff2c8cd1df30",
+      "ots_reference_declared": "ai-delivery-infrastructure_canonical_txt.ots",
+      "status": "DECLARED",
+      "verification": {
+        "sha256_exact_file_verified": false,
+        "manifest_hash_verified": false,
+        "ots_verified": false,
+        "bitcoin_block_confirmed": false
+      },
+      "principle": "Claim != Proof",
+      "source_surface": "https://aiventure.ro/#testimoniale"
+    }
+  ],
+  "status_values": [
+    "DECLARED",
+    "SHA_VERIFIED",
+    "OTS_PENDING",
+    "OTS_VERIFIED",
+    "BLOCK_CONFIRMED"
+  ],
+  "generated_at": "2026-09-13",
+  "rule": "Never publish OTS_VERIFIED or BLOCK_CONFIRMED until the exact canonical artifact is independently verified.",
+  "updated_at": "2026-09-13"
+}

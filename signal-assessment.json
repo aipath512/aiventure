@@ -1,0 +1,51 @@
+{
+  "schema": "AIVENTURE_SIGNAL_ASSESSMENT_INDEX",
+  "version": "2.0",
+  "session": "0002H",
+  "generated_at": "2026-09-13",
+  "status_model": [
+    "PASS",
+    "PARTIAL",
+    "FAIL",
+    "NA"
+  ],
+  "pass_gate": "PASS is allowed only when every relevant surface required by the signal is coherent and has verifiable evidence. Declaration alone is insufficient.",
+  "principles": [
+    "Claim != Proof",
+    "Generated != Deployed",
+    "Deployed != Valid",
+    "Valid != Verified"
+  ],
+  "assessments": [
+    {
+      "catalog": "CORE167",
+      "url": "https://aiventure.ro/signal-assessment-core167.json",
+      "source_current": "core 167 assessment preserved from prior build",
+      "deployment_status": "REQUIRES_PUBLIC_VERIFICATION"
+    },
+    {
+      "catalog": "ONPAGE252",
+      "url": "https://aiventure.ro/onpage-signal-assessment.json",
+      "deployment_status": "STATIC_SOURCE_ASSESSMENT"
+    },
+    {
+      "catalog": "ONSITE252",
+      "url": "https://aiventure.ro/onsite-signal-assessment.json",
+      "deployment_status": "REQUIRES_PUBLIC_VERIFICATION",
+      "source_sha256": "995693ff6f0a945ce5b88de87c555f8c9c7fe7435f5e98afe6cc19004363ba4f",
+      "session": "0002H",
+      "status_note": "Template inițial. UNKNOWN până la deploy și verificare publică."
+    },
+    {
+      "catalog": "OFFPAGE217",
+      "url": "https://aiventure.ro/offpage-signal-assessment.json",
+      "deployment_status": "REQUIRES_EXTERNAL_EVIDENCE"
+    },
+    {
+      "catalog": "AIO31",
+      "url": "https://aiventure.ro/aio-signal-assessment.json",
+      "deployment_status": "NOT_EVALUATED"
+    }
+  ],
+  "cross_surface_consistency": "https://aiventure.ro/cross-surface-consistency.json"
+}

@@ -1,0 +1,39 @@
+{
+  "schema": "AIVENTURE_EVIDENCE_REGISTRY",
+  "version": "2.1",
+  "session": "0002H",
+  "records": [
+    {
+      "evidence_id": "EVIDENCE-HOMEPAGE-HUMAN-AI-PROOF-0001",
+      "actor": "AiVenture S.R.L.",
+      "timestamp": "2026-09-13",
+      "rule_applied": "Claim != Proof",
+      "decision": "publish_as_declared_not_verified",
+      "approval": "human_published",
+      "result": "Homepage Human + AI Proof section added",
+      "offer_version": null,
+      "proof_reference": "AIV-PROOF-GEMINI-ADI-20260912"
+    }
+  ],
+  "required_fields": [
+    "actor",
+    "timestamp",
+    "rule_applied",
+    "decision",
+    "result",
+    "offer_version",
+    "proof_reference"
+  ],
+  "entity_id": "E_EVIDENCE_REGISTRY",
+  "principle": "Claim != Proof",
+  "append_only_intent": true,
+  "event_types": [
+    "request",
+    "rrvi_check",
+    "quote",
+    "approval",
+    "order",
+    "delivery",
+    "verification"
+  ]
+}

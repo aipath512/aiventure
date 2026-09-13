@@ -1,0 +1,194 @@
+{
+  "schema": "AIVENTURE_AIO_SIGNAL_ASSESSMENT",
+  "version": "1.0",
+  "session": "0002H",
+  "note": "NA here means not yet evaluated on deployed public surfaces; do not interpret as a passing result.",
+  "signals": [
+    {
+      "id": "AIO001",
+      "status": "NA",
+      "evidence": [],
+      "reason": "NOT_YET_DEPLOYED_AND_VERIFIED"
+    },
+    {
+      "id": "AIO002",
+      "status": "NA",
+      "evidence": [],
+      "reason": "NOT_YET_DEPLOYED_AND_VERIFIED"
+    },
+    {
+      "id": "AIO003",
+      "status": "NA",
+      "evidence": [],
+      "reason": "NOT_YET_DEPLOYED_AND_VERIFIED"
+    },
+    {
+      "id": "AIO004",
+      "status": "NA",
+      "evidence": [],
+      "reason": "NOT_YET_DEPLOYED_AND_VERIFIED"
+    },
+    {
+      "id": "AIO005",
+      "status": "NA",
+      "evidence": [],
+      "reason": "NOT_YET_DEPLOYED_AND_VERIFIED"
+    },
+    {
+      "id": "AIO006",
+      "status": "NA",
+      "evidence": [],
+      "reason": "NOT_YET_DEPLOYED_AND_VERIFIED"
+    },
+    {
+      "id": "AIO007",
+      "status": "NA",
+      "evidence": [],
+      "reason": "NOT_YET_DEPLOYED_AND_VERIFIED"
+    },
+    {
+      "id": "AIO008",
+      "status": "NA",
+      "evidence": [],
+      "reason": "NOT_YET_DEPLOYED_AND_VERIFIED"
+    },
+    {
+      "id": "AIO009",
+      "status": "NA",
+      "evidence": [],
+      "reason": "NOT_YET_DEPLOYED_AND_VERIFIED"
+    },
+    {
+      "id": "AIO010",
+      "status": "NA",
+      "evidence": [],
+      "reason": "NOT_YET_DEPLOYED_AND_VERIFIED"
+    },
+    {
+      "id": "AIO011",
+      "status": "NA",
+      "evidence": [],
+      "reason": "NOT_YET_DEPLOYED_AND_VERIFIED"
+    },
+    {
+      "id": "AIO012",
+      "status": "NA",
+      "evidence": [],
+      "reason": "NOT_YET_DEPLOYED_AND_VERIFIED"
+    },
+    {
+      "id": "AIO013",
+      "status": "NA",
+      "evidence": [],
+      "reason": "NOT_YET_DEPLOYED_AND_VERIFIED"
+    },
+    {
+      "id": "AIO014",
+      "status": "NA",
+      "evidence": [],
+      "reason": "NOT_YET_DEPLOYED_AND_VERIFIED"
+    },
+    {
+      "id": "AIO015",
+      "status": "NA",
+      "evidence": [],
+      "reason": "NOT_YET_DEPLOYED_AND_VERIFIED"
+    },
+    {
+      "id": "AIO016",
+      "status": "NA",
+      "evidence": [],
+      "reason": "NOT_YET_DEPLOYED_AND_VERIFIED"
+    },
+    {
+      "id": "AIO017",
+      "status": "NA",
+      "evidence": [],
+      "reason": "NOT_YET_DEPLOYED_AND_VERIFIED"
+    },
+    {
+      "id": "AIO018",
+      "status": "NA",
+      "evidence": [],
+      "reason": "NOT_YET_DEPLOYED_AND_VERIFIED"
+    },
+    {
+      "id": "AIO019",
+      "status": "NA",
+      "evidence": [],
+      "reason": "NOT_YET_DEPLOYED_AND_VERIFIED"
+    },
+    {
+      "id": "AIO020",
+      "status": "NA",
+      "evidence": [],
+      "reason": "NOT_YET_DEPLOYED_AND_VERIFIED"
+    },
+    {
+      "id": "AIO021",
+      "status": "NA",
+      "evidence": [],
+      "reason": "NOT_YET_DEPLOYED_AND_VERIFIED"
+    },
+    {
+      "id": "AIO022",
+      "status": "NA",
+      "evidence": [],
+      "reason": "NOT_YET_DEPLOYED_AND_VERIFIED"
+    },
+    {
+      "id": "AIO023",
+      "status": "NA",
+      "evidence": [],
+      "reason": "NOT_YET_DEPLOYED_AND_VERIFIED"
+    },
+    {
+      "id": "AIO024",
+      "status": "NA",
+      "evidence": [],
+      "reason": "NOT_YET_DEPLOYED_AND_VERIFIED"
+    },
+    {
+      "id": "AIO025",
+      "status": "NA",
+      "evidence": [],
+      "reason": "NOT_YET_DEPLOYED_AND_VERIFIED"
+    },
+    {
+      "id": "AIO026",
+      "status": "NA",
+      "evidence": [],
+      "reason": "NOT_YET_DEPLOYED_AND_VERIFIED"
+    },
+    {
+      "id": "AIO027",
+      "status": "NA",
+      "evidence": [],
+      "reason": "NOT_YET_DEPLOYED_AND_VERIFIED"
+    },
+    {
+      "id": "AIO028",
+      "status": "NA",
+      "evidence": [],
+      "reason": "NOT_YET_DEPLOYED_AND_VERIFIED"
+    },
+    {
+      "id": "AIO029",
+      "status": "NA",
+      "evidence": [],
+      "reason": "NOT_YET_DEPLOYED_AND_VERIFIED"
+    },
+    {
+      "id": "AIO030",
+      "status": "NA",
+      "evidence": [],
+      "reason": "NOT_YET_DEPLOYED_AND_VERIFIED"
+    },
+    {
+      "id": "AIO031",
+      "status": "NA",
+      "evidence": [],
+      "reason": "NOT_YET_DEPLOYED_AND_VERIFIED"
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "build": "AiVenture COMPLETE FULL A2A 20260913-2105",
+  "date": "2026-09-13",
+  "base": "Reference Implementation SESSION 0002H",
+  "positioning": "A2A Business Infrastructure",
+  "core_pages": [
+    "/",
+    "/three-webs/",
+    "/a2a/",
+    "/buyer-agent/",
+    "/a2a-secrets/01/"
+  ],
+  "hubs": [
+    "/blog/",
+    "/resurse/",
+    "/faq/",
+    "/legal/",
+    "/despre/",
+    "/contact/"
+  ],
+  "trust": [
+    "/eu-ai-act/",
+    "/rrvi/",
+    "/service-offer-contract/"
+  ],
+  "legal": [
+    "/termeni-si-conditii/",
+    "/politica-confidentialitate/",
+    "/cookies/",
+    "/legal/a2a-terms/",
+    "/legal/ai-transparency/"
+  ],
+  "resources": {
+    "source_manual_pdfs": 3,
+    "guides": 6
+  },
+  "blog_articles": 20,
+  "a2a_endpoints": [
+    "/.well-known/agent-card.json",
+    "/api/a2a",
+    "/api/buy/payroll"
+  ],
+  "verification_status": "GENERATED_NOT_DEPLOYED_NOT_VERIFIED",
+  "onpage_252": {
+    "catalog_version": "1.0",
+    "session": "0002H",
+    "pages_evaluated": 56,
+    "signals_per_page": 252,
+    "evaluations": 14112,
+    "audit": "/resurse/semnale/ONPAGE-252-ALL-PAGES-AUDIT-20260913-1808.csv",
+    "status_totals": {
+      "PASS": 5885,
+      "PARTIAL": 6666,
+      "NA": 1561
+    }
+  },
+  "innovations": {
+    "count": 16,
+    "hub": "/inovatii/",
+    "verification": "/inovatii/verificare/",
+    "archive": "/inovatii/arhiva/",
+    "rule": "Claim != Proof; OTS/Bitcoin only after verification"
+  },
+  "questions": {
+    "categories": 7,
+    "questions": 70,
+    "secondary_faq_per_question": 10,
+    "hub": "/intrebari/"
+  },
+  "session": "0002H",
+  "timestamp": "2026-09-13 18:57 EEST",
+  "header_stamp": {
+    "applied_to_html_files": 166,
+    "format": "SESSION 0002H · 2026-09-13 18:57 EEST"
+  },
+  "source_build": "aiventure-COMPLETE-FULL-A2A-20260913-1908.zip",
+  "aio": {
+    "version": "1.0",
+    "signals": 31,
+    "families": 6,
+    "page": "/servicii/aio/",
+    "catalog": "/aio-signals.json",
+    "session": "0002H"
+  },
+  "signal_architecture": {
+    "session": "0002H",
+    "master_catalog": "/signals-catalog.json",
+    "master_assessment": "/signal-assessment.json",
+    "cross_surface_consistency": "/cross-surface-consistency.json",
+    "canonical_rule": "A signal is PASS only if coherent and verifiable across all relevant surfaces.",
+    "catalog_entries": 919
+  },
+  "homepage_testimonials": {
+    "human": "Roxana Deak / ECBTAX",
+    "ai_proof": "Gemini / ADI Canonical Text Trust Certificate",
+    "proof_status": "DECLARED_NOT_VERIFIED",
+    "section": "#testimoniale",
+    "session": "0002H"
+  },
+  "onsite_signals": {
+    "session": "0002H",
+    "catalog": "onsite-signals-catalog.json",
+    "assessment": "onsite-signal-assessment.json",
+    "count": 252,
+    "catalog_sha256": "c79135b63a80617f60a15951c75c97641d4471904148c5d3f7f332f0ea1155b4",
+    "assessment_sha256": "995693ff6f0a945ce5b88de87c555f8c9c7fe7435f5e98afe6cc19004363ba4f",
+    "updated_at": "2026-09-13T21:05:00+03:00"
+  },
+  "final_complete_build": {
+    "session": "0002H",
+    "timestamp": "2026-09-13T21:17:00+03:00",
+    "html_pages": 166,
+    "signal_counts": {
+      "ONPAGE": 252,
+      "ONSITE": 252,
+      "OFFPAGE": 217,
+      "AIO": 31
+    },
+    "homepage_testimonials": true,
+    "offpage_217_integrated": true
+  }
+}

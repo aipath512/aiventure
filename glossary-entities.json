@@ -1,0 +1,77 @@
+{
+  "schema": "AIVENTURE_GLOSSARY_ENTITIES",
+  "version": "1.0",
+  "session": "0002H",
+  "entities": [
+    {
+      "name": "AiVenture S.R.L.",
+      "definition": "Entitatea juridică/operatorul aiventure.ro.",
+      "canonical_page": "https://aiventure.ro/"
+    },
+    {
+      "name": "Agent-Ready B2B Services",
+      "definition": "Categoria canonică AiVenture.",
+      "canonical_page": "https://aiventure.ro/agent-ready/"
+    },
+    {
+      "name": "Service Offer Contract™",
+      "definition": "Sursa unică, versionată, de adevăr pentru ofertă.",
+      "canonical_page": "https://aiventure.ro/service-offer-contract/"
+    },
+    {
+      "name": "RRVI™",
+      "definition": "Remote Reglementation Verification Interface.",
+      "canonical_page": "https://aiventure.ro/rrvi/"
+    },
+    {
+      "name": "Autonomie L1–L5",
+      "definition": "Discover, Compare, Request, Quote, Order.",
+      "canonical_page": "https://aiventure.ro/agent-ready/"
+    },
+    {
+      "name": "Evidence",
+      "definition": "Dovada regulii, actorului, deciziei și rezultatului.",
+      "canonical_page": "https://aiventure.ro/inovatii/"
+    },
+    {
+      "name": "EU AI Act-first",
+      "definition": "Regulation-first, nu EU AI Act-only.",
+      "canonical_page": "https://aiventure.ro/eu-ai-act/"
+    },
+    {
+      "name": "AI-LENS™",
+      "definition": "Observație a imaginii digitale văzute de AI.",
+      "canonical_page": "https://aiventure.ro/produse/ai-lens/"
+    },
+    {
+      "name": "3WEBOBS™",
+      "definition": "Audit al semnalelor Human/AI/Machine Web.",
+      "canonical_page": "https://aiventure.ro/produse/3webobs/"
+    },
+    {
+      "name": "AI-READY",
+      "definition": "Remediere și machine-readable layer.",
+      "canonical_page": "https://aiventure.ro/produse/ai-ready-injector/"
+    },
+    {
+      "name": "A2A",
+      "definition": "Agent-to-Agent interaction, componentă tehnică.",
+      "canonical_page": "https://aiventure.ro/agent-ready/"
+    },
+    {
+      "name": "ADI",
+      "definition": "AI Delivery Infrastructure.",
+      "canonical_page": "https://aiventure.ro/inovatii/"
+    },
+    {
+      "name": "SHA-256",
+      "definition": "Amprentă criptografică a unui artefact exact.",
+      "canonical_page": "https://aiventure.ro/inovatii/"
+    },
+    {
+      "name": "OpenTimestamps",
+      "definition": "Dovadă temporală asociată unui artefact.",
+      "canonical_page": "https://aiventure.ro/inovatii/"
+    }
+  ]
+}

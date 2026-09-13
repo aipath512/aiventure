@@ -1,0 +1,5 @@
+Contact: mailto:contact@5thelement.ai
+Canonical: https://aiventure.ro/.well-known/security.txt
+Expires: 2027-09-13T00:00:00Z
+Preferred-Languages: ro
+Policy: https://aiventure.ro/legal/

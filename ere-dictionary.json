@@ -1,0 +1,414 @@
+{
+  "schema": "AIVENTURE_ERE_DICTIONARY",
+  "version": "2.0",
+  "session": "0002H",
+  "scope": "Agent-Ready B2B Services",
+  "model": "Entities → Attributes → Relationships → Cardinality → Directionality → Identity Resolution",
+  "entities": {
+    "Organization": {
+      "id_pattern": "E_ORG_*",
+      "attributes": [
+        "legal_name",
+        "brand_name",
+        "country",
+        "language",
+        "contact",
+        "category",
+        "mission",
+        "vision",
+        "website",
+        "identifiers"
+      ],
+      "relationships": {
+        "HAS_BRAND": "Brand",
+        "PROVIDES": "Service",
+        "OWNS": "Product",
+        "DEFINES": "Innovation",
+        "USES": "RRVI",
+        "PUBLISHES": "WebPage",
+        "HAS_CONTACT_POINT": "ContactPoint"
+      }
+    },
+    "Brand": {
+      "id_pattern": "E_BRAND_*",
+      "attributes": [
+        "name",
+        "alternate_name",
+        "slogan",
+        "logo",
+        "category"
+      ],
+      "relationships": {
+        "BELONGS_TO": "Organization",
+        "REPRESENTS": "ServiceCategory"
+      }
+    },
+    "Service": {
+      "id_pattern": "E_SERVICE_*",
+      "attributes": [
+        "service_id",
+        "name",
+        "category",
+        "description",
+        "problem",
+        "outcome",
+        "deliverables",
+        "exclusions",
+        "acceptance_criteria",
+        "language",
+        "territory",
+        "jurisdiction",
+        "availability",
+        "capacity",
+        "SLA",
+        "delivery_time",
+        "version",
+        "status"
+      ],
+      "relationships": {
+        "PROVIDED_BY": "Organization",
+        "DEFINED_BY": "ServiceOfferContract",
+        "TARGETS": "BusinessAudience",
+        "AVAILABLE_IN": "Territory",
+        "GOVERNED_BY": "Jurisdiction",
+        "CONTROLLED_BY": "RRVI",
+        "HAS_AUTONOMY_POLICY": "AutonomyPolicy",
+        "HAS_OFFER": "Offer",
+        "ACCEPTS_REQUEST": "Request",
+        "CAN_GENERATE": "Quote",
+        "CAN_RESULT_IN": "Order",
+        "PRODUCES": "Delivery",
+        "GENERATES": "Evidence"
+      }
+    },
+    "ServiceOfferContract": {
+      "id_pattern": "E_SOC_*",
+      "attributes": [
+        "offer_id",
+        "version",
+        "status",
+        "updated_at",
+        "valid_from",
+        "valid_until",
+        "provider",
+        "service",
+        "audience",
+        "eligibility",
+        "ineligibility",
+        "pricing_rule",
+        "currency",
+        "taxes",
+        "payment_terms",
+        "availability",
+        "capacity",
+        "max_autonomy",
+        "approval_policy",
+        "forbidden_actions",
+        "evidence_policy"
+      ],
+      "relationships": {
+        "DEFINES_SERVICE": "Service",
+        "ISSUED_BY": "Organization",
+        "TARGETS": "BusinessAudience",
+        "APPLIES_IN": "Jurisdiction",
+        "USES": "Rule",
+        "CHECKED_BY": "RRVI"
+      }
+    },
+    "RRVI": {
+      "id_pattern": "E_RRVI*",
+      "attributes": [
+        "jurisdiction",
+        "service",
+        "action",
+        "actor",
+        "risk_level",
+        "autonomy_level",
+        "financial_threshold",
+        "data_classification",
+        "decision",
+        "conditions",
+        "timestamp"
+      ],
+      "relationships": {
+        "CHECKS": "ServiceOfferContract",
+        "APPLIES": "Regulation",
+        "APPLIES_IN": "Jurisdiction",
+        "EVALUATES": "AutonomyLevel",
+        "MAY_REQUIRE": "HumanApproval",
+        "PRODUCES": "RRVIDecision",
+        "GENERATES": "Evidence"
+      }
+    },
+    "AutonomyLevel": {
+      "id_pattern": "L[1-5]_*",
+      "members": [
+        "L1_DISCOVER",
+        "L2_COMPARE",
+        "L3_REQUEST",
+        "L4_QUOTE",
+        "L5_ORDER"
+      ],
+      "relationships": {
+        "PERMITS": "Action",
+        "ASSIGNED_TO": "Service",
+        "CHECKED_BY": "RRVI"
+      }
+    },
+    "Action": {
+      "id_pattern": "A_*",
+      "members": [
+        "discover",
+        "compare",
+        "check_eligibility",
+        "create_request",
+        "request_quote",
+        "generate_quote_draft",
+        "create_order_draft",
+        "order"
+      ],
+      "relationships": {
+        "APPLIES_TO": "Service",
+        "REQUIRES": "AutonomyLevel",
+        "GATED_BY": "RRVI",
+        "MAY_REQUIRE": "HumanApproval",
+        "GENERATES": "Evidence"
+      }
+    },
+    "BusinessAudience": {
+      "id_pattern": "E_AUDIENCE_*",
+      "attributes": [
+        "organization_type",
+        "industry",
+        "size",
+        "territory",
+        "jurisdiction",
+        "language",
+        "eligibility_profile"
+      ],
+      "relationships": {
+        "TARGET_OF": "Service",
+        "EVALUATED_BY": "EligibilityRule"
+      }
+    },
+    "EligibilityRule": {
+      "id_pattern": "R_ELIGIBILITY_*",
+      "attributes": [
+        "condition",
+        "operator",
+        "required_data",
+        "rule_version",
+        "result",
+        "escalation_rule"
+      ],
+      "relationships": {
+        "APPLIES_TO": "ServiceOfferContract",
+        "EVALUATES": "Request",
+        "MAY_TRIGGER": "HumanReview"
+      }
+    },
+    "Offer": {
+      "id_pattern": "E_OFFER_*",
+      "attributes": [
+        "offer_id",
+        "price",
+        "pricing_rule",
+        "currency",
+        "taxes",
+        "validity",
+        "payment_terms",
+        "SLA",
+        "availability"
+      ],
+      "relationships": {
+        "OFFERS_SERVICE": "Service",
+        "ISSUED_BY": "Organization",
+        "DERIVED_FROM": "ServiceOfferContract",
+        "CAN_RESULT_IN": "Order"
+      }
+    },
+    "Request": {
+      "id_pattern": "E_REQUEST_*",
+      "attributes": [
+        "requester",
+        "service_requested",
+        "brief",
+        "jurisdiction",
+        "eligibility_status",
+        "timestamp",
+        "status"
+      ],
+      "relationships": {
+        "REQUESTS_SERVICE": "Service",
+        "CREATED_BY": "Actor",
+        "EVALUATED_BY": "EligibilityRule",
+        "MAY_GENERATE": "Quote",
+        "GENERATES": "Evidence"
+      }
+    },
+    "Quote": {
+      "id_pattern": "E_QUOTE_*",
+      "attributes": [
+        "price",
+        "currency",
+        "terms",
+        "validity",
+        "delivery_time",
+        "approval_status"
+      ],
+      "relationships": {
+        "FOR_REQUEST": "Request",
+        "DERIVED_FROM": "ServiceOfferContract",
+        "MAY_REQUIRE": "HumanApproval",
+        "MAY_RESULT_IN": "Order",
+        "GENERATES": "Evidence"
+      }
+    },
+    "Order": {
+      "id_pattern": "E_ORDER_*",
+      "attributes": [
+        "status",
+        "value",
+        "currency",
+        "timestamp",
+        "payment_status",
+        "approval_status"
+      ],
+      "relationships": {
+        "DERIVED_FROM": "Quote",
+        "ORDERS": "Service",
+        "AUTHORIZED_BY": "Policy",
+        "RESULTS_IN": "Delivery",
+        "GENERATES": "Evidence"
+      }
+    },
+    "Delivery": {
+      "id_pattern": "E_DELIVERY_*",
+      "attributes": [
+        "start_date",
+        "end_date",
+        "SLA_status",
+        "acceptance_status",
+        "deliverables"
+      ],
+      "relationships": {
+        "FULFILLS": "Order",
+        "DELIVERS": "Service",
+        "PRODUCES": "Evidence"
+      }
+    },
+    "Evidence": {
+      "id_pattern": "E_EVIDENCE_*",
+      "attributes": [
+        "timestamp",
+        "actor",
+        "rule_applied",
+        "decision",
+        "approval",
+        "result",
+        "offer_version",
+        "hash",
+        "proof_reference"
+      ],
+      "relationships": {
+        "PROVES": "Action",
+        "REFERENCES_SOC_VERSION": "ServiceOfferContract",
+        "REFERENCES_RULE": "Rule",
+        "CREATED_BY": "Actor",
+        "MAY_REFERENCE": "Proof"
+      }
+    },
+    "Regulation": {
+      "id_pattern": "E_REG_*",
+      "members": [
+        "EU AI Act",
+        "GDPR",
+        "Labor Law",
+        "Tax Law",
+        "Professional Regulation",
+        "Internal Policy"
+      ],
+      "relationships": {
+        "APPLIES_IN": "Jurisdiction",
+        "CHECKED_BY": "RRVI",
+        "GOVERNS": "Action"
+      }
+    },
+    "Jurisdiction": {
+      "id_pattern": "E_JURISDICTION_*",
+      "attributes": [
+        "country",
+        "region",
+        "legal_scope",
+        "effective_date"
+      ],
+      "relationships": {
+        "HAS_REGULATION": "Regulation",
+        "APPLIES_TO": "Service",
+        "USED_BY": "RRVI"
+      }
+    },
+    "Agent": {
+      "id_pattern": "E_AGENT_*",
+      "attributes": [
+        "owner",
+        "identity",
+        "capabilities",
+        "authorization_scope",
+        "endpoint",
+        "protocol_support"
+      ],
+      "relationships": {
+        "REPRESENTS": "Organization",
+        "DISCOVERS": "Service",
+        "CREATES": "Request",
+        "REQUESTS": "Quote",
+        "MAY_CREATE": "Order",
+        "SUBJECT_TO": "RRVI",
+        "GENERATES": "Evidence"
+      }
+    }
+  },
+  "cardinality_rules": {
+    "C01": "Organization → Service = 1:N",
+    "C02": "Service → Active SOC = 1:1",
+    "C03": "Service → SOC History = 1:N",
+    "C04": "SOC → Eligibility Rules = 1:N",
+    "C05": "SOC → Allowed Actions = 1:N",
+    "C06": "Service → Autonomy Max = N:1",
+    "C07": "Request → Quote = 0:1",
+    "C08": "Quote → Order = 0:1",
+    "C09": "Order → Delivery = 1:N",
+    "C10": "Action → Evidence = 1:N",
+    "C11": "RRVI Check → Decision = 1:1",
+    "C12": "RRVI Check → Regulation = N:N"
+  },
+  "directionality_rule": "Critical commercial relationships are represented bidirectionally; do not rely on crawler inference of inverse relations.",
+  "identity_rules": [
+    "Stable URI per entity",
+    "Reuse same IDs across HTML, Schema.org, service.json, Agent Card, API, A2A, intents.json, RRVI and Evidence",
+    "Versioned objects receive distinct identities."
+  ],
+  "reconstruction_test": [
+    "provider",
+    "services",
+    "service_offer",
+    "active_version",
+    "audience",
+    "availability",
+    "rules",
+    "autonomy",
+    "agent_actions",
+    "human_approval",
+    "request",
+    "quote_lineage",
+    "order_lineage",
+    "delivery",
+    "evidence",
+    "regulation",
+    "rrvi_decision",
+    "cardinality",
+    "inverse_relations",
+    "canonical_identity"
+  ]
+}

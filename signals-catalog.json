@@ -1,0 +1,104 @@
+{
+  "schema": "AIVENTURE_SIGNALS_CATALOG_INDEX",
+  "version": "2.0",
+  "session": "0002H",
+  "generated_at": "2026-09-13",
+  "principle": "A signal may be declared in one file, but PASS requires coherent and verifiable evidence across every relevant surface.",
+  "status_model": [
+    "PASS",
+    "PARTIAL",
+    "FAIL",
+    "NA"
+  ],
+  "scoring": {
+    "PASS": 1,
+    "PARTIAL": 0.5,
+    "FAIL": 0,
+    "NA": "excluded_from_denominator"
+  },
+  "catalog_entry_count": 919,
+  "note": "Catalog entries are not claimed to be semantically unique across catalogs.",
+  "catalogs": [
+    {
+      "id": "CORE167",
+      "url": "https://aiventure.ro/core-167-signals-catalog.json",
+      "count": 167,
+      "scope": "identity/entity + trust/proof + intent/governance"
+    },
+    {
+      "id": "ONPAGE252",
+      "url": "https://aiventure.ro/onpage-signals-catalog.json",
+      "count": 252,
+      "scope": "per-page on-page"
+    },
+    {
+      "id": "ONSITE252",
+      "url": "https://aiventure.ro/onsite-signals-catalog.json",
+      "count": 252,
+      "scope": "on-site",
+      "version": "1.0",
+      "session": "0002H",
+      "source_sha256": "c79135b63a80617f60a15951c75c97641d4471904148c5d3f7f332f0ea1155b4"
+    },
+    {
+      "id": "OFFPAGE217",
+      "url": "https://aiventure.ro/offpage-signals-catalog.json",
+      "count": 217,
+      "scope": "external/off-page evidence"
+    },
+    {
+      "id": "AIO31",
+      "url": "https://aiventure.ro/aio-signals.json",
+      "count": 31,
+      "scope": "AI Optimization"
+    }
+  ],
+  "surface_map": {
+    "html_pages": [
+      "meta",
+      "canonical",
+      "headings",
+      "breadcrumb",
+      "visible_faq",
+      "internal_links",
+      "jsonld",
+      "open_graph",
+      "twitter",
+      "answer_first_content",
+      "visible_ERE"
+    ],
+    "root_ai_files": [
+      "robots.txt",
+      "sitemap.xml",
+      "llms.txt",
+      "ai.json",
+      "entities.json",
+      "intents.json",
+      "service.json",
+      "service-offer-contract.json",
+      "governance.json",
+      "rrvi.json",
+      "proof.json",
+      "allow-lane-matrix.json",
+      "agent-card.json",
+      "capabilities.json",
+      "authority.json",
+      "policy.json",
+      "security.txt",
+      "humans.txt",
+      "manifest.json",
+      "schema.jsonld"
+    ],
+    "evidence_audit": [
+      "evidence.json",
+      "ere-dictionary.json",
+      "signals-catalog.json",
+      "signal-assessment.json"
+    ]
+  },
+  "last_update": {
+    "component": "ONSITE252",
+    "session": "0002H",
+    "timestamp": "2026-09-13T21:05:00+03:00"
+  }
+}
