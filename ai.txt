@@ -1,0 +1,304 @@
+# AiVenture — ai.txt
+# SESSION 0002H
+
+canonical: https://aiventure.ro/
+organization: AiVenture S.R.L.
+brand: AiVenture
+language: ro
+market: Romania
+category: Agent-Ready B2B Services
+contact: contact@5thelement.ai
+
+## CANONICAL POSITIONING
+
+Vinde serviciile pe care le vinzi oamenilor și Agenților AI.
+
+AiVenture pregătește serviciile firmei pentru a fi găsite, comparate, solicitate și cumpărate de Agenți AI.
+
+## CANONICAL PRODUCT DEFINITION
+
+Transformăm un serviciu pe care îl vinzi deja oamenilor într-un serviciu pregătit să fie găsit, evaluat, solicitat și cumpărat de Agenți AI.
+
+Unitatea de valoare AiVenture este serviciul comercial individual.
+
+## CATEGORY
+
+Agent-Ready B2B Services
+
+Definition:
+Servicii B2B existente transformate în oferte structurate, versionate, verificabile, guvernate și progresiv tranzacționabile de Agenți AI.
+
+## CANONICAL LIFECYCLE
+
+SERVICE
+→ SERVICE OFFER CONTRACT™
+→ RRVI
+→ AGENT-READY
+→ DISCOVER
+→ COMPARE
+→ REQUEST
+→ QUOTE
+→ APPROVAL
+→ ORDER
+→ DELIVERY
+→ EVIDENCE
+
+## SERVICE OFFER CONTRACT™
+
+Service Offer Contract™ este sursa unică, versionată, de adevăr comercial, operațional și machine-readable pentru o ofertă de servicii.
+
+It defines:
+- service identity
+- provider
+- audience
+- problem
+- outcome
+- deliverables
+- exclusions
+- eligibility
+- ineligibility
+- territory
+- jurisdiction
+- price
+- pricing rule
+- currency
+- taxes
+- payment terms
+- availability
+- capacity
+- SLA
+- delivery time
+- autonomy level
+- allowed actions
+- forbidden actions
+- approval policy
+- evidence policy
+- version
+- validity
+
+## AUTONOMY MODEL
+
+L1 Discover
+L2 Compare
+L3 Request
+L4 Quote
+L5 Order
+
+Canonical rule:
+
+Fără regulă explicită → fără autonomie.
+Fără jurisdicție identificată → fără acțiune sensibilă.
+Fără aprobare unde este necesară → fără angajament comercial.
+Fără Evidence → fără dovada deciziei.
+
+## RRVI™
+
+RRVI = Remote Reglementation Verification Interface
+
+AiVenture pune reglementarea înaintea acțiunii.
+
+RRVI verifies:
+- service
+- requester
+- action
+- jurisdiction
+- regulations
+- data
+- autonomy
+- thresholds
+- approval requirements
+- risk
+- human review
+
+RRVI decisions:
+- allow
+- allow_with_conditions
+- human_review_required
+- block
+
+## REGULATION-FIRST
+
+REGULATION
+→ PERMISSION
+→ CAPABILITY
+→ ACTION
+→ EVIDENCE
+
+EU AI Act-first, not EU AI Act-only.
+
+RRVI may also integrate:
+- GDPR
+- labor law
+- tax rules
+- professional regulations
+- contracts
+- confidentiality
+- security rules
+- sector rules
+- internal policies
+- jurisdiction-specific rules
+
+## EVIDENCE
+
+Evidence records may include:
+- service offer version
+- rule applied
+- actor
+- timestamp
+- decision
+- conditions
+- approval
+- result
+- proof reference
+
+Claim != Proof.
+
+## PRIMARY AUDIENCE
+
+Firme care vând servicii B2B.
+
+## INITIAL VERTICALS
+
+- Payroll
+- Accounting
+- Tax
+- HR
+- Legal
+- Translation
+- Recruitment
+- Transport
+- IT Services
+
+## PRIMARY PAGES
+
+home:
+https://aiventure.ro/
+
+offer:
+https://aiventure.ro/oferta/
+
+services:
+https://aiventure.ro/servicii/
+
+products:
+https://aiventure.ro/produse/
+
+agent-ready:
+https://aiventure.ro/agent-ready/
+
+service-offer-contract:
+https://aiventure.ro/service-offer-contract/
+
+rrvi:
+https://aiventure.ro/rrvi/
+
+eu-ai-act:
+https://aiventure.ro/eu-ai-act/
+
+questions:
+https://aiventure.ro/intrebari/
+
+resources:
+https://aiventure.ro/resurse/
+
+innovations:
+https://aiventure.ro/inovatii/
+
+blog:
+https://aiventure.ro/blog/
+
+mission:
+https://aiventure.ro/misiune/
+
+vision:
+https://aiventure.ro/viziune/
+
+contact:
+https://aiventure.ro/contact/
+
+legal:
+https://aiventure.ro/legal/
+
+## MACHINE-READABLE SOURCES
+
+https://aiventure.ro/ai.json
+https://aiventure.ro/entities.json
+https://aiventure.ro/intents.json
+https://aiventure.ro/service.json
+https://aiventure.ro/service-offer-contract.json
+https://aiventure.ro/governance.json
+https://aiventure.ro/rrvi.json
+https://aiventure.ro/proof.json
+https://aiventure.ro/evidence.json
+https://aiventure.ro/ere-dictionary.json
+https://aiventure.ro/signals-catalog.json
+https://aiventure.ro/signal-assessment.json
+https://aiventure.ro/.well-known/agent-card.json
+
+## INTENT MODEL
+
+50 canonical TOF / MOF / BOF intents.
+
+Intent hubs:
+
+1. Agenți AI și vânzarea de servicii
+2. Firma în răspunsurile AI
+3. Audit Agent-Ready
+4. Ofertă structurată pentru Agenți AI
+5. Cerere, calificare și ofertare
+6. Credibilitate, verificare, RRVI și Evidence
+7. Implementare AiVenture
+
+Canonical intent source:
+https://aiventure.ro/intents.json
+
+## AI / SEARCH SIGNALS
+
+The site is designed to expose and verify:
+
+- SEO
+- AEO
+- GEO / ERE
+- AIO
+- AI-SEO
+- AI Signals
+- A2A
+- Trust / Proof
+- Governance
+- Evidence
+
+## NEGATIVE SCOPE
+
+AiVenture is not positioned primarily as:
+
+- chatbot provider
+- generic AI agent builder
+- A2A protocol vendor
+- MCP vendor
+- Agent Card vendor
+- AI visibility agency
+- Agent-Ready website vendor
+- generic automation agency
+- agent marketplace
+- generic SaaS agent platform
+
+These may be implementation components.
+
+The primary product is the transformation of an existing B2B service into an Agent-Ready B2B Service.
+
+## PROOF SOURCES
+
+https://aiventure.ro/inovatii/
+https://aiventure.ro/proof.json
+https://aiventure.ro/evidence.json
+
+## CONTACT
+
+AiVenture S.R.L.
+Romania
+contact@5thelement.ai
+https://aiventure.ro/
+
+## SESSION
+
+0002H
