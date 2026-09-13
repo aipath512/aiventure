@@ -1,0 +1,2186 @@
+{
+  "schema": "AIVENTURE_OFFPAGE_217_SIGNAL_ASSESSMENT",
+  "version": "1.0",
+  "session": "0002H",
+  "domain": "https://aiventure.ro/",
+  "total_signals": 217,
+  "note": "OFF-PAGE requires external, independently observable evidence. No PASS is granted from generated site files alone.",
+  "signals": [
+    {
+      "id": "OF001",
+      "family": "external_identity_authority",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF002",
+      "family": "external_identity_authority",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF003",
+      "family": "external_identity_authority",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF004",
+      "family": "external_identity_authority",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF005",
+      "family": "external_identity_authority",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF006",
+      "family": "external_identity_authority",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF007",
+      "family": "external_identity_authority",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF008",
+      "family": "external_identity_authority",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF009",
+      "family": "external_identity_authority",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF010",
+      "family": "external_identity_authority",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF011",
+      "family": "external_identity_authority",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF012",
+      "family": "external_identity_authority",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF013",
+      "family": "external_identity_authority",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF014",
+      "family": "external_identity_authority",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF015",
+      "family": "external_identity_authority",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF016",
+      "family": "backlinks_authority",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF017",
+      "family": "backlinks_authority",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF018",
+      "family": "backlinks_authority",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF019",
+      "family": "backlinks_authority",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF020",
+      "family": "backlinks_authority",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF021",
+      "family": "backlinks_authority",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF022",
+      "family": "backlinks_authority",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF023",
+      "family": "backlinks_authority",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF024",
+      "family": "backlinks_authority",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF025",
+      "family": "backlinks_authority",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF026",
+      "family": "backlinks_authority",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF027",
+      "family": "backlinks_authority",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF028",
+      "family": "backlinks_authority",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF029",
+      "family": "backlinks_authority",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF030",
+      "family": "backlinks_authority",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF031",
+      "family": "backlinks_authority",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF032",
+      "family": "backlinks_authority",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF033",
+      "family": "backlinks_authority",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF034",
+      "family": "backlinks_authority",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF035",
+      "family": "backlinks_authority",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF036",
+      "family": "mentions_citations",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF037",
+      "family": "mentions_citations",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF038",
+      "family": "mentions_citations",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF039",
+      "family": "mentions_citations",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF040",
+      "family": "mentions_citations",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF041",
+      "family": "mentions_citations",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF042",
+      "family": "mentions_citations",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF043",
+      "family": "mentions_citations",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF044",
+      "family": "mentions_citations",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF045",
+      "family": "mentions_citations",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF046",
+      "family": "mentions_citations",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF047",
+      "family": "mentions_citations",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF048",
+      "family": "mentions_citations",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF049",
+      "family": "mentions_citations",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF050",
+      "family": "mentions_citations",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF051",
+      "family": "mentions_citations",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF052",
+      "family": "mentions_citations",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF053",
+      "family": "mentions_citations",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF054",
+      "family": "mentions_citations",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF055",
+      "family": "mentions_citations",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF056",
+      "family": "directories_profiles",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF057",
+      "family": "directories_profiles",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF058",
+      "family": "directories_profiles",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF059",
+      "family": "directories_profiles",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF060",
+      "family": "directories_profiles",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF061",
+      "family": "directories_profiles",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF062",
+      "family": "directories_profiles",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF063",
+      "family": "directories_profiles",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF064",
+      "family": "directories_profiles",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF065",
+      "family": "directories_profiles",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF066",
+      "family": "directories_profiles",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF067",
+      "family": "directories_profiles",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF068",
+      "family": "directories_profiles",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF069",
+      "family": "directories_profiles",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF070",
+      "family": "directories_profiles",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF071",
+      "family": "reviews_reputation",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF072",
+      "family": "reviews_reputation",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF073",
+      "family": "reviews_reputation",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF074",
+      "family": "reviews_reputation",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF075",
+      "family": "reviews_reputation",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF076",
+      "family": "reviews_reputation",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF077",
+      "family": "reviews_reputation",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF078",
+      "family": "reviews_reputation",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF079",
+      "family": "reviews_reputation",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF080",
+      "family": "reviews_reputation",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF081",
+      "family": "reviews_reputation",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF082",
+      "family": "reviews_reputation",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF083",
+      "family": "reviews_reputation",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF084",
+      "family": "reviews_reputation",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF085",
+      "family": "reviews_reputation",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF086",
+      "family": "knowledge_graph_entity_resolution",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF087",
+      "family": "knowledge_graph_entity_resolution",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF088",
+      "family": "knowledge_graph_entity_resolution",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF089",
+      "family": "knowledge_graph_entity_resolution",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF090",
+      "family": "knowledge_graph_entity_resolution",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF091",
+      "family": "knowledge_graph_entity_resolution",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF092",
+      "family": "knowledge_graph_entity_resolution",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF093",
+      "family": "knowledge_graph_entity_resolution",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF094",
+      "family": "knowledge_graph_entity_resolution",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF095",
+      "family": "knowledge_graph_entity_resolution",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF096",
+      "family": "knowledge_graph_entity_resolution",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF097",
+      "family": "knowledge_graph_entity_resolution",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF098",
+      "family": "knowledge_graph_entity_resolution",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF099",
+      "family": "knowledge_graph_entity_resolution",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF100",
+      "family": "knowledge_graph_entity_resolution",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF101",
+      "family": "editorial_distribution",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF102",
+      "family": "editorial_distribution",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF103",
+      "family": "editorial_distribution",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF104",
+      "family": "editorial_distribution",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF105",
+      "family": "editorial_distribution",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF106",
+      "family": "editorial_distribution",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF107",
+      "family": "editorial_distribution",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF108",
+      "family": "editorial_distribution",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF109",
+      "family": "editorial_distribution",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF110",
+      "family": "editorial_distribution",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF111",
+      "family": "editorial_distribution",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF112",
+      "family": "editorial_distribution",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF113",
+      "family": "editorial_distribution",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF114",
+      "family": "editorial_distribution",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF115",
+      "family": "editorial_distribution",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF116",
+      "family": "social_signals",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF117",
+      "family": "social_signals",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF118",
+      "family": "social_signals",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF119",
+      "family": "social_signals",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF120",
+      "family": "social_signals",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF121",
+      "family": "social_signals",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF122",
+      "family": "social_signals",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF123",
+      "family": "social_signals",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF124",
+      "family": "social_signals",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF125",
+      "family": "social_signals",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF126",
+      "family": "social_signals",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF127",
+      "family": "social_signals",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF128",
+      "family": "social_signals",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF129",
+      "family": "social_signals",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF130",
+      "family": "social_signals",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF131",
+      "family": "partners_ecosystem",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF132",
+      "family": "partners_ecosystem",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF133",
+      "family": "partners_ecosystem",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF134",
+      "family": "partners_ecosystem",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF135",
+      "family": "partners_ecosystem",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF136",
+      "family": "partners_ecosystem",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF137",
+      "family": "partners_ecosystem",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF138",
+      "family": "partners_ecosystem",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF139",
+      "family": "partners_ecosystem",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF140",
+      "family": "partners_ecosystem",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF141",
+      "family": "partners_ecosystem",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF142",
+      "family": "partners_ecosystem",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF143",
+      "family": "partners_ecosystem",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF144",
+      "family": "partners_ecosystem",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF145",
+      "family": "partners_ecosystem",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF146",
+      "family": "trust_proof_external",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF147",
+      "family": "trust_proof_external",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF148",
+      "family": "trust_proof_external",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF149",
+      "family": "trust_proof_external",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF150",
+      "family": "trust_proof_external",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF151",
+      "family": "trust_proof_external",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF152",
+      "family": "trust_proof_external",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF153",
+      "family": "trust_proof_external",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF154",
+      "family": "trust_proof_external",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF155",
+      "family": "trust_proof_external",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF156",
+      "family": "trust_proof_external",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF157",
+      "family": "trust_proof_external",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF158",
+      "family": "trust_proof_external",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF159",
+      "family": "trust_proof_external",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF160",
+      "family": "trust_proof_external",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF161",
+      "family": "local_geo_presence",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF162",
+      "family": "local_geo_presence",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF163",
+      "family": "local_geo_presence",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF164",
+      "family": "local_geo_presence",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF165",
+      "family": "local_geo_presence",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF166",
+      "family": "local_geo_presence",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF167",
+      "family": "local_geo_presence",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF168",
+      "family": "local_geo_presence",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF169",
+      "family": "local_geo_presence",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF170",
+      "family": "local_geo_presence",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF171",
+      "family": "local_geo_presence",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF172",
+      "family": "local_geo_presence",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF173",
+      "family": "ai_discovery_external",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF174",
+      "family": "ai_discovery_external",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF175",
+      "family": "ai_discovery_external",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF176",
+      "family": "ai_discovery_external",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF177",
+      "family": "ai_discovery_external",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF178",
+      "family": "ai_discovery_external",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF179",
+      "family": "ai_discovery_external",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF180",
+      "family": "ai_discovery_external",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF181",
+      "family": "ai_discovery_external",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF182",
+      "family": "ai_discovery_external",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF183",
+      "family": "ai_discovery_external",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF184",
+      "family": "ai_discovery_external",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF185",
+      "family": "ai_discovery_external",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF186",
+      "family": "ai_discovery_external",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF187",
+      "family": "ai_discovery_external",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF188",
+      "family": "competitive_context",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF189",
+      "family": "competitive_context",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF190",
+      "family": "competitive_context",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF191",
+      "family": "competitive_context",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF192",
+      "family": "competitive_context",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF193",
+      "family": "competitive_context",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF194",
+      "family": "competitive_context",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF195",
+      "family": "competitive_context",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF196",
+      "family": "competitive_context",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF197",
+      "family": "competitive_context",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF198",
+      "family": "competitive_context",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF199",
+      "family": "competitive_context",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF200",
+      "family": "competitive_context",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF201",
+      "family": "competitive_context",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF202",
+      "family": "competitive_context",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF203",
+      "family": "offpage_governance",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF204",
+      "family": "offpage_governance",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF205",
+      "family": "offpage_governance",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF206",
+      "family": "offpage_governance",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF207",
+      "family": "offpage_governance",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF208",
+      "family": "offpage_governance",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF209",
+      "family": "offpage_governance",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF210",
+      "family": "offpage_governance",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF211",
+      "family": "offpage_governance",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF212",
+      "family": "offpage_governance",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF213",
+      "family": "offpage_governance",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF214",
+      "family": "offpage_governance",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF215",
+      "family": "offpage_governance",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF216",
+      "family": "offpage_governance",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    },
+    {
+      "id": "OF217",
+      "family": "offpage_governance",
+      "status": "UNKNOWN",
+      "source_urls": [],
+      "evidence": [],
+      "observed_at": null,
+      "verified_at": null,
+      "notes": ""
+    }
+  ],
+  "status_model": [
+    "PASS",
+    "PARTIAL",
+    "FAIL",
+    "NA"
+  ]
+}

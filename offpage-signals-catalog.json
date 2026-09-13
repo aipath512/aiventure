@@ -1,0 +1,2867 @@
+{
+  "schema": "AIVENTURE_OFFPAGE_217_SIGNALS_CATALOG",
+  "version": "1.0",
+  "session": "0002H",
+  "scope": "external-to-domain",
+  "domain": "https://aiventure.ro/",
+  "total_signals": 217,
+  "families": {
+    "external_identity_authority": 15,
+    "backlinks_authority": 20,
+    "mentions_citations": 20,
+    "directories_profiles": 15,
+    "reviews_reputation": 15,
+    "knowledge_graph_entity_resolution": 15,
+    "editorial_distribution": 15,
+    "social_signals": 15,
+    "partners_ecosystem": 15,
+    "trust_proof_external": 15,
+    "local_geo_presence": 12,
+    "ai_discovery_external": 15,
+    "competitive_context": 15,
+    "offpage_governance": 15
+  },
+  "status_model": [
+    "PASS",
+    "PARTIAL",
+    "FAIL",
+    "NA"
+  ],
+  "scoring": {
+    "PASS": 1,
+    "PARTIAL": 0.5,
+    "FAIL": 0,
+    "NA": "excluded_from_denominator"
+  },
+  "verification_rule": "No off-page signal becomes PASS without external evidence.",
+  "signals": [
+    {
+      "id": "OF001",
+      "family": "external_identity_authority",
+      "name": "Official external profiles",
+      "check": "Există profile oficiale externe pentru AiVenture.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF002",
+      "family": "external_identity_authority",
+      "name": "LinkedIn company profile",
+      "check": "Compania are profil LinkedIn verificabil.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF003",
+      "family": "external_identity_authority",
+      "name": "Founder professional profile",
+      "check": "Fondatorul este legat public și corect de companie.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF004",
+      "family": "external_identity_authority",
+      "name": "External brand consistency",
+      "check": "Numele AiVenture este consecvent în surse externe.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF005",
+      "family": "external_identity_authority",
+      "name": "Legal entity consistency external",
+      "check": "AiVenture S.R.L. este identificată consecvent extern.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF006",
+      "family": "external_identity_authority",
+      "name": "Canonical URL consistency external",
+      "check": "Sursele externe indică aiventure.ro ca URL corect.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF007",
+      "family": "external_identity_authority",
+      "name": "Category consistency external",
+      "check": "Categoria Agent-Ready B2B Services este folosită coerent unde este publicată.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF008",
+      "family": "external_identity_authority",
+      "name": "External contact consistency",
+      "check": "Datele de contact publice externe nu se contrazic.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF009",
+      "family": "external_identity_authority",
+      "name": "External logo consistency",
+      "check": "Logo-ul/brand identity sunt consecvente.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF010",
+      "family": "external_identity_authority",
+      "name": "External language-market consistency",
+      "check": "Piața și limbile declarate extern sunt coerente.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF011",
+      "family": "external_identity_authority",
+      "name": "External entity disambiguation",
+      "check": "AiVenture poate fi diferențiată de entități cu nume similare.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF012",
+      "family": "external_identity_authority",
+      "name": "Founder-company relationship",
+      "check": "Relația founder → company este confirmabilă extern.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF013",
+      "family": "external_identity_authority",
+      "name": "Brand-company relationship",
+      "check": "Brand → legal entity este confirmabil extern.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF014",
+      "family": "external_identity_authority",
+      "name": "Service-provider relationship external",
+      "check": "Serviciile AiVenture sunt atribuite corect furnizorului.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF015",
+      "family": "external_identity_authority",
+      "name": "External entity graph reconstructability",
+      "check": "Sursele externe permit reconstruirea identității de bază.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF016",
+      "family": "backlinks_authority",
+      "name": "Referring domains present",
+      "check": "Există domenii externe care trimit către aiventure.ro.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF017",
+      "family": "backlinks_authority",
+      "name": "Relevant referring domains",
+      "check": "Backlinkurile provin din domenii relevante tematic.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF018",
+      "family": "backlinks_authority",
+      "name": "Authoritative referring domains",
+      "check": "Există backlinkuri din surse cu autoritate.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF019",
+      "family": "backlinks_authority",
+      "name": "Diverse referring domains",
+      "check": "Nu există dependență de un singur domeniu.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF020",
+      "family": "backlinks_authority",
+      "name": "Natural anchor diversity",
+      "check": "Anchor text-ul este natural și variat.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF021",
+      "family": "backlinks_authority",
+      "name": "Brand anchor presence",
+      "check": "Există anchor-uri de brand.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF022",
+      "family": "backlinks_authority",
+      "name": "Service anchor presence",
+      "check": "Există anchor-uri descriptive către servicii.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF023",
+      "family": "backlinks_authority",
+      "name": "Deep-link backlinks",
+      "check": "Există linkuri și către pagini interne importante.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF024",
+      "family": "backlinks_authority",
+      "name": "Editorial backlinks",
+      "check": "Există linkuri editoriale, nu doar profile/directoare.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF025",
+      "family": "backlinks_authority",
+      "name": "Contextual backlinks",
+      "check": "Backlinkurile apar în context semantic relevant.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF026",
+      "family": "backlinks_authority",
+      "name": "No obvious link spam",
+      "check": "Nu există profil evident manipulator/spammy.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF027",
+      "family": "backlinks_authority",
+      "name": "No paid-link dependency",
+      "check": "Autoritatea nu depinde predominant de linkuri plătite.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF028",
+      "family": "backlinks_authority",
+      "name": "No sitewide spam backlinks",
+      "check": "Nu există volume nefirești de backlinkuri sitewide.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF029",
+      "family": "backlinks_authority",
+      "name": "Backlink freshness",
+      "check": "Există linkuri externe recente unde este realist.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF030",
+      "family": "backlinks_authority",
+      "name": "Backlink persistence",
+      "check": "Linkurile importante rămân active în timp.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF031",
+      "family": "backlinks_authority",
+      "name": "Backlink canonical destination",
+      "check": "Backlinkurile indică URL-uri canonice.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF032",
+      "family": "backlinks_authority",
+      "name": "Redirected backlink recovery",
+      "check": "Backlinkurile către URL-uri vechi sunt redirecționate corect.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF033",
+      "family": "backlinks_authority",
+      "name": "Broken backlink recovery",
+      "check": "Linkurile externe importante rupte sunt identificate.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF034",
+      "family": "backlinks_authority",
+      "name": "High-value source concentration",
+      "check": "Cele mai valoroase linkuri sunt din surse relevante.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF035",
+      "family": "backlinks_authority",
+      "name": "Backlink evidence traceability",
+      "check": "Backlinkurile importante pot fi documentate în assessment.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF036",
+      "family": "mentions_citations",
+      "name": "Unlinked brand mentions",
+      "check": "Există mențiuni externe chiar și fără link.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF037",
+      "family": "mentions_citations",
+      "name": "Linked brand mentions",
+      "check": "Există mențiuni care includ link.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF038",
+      "family": "mentions_citations",
+      "name": "Service mentions",
+      "check": "Serviciile AiVenture sunt menționate extern.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF039",
+      "family": "mentions_citations",
+      "name": "Product mentions",
+      "check": "Produsele AiVenture sunt menționate extern.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF040",
+      "family": "mentions_citations",
+      "name": "Innovation mentions",
+      "check": "Inovațiile AiVenture sunt menționate extern.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF041",
+      "family": "mentions_citations",
+      "name": "RRVI mentions",
+      "check": "RRVI este menționat extern unde există adopție/discuție.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF042",
+      "family": "mentions_citations",
+      "name": "Service Offer Contract mentions",
+      "check": "SOC este menționat extern unde există adopție/discuție.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF043",
+      "family": "mentions_citations",
+      "name": "Quoted statements",
+      "check": "Afirmații AiVenture sunt citate de alte surse.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF044",
+      "family": "mentions_citations",
+      "name": "Citation attribution",
+      "check": "Citările externe atribuie corect sursa.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF045",
+      "family": "mentions_citations",
+      "name": "Citation canonical URL",
+      "check": "Citările duc către sursa canonică.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF046",
+      "family": "mentions_citations",
+      "name": "Citation freshness",
+      "check": "Citările relevante nu sunt depășite.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF047",
+      "family": "mentions_citations",
+      "name": "Citation context quality",
+      "check": "Mențiunile apar în context relevant, nu accidental.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF048",
+      "family": "mentions_citations",
+      "name": "Entity-name precision",
+      "check": "Mențiunile folosesc numele corect al entității.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF049",
+      "family": "mentions_citations",
+      "name": "Category attribution precision",
+      "check": "Categoria nu este denaturată extern.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF050",
+      "family": "mentions_citations",
+      "name": "External claim consistency",
+      "check": "Claims externe nu contrazic sursa canonică.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF051",
+      "family": "mentions_citations",
+      "name": "Third-party summaries fidelity",
+      "check": "Rezumatul extern păstrează diferențiatorii reali.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF052",
+      "family": "mentions_citations",
+      "name": "Reference diversity",
+      "check": "Există surse diferite independente care menționează compania.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF053",
+      "family": "mentions_citations",
+      "name": "Cross-language mentions",
+      "check": "Mențiunile în alte limbi păstrează identitatea corectă.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF054",
+      "family": "mentions_citations",
+      "name": "AI-system citations",
+      "check": "Există citări/trimiteri observabile din sisteme AI când pot fi verificate.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF055",
+      "family": "mentions_citations",
+      "name": "Citation evidence registry",
+      "check": "Citările importante pot fi stocate ca evidence.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF056",
+      "family": "directories_profiles",
+      "name": "Relevant business directories",
+      "check": "Compania apare în directoare B2B relevante.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF057",
+      "family": "directories_profiles",
+      "name": "Local business directories",
+      "check": "Compania apare în surse locale relevante.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF058",
+      "family": "directories_profiles",
+      "name": "Industry directories",
+      "check": "Există listări în directoare de industrie relevante.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF059",
+      "family": "directories_profiles",
+      "name": "Professional directories",
+      "check": "Există profile în rețele profesionale relevante.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF060",
+      "family": "directories_profiles",
+      "name": "Startup/company databases",
+      "check": "Există profile în baze de date de companii când se aplică.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF061",
+      "family": "directories_profiles",
+      "name": "Directory NAP consistency",
+      "check": "Nume/adresă/contact sunt consistente unde sunt publicate.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF062",
+      "family": "directories_profiles",
+      "name": "Directory canonical URL",
+      "check": "Listările indică URL-ul canonic.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF063",
+      "family": "directories_profiles",
+      "name": "Directory category consistency",
+      "check": "Categoria/listarea nu denaturează oferta.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF064",
+      "family": "directories_profiles",
+      "name": "Duplicate listing control",
+      "check": "Nu există duplicate contradictorii.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF065",
+      "family": "directories_profiles",
+      "name": "Stale listing control",
+      "check": "Listările vechi sunt actualizate sau retrase.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF066",
+      "family": "directories_profiles",
+      "name": "Profile completeness",
+      "check": "Profilele externe importante sunt suficient de complete.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF067",
+      "family": "directories_profiles",
+      "name": "Profile verification",
+      "check": "Profilele pot fi revendicate/verificate unde platforma permite.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF068",
+      "family": "directories_profiles",
+      "name": "Founder profile consistency",
+      "check": "Profilurile fondatorului corespund companiei.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF069",
+      "family": "directories_profiles",
+      "name": "Social profile completeness",
+      "check": "Profilele sociale au descriere și link corect.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF070",
+      "family": "directories_profiles",
+      "name": "External profile sameAs eligibility",
+      "check": "Profilele reale pot fi folosite în sameAs.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF071",
+      "family": "reviews_reputation",
+      "name": "Review presence",
+      "check": "Există review-uri externe unde este relevant.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF072",
+      "family": "reviews_reputation",
+      "name": "Review source legitimacy",
+      "check": "Review-urile provin din platforme reale.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF073",
+      "family": "reviews_reputation",
+      "name": "Review attribution",
+      "check": "Review-urile pot fi atribuite unei platforme/surse.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF074",
+      "family": "reviews_reputation",
+      "name": "No fabricated reviews",
+      "check": "Nu sunt folosite review-uri inventate.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF075",
+      "family": "reviews_reputation",
+      "name": "Rating consistency",
+      "check": "Ratingurile citate pe site corespund sursei externe.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF076",
+      "family": "reviews_reputation",
+      "name": "Review freshness",
+      "check": "Review-urile relevante sunt recente.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF077",
+      "family": "reviews_reputation",
+      "name": "Review diversity",
+      "check": "Feedback-ul nu provine dintr-o singură sursă.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF078",
+      "family": "reviews_reputation",
+      "name": "Service-specific reviews",
+      "check": "Există feedback despre servicii concrete unde este disponibil.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF079",
+      "family": "reviews_reputation",
+      "name": "Response to reviews",
+      "check": "Compania răspunde profesionist unde este relevant.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF080",
+      "family": "reviews_reputation",
+      "name": "Negative review handling",
+      "check": "Feedback-ul negativ nu este ascuns/manipulat.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF081",
+      "family": "reviews_reputation",
+      "name": "Reputation issue detection",
+      "check": "Problemele reputaționale externe pot fi detectate.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF082",
+      "family": "reviews_reputation",
+      "name": "Reputation evidence",
+      "check": "Review-urile folosite comercial au evidence URL/date.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF083",
+      "family": "reviews_reputation",
+      "name": "Testimonials external validation",
+      "check": "Testimonialele pot fi validate extern unde este posibil.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF084",
+      "family": "reviews_reputation",
+      "name": "Case-study external corroboration",
+      "check": "Case studies au coroborare externă când există.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF085",
+      "family": "reviews_reputation",
+      "name": "No review schema without proof",
+      "check": "Review/AggregateRating nu este folosit fără bază reală.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF086",
+      "family": "knowledge_graph_entity_resolution",
+      "name": "Search engine entity recognition",
+      "check": "Motoarele pot recunoaște AiVenture ca entitate distinctă.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF087",
+      "family": "knowledge_graph_entity_resolution",
+      "name": "Knowledge graph consistency",
+      "check": "Datele de entity graph disponibile extern sunt consistente.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF088",
+      "family": "knowledge_graph_entity_resolution",
+      "name": "Organization-type resolution",
+      "check": "Entitatea este clasificată corect.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF089",
+      "family": "knowledge_graph_entity_resolution",
+      "name": "Brand resolution",
+      "check": "Brandul este separat corect de companie.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF090",
+      "family": "knowledge_graph_entity_resolution",
+      "name": "Founder resolution",
+      "check": "Fondatorul este asociat corect.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF091",
+      "family": "knowledge_graph_entity_resolution",
+      "name": "Service resolution",
+      "check": "Serviciile principale sunt asociate entității.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF092",
+      "family": "knowledge_graph_entity_resolution",
+      "name": "Category resolution",
+      "check": "Categoria este asociată fără confuzie.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF093",
+      "family": "knowledge_graph_entity_resolution",
+      "name": "Location resolution",
+      "check": "Locația/țara este asociată corect.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF094",
+      "family": "knowledge_graph_entity_resolution",
+      "name": "Canonical URL resolution",
+      "check": "aiventure.ro este asociat entității.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF095",
+      "family": "knowledge_graph_entity_resolution",
+      "name": "External identifiers resolution",
+      "check": "Identificatorii externi reali sunt conectați.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF096",
+      "family": "knowledge_graph_entity_resolution",
+      "name": "sameAs source quality",
+      "check": "sameAs se bazează pe surse legitime.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF097",
+      "family": "knowledge_graph_entity_resolution",
+      "name": "Duplicate entity suppression",
+      "check": "Nu există entități duplicate/conflictuale majore.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF098",
+      "family": "knowledge_graph_entity_resolution",
+      "name": "Name collision control",
+      "check": "Coliziunile de nume sunt gestionate.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF099",
+      "family": "knowledge_graph_entity_resolution",
+      "name": "Entity description consistency",
+      "check": "Descrierile externe sunt coerente.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF100",
+      "family": "knowledge_graph_entity_resolution",
+      "name": "Entity relationship coverage",
+      "check": "Relațiile brand-founder-service-company sunt reconstruibile.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF101",
+      "family": "editorial_distribution",
+      "name": "External guest articles",
+      "check": "Există articole externe relevante semnate/atribuite.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF102",
+      "family": "editorial_distribution",
+      "name": "Expert commentary",
+      "check": "AiVenture/fondatorul apar ca sursă expertă.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF103",
+      "family": "editorial_distribution",
+      "name": "Industry publication coverage",
+      "check": "Există acoperire în publicații relevante.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF104",
+      "family": "editorial_distribution",
+      "name": "Press mentions",
+      "check": "Există mențiuni de presă verificabile.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF105",
+      "family": "editorial_distribution",
+      "name": "Podcast appearances",
+      "check": "Există apariții podcast relevante.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF106",
+      "family": "editorial_distribution",
+      "name": "Video appearances",
+      "check": "Există apariții video externe relevante.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF107",
+      "family": "editorial_distribution",
+      "name": "Conference mentions",
+      "check": "Există conferințe/evenimente relevante.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF108",
+      "family": "editorial_distribution",
+      "name": "Event speaker pages",
+      "check": "Există pagini externe de speaker unde se aplică.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF109",
+      "family": "editorial_distribution",
+      "name": "Research references",
+      "check": "Materialele AiVenture sunt referite în research relevant.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF110",
+      "family": "editorial_distribution",
+      "name": "Newsletter mentions",
+      "check": "Există mențiuni în newslettere relevante.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF111",
+      "family": "editorial_distribution",
+      "name": "Syndication control",
+      "check": "Conținutul republicat păstrează sursa/canonical attribution.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF112",
+      "family": "editorial_distribution",
+      "name": "External article author attribution",
+      "check": "Autorul este atribuit corect.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF113",
+      "family": "editorial_distribution",
+      "name": "External article company attribution",
+      "check": "Compania este atribuită corect.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF114",
+      "family": "editorial_distribution",
+      "name": "Editorial link back",
+      "check": "Materialele externe trimit către sursa canonică.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF115",
+      "family": "editorial_distribution",
+      "name": "Editorial topic relevance",
+      "check": "Subiectele externe sunt aliniate cu poziționarea actuală.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF116",
+      "family": "social_signals",
+      "name": "LinkedIn activity",
+      "check": "Există activitate LinkedIn relevantă.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF117",
+      "family": "social_signals",
+      "name": "LinkedIn company consistency",
+      "check": "Descrierea LinkedIn corespunde poziționării.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF118",
+      "family": "social_signals",
+      "name": "Founder social consistency",
+      "check": "Profilul fondatorului reflectă corect compania.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF119",
+      "family": "social_signals",
+      "name": "Social canonical links",
+      "check": "Postările/profilele folosesc URL-uri canonice.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF120",
+      "family": "social_signals",
+      "name": "Social mentions",
+      "check": "Există mențiuni externe ale brandului.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF121",
+      "family": "social_signals",
+      "name": "Social shares",
+      "check": "Conținutul este distribuit organic unde se întâmplă.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF122",
+      "family": "social_signals",
+      "name": "Social engagement quality",
+      "check": "Interacțiunile relevante sunt autentice.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF123",
+      "family": "social_signals",
+      "name": "Social proof relevance",
+      "check": "Engagementul vine din audiență relevantă.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF124",
+      "family": "social_signals",
+      "name": "YouTube presence",
+      "check": "Există prezență YouTube unde este relevant.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF125",
+      "family": "social_signals",
+      "name": "X/Twitter presence",
+      "check": "Există prezență X unde este relevant.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF126",
+      "family": "social_signals",
+      "name": "Facebook presence",
+      "check": "Există prezență Facebook unde este relevant.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF127",
+      "family": "social_signals",
+      "name": "Cross-platform identity consistency",
+      "check": "Identitatea este coerentă între rețele.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF128",
+      "family": "social_signals",
+      "name": "Social profile ownership",
+      "check": "Profilele oficiale sunt controlate de companie.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF129",
+      "family": "social_signals",
+      "name": "Social stale profile control",
+      "check": "Profilele abandonate nu creează confuzie.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF130",
+      "family": "social_signals",
+      "name": "Social evidence capture",
+      "check": "Mențiunile importante pot fi păstrate ca evidence.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF131",
+      "family": "partners_ecosystem",
+      "name": "Partner mentions",
+      "check": "Partenerii reali menționează AiVenture.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF132",
+      "family": "partners_ecosystem",
+      "name": "Reciprocal attribution quality",
+      "check": "Relațiile reale sunt atribuite corect, fără link scheme.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF133",
+      "family": "partners_ecosystem",
+      "name": "Client references",
+      "check": "Clienții pot menționa AiVenture unde este permis.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF134",
+      "family": "partners_ecosystem",
+      "name": "Supplier references",
+      "check": "Furnizorii relevanți pot confirma relația.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF135",
+      "family": "partners_ecosystem",
+      "name": "Technology ecosystem mentions",
+      "check": "AiVenture apare în ecosisteme tehnologice relevante.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF136",
+      "family": "partners_ecosystem",
+      "name": "Integration directory presence",
+      "check": "Integrările reale apar în directoare unde se aplică.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF137",
+      "family": "partners_ecosystem",
+      "name": "Partner page consistency",
+      "check": "Paginile partenerilor folosesc numele/URL-ul corect.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF138",
+      "family": "partners_ecosystem",
+      "name": "Partner claim verification",
+      "check": "Claims de parteneriat pot fi verificate.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF139",
+      "family": "partners_ecosystem",
+      "name": "No fabricated partnership",
+      "check": "Nu sunt sugerate parteneriate inexistente.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF140",
+      "family": "partners_ecosystem",
+      "name": "Ecosystem diversity",
+      "check": "Compania nu depinde de o singură relație externă.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF141",
+      "family": "partners_ecosystem",
+      "name": "Referral source tracking",
+      "check": "Sursele de referral relevante pot fi identificate.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF142",
+      "family": "partners_ecosystem",
+      "name": "Co-marketing evidence",
+      "check": "Inițiativele comune reale pot fi documentate.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF143",
+      "family": "partners_ecosystem",
+      "name": "External implementation references",
+      "check": "Implementările reale sunt referențiate extern unde există.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF144",
+      "family": "partners_ecosystem",
+      "name": "A2A ecosystem references",
+      "check": "Integrările A2A reale pot fi confirmate extern.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF145",
+      "family": "partners_ecosystem",
+      "name": "Standards ecosystem references",
+      "check": "Referințele la standarde/protocoale sunt corecte.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF146",
+      "family": "trust_proof_external",
+      "name": "External proof verification",
+      "check": "SHA/OTS/proof public poate fi verificat independent.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF147",
+      "family": "trust_proof_external",
+      "name": "OTS external verification",
+      "check": "Timestamp-ul poate fi verificat prin instrument extern.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF148",
+      "family": "trust_proof_external",
+      "name": "Canonical document discoverability",
+      "check": "Documentul canonic poate fi găsit din afara site-ului.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF149",
+      "family": "trust_proof_external",
+      "name": "Archive availability",
+      "check": "Versiuni publice pot fi arhivate/verificate unde este permis.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF150",
+      "family": "trust_proof_external",
+      "name": "Third-party timestamp corroboration",
+      "check": "Data/proveniența poate fi coroborată extern.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF151",
+      "family": "trust_proof_external",
+      "name": "External claim corroboration",
+      "check": "Claims importante au coroborare externă unde este necesar.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF152",
+      "family": "trust_proof_external",
+      "name": "External certification verification",
+      "check": "Certificările reale pot fi verificate la emitent.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF153",
+      "family": "trust_proof_external",
+      "name": "External registration verification",
+      "check": "Înregistrările publice reale pot fi verificate.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF154",
+      "family": "trust_proof_external",
+      "name": "External domain ownership signals",
+      "check": "Domeniul este asociabil cu organizația.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF155",
+      "family": "trust_proof_external",
+      "name": "External security reputation",
+      "check": "Domeniul nu are reputație de securitate evident problematică.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF156",
+      "family": "trust_proof_external",
+      "name": "External malware reputation",
+      "check": "Domeniul nu este marcat public ca malițios.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF157",
+      "family": "trust_proof_external",
+      "name": "External phishing reputation",
+      "check": "Domeniul nu este marcat public ca phishing.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF158",
+      "family": "trust_proof_external",
+      "name": "External brand abuse monitoring",
+      "check": "Impersonarea/brand abuse poate fi detectată.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF159",
+      "family": "trust_proof_external",
+      "name": "Proof-link persistence",
+      "check": "URL-urile externe de verificare rămân stabile.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF160",
+      "family": "trust_proof_external",
+      "name": "Evidence external reproducibility",
+      "check": "Un terț poate reproduce verificarea dovezii.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF161",
+      "family": "local_geo_presence",
+      "name": "Country-level presence",
+      "check": "AiVenture este asociată corect cu România.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF162",
+      "family": "local_geo_presence",
+      "name": "City/local presence where public",
+      "check": "Localizarea publică este coerentă unde este relevant.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF163",
+      "family": "local_geo_presence",
+      "name": "Local citation consistency",
+      "check": "Mențiunile locale nu se contrazic.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF164",
+      "family": "local_geo_presence",
+      "name": "Local directory consistency",
+      "check": "Directoarele locale folosesc date corecte.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF165",
+      "family": "local_geo_presence",
+      "name": "Local business category accuracy",
+      "check": "Categoria locală nu denaturează activitatea.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF166",
+      "family": "local_geo_presence",
+      "name": "Local reviews where applicable",
+      "check": "Review-urile locale sunt autentice.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF167",
+      "family": "local_geo_presence",
+      "name": "Local event mentions",
+      "check": "Participarea la evenimente locale poate fi confirmată.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF168",
+      "family": "local_geo_presence",
+      "name": "Local partner mentions",
+      "check": "Parteneriatele locale reale sunt confirmabile.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF169",
+      "family": "local_geo_presence",
+      "name": "Local media mentions",
+      "check": "Există mențiuni locale relevante unde apar.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF170",
+      "family": "local_geo_presence",
+      "name": "Local entity disambiguation",
+      "check": "Entitatea este diferențiată de firme cu nume similare.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF171",
+      "family": "local_geo_presence",
+      "name": "Local language consistency",
+      "check": "Descrierile locale folosesc limba potrivită.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF172",
+      "family": "local_geo_presence",
+      "name": "Local canonical link",
+      "check": "Listările locale indică domeniul corect.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF173",
+      "family": "ai_discovery_external",
+      "name": "ChatGPT discoverability test",
+      "check": "AiVenture poate fi găsită în teste documentate fără preseed când instrumentul permite.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF174",
+      "family": "ai_discovery_external",
+      "name": "Claude discoverability test",
+      "check": "AiVenture poate fi găsită în test documentat fără preseed.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF175",
+      "family": "ai_discovery_external",
+      "name": "Gemini discoverability test",
+      "check": "AiVenture poate fi găsită în test documentat fără preseed.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF176",
+      "family": "ai_discovery_external",
+      "name": "Perplexity discoverability test",
+      "check": "AiVenture poate fi găsită în test documentat fără preseed.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF177",
+      "family": "ai_discovery_external",
+      "name": "DeepSeek discoverability test",
+      "check": "AiVenture poate fi găsită în test documentat fără preseed.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF178",
+      "family": "ai_discovery_external",
+      "name": "Provider attribution in AI answers",
+      "check": "AI atribuie corect serviciul furnizorului.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF179",
+      "family": "ai_discovery_external",
+      "name": "Category recognition in AI answers",
+      "check": "AI recunoaște categoria corectă.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF180",
+      "family": "ai_discovery_external",
+      "name": "Differentiator retention in AI answers",
+      "check": "AI păstrează diferențiatorii canonici.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF181",
+      "family": "ai_discovery_external",
+      "name": "Citation/source presence in AI answers",
+      "check": "AI oferă sursă/citare când platforma permite.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF182",
+      "family": "ai_discovery_external",
+      "name": "Cross-model consistency",
+      "check": "Modelele nu reconstruiesc identități contradictorii.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF183",
+      "family": "ai_discovery_external",
+      "name": "Natural discovery without domain hint",
+      "check": "Entitatea poate fi descoperită din intent, nu doar din URL.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF184",
+      "family": "ai_discovery_external",
+      "name": "Service discovery without provider hint",
+      "check": "Serviciul poate fi găsit fără a preseed-ui furnizorul.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF185",
+      "family": "ai_discovery_external",
+      "name": "External comparison readiness",
+      "check": "AI poate compara pe baza datelor publice.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF186",
+      "family": "ai_discovery_external",
+      "name": "External trust reconstruction",
+      "check": "AI poate identifica proof/trust extern.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF187",
+      "family": "ai_discovery_external",
+      "name": "AI observation evidence capture",
+      "check": "Rezultatele testelor sunt păstrate ca BEFORE/AFTER evidence.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF188",
+      "family": "competitive_context",
+      "name": "Category competitor recognition",
+      "check": "Compania apare în contextul competitorilor relevanți.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF189",
+      "family": "competitive_context",
+      "name": "Comparative mentions",
+      "check": "Există comparații externe relevante.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF190",
+      "family": "competitive_context",
+      "name": "Differentiator preservation",
+      "check": "Diferențiatorii nu sunt pierduți în comparații.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF191",
+      "family": "competitive_context",
+      "name": "No wrong-category clustering",
+      "check": "AiVenture nu este grupată predominant într-o categorie greșită.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF192",
+      "family": "competitive_context",
+      "name": "Competitive citation parity",
+      "check": "AiVenture are surse comparabile cu competitorii.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF193",
+      "family": "competitive_context",
+      "name": "Share of relevant mentions",
+      "check": "Ponderea mențiunilor relevante poate fi măsurată.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF194",
+      "family": "competitive_context",
+      "name": "Share of citations",
+      "check": "Ponderea citărilor relevante poate fi măsurată.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF195",
+      "family": "competitive_context",
+      "name": "Share of AI recommendations",
+      "check": "Ponderea recomandărilor AI poate fi măsurată.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF196",
+      "family": "competitive_context",
+      "name": "Competitor backlink gap",
+      "check": "Diferența de referring domains poate fi măsurată.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF197",
+      "family": "competitive_context",
+      "name": "Competitor entity gap",
+      "check": "Diferența de entity coverage poate fi măsurată.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF198",
+      "family": "competitive_context",
+      "name": "Competitor review gap",
+      "check": "Diferența de reputation evidence poate fi măsurată.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF199",
+      "family": "competitive_context",
+      "name": "Competitor content citation gap",
+      "check": "Diferența de citabilitate externă poate fi măsurată.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF200",
+      "family": "competitive_context",
+      "name": "Competitive update monitoring",
+      "check": "Schimbările competitorilor pot fi urmărite.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF201",
+      "family": "competitive_context",
+      "name": "Category-entry monitoring",
+      "check": "Noii competitori pot fi detectați.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF202",
+      "family": "competitive_context",
+      "name": "Competitive evidence log",
+      "check": "Comparațiile pot fi păstrate în evidence.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF203",
+      "family": "offpage_governance",
+      "name": "External data provenance",
+      "check": "Datele off-page folosite în audit au sursă.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF204",
+      "family": "offpage_governance",
+      "name": "Observation timestamp",
+      "check": "Fiecare observație externă are timestamp.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF205",
+      "family": "offpage_governance",
+      "name": "Source URL capture",
+      "check": "URL-ul sursei este păstrat.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF206",
+      "family": "offpage_governance",
+      "name": "Source type classification",
+      "check": "Sursa este clasificată: media, directory, social, review etc.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF207",
+      "family": "offpage_governance",
+      "name": "Independent-source distinction",
+      "check": "Sursele independente sunt separate de owned/partner media.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF208",
+      "family": "offpage_governance",
+      "name": "Owned vs earned distinction",
+      "check": "Owned, earned, paid și partner mentions sunt separate.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF209",
+      "family": "offpage_governance",
+      "name": "Paid disclosure",
+      "check": "Mențiunile plătite sunt etichetate ca atare.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF210",
+      "family": "offpage_governance",
+      "name": "Conflict-of-interest disclosure",
+      "check": "Relațiile relevante sunt declarate unde contează.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF211",
+      "family": "offpage_governance",
+      "name": "Evidence snapshot/reference",
+      "check": "Observația poate fi re-verificată.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF212",
+      "family": "offpage_governance",
+      "name": "Status PASS criteria",
+      "check": "PASS cere dovadă externă verificabilă.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF213",
+      "family": "offpage_governance",
+      "name": "PARTIAL criteria",
+      "check": "PARTIAL reflectă acoperire incompletă.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF214",
+      "family": "offpage_governance",
+      "name": "FAIL criteria",
+      "check": "FAIL indică absență/problemă verificată.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF215",
+      "family": "offpage_governance",
+      "name": "NA criteria",
+      "check": "NA doar când semnalul nu se aplică.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF216",
+      "family": "offpage_governance",
+      "name": "No invented external proof",
+      "check": "Nu se inventează mențiuni/backlinkuri/reviews.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OF217",
+      "family": "offpage_governance",
+      "name": "Before-after comparability",
+      "check": "Aceeași metodă este folosită la re-audit.",
+      "scope": "off-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    }
+  ],
+  "principles": [
+    "Claim != Proof",
+    "Generated != Deployed",
+    "Deployed != Valid",
+    "Valid != Verified",
+    "OFF-PAGE PASS requires external evidence; first-party declaration alone is insufficient."
+  ]
+}
