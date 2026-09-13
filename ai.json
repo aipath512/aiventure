@@ -1,304 +1,461 @@
-# AiVenture — ai.txt
-# SESSION 0002H
-
-canonical: https://aiventure.ro/
-organization: AiVenture S.R.L.
-brand: AiVenture
-language: ro
-market: Romania
-category: Agent-Ready B2B Services
-contact: contact@5thelement.ai
-
-## CANONICAL POSITIONING
-
-Vinde serviciile pe care le vinzi oamenilor și Agenților AI.
-
-AiVenture pregătește serviciile firmei pentru a fi găsite, comparate, solicitate și cumpărate de Agenți AI.
-
-## CANONICAL PRODUCT DEFINITION
-
-Transformăm un serviciu pe care îl vinzi deja oamenilor într-un serviciu pregătit să fie găsit, evaluat, solicitat și cumpărat de Agenți AI.
-
-Unitatea de valoare AiVenture este serviciul comercial individual.
-
-## CATEGORY
-
-Agent-Ready B2B Services
-
-Definition:
-Servicii B2B existente transformate în oferte structurate, versionate, verificabile, guvernate și progresiv tranzacționabile de Agenți AI.
-
-## CANONICAL LIFECYCLE
-
-SERVICE
-→ SERVICE OFFER CONTRACT™
-→ RRVI
-→ AGENT-READY
-→ DISCOVER
-→ COMPARE
-→ REQUEST
-→ QUOTE
-→ APPROVAL
-→ ORDER
-→ DELIVERY
-→ EVIDENCE
-
-## SERVICE OFFER CONTRACT™
-
-Service Offer Contract™ este sursa unică, versionată, de adevăr comercial, operațional și machine-readable pentru o ofertă de servicii.
-
-It defines:
-- service identity
-- provider
-- audience
-- problem
-- outcome
-- deliverables
-- exclusions
-- eligibility
-- ineligibility
-- territory
-- jurisdiction
-- price
-- pricing rule
-- currency
-- taxes
-- payment terms
-- availability
-- capacity
-- SLA
-- delivery time
-- autonomy level
-- allowed actions
-- forbidden actions
-- approval policy
-- evidence policy
-- version
-- validity
-
-## AUTONOMY MODEL
-
-L1 Discover
-L2 Compare
-L3 Request
-L4 Quote
-L5 Order
-
-Canonical rule:
-
-Fără regulă explicită → fără autonomie.
-Fără jurisdicție identificată → fără acțiune sensibilă.
-Fără aprobare unde este necesară → fără angajament comercial.
-Fără Evidence → fără dovada deciziei.
-
-## RRVI™
-
-RRVI = Remote Reglementation Verification Interface
-
-AiVenture pune reglementarea înaintea acțiunii.
-
-RRVI verifies:
-- service
-- requester
-- action
-- jurisdiction
-- regulations
-- data
-- autonomy
-- thresholds
-- approval requirements
-- risk
-- human review
-
-RRVI decisions:
-- allow
-- allow_with_conditions
-- human_review_required
-- block
-
-## REGULATION-FIRST
-
-REGULATION
-→ PERMISSION
-→ CAPABILITY
-→ ACTION
-→ EVIDENCE
-
-EU AI Act-first, not EU AI Act-only.
-
-RRVI may also integrate:
-- GDPR
-- labor law
-- tax rules
-- professional regulations
-- contracts
-- confidentiality
-- security rules
-- sector rules
-- internal policies
-- jurisdiction-specific rules
-
-## EVIDENCE
-
-Evidence records may include:
-- service offer version
-- rule applied
-- actor
-- timestamp
-- decision
-- conditions
-- approval
-- result
-- proof reference
-
-Claim != Proof.
-
-## PRIMARY AUDIENCE
-
-Firme care vând servicii B2B.
-
-## INITIAL VERTICALS
-
-- Payroll
-- Accounting
-- Tax
-- HR
-- Legal
-- Translation
-- Recruitment
-- Transport
-- IT Services
-
-## PRIMARY PAGES
-
-home:
-https://aiventure.ro/
-
-offer:
-https://aiventure.ro/oferta/
-
-services:
-https://aiventure.ro/servicii/
-
-products:
-https://aiventure.ro/produse/
-
-agent-ready:
-https://aiventure.ro/agent-ready/
-
-service-offer-contract:
-https://aiventure.ro/service-offer-contract/
-
-rrvi:
-https://aiventure.ro/rrvi/
-
-eu-ai-act:
-https://aiventure.ro/eu-ai-act/
-
-questions:
-https://aiventure.ro/intrebari/
-
-resources:
-https://aiventure.ro/resurse/
-
-innovations:
-https://aiventure.ro/inovatii/
-
-blog:
-https://aiventure.ro/blog/
-
-mission:
-https://aiventure.ro/misiune/
-
-vision:
-https://aiventure.ro/viziune/
-
-contact:
-https://aiventure.ro/contact/
-
-legal:
-https://aiventure.ro/legal/
-
-## MACHINE-READABLE SOURCES
-
-https://aiventure.ro/ai.json
-https://aiventure.ro/entities.json
-https://aiventure.ro/intents.json
-https://aiventure.ro/service.json
-https://aiventure.ro/service-offer-contract.json
-https://aiventure.ro/governance.json
-https://aiventure.ro/rrvi.json
-https://aiventure.ro/proof.json
-https://aiventure.ro/evidence.json
-https://aiventure.ro/ere-dictionary.json
-https://aiventure.ro/signals-catalog.json
-https://aiventure.ro/signal-assessment.json
-https://aiventure.ro/.well-known/agent-card.json
-
-## INTENT MODEL
-
-50 canonical TOF / MOF / BOF intents.
-
-Intent hubs:
-
-1. Agenți AI și vânzarea de servicii
-2. Firma în răspunsurile AI
-3. Audit Agent-Ready
-4. Ofertă structurată pentru Agenți AI
-5. Cerere, calificare și ofertare
-6. Credibilitate, verificare, RRVI și Evidence
-7. Implementare AiVenture
-
-Canonical intent source:
-https://aiventure.ro/intents.json
-
-## AI / SEARCH SIGNALS
-
-The site is designed to expose and verify:
-
-- SEO
-- AEO
-- GEO / ERE
-- AIO
-- AI-SEO
-- AI Signals
-- A2A
-- Trust / Proof
-- Governance
-- Evidence
-
-## NEGATIVE SCOPE
-
-AiVenture is not positioned primarily as:
-
-- chatbot provider
-- generic AI agent builder
-- A2A protocol vendor
-- MCP vendor
-- Agent Card vendor
-- AI visibility agency
-- Agent-Ready website vendor
-- generic automation agency
-- agent marketplace
-- generic SaaS agent platform
-
-These may be implementation components.
-
-The primary product is the transformation of an existing B2B service into an Agent-Ready B2B Service.
-
-## PROOF SOURCES
-
-https://aiventure.ro/inovatii/
-https://aiventure.ro/proof.json
-https://aiventure.ro/evidence.json
-
-## CONTACT
-
-AiVenture S.R.L.
-Romania
-contact@5thelement.ai
-https://aiventure.ro/
-
-## SESSION
-
-0002H
+{
+  "schema": "AIVENTURE_AI_DISCOVERY",
+  "version": "1.0",
+  "session": "0002H",
+
+  "canonical": "https://aiventure.ro/",
+  "language": "ro-RO",
+  "market": "Romania",
+
+  "organization": {
+    "legal_name": "AiVenture S.R.L.",
+    "brand": "AiVenture",
+    "category": "Agent-Ready B2B Services",
+    "contact": {
+      "email": "contact@5thelement.ai",
+      "url": "https://aiventure.ro/contact/"
+    }
+  },
+
+  "positioning": {
+    "hero": "Vinde serviciile pe care le vinzi oamenilor și Agenților AI.",
+    "subtitle": "AiVenture pregătește serviciile firmei tale pentru a fi găsite, comparate, solicitate și cumpărate de Agenți AI. Automat. Non-stop. Global.",
+    "product_definition": "Transformăm un serviciu pe care îl vinzi deja oamenilor într-un serviciu pregătit să fie găsit, evaluat, solicitat și cumpărat de Agenți AI.",
+    "category_definition": "Servicii B2B existente transformate în oferte structurate, versionate, verificabile, guvernate și progresiv tranzacționabile de Agenți AI.",
+    "unit_of_value": "individual_b2b_service"
+  },
+
+  "negative_scope": [
+    "generic chatbot provider",
+    "generic AI agent builder",
+    "A2A protocol vendor",
+    "MCP vendor",
+    "Agent Card vendor",
+    "AI visibility agency",
+    "Agent-Ready website vendor",
+    "generic automation agency",
+    "agent marketplace",
+    "generic SaaS agent platform"
+  ],
+
+  "core_model": {
+    "lifecycle": [
+      "SERVICE",
+      "SERVICE_OFFER_CONTRACT",
+      "RRVI",
+      "AGENT_READY",
+      "DISCOVER",
+      "COMPARE",
+      "REQUEST",
+      "QUOTE",
+      "APPROVAL",
+      "ORDER",
+      "DELIVERY",
+      "EVIDENCE"
+    ]
+  },
+
+  "service_offer_contract": {
+    "name": "Service Offer Contract™",
+    "type": "canonical_commercial_operational_object",
+    "definition": "Sursa unică, versionată, de adevăr comercial, operațional și machine-readable pentru o ofertă de servicii.",
+    "fields": {
+      "identity": [
+        "offer_id",
+        "name",
+        "category",
+        "version",
+        "status",
+        "updated_at",
+        "valid_from",
+        "valid_until"
+      ],
+      "provider": [
+        "legal_name",
+        "brand",
+        "country",
+        "language",
+        "territory",
+        "contact",
+        "commercial_identifiers"
+      ],
+      "service": [
+        "description",
+        "problem",
+        "outcome",
+        "deliverables",
+        "exclusions",
+        "acceptance_criteria"
+      ],
+      "customer": [
+        "ideal_customer",
+        "organization_type",
+        "industry",
+        "size",
+        "territory",
+        "jurisdiction",
+        "eligibility",
+        "ineligibility"
+      ],
+      "commerce": [
+        "price",
+        "pricing_rule",
+        "currency",
+        "taxes",
+        "payment_terms",
+        "advance",
+        "validity",
+        "delivery_term"
+      ],
+      "capacity": [
+        "availability",
+        "capacity",
+        "start_slot",
+        "max_volume",
+        "sla",
+        "delivery_time"
+      ],
+      "agent_actions": [
+        "discover",
+        "compare",
+        "check_eligibility",
+        "create_request",
+        "request_quote",
+        "generate_quote_draft",
+        "create_order_draft",
+        "order"
+      ],
+      "control": [
+        "max_autonomy",
+        "financial_threshold",
+        "human_review_cases",
+        "exceptions",
+        "sensitive_data",
+        "discounts",
+        "special_terms",
+        "forbidden_actions"
+      ],
+      "evidence": [
+        "methodology",
+        "terms",
+        "case_studies",
+        "rule_applied",
+        "actor",
+        "timestamp",
+        "approval",
+        "result",
+        "offer_version",
+        "evidence_policy"
+      ]
+    }
+  },
+
+  "autonomy": {
+    "model": "L1-L5",
+    "levels": [
+      {
+        "id": "L1",
+        "name": "DISCOVER",
+        "can": [
+          "find_service",
+          "identify_provider",
+          "explain_public_offer",
+          "show_public_area_and_conditions"
+        ],
+        "commercial_commitment": false
+      },
+      {
+        "id": "L2",
+        "name": "COMPARE",
+        "can": [
+          "compare_providers",
+          "compare_outcomes",
+          "compare_prices",
+          "compare_terms",
+          "compare_territories",
+          "compare_conditions",
+          "compare_evidence"
+        ]
+      },
+      {
+        "id": "L3",
+        "name": "REQUEST",
+        "can": [
+          "check_eligibility",
+          "ask_qualification_questions",
+          "collect_brief",
+          "create_request",
+          "send_lead_to_crm",
+          "confirm_next_step"
+        ],
+        "escalate_on": [
+          "ambiguity",
+          "sensitive_case"
+        ]
+      },
+      {
+        "id": "L4",
+        "name": "QUOTE",
+        "can": [
+          "identify_package",
+          "calculate_within_parameters",
+          "generate_quote_draft",
+          "estimate_delivery_time",
+          "propose_next_step"
+        ],
+        "requires_human_approval_for": [
+          "discount",
+          "final_offer",
+          "exceptions",
+          "special_terms",
+          "special_commercial_conditions"
+        ]
+      },
+      {
+        "id": "L5",
+        "name": "ORDER",
+        "can": [
+          "initiate_order"
+        ],
+        "conditions": [
+          "standardized_service",
+          "stable_price",
+          "published_terms",
+          "available_capacity",
+          "authorized_autonomy"
+        ]
+      }
+    ],
+    "rules": [
+      "Fără regulă explicită → fără autonomie.",
+      "Fără jurisdicție identificată → fără acțiune sensibilă.",
+      "Fără aprobare unde este necesară → fără angajament comercial.",
+      "Fără Evidence → fără dovada deciziei."
+    ]
+  },
+
+  "rrvi": {
+    "name": "RRVI",
+    "full_name": "Remote Reglementation Verification Interface",
+    "role": "operational_regulation_permission_gate",
+    "principle": "AiVenture pune reglementarea înaintea acțiunii.",
+    "flow": [
+      "REGULATION",
+      "PERMISSION",
+      "CAPABILITY",
+      "ACTION",
+      "EVIDENCE"
+    ],
+    "publish_gate_checks": [
+      "jurisdiction",
+      "offer",
+      "content",
+      "eligibility",
+      "data",
+      "disclaimers",
+      "autonomy",
+      "allowed_actions",
+      "forbidden_actions",
+      "approval_conditions"
+    ],
+    "runtime_gate_checks": [
+      "requester",
+      "request",
+      "service",
+      "jurisdiction",
+      "data",
+      "autonomy_level",
+      "threshold",
+      "risk",
+      "human_review_required"
+    ],
+    "decisions": [
+      "allow",
+      "allow_with_conditions",
+      "human_review_required",
+      "block"
+    ],
+    "regulation_scope": [
+      "EU AI Act",
+      "GDPR",
+      "labor law",
+      "tax law",
+      "professional regulation",
+      "contracts",
+      "confidentiality",
+      "security",
+      "sector rules",
+      "internal policies",
+      "jurisdiction rules"
+    ],
+    "claims_not_made": [
+      "automatic legal compliance",
+      "legal certification",
+      "installation equals compliance"
+    ]
+  },
+
+  "evidence": {
+    "principle": "Claim != Proof",
+    "records": [
+      "offer_version",
+      "rule_applied",
+      "actor",
+      "timestamp",
+      "decision",
+      "conditions",
+      "approval",
+      "result",
+      "proof_reference"
+    ]
+  },
+
+  "initial_verticals": [
+    "Payroll",
+    "Accounting",
+    "Tax",
+    "HR",
+    "Legal",
+    "Translation",
+    "Recruitment",
+    "Transport",
+    "IT Services"
+  ],
+
+  "product_ladder": [
+    "AI-LENS",
+    "3WEBOBS",
+    "AI-READY",
+    "SERVICE OFFER CONTRACT",
+    "AGENT-READY",
+    "RRVI",
+    "A2A",
+    "REQUEST",
+    "QUOTE",
+    "ORDER",
+    "EVIDENCE"
+  ],
+
+  "commercial_offer_ladder": [
+    "SCAN",
+    "AUDIT",
+    "SERVICE OFFER STRUCTURING",
+    "AGENT-READY IMPLEMENTATION",
+    "REQUEST / CRM INTEGRATION",
+    "QUOTE PILOT",
+    "ORDER PILOT",
+    "OPERATE / MONITOR / EVIDENCE"
+  ],
+
+  "primary_pages": {
+    "home": "https://aiventure.ro/",
+    "offer": "https://aiventure.ro/oferta/",
+    "services": "https://aiventure.ro/servicii/",
+    "products": "https://aiventure.ro/produse/",
+    "agent_ready": "https://aiventure.ro/agent-ready/",
+    "service_offer_contract": "https://aiventure.ro/service-offer-contract/",
+    "rrvi": "https://aiventure.ro/rrvi/",
+    "eu_ai_act": "https://aiventure.ro/eu-ai-act/",
+    "questions": "https://aiventure.ro/intrebari/",
+    "resources": "https://aiventure.ro/resurse/",
+    "innovations": "https://aiventure.ro/inovatii/",
+    "blog": "https://aiventure.ro/blog/",
+    "mission": "https://aiventure.ro/misiune/",
+    "vision": "https://aiventure.ro/viziune/",
+    "contact": "https://aiventure.ro/contact/",
+    "legal": "https://aiventure.ro/legal/"
+  },
+
+  "machine_readable": {
+    "llms": "https://aiventure.ro/llms.txt",
+    "ai_txt": "https://aiventure.ro/ai.txt",
+    "entities": "https://aiventure.ro/entities.json",
+    "intents": "https://aiventure.ro/intents.json",
+    "service": "https://aiventure.ro/service.json",
+    "service_offer_contract": "https://aiventure.ro/service-offer-contract.json",
+    "governance": "https://aiventure.ro/governance.json",
+    "rrvi": "https://aiventure.ro/rrvi.json",
+    "proof": "https://aiventure.ro/proof.json",
+    "evidence": "https://aiventure.ro/evidence.json",
+    "ere_dictionary": "https://aiventure.ro/ere-dictionary.json",
+    "signals_catalog": "https://aiventure.ro/signals-catalog.json",
+    "signal_assessment": "https://aiventure.ro/signal-assessment.json",
+    "agent_card": "https://aiventure.ro/.well-known/agent-card.json"
+  },
+
+  "intent_model": {
+    "count": 50,
+    "funnel": [
+      "TOF",
+      "MOF",
+      "BOF"
+    ],
+    "hubs": [
+      "Agenți AI și vânzarea de servicii",
+      "Firma în răspunsurile AI",
+      "Audit Agent-Ready",
+      "Ofertă structurată pentru Agenți AI",
+      "Cerere, calificare și ofertare",
+      "Credibilitate, verificare, RRVI și Evidence",
+      "Implementare AiVenture"
+    ],
+    "source": "https://aiventure.ro/intents.json"
+  },
+
+  "optimization_layers": [
+    "SEO",
+    "AEO",
+    "GEO",
+    "ERE",
+    "AIO",
+    "AI-SEO",
+    "AI Signals",
+    "A2A",
+    "Trust and Proof",
+    "Governance",
+    "Evidence"
+  ],
+
+  "signal_doctrine": {
+    "total": 167,
+    "families": {
+      "identity_entity": 48,
+      "trust_proof": 61,
+      "intent_governance": 58
+    },
+    "assessment_model": [
+      "PASS",
+      "PARTIAL",
+      "FAIL",
+      "NA"
+    ]
+  },
+
+  "proof_sources": [
+    "https://aiventure.ro/inovatii/",
+    "https://aiventure.ro/proof.json",
+    "https://aiventure.ro/evidence.json"
+  ],
+
+  "pilot": {
+    "name": "ECBTAX Payroll România",
+    "target_autonomy": [
+      "L1",
+      "L2",
+      "L3"
+    ],
+    "mission": "Găsește un serviciu de payroll în România.",
+    "preseed_provider": false,
+    "expected_flow": [
+      "discover_providers",
+      "identify_ECBTAX",
+      "identify_payroll_romania",
+      "discover_ECBTAX_agent",
+      "check_eligibility",
+      "collect_brief",
+      "confirm",
+      "create_crm_lead",
+      "save_evidence"
+    ]
+  }
+}
