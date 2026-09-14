@@ -1,414 +1,1765 @@
 {
-  "schema": "AIVENTURE_ERE_DICTIONARY",
-  "version": "2.0",
-  "session": "0002H",
-  "scope": "Agent-Ready B2B Services",
-  "model": "Entities → Attributes → Relationships → Cardinality → Directionality → Identity Resolution",
-  "entities": {
-    "Organization": {
-      "id_pattern": "E_ORG_*",
-      "attributes": [
-        "legal_name",
-        "brand_name",
-        "country",
-        "language",
-        "contact",
-        "category",
-        "mission",
-        "vision",
-        "website",
-        "identifiers"
-      ],
-      "relationships": {
-        "HAS_BRAND": "Brand",
-        "PROVIDES": "Service",
-        "OWNS": "Product",
-        "DEFINES": "Innovation",
-        "USES": "RRVI",
-        "PUBLISHES": "WebPage",
-        "HAS_CONTACT_POINT": "ContactPoint"
-      }
+  "schema": "AIVENTURE_ERE_DATA_DICTIONARY",
+  "version": "4.0",
+  "session": "0003H",
+  "generated_at": "2026-09-14T06:11:00+03:00",
+  "canonical_url": "https://aiventure.ro/ere-dictionary.json",
+  "language": "ro",
+  "metamodel": {
+    "name": "ERE",
+    "expansion": "Entity–Relationship–Evidence",
+    "layers": [
+      "L1_IDENTITY",
+      "L2_OFFER",
+      "L3_AGENT",
+      "L3_GOVERNANCE",
+      "L4_EVIDENCE",
+      "L5_EXTERNAL"
+    ],
+    "principles": [
+      "Stable identity before relationship.",
+      "Every critical relationship has an inverse.",
+      "Cardinality is explicit.",
+      "Versioned artifacts have immutable historical identity.",
+      "Capability != permission.",
+      "Claim != Proof.",
+      "Machine graph must not contradict visible content."
+    ]
+  },
+  "entity_types": [
+    {
+      "type": "Organization",
+      "role": "Legal/business actor"
     },
-    "Brand": {
-      "id_pattern": "E_BRAND_*",
-      "attributes": [
-        "name",
-        "alternate_name",
-        "slogan",
-        "logo",
-        "category"
-      ],
-      "relationships": {
-        "BELONGS_TO": "Organization",
-        "REPRESENTS": "ServiceCategory"
-      }
+    {
+      "type": "Brand",
+      "role": "Public brand identity"
     },
-    "Service": {
-      "id_pattern": "E_SERVICE_*",
-      "attributes": [
-        "service_id",
-        "name",
-        "category",
-        "description",
-        "problem",
-        "outcome",
-        "deliverables",
-        "exclusions",
-        "acceptance_criteria",
-        "language",
-        "territory",
-        "jurisdiction",
-        "availability",
-        "capacity",
-        "SLA",
-        "delivery_time",
-        "version",
-        "status"
-      ],
-      "relationships": {
-        "PROVIDED_BY": "Organization",
-        "DEFINED_BY": "ServiceOfferContract",
-        "TARGETS": "BusinessAudience",
-        "AVAILABLE_IN": "Territory",
-        "GOVERNED_BY": "Jurisdiction",
-        "CONTROLLED_BY": "RRVI",
-        "HAS_AUTONOMY_POLICY": "AutonomyPolicy",
-        "HAS_OFFER": "Offer",
-        "ACCEPTS_REQUEST": "Request",
-        "CAN_GENERATE": "Quote",
-        "CAN_RESULT_IN": "Order",
-        "PRODUCES": "Delivery",
-        "GENERATES": "Evidence"
-      }
+    {
+      "type": "Website",
+      "role": "Canonical public web surface"
     },
-    "ServiceOfferContract": {
-      "id_pattern": "E_SOC_*",
-      "attributes": [
-        "offer_id",
-        "version",
-        "status",
-        "updated_at",
-        "valid_from",
-        "valid_until",
-        "provider",
-        "service",
-        "audience",
-        "eligibility",
-        "ineligibility",
-        "pricing_rule",
-        "currency",
-        "taxes",
-        "payment_terms",
-        "availability",
-        "capacity",
-        "max_autonomy",
-        "approval_policy",
-        "forbidden_actions",
-        "evidence_policy"
-      ],
-      "relationships": {
-        "DEFINES_SERVICE": "Service",
-        "ISSUED_BY": "Organization",
-        "TARGETS": "BusinessAudience",
-        "APPLIES_IN": "Jurisdiction",
-        "USES": "Rule",
-        "CHECKED_BY": "RRVI"
-      }
+    {
+      "type": "Service",
+      "role": "Commercial unit of value"
     },
-    "RRVI": {
-      "id_pattern": "E_RRVI*",
-      "attributes": [
-        "jurisdiction",
-        "service",
-        "action",
-        "actor",
-        "risk_level",
-        "autonomy_level",
-        "financial_threshold",
-        "data_classification",
-        "decision",
-        "conditions",
-        "timestamp"
-      ],
-      "relationships": {
-        "CHECKS": "ServiceOfferContract",
-        "APPLIES": "Regulation",
-        "APPLIES_IN": "Jurisdiction",
-        "EVALUATES": "AutonomyLevel",
-        "MAY_REQUIRE": "HumanApproval",
-        "PRODUCES": "RRVIDecision",
-        "GENERATES": "Evidence"
-      }
+    {
+      "type": "Product",
+      "role": "Packaged capability/product"
     },
-    "AutonomyLevel": {
-      "id_pattern": "L[1-5]_*",
-      "members": [
-        "L1_DISCOVER",
-        "L2_COMPARE",
-        "L3_REQUEST",
-        "L4_QUOTE",
-        "L5_ORDER"
-      ],
-      "relationships": {
-        "PERMITS": "Action",
-        "ASSIGNED_TO": "Service",
-        "CHECKED_BY": "RRVI"
-      }
+    {
+      "type": "Framework",
+      "role": "Conceptual/operational framework"
     },
-    "Action": {
-      "id_pattern": "A_*",
-      "members": [
-        "discover",
-        "compare",
-        "check_eligibility",
-        "create_request",
-        "request_quote",
-        "generate_quote_draft",
-        "create_order_draft",
-        "order"
-      ],
-      "relationships": {
-        "APPLIES_TO": "Service",
-        "REQUIRES": "AutonomyLevel",
-        "GATED_BY": "RRVI",
-        "MAY_REQUIRE": "HumanApproval",
-        "GENERATES": "Evidence"
-      }
+    {
+      "type": "ServiceOfferContract",
+      "role": "Versioned commercial truth object"
     },
-    "BusinessAudience": {
-      "id_pattern": "E_AUDIENCE_*",
-      "attributes": [
-        "organization_type",
-        "industry",
-        "size",
-        "territory",
-        "jurisdiction",
-        "language",
-        "eligibility_profile"
-      ],
-      "relationships": {
-        "TARGET_OF": "Service",
-        "EVALUATED_BY": "EligibilityRule"
-      }
+    {
+      "type": "GovernanceGate",
+      "role": "Runtime/publish decision gate"
     },
-    "EligibilityRule": {
-      "id_pattern": "R_ELIGIBILITY_*",
-      "attributes": [
-        "condition",
-        "operator",
-        "required_data",
-        "rule_version",
-        "result",
-        "escalation_rule"
-      ],
-      "relationships": {
-        "APPLIES_TO": "ServiceOfferContract",
-        "EVALUATES": "Request",
-        "MAY_TRIGGER": "HumanReview"
-      }
+    {
+      "type": "Agent",
+      "role": "Machine actor"
     },
-    "Offer": {
-      "id_pattern": "E_OFFER_*",
-      "attributes": [
-        "offer_id",
-        "price",
-        "pricing_rule",
-        "currency",
-        "taxes",
-        "validity",
-        "payment_terms",
-        "SLA",
-        "availability"
-      ],
-      "relationships": {
-        "OFFERS_SERVICE": "Service",
-        "ISSUED_BY": "Organization",
-        "DERIVED_FROM": "ServiceOfferContract",
-        "CAN_RESULT_IN": "Order"
-      }
+    {
+      "type": "IntentModel",
+      "role": "Demand/question model"
     },
-    "Request": {
-      "id_pattern": "E_REQUEST_*",
-      "attributes": [
-        "requester",
-        "service_requested",
-        "brief",
-        "jurisdiction",
-        "eligibility_status",
-        "timestamp",
-        "status"
-      ],
-      "relationships": {
-        "REQUESTS_SERVICE": "Service",
-        "CREATED_BY": "Actor",
-        "EVALUATED_BY": "EligibilityRule",
-        "MAY_GENERATE": "Quote",
-        "GENERATES": "Evidence"
-      }
+    {
+      "type": "SignalCatalog",
+      "role": "Signal definitions"
     },
-    "Quote": {
-      "id_pattern": "E_QUOTE_*",
-      "attributes": [
-        "price",
-        "currency",
-        "terms",
-        "validity",
-        "delivery_time",
-        "approval_status"
-      ],
-      "relationships": {
-        "FOR_REQUEST": "Request",
-        "DERIVED_FROM": "ServiceOfferContract",
-        "MAY_REQUIRE": "HumanApproval",
-        "MAY_RESULT_IN": "Order",
-        "GENERATES": "Evidence"
-      }
+    {
+      "type": "DigitalDNA",
+      "role": "Cross-surface semantic graph"
     },
-    "Order": {
-      "id_pattern": "E_ORDER_*",
-      "attributes": [
-        "status",
-        "value",
-        "currency",
-        "timestamp",
-        "payment_status",
-        "approval_status"
-      ],
-      "relationships": {
-        "DERIVED_FROM": "Quote",
-        "ORDERS": "Service",
-        "AUTHORIZED_BY": "Policy",
-        "RESULTS_IN": "Delivery",
-        "GENERATES": "Evidence"
-      }
+    {
+      "type": "EvidenceRegistry",
+      "role": "Decision/action evidence"
     },
-    "Delivery": {
-      "id_pattern": "E_DELIVERY_*",
-      "attributes": [
-        "start_date",
-        "end_date",
-        "SLA_status",
-        "acceptance_status",
-        "deliverables"
-      ],
-      "relationships": {
-        "FULFILLS": "Order",
-        "DELIVERS": "Service",
-        "PRODUCES": "Evidence"
-      }
+    {
+      "type": "ProofRegistry",
+      "role": "Integrity/timestamp proofs"
     },
-    "Evidence": {
-      "id_pattern": "E_EVIDENCE_*",
-      "attributes": [
-        "timestamp",
-        "actor",
-        "rule_applied",
-        "decision",
-        "approval",
-        "result",
-        "offer_version",
-        "hash",
-        "proof_reference"
-      ],
-      "relationships": {
-        "PROVES": "Action",
-        "REFERENCES_SOC_VERSION": "ServiceOfferContract",
-        "REFERENCES_RULE": "Rule",
-        "CREATED_BY": "Actor",
-        "MAY_REFERENCE": "Proof"
-      }
+    {
+      "type": "DigitalArtifact",
+      "role": "Versionable machine-readable artifact"
     },
-    "Regulation": {
-      "id_pattern": "E_REG_*",
-      "members": [
-        "EU AI Act",
-        "GDPR",
-        "Labor Law",
-        "Tax Law",
-        "Professional Regulation",
-        "Internal Policy"
-      ],
-      "relationships": {
-        "APPLIES_IN": "Jurisdiction",
-        "CHECKED_BY": "RRVI",
-        "GOVERNS": "Action"
-      }
+    {
+      "type": "ExternalEntity",
+      "role": "Third-party corroborating entity"
     },
-    "Jurisdiction": {
-      "id_pattern": "E_JURISDICTION_*",
-      "attributes": [
-        "country",
-        "region",
-        "legal_scope",
-        "effective_date"
-      ],
-      "relationships": {
-        "HAS_REGULATION": "Regulation",
-        "APPLIES_TO": "Service",
-        "USED_BY": "RRVI"
-      }
+    {
+      "type": "WebResource",
+      "role": "Any linkable web resource"
     },
-    "Agent": {
-      "id_pattern": "E_AGENT_*",
-      "attributes": [
-        "owner",
-        "identity",
-        "capabilities",
-        "authorization_scope",
-        "endpoint",
-        "protocol_support"
-      ],
-      "relationships": {
-        "REPRESENTS": "Organization",
-        "DISCOVERS": "Service",
-        "CREATES": "Request",
-        "REQUESTS": "Quote",
-        "MAY_CREATE": "Order",
-        "SUBJECT_TO": "RRVI",
-        "GENERATES": "Evidence"
-      }
+    {
+      "type": "Action",
+      "role": "Agent/human action event"
+    },
+    {
+      "type": "Authority",
+      "role": "Permission/approval source"
+    },
+    {
+      "type": "HumanRole",
+      "role": "Human escalation/approval role"
     }
-  },
-  "cardinality_rules": {
-    "C01": "Organization → Service = 1:N",
-    "C02": "Service → Active SOC = 1:1",
-    "C03": "Service → SOC History = 1:N",
-    "C04": "SOC → Eligibility Rules = 1:N",
-    "C05": "SOC → Allowed Actions = 1:N",
-    "C06": "Service → Autonomy Max = N:1",
-    "C07": "Request → Quote = 0:1",
-    "C08": "Quote → Order = 0:1",
-    "C09": "Order → Delivery = 1:N",
-    "C10": "Action → Evidence = 1:N",
-    "C11": "RRVI Check → Decision = 1:1",
-    "C12": "RRVI Check → Regulation = N:N"
-  },
-  "directionality_rule": "Critical commercial relationships are represented bidirectionally; do not rely on crawler inference of inverse relations.",
-  "identity_rules": [
-    "Stable URI per entity",
-    "Reuse same IDs across HTML, Schema.org, service.json, Agent Card, API, A2A, intents.json, RRVI and Evidence",
-    "Versioned objects receive distinct identities."
   ],
-  "reconstruction_test": [
-    "provider",
-    "services",
-    "service_offer",
-    "active_version",
-    "audience",
-    "availability",
-    "rules",
-    "autonomy",
-    "agent_actions",
-    "human_approval",
-    "request",
-    "quote_lineage",
-    "order_lineage",
-    "delivery",
-    "evidence",
-    "regulation",
-    "rrvi_decision",
-    "cardinality",
-    "inverse_relations",
-    "canonical_identity"
-  ]
+  "entities": [
+    {
+      "id": "E_ORG_AIVENTURE",
+      "type": "Organization",
+      "name": "AiVenture S.R.L.",
+      "canonical_uri": "https://aiventure.ro/#organization",
+      "identity_keys": [
+        "legal_name",
+        "canonical_uri"
+      ],
+      "attributes": [
+        {
+          "name": "legal_name",
+          "datatype": "string",
+          "required": true,
+          "multiplicity": "1",
+          "description": "Denumirea juridică"
+        },
+        {
+          "name": "brand_name",
+          "datatype": "string",
+          "required": true,
+          "multiplicity": "1",
+          "description": "Brandul public"
+        },
+        {
+          "name": "canonical_uri",
+          "datatype": "uri",
+          "required": true,
+          "multiplicity": "1",
+          "description": "Identitate URI stabilă"
+        },
+        {
+          "name": "website",
+          "datatype": "uri",
+          "required": true,
+          "multiplicity": "1",
+          "description": "Site canonic"
+        },
+        {
+          "name": "email",
+          "datatype": "email",
+          "required": true,
+          "multiplicity": "1",
+          "description": "Contact principal"
+        },
+        {
+          "name": "phone",
+          "datatype": "string",
+          "required": false,
+          "multiplicity": "0..1",
+          "description": "Telefon public"
+        },
+        {
+          "name": "category",
+          "datatype": "string",
+          "required": true,
+          "multiplicity": "1",
+          "description": "Categoria comercială canonică"
+        },
+        {
+          "name": "descriptor",
+          "datatype": "string",
+          "required": false,
+          "multiplicity": "0..1",
+          "description": "Descriptor de poziționare"
+        }
+      ]
+    },
+    {
+      "id": "E_BRAND_AIVENTURE",
+      "type": "Brand",
+      "name": "AiVenture",
+      "canonical_uri": "https://aiventure.ro/#brand",
+      "identity_keys": [
+        "name",
+        "canonical_uri"
+      ],
+      "attributes": [
+        {
+          "name": "name",
+          "datatype": "string",
+          "required": true,
+          "multiplicity": "1",
+          "description": ""
+        },
+        {
+          "name": "canonical_uri",
+          "datatype": "uri",
+          "required": true,
+          "multiplicity": "1",
+          "description": ""
+        },
+        {
+          "name": "slogan",
+          "datatype": "string",
+          "required": false,
+          "multiplicity": "0..N",
+          "description": ""
+        },
+        {
+          "name": "visual_identity",
+          "datatype": "uri",
+          "required": false,
+          "multiplicity": "0..N",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "id": "E_WEBSITE_AIVENTURE",
+      "type": "Website",
+      "name": "aiventure.ro",
+      "canonical_uri": "https://aiventure.ro/",
+      "identity_keys": [
+        "canonical_uri"
+      ],
+      "attributes": [
+        {
+          "name": "canonical_uri",
+          "datatype": "uri",
+          "required": true,
+          "multiplicity": "1",
+          "description": ""
+        },
+        {
+          "name": "language",
+          "datatype": "string",
+          "required": true,
+          "multiplicity": "1",
+          "description": "",
+          "enum": [
+            "ro"
+          ]
+        },
+        {
+          "name": "session",
+          "datatype": "string",
+          "required": true,
+          "multiplicity": "1",
+          "description": ""
+        },
+        {
+          "name": "build_timestamp",
+          "datatype": "datetime",
+          "required": true,
+          "multiplicity": "1",
+          "description": ""
+        },
+        {
+          "name": "sitemap",
+          "datatype": "uri",
+          "required": true,
+          "multiplicity": "1",
+          "description": ""
+        },
+        {
+          "name": "robots",
+          "datatype": "uri",
+          "required": true,
+          "multiplicity": "1",
+          "description": ""
+        },
+        {
+          "name": "llms",
+          "datatype": "uri",
+          "required": true,
+          "multiplicity": "1",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "id": "E_SERVICE_AGENT_READY_B2B",
+      "type": "Service",
+      "name": "Agent-Ready B2B Services",
+      "canonical_uri": "https://aiventure.ro/servicii/agent-ready-b2b/#service",
+      "identity_keys": [
+        "service_id",
+        "canonical_uri"
+      ],
+      "attributes": [
+        {
+          "name": "service_id",
+          "datatype": "string",
+          "required": true,
+          "multiplicity": "1",
+          "description": ""
+        },
+        {
+          "name": "name",
+          "datatype": "string",
+          "required": true,
+          "multiplicity": "1",
+          "description": ""
+        },
+        {
+          "name": "category",
+          "datatype": "string",
+          "required": true,
+          "multiplicity": "1",
+          "description": ""
+        },
+        {
+          "name": "definition",
+          "datatype": "text",
+          "required": true,
+          "multiplicity": "1",
+          "description": ""
+        },
+        {
+          "name": "problem",
+          "datatype": "text",
+          "required": true,
+          "multiplicity": "1",
+          "description": ""
+        },
+        {
+          "name": "outcome",
+          "datatype": "text",
+          "required": true,
+          "multiplicity": "1",
+          "description": ""
+        },
+        {
+          "name": "audience",
+          "datatype": "string",
+          "required": false,
+          "multiplicity": "0..N",
+          "description": ""
+        },
+        {
+          "name": "eligibility",
+          "datatype": "object",
+          "required": false,
+          "multiplicity": "0..1",
+          "description": ""
+        },
+        {
+          "name": "ineligibility",
+          "datatype": "object",
+          "required": false,
+          "multiplicity": "0..1",
+          "description": ""
+        },
+        {
+          "name": "territory",
+          "datatype": "object",
+          "required": false,
+          "multiplicity": "0..1",
+          "description": ""
+        },
+        {
+          "name": "pricing",
+          "datatype": "object",
+          "required": false,
+          "multiplicity": "0..1",
+          "description": ""
+        },
+        {
+          "name": "availability",
+          "datatype": "object",
+          "required": false,
+          "multiplicity": "0..1",
+          "description": ""
+        },
+        {
+          "name": "language",
+          "datatype": "string",
+          "required": true,
+          "multiplicity": "1",
+          "description": "",
+          "enum": [
+            "ro"
+          ]
+        },
+        {
+          "name": "version",
+          "datatype": "string",
+          "required": true,
+          "multiplicity": "1",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "id": "E_SOC_AGENT_READY_B2B_V1_0",
+      "type": "ServiceOfferContract",
+      "name": "Service Offer Contract™",
+      "canonical_uri": "https://aiventure.ro/service-offer-contract/#soc-v1-0",
+      "identity_keys": [
+        "document_id",
+        "offer_version"
+      ],
+      "attributes": [
+        {
+          "name": "document_id",
+          "datatype": "string",
+          "required": true,
+          "multiplicity": "1",
+          "description": ""
+        },
+        {
+          "name": "offer_version",
+          "datatype": "string",
+          "required": true,
+          "multiplicity": "1",
+          "description": ""
+        },
+        {
+          "name": "status",
+          "datatype": "string",
+          "required": true,
+          "multiplicity": "1",
+          "description": "",
+          "enum": [
+            "DRAFT",
+            "FROZEN",
+            "VERIFIED",
+            "SUPERSEDED"
+          ]
+        },
+        {
+          "name": "commerce",
+          "datatype": "object",
+          "required": true,
+          "multiplicity": "1",
+          "description": ""
+        },
+        {
+          "name": "autonomy",
+          "datatype": "object",
+          "required": true,
+          "multiplicity": "1",
+          "description": ""
+        },
+        {
+          "name": "approval_policy",
+          "datatype": "object",
+          "required": true,
+          "multiplicity": "1",
+          "description": ""
+        },
+        {
+          "name": "evidence_policy",
+          "datatype": "object",
+          "required": true,
+          "multiplicity": "1",
+          "description": ""
+        },
+        {
+          "name": "updated_at",
+          "datatype": "datetime",
+          "required": true,
+          "multiplicity": "1",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "id": "E_RRVI",
+      "type": "GovernanceGate",
+      "name": "RRVI™",
+      "canonical_uri": "https://aiventure.ro/rrvi/#rrvi",
+      "identity_keys": [
+        "name",
+        "canonical_uri"
+      ],
+      "attributes": [
+        {
+          "name": "name",
+          "datatype": "string",
+          "required": true,
+          "multiplicity": "1",
+          "description": ""
+        },
+        {
+          "name": "checks",
+          "datatype": "string",
+          "required": true,
+          "multiplicity": "1..N",
+          "description": ""
+        },
+        {
+          "name": "decisions",
+          "datatype": "string",
+          "required": true,
+          "multiplicity": "1..N",
+          "description": "",
+          "enum": [
+            "allow",
+            "allow_with_conditions",
+            "human_review_required",
+            "block"
+          ]
+        },
+        {
+          "name": "default_decision",
+          "datatype": "string",
+          "required": true,
+          "multiplicity": "1",
+          "description": ""
+        },
+        {
+          "name": "publish_gate",
+          "datatype": "boolean",
+          "required": true,
+          "multiplicity": "1",
+          "description": ""
+        },
+        {
+          "name": "runtime_gate",
+          "datatype": "boolean",
+          "required": true,
+          "multiplicity": "1",
+          "description": ""
+        },
+        {
+          "name": "evidence_required",
+          "datatype": "boolean",
+          "required": true,
+          "multiplicity": "1",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "id": "E_AGENT_AIVENTURE_BUYER",
+      "type": "Agent",
+      "name": "AiVenture Service Buyer Agent",
+      "canonical_uri": "https://aiventure.ro/.well-known/agent-card.json#buyer-agent",
+      "identity_keys": [
+        "name",
+        "canonical_uri"
+      ],
+      "attributes": [
+        {
+          "name": "name",
+          "datatype": "string",
+          "required": true,
+          "multiplicity": "1",
+          "description": ""
+        },
+        {
+          "name": "endpoint",
+          "datatype": "uri",
+          "required": true,
+          "multiplicity": "1",
+          "description": ""
+        },
+        {
+          "name": "skills",
+          "datatype": "object",
+          "required": true,
+          "multiplicity": "1..N",
+          "description": ""
+        },
+        {
+          "name": "capabilities",
+          "datatype": "object",
+          "required": true,
+          "multiplicity": "1",
+          "description": ""
+        },
+        {
+          "name": "default_input_modes",
+          "datatype": "string",
+          "required": true,
+          "multiplicity": "1..N",
+          "description": ""
+        },
+        {
+          "name": "default_output_modes",
+          "datatype": "string",
+          "required": true,
+          "multiplicity": "1..N",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "id": "E_EVIDENCE_REGISTRY",
+      "type": "EvidenceRegistry",
+      "name": "AiVenture Evidence Registry",
+      "canonical_uri": "https://aiventure.ro/evidence.json",
+      "identity_keys": [
+        "canonical_uri"
+      ],
+      "attributes": [
+        {
+          "name": "evidence_id",
+          "datatype": "string",
+          "required": true,
+          "multiplicity": "1",
+          "description": ""
+        },
+        {
+          "name": "timestamp",
+          "datatype": "datetime",
+          "required": true,
+          "multiplicity": "1",
+          "description": ""
+        },
+        {
+          "name": "actor",
+          "datatype": "string",
+          "required": true,
+          "multiplicity": "1",
+          "description": ""
+        },
+        {
+          "name": "rule_applied",
+          "datatype": "string",
+          "required": true,
+          "multiplicity": "1",
+          "description": ""
+        },
+        {
+          "name": "decision",
+          "datatype": "string",
+          "required": true,
+          "multiplicity": "1",
+          "description": ""
+        },
+        {
+          "name": "approval",
+          "datatype": "string",
+          "required": false,
+          "multiplicity": "0..1",
+          "description": ""
+        },
+        {
+          "name": "result",
+          "datatype": "string",
+          "required": true,
+          "multiplicity": "1",
+          "description": ""
+        },
+        {
+          "name": "offer_version",
+          "datatype": "string",
+          "required": false,
+          "multiplicity": "0..1",
+          "description": ""
+        },
+        {
+          "name": "proof_reference",
+          "datatype": "string",
+          "required": false,
+          "multiplicity": "0..1",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "id": "E_PROOF_REGISTRY",
+      "type": "ProofRegistry",
+      "name": "AiVenture Proof Registry",
+      "canonical_uri": "https://aiventure.ro/proof.json",
+      "identity_keys": [
+        "canonical_uri"
+      ],
+      "attributes": [
+        {
+          "name": "artifact",
+          "datatype": "string",
+          "required": true,
+          "multiplicity": "1",
+          "description": ""
+        },
+        {
+          "name": "sha256",
+          "datatype": "string",
+          "required": true,
+          "multiplicity": "1",
+          "description": ""
+        },
+        {
+          "name": "ots_status",
+          "datatype": "string",
+          "required": false,
+          "multiplicity": "0..1",
+          "description": "",
+          "enum": [
+            "NOT_REQUIRED",
+            "PENDING",
+            "VERIFIED"
+          ]
+        },
+        {
+          "name": "ots_file",
+          "datatype": "uri",
+          "required": false,
+          "multiplicity": "0..1",
+          "description": ""
+        },
+        {
+          "name": "bitcoin_block",
+          "datatype": "integer",
+          "required": false,
+          "multiplicity": "0..1",
+          "description": ""
+        },
+        {
+          "name": "verified_at",
+          "datatype": "datetime",
+          "required": false,
+          "multiplicity": "0..1",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "id": "E_INTENT_MODEL_V3",
+      "type": "IntentModel",
+      "name": "AiVenture Entity Intent Model v3",
+      "canonical_uri": "https://aiventure.ro/intents.json",
+      "identity_keys": [
+        "version",
+        "canonical_uri"
+      ],
+      "attributes": [
+        {
+          "name": "version",
+          "datatype": "string",
+          "required": true,
+          "multiplicity": "1",
+          "description": ""
+        },
+        {
+          "name": "entity_count",
+          "datatype": "integer",
+          "required": true,
+          "multiplicity": "1",
+          "description": ""
+        },
+        {
+          "name": "intent_count",
+          "datatype": "integer",
+          "required": true,
+          "multiplicity": "1",
+          "description": ""
+        },
+        {
+          "name": "qa_pair_count",
+          "datatype": "integer",
+          "required": true,
+          "multiplicity": "1",
+          "description": ""
+        },
+        {
+          "name": "distribution",
+          "datatype": "object",
+          "required": true,
+          "multiplicity": "1",
+          "description": ""
+        },
+        {
+          "name": "language",
+          "datatype": "string",
+          "required": true,
+          "multiplicity": "1",
+          "description": "",
+          "enum": [
+            "ro"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "E_AI_SIGNALS_19",
+      "type": "SignalCatalog",
+      "name": "AI Signals AIS001–AIS019",
+      "canonical_uri": "https://aiventure.ro/ai-signals.json",
+      "identity_keys": [
+        "version",
+        "canonical_uri"
+      ],
+      "attributes": [
+        {
+          "name": "count",
+          "datatype": "integer",
+          "required": true,
+          "multiplicity": "1",
+          "description": ""
+        },
+        {
+          "name": "signals",
+          "datatype": "object",
+          "required": true,
+          "multiplicity": "19",
+          "description": ""
+        },
+        {
+          "name": "principle",
+          "datatype": "text",
+          "required": true,
+          "multiplicity": "1",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "id": "E_DIGITAL_DNA",
+      "type": "DigitalDNA",
+      "name": "AiVenture Digital DNA",
+      "canonical_uri": "https://aiventure.ro/digital-dna.json",
+      "identity_keys": [
+        "canonical_uri"
+      ],
+      "attributes": [
+        {
+          "name": "relationship_layers",
+          "datatype": "object",
+          "required": true,
+          "multiplicity": "5",
+          "description": ""
+        },
+        {
+          "name": "canonical_relationships",
+          "datatype": "object",
+          "required": true,
+          "multiplicity": "1..N",
+          "description": ""
+        },
+        {
+          "name": "consistency_rule",
+          "datatype": "text",
+          "required": true,
+          "multiplicity": "1",
+          "description": ""
+        },
+        {
+          "name": "proof_rule",
+          "datatype": "text",
+          "required": true,
+          "multiplicity": "1",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "id": "E_PRODUCT_AI_LENS",
+      "type": "Product",
+      "name": "AI-LENS™",
+      "canonical_uri": "https://aiventure.ro/produse/ai-lens/",
+      "identity_keys": [
+        "canonical_uri"
+      ],
+      "attributes": [
+        {
+          "name": "name",
+          "datatype": "string",
+          "required": true,
+          "multiplicity": "1",
+          "description": ""
+        },
+        {
+          "name": "canonical_uri",
+          "datatype": "uri",
+          "required": true,
+          "multiplicity": "1",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "id": "E_PRODUCT_3WEBOBS",
+      "type": "Product",
+      "name": "3WEBOBS™",
+      "canonical_uri": "https://aiventure.ro/produse/3webobs/",
+      "identity_keys": [
+        "canonical_uri"
+      ],
+      "attributes": [
+        {
+          "name": "name",
+          "datatype": "string",
+          "required": true,
+          "multiplicity": "1",
+          "description": ""
+        },
+        {
+          "name": "canonical_uri",
+          "datatype": "uri",
+          "required": true,
+          "multiplicity": "1",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "id": "E_PRODUCT_AI_READY_EDGE",
+      "type": "Product",
+      "name": "AI-READY EDGE INJECTOR™",
+      "canonical_uri": "https://aiventure.ro/produse/ai-ready-edge/",
+      "identity_keys": [
+        "canonical_uri"
+      ],
+      "attributes": [
+        {
+          "name": "name",
+          "datatype": "string",
+          "required": true,
+          "multiplicity": "1",
+          "description": ""
+        },
+        {
+          "name": "canonical_uri",
+          "datatype": "uri",
+          "required": true,
+          "multiplicity": "1",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "id": "E_PRODUCT_EU_AI_ACT_READY",
+      "type": "Product",
+      "name": "EU AI Act Ready™",
+      "canonical_uri": "https://aiventure.ro/produse/eu-ai-act-ready/",
+      "identity_keys": [
+        "canonical_uri"
+      ],
+      "attributes": [
+        {
+          "name": "name",
+          "datatype": "string",
+          "required": true,
+          "multiplicity": "1",
+          "description": ""
+        },
+        {
+          "name": "canonical_uri",
+          "datatype": "uri",
+          "required": true,
+          "multiplicity": "1",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "id": "E_FRAMEWORK_MASTER_CONTEXT",
+      "type": "Framework",
+      "name": "Master Context",
+      "canonical_uri": "https://aiventure.ro/servicii/master-context/",
+      "identity_keys": [
+        "canonical_uri"
+      ],
+      "attributes": [
+        {
+          "name": "name",
+          "datatype": "string",
+          "required": true,
+          "multiplicity": "1",
+          "description": ""
+        },
+        {
+          "name": "canonical_uri",
+          "datatype": "uri",
+          "required": true,
+          "multiplicity": "1",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "id": "E_SERVICE_AGENT_FACTORY",
+      "type": "Service",
+      "name": "Agent Factory",
+      "canonical_uri": "https://aiventure.ro/servicii/agent-factory/",
+      "identity_keys": [
+        "canonical_uri"
+      ],
+      "attributes": [
+        {
+          "name": "name",
+          "datatype": "string",
+          "required": true,
+          "multiplicity": "1",
+          "description": ""
+        },
+        {
+          "name": "canonical_uri",
+          "datatype": "uri",
+          "required": true,
+          "multiplicity": "1",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "id": "E_SERVICE_AI_GOVERNANCE",
+      "type": "Service",
+      "name": "AI Governance",
+      "canonical_uri": "https://aiventure.ro/servicii/ai-governance/",
+      "identity_keys": [
+        "canonical_uri"
+      ],
+      "attributes": [
+        {
+          "name": "name",
+          "datatype": "string",
+          "required": true,
+          "multiplicity": "1",
+          "description": ""
+        },
+        {
+          "name": "canonical_uri",
+          "datatype": "uri",
+          "required": true,
+          "multiplicity": "1",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "id": "E_PRODUCT_COMPANY_INTELLIGENCE",
+      "type": "Product",
+      "name": "Company Intelligence",
+      "canonical_uri": "https://aiventure.ro/produse/company-intelligence/",
+      "identity_keys": [
+        "canonical_uri"
+      ],
+      "attributes": [
+        {
+          "name": "name",
+          "datatype": "string",
+          "required": true,
+          "multiplicity": "1",
+          "description": ""
+        },
+        {
+          "name": "canonical_uri",
+          "datatype": "uri",
+          "required": true,
+          "multiplicity": "1",
+          "description": ""
+        }
+      ]
+    }
+  ],
+  "relationship_types": [
+    {
+      "id": "R001",
+      "name": "HAS_BRAND",
+      "inverse": "BRAND_OF",
+      "domain": "Organization",
+      "range": "Brand",
+      "cardinality": {
+        "subject_to_object": "1..N",
+        "object_to_subject": "1"
+      },
+      "level": "L1_IDENTITY",
+      "transitive": false,
+      "symmetric": false,
+      "description": "Organizația deține/folosește brandul."
+    },
+    {
+      "id": "R002",
+      "name": "OWNS_WEBSITE",
+      "inverse": "OWNED_BY",
+      "domain": "Organization",
+      "range": "Website",
+      "cardinality": {
+        "subject_to_object": "1..N",
+        "object_to_subject": "1"
+      },
+      "level": "L1_IDENTITY",
+      "transitive": false,
+      "symmetric": false,
+      "description": ""
+    },
+    {
+      "id": "R003",
+      "name": "PROVIDES",
+      "inverse": "PROVIDED_BY",
+      "domain": "Organization",
+      "range": "Service",
+      "cardinality": {
+        "subject_to_object": "1..N",
+        "object_to_subject": "1"
+      },
+      "level": "L2_OFFER",
+      "transitive": false,
+      "symmetric": false,
+      "description": ""
+    },
+    {
+      "id": "R004",
+      "name": "DEVELOPS",
+      "inverse": "DEVELOPED_BY",
+      "domain": "Organization",
+      "range": "Product",
+      "cardinality": {
+        "subject_to_object": "1..N",
+        "object_to_subject": "1"
+      },
+      "level": "L2_OFFER",
+      "transitive": false,
+      "symmetric": false,
+      "description": ""
+    },
+    {
+      "id": "R005",
+      "name": "PUBLISHES",
+      "inverse": "PUBLISHED_BY",
+      "domain": "Organization",
+      "range": "DigitalArtifact",
+      "cardinality": {
+        "subject_to_object": "1..N",
+        "object_to_subject": "1"
+      },
+      "level": "L1_IDENTITY",
+      "transitive": false,
+      "symmetric": false,
+      "description": ""
+    },
+    {
+      "id": "R010",
+      "name": "DEFINED_BY",
+      "inverse": "DEFINES_SERVICE",
+      "domain": "Service",
+      "range": "ServiceOfferContract",
+      "cardinality": {
+        "subject_to_object": "1",
+        "object_to_subject": "1"
+      },
+      "level": "L2_OFFER",
+      "transitive": false,
+      "symmetric": false,
+      "description": ""
+    },
+    {
+      "id": "R011",
+      "name": "CONTROLLED_BY",
+      "inverse": "CONTROLS",
+      "domain": "Service",
+      "range": "GovernanceGate",
+      "cardinality": {
+        "subject_to_object": "1..N",
+        "object_to_subject": "1..N"
+      },
+      "level": "L3_GOVERNANCE",
+      "transitive": false,
+      "symmetric": false,
+      "description": ""
+    },
+    {
+      "id": "R012",
+      "name": "HAS_INTENT_MODEL",
+      "inverse": "INTENTS_FOR",
+      "domain": "Organization",
+      "range": "IntentModel",
+      "cardinality": {
+        "subject_to_object": "1",
+        "object_to_subject": "1"
+      },
+      "level": "L2_OFFER",
+      "transitive": false,
+      "symmetric": false,
+      "description": ""
+    },
+    {
+      "id": "R013",
+      "name": "HAS_SIGNAL_CATALOG",
+      "inverse": "SIGNALS_FOR",
+      "domain": "Organization",
+      "range": "SignalCatalog",
+      "cardinality": {
+        "subject_to_object": "1..N",
+        "object_to_subject": "1"
+      },
+      "level": "L2_OFFER",
+      "transitive": false,
+      "symmetric": false,
+      "description": ""
+    },
+    {
+      "id": "R014",
+      "name": "HAS_DIGITAL_DNA",
+      "inverse": "DNA_OF",
+      "domain": "Organization",
+      "range": "DigitalDNA",
+      "cardinality": {
+        "subject_to_object": "1",
+        "object_to_subject": "1"
+      },
+      "level": "L2_OFFER",
+      "transitive": false,
+      "symmetric": false,
+      "description": ""
+    },
+    {
+      "id": "R020",
+      "name": "OPERATES_AGENT",
+      "inverse": "OPERATED_BY",
+      "domain": "Organization",
+      "range": "Agent",
+      "cardinality": {
+        "subject_to_object": "0..N",
+        "object_to_subject": "1"
+      },
+      "level": "L3_AGENT",
+      "transitive": false,
+      "symmetric": false,
+      "description": ""
+    },
+    {
+      "id": "R021",
+      "name": "REPRESENTS",
+      "inverse": "REPRESENTED_BY_AGENT",
+      "domain": "Agent",
+      "range": "Organization",
+      "cardinality": {
+        "subject_to_object": "1",
+        "object_to_subject": "0..N"
+      },
+      "level": "L3_AGENT",
+      "transitive": false,
+      "symmetric": false,
+      "description": ""
+    },
+    {
+      "id": "R022",
+      "name": "DISCOVERS",
+      "inverse": "DISCOVERED_BY",
+      "domain": "Agent",
+      "range": "Service",
+      "cardinality": {
+        "subject_to_object": "0..N",
+        "object_to_subject": "0..N"
+      },
+      "level": "L3_AGENT",
+      "transitive": false,
+      "symmetric": false,
+      "description": ""
+    },
+    {
+      "id": "R023",
+      "name": "SUBJECT_TO",
+      "inverse": "APPLIES_TO",
+      "domain": "Agent",
+      "range": "GovernanceGate",
+      "cardinality": {
+        "subject_to_object": "1..N",
+        "object_to_subject": "0..N"
+      },
+      "level": "L3_GOVERNANCE",
+      "transitive": false,
+      "symmetric": false,
+      "description": ""
+    },
+    {
+      "id": "R024",
+      "name": "AUTHORIZED_BY",
+      "inverse": "AUTHORIZES",
+      "domain": "Action",
+      "range": "Authority",
+      "cardinality": {
+        "subject_to_object": "0..1",
+        "object_to_subject": "0..N"
+      },
+      "level": "L3_GOVERNANCE",
+      "transitive": false,
+      "symmetric": false,
+      "description": ""
+    },
+    {
+      "id": "R025",
+      "name": "ESCALATES_TO",
+      "inverse": "RECEIVES_ESCALATION_FROM",
+      "domain": "Agent",
+      "range": "HumanRole",
+      "cardinality": {
+        "subject_to_object": "0..N",
+        "object_to_subject": "0..N"
+      },
+      "level": "L3_GOVERNANCE",
+      "transitive": false,
+      "symmetric": false,
+      "description": ""
+    },
+    {
+      "id": "R030",
+      "name": "GENERATES_EVIDENCE",
+      "inverse": "EVIDENCE_OF",
+      "domain": "Action",
+      "range": "EvidenceRegistry",
+      "cardinality": {
+        "subject_to_object": "1..N",
+        "object_to_subject": "0..N"
+      },
+      "level": "L4_EVIDENCE",
+      "transitive": false,
+      "symmetric": false,
+      "description": ""
+    },
+    {
+      "id": "R031",
+      "name": "HAS_PROOF",
+      "inverse": "PROOF_OF",
+      "domain": "EvidenceRecord",
+      "range": "ProofRegistry",
+      "cardinality": {
+        "subject_to_object": "0..N",
+        "object_to_subject": "0..N"
+      },
+      "level": "L4_EVIDENCE",
+      "transitive": false,
+      "symmetric": false,
+      "description": ""
+    },
+    {
+      "id": "R032",
+      "name": "HASHES",
+      "inverse": "HASHED_BY",
+      "domain": "ProofRegistry",
+      "range": "DigitalArtifact",
+      "cardinality": {
+        "subject_to_object": "0..N",
+        "object_to_subject": "0..N"
+      },
+      "level": "L4_EVIDENCE",
+      "transitive": false,
+      "symmetric": false,
+      "description": ""
+    },
+    {
+      "id": "R033",
+      "name": "TIMESTAMPS",
+      "inverse": "TIMESTAMPED_BY",
+      "domain": "ProofRegistry",
+      "range": "DigitalArtifact",
+      "cardinality": {
+        "subject_to_object": "0..N",
+        "object_to_subject": "0..N"
+      },
+      "level": "L4_EVIDENCE",
+      "transitive": false,
+      "symmetric": false,
+      "description": ""
+    },
+    {
+      "id": "R040",
+      "name": "CORROBORATES",
+      "inverse": "CORROBORATED_BY",
+      "domain": "ExternalEntity",
+      "range": "Organization",
+      "cardinality": {
+        "subject_to_object": "0..N",
+        "object_to_subject": "0..N"
+      },
+      "level": "L5_EXTERNAL",
+      "transitive": false,
+      "symmetric": false,
+      "description": ""
+    },
+    {
+      "id": "R041",
+      "name": "LINKS_TO",
+      "inverse": "LINKED_FROM",
+      "domain": "WebResource",
+      "range": "WebResource",
+      "cardinality": {
+        "subject_to_object": "0..N",
+        "object_to_subject": "0..N"
+      },
+      "level": "L5_EXTERNAL",
+      "transitive": false,
+      "symmetric": false,
+      "description": ""
+    },
+    {
+      "id": "R042",
+      "name": "PARTNERS_WITH",
+      "inverse": "PARTNERS_WITH",
+      "domain": "Organization",
+      "range": "Organization",
+      "cardinality": {
+        "subject_to_object": "0..N",
+        "object_to_subject": "0..N"
+      },
+      "level": "L5_EXTERNAL",
+      "transitive": false,
+      "symmetric": true,
+      "description": ""
+    }
+  ],
+  "relationship_instances": [
+    {
+      "subject": "E_ORG_AIVENTURE",
+      "predicate": "HAS_BRAND",
+      "object": "E_BRAND_AIVENTURE",
+      "inverse_predicate": "BRAND_OF",
+      "level": "L1_IDENTITY"
+    },
+    {
+      "subject": "E_ORG_AIVENTURE",
+      "predicate": "OWNS_WEBSITE",
+      "object": "E_WEBSITE_AIVENTURE",
+      "inverse_predicate": "OWNED_BY",
+      "level": "L1_IDENTITY"
+    },
+    {
+      "subject": "E_ORG_AIVENTURE",
+      "predicate": "PROVIDES",
+      "object": "E_SERVICE_AGENT_READY_B2B",
+      "inverse_predicate": "PROVIDED_BY",
+      "level": "L2_OFFER"
+    },
+    {
+      "subject": "E_SERVICE_AGENT_READY_B2B",
+      "predicate": "DEFINED_BY",
+      "object": "E_SOC_AGENT_READY_B2B_V1_0",
+      "inverse_predicate": "DEFINES_SERVICE",
+      "level": "L2_OFFER"
+    },
+    {
+      "subject": "E_SERVICE_AGENT_READY_B2B",
+      "predicate": "CONTROLLED_BY",
+      "object": "E_RRVI",
+      "inverse_predicate": "CONTROLS",
+      "level": "L3_GOVERNANCE"
+    },
+    {
+      "subject": "E_ORG_AIVENTURE",
+      "predicate": "HAS_INTENT_MODEL",
+      "object": "E_INTENT_MODEL_V3",
+      "inverse_predicate": "INTENTS_FOR",
+      "level": "L2_OFFER"
+    },
+    {
+      "subject": "E_ORG_AIVENTURE",
+      "predicate": "HAS_SIGNAL_CATALOG",
+      "object": "E_AI_SIGNALS_19",
+      "inverse_predicate": "SIGNALS_FOR",
+      "level": "L2_OFFER"
+    },
+    {
+      "subject": "E_ORG_AIVENTURE",
+      "predicate": "HAS_DIGITAL_DNA",
+      "object": "E_DIGITAL_DNA",
+      "inverse_predicate": "DNA_OF",
+      "level": "L2_OFFER"
+    },
+    {
+      "subject": "E_ORG_AIVENTURE",
+      "predicate": "OPERATES_AGENT",
+      "object": "E_AGENT_AIVENTURE_BUYER",
+      "inverse_predicate": "OPERATED_BY",
+      "level": "L3_AGENT"
+    },
+    {
+      "subject": "E_AGENT_AIVENTURE_BUYER",
+      "predicate": "REPRESENTS",
+      "object": "E_ORG_AIVENTURE",
+      "inverse_predicate": "REPRESENTED_BY_AGENT",
+      "level": "L3_AGENT"
+    },
+    {
+      "subject": "E_AGENT_AIVENTURE_BUYER",
+      "predicate": "DISCOVERS",
+      "object": "E_SERVICE_AGENT_READY_B2B",
+      "inverse_predicate": "DISCOVERED_BY",
+      "level": "L3_AGENT"
+    },
+    {
+      "subject": "E_AGENT_AIVENTURE_BUYER",
+      "predicate": "SUBJECT_TO",
+      "object": "E_RRVI",
+      "inverse_predicate": "APPLIES_TO",
+      "level": "L3_GOVERNANCE"
+    },
+    {
+      "subject": "E_ORG_AIVENTURE",
+      "predicate": "DEVELOPS",
+      "object": "E_PRODUCT_AI_LENS",
+      "inverse_predicate": "DEVELOPED_BY",
+      "level": "L2_OFFER"
+    },
+    {
+      "subject": "E_ORG_AIVENTURE",
+      "predicate": "DEVELOPS",
+      "object": "E_PRODUCT_3WEBOBS",
+      "inverse_predicate": "DEVELOPED_BY",
+      "level": "L2_OFFER"
+    },
+    {
+      "subject": "E_ORG_AIVENTURE",
+      "predicate": "DEVELOPS",
+      "object": "E_PRODUCT_AI_READY_EDGE",
+      "inverse_predicate": "DEVELOPED_BY",
+      "level": "L2_OFFER"
+    },
+    {
+      "subject": "E_ORG_AIVENTURE",
+      "predicate": "DEVELOPS",
+      "object": "E_PRODUCT_EU_AI_ACT_READY",
+      "inverse_predicate": "DEVELOPED_BY",
+      "level": "L2_OFFER"
+    },
+    {
+      "subject": "E_ORG_AIVENTURE",
+      "predicate": "DEVELOPS",
+      "object": "E_PRODUCT_COMPANY_INTELLIGENCE",
+      "inverse_predicate": "DEVELOPED_BY",
+      "level": "L2_OFFER"
+    },
+    {
+      "subject": "E_ORG_AIVENTURE",
+      "predicate": "PROVIDES",
+      "object": "E_SERVICE_AGENT_FACTORY",
+      "inverse_predicate": "PROVIDED_BY",
+      "level": "L2_OFFER"
+    },
+    {
+      "subject": "E_ORG_AIVENTURE",
+      "predicate": "PROVIDES",
+      "object": "E_SERVICE_AI_GOVERNANCE",
+      "inverse_predicate": "PROVIDED_BY",
+      "level": "L2_OFFER"
+    }
+  ],
+  "multi_level_paths": [
+    {
+      "id": "P001",
+      "name": "Organization → Service → SOC → RRVI → Evidence → Proof",
+      "path": [
+        {
+          "entity": "E_ORG_AIVENTURE",
+          "via": "PROVIDES"
+        },
+        {
+          "entity": "E_SERVICE_AGENT_READY_B2B",
+          "via": "DEFINED_BY"
+        },
+        {
+          "entity": "E_SOC_AGENT_READY_B2B_V1_0",
+          "via": "CHECKED_BY/CONTROLLED_BY"
+        },
+        {
+          "entity": "E_RRVI",
+          "via": "GENERATES_EVIDENCE"
+        },
+        {
+          "entity": "E_EVIDENCE_REGISTRY",
+          "via": "HAS_PROOF"
+        },
+        {
+          "entity": "E_PROOF_REGISTRY"
+        }
+      ],
+      "purpose": "Trace commercial truth through governance to verifiable evidence."
+    },
+    {
+      "id": "P002",
+      "name": "Organization → Agent → Service → RRVI",
+      "path": [
+        {
+          "entity": "E_ORG_AIVENTURE",
+          "via": "OPERATES_AGENT"
+        },
+        {
+          "entity": "E_AGENT_AIVENTURE_BUYER",
+          "via": "DISCOVERS"
+        },
+        {
+          "entity": "E_SERVICE_AGENT_READY_B2B",
+          "via": "CONTROLLED_BY"
+        },
+        {
+          "entity": "E_RRVI"
+        }
+      ],
+      "purpose": "Trace agent actionability and authorization boundary."
+    },
+    {
+      "id": "P003",
+      "name": "Organization → Digital DNA → AI Signals → Machine Surfaces",
+      "path": [
+        {
+          "entity": "E_ORG_AIVENTURE",
+          "via": "HAS_DIGITAL_DNA"
+        },
+        {
+          "entity": "E_DIGITAL_DNA",
+          "via": "REFERENCES"
+        },
+        {
+          "entity": "E_AI_SIGNALS_19",
+          "via": "MAPS_TO"
+        },
+        {
+          "entity": "MACHINE_SURFACES"
+        }
+      ],
+      "purpose": "Trace semantic identity to machine-readable implementation."
+    }
+  ],
+  "constraints": [
+    {
+      "id": "C001",
+      "type": "UNIQUENESS",
+      "scope": "Entity",
+      "rule": "Every canonical entity MUST have exactly one stable id and canonical_uri."
+    },
+    {
+      "id": "C002",
+      "type": "BIDIRECTIONALITY",
+      "scope": "CriticalRelationship",
+      "rule": "Every critical relationship MUST declare an inverse predicate."
+    },
+    {
+      "id": "C003",
+      "type": "CARDINALITY",
+      "scope": "ServiceOfferContract",
+      "rule": "A Service MAY have many historical SOC versions but MUST have at most one active SOC."
+    },
+    {
+      "id": "C004",
+      "type": "GOVERNANCE",
+      "scope": "AgentAction",
+      "rule": "Capability does not imply permission; actions above the allowed autonomy level require RRVI and, where defined, human approval."
+    },
+    {
+      "id": "C005",
+      "type": "EVIDENCE",
+      "scope": "Claim",
+      "rule": "Claim != Proof. A claim may be declared without proof but MUST NOT be marked VERIFIED without verifiable evidence."
+    },
+    {
+      "id": "C006",
+      "type": "TEMPORAL",
+      "scope": "VersionedArtifact",
+      "rule": "Any semantic change to a canonical artifact MUST create a new version/hash; OTS proof applies only to exact bytes."
+    },
+    {
+      "id": "C007",
+      "type": "CROSS_SURFACE",
+      "scope": "CanonicalIdentity",
+      "rule": "Organization, category, primary service and language MUST NOT contradict across HTML, JSON-LD and machine-readable files."
+    }
+  ],
+  "reference_index": {
+    "E_ORG_AIVENTURE": [
+      "index.html",
+      "ai.json",
+      "entities.json",
+      "service.json",
+      "service-offer-contract.json",
+      "agent-card.json",
+      "authority.json",
+      "digital-dna.json"
+    ],
+    "E_SERVICE_AGENT_READY_B2B": [
+      "service.json",
+      "service-offer-contract.json",
+      "entities.json",
+      "intents.json",
+      "digital-dna.json"
+    ],
+    "E_SOC_AGENT_READY_B2B_V1_0": [
+      "service-offer-contract.json",
+      "entities.json",
+      "ere-dictionary.json",
+      "proof.json"
+    ],
+    "E_RRVI": [
+      "rrvi.json",
+      "governance.json",
+      "policy.json",
+      "authority.json",
+      "service-offer-contract.json",
+      "entities.json"
+    ],
+    "E_AGENT_AIVENTURE_BUYER": [
+      "agent-card.json",
+      ".well-known/agent-card.json",
+      "capabilities.json",
+      "authority.json",
+      "digital-dna.json"
+    ],
+    "E_EVIDENCE_REGISTRY": [
+      "evidence.json",
+      "proof.json",
+      "rrvi.json",
+      "service-offer-contract.json"
+    ],
+    "E_PROOF_REGISTRY": [
+      "proof.json",
+      "sha256-manifest.json",
+      "artifacts/"
+    ],
+    "E_INTENT_MODEL_V3": [
+      "intents.json",
+      "ai.json",
+      "llms.txt",
+      "digital-dna.json"
+    ],
+    "E_AI_SIGNALS_19": [
+      "ai-signals.json",
+      "signals-catalog.json",
+      "ai.json",
+      "llms.txt"
+    ],
+    "E_DIGITAL_DNA": [
+      "digital-dna.json",
+      "adn.json",
+      "ai.json",
+      "entities.json",
+      "llms.txt"
+    ]
+  },
+  "identity_resolution": {
+    "priority": [
+      "canonical_uri",
+      "stable entity id",
+      "legal/business identifier where public",
+      "exact canonical name",
+      "verified external sameAs/corroboration"
+    ],
+    "rules": [
+      "Do not merge two entities solely because names are similar.",
+      "A versioned commercial object is a new identity when semantic content changes.",
+      "External profiles are corroborating surfaces, not canonical identity roots."
+    ]
+  },
+  "cardinality_notation": {
+    "1": "exactly one",
+    "0..1": "zero or one",
+    "1..N": "one or many",
+    "0..N": "zero or many",
+    "19": "exactly nineteen"
+  },
+  "inverse_relationship_policy": {
+    "required_for": [
+      "identity",
+      "offer",
+      "agent",
+      "governance",
+      "evidence",
+      "external partnership"
+    ],
+    "example": "PROVIDES ↔ PROVIDED_BY"
+  },
+  "cross_reference_policy": {
+    "html_to_machine": "Visible page semantics should point to machine-readable resources where useful.",
+    "machine_to_html": "Machine-readable objects should resolve to a human-readable canonical page when one exists.",
+    "artifact_to_proof": "Canonical artifact → SHA-256 → optional OTS → proof.json → evidence.json.",
+    "intent_to_entity": "Every intent MUST reference one canonical entity.",
+    "service_to_soc": "Every Agent-Ready service SHOULD resolve to one active Service Offer Contract.",
+    "action_to_governance": "Every sensitive action MUST resolve to RRVI/governance/authority."
+  }
 }

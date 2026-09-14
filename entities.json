@@ -1,8 +1,9 @@
 {
   "schema": "AIVENTURE_ENTITIES",
-  "version": "2.0",
-  "session": "0002H",
-  "identity_resolution_rule": "Reuse the same stable IDs across HTML, JSON-LD, machine-readable files, Agent Card, API, RRVI and Evidence.",
+  "version": "4.0",
+  "session": "0003H",
+  "generated_at": "2026-09-14T06:11:00+03:00",
+  "identity_resolution_rule": "Reuse the same stable IDs across HTML, Schema.org, ai.json, service.json, Service Offer Contract™, Agent Card, API, RRVI and Evidence.",
   "entities": [
     {
       "id": "E_ORG_AIVENTURE",
@@ -18,6 +19,9 @@
         ],
         "USES": [
           "E_RRVI"
+        ],
+        "PUBLISHES": [
+          "E_WEBSITE_AIVENTURE"
         ]
       }
     },
@@ -29,6 +33,9 @@
       "relationships": {
         "BELONGS_TO": [
           "E_ORG_AIVENTURE"
+        ],
+        "REPRESENTS": [
+          "Agent-Ready B2B Services"
         ]
       }
     },
@@ -46,9 +53,6 @@
         ],
         "CONTROLLED_BY": [
           "E_RRVI"
-        ],
-        "HAS_AUTONOMY_POLICY": [
-          "E_AUTONOMY_POLICY_DEFAULT"
         ],
         "GENERATES": [
           "E_EVIDENCE_REGISTRY"
@@ -89,96 +93,10 @@
       }
     },
     {
-      "id": "E_AUTONOMY_POLICY_DEFAULT",
-      "type": "AutonomyPolicy",
-      "canonical_uri": "https://aiventure.ro/governance.json#autonomy",
-      "name": "L1–L5 governed autonomy"
-    },
-    {
-      "id": "E_ACTION_MODEL",
-      "type": "Action",
-      "canonical_uri": "https://aiventure.ro/governance.json#actions",
-      "members": [
-        "discover",
-        "compare",
-        "check_eligibility",
-        "create_request",
-        "request_quote",
-        "generate_quote_draft",
-        "create_order_draft",
-        "order"
-      ]
-    },
-    {
-      "id": "E_AUDIENCE_B2B",
-      "type": "BusinessAudience",
-      "canonical_uri": "https://aiventure.ro/service.json#audience",
-      "name": "B2B organizations",
-      "status": "GENERIC_UNTIL_CONCRETE_SERVICE_DEFINED"
-    },
-    {
-      "id": "E_ELIGIBILITY_RULESET",
-      "type": "EligibilityRule",
-      "canonical_uri": "https://aiventure.ro/service-offer-contract.json#eligibility",
-      "status": "TO_BE_DEFINED_PER_CONCRETE_SERVICE"
-    },
-    {
-      "id": "E_OFFER_AGENT_READY",
-      "type": "Offer",
-      "canonical_uri": "https://aiventure.ro/service-offer-contract.json#offer",
-      "status": "DRAFT",
-      "price": null,
-      "currency": null
-    },
-    {
-      "id": "E_REQUEST_MODEL",
-      "type": "Request",
-      "canonical_uri": "https://aiventure.ro/evidence.json#request-model"
-    },
-    {
-      "id": "E_QUOTE_MODEL",
-      "type": "Quote",
-      "canonical_uri": "https://aiventure.ro/evidence.json#quote-model"
-    },
-    {
-      "id": "E_ORDER_MODEL",
-      "type": "Order",
-      "canonical_uri": "https://aiventure.ro/evidence.json#order-model"
-    },
-    {
-      "id": "E_DELIVERY_MODEL",
-      "type": "Delivery",
-      "canonical_uri": "https://aiventure.ro/evidence.json#delivery-model"
-    },
-    {
       "id": "E_EVIDENCE_REGISTRY",
-      "type": "Evidence",
+      "type": "EvidenceRegistry",
       "canonical_uri": "https://aiventure.ro/evidence.json",
       "name": "AiVenture Evidence Registry"
-    },
-    {
-      "id": "E_REGULATION_MODEL",
-      "type": "Regulation",
-      "canonical_uri": "https://aiventure.ro/rrvi.json#regulation-scope",
-      "members": [
-        "EU AI Act",
-        "GDPR",
-        "labor law",
-        "tax law",
-        "professional regulation",
-        "contracts",
-        "confidentiality",
-        "security",
-        "sector rules",
-        "internal policies",
-        "jurisdiction rules"
-      ]
-    },
-    {
-      "id": "E_JURISDICTION_MODEL",
-      "type": "Jurisdiction",
-      "canonical_uri": "https://aiventure.ro/rrvi.json#jurisdiction",
-      "status": "RESOLVED_PER_RUNTIME_REQUEST"
     },
     {
       "id": "E_AGENT_AIVENTURE_BUYER",
@@ -197,5 +115,9 @@
         ]
       }
     }
-  ]
+  ],
+  "digital_dna": "https://aiventure.ro/digital-dna.json",
+  "ere_dictionary": "https://aiventure.ro/ere-dictionary.json",
+  "metamodel": "ERE v4.0",
+  "cross_reference_policy": "Bidirectional critical relationships + explicit cardinalities"
 }

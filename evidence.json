@@ -1,29 +1,8 @@
 {
   "schema": "AIVENTURE_EVIDENCE_REGISTRY",
-  "version": "2.1",
-  "session": "0002H",
-  "records": [
-    {
-      "evidence_id": "EVIDENCE-HOMEPAGE-HUMAN-AI-PROOF-0001",
-      "actor": "AiVenture S.R.L.",
-      "timestamp": "2026-09-13",
-      "rule_applied": "Claim != Proof",
-      "decision": "publish_as_declared_not_verified",
-      "approval": "human_published",
-      "result": "Homepage Human + AI Proof section added",
-      "offer_version": null,
-      "proof_reference": "AIV-PROOF-GEMINI-ADI-20260912"
-    }
-  ],
-  "required_fields": [
-    "actor",
-    "timestamp",
-    "rule_applied",
-    "decision",
-    "result",
-    "offer_version",
-    "proof_reference"
-  ],
+  "version": "3.1",
+  "session": "0003H",
+  "generated_at": "2026-09-14T06:11:00+03:00",
   "entity_id": "E_EVIDENCE_REGISTRY",
   "principle": "Claim != Proof",
   "append_only_intent": true,
@@ -35,5 +14,40 @@
     "order",
     "delivery",
     "verification"
+  ],
+  "required_fields": [
+    "evidence_id",
+    "timestamp",
+    "actor",
+    "rule_applied",
+    "decision",
+    "approval",
+    "result",
+    "offer_version",
+    "proof_reference"
+  ],
+  "records": [
+    {
+      "evidence_id": "EVIDENCE-AI-SIGNALS-0001",
+      "timestamp": "2026-09-14T04:18:00+03:00",
+      "actor": "AiVenture S.R.L.",
+      "rule_applied": "AI Signals cross-surface integration",
+      "decision": "publish_structural_build",
+      "approval": "human_published",
+      "result": "AIS001-AIS019 generated and integrated in SESSION 0003H build",
+      "offer_version": "1.0",
+      "proof_reference": "PROOF-AI-SIGNALS-BUILD-0001"
+    },
+    {
+      "evidence_id": "EVIDENCE-HOMEPAGE-HUMAN-GEMINI-ADI-0001",
+      "timestamp": "2026-09-14T04:48:00+03:00",
+      "actor": "AiVenture S.R.L.",
+      "rule_applied": "Claim != Proof",
+      "decision": "publish_human_testimonial_and_declared_ai_proof",
+      "approval": "human_published",
+      "result": "Homepage section Humans + AI Proof published",
+      "offer_version": null,
+      "proof_reference": "AIV-PROOF-GEMINI-ADI-20260912"
+    }
   ]
 }

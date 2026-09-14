@@ -1,7 +1,7 @@
 {
   "schema": "AIVENTURE_OFFPAGE_217_SIGNALS_CATALOG",
   "version": "1.0",
-  "session": "0002H",
+  "session": "0003H",
   "scope": "external-to-domain",
   "domain": "https://aiventure.ro/",
   "total_signals": 217,

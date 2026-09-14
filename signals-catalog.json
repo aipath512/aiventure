@@ -1,9 +1,9 @@
 {
   "schema": "AIVENTURE_SIGNALS_CATALOG_INDEX",
-  "version": "2.0",
-  "session": "0002H",
-  "generated_at": "2026-09-13",
-  "principle": "A signal may be declared in one file, but PASS requires coherent and verifiable evidence across every relevant surface.",
+  "version": "3.0",
+  "session": "0003H",
+  "generated_at": "2026-09-14T04:18:00+03:00",
+  "principle": "A signal may be declared in one file, but becomes PASS only if coherent and verifiable across every relevant surface.",
   "status_model": [
     "PASS",
     "PARTIAL",
@@ -37,7 +37,7 @@
       "count": 252,
       "scope": "on-site",
       "version": "1.0",
-      "session": "0002H",
+      "session": "0003H",
       "source_sha256": "c79135b63a80617f60a15951c75c97641d4471904148c5d3f7f332f0ea1155b4"
     },
     {
@@ -51,6 +51,12 @@
       "url": "https://aiventure.ro/aio-signals.json",
       "count": 31,
       "scope": "AI Optimization"
+    },
+    {
+      "id": "AIS19",
+      "url": "https://aiventure.ro/ai-signals.json",
+      "count": 19,
+      "scope": "AI machine-readable identity, offer, governance, proof, evidence and agent discovery"
     }
   ],
   "surface_map": {
@@ -98,7 +104,7 @@
   },
   "last_update": {
     "component": "ONSITE252",
-    "session": "0002H",
+    "session": "0003H",
     "timestamp": "2026-09-13T21:05:00+03:00"
   }
 }

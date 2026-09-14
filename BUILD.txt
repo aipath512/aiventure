@@ -1,17 +1,5 @@
-AiVenture COMPLETE FULL A2A
-Build: 20260913-1742
-Source: aiventure-COMPLETE-FULL-A2A-20260913-1719.zip
-Delta: enterprise head architecture on every HTML page:
-- unique canonical preserved/normalized
-- robots/snippet directives
-- Open Graph
-- Twitter/X card
-- PWA manifest + icon
-- referrer/theme/app identity
-- Organization + WebSite + WebPage + BreadcrumbList JSON-LD
-- Service schema on service pages
-- BlogPosting on blog articles
-- FAQPage mainEntity on FAQ
-- visible breadcrumb on every internal page where missing
-- HTTP security headers in _headers
-GENERATED != DEPLOYED != VERIFIED.
+AiVenture FULL SSOT MERGED BUILD
+SESSION: 0003H
+DATE: 2026-09-14
+SOURCE: GitHub SSOT aiventure-main(1).zip + SESSION 0003H overlay
+MERGE_POLICY: preserve SSOT-only paths; SESSION 0003H wins on identical paths

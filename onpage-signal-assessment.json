@@ -1,7 +1,7 @@
 {
   "schema": "AIVENTURE_ONPAGE_SIGNAL_ASSESSMENT",
   "version": "1.0",
-  "session": "0002H",
+  "session": "0003H",
   "domain": "https://aiventure.ro/",
   "page_assessments": [],
   "template": {

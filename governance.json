@@ -1,44 +1,63 @@
 {
   "schema": "AIVENTURE_GOVERNANCE",
-  "version": "2.0",
-  "session": "0002H",
-  "principle": "AiVenture pune reglementarea înaintea acțiunii.",
-  "autonomy_levels": {
-    "L1": "DISCOVER",
-    "L2": "COMPARE",
-    "L3": "REQUEST",
-    "L4": "QUOTE",
-    "L5": "ORDER"
-  },
-  "canonical_rules": [
-    "Fără regulă explicită → fără autonomie.",
-    "Fără jurisdicție identificată → fără acțiune sensibilă.",
-    "Fără aprobare unde este necesară → fără angajament comercial.",
-    "Fără Evidence → fără dovada deciziei."
-  ],
-  "allowed_actions": [
-    "discover",
-    "compare",
-    "check_eligibility",
-    "create_request",
-    "request_quote",
-    "generate_quote_draft",
-    "create_order_draft",
-    "order"
-  ],
-  "forbidden_by_default": true,
-  "human_review_required_for": [
-    "discounts",
-    "special_terms",
-    "sensitive_cases",
-    "ambiguous_cases",
-    "financial_exceptions",
-    "jurisdiction_uncertainty"
-  ],
-  "language": "ro",
+  "version": "3.0",
+  "session": "0003H",
+  "generated_at": "2026-09-14T04:18:00+03:00",
   "primary_service_id": "E_SERVICE_AGENT_READY_B2B",
   "soc_id": "E_SOC_AGENT_READY_B2B_V1_0",
   "rrvi_id": "E_RRVI",
+  "autonomy_levels": {
+    "L1_DISCOVER": {
+      "allowed": [
+        "discover"
+      ],
+      "human_review": false
+    },
+    "L2_COMPARE": {
+      "allowed": [
+        "discover",
+        "compare"
+      ],
+      "human_review": false
+    },
+    "L3_REQUEST": {
+      "allowed": [
+        "discover",
+        "compare",
+        "check_eligibility",
+        "create_request"
+      ],
+      "human_review": "CONDITIONAL"
+    },
+    "L4_QUOTE": {
+      "allowed": [
+        "request_quote"
+      ],
+      "human_review": "CONDITIONAL"
+    },
+    "L5_ORDER": {
+      "allowed": [
+        "create_order_draft",
+        "order"
+      ],
+      "human_review": "REQUIRED_UNLESS_EXPLICITLY_AUTHORIZED"
+    }
+  },
   "default_max_autonomy": "L3_REQUEST",
-  "order_policy": "DENY_UNLESS_EXPLICITLY_AUTHORIZED"
+  "principles": [
+    "No rule → no autonomy.",
+    "Capability ≠ permission.",
+    "Human review for exceptions and ambiguity.",
+    "Evidence required for decisions and actions."
+  ],
+  "hitl": {
+    "required_for": [
+      "discounts",
+      "special_terms",
+      "sensitive_cases",
+      "ambiguous_cases",
+      "financial_exceptions",
+      "jurisdiction_uncertainty"
+    ]
+  }
 }

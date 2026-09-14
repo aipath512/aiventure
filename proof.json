@@ -1,9 +1,265 @@
 {
   "schema": "AIVENTURE_PROOF_REGISTRY",
-  "version": "2.1",
-  "session": "0002H",
+  "version": "4.1",
+  "session": "0003H",
+  "generated_at": "2026-09-14T06:11:00+03:00",
   "principle": "Claim != Proof",
-  "proofs": [
+  "sha256_manifest": "https://aiventure.ro/sha256-manifest.json",
+  "ots_queue": "https://aiventure.ro/ots-queue.json",
+  "artifacts": [
+    {
+      "artifact": "robots.txt",
+      "sha256": "dd0bcce9f72af37991547d55ffbc7d170e66c3c80825c17b74d4a028b883b9cf",
+      "sha256_file": "/artifacts/robots.txt.sha256",
+      "ots_target": false,
+      "ots_status": "NOT_REQUIRED",
+      "ots_file": null,
+      "bitcoin_block": null,
+      "verified_at": null
+    },
+    {
+      "artifact": "sitemap.xml",
+      "sha256": "33a95269675946a34c07f6eb355e244c27cadb34da9ccd0b1844cc09fa80ccca",
+      "sha256_file": "/artifacts/sitemap.xml.sha256",
+      "ots_target": false,
+      "ots_status": "NOT_REQUIRED",
+      "ots_file": null,
+      "bitcoin_block": null,
+      "verified_at": null
+    },
+    {
+      "artifact": "llms.txt",
+      "sha256": "52573f43e3885354400aaa98fe815d6ba47cbf196552267b3d6f2c0b4ed74bc8",
+      "sha256_file": "/artifacts/llms.txt.sha256",
+      "ots_target": false,
+      "ots_status": "NOT_REQUIRED",
+      "ots_file": null,
+      "bitcoin_block": null,
+      "verified_at": null
+    },
+    {
+      "artifact": "ai.json",
+      "sha256": "dbac66e400a5751ecac871b61db1c7e18290d8cfe7d97ee582cbc17e3c3f28e5",
+      "sha256_file": "/artifacts/ai.json.sha256",
+      "ots_target": false,
+      "ots_status": "NOT_REQUIRED",
+      "ots_file": null,
+      "bitcoin_block": null,
+      "verified_at": null
+    },
+    {
+      "artifact": "entities.json",
+      "sha256": "460578c4c685629f16fab17d18e531a92e804634a170553ff25bc9093c48e644",
+      "sha256_file": "/artifacts/entities.json.sha256",
+      "ots_target": false,
+      "ots_status": "NOT_REQUIRED",
+      "ots_file": null,
+      "bitcoin_block": null,
+      "verified_at": null
+    },
+    {
+      "artifact": "intents.json",
+      "sha256": "a1279600aa2b124ada81f35423b82cfca098c978bc6e9f743a01aa1fac57850d",
+      "sha256_file": "/artifacts/intents.json.sha256",
+      "ots_target": true,
+      "ots_status": "PENDING_NOT_CREATED",
+      "ots_file": null,
+      "bitcoin_block": null,
+      "verified_at": null
+    },
+    {
+      "artifact": "service.json",
+      "sha256": "bbe9d2cdfbe4aa845221d43f310a33655fe68aa0cad0730a2261c2ed5315e3fa",
+      "sha256_file": "/artifacts/service.json.sha256",
+      "ots_target": false,
+      "ots_status": "NOT_REQUIRED",
+      "ots_file": null,
+      "bitcoin_block": null,
+      "verified_at": null
+    },
+    {
+      "artifact": "service-offer-contract.json",
+      "sha256": "39ee81f385d5647cf3cfcff26047686eca1af1a0cc0286af1e4fe785763d3a37",
+      "sha256_file": "/artifacts/service-offer-contract.json.sha256",
+      "ots_target": true,
+      "ots_status": "PENDING_NOT_CREATED",
+      "ots_file": null,
+      "bitcoin_block": null,
+      "verified_at": null
+    },
+    {
+      "artifact": "capabilities.json",
+      "sha256": "5a3094bc8217f69207b9ec58802acb5a5bea6e6c4d04cf0a994429e2ea5685a8",
+      "sha256_file": "/artifacts/capabilities.json.sha256",
+      "ots_target": false,
+      "ots_status": "NOT_REQUIRED",
+      "ots_file": null,
+      "bitcoin_block": null,
+      "verified_at": null
+    },
+    {
+      "artifact": "agent-card.json",
+      "sha256": "926096df9b05d752580571df678c82d5ea6c37adc3f5cbaef8325e79a09716f4",
+      "sha256_file": "/artifacts/agent-card.json.sha256",
+      "ots_target": false,
+      "ots_status": "NOT_REQUIRED",
+      "ots_file": null,
+      "bitcoin_block": null,
+      "verified_at": null
+    },
+    {
+      "artifact": ".well-known/agent-card.json",
+      "sha256": "926096df9b05d752580571df678c82d5ea6c37adc3f5cbaef8325e79a09716f4",
+      "sha256_file": "/artifacts/.well-known__agent-card.json.sha256",
+      "ots_target": false,
+      "ots_status": "NOT_REQUIRED",
+      "ots_file": null,
+      "bitcoin_block": null,
+      "verified_at": null
+    },
+    {
+      "artifact": "governance.json",
+      "sha256": "f326c44b6f53c699b769d75a7ac16aa8a1f2e2e2a2d6086635ba21640aaa967c",
+      "sha256_file": "/artifacts/governance.json.sha256",
+      "ots_target": false,
+      "ots_status": "NOT_REQUIRED",
+      "ots_file": null,
+      "bitcoin_block": null,
+      "verified_at": null
+    },
+    {
+      "artifact": "policy.json",
+      "sha256": "ee18ef49f24e3c6c5760ce41969a3894215ab26f1400ca7a7351244e7f6c93ef",
+      "sha256_file": "/artifacts/policy.json.sha256",
+      "ots_target": false,
+      "ots_status": "NOT_REQUIRED",
+      "ots_file": null,
+      "bitcoin_block": null,
+      "verified_at": null
+    },
+    {
+      "artifact": "authority.json",
+      "sha256": "bcb9987f909975f583f84f454c504b85943c02b6fc6cec929000909f6f678864",
+      "sha256_file": "/artifacts/authority.json.sha256",
+      "ots_target": false,
+      "ots_status": "NOT_REQUIRED",
+      "ots_file": null,
+      "bitcoin_block": null,
+      "verified_at": null
+    },
+    {
+      "artifact": "rrvi.json",
+      "sha256": "b4e32d40693f77e079612e1e47b17472850244917c7c4ea466945190e0ac21a7",
+      "sha256_file": "/artifacts/rrvi.json.sha256",
+      "ots_target": true,
+      "ots_status": "PENDING_NOT_CREATED",
+      "ots_file": null,
+      "bitcoin_block": null,
+      "verified_at": null
+    },
+    {
+      "artifact": "allow-lane-matrix.json",
+      "sha256": "33332c1201d69199b5aaf8d12613882ed762927d41ad749c991dec0a4d2a1433",
+      "sha256_file": "/artifacts/allow-lane-matrix.json.sha256",
+      "ots_target": false,
+      "ots_status": "NOT_REQUIRED",
+      "ots_file": null,
+      "bitcoin_block": null,
+      "verified_at": null
+    },
+    {
+      "artifact": "evidence.json",
+      "sha256": "110d0ae4f99e6d6049ccbccd5375347eb0c4742defbd889e5267621c84b21720",
+      "sha256_file": "/artifacts/evidence.json.sha256",
+      "ots_target": false,
+      "ots_status": "NOT_REQUIRED",
+      "ots_file": null,
+      "bitcoin_block": null,
+      "verified_at": null
+    },
+    {
+      "artifact": "proof.json",
+      "sha256": "1b1c99136625fe1c9c9dc20837c8d17b3b0fdc769a8a2f3e3fed85d26d928ab9",
+      "sha256_file": "/artifacts/proof.json.sha256",
+      "ots_target": false,
+      "ots_status": "NOT_REQUIRED",
+      "ots_file": null,
+      "bitcoin_block": null,
+      "verified_at": null
+    },
+    {
+      "artifact": "ere-dictionary.json",
+      "sha256": "6a68fcbc46c1fab1fe1a621839064b78518cfa0fbc7c628a2e605840a8293f6d",
+      "sha256_file": "/artifacts/ere-dictionary.json.sha256",
+      "ots_target": true,
+      "ots_status": "PENDING_NOT_CREATED",
+      "ots_file": null,
+      "bitcoin_block": null,
+      "verified_at": null
+    },
+    {
+      "artifact": "cross-surface-consistency.json",
+      "sha256": "c800fbcd0a4065e791cb7c574af862d53844497deb3142c825f72f6fc1f70e62",
+      "sha256_file": "/artifacts/cross-surface-consistency.json.sha256",
+      "ots_target": false,
+      "ots_status": "NOT_REQUIRED",
+      "ots_file": null,
+      "bitcoin_block": null,
+      "verified_at": null
+    },
+    {
+      "artifact": "provenance.json",
+      "sha256": "bf02cce3692e6e95916acd09142c29b6bd8110a5bf4fe6397350509721e2eb20",
+      "sha256_file": "/artifacts/provenance.json.sha256",
+      "ots_target": true,
+      "ots_status": "PENDING_NOT_CREATED",
+      "ots_file": null,
+      "bitcoin_block": null,
+      "verified_at": null
+    },
+    {
+      "artifact": "ai-signals.json",
+      "sha256": "4538c8dea0d0a0c981264f07b35514ff1dcb13d17ccc27dfe8c92b4e362e4124",
+      "sha256_file": "/artifacts/ai-signals.json.sha256",
+      "ots_target": true,
+      "ots_status": "PENDING_NOT_CREATED",
+      "ots_file": null,
+      "bitcoin_block": null,
+      "verified_at": null
+    },
+    {
+      "artifact": "schema.jsonld",
+      "sha256": "4733af2a904d4044f5c8d1f16417d06b39a9a9fd9a411d22b38cf6149d55b5c4",
+      "sha256_file": "/artifacts/schema.jsonld.sha256",
+      "ots_target": false,
+      "ots_status": "NOT_REQUIRED",
+      "ots_file": null,
+      "bitcoin_block": null,
+      "verified_at": null
+    },
+    {
+      "artifact": "signals-catalog.json",
+      "sha256": "e39a7f97cfe37575ef9fcbfda03a35838e436973c2ea5f6d08d3b1d74105e05d",
+      "sha256_file": "/artifacts/signals-catalog.json.sha256",
+      "ots_target": false,
+      "ots_status": "NOT_REQUIRED",
+      "ots_file": null,
+      "bitcoin_block": null,
+      "verified_at": null
+    },
+    {
+      "artifact": "signal-assessment.json",
+      "sha256": "8a0ef7e42997a11a2f731dba751908ab0dfdc3b0f517a919cabb8296650d45f4",
+      "sha256_file": "/artifacts/signal-assessment.json.sha256",
+      "ots_target": false,
+      "ots_status": "NOT_REQUIRED",
+      "ots_file": null,
+      "bitcoin_block": null,
+      "verified_at": null
+    }
+  ],
+  "verification_rule": "No OpenTimestamps proof or Bitcoin block is marked verified until an actual .ots file exists and has been independently verified.",
+  "external_proofs": [
     {
       "proof_id": "AIV-PROOF-GEMINI-ADI-20260912",
       "subject": "AI Delivery Infrastructure (ADI)",
@@ -13,25 +269,16 @@
       "sha256_declared": "31aa7a564ad93f21752e6c8d1b31f105688156182cfb1bcd6fb65ef1c756bc36",
       "manifest_hash_declared": "82c79d0e82e678cdbc4f3d3990f73a7ac5f3452ca02706f99779ff2c8cd1df30",
       "ots_reference_declared": "ai-delivery-infrastructure_canonical_txt.ots",
-      "status": "DECLARED",
+      "status": "DECLARED_NOT_CRYPTOGRAPHICALLY_VERIFIED_IN_THIS_BUILD",
       "verification": {
         "sha256_exact_file_verified": false,
         "manifest_hash_verified": false,
+        "ots_file_present_in_this_build": false,
         "ots_verified": false,
         "bitcoin_block_confirmed": false
       },
-      "principle": "Claim != Proof",
-      "source_surface": "https://aiventure.ro/#testimoniale"
+      "source_surface": "https://aiventure.ro/#testimoniale",
+      "principle": "Claim != Proof"
     }
-  ],
-  "status_values": [
-    "DECLARED",
-    "SHA_VERIFIED",
-    "OTS_PENDING",
-    "OTS_VERIFIED",
-    "BLOCK_CONFIRMED"
-  ],
-  "generated_at": "2026-09-13",
-  "rule": "Never publish OTS_VERIFIED or BLOCK_CONFIRMED until the exact canonical artifact is independently verified.",
-  "updated_at": "2026-09-13"
+  ]
 }

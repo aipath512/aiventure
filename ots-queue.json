@@ -1,0 +1,46 @@
+{
+  "schema": "AIVENTURE_OTS_QUEUE",
+  "version": "1.0",
+  "session": "0003H",
+  "generated_at": "2026-09-14T04:30:00+03:00",
+  "status": "PENDING",
+  "note": "No .ots file is fabricated. Submit these exact artifacts to OpenTimestamps, then verify the resulting .ots files before updating proof.json.",
+  "targets": [
+    {
+      "artifact": "intents.json",
+      "sha256": "a1279600aa2b124ada81f35423b82cfca098c978bc6e9f743a01aa1fac57850d",
+      "expected_ots_file": "/artifacts/intents.json.ots",
+      "status": "PENDING"
+    },
+    {
+      "artifact": "service-offer-contract.json",
+      "sha256": "39ee81f385d5647cf3cfcff26047686eca1af1a0cc0286af1e4fe785763d3a37",
+      "expected_ots_file": "/artifacts/service-offer-contract.json.ots",
+      "status": "PENDING"
+    },
+    {
+      "artifact": "rrvi.json",
+      "sha256": "b4e32d40693f77e079612e1e47b17472850244917c7c4ea466945190e0ac21a7",
+      "expected_ots_file": "/artifacts/rrvi.json.ots",
+      "status": "PENDING"
+    },
+    {
+      "artifact": "ere-dictionary.json",
+      "sha256": "6a68fcbc46c1fab1fe1a621839064b78518cfa0fbc7c628a2e605840a8293f6d",
+      "expected_ots_file": "/artifacts/ere-dictionary.json.ots",
+      "status": "PENDING"
+    },
+    {
+      "artifact": "provenance.json",
+      "sha256": "bf02cce3692e6e95916acd09142c29b6bd8110a5bf4fe6397350509721e2eb20",
+      "expected_ots_file": "/artifacts/provenance.json.ots",
+      "status": "PENDING"
+    },
+    {
+      "artifact": "ai-signals.json",
+      "sha256": "4538c8dea0d0a0c981264f07b35514ff1dcb13d17ccc27dfe8c92b4e362e4124",
+      "expected_ots_file": "/artifacts/ai-signals.json.ots",
+      "status": "PENDING"
+    }
+  ]
+}

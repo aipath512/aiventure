@@ -1,141 +1,139 @@
 # AiVenture
-> Vinde serviciile pe care le vinzi oamenilor și Agenților AI.
 
-AiVenture S.R.L. transformă servicii B2B existente în servicii Agent-Ready.
+> AiVenture S.R.L. — A2A Business Infrastructure
 
-## Category
-Agent-Ready B2B Services
+Canonical site: https://aiventure.ro/
+Language: ro
+Session: 0003H
+Generated: 2026-09-14T04:18:00+03:00
+Contact: contact@5thelement.ai
+Phone: +40 737 123 540
+
+## Canonical positioning
+
+Category: Agent-Ready B2B Services
+
+Headline:
+Omul caută. AI-ul recomandă. Agentul acționează.
+
+Promise:
+Keep your website. Add the AI & Agent layer.
+
+AiVenture transformă servicii B2B existente în servicii Agent-Ready.
+
+## Primary object
+
+Serviciul B2B individual este unitatea de valoare.
 
 ## Canonical lifecycle
-SERVICE → SERVICE OFFER CONTRACT™ → RRVI → AGENT-READY → DISCOVER → COMPARE → REQUEST → QUOTE → APPROVAL → ORDER → DELIVERY → EVIDENCE
 
-## Primary
+Service
+→ Service Offer Contract™
+→ RRVI™
+→ Agent-Ready
+→ Discover
+→ Compare
+→ Request
+→ Quote
+→ Approval
+→ Order
+→ Delivery
+→ Evidence
+
+## Negative scope
+
+AiVenture nu garantează:
+- poziția 1 în Google;
+- citarea de către un model AI;
+- recomandarea de către un model AI;
+- conformitatea juridică;
+- autonomie nelimitată pentru Agenți;
+- acțiuni financiare fără autorizare explicită.
+
+## Human Web / Web-AI / A2A Web
+
+Human Web:
+Omul caută, înțelege, compară și cumpără.
+
+Web-AI:
+AI-ul găsește, reconstruiește, compară și recomandă.
+
+A2A Web:
+Agentul descoperă, solicită și poate acționa numai în limitele autorizate.
+
+## Important pages
+
 - https://aiventure.ro/
+- https://aiventure.ro/oferta/
+- https://aiventure.ro/servicii/
+- https://aiventure.ro/produse/
 - https://aiventure.ro/agent-ready/
 - https://aiventure.ro/service-offer-contract/
 - https://aiventure.ro/rrvi/
+- https://aiventure.ro/a2a/
+- https://aiventure.ro/buyer-agent/
+- https://aiventure.ro/inovatii/
+- https://aiventure.ro/intrebari/
 - https://aiventure.ro/resurse/
-- https://aiventure.ro/glosar/
+- https://aiventure.ro/blog/
+- https://aiventure.ro/contact/
 
-## Machine-readable
+## Machine-readable resources
+
 - https://aiventure.ro/ai.json
 - https://aiventure.ro/entities.json
 - https://aiventure.ro/intents.json
 - https://aiventure.ro/service.json
-- https://aiventure.ro/governance.json
-- https://aiventure.ro/rrvi.json
-- https://aiventure.ro/proof.json
-- https://aiventure.ro/evidence.json
-- https://aiventure.ro/signals-catalog.json
-
-## Negative scope
-Not primarily a chatbot provider, generic AI agent builder, A2A protocol vendor, MCP vendor, AI visibility agency, generic automation agency, or agent marketplace.
-
-## Session
-0002H
-
-## Canonical positioning — 2026-09-13
-AiVenture = A2A Business Infrastructure.
-Headline: Omul caută. AI-ul recomandă. Agentul acționează.
-Framework: The Three Webs — Human Web, Web-AI, A2A Web.
-Promise: Keep your website. Add the AI & Agent layer.
-
-## A2A
-- https://aiventure.ro/three-webs/
-- https://aiventure.ro/a2a/
-- https://aiventure.ro/buyer-agent/
-- https://aiventure.ro/a2a-secrets/01/
+- https://aiventure.ro/service-offer-contract.json
+- https://aiventure.ro/capabilities.json
+- https://aiventure.ro/agent-card.json
 - https://aiventure.ro/.well-known/agent-card.json
+- https://aiventure.ro/governance.json
+- https://aiventure.ro/policy.json
+- https://aiventure.ro/authority.json
+- https://aiventure.ro/rrvi.json
+- https://aiventure.ro/allow-lane-matrix.json
+- https://aiventure.ro/evidence.json
+- https://aiventure.ro/proof.json
+- https://aiventure.ro/ere-dictionary.json
+- https://aiventure.ro/cross-surface-consistency.json
+- https://aiventure.ro/ai-signals.json
 
+## Intents
 
-## Servicii
-- https://aiventure.ro/servicii/
-- https://aiventure.ro/servicii/agent-ready-b2b/ — Agent-Ready B2B Services
-- https://aiventure.ro/servicii/service-offer-contract/ — Service Offer Contract™
-- https://aiventure.ro/servicii/rrvi/ — RRVI
-- https://aiventure.ro/servicii/agent-ready-implementation/ — Agent-Ready Implementation
-- https://aiventure.ro/servicii/a2a/ — A2A — Agent-to-Agent
-- https://aiventure.ro/servicii/request-qualification/ — Request & Qualification
-- https://aiventure.ro/servicii/quote-order/ — Quote & Order
-- https://aiventure.ro/servicii/evidence/ — Evidence
-- https://aiventure.ro/servicii/ai-transformation/ — AI Transformation
-- https://aiventure.ro/servicii/ai-infrastructure/ — AI Infrastructure
-- https://aiventure.ro/servicii/eu-ai-act/ — EU AI Act Services
-- https://aiventure.ro/servicii/ai-governance/ — AI Governance
-- https://aiventure.ro/servicii/rrvi-jurisdiction-packs/ — RRVI Jurisdiction Packs
-- https://aiventure.ro/servicii/ai-evidence/ — AI Evidence
-- https://aiventure.ro/servicii/ai-perception/ — AI Perception
-- https://aiventure.ro/servicii/master-context/ — Master Context
-- https://aiventure.ro/servicii/seo/ — SEO
-- https://aiventure.ro/servicii/aeo/ — AEO
-- https://aiventure.ro/servicii/geo/ — GEO
-- https://aiventure.ro/servicii/aio/ — AIO
-- https://aiventure.ro/servicii/ai-signals/ — AI Signals
-- https://aiventure.ro/servicii/consulting/ — AI & A2A Consulting
-- https://aiventure.ro/servicii/implementation/ — AI Implementation
-- https://aiventure.ro/servicii/custom-ai/ — Custom AI
-- https://aiventure.ro/servicii/go-no-go/ — GO / NO-GO
-- https://aiventure.ro/servicii/agent-factory/ — Agent Factory
+Canonical model:
+20 entities × 20 Q&A = 400 intents.
 
-## Produse
-- https://aiventure.ro/produse/
-- https://aiventure.ro/produse/ai-ready-injector/ — AI-READY INJECTOR
-- https://aiventure.ro/produse/ai-ready-edge/ — AI-READY EDGE
-- https://aiventure.ro/produse/eu-ai-act-ready/ — EU AI ACT READY
-- https://aiventure.ro/produse/ai-lens/ — AI-LENS
-- https://aiventure.ro/produse/company-intelligence/ — COMPANY INTELLIGENCE
-- https://aiventure.ro/produse/3webobs/ — 3WEBOBS
+Distribution per entity:
+- TOF: 8
+- MOF: 7
+- BOF: 5
 
-## Inovații
-- https://aiventure.ro/inovatii/
-- https://aiventure.ro/inovatii/verificare/
-- https://aiventure.ro/inovatii/arhiva/
+## Core governance rules
 
-Regulă: Claim ≠ Proof. Nu declara OTS VERIFIED sau Bitcoin Block fără verificarea artefactului exact.
+- No rule → no autonomy.
+- Capability ≠ permission.
+- Crawl permission ≠ transaction authority.
+- Claim ≠ Proof.
+- Generated ≠ Deployed.
+- Deployed ≠ Valid.
+- Valid ≠ Verified.
+- Human review is required for exceptions, ambiguity, sensitive cases and financial commitment unless explicitly authorized.
 
-## Întrebări
-- https://aiventure.ro/intrebari/
-- https://aiventure.ro/intrebari/agenti-ai-si-vanzarea-de-servicii/ — Agenți AI și vânzarea de servicii
-- https://aiventure.ro/intrebari/firma-ta-in-raspunsurile-ai/ — Firma ta în răspunsurile AI
-- https://aiventure.ro/intrebari/audit-agent-ready/ — Audit Agent-Ready
-- https://aiventure.ro/intrebari/oferta-structurata-pentru-agenti-ai/ — Ofertă structurată pentru Agenți AI
-- https://aiventure.ro/intrebari/cerere-calificare-si-ofertare/ — Cerere, calificare și ofertare
-- https://aiventure.ro/intrebari/credibilitate-verificare-si-control/ — Credibilitate, verificare și control
-- https://aiventure.ro/intrebari/implementare-aiventure/ — Implementare AiVenture
+## Proof rule
 
-## Signal architecture
+Do not declare OTS VERIFIED or Bitcoin block confirmation until the exact canonical artifact has been verified.
 
-Semnalele AiVenture sunt distribuite între HTML, fișiere machine-readable și registrele de Evidence/Audit.
+- https://aiventure.ro/digital-dna.json — graph-ul canonic al relațiilor IN-PAGE / INTER-PAGE / INTER-SITE / EXTERNAL / MACHINE
 
-Regula canonică:
-Un semnal poate fi declarat într-un fișier, dar devine PASS numai dacă este coerent și verificabil în toate suprafețele relevante.
+- https://aiventure.ro/adn.json — alias public pentru Digital DNA
 
-Root AI files:
-- /ai.json
-- /entities.json
-- /intents.json
-- /service.json
-- /service-offer-contract.json
-- /governance.json
-- /rrvi.json
-- /proof.json
-- /evidence.json
-- /allow-lane-matrix.json
-- /agent-card.json
-- /.well-known/agent-card.json
-- /capabilities.json
-- /authority.json
-- /policy.json
-- /ere-dictionary.json
-- /signals-catalog.json
-- /signal-assessment.json
-- /schema.jsonld
-- /security.txt
-- /humans.txt
-- /manifest.json
+## ERE metamodel
 
-## ON-SITE Signals — SESSION 0002H
-- https://aiventure.ro/onsite-signals-catalog.json — catalog canonic ON-SITE, 252 semnale
-- https://aiventure.ro/onsite-signal-assessment.json — evaluarea ON-SITE corespunzătoare
+- https://aiventure.ro/ere-dictionary.json — ERE v4.0 data dictionary
+- Explicit entities, attributes, relationship types, inverse relationships, cardinalities, constraints and multi-level cross-references.
+- Critical relationships are bidirectional.
 
-Regulă: existența unui semnal nu înseamnă PASS; PASS cere coerență și Evidence pe toate suprafețele relevante.
+- https://aiventure.ro/dictionar/ — dicționar public ERE, knowledge graph, cardinalități și glosar
+
+- https://aiventure.ro/faq-hub.html — FAQ Hub public cu 400 Q&A / 20 entități / TOF-MOF-BOF

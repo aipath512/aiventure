@@ -1,7 +1,7 @@
 {
-  "build": "AiVenture COMPLETE FULL A2A 20260913-2105",
+  "build": "AiVenture COMPLETE SITE SESSION 0003H 20260914-0611",
   "date": "2026-09-13",
-  "base": "Reference Implementation SESSION 0002H",
+  "base": "Reference Implementation SESSION 0003H",
   "positioning": "A2A Business Infrastructure",
   "core_pages": [
     "/",
@@ -43,7 +43,7 @@
   "verification_status": "GENERATED_NOT_DEPLOYED_NOT_VERIFIED",
   "onpage_252": {
     "catalog_version": "1.0",
-    "session": "0002H",
+    "session": "0003H",
     "pages_evaluated": 56,
     "signals_per_page": 252,
     "evaluations": 14112,
@@ -67,11 +67,11 @@
     "secondary_faq_per_question": 10,
     "hub": "/intrebari/"
   },
-  "session": "0002H",
+  "session": "0003H",
   "timestamp": "2026-09-13 18:57 EEST",
   "header_stamp": {
     "applied_to_html_files": 166,
-    "format": "SESSION 0002H · 2026-09-13 18:57 EEST"
+    "format": "SESSION 0003H · 2026-09-13 18:57 EEST"
   },
   "source_build": "aiventure-COMPLETE-FULL-A2A-20260913-1908.zip",
   "aio": {
@@ -80,10 +80,10 @@
     "families": 6,
     "page": "/servicii/aio/",
     "catalog": "/aio-signals.json",
-    "session": "0002H"
+    "session": "0003H"
   },
   "signal_architecture": {
-    "session": "0002H",
+    "session": "0003H",
     "master_catalog": "/signals-catalog.json",
     "master_assessment": "/signal-assessment.json",
     "cross_surface_consistency": "/cross-surface-consistency.json",
@@ -92,13 +92,15 @@
   },
   "homepage_testimonials": {
     "human": "Roxana Deak / ECBTAX",
+    "human_source": "https://www.ecbtax.com/",
     "ai_proof": "Gemini / ADI Canonical Text Trust Certificate",
-    "proof_status": "DECLARED_NOT_VERIFIED",
-    "section": "#testimoniale",
-    "session": "0002H"
+    "sha256_declared": "31aa7a564ad93f21752e6c8d1b31f105688156182cfb1bcd6fb65ef1c756bc36",
+    "ots_reference_declared": "ai-delivery-infrastructure_canonical_txt.ots",
+    "verification_status": "DECLARED_NOT_CRYPTOGRAPHICALLY_VERIFIED_IN_THIS_BUILD",
+    "session": "0003H"
   },
   "onsite_signals": {
-    "session": "0002H",
+    "session": "0003H",
     "catalog": "onsite-signals-catalog.json",
     "assessment": "onsite-signal-assessment.json",
     "count": 252,
@@ -107,7 +109,7 @@
     "updated_at": "2026-09-13T21:05:00+03:00"
   },
   "final_complete_build": {
-    "session": "0002H",
+    "session": "0003H",
     "timestamp": "2026-09-13T21:17:00+03:00",
     "html_pages": 166,
     "signal_counts": {
@@ -118,5 +120,94 @@
     },
     "homepage_testimonials": true,
     "offpage_217_integrated": true
+  },
+  "heading_hierarchy": {
+    "session": "0003H",
+    "pages": 166,
+    "exactly_one_h1_pages": 166,
+    "h2_pages": 166,
+    "pages_with_hierarchy_issues": 0,
+    "h1_duplicate_groups": 4,
+    "rule": "H1 once per page; H2 for major sections; H3/H4 only when semantically justified.",
+    "status": "PASS",
+    "last_checked": "2026-09-14T03:12:00+03:00"
+  },
+  "meta_family": {
+    "session": "0003H",
+    "pages": 166,
+    "status": "PASS",
+    "normalized_at": "2026-09-14T03:20:00+03:00",
+    "social_image_url": null
+  },
+  "schema_org_50": {
+    "session": "0003H",
+    "pages": 166,
+    "pages_50plus": 166,
+    "minimum_properties": 53,
+    "invalid_pages": 0,
+    "status": "PASS",
+    "checked_at": "2026-09-14T03:32:00+03:00"
+  },
+  "ai_signals": {
+    "session": "0003H",
+    "count": 19,
+    "catalog": "/ai-signals.json",
+    "cross_surface_consistency": "/cross-surface-consistency.json",
+    "provenance": "/provenance.json",
+    "intents_version": "3.0",
+    "intents_count": 400,
+    "integrated_at": "2026-09-14T04:18:00+03:00",
+    "integration_status": "PASS",
+    "last_verified": "2026-09-14T04:20:00+03:00"
+  },
+  "digital_dna": {
+    "url": "/digital-dna.json",
+    "version": "1.0",
+    "relationship_layers": [
+      "in_page",
+      "inter_page",
+      "inter_site",
+      "external",
+      "machine"
+    ],
+    "status": "PASS"
+  },
+  "global_footer": {
+    "session": "0003H",
+    "pages": 166,
+    "quick_links": true,
+    "machine_readable_links": true,
+    "contact": true,
+    "adn_alias": "/adn.json",
+    "status": "PASS"
+  },
+  "ere_dictionary": {
+    "version": "4.0",
+    "entity_count": 20,
+    "relationship_type_count": 23,
+    "relationship_instance_count": 19,
+    "multi_level_paths": 3,
+    "bidirectional": true,
+    "cardinalities_explicit": true,
+    "status": "PASS"
+  },
+  "dictionary_page": {
+    "url": "/dictionar/",
+    "ere_version": "4.0",
+    "entities": 20,
+    "relationship_types": 23,
+    "relationship_instances": 19,
+    "site_pages_linked": 165,
+    "alphabetical_glossary": true,
+    "sitemap_added": true
+  },
+  "faq_hub": {
+    "url": "/faq-hub.html",
+    "categories": 20,
+    "qa_pairs": 400,
+    "visible_faq_pairs": 5,
+    "faqpage_pairs": 5,
+    "schema_property_occurrences": 347,
+    "status": "PASS"
   }
 }

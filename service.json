@@ -1,7 +1,8 @@
 {
   "schema": "AIVENTURE_SERVICE",
   "version": "1.0",
-  "session": "0002H",
+  "session": "0003H",
+  "generated_at": "2026-09-14T04:18:00+03:00",
   "id": "E_SERVICE_AGENT_READY_B2B",
   "canonical_uri": "https://aiventure.ro/servicii/agent-ready-b2b/#service",
   "service_id": "agent-ready-b2b-services",
@@ -13,16 +14,15 @@
     "name": "AiVenture S.R.L.",
     "canonical_uri": "https://aiventure.ro/#organization"
   },
-  "problem": "Serviciile B2B existente pot fi descrise pentru oameni, dar insuficient structurate, guvernate sau verificabile pentru AI și Agenți.",
-  "outcome": "Un serviciu B2B structurat și guvernat pentru Discover, Compare și Request, extensibil controlat către Quote și Order.",
+  "problem": "Serviciile B2B pot fi clare pentru oameni, dar insuficient structurate și guvernate pentru AI și Agenți.",
+  "outcome": "Un serviciu structurat pentru Discover, Compare și Request, extensibil controlat către Quote și Order.",
   "audience": {
-    "id": "E_AUDIENCE_B2B",
-    "type": "B2B organizations",
-    "details": "Specific audience is defined per concrete service transformation."
+    "type": "BusinessAudience",
+    "name": "B2B organizations",
+    "status": "GENERIC_UNTIL_CONCRETE_SERVICE_DEFINED"
   },
   "eligibility": {
-    "status": "TO_BE_DEFINED_PER_CONCRETE_SERVICE",
-    "rules_uri": "https://aiventure.ro/service-offer-contract.json#eligibility"
+    "status": "TO_BE_DEFINED_PER_CONCRETE_SERVICE"
   },
   "ineligibility": {
     "status": "TO_BE_DEFINED_PER_CONCRETE_SERVICE"
@@ -38,27 +38,13 @@
     "status": "NOT_PUBLISHED",
     "price": null,
     "currency": null,
-    "rule": "Defined per concrete engagement; no public canonical price is asserted here."
+    "rule": "Defined per concrete engagement; no generic price is asserted here."
   },
   "availability": {
     "status": "NOT_PUBLISHED",
     "capacity": null
   },
-  "updated_at": "2026-09-13",
-  "lifecycle": [
-    "SERVICE",
-    "SERVICE_OFFER_CONTRACT",
-    "RRVI",
-    "AGENT_READY",
-    "DISCOVER",
-    "COMPARE",
-    "REQUEST",
-    "QUOTE",
-    "APPROVAL",
-    "ORDER",
-    "DELIVERY",
-    "EVIDENCE"
-  ],
+  "updated_at": "2026-09-14T04:18:00+03:00",
   "defined_by": {
     "id": "E_SOC_AGENT_READY_B2B_V1_0",
     "uri": "https://aiventure.ro/service-offer-contract.json"

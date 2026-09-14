@@ -1,7 +1,7 @@
 {
   "schema": "AIVENTURE_ONSITE_SIGNALS",
   "version": "1.0",
-  "session": "0002H",
+  "session": "0003H",
   "scope": "on-site",
   "domain": "https://aiventure.ro/",
   "total_signals": 252,
@@ -2522,7 +2522,7 @@
       "id": "OS192",
       "family": "trust_proof",
       "name": "session identifier",
-      "check": "SESSION 0002H este disponibil conform regulii site-ului.",
+      "check": "SESSION 0003H este disponibil conform regulii site-ului.",
       "scope": "on-site",
       "status_model": [
         "PASS",

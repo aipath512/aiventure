@@ -1,31 +1,21 @@
 {
   "schema": "AIVENTURE_RRVI",
-  "version": "2.0",
-  "session": "0002H",
+  "version": "3.0",
+  "session": "0003H",
+  "generated_at": "2026-09-14T04:18:00+03:00",
+  "entity_id": "E_RRVI",
   "name": "RRVI™",
-  "full_name": "Remote Reglementation Verification Interface",
-  "publish_gate": [
+  "definition": "Regulation, Rules, Verification & Intervention gate between intent and sensitive action.",
+  "principle": "capability != permission",
+  "checks": [
     "jurisdiction",
-    "offer",
-    "content",
-    "eligibility",
-    "data",
-    "disclaimers",
-    "autonomy",
-    "allowed_actions",
-    "forbidden_actions",
-    "approval_conditions"
-  ],
-  "runtime_gate": [
-    "requester",
-    "request",
-    "service",
-    "jurisdiction",
-    "data",
+    "regulation",
+    "service_rule",
     "autonomy_level",
-    "threshold",
-    "risk",
-    "human_review_required"
+    "authority",
+    "financial_threshold",
+    "data_classification",
+    "human_approval_requirement"
   ],
   "decisions": [
     "allow",
@@ -33,21 +23,9 @@
     "human_review_required",
     "block"
   ],
-  "regulation_scope": [
-    "EU AI Act",
-    "GDPR",
-    "labor law",
-    "tax law",
-    "professional regulation",
-    "contracts",
-    "confidentiality",
-    "security",
-    "sector rules",
-    "internal policies",
-    "jurisdiction rules"
-  ],
-  "entity_id": "E_RRVI",
-  "language": "ro",
-  "principle": "capability != permission",
-  "default_decision_when_rule_missing": "block"
+  "default_decision_when_rule_missing": "block",
+  "publish_gate": true,
+  "runtime_gate": true,
+  "evidence_required": true,
+  "evidence_registry": "https://aiventure.ro/evidence.json"
 }

@@ -1,8 +1,8 @@
 {
   "schema": "AIVENTURE_CROSS_SURFACE_CONSISTENCY",
-  "version": "1.0",
-  "session": "0002H",
-  "generated_at": "2026-09-13",
+  "version": "2.0",
+  "session": "0003H",
+  "generated_at": "2026-09-14T04:18:00+03:00",
   "rule": "Declaration alone never produces PASS; relevant surfaces must agree.",
   "checks": [
     {
@@ -12,23 +12,23 @@
       "surfaces": [
         {
           "surface": "ai.json",
-          "value": "AiVenture S.R.L.",
-          "match": true
+          "value": "AiVenture S.R.L."
         },
         {
           "surface": "entities.json",
-          "value": "AiVenture S.R.L.",
-          "match": true
+          "value": "AiVenture S.R.L."
         },
         {
           "surface": "service.json",
-          "value": "AiVenture S.R.L.",
-          "match": true
+          "value": "AiVenture S.R.L."
+        },
+        {
+          "surface": "service-offer-contract.json",
+          "value": "AiVenture S.R.L."
         },
         {
           "surface": "agent-card.json",
-          "value": "AiVenture S.R.L.",
-          "match": true
+          "value": "AiVenture S.R.L."
         }
       ]
     },
@@ -39,13 +39,19 @@
       "surfaces": [
         {
           "surface": "ai.json",
-          "value": "Agent-Ready B2B Services",
-          "match": true
+          "value": "Agent-Ready B2B Services"
         },
         {
           "surface": "service.json",
-          "value": "Agent-Ready B2B Services",
-          "match": true
+          "value": "Agent-Ready B2B Services"
+        },
+        {
+          "surface": "intents.json",
+          "value": "Agent-Ready B2B Services"
+        },
+        {
+          "surface": "policy.json",
+          "value": "Agent-Ready B2B Services"
         }
       ]
     },
@@ -56,23 +62,19 @@
       "surfaces": [
         {
           "surface": "ai.json",
-          "value": "Agent-Ready B2B Services",
-          "match": true
-        },
-        {
-          "surface": "service.json",
-          "value": "Agent-Ready B2B Services",
-          "match": true
+          "value": "Agent-Ready B2B Services"
         },
         {
           "surface": "entities.json",
-          "value": "Agent-Ready B2B Services",
-          "match": true
+          "value": "Agent-Ready B2B Services"
+        },
+        {
+          "surface": "service.json",
+          "value": "Agent-Ready B2B Services"
         },
         {
           "surface": "service-offer-contract.json",
-          "value": "Agent-Ready B2B Services",
-          "match": true
+          "value": "Agent-Ready B2B Services"
         }
       ]
     },
@@ -83,13 +85,19 @@
       "surfaces": [
         {
           "surface": "ai.json",
-          "value": "ro",
-          "match": true
+          "value": "ro"
+        },
+        {
+          "surface": "intents.json",
+          "value": "ro"
         },
         {
           "surface": "service.json",
-          "value": "ro",
-          "match": true
+          "value": "ro"
+        },
+        {
+          "surface": "policy.json",
+          "value": "ro"
         }
       ]
     }

@@ -1,0 +1,196 @@
+{
+  "schema": "AIVENTURE_DIGITAL_DNA",
+  "version": "1.3",
+  "session": "0003H",
+  "generated_at": "2026-09-14T06:11:00+03:00",
+  "canonical_url": "https://aiventure.ro/digital-dna.json",
+  "language": "ro",
+  "entity": {
+    "id": "E_ORG_AIVENTURE",
+    "type": "Organization",
+    "legal_name": "AiVenture S.R.L.",
+    "brand": "AiVenture",
+    "canonical": "https://aiventure.ro/",
+    "category": "Agent-Ready B2B Services",
+    "descriptor": "A2A Business Infrastructure",
+    "headline": "Omul caută. AI-ul recomandă. Agentul acționează."
+  },
+  "relationship_layers": {
+    "in_page": {
+      "definition": "Legături între secțiuni ale aceleiași pagini.",
+      "examples": [
+        {
+          "from": "/",
+          "to": "/#testimoniale",
+          "relation": "HAS_SECTION"
+        },
+        {
+          "from": "/",
+          "to": "/#faq",
+          "relation": "HAS_SECTION"
+        }
+      ]
+    },
+    "inter_page": {
+      "definition": "Legături între pagini canonice de pe aiventure.ro.",
+      "core_graph": [
+        {
+          "from": "/",
+          "to": "/servicii/",
+          "relation": "HAS_SERVICE_HUB"
+        },
+        {
+          "from": "/",
+          "to": "/produse/",
+          "relation": "HAS_PRODUCT_HUB"
+        },
+        {
+          "from": "/",
+          "to": "/agent-ready/",
+          "relation": "EXPLAINS"
+        },
+        {
+          "from": "/agent-ready/",
+          "to": "/service-offer-contract/",
+          "relation": "DEFINED_BY"
+        },
+        {
+          "from": "/service-offer-contract/",
+          "to": "/rrvi/",
+          "relation": "CONTROLLED_BY"
+        },
+        {
+          "from": "/rrvi/",
+          "to": "/inovatii/verificare/",
+          "relation": "GENERATES_EVIDENCE"
+        },
+        {
+          "from": "/servicii/",
+          "to": "/servicii/agent-ready-b2b/",
+          "relation": "CONTAINS"
+        },
+        {
+          "from": "/produse/",
+          "to": "/produse/ai-lens/",
+          "relation": "CONTAINS"
+        },
+        {
+          "from": "/produse/",
+          "to": "/produse/3webobs/",
+          "relation": "CONTAINS"
+        },
+        {
+          "from": "/intrebari/",
+          "to": "/servicii/",
+          "relation": "ANSWERS_TO_SERVICE"
+        },
+        {
+          "from": "/blog/",
+          "to": "/servicii/",
+          "relation": "SUPPORTS"
+        }
+      ]
+    },
+    "inter_site": {
+      "definition": "Legături către proprietăți digitale AiVenture de pe alte domenii.",
+      "ecosystem": [
+        {
+          "url": "https://3webobs.com/",
+          "name": "3WEBOBS™",
+          "relation": "PRODUCT_ECOSYSTEM"
+        },
+        {
+          "url": "https://ai-lens.eu/",
+          "name": "AI-LENS™",
+          "relation": "PRODUCT_ECOSYSTEM"
+        },
+        {
+          "url": "https://5thelement.ai/",
+          "name": "5thElement.ai",
+          "relation": "BRAND_ECOSYSTEM"
+        },
+        {
+          "url": "https://eu-ai-act-ready.eu/",
+          "name": "EU AI Act Ready™",
+          "relation": "PRODUCT_ECOSYSTEM"
+        }
+      ]
+    },
+    "external": {
+      "definition": "Legături către entități externe care pot corobora identitatea sau relațiile.",
+      "examples": [
+        {
+          "url": "https://www.ecbtax.com/",
+          "name": "ECBTAX",
+          "relation": "STRATEGIC_PARTNER_REFERENCE"
+        },
+        {
+          "url": "https://www.linkedin.com/",
+          "name": "LinkedIn",
+          "relation": "EXTERNAL_IDENTITY_SURFACE"
+        }
+      ]
+    },
+    "machine": {
+      "definition": "Relații machine-readable între entități, servicii, intenții, guvernanță și dovezi.",
+      "surfaces": [
+        "/ai.json",
+        "/entities.json",
+        "/intents.json",
+        "/service.json",
+        "/service-offer-contract.json",
+        "/ere-dictionary.json",
+        "/agent-card.json",
+        "/governance.json",
+        "/rrvi.json",
+        "/evidence.json",
+        "/proof.json"
+      ]
+    }
+  },
+  "canonical_relationships": [
+    {
+      "subject": "E_ORG_AIVENTURE",
+      "predicate": "PROVIDES",
+      "object": "E_SERVICE_AGENT_READY_B2B"
+    },
+    {
+      "subject": "E_SERVICE_AGENT_READY_B2B",
+      "predicate": "DEFINED_BY",
+      "object": "E_SOC_AGENT_READY_B2B_V1_0"
+    },
+    {
+      "subject": "E_SERVICE_AGENT_READY_B2B",
+      "predicate": "CONTROLLED_BY",
+      "object": "E_RRVI"
+    },
+    {
+      "subject": "E_RRVI",
+      "predicate": "GENERATES",
+      "object": "E_EVIDENCE_REGISTRY"
+    },
+    {
+      "subject": "E_AGENT_AIVENTURE_BUYER",
+      "predicate": "REPRESENTS",
+      "object": "E_ORG_AIVENTURE"
+    }
+  ],
+  "consistency_rule": "A machine-readable relationship intended for users must not contradict visible content or navigation.",
+  "proof_rule": "A declared relationship is not independent proof. External corroboration and Evidence are evaluated separately.",
+  "ere": {
+    "dictionary": "https://aiventure.ro/ere-dictionary.json",
+    "metamodel": "ERE v4.0",
+    "relationship_levels": [
+      "L1_IDENTITY",
+      "L2_OFFER",
+      "L3_AGENT",
+      "L3_GOVERNANCE",
+      "L4_EVIDENCE",
+      "L5_EXTERNAL"
+    ],
+    "bidirectional": true,
+    "cardinalities_explicit": true
+  },
+  "dictionary_page": "https://aiventure.ro/dictionar/",
+  "faq_hub": "https://aiventure.ro/faq-hub.html"
+}

@@ -1,7 +1,7 @@
 {
   "schema": "AIVENTURE_ONSITE_SIGNAL_ASSESSMENT",
   "version": "1.0",
-  "session": "0002H",
+  "session": "0003H",
   "domain": "https://aiventure.ro/",
   "total_signals": 252,
   "note": "Template inițial. UNKNOWN până la deploy și verificare publică.",

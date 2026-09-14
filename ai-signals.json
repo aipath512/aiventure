@@ -1,0 +1,142 @@
+{
+  "schema": "AIVENTURE_AI_SIGNALS",
+  "version": "1.0",
+  "session": "0003H",
+  "generated_at": "2026-09-14T06:11:00+03:00",
+  "count": 19,
+  "rule": "A signal may be declared in one file, but becomes PASS only if coherent and verifiable across every relevant surface.",
+  "signals": [
+    {
+      "id": "AIS001",
+      "name": "AI crawler policy",
+      "primary_surface": "/robots.txt"
+    },
+    {
+      "id": "AIS002",
+      "name": "LLM guidance",
+      "primary_surface": "/llms.txt"
+    },
+    {
+      "id": "AIS003",
+      "name": "Canonical AI identity",
+      "primary_surface": "/ai.json"
+    },
+    {
+      "id": "AIS004",
+      "name": "Entity definition",
+      "primary_surface": "/entities.json"
+    },
+    {
+      "id": "AIS005",
+      "name": "Entity relationships",
+      "primary_surface": [
+        "/entities.json",
+        "/ere-dictionary.json"
+      ]
+    },
+    {
+      "id": "AIS006",
+      "name": "Intent declaration",
+      "primary_surface": "/intents.json"
+    },
+    {
+      "id": "AIS007",
+      "name": "Service definition",
+      "primary_surface": "/service.json"
+    },
+    {
+      "id": "AIS008",
+      "name": "Canonical offer contract",
+      "primary_surface": "/service-offer-contract.json"
+    },
+    {
+      "id": "AIS009",
+      "name": "Capabilities declaration",
+      "primary_surface": "/capabilities.json"
+    },
+    {
+      "id": "AIS010",
+      "name": "Agent identity/discovery",
+      "primary_surface": [
+        "/agent-card.json",
+        "/.well-known/agent-card.json"
+      ]
+    },
+    {
+      "id": "AIS011",
+      "name": "Governance declaration",
+      "primary_surface": "/governance.json"
+    },
+    {
+      "id": "AIS012",
+      "name": "Policy declaration",
+      "primary_surface": "/policy.json"
+    },
+    {
+      "id": "AIS013",
+      "name": "Authority/ownership",
+      "primary_surface": "/authority.json"
+    },
+    {
+      "id": "AIS014",
+      "name": "RRVI/action gate",
+      "primary_surface": "/rrvi.json"
+    },
+    {
+      "id": "AIS015",
+      "name": "Agent/crawler allow lanes",
+      "primary_surface": "/allow-lane-matrix.json"
+    },
+    {
+      "id": "AIS016",
+      "name": "Evidence registry",
+      "primary_surface": "/evidence.json"
+    },
+    {
+      "id": "AIS017",
+      "name": "Proof/integrity references",
+      "primary_surface": "/proof.json"
+    },
+    {
+      "id": "AIS018",
+      "name": "Cross-surface consistency",
+      "primary_surface": "/cross-surface-consistency.json"
+    },
+    {
+      "id": "AIS019",
+      "name": "Freshness/version/provenance",
+      "primary_surface": [
+        "/provenance.json",
+        "session/version/timestamps across files"
+      ]
+    }
+  ],
+  "supporting_surfaces": [
+    {
+      "id": "DIGITAL_DNA",
+      "url": "https://aiventure.ro/digital-dna.json",
+      "supports": [
+        "AIS004",
+        "AIS005",
+        "AIS018",
+        "AIS019"
+      ]
+    },
+    {
+      "id": "ERE_V4",
+      "url": "https://aiventure.ro/ere-dictionary.json",
+      "supports": [
+        "AIS004",
+        "AIS005",
+        "AIS018",
+        "AIS019"
+      ],
+      "features": [
+        "bidirectional_relationships",
+        "explicit_cardinalities",
+        "multi_level_paths",
+        "identity_resolution"
+      ]
+    }
+  ]
+}

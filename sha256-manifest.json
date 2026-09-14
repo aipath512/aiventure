@@ -1,0 +1,1456 @@
+{
+  "schema": "AIVENTURE_SHA256_MANIFEST",
+  "version": "2.0",
+  "session": "0003H",
+  "generated_at": "2026-09-14T06:11:00+03:00",
+  "algorithm": "SHA-256",
+  "principle": "Hashes correspond to exact bytes in SESSION 0003H. Any prior OTS proof applies only to the exact bytes it timestamped.",
+  "artifacts": [
+    {
+      "artifact": ".well-known/agent-card.json",
+      "sha256": "926096df9b05d752580571df678c82d5ea6c37adc3f5cbaef8325e79a09716f4",
+      "sha256_file": "/artifacts/.well-known__agent-card.json.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": ".well-known/security.txt",
+      "sha256": "7ec71ef2e628792ffd5e9b0d17ee28dff5883d2577c06ccd4b4fcb1f23389921",
+      "sha256_file": "/artifacts/.well-known__security.txt.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "BUILD.txt",
+      "sha256": "8b56908894cd11b1a82c2edf9bbf17b429f56688937db54d7a0affc02a48c2ca",
+      "sha256_file": "/artifacts/BUILD.txt.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "BUILD_INVENTORY.json",
+      "sha256": "8e4b394ff245169a126e755d7b13d0950c5b7cd922fe47ad2b3a1da5870e7f8c",
+      "sha256_file": "/artifacts/BUILD_INVENTORY.json.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "DEPLOYMENT_README.txt",
+      "sha256": "53001c9b850a94adffbb947cdac1b4cb091deb1df84eaf7e153f44af3ed05d96",
+      "sha256_file": "/artifacts/DEPLOYMENT_README.txt.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "DEPLOYMENT_README_v3.txt",
+      "sha256": "1ca5cd7418c735e8b1f489bf1bbb581674082b85f67a42acf6ccbe4184ae2f56",
+      "sha256_file": "/artifacts/DEPLOYMENT_README_v3.txt.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "HEAD_ARCHITECTURE_AUDIT.json",
+      "sha256": "84e29c8859cda157e306e799a80664f11da3dfb3c133d1e9b486110171355f9f",
+      "sha256_file": "/artifacts/HEAD_ARCHITECTURE_AUDIT.json.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "_headers",
+      "sha256": "948793c9ac9e7414329c7c2317f03cff9f0f6065e99fc528db985cf1fb0b8ca3",
+      "sha256_file": "/artifacts/_headers.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "a2a/index.html",
+      "sha256": "2bee78ecd6c8ddeb923e6c8c5b43dbca22df0c2371db90c8e0a58bb67fc50812",
+      "sha256_file": "/artifacts/a2a__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "a2a-secrets/01/index.html",
+      "sha256": "dab1ea12feb78e3030dd03a2b16c8db3f45514ba36f61d61e04b031a8ac4fd89",
+      "sha256_file": "/artifacts/a2a-secrets__01__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "adn.json",
+      "sha256": "91218eb8ca92546712924abcddc3be76e17f2424057955ead639f0a569449dcd",
+      "sha256_file": "/artifacts/adn.json.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "agent-card.json",
+      "sha256": "926096df9b05d752580571df678c82d5ea6c37adc3f5cbaef8325e79a09716f4",
+      "sha256_file": "/artifacts/agent-card.json.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "agent-ready/index.html",
+      "sha256": "3d18fbe62f6960b3d313c50205d8cdc7f139877ee6d971e8b5fd4dd6cd89e83c",
+      "sha256_file": "/artifacts/agent-ready__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "ai-signals.json",
+      "sha256": "289683fca790232860d6fce9569640ad759bf5f3af9a07eea1be179335363852",
+      "sha256_file": "/artifacts/ai-signals.json.sha256",
+      "ots_status": "PENDING_NEW_SESSION"
+    },
+    {
+      "artifact": "ai.json",
+      "sha256": "cf4b2a590b2236e079770f66a7521a2f8b555caaeb84912ac6956f977d8ce769",
+      "sha256_file": "/artifacts/ai.json.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "ai.txt",
+      "sha256": "c16e7c93a1b976a5cf27bb8b2718dd543c0ca3777b4c2407e13418235805b674",
+      "sha256_file": "/artifacts/ai.txt.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "aio-signal-assessment.json",
+      "sha256": "1780b1b08b069536e56d0bb79729c8df1a20b6aa36ab85e445785ba4912cef1e",
+      "sha256_file": "/artifacts/aio-signal-assessment.json.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "aio-signals.json",
+      "sha256": "0973c432edada2f55598421074523b215a540dd2d265b3963ce9943074bbc470",
+      "sha256_file": "/artifacts/aio-signals.json.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "allow-lane-matrix.json",
+      "sha256": "d7899fad92a5b7b1f9994216548d4f16af8ee059930bd370806281b76d17469f",
+      "sha256_file": "/artifacts/allow-lane-matrix.json.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "assets/site-v3.css",
+      "sha256": "72af332d28a25ced293c11b9b5b8b4cfdef973f79f926bc5d556ad8ba3430302",
+      "sha256_file": "/artifacts/assets__site-v3.css.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "authority.json",
+      "sha256": "e9a1f07e0e933d6d0f23eea4a0e7e6d31ce1d6167d658ddb640a6d737057b9ba",
+      "sha256_file": "/artifacts/authority.json.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "blog/ai-visibility-vs-agent-ready/index.html",
+      "sha256": "05126ac43a2c7d2506918e469ac389cc3f07980f1c0eaced152cd5af16c8bf56",
+      "sha256_file": "/artifacts/blog__ai-visibility-vs-agent-ready__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "blog/aiventure-vs-big-tech/index.html",
+      "sha256": "ed7022610a35a8a12527eeaeca0e36122a6cdac573ff385e4e8d4ed398d7bbea",
+      "sha256_file": "/artifacts/blog__aiventure-vs-big-tech__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "blog/autonomie-l1-l5/index.html",
+      "sha256": "e747ef5203430999fb612bbb08435edb7c851c0a1074e983dbcea2fdc1f780c1",
+      "sha256_file": "/artifacts/blog__autonomie-l1-l5__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "blog/cand-poate-agentul-cumpara/index.html",
+      "sha256": "c2c374278b63e2fb260b070e1789c4a7279220aaa11e5eafad42668f1610b81f",
+      "sha256_file": "/artifacts/blog__cand-poate-agentul-cumpara__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "blog/cand-trebuie-firma-sa-devina-agent-ready/index.html",
+      "sha256": "56a641e094f92201178a97670c3533de5ffa1959cd6169454cca74a8f3bcbeb3",
+      "sha256_file": "/artifacts/blog__cand-trebuie-firma-sa-devina-agent-ready__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "blog/cat-costa-agent-ready/index.html",
+      "sha256": "0d8da90fe20cf3e555d60a2714ce9f9b7a3a73f7585262332ec0351b26c6815f",
+      "sha256_file": "/artifacts/blog__cat-costa-agent-ready__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "blog/ce-este-evidence/index.html",
+      "sha256": "d6041183840e8a37bdbd5ec90ae5c9279179179c1d105280ea2f679424901e33",
+      "sha256_file": "/artifacts/blog__ce-este-evidence__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "blog/ce-este-rrvi/index.html",
+      "sha256": "72df59db3439a58733e3949a153695707c83f36a6d9822991acbd1c802d9bbe0",
+      "sha256_file": "/artifacts/blog__ce-este-rrvi__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "blog/ce-este-service-offer-contract/index.html",
+      "sha256": "04f874cf6a4468f08a2a9dd80474683540d67b24d77579603518ac1383104437",
+      "sha256_file": "/artifacts/blog__ce-este-service-offer-contract__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "blog/ce-inseamna-sa-vinzi-servicii-agentilor-ai/index.html",
+      "sha256": "2fdf8b45344107dd8c76a8b874fae66653b59206390a876714534883adccf543",
+      "sha256_file": "/artifacts/blog__ce-inseamna-sa-vinzi-servicii-agentilor-ai__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "blog/ce-nu-vinde-aiventure/index.html",
+      "sha256": "4d991ffdcd3d4e221118f226b49b309b010e8d4612e724001146c202b5125d8c",
+      "sha256_file": "/artifacts/blog__ce-nu-vinde-aiventure__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "blog/cu-ce-serviciu-incepi/index.html",
+      "sha256": "8484d04c66b91936fbba5f9bd453fbd3e1c6e0c1983fd23f9fd8e64043353b04",
+      "sha256_file": "/artifacts/blog__cu-ce-serviciu-incepi__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "blog/cui-se-adreseaza-agent-ready-b2b/index.html",
+      "sha256": "820fb8a3987d09adec45078f4efa4b1466eed5c23da8b887e3bb28897e64b8a6",
+      "sha256_file": "/artifacts/blog__cui-se-adreseaza-agent-ready-b2b__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "blog/cum-arata-un-pilot-real/index.html",
+      "sha256": "cfa91bdbb66115f25f266e0a13b39a099f4b4b5860f9a547377387662c6a7b1c",
+      "sha256_file": "/artifacts/blog__cum-arata-un-pilot-real__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "blog/cum-devine-serviciul-agent-ready/index.html",
+      "sha256": "b887b0195052e4d77b4dbf0cb42ad5e9944eb13d5950baaf4ecfc1cde8d22af9",
+      "sha256_file": "/artifacts/blog__cum-devine-serviciul-agent-ready__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "blog/de-ce-nu-este-suficient-un-website-bun/index.html",
+      "sha256": "b7c3618d9715e40fcd2bbb17ab9dc874fac772abb8bcf18fdc4673f468199ddb",
+      "sha256_file": "/artifacts/blog__de-ce-nu-este-suficient-un-website-bun__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "blog/de-ce-serviciile-sunt-mai-dificile/index.html",
+      "sha256": "cfe5bb7733c56f25f77558df9ce32940b20d65368c1f53c08eef97b0524ce5d5",
+      "sha256_file": "/artifacts/blog__de-ce-serviciile-sunt-mai-dificile__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "blog/de-ce-single-source-of-truth/index.html",
+      "sha256": "2bd3cf05aa9ee10ea6d4db3b5cfc318c77a9b09ba8ecb970dc64474d84e24b89",
+      "sha256_file": "/artifacts/blog__de-ce-single-source-of-truth__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "blog/eu-ai-act-first/index.html",
+      "sha256": "608c7b96404cb4695bb0512c5c183e81806bbcf4fccedf9ed2333a8a0f29dc8c",
+      "sha256_file": "/artifacts/blog__eu-ai-act-first__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "blog/index.html",
+      "sha256": "a4144044ac193783ff763e0af29887a6696fa68ddf01d60a44f5257f468cc198",
+      "sha256_file": "/artifacts/blog__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "blog/industrii-agent-ready/index.html",
+      "sha256": "ba6278c6d88c2e3e57e2b00f5b6b3f368a38e5d38a5e32696d6bd8e73e57c58a",
+      "sha256_file": "/artifacts/blog__industrii-agent-ready__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "buyer-agent/index.html",
+      "sha256": "fe8ee8a57d7053bf0ab5a504f6020dd65f34ff1ff4b6d1646f2d70ef5da9f86c",
+      "sha256_file": "/artifacts/buyer-agent__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "capabilities.json",
+      "sha256": "338d018fc339d8d744a017ed49adcc440936a2c34c0502725f26f41cc16f3657",
+      "sha256_file": "/artifacts/capabilities.json.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "contact/index.html",
+      "sha256": "b0eeaf4b38bdc8bd37a7b2b45407f853db7fbe360f49683b7bcf28f377c5886e",
+      "sha256_file": "/artifacts/contact__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "cookies/index.html",
+      "sha256": "a1b24d58364b37d0394bd4ab5a28f30c30257978d9a8e68f8bf400ece5a4fb9c",
+      "sha256_file": "/artifacts/cookies__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "core-167-signals-catalog.json",
+      "sha256": "b8a02700cd43c3488186d55e03393fe2505d1f7ef5b5ecfeef6c5970319bfbbd",
+      "sha256_file": "/artifacts/core-167-signals-catalog.json.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "cross-surface-consistency.json",
+      "sha256": "19202d480c680120377e3085aad1dfe76305e0b495ca093c48dafe34f9ce64fc",
+      "sha256_file": "/artifacts/cross-surface-consistency.json.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "despre/index.html",
+      "sha256": "c218cc25a0d86ed1920c2ea24056d1fb658a3e2ec42fbbaa4d6c01c3397860d3",
+      "sha256_file": "/artifacts/despre__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "dictionar/index.html",
+      "sha256": "40c777c04796491d2437e88a76ff149f8c8612cec7ee9d137244462bb1b9fdb2",
+      "sha256_file": "/artifacts/dictionar__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "digital-dna.json",
+      "sha256": "91218eb8ca92546712924abcddc3be76e17f2424057955ead639f0a569449dcd",
+      "sha256_file": "/artifacts/digital-dna.json.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "entities.json",
+      "sha256": "432e69bb6d3a3b636d7f55b6831b3e7cd978e0a4f9a6800354ed1472a0deeef3",
+      "sha256_file": "/artifacts/entities.json.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "ere-dictionary.json",
+      "sha256": "2f353fb1c21062b4a66d8a9560b9bcad3851d08663e1ba632964901425078b44",
+      "sha256_file": "/artifacts/ere-dictionary.json.sha256",
+      "ots_status": "PENDING_NEW_SESSION"
+    },
+    {
+      "artifact": "eu-ai-act/index.html",
+      "sha256": "b06caafa1913398b6bf86d4dd35036f81d921799248db91b1ad1644f77ea21d2",
+      "sha256_file": "/artifacts/eu-ai-act__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "evidence.json",
+      "sha256": "4d32250a317292950def56ca5669760f1e361c45a707c86fe321faf286511262",
+      "sha256_file": "/artifacts/evidence.json.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "faq/index.html",
+      "sha256": "601182beac0cd50a1cf3d8b078759a56bffa590b5e16a523d5dfe5760cb93c5b",
+      "sha256_file": "/artifacts/faq__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "faq-hub.html",
+      "sha256": "ec058aa65a698d0b40a147e7ac860cb60ae49a761ec3571455aeed1f18f7d2d9",
+      "sha256_file": "/artifacts/faq-hub.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "functions/api/a2a.js",
+      "sha256": "2bc3fbbb337839c9ae36a3ee8885b1aecf0f172d914a16b8f03873d23e5c3b17",
+      "sha256_file": "/artifacts/functions__api__a2a.js.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "functions/api/buy/payroll.js",
+      "sha256": "dd4071f56861eda9260a6f47e6e14248ef7836bbb8a8addc9bbf27858aa0c94e",
+      "sha256_file": "/artifacts/functions__api__buy__payroll.js.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "glosar/index.html",
+      "sha256": "6db01a078d62f4baba7875fb80a079c3d4bf3b7d17e7aa160bf93b1155f774b3",
+      "sha256_file": "/artifacts/glosar__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "glossary-entities.json",
+      "sha256": "c9fbfa35b4ee88c7c56573b0153dc012264d652f82e540d67ee19fa411bc89b6",
+      "sha256_file": "/artifacts/glossary-entities.json.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "governance.json",
+      "sha256": "957bcd2a780067c544d338d12e290e7bdf537c500d69352cab3644384575446a",
+      "sha256_file": "/artifacts/governance.json.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "humans.txt",
+      "sha256": "e4b5e8020492ea75eb04d53bf7a9adb1dadd4f9fa3c4121a4efdfa0e4acb4fba",
+      "sha256_file": "/artifacts/humans.txt.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "icon.svg",
+      "sha256": "46105950031400b9c4836f33c8d52c0e8aef56cc0739497bc08ab2264d716fd7",
+      "sha256_file": "/artifacts/icon.svg.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "index.html",
+      "sha256": "0253088fc40218667bfa6b90dba438953399257ed0fe0f9ed912ee8ed02db8b8",
+      "sha256_file": "/artifacts/index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "inovatii/3webobs.txt",
+      "sha256": "dfa6d890c1b789fc503246231f7c467685701ecf4a7979cb7e0d0eee2b3ca949",
+      "sha256_file": "/artifacts/inovatii__3webobs.txt.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "inovatii/a2a-agent-ready.txt",
+      "sha256": "6e3d59cf08fc4346286faeb16ca49e418d7448d7838eddb38d16c8a068a7e10d",
+      "sha256_file": "/artifacts/inovatii__a2a-agent-ready.txt.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "inovatii/agent-ready-b2b-services.txt",
+      "sha256": "4b0d63d8a9246f9238debda249afcb1ed44beca9b03d0713908cfc9dc3834c55",
+      "sha256_file": "/artifacts/inovatii__agent-ready-b2b-services.txt.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "inovatii/ai-lens.txt",
+      "sha256": "c907d2d5ee6cb92908a91e4f8a632813670603f014aea3153091e094cce982cb",
+      "sha256_file": "/artifacts/inovatii__ai-lens.txt.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "inovatii/ai-ready-edge-injector.txt",
+      "sha256": "88792c23526c06641b2586bb9f73efb7ad714b3b45cba3c8854007d6bfdd57ae",
+      "sha256_file": "/artifacts/inovatii__ai-ready-edge-injector.txt.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "inovatii/arhiva/index.html",
+      "sha256": "33e4f34ebc599f25c6bb2c0e4cfd2d74aeb1e7132734f36f3190a80d95ed557e",
+      "sha256_file": "/artifacts/inovatii__arhiva__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "inovatii/centralized-aivfirm-db.txt",
+      "sha256": "aeb6f1b729e2f0b67ac239d1c077f5b1c3b31e1696f3b45daac95501297ebb4a",
+      "sha256_file": "/artifacts/inovatii__centralized-aivfirm-db.txt.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "inovatii/company-intelligence.txt",
+      "sha256": "bc33a60fe0724e611094863c3e4b94f57e0f24df42ef44296d381b9f0e5a3d44",
+      "sha256_file": "/artifacts/inovatii__company-intelligence.txt.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "inovatii/economic-twins.txt",
+      "sha256": "c345eb9fb69c99bb9b2ad1f0942c2a4301a5f2c46f57b52c0bca9249c9a1ea6d",
+      "sha256_file": "/artifacts/inovatii__economic-twins.txt.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "inovatii/economygpt.txt",
+      "sha256": "11b0dc27c67b0a3c7dc02f220c09789e4a04e9ff483c1873f0e180330602697c",
+      "sha256_file": "/artifacts/inovatii__economygpt.txt.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "inovatii/eu-ai-act-ready.txt",
+      "sha256": "ff68aea28ab5f1058ee47ae064fb0f9e95de9568f634878a62aea3fb15c490bc",
+      "sha256_file": "/artifacts/inovatii__eu-ai-act-ready.txt.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "inovatii/grow-engines.txt",
+      "sha256": "6604c033fab4aee14af81b9aa9a14c2bc77d9ab78adbd15d53eaf0b9bccec5d4",
+      "sha256_file": "/artifacts/inovatii__grow-engines.txt.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "inovatii/index.html",
+      "sha256": "0f5163772f7e5dd3d27330b21e001a2b66604fb660b0d823a784e22ae7a56e3d",
+      "sha256_file": "/artifacts/inovatii__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "inovatii/kai369.txt",
+      "sha256": "783fed03e9116b30e90e5951cdf94b009d3f1048b1187d0f090e920f3edc1bf2",
+      "sha256_file": "/artifacts/inovatii__kai369.txt.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "inovatii/master-context.txt",
+      "sha256": "25c314e418ff780895bbba5b6e850dc7889ff0219b0f8fd013b5dcbea07f316e",
+      "sha256_file": "/artifacts/inovatii__master-context.txt.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "inovatii/rrvi.txt",
+      "sha256": "d88d31c3fb4de54aa654c5686c95844399268e1710d5af077bd7bb32fea292fd",
+      "sha256_file": "/artifacts/inovatii__rrvi.txt.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "inovatii/service-offer-contract.txt",
+      "sha256": "117d3cce044c0c3b9d3b794b27a43c011487186924434c99b9cbba83ef20a3db",
+      "sha256_file": "/artifacts/inovatii__service-offer-contract.txt.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "inovatii/the-three-webs.txt",
+      "sha256": "1c3a3be049a8c97fe21b7d7f8af55abdd37603abe0a385e604f928e22ad66010",
+      "sha256_file": "/artifacts/inovatii__the-three-webs.txt.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "inovatii/verificare/index.html",
+      "sha256": "6a2dda471f4312f990e8f9dd646132a2490cfe9ff2e424aa29d6e8454a29b1e0",
+      "sha256_file": "/artifacts/inovatii__verificare__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intents.json",
+      "sha256": "f4603ffe1c73babf52e5ef77afcd14fa82754acbf3b007047134f4a1b3b86d90",
+      "sha256_file": "/artifacts/intents.json.sha256",
+      "ots_status": "PENDING_NEW_SESSION"
+    },
+    {
+      "artifact": "intrebari/agenti-ai-si-vanzarea-de-servicii/care-sunt-avantajele-unui-serviciu-agent-ready/index.html",
+      "sha256": "68c75788bcce47a704c211ee3b3fb9671be0ab69cf17fffc92c2ab68c5073b26",
+      "sha256_file": "/artifacts/intrebari__agenti-ai-si-vanzarea-de-servicii__care-sunt-avantajele-unui-serviciu-agent-ready__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/agenti-ai-si-vanzarea-de-servicii/ce-este-agentic-commerce/index.html",
+      "sha256": "8d75ce6a8c2e8b5bf86dc57dbf712ca6ef1ad2f67b6309e202a193ddb27dd31f",
+      "sha256_file": "/artifacts/intrebari__agenti-ai-si-vanzarea-de-servicii__ce-este-agentic-commerce__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/agenti-ai-si-vanzarea-de-servicii/ce-inseamna-agent-to-agent-pentru-servicii-b2b/index.html",
+      "sha256": "662719e08416ded38816b5a30394ea300161a90deebddd95bf5033fa51da3eb0",
+      "sha256_file": "/artifacts/intrebari__agenti-ai-si-vanzarea-de-servicii__ce-inseamna-agent-to-agent-pentru-servicii-b2b__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/agenti-ai-si-vanzarea-de-servicii/ce-inseamna-ca-un-agent-ai-poate-cumpara-servicii/index.html",
+      "sha256": "7924b47c86d7cabbf19e57171b1f27125afe8b84ce4fe1d7c0e1b0df34612ce3",
+      "sha256_file": "/artifacts/intrebari__agenti-ai-si-vanzarea-de-servicii__ce-inseamna-ca-un-agent-ai-poate-cumpara-servicii__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/agenti-ai-si-vanzarea-de-servicii/clientul-firmei-poate-fi-un-agent-ai/index.html",
+      "sha256": "7f049d381cb5981eaf354ac50cdb0acabf4c0df9b21e514e385d476a1341bc1a",
+      "sha256_file": "/artifacts/intrebari__agenti-ai-si-vanzarea-de-servicii__clientul-firmei-poate-fi-un-agent-ai__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/agenti-ai-si-vanzarea-de-servicii/cum-gaseste-un-agent-ai-un-furnizor-de-servicii/index.html",
+      "sha256": "2780b3e2f71f0425b52192808ae89b4031f011f57b62667743273cea39b5a4c0",
+      "sha256_file": "/artifacts/intrebari__agenti-ai-si-vanzarea-de-servicii__cum-gaseste-un-agent-ai-un-furnizor-de-servicii__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/agenti-ai-si-vanzarea-de-servicii/index.html",
+      "sha256": "a1058e29d76003d56ed74d9b695c76e1e3aaf4910234a2a4f030f10758d0336c",
+      "sha256_file": "/artifacts/intrebari__agenti-ai-si-vanzarea-de-servicii__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/agenti-ai-si-vanzarea-de-servicii/pot-agentii-ai-cumpara-si-servicii-nu-doar-produse/index.html",
+      "sha256": "e4b362f79d24a72fd9f7c3a92a44027d4620c497cca7da31d2c7f88389dece8f",
+      "sha256_file": "/artifacts/intrebari__agenti-ai-si-vanzarea-de-servicii__pot-agentii-ai-cumpara-si-servicii-nu-doar-produse__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/agenti-ai-si-vanzarea-de-servicii/pot-agentii-ai-deveni-un-nou-canal-de-vanzare-pentru-firme/index.html",
+      "sha256": "752307440cc6b350096a2c0d8f2f8d5265c051a353e0be1f12611ec8f68fdc19",
+      "sha256_file": "/artifacts/intrebari__agenti-ai-si-vanzarea-de-servicii__pot-agentii-ai-deveni-un-nou-canal-de-vanzare-pentru-firme__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/agenti-ai-si-vanzarea-de-servicii/pot-agentii-ai-sa-recomande-servicii-b2b/index.html",
+      "sha256": "3b661ea2b8f901cf7c39bce4d356eecf62605a8ad6ccb8b1d522aeeb5ae2d404",
+      "sha256_file": "/artifacts/intrebari__agenti-ai-si-vanzarea-de-servicii__pot-agentii-ai-sa-recomande-servicii-b2b__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/agenti-ai-si-vanzarea-de-servicii/pot-vinde-acelasi-serviciu-si-oamenilor-si-agentilor-ai/index.html",
+      "sha256": "788512b791bbf45f6e6127764b43985334edd0549fb4a7f32ef51e13800efbf9",
+      "sha256_file": "/artifacts/intrebari__agenti-ai-si-vanzarea-de-servicii__pot-vinde-acelasi-serviciu-si-oamenilor-si-agentilor-ai__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/audit-agent-ready/care-este-unitatea-de-audit/index.html",
+      "sha256": "50b0fdbcf7049a6335ae8edd8bd23e75d71b7e2124e2229f36b7d40b9e91f25c",
+      "sha256_file": "/artifacts/intrebari__audit-agent-ready__care-este-unitatea-de-audit__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/audit-agent-ready/ce-inseamna-after/index.html",
+      "sha256": "d9318632b4f2bc140443513fbb8d5bbafe8a107fc48170a400c2e3c4ad54314b",
+      "sha256_file": "/artifacts/intrebari__audit-agent-ready__ce-inseamna-after__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/audit-agent-ready/ce-inseamna-un-semnal-unknown/index.html",
+      "sha256": "c4ed5057484b72ca2e5e7b231efe1ac17d9cb3ad8e3d3915c6e28e7cfe1ca934",
+      "sha256_file": "/artifacts/intrebari__audit-agent-ready__ce-inseamna-un-semnal-unknown__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/audit-agent-ready/ce-verifica-un-audit-agent-ready/index.html",
+      "sha256": "95d945ba14363dac902adfd9fd272d46c4712bfad12be3083228b1206db219f2",
+      "sha256_file": "/artifacts/intrebari__audit-agent-ready__ce-verifica-un-audit-agent-ready__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/audit-agent-ready/cum-arata-un-before-corect/index.html",
+      "sha256": "411a8b685bc643983a906fea4f773361a08fb16c7575cec8e3cc8b4a23b2929c",
+      "sha256_file": "/artifacts/intrebari__audit-agent-ready__cum-arata-un-before-corect__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/audit-agent-ready/cum-masor-daca-transformarea-agent-ready-produce-rezultate/index.html",
+      "sha256": "a7b81463a2d90842c4f1c25ed493fea665bc1e7033393ba4c89470d22ec141f8",
+      "sha256_file": "/artifacts/intrebari__audit-agent-ready__cum-masor-daca-transformarea-agent-ready-produce-rezultate__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/audit-agent-ready/cum-separi-problemele-addressable-de-non-addressable/index.html",
+      "sha256": "be2c0ab3e6cf5dba0a9eea4e9247783358f325942d8144a48ac2ec8b60cb846f",
+      "sha256_file": "/artifacts/intrebari__audit-agent-ready__cum-separi-problemele-addressable-de-non-addressable__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/audit-agent-ready/cum-stiu-daca-serviciile-firmei-mele-sunt-agent-ready/index.html",
+      "sha256": "fbaf2966cdd5a68a6e13c48a8091745493acfa72d4e9d1253f50f11ba0efd99e",
+      "sha256_file": "/artifacts/intrebari__audit-agent-ready__cum-stiu-daca-serviciile-firmei-mele-sunt-agent-ready__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/audit-agent-ready/de-ce-este-importanta-comparatia-before-after/index.html",
+      "sha256": "35c6e20657adadd8a3afa136d492e9fe17a7a506e53622e17e5cf52cbfdff583",
+      "sha256_file": "/artifacts/intrebari__audit-agent-ready__de-ce-este-importanta-comparatia-before-after__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/audit-agent-ready/de-ce-nu-trebuie-inventat-un-pass/index.html",
+      "sha256": "a2e02c8391fb6e1eeb02e5d6caf39bfa5841b7e8c4ada30d4e029f6b5c4bafbe",
+      "sha256_file": "/artifacts/intrebari__audit-agent-ready__de-ce-nu-trebuie-inventat-un-pass__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/audit-agent-ready/index.html",
+      "sha256": "a7933830fc289f384560b4b5347ec9d9dfa384c7d2c9aa379fbcee8ea73cc199",
+      "sha256_file": "/artifacts/intrebari__audit-agent-ready__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/cerere-calificare-si-ofertare/cand-trebuie-oprit-fluxul-inainte-de-order/index.html",
+      "sha256": "8c7b9a4b08f23633c26b74767f932d7e2a4b357ebe8fd644d38f95cfc7a9e0c4",
+      "sha256_file": "/artifacts/intrebari__cerere-calificare-si-ofertare__cand-trebuie-oprit-fluxul-inainte-de-order__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/cerere-calificare-si-ofertare/ce-inseamna-l3-request/index.html",
+      "sha256": "a360a133582ead974890974a60715e52281d59682cd0c0db0011a06397bdb7c6",
+      "sha256_file": "/artifacts/intrebari__cerere-calificare-si-ofertare__ce-inseamna-l3-request__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/cerere-calificare-si-ofertare/ce-inseamna-l4-quote/index.html",
+      "sha256": "3c6a071403d7ed0b29dd714e4afaaaa0eb509974a1778d858ce1664e7528a74a",
+      "sha256_file": "/artifacts/intrebari__cerere-calificare-si-ofertare__ce-inseamna-l4-quote__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/cerere-calificare-si-ofertare/ce-inseamna-l5-order/index.html",
+      "sha256": "0ced5fb70c131db9c68ace5666488792f60bbfcb1537c21cd1704d8b7e28c557",
+      "sha256_file": "/artifacts/intrebari__cerere-calificare-si-ofertare__ce-inseamna-l5-order__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/cerere-calificare-si-ofertare/cum-verifica-un-agent-ai-daca-un-client-este-eligibil-pentru-serviciu/index.html",
+      "sha256": "fc5ffa74bedec6c49b31e6cc9221c0764eb2caede8351b1990a941d269e0ec94",
+      "sha256_file": "/artifacts/intrebari__cerere-calificare-si-ofertare__cum-verifica-un-agent-ai-daca-un-client-este-eligibil-pentru-serviciu__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/cerere-calificare-si-ofertare/index.html",
+      "sha256": "6a8bd3cd8a6d364ca2cf48943febaec3195d4eb2e1917caab2cba76ef4679415",
+      "sha256_file": "/artifacts/intrebari__cerere-calificare-si-ofertare__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/cerere-calificare-si-ofertare/poate-agentul-ai-genera-automat-o-oferta-comerciala/index.html",
+      "sha256": "f8adf51088e254e6a483d2f60e00cd73e106ad494ef527aa54fdaeb557ad8366",
+      "sha256_file": "/artifacts/intrebari__cerere-calificare-si-ofertare__poate-agentul-ai-genera-automat-o-oferta-comerciala__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/cerere-calificare-si-ofertare/poate-agentul-ai-programa-urmatorul-pas-comercial/index.html",
+      "sha256": "d0b515c6a963fb90e149514ea6aed3b6657770c6a9498644fe6c2e90ba4b1f5b",
+      "sha256_file": "/artifacts/intrebari__cerere-calificare-si-ofertare__poate-agentul-ai-programa-urmatorul-pas-comercial__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/cerere-calificare-si-ofertare/poate-cererea-agentului-ai-ajunge-automat-in-crm/index.html",
+      "sha256": "642ca9f4767d512ead34207683460bce18c47609adea343891ad2df127bf0fa3",
+      "sha256_file": "/artifacts/intrebari__cerere-calificare-si-ofertare__poate-cererea-agentului-ai-ajunge-automat-in-crm__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/cerere-calificare-si-ofertare/poate-fi-calificat-automat-un-lead-venit-de-la-un-agent-ai/index.html",
+      "sha256": "1728391e83a77f332e543f5fe62c79bfc723d3c2139eeac3a2a76ae3bcb2cbf6",
+      "sha256_file": "/artifacts/intrebari__cerere-calificare-si-ofertare__poate-fi-calificat-automat-un-lead-venit-de-la-un-agent-ai__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/cerere-calificare-si-ofertare/poate-un-agent-ai-cere-o-oferta-in-numele-clientului/index.html",
+      "sha256": "cc9e7250861a363691b642e81742a3860eeb4cec4c8d5805d4df5692047b367b",
+      "sha256_file": "/artifacts/intrebari__cerere-calificare-si-ofertare__poate-un-agent-ai-cere-o-oferta-in-numele-clientului__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/credibilitate-verificare-si-control/care-sunt-riscurile-vanzarii-prin-agenti-ai/index.html",
+      "sha256": "33ec6a7804c505975e74e317d6701a76f09cebc6dac02223159b7a0e1ca2f882",
+      "sha256_file": "/artifacts/intrebari__credibilitate-verificare-si-control__care-sunt-riscurile-vanzarii-prin-agenti-ai__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/credibilitate-verificare-si-control/ce-date-poate-colecta-agentul-ai-de-la-un-potential-client/index.html",
+      "sha256": "35ed595095946402d8792a6a2e75b5b139f3390046215109689f5ba346653f37",
+      "sha256_file": "/artifacts/intrebari__credibilitate-verificare-si-control__ce-date-poate-colecta-agentul-ai-de-la-un-potential-client__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/credibilitate-verificare-si-control/ce-este-rrvi/index.html",
+      "sha256": "0b2e75557c3734ea213aef79af80d6f32a32e5354768ec243267414c4e57f455",
+      "sha256_file": "/artifacts/intrebari__credibilitate-verificare-si-control__ce-este-rrvi__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/credibilitate-verificare-si-control/ce-inseamna-regulation-first/index.html",
+      "sha256": "febe06a45ab12670842fc47cec1f31dc55e80f74ee1394b37e7be08a5aa13b33",
+      "sha256_file": "/artifacts/intrebari__credibilitate-verificare-si-control__ce-inseamna-regulation-first__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/credibilitate-verificare-si-control/ce-poate-raspunde-rrvi/index.html",
+      "sha256": "967768818446402218a07000f64b593a66f45a8c0c4c80f69fe46ce2a4dd41c9",
+      "sha256_file": "/artifacts/intrebari__credibilitate-verificare-si-control__ce-poate-raspunde-rrvi__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/credibilitate-verificare-si-control/cum-controlezi-ce-poate-face-un-agent-ai/index.html",
+      "sha256": "e8268218eee8859fe0d020daf8fdc51950b72756619efb393124a038dca51296",
+      "sha256_file": "/artifacts/intrebari__credibilitate-verificare-si-control__cum-controlezi-ce-poate-face-un-agent-ai__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/credibilitate-verificare-si-control/cum-poti-demonstra-ce-a-facut-un-agent-ai/index.html",
+      "sha256": "2d8cb883338445a86139ddda53d8cc5a2294603b6a263aa006fbe5c256afaeec",
+      "sha256_file": "/artifacts/intrebari__credibilitate-verificare-si-control__cum-poti-demonstra-ce-a-facut-un-agent-ai__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/credibilitate-verificare-si-control/cum-stie-agentul-ai-ca-pretul-si-conditiile-sunt-actuale/index.html",
+      "sha256": "5d7488e7b3f0abd745a49b35edf627c926849abb835addc40865d5bcbb9c162f",
+      "sha256_file": "/artifacts/intrebari__credibilitate-verificare-si-control__cum-stie-agentul-ai-ca-pretul-si-conditiile-sunt-actuale__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/credibilitate-verificare-si-control/cum-verifica-un-agent-ai-daca-furnizorul-este-credibil/index.html",
+      "sha256": "e9f44099f889e6b8fa50322f4f6892bbc8de8e4bc1a1c93dd9cf70028bf530a4",
+      "sha256_file": "/artifacts/intrebari__credibilitate-verificare-si-control__cum-verifica-un-agent-ai-daca-furnizorul-este-credibil__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/credibilitate-verificare-si-control/cum-verifici-daca-un-agent-ai-are-voie-sa-execute-o-actiune/index.html",
+      "sha256": "635d1df26214e916265da7d2c9c556d51f10a4eaf64dd29ebb5d634c8ae67df4",
+      "sha256_file": "/artifacts/intrebari__credibilitate-verificare-si-control__cum-verifici-daca-un-agent-ai-are-voie-sa-execute-o-actiune__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/credibilitate-verificare-si-control/index.html",
+      "sha256": "cac2aefbedec239e2d2af3d7951eac3459786d39a5d28b3c7e884e2c8677aabc",
+      "sha256_file": "/artifacts/intrebari__credibilitate-verificare-si-control__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/firma-ta-in-raspunsurile-ai/care-este-diferenta-dintre-aeo-si-agent-ready/index.html",
+      "sha256": "d473ee83e39956c1aba1aea3fcd3356c3a387c7abd310d28a87d33a39a38012c",
+      "sha256_file": "/artifacts/intrebari__firma-ta-in-raspunsurile-ai__care-este-diferenta-dintre-aeo-si-agent-ready__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/firma-ta-in-raspunsurile-ai/care-este-diferenta-dintre-ai-visibility-si-agent-ready/index.html",
+      "sha256": "31bf06e0d2915902545e3a651e47bf89f16bf43460597b36801b72590063e36e",
+      "sha256_file": "/artifacts/intrebari__firma-ta-in-raspunsurile-ai__care-este-diferenta-dintre-ai-visibility-si-agent-ready__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/firma-ta-in-raspunsurile-ai/ce-inseamna-ca-un-serviciu-sa-fie-inteles-de-ai/index.html",
+      "sha256": "5b3227d07f578229105af2c0b3d579f347bc331c38d128722218ecc0010fe7fb",
+      "sha256_file": "/artifacts/intrebari__firma-ta-in-raspunsurile-ai__ce-inseamna-ca-un-serviciu-sa-fie-inteles-de-ai__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/firma-ta-in-raspunsurile-ai/cum-aflu-ce-intelege-ai-despre-firma-si-serviciile-mele/index.html",
+      "sha256": "c5df55df9ab9f8eed8f8ec4f0fd52e946a7a8bb0b6e9466bbfbb4012e9497f0e",
+      "sha256_file": "/artifacts/intrebari__firma-ta-in-raspunsurile-ai__cum-aflu-ce-intelege-ai-despre-firma-si-serviciile-mele__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/firma-ta-in-raspunsurile-ai/cum-verific-daca-ai-reconstruieste-corect-serviciul-meu/index.html",
+      "sha256": "166b1ebdb89cdde141756e99ce7bdd72d1e4f151887760384a151f26ed6bade3",
+      "sha256_file": "/artifacts/intrebari__firma-ta-in-raspunsurile-ai__cum-verific-daca-ai-reconstruieste-corect-serviciul-meu__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/firma-ta-in-raspunsurile-ai/de-ce-ai-nu-recomanda-firma-mea/index.html",
+      "sha256": "b468a8cc6f2ed105665b1376c1b8daa05eca9da64cd27a059bca28ffeafbfb8d",
+      "sha256_file": "/artifacts/intrebari__firma-ta-in-raspunsurile-ai__de-ce-ai-nu-recomanda-firma-mea__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/firma-ta-in-raspunsurile-ai/de-ce-conteaza-diferentiatorii-expliciti/index.html",
+      "sha256": "a95795693198bed75056e01942649fb35255dad4589819fe328c3c9c4e58ca06",
+      "sha256_file": "/artifacts/intrebari__firma-ta-in-raspunsurile-ai__de-ce-conteaza-diferentiatorii-expliciti__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/firma-ta-in-raspunsurile-ai/de-ce-nu-este-suficient-sa-ai-un-website-bun/index.html",
+      "sha256": "900acf43763523739f3d40beeb8063d8612ec4717d72787bf784808b8d72be89",
+      "sha256_file": "/artifacts/intrebari__firma-ta-in-raspunsurile-ai__de-ce-nu-este-suficient-sa-ai-un-website-bun__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/firma-ta-in-raspunsurile-ai/de-ce-poate-ai-sa-nu-gaseasca-serviciul-unei-firme/index.html",
+      "sha256": "c9b0f4d894a3a5741d419bebb9fe5081714fa733b2e02ad2bd5a26f3f70b7c9e",
+      "sha256_file": "/artifacts/intrebari__firma-ta-in-raspunsurile-ai__de-ce-poate-ai-sa-nu-gaseasca-serviciul-unei-firme__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/firma-ta-in-raspunsurile-ai/este-suficient-seo-pentru-ca-agentii-ai-sa-gaseasca-serviciile-firmei/index.html",
+      "sha256": "28afde84970151af328d72c0d3ee4d4f2c49a9098a32f1343fc4e7534205bb04",
+      "sha256_file": "/artifacts/intrebari__firma-ta-in-raspunsurile-ai__este-suficient-seo-pentru-ca-agentii-ai-sa-gaseasca-serviciile-firmei__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/firma-ta-in-raspunsurile-ai/index.html",
+      "sha256": "68edb9a1b611c64432866f10275003b857c5cd7c24d5e7e2633181e38ef2a7b2",
+      "sha256_file": "/artifacts/intrebari__firma-ta-in-raspunsurile-ai__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/implementare-aiventure/cat-costa-transformarea-unui-serviciu-in-agent-ready/index.html",
+      "sha256": "81d91bbbd9cb8fef6bbd1fc8751a73ff355fed661538c7ac87bdd5129a1e8d93",
+      "sha256_file": "/artifacts/intrebari__implementare-aiventure__cat-costa-transformarea-unui-serviciu-in-agent-ready__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/implementare-aiventure/cat-dureaza-transformarea-unui-serviciu-in-agent-ready/index.html",
+      "sha256": "7a4de1c553796667b1fe8b583da9cdcd3c2138c2894401c9bbb924a466d17d3d",
+      "sha256_file": "/artifacts/intrebari__implementare-aiventure__cat-dureaza-transformarea-unui-serviciu-in-agent-ready__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/implementare-aiventure/ce-include-implementarea-aiventure/index.html",
+      "sha256": "6c5b3cdf9fc3ace1be9eea696b62622c151eb643cd13130137f7cd711dd6160a",
+      "sha256_file": "/artifacts/intrebari__implementare-aiventure__ce-include-implementarea-aiventure__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/implementare-aiventure/cum-deschid-un-canal-de-vanzare-prin-agenti-ai/index.html",
+      "sha256": "849c9511a8b2bd5233d461b3f67a81e7c45ebb8db37ce548a55fe235532ab94e",
+      "sha256_file": "/artifacts/intrebari__implementare-aiventure__cum-deschid-un-canal-de-vanzare-prin-agenti-ai__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/implementare-aiventure/cum-pot-verifica-daca-un-serviciu-al-firmei-mele-este-pregatit-pentru-agenti-ai/index.html",
+      "sha256": "6ca9191694f5dcb6ecedcf773a326376a09475a986c642ff952f6e8451233eda",
+      "sha256_file": "/artifacts/intrebari__implementare-aiventure__cum-pot-verifica-daca-un-serviciu-al-firmei-mele-este-pregatit-pentru-agenti-ai__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/implementare-aiventure/index.html",
+      "sha256": "6ad176ebc4b71fa2a39052b5209f6542b42f391bb9db67698c539865f7a1d0de",
+      "sha256_file": "/artifacts/intrebari__implementare-aiventure__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/implementare-aiventure/poate-aiventure-automatiza-cererea-calificarea-si-ofertarea/index.html",
+      "sha256": "d83dfe53e4264ceefc28b99eca678c007bdf7a7c4258cfb537fd9cd1c3400648",
+      "sha256_file": "/artifacts/intrebari__implementare-aiventure__poate-aiventure-automatiza-cererea-calificarea-si-ofertarea__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/implementare-aiventure/poate-aiventure-conecta-agentul-la-crm-si-calendar/index.html",
+      "sha256": "b28ea2acc33c48cbb062e7730ba8df360e2ca7ee0fe36fb7925ae9f2083e866b",
+      "sha256_file": "/artifacts/intrebari__implementare-aiventure__poate-aiventure-conecta-agentul-la-crm-si-calendar__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/implementare-aiventure/poate-aiventure-sa-mi-structureze-oferta-pentru-agenti-ai/index.html",
+      "sha256": "bb4edb1ad4a02ca0d725ece7715edf644d121306dccf8d7f6d44b3a773fbf093",
+      "sha256_file": "/artifacts/intrebari__implementare-aiventure__poate-aiventure-sa-mi-structureze-oferta-pentru-agenti-ai__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/implementare-aiventure/poate-aiventure-transforma-un-serviciu-pe-care-il-vand-deja/index.html",
+      "sha256": "21729640477af138d8a3c4bdd1ce21b1fc41da214b5f55a45cd3b96a58a5a611",
+      "sha256_file": "/artifacts/intrebari__implementare-aiventure__poate-aiventure-transforma-un-serviciu-pe-care-il-vand-deja__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/implementare-aiventure/pot-incepe-cu-un-singur-serviciu/index.html",
+      "sha256": "cca920540ba5eac8e9951119c08b94ff7a83b5d2f302be3ab777debea43f5a34",
+      "sha256_file": "/artifacts/intrebari__implementare-aiventure__pot-incepe-cu-un-singur-serviciu__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/index.html",
+      "sha256": "ef1598a58937009db618b359cf0c0b4cdf190369043c4b1426027c7a32ac42d8",
+      "sha256_file": "/artifacts/intrebari__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/oferta-structurata-pentru-agenti-ai/ce-este-o-oferta-de-servicii-structurata-pentru-agenti-ai/index.html",
+      "sha256": "1709ef7d6c2311d38a42902ee1e6961fbf726461a7587efea0504114b3cdb184",
+      "sha256_file": "/artifacts/intrebari__oferta-structurata-pentru-agenti-ai__ce-este-o-oferta-de-servicii-structurata-pentru-agenti-ai__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/oferta-structurata-pentru-agenti-ai/ce-este-service-offer-contract/index.html",
+      "sha256": "6ca72de8bcd7d477811600dac5286f958cee4128e405a5899064437d1ed4d54d",
+      "sha256_file": "/artifacts/intrebari__oferta-structurata-pentru-agenti-ai__ce-este-service-offer-contract__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/oferta-structurata-pentru-agenti-ai/ce-trebuie-sa-contina-o-oferta-machine-readable/index.html",
+      "sha256": "35f2e9d6bb25387c5a1924cf1db4d488775a20b99635c631e48d40f92316c36c",
+      "sha256_file": "/artifacts/intrebari__oferta-structurata-pentru-agenti-ai__ce-trebuie-sa-contina-o-oferta-machine-readable__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/oferta-structurata-pentru-agenti-ai/cu-ce-serviciu-ar-trebui-sa-incep-transformarea-agent-ready/index.html",
+      "sha256": "afc6a377d835f7354730631f0d7dd14b6533c5561f6942a1d39d24bf70147d64",
+      "sha256_file": "/artifacts/intrebari__oferta-structurata-pentru-agenti-ai__cu-ce-serviciu-ar-trebui-sa-incep-transformarea-agent-ready__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/oferta-structurata-pentru-agenti-ai/cum-fac-ai-ul-sa-inteleaga-diferentiatorii-serviciului-meu/index.html",
+      "sha256": "cba8f80e6d20654bd1d5b4014576b739a91ac85d7319c223be520a284b30bf87",
+      "sha256_file": "/artifacts/intrebari__oferta-structurata-pentru-agenti-ai__cum-fac-ai-ul-sa-inteleaga-diferentiatorii-serviciului-meu__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/oferta-structurata-pentru-agenti-ai/de-ce-serviciile-au-nevoie-de-o-sursa-unica-de-adevar/index.html",
+      "sha256": "0ef9a945718237b0b0051e090052ea8fd3e6915ec2ebafac288ca4fc970854a2",
+      "sha256_file": "/artifacts/intrebari__oferta-structurata-pentru-agenti-ai__de-ce-serviciile-au-nevoie-de-o-sursa-unica-de-adevar__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/oferta-structurata-pentru-agenti-ai/este-nevoie-de-schema-org-json-api-sau-a2a/index.html",
+      "sha256": "86b7c0331890dbb59066583efb456d6ba0010833a91c4e62adc0034d9bb278a2",
+      "sha256_file": "/artifacts/intrebari__oferta-structurata-pentru-agenti-ai__este-nevoie-de-schema-org-json-api-sau-a2a__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/oferta-structurata-pentru-agenti-ai/index.html",
+      "sha256": "e542a422ae1547ffe261724eba1b68099821f3f73352188adf03cd77a85c4451",
+      "sha256_file": "/artifacts/intrebari__oferta-structurata-pentru-agenti-ai__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/oferta-structurata-pentru-agenti-ai/trebuie-definite-geografia-limba-si-disponibilitatea-serviciului/index.html",
+      "sha256": "7355f49de6dcebbf677cbdf6e95a3cde2471ae3c7aeff7c69ecfa7b752cf66f7",
+      "sha256_file": "/artifacts/intrebari__oferta-structurata-pentru-agenti-ai__trebuie-definite-geografia-limba-si-disponibilitatea-serviciului__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/oferta-structurata-pentru-agenti-ai/trebuie-sa-mi-reconstruiesc-website-ul-pentru-agenti-ai/index.html",
+      "sha256": "29ee24413508611ce73ff65f7ecddada2f99f44bc037740b0874ca89a56b5812",
+      "sha256_file": "/artifacts/intrebari__oferta-structurata-pentru-agenti-ai__trebuie-sa-mi-reconstruiesc-website-ul-pentru-agenti-ai__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "intrebari/oferta-structurata-pentru-agenti-ai/trebuie-sa-structurez-clar-pachetele-preturile-si-livrabilele/index.html",
+      "sha256": "d63835dd5c4896c371d6b42b870d7da84a7fb275f69588c855c67be64b75cd6c",
+      "sha256_file": "/artifacts/intrebari__oferta-structurata-pentru-agenti-ai__trebuie-sa-structurez-clar-pachetele-preturile-si-livrabilele__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "legal/a2a-terms/index.html",
+      "sha256": "71bd2e759bff762dc2b39c82e53c48874c075f0c11073b307642da74e4f91a27",
+      "sha256_file": "/artifacts/legal__a2a-terms__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "legal/ai-transparency/index.html",
+      "sha256": "cb9793a23fcdf215953055c14944e72f5b241e889cad42e3b9acc905e9f96fb7",
+      "sha256_file": "/artifacts/legal__ai-transparency__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "legal/index.html",
+      "sha256": "f91f3ffe88cdf57040b2d80099b31f4965731f163c6d8db33c97a299663a314b",
+      "sha256_file": "/artifacts/legal__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "llms.txt",
+      "sha256": "f1456be422623c30eacb9153289a23351f572c203b11c0f28de79467e12f6b28",
+      "sha256_file": "/artifacts/llms.txt.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "manifest.json",
+      "sha256": "265f2dc996b7fba582388aa3997a818d1a1542e880f6d2f91c1848e6c8f904f6",
+      "sha256_file": "/artifacts/manifest.json.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "misiune/index.html",
+      "sha256": "dc2d461334bbf14243e85c10ffe68abf6365f8abb9fb249983d31229531aad1d",
+      "sha256_file": "/artifacts/misiune__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "oferta/index.html",
+      "sha256": "9350e16e044ae40e06dc5175f7f194df4e4ddff2b23703a091c3a4e01e4a7885",
+      "sha256_file": "/artifacts/oferta__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "offpage-signal-assessment.json",
+      "sha256": "40c7f441a017de5b2fb9f7ba76db3e96cd91a85363abd0c1edf13a3102e6c033",
+      "sha256_file": "/artifacts/offpage-signal-assessment.json.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "offpage-signals-catalog.json",
+      "sha256": "46c1028b52b80c228c6981aee62d7b211b7d4485264fc9db8e9e5c63068b4628",
+      "sha256_file": "/artifacts/offpage-signals-catalog.json.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "onpage-signal-assessment.json",
+      "sha256": "88d6eba81ba626e59cf9967e6787f9aa62089a8f30ac5cfe422f35b043a005e6",
+      "sha256_file": "/artifacts/onpage-signal-assessment.json.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "onpage-signals-catalog.json",
+      "sha256": "5565b68b4a49e97c9cb7d6d34c9c18923c90334940e6e798c48d0eb18f1be18c",
+      "sha256_file": "/artifacts/onpage-signals-catalog.json.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "onsite-signal-assessment.json",
+      "sha256": "7867859f31f1807dd9ef9665ee03fff73231ba846feab44f3124ba3f8311be9a",
+      "sha256_file": "/artifacts/onsite-signal-assessment.json.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "onsite-signals-catalog.json",
+      "sha256": "15d7b7685d2702e0e989547577011e5928af36081d17d6a482f0c77b33775c15",
+      "sha256_file": "/artifacts/onsite-signals-catalog.json.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "ots-queue.json",
+      "sha256": "503013e29aa7b3b509117cfcb151a3c0fed489e3600bd5fd441e6082bf27bb97",
+      "sha256_file": "/artifacts/ots-queue.json.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "policy.json",
+      "sha256": "9be35717f9aa50a1c5fbbbc92a6ff3d6bd80748a50d67374638611ad94f91b54",
+      "sha256_file": "/artifacts/policy.json.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "politica-confidentialitate/index.html",
+      "sha256": "7cb2f9a61e79672675e014b52791e96642f4f670f319fd0e18cd38b9a2486a46",
+      "sha256_file": "/artifacts/politica-confidentialitate__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "preview-home.html",
+      "sha256": "3efab228ebd98de6e088e998a9bdb2659214ecc6bc54d3d9d05e5cc17467ead0",
+      "sha256_file": "/artifacts/preview-home.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "produse/3webobs/index.html",
+      "sha256": "8a5fa41106c19e62b55eee888824d5c5f7f51fcd83d0f73c801981622fa14f2f",
+      "sha256_file": "/artifacts/produse__3webobs__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "produse/ai-lens/index.html",
+      "sha256": "2f0a210052266f27c09e39382e4466a676d97651e3588ccd40ec5c55d3334364",
+      "sha256_file": "/artifacts/produse__ai-lens__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "produse/ai-ready-edge/index.html",
+      "sha256": "a93adb2cf5fd78cab05f79043a898140d9d1b5248698ee38e1bd6200a713f518",
+      "sha256_file": "/artifacts/produse__ai-ready-edge__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "produse/ai-ready-injector/index.html",
+      "sha256": "3ac745c26679be2e55258671ece38b3740a57c7fb112bcf8c4bbe48e02df71af",
+      "sha256_file": "/artifacts/produse__ai-ready-injector__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "produse/company-intelligence/index.html",
+      "sha256": "d48d2c4fc58a5675e4109e35f411597b6139c77c407f83e8233d313e47461bad",
+      "sha256_file": "/artifacts/produse__company-intelligence__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "produse/eu-ai-act-ready/index.html",
+      "sha256": "fbc799df22b7758e64176e44c5731ce1b6a33e1c67503e1f02f99123f5a11b6c",
+      "sha256_file": "/artifacts/produse__eu-ai-act-ready__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "produse/index.html",
+      "sha256": "a770c07ff26ae1bb24c47b63c77997aeb6c17c7eb333fea7ecd589c32c46b332",
+      "sha256_file": "/artifacts/produse__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "proof.json",
+      "sha256": "7b0f3a248f19d682dce0e024a4a9b581bb4c32bb9d35ef2e6b4e9c50cdd96561",
+      "sha256_file": "/artifacts/proof.json.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "provenance.json",
+      "sha256": "6fd2ef9caa468a66309da1086fba7fa738d76328f4f48e9ebfa8af80b5a60772",
+      "sha256_file": "/artifacts/provenance.json.sha256",
+      "ots_status": "PENDING_NEW_SESSION"
+    },
+    {
+      "artifact": "resurse/ghiduri/a2a-de-la-a-la-z/index.html",
+      "sha256": "43fee61a0b433b7d1fbcb88738fc0e2e895e488489802975a94e7caffd4a1112",
+      "sha256_file": "/artifacts/resurse__ghiduri__a2a-de-la-a-la-z__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "resurse/ghiduri/agent-ready/index.html",
+      "sha256": "d9765d8adeba3853a2c1eaef9985b384ab03335547e005679a8dfcb751733b47",
+      "sha256_file": "/artifacts/resurse__ghiduri__agent-ready__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "resurse/ghiduri/buyer-agent/index.html",
+      "sha256": "6f042cfb9162773b91ca0c6eb061de17997d7562a1a6935ea039c0589a5efd68",
+      "sha256_file": "/artifacts/resurse__ghiduri__buyer-agent__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "resurse/ghiduri/edge-injector/index.html",
+      "sha256": "a65f90445eba1abf1bb13586fccf3becf7c83750b5640f83f501c82c58b68332",
+      "sha256_file": "/artifacts/resurse__ghiduri__edge-injector__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "resurse/ghiduri/primul-agent-ai/index.html",
+      "sha256": "803372ead3e9e4b9d45827742b55ff8bb6b99aee1558ac819746b7f6c8fb3ca2",
+      "sha256_file": "/artifacts/resurse__ghiduri__primul-agent-ai__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "resurse/ghiduri/seller-agent/index.html",
+      "sha256": "2f51577aff220095a5220c09e9fd750bc8c923241d85ffa675bdb426c12ebfa2",
+      "sha256_file": "/artifacts/resurse__ghiduri__seller-agent__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "resurse/index.html",
+      "sha256": "6a524e2b5108713cf26a56c07b063313544e85b10f19fa321d4a2958bdbeeb71",
+      "sha256_file": "/artifacts/resurse__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "resurse/semnale/ONPAGE-252-SUMMARY-20260913-1808.json",
+      "sha256": "1eb433b5bc2090deabcaf6e9a671242a8362d106b1fd11ee683e7b593adf4388",
+      "sha256_file": "/artifacts/resurse__semnale__ONPAGE-252-SUMMARY-20260913-1808.json.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "resurse/semnale/onpage-signal-assessment-source.json",
+      "sha256": "88d6eba81ba626e59cf9967e6787f9aa62089a8f30ac5cfe422f35b043a005e6",
+      "sha256_file": "/artifacts/resurse__semnale__onpage-signal-assessment-source.json.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "resurse/semnale/onpage-signals-catalog.json",
+      "sha256": "5565b68b4a49e97c9cb7d6d34c9c18923c90334940e6e798c48d0eb18f1be18c",
+      "sha256_file": "/artifacts/resurse__semnale__onpage-signals-catalog.json.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "robots.txt",
+      "sha256": "dd0bcce9f72af37991547d55ffbc7d170e66c3c80825c17b74d4a028b883b9cf",
+      "sha256_file": "/artifacts/robots.txt.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "rrvi/index.html",
+      "sha256": "bd2f2ead63d3495e337a8daa43cc8a48a717380e6e62f36056dd1272ff816b6b",
+      "sha256_file": "/artifacts/rrvi__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "rrvi.json",
+      "sha256": "7e1225befd6e322b5c176a9b9247ab72746d4afde16ff22fdb95682f8864b72f",
+      "sha256_file": "/artifacts/rrvi.json.sha256",
+      "ots_status": "PENDING_NEW_SESSION"
+    },
+    {
+      "artifact": "security.txt",
+      "sha256": "7ec71ef2e628792ffd5e9b0d17ee28dff5883d2577c06ccd4b4fcb1f23389921",
+      "sha256_file": "/artifacts/security.txt.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "service-offer-contract/index.html",
+      "sha256": "6ee386c4c693a23dcc5037350b9ba650c92bd2e27428d63d4f47769f917f41e3",
+      "sha256_file": "/artifacts/service-offer-contract__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "service-offer-contract.json",
+      "sha256": "1cdfa262ad624cfa0e8ada2e78140c7a340bf65453b76909210b6b864a7102d3",
+      "sha256_file": "/artifacts/service-offer-contract.json.sha256",
+      "ots_status": "PENDING_NEW_SESSION"
+    },
+    {
+      "artifact": "service.json",
+      "sha256": "1b24882fd9dffb5643e30b5438cc403173c10b9b78c3e2325de9c5eeb294d337",
+      "sha256_file": "/artifacts/service.json.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "servicii/a2a/index.html",
+      "sha256": "61e116d11c5f3877446e0e81db96c8e431ceaf2fd1fd012e60bee5fca7140e21",
+      "sha256_file": "/artifacts/servicii__a2a__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "servicii/aeo/index.html",
+      "sha256": "204a7c2b3316c4763d1c6476daee7bf0b48baa6a4a0365b1780c529b330be69b",
+      "sha256_file": "/artifacts/servicii__aeo__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "servicii/agent-factory/index.html",
+      "sha256": "a70ceac1484e14047b8d29904081b6dedd9fd2daae0930a240a259c06ed7a418",
+      "sha256_file": "/artifacts/servicii__agent-factory__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "servicii/agent-ready-b2b/index.html",
+      "sha256": "f50bef1762b0ce92aefccf44468b33663058006fb87f1b08651ad22b9397663b",
+      "sha256_file": "/artifacts/servicii__agent-ready-b2b__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "servicii/agent-ready-implementation/index.html",
+      "sha256": "17fc1cc36cc870d9efca2593857f480c5aee356a767f1b0f1d4db67db95ef776",
+      "sha256_file": "/artifacts/servicii__agent-ready-implementation__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "servicii/ai-evidence/index.html",
+      "sha256": "546c2cdb554181f544df4cc2ad9bbb28cc3094bd08cf70018bc84d6573aab351",
+      "sha256_file": "/artifacts/servicii__ai-evidence__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "servicii/ai-governance/index.html",
+      "sha256": "5e6a5a9048a4cb896e370b265599cb0d5e4e776ceae70064a18b32fd4a73b179",
+      "sha256_file": "/artifacts/servicii__ai-governance__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "servicii/ai-infrastructure/index.html",
+      "sha256": "1ced0af16e641b57656210701f0c7ea2e4b1b637b7e0bd444067f4ecb469194f",
+      "sha256_file": "/artifacts/servicii__ai-infrastructure__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "servicii/ai-perception/index.html",
+      "sha256": "74685c883154eb262e30e27e65129570b94c4a0256e4f7361c00c08f1ad69bf3",
+      "sha256_file": "/artifacts/servicii__ai-perception__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "servicii/ai-signals/index.html",
+      "sha256": "c873270f57a7d0482927a863b8121f9b75c00aba0385bb0bff68f1210b14cac1",
+      "sha256_file": "/artifacts/servicii__ai-signals__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "servicii/ai-transformation/index.html",
+      "sha256": "984f9f45968f5579bf84d08f2a15cfd8f87096ba7cb285ffc8c4ce536b42a064",
+      "sha256_file": "/artifacts/servicii__ai-transformation__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "servicii/aio/index.html",
+      "sha256": "54610bca3c5852c145562fd235c13c1856fb00991a29221e97bc1c5b8aaeea6f",
+      "sha256_file": "/artifacts/servicii__aio__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "servicii/consulting/index.html",
+      "sha256": "417283f5b6b77264a4859c70a6c6100e95514f756c0e2b2627ece679896d4123",
+      "sha256_file": "/artifacts/servicii__consulting__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "servicii/custom-ai/index.html",
+      "sha256": "0277a63b012fd801c726e6bff44db9316f7b3fac6cc546ade60178a1ecf8b8aa",
+      "sha256_file": "/artifacts/servicii__custom-ai__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "servicii/eu-ai-act/index.html",
+      "sha256": "ddb1c932fa880b0118a15a7c99808a1ef3617723d4cbd56bee821de7edc18eda",
+      "sha256_file": "/artifacts/servicii__eu-ai-act__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "servicii/evidence/index.html",
+      "sha256": "c69147db20fab0b1ca86bf04a0eaca41348d731e7cac011d8284ed0536663da7",
+      "sha256_file": "/artifacts/servicii__evidence__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "servicii/geo/index.html",
+      "sha256": "fcdcd9da3720ecb1192f95fcae4af6c7c85042a4bf159de59133439d4931d00b",
+      "sha256_file": "/artifacts/servicii__geo__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "servicii/go-no-go/index.html",
+      "sha256": "609bce8e56ceaa7c80beca36ccb036ee3f28d44367e1d866eaf3c439968a8f25",
+      "sha256_file": "/artifacts/servicii__go-no-go__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "servicii/implementation/index.html",
+      "sha256": "d66c7942dc3d9780a6ffb32bca8e4c5501299fcc4833ffec18c8df54acc9ad28",
+      "sha256_file": "/artifacts/servicii__implementation__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "servicii/index.html",
+      "sha256": "7f5f9848665c7e1f77165975ec38da0cac4295a86ae4a727cfff788f21ec4dd1",
+      "sha256_file": "/artifacts/servicii__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "servicii/master-context/index.html",
+      "sha256": "05deb7042efae1f7545fa910c50be782589b93d8c41138ce902f59d9ca92f2b8",
+      "sha256_file": "/artifacts/servicii__master-context__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "servicii/quote-order/index.html",
+      "sha256": "11a45a31b17a8499ec55f56610e287528055d3ba09897364474543056e8c8389",
+      "sha256_file": "/artifacts/servicii__quote-order__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "servicii/request-qualification/index.html",
+      "sha256": "eab397fac3b92e67c3fe1e05385cc9cb4ef27fc1b307c753fc09ecd28c112ae0",
+      "sha256_file": "/artifacts/servicii__request-qualification__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "servicii/rrvi/index.html",
+      "sha256": "495a16e7bb190e72766163769f6d1cf91202c8a82177d515b1a67aeccfb396de",
+      "sha256_file": "/artifacts/servicii__rrvi__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "servicii/rrvi-jurisdiction-packs/index.html",
+      "sha256": "2fcdee36f2a93ff80ae238dff136f103392f6451e85905947e94803494332f16",
+      "sha256_file": "/artifacts/servicii__rrvi-jurisdiction-packs__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "servicii/seo/index.html",
+      "sha256": "f8d7e28bd231ef9151dce9abfb252dd18a81663a95d8719f1d7ffff81e9b1f6c",
+      "sha256_file": "/artifacts/servicii__seo__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "servicii/service-offer-contract/index.html",
+      "sha256": "38a0b49599a58b811dbc37a49ed03e428f8416160a202f8ce58b88e3def6c211",
+      "sha256_file": "/artifacts/servicii__service-offer-contract__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "signal-assessment-core167.json",
+      "sha256": "a1e8c4f4e05ec3d6d57a1eb5ce0ee26e447f5e73089096ff51ade4754bc7af91",
+      "sha256_file": "/artifacts/signal-assessment-core167.json.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "signal-assessment.json",
+      "sha256": "f182e18bd3d5cad2c4e28c7ca97a63f78cdf4d31225ccf5094363577b5a25673",
+      "sha256_file": "/artifacts/signal-assessment.json.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "signals-catalog.json",
+      "sha256": "b93920c007d3917ff104c24112d7469766dfada875c6b4dea22dff986f6b2377",
+      "sha256_file": "/artifacts/signals-catalog.json.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "site.webmanifest",
+      "sha256": "265f2dc996b7fba582388aa3997a818d1a1542e880f6d2f91c1848e6c8f904f6",
+      "sha256_file": "/artifacts/site.webmanifest.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "sitemap.xml",
+      "sha256": "b7db505ec1a07155fdd7e4f631f312410377a5b6406cc6a1e7eab620dd8c67dc",
+      "sha256_file": "/artifacts/sitemap.xml.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "termeni-si-conditii/index.html",
+      "sha256": "821cbb01157ca1645ee7a7c1aba970e57222f1d36934c2bfa40c85d42a6078ae",
+      "sha256_file": "/artifacts/termeni-si-conditii__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "three-webs/index.html",
+      "sha256": "fdb8f32371689d5bbfb2dcffa4f0024b3e6049bb053f8b3b0cb10c957643a8aa",
+      "sha256_file": "/artifacts/three-webs__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "viziune/index.html",
+      "sha256": "fae2df1e71e0844fd524c933349f48cb819a403627075ab2c225d26c233893a2",
+      "sha256_file": "/artifacts/viziune__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    }
+  ]
+}

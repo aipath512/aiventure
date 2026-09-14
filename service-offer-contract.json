@@ -1,16 +1,15 @@
 {
   "schema": "AIVENTURE_SERVICE_OFFER_CONTRACT",
-  "version": "2.0",
-  "session": "0002H",
+  "version": "3.0",
+  "session": "0003H",
+  "generated_at": "2026-09-14T04:18:00+03:00",
   "document_id": "AIV-SOC-CANONICAL-0001",
   "entity_id": "E_SOC_AGENT_READY_B2B_V1_0",
   "name": "Service Offer Contract™",
-  "definition": "Sursa unică, versionată, de adevăr comercial, operațional și machine-readable pentru o ofertă de servicii.",
+  "definition": "Sursa unică și versionată de adevăr comercial, operațional și machine-readable pentru o ofertă de servicii.",
   "status": "DRAFT",
   "offer_version": "1.0",
-  "updated_at": "2026-09-13",
-  "valid_from": null,
-  "valid_until": null,
+  "updated_at": "2026-09-14T04:18:00+03:00",
   "provider": {
     "id": "E_ORG_AIVENTURE",
     "name": "AiVenture S.R.L."
@@ -21,7 +20,6 @@
     "uri": "https://aiventure.ro/service.json"
   },
   "audience": {
-    "id": "E_AUDIENCE_B2B",
     "status": "GENERIC_UNTIL_CONCRETE_SERVICE_DEFINED"
   },
   "eligibility": {

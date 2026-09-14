@@ -1,7 +1,7 @@
 {
   "schema": "AIVENTURE_SIGNAL_ASSESSMENT_INDEX",
   "version": "2.0",
-  "session": "0002H",
+  "session": "0003H",
   "generated_at": "2026-09-13",
   "status_model": [
     "PASS",
@@ -33,7 +33,7 @@
       "url": "https://aiventure.ro/onsite-signal-assessment.json",
       "deployment_status": "REQUIRES_PUBLIC_VERIFICATION",
       "source_sha256": "995693ff6f0a945ce5b88de87c555f8c9c7fe7435f5e98afe6cc19004363ba4f",
-      "session": "0002H",
+      "session": "0003H",
       "status_note": "Template inițial. UNKNOWN până la deploy și verificare publică."
     },
     {

@@ -1,7 +1,7 @@
 {
   "schema": "AIVENTURE_167_SIGNAL_ASSESSMENT",
   "version": "1.0",
-  "session": "0002H",
+  "session": "0003H",
   "generated_at": "2026-09-12T15:17:00+03:00",
   "domain": "https://aiventure.ro/",
   "total_signals": 167,
@@ -21,7 +21,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S002",
@@ -31,7 +31,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S003",
@@ -41,7 +41,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S004",
@@ -51,7 +51,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S005",
@@ -61,7 +61,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S006",
@@ -71,7 +71,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S007",
@@ -81,7 +81,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S008",
@@ -91,7 +91,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S009",
@@ -101,7 +101,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S010",
@@ -111,7 +111,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S011",
@@ -121,7 +121,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S012",
@@ -131,7 +131,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S013",
@@ -141,7 +141,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S014",
@@ -151,7 +151,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S015",
@@ -161,7 +161,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S016",
@@ -171,7 +171,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S017",
@@ -181,7 +181,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S018",
@@ -191,7 +191,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S019",
@@ -201,7 +201,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S020",
@@ -211,7 +211,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S021",
@@ -221,7 +221,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S022",
@@ -231,7 +231,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S023",
@@ -241,7 +241,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S024",
@@ -251,7 +251,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S025",
@@ -261,7 +261,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S026",
@@ -271,7 +271,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S027",
@@ -281,7 +281,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S028",
@@ -291,7 +291,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S029",
@@ -301,7 +301,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S030",
@@ -311,7 +311,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S031",
@@ -321,7 +321,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S032",
@@ -331,7 +331,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S033",
@@ -341,7 +341,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S034",
@@ -351,7 +351,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S035",
@@ -361,7 +361,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S036",
@@ -371,7 +371,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S037",
@@ -381,7 +381,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S038",
@@ -391,7 +391,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S039",
@@ -401,7 +401,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S040",
@@ -411,7 +411,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S041",
@@ -421,7 +421,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S042",
@@ -431,7 +431,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S043",
@@ -441,7 +441,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S044",
@@ -451,7 +451,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S045",
@@ -461,7 +461,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S046",
@@ -471,7 +471,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S047",
@@ -481,7 +481,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S048",
@@ -491,7 +491,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S049",
@@ -501,7 +501,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S050",
@@ -511,7 +511,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S051",
@@ -521,7 +521,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S052",
@@ -531,7 +531,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S053",
@@ -541,7 +541,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S054",
@@ -551,7 +551,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S055",
@@ -561,7 +561,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S056",
@@ -571,7 +571,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S057",
@@ -581,7 +581,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S058",
@@ -591,7 +591,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S059",
@@ -601,7 +601,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S060",
@@ -611,7 +611,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S061",
@@ -621,7 +621,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S062",
@@ -631,7 +631,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S063",
@@ -641,7 +641,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S064",
@@ -651,7 +651,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S065",
@@ -661,7 +661,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S066",
@@ -671,7 +671,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S067",
@@ -681,7 +681,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S068",
@@ -691,7 +691,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S069",
@@ -701,7 +701,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S070",
@@ -711,7 +711,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S071",
@@ -721,7 +721,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S072",
@@ -731,7 +731,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S073",
@@ -741,7 +741,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S074",
@@ -751,7 +751,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S075",
@@ -761,7 +761,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S076",
@@ -771,7 +771,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S077",
@@ -781,7 +781,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S078",
@@ -791,7 +791,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S079",
@@ -801,7 +801,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S080",
@@ -811,7 +811,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S081",
@@ -821,7 +821,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S082",
@@ -831,7 +831,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S083",
@@ -841,7 +841,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S084",
@@ -851,7 +851,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S085",
@@ -861,7 +861,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S086",
@@ -871,7 +871,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S087",
@@ -881,7 +881,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S088",
@@ -891,7 +891,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S089",
@@ -901,7 +901,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S090",
@@ -911,7 +911,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S091",
@@ -921,7 +921,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S092",
@@ -931,7 +931,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S093",
@@ -941,7 +941,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S094",
@@ -951,7 +951,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S095",
@@ -961,7 +961,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S096",
@@ -971,7 +971,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S097",
@@ -981,7 +981,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S098",
@@ -991,7 +991,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S099",
@@ -1001,7 +1001,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S100",
@@ -1011,7 +1011,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S101",
@@ -1021,7 +1021,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S102",
@@ -1031,7 +1031,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S103",
@@ -1041,7 +1041,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S104",
@@ -1051,7 +1051,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S105",
@@ -1061,7 +1061,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S106",
@@ -1071,7 +1071,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S107",
@@ -1081,7 +1081,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S108",
@@ -1091,7 +1091,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S109",
@@ -1101,7 +1101,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S110",
@@ -1111,7 +1111,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S111",
@@ -1121,7 +1121,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S112",
@@ -1131,7 +1131,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S113",
@@ -1141,7 +1141,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S114",
@@ -1151,7 +1151,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S115",
@@ -1161,7 +1161,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S116",
@@ -1171,7 +1171,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S117",
@@ -1181,7 +1181,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S118",
@@ -1191,7 +1191,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S119",
@@ -1201,7 +1201,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S120",
@@ -1211,7 +1211,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S121",
@@ -1221,7 +1221,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S122",
@@ -1231,7 +1231,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S123",
@@ -1241,7 +1241,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S124",
@@ -1251,7 +1251,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S125",
@@ -1261,7 +1261,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S126",
@@ -1271,7 +1271,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S127",
@@ -1281,7 +1281,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S128",
@@ -1291,7 +1291,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S129",
@@ -1301,7 +1301,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S130",
@@ -1311,7 +1311,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S131",
@@ -1321,7 +1321,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S132",
@@ -1331,7 +1331,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S133",
@@ -1341,7 +1341,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S134",
@@ -1351,7 +1351,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S135",
@@ -1361,7 +1361,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S136",
@@ -1371,7 +1371,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S137",
@@ -1381,7 +1381,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S138",
@@ -1391,7 +1391,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S139",
@@ -1401,7 +1401,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S140",
@@ -1411,7 +1411,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S141",
@@ -1421,7 +1421,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S142",
@@ -1431,7 +1431,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S143",
@@ -1441,7 +1441,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S144",
@@ -1451,7 +1451,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S145",
@@ -1461,7 +1461,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S146",
@@ -1471,7 +1471,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S147",
@@ -1481,7 +1481,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S148",
@@ -1491,7 +1491,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S149",
@@ -1501,7 +1501,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S150",
@@ -1511,7 +1511,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S151",
@@ -1521,7 +1521,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S152",
@@ -1531,7 +1531,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S153",
@@ -1541,7 +1541,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S154",
@@ -1551,7 +1551,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S155",
@@ -1561,7 +1561,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S156",
@@ -1571,7 +1571,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S157",
@@ -1581,7 +1581,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S158",
@@ -1591,7 +1591,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S159",
@@ -1601,7 +1601,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S160",
@@ -1611,7 +1611,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S161",
@@ -1621,7 +1621,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S162",
@@ -1631,7 +1631,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S163",
@@ -1641,7 +1641,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S164",
@@ -1651,7 +1651,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S165",
@@ -1661,7 +1661,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S166",
@@ -1671,7 +1671,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     },
     {
       "id": "S167",
@@ -1681,7 +1681,7 @@
       "ere_reference": [],
       "source_urls": [],
       "verified_at": null,
-      "session": "0002H"
+      "session": "0003H"
     }
   ]
 }

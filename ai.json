@@ -1,11 +1,10 @@
 {
   "schema": "AIVENTURE_AI_DISCOVERY",
-  "version": "4.1",
-  "session": "0002H",
-  "generated_at": "2026-09-13",
+  "version": "5.6",
+  "session": "0003H",
+  "generated_at": "2026-09-14T06:11:00+03:00",
   "canonical": "https://aiventure.ro/",
   "language": "ro",
-  "market": "România",
   "organization": {
     "id": "E_ORG_AIVENTURE",
     "canonical_uri": "https://aiventure.ro/#organization",
@@ -29,7 +28,7 @@
   },
   "primary_service": {
     "id": "E_SERVICE_AGENT_READY_B2B",
-    "canonical_uri": "https://aiventure.ro/servicii/agent-ready-b2b/#service",
+    "uri": "https://aiventure.ro/servicii/agent-ready-b2b/#service",
     "name": "Agent-Ready B2B Services",
     "definition": "Transformarea unui serviciu B2B existent într-o ofertă structurată, versionată, verificabilă și guvernată, pregătită să fie găsită, comparată, solicitată și progresiv cumpărată de Agenți AI."
   },
@@ -55,11 +54,12 @@
       "L4_QUOTE",
       "L5_ORDER"
     ],
+    "default_max_level": "L3_REQUEST",
     "rules": [
-      "Fără regulă explicită → fără autonomie.",
-      "Fără jurisdicție identificată → fără acțiune sensibilă.",
-      "Fără aprobare unde este necesară → fără angajament comercial.",
-      "Fără Evidence → fără dovada deciziei."
+      "No rule → no autonomy.",
+      "No jurisdiction resolution → no sensitive action.",
+      "No required approval → no commercial commitment.",
+      "No Evidence → no proof of decision."
     ]
   },
   "machine_readable": {
@@ -67,15 +67,23 @@
     "intents": "https://aiventure.ro/intents.json",
     "service": "https://aiventure.ro/service.json",
     "service_offer_contract": "https://aiventure.ro/service-offer-contract.json",
-    "governance": "https://aiventure.ro/governance.json",
-    "rrvi": "https://aiventure.ro/rrvi.json",
-    "proof": "https://aiventure.ro/proof.json",
-    "evidence": "https://aiventure.ro/evidence.json",
-    "ere_dictionary": "https://aiventure.ro/ere-dictionary.json",
-    "signals_catalog": "https://aiventure.ro/signals-catalog.json",
-    "signal_assessment": "https://aiventure.ro/signal-assessment.json",
+    "capabilities": "https://aiventure.ro/capabilities.json",
     "agent_card": "https://aiventure.ro/.well-known/agent-card.json",
-    "onsite_signals_catalog": "https://aiventure.ro/onsite-signals-catalog.json",
-    "onsite_signal_assessment": "https://aiventure.ro/onsite-signal-assessment.json"
+    "governance": "https://aiventure.ro/governance.json",
+    "policy": "https://aiventure.ro/policy.json",
+    "authority": "https://aiventure.ro/authority.json",
+    "rrvi": "https://aiventure.ro/rrvi.json",
+    "allow_lane_matrix": "https://aiventure.ro/allow-lane-matrix.json",
+    "evidence": "https://aiventure.ro/evidence.json",
+    "proof": "https://aiventure.ro/proof.json",
+    "ere_dictionary": "https://aiventure.ro/ere-dictionary.json",
+    "ai_signals": "https://aiventure.ro/ai-signals.json",
+    "cross_surface_consistency": "https://aiventure.ro/cross-surface-consistency.json",
+    "sha256_manifest": "https://aiventure.ro/sha256-manifest.json",
+    "ots_queue": "https://aiventure.ro/ots-queue.json",
+    "digital_dna": "https://aiventure.ro/digital-dna.json",
+    "adn": "https://aiventure.ro/adn.json",
+    "ere_dictionary_page": "https://aiventure.ro/dictionar/",
+    "faq_hub": "https://aiventure.ro/faq-hub.html"
   }
 }

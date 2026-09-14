@@ -1,7 +1,7 @@
 {
   "schema": "AIVENTURE_ONPAGE_SIGNALS",
   "version": "1.0",
-  "session": "0002H",
+  "session": "0003H",
   "scope": "all_public_pages",
   "domain": "https://aiventure.ro/",
   "total_signals": 252,
@@ -415,7 +415,7 @@
       "id": "OP030",
       "family": "meta_head",
       "name": "Session metadata",
-      "check": "SESSION 0002H este prezentă în metadata.",
+      "check": "SESSION 0003H este prezentă în metadata.",
       "scope": "per-page",
       "status_model": [
         "PASS",
@@ -454,7 +454,7 @@
       "id": "OP033",
       "family": "page_structure",
       "name": "Header session visible",
-      "check": "SESSION 0002H este vizibil în header.",
+      "check": "SESSION 0003H este vizibil în header.",
       "scope": "per-page",
       "status_model": [
         "PASS",

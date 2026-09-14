@@ -1,0 +1,21 @@
+{
+  "schema": "AIVENTURE_PROVENANCE",
+  "version": "1.0",
+  "session": "0003H",
+  "generated_at": "2026-09-14T04:18:00+03:00",
+  "canonical_build": "SESSION 0003H",
+  "source_build": "aiventure-COMPLETE-SITE-SESSION-0003H-20260914-0332.zip",
+  "intents_source": "intents_v3.json",
+  "freshness_policy": {
+    "machine_readable_files": "versioned and timestamped",
+    "proof": "no VERIFIED status without exact-file verification",
+    "content": "page-specific metadata plus session/build timestamp"
+  },
+  "proof_layer": {
+    "sha256_manifest": "https://aiventure.ro/sha256-manifest.json",
+    "ots_queue": "https://aiventure.ro/ots-queue.json",
+    "sha256_artifact_count": 25,
+    "ots_target_count": 6,
+    "ots_status": "PENDING"
+  }
+}
