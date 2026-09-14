@@ -1,0 +1,137 @@
+<!doctype html><html lang="ro"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AIO — AI Optimization | AiVenture</title>
+<meta name="description" content="31 semnale AIO pentru a măsura dacă oferta firmei poate fi interpretată, rezumată, citată, comparată și utilizată de modele AI.">
+<link rel="canonical" href="https://aiventure.ro/servicii/aio/"><meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<style>
+body{margin:0;font-family:Arial,sans-serif;color:#111;background:#fff;line-height:1.55}.container{width:min(1180px,calc(100% - 34px));margin:auto}
+.aiv-sessionbar{background:#111;color:#fff;padding:8px 0;font:700 11px monospace}header{border-bottom:1px solid #ddd;padding:18px 0}nav a{margin-right:16px;color:#111;text-decoration:none}
+.hero,section{padding:48px 0;border-bottom:1px solid #e7e4dc}h1{font-size:clamp(42px,6vw,72px);line-height:1;margin:.2em 0}h2{font-size:28px}.lead{font-size:20px;color:#555;max-width:900px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.card{border:1px solid #ddd;border-radius:12px;padding:20px}.kicker{font:700 11px monospace;color:#92730c}
+table{width:100%;border-collapse:collapse}th,td{padding:10px;text-align:left;border-bottom:1px solid #ddd;vertical-align:top}details{padding:14px 0;border-top:1px solid #ddd}summary{font-weight:700}
+footer{padding:38px 0;background:#f7f7f4}.footergrid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+@media(max-width:800px){.grid,.footergrid{grid-template-columns:1fr}}
+</style><meta name="author" content="AiVenture S.R.L.">
+<meta name="application-name" content="AiVenture">
+<meta name="theme-color" content="#ffffff">
+<link rel="alternate" hreflang="ro" href="https://aiventure.ro/servicii/aio/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AiVenture">
+<meta property="og:locale" content="ro_RO">
+<meta property="og:title" content="AIO — AI Optimization | AiVenture">
+<meta property="og:description" content="31 semnale AIO pentru a măsura dacă oferta firmei poate fi interpretată, rezumată, citată, comparată și utilizată de modele AI.">
+<meta property="og:url" content="https://aiventure.ro/servicii/aio/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="AIO — AI Optimization | AiVenture">
+<meta name="twitter:description" content="31 semnale AIO pentru a măsura dacă oferta firmei poate fi interpretată, rezumată, citată, comparată și utilizată de modele AI.">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","name":"AIO — AI Optimization","url":"https://aiventure.ro/servicii/aio/","inLanguage":"ro"},{"@type":"Service","name":"AIO — AI Optimization","provider":{"@type":"Organization","name":"AiVenture S.R.L.","url":"https://aiventure.ro/"},"description":"Măsoară dacă site-ul și serviciile sunt ușor de interpretat, rezumat, citat, comparat și utilizat de modele AI."},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Ce este AIO?","acceptedAnswer":{"@type":"Answer","text":"AIO — AI Optimization măsoară cât de ușor poate un model AI să interpreteze, rezume, citeze, compare și utilizeze informația comercială."}},{"@type":"Question","name":"Este AIO același lucru cu SEO?","acceptedAnswer":{"@type":"Answer","text":"Nu. SEO urmărește în principal descoperirea și performanța în motoarele de căutare; AIO urmărește interpretarea și utilizarea informației de modele AI."}},{"@type":"Question","name":"Este AIO același lucru cu AEO?","acceptedAnswer":{"@type":"Answer","text":"Nu. AEO urmărește capacitatea de a răspunde la întrebări; AIO acoperă și identitatea, oferta, dovezile, comparația și actionability."}},{"@type":"Question","name":"Este AIO același lucru cu GEO?","acceptedAnswer":{"@type":"Answer","text":"Nu. GEO urmărește vizibilitatea și citabilitatea în sisteme generative; AIO verifică mai larg dacă modelul comercial este reconstructibil de AI."}},{"@type":"Question","name":"Câte semnale AIO folosește AiVenture?","acceptedAnswer":{"@type":"Answer","text":"Setul canonic curent conține 31 de semnale, AIO001–AIO031."}},{"@type":"Question","name":"Cum se calculează scorul AIO?","acceptedAnswer":{"@type":"Answer","text":"PASS=1, PARTIAL=0.5, FAIL=0, iar NA este exclus din numitor. Familiile au ponderi care însumează 100%."}},{"@type":"Question","name":"Care este familia cu ponderea cea mai mare?","acceptedAnswer":{"@type":"Answer","text":"Offer Structure are 25%, deoarece un Agent sau model AI trebuie să poată reconstrui oferta concretă."}},{"@type":"Question","name":"Ce verifică AIO031?","acceptedAnswer":{"@type":"Answer","text":"Dacă un model AI poate reconstrui complet oferta și lifecycle-ul comercial fără presupuneri majore."}},{"@type":"Question","name":"Ce legătură are AIO cu RRVI?","acceptedAnswer":{"@type":"Answer","text":"RRVI contribuie la claritatea limitelor de acțiune și a escaladării umane, în special AIO029 și AIO030."}},{"@type":"Question","name":"Ce legătură are AIO cu Evidence?","acceptedAnswer":{"@type":"Answer","text":"Evidence susține legătura dintre afirmații și dovezi, prospețimea dovezilor și citation readiness."}}],"@id":"https://aiventure.ro/servicii/aio/#webpage","url":"https://aiventure.ro/servicii/aio/","name":"AIO — AI Optimization | AiVenture","description":"31 semnale AIO pentru a măsura dacă oferta firmei poate fi interpretată, rezumată, citată, comparată și utilizată de modele AI.","isPartOf":{"@id":"https://aiventure.ro/#website"},"about":{"@id":"https://aiventure.ro/servicii/agent-ready-b2b/#service"},"mentions":[{"@id":"https://aiventure.ro/#service-offer-contract"},{"@id":"https://aiventure.ro/#rrvi"},{"@id":"https://aiventure.ro/#evidence"},{"@id":"https://aiventure.ro/#a2a"}],"publisher":{"@id":"https://aiventure.ro/#organization"},"inLanguage":"ro","dateModified":"2026-09-14","copyrightHolder":{"@id":"https://aiventure.ro/#organization"},"copyrightYear":2026,"isAccessibleForFree":true},{"@type":"Organization","@id":"https://aiventure.ro/#organization","name":"AiVenture S.R.L.","legalName":"AiVenture S.R.L.","alternateName":"AiVenture","url":"https://aiventure.ro/","email":"contact@5thelement.ai","telephone":"+40 737 123 540","description":"AiVenture transformă servicii B2B existente în servicii Agent-Ready pentru Human Web, Web-AI și A2A Web.","slogan":"Omul caută. AI-ul recomandă. Agentul acționează.","brand":{"@id":"https://aiventure.ro/#brand"},"contactPoint":{"@type":"ContactPoint","contactType":"business inquiries","email":"contact@5thelement.ai","telephone":"+40 737 123 540","url":"https://aiventure.ro/contact/"}},{"@type":"Brand","@id":"https://aiventure.ro/#brand","name":"AiVenture","url":"https://aiventure.ro/"},{"@type":"WebSite","@id":"https://aiventure.ro/#website","url":"https://aiventure.ro/","name":"AiVenture","description":"Agent-Ready B2B Services · A2A Business Infrastructure","publisher":{"@id":"https://aiventure.ro/#organization"},"about":{"@id":"https://aiventure.ro/servicii/agent-ready-b2b/#service"},"inLanguage":"ro","copyrightHolder":{"@id":"https://aiventure.ro/#organization"},"copyrightYear":2026},{"@type":"Service","@id":"https://aiventure.ro/servicii/agent-ready-b2b/#service","name":"Agent-Ready B2B Services","serviceType":"Agent-Ready B2B Services","category":"Agent-Ready B2B Services","description":"Transformarea unui serviciu B2B existent într-o ofertă structurată, versionată, verificabilă și guvernată pentru Discover, Compare, Request și acțiuni progresiv autorizate.","provider":{"@id":"https://aiventure.ro/#organization"},"areaServed":{"@type":"Country","name":"România"},"serviceAudience":{"@type":"BusinessAudience","audienceType":"B2B organizations"},"url":"https://aiventure.ro/servicii/agent-ready-b2b/"},{"@type":"DefinedTermSet","@id":"https://aiventure.ro/#agent-ready-terms","name":"AiVenture Agent-Ready Terms","description":"Termeni canonici folosiți în modelul AiVenture Agent-Ready B2B Services.","url":"https://aiventure.ro/","inLanguage":"ro"},{"@type":"DefinedTerm","@id":"https://aiventure.ro/#service-offer-contract","name":"Service Offer Contract™","description":"Sursa unică și versionată de adevăr comercial, operațional și machine-readable pentru o ofertă de servicii.","url":"https://aiventure.ro/service-offer-contract/","inDefinedTermSet":{"@id":"https://aiventure.ro/#agent-ready-terms"}},{"@type":"DefinedTerm","@id":"https://aiventure.ro/#rrvi","name":"RRVI™","description":"Poarta de verificare pentru reglementare, jurisdicție, permisiuni, autonomie și aprobări înainte de acțiuni sensibile.","url":"https://aiventure.ro/rrvi/","inDefinedTermSet":{"@id":"https://aiventure.ro/#agent-ready-terms"}},{"@type":"DefinedTerm","@id":"https://aiventure.ro/#evidence","name":"Evidence","description":"Dovada versiunii ofertei, regulii aplicate, actorului, deciziei, aprobării și rezultatului.","url":"https://aiventure.ro/inovatii/verificare/","inDefinedTermSet":{"@id":"https://aiventure.ro/#agent-ready-terms"}},{"@type":"DefinedTerm","@id":"https://aiventure.ro/#a2a","name":"A2A — Agent-to-Agent","description":"Interacțiune structurată între Agenți pentru discovery, request și acțiuni autorizate.","url":"https://aiventure.ro/a2a/","inDefinedTermSet":{"@id":"https://aiventure.ro/#agent-ready-terms"}}]}</script>
+
+<meta name="aiventure-session" content="0003H">
+<meta name="aiventure-build-timestamp" content="2026-09-14T06:11:00+03:00">
+</head><body>
+
+<!-- GLOBAL HEADER · SESSION 0003H -->
+<header id="aiv-global-header" style="background:#050505;color:#fff;border-bottom:1px solid #292929;">
+  <div class="aiv-global-container" style="width:min(1180px,calc(100% - 36px));margin:auto;">
+    <div style="display:flex;align-items:center;justify-content:space-between;gap:18px;padding:14px 0;flex-wrap:wrap;">
+      <a href="/" style="display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-weight:900;">
+        <span style="display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;background:#14b8a6;color:#052a33;">AI</span>
+        <span>AiVenture <small style="display:block;color:#8b949e;font-size:10px;letter-spacing:.08em;">A2A BUSINESS INFRASTRUCTURE</small></span>
+      </a>
+      <nav aria-label="Navigație principală" style="display:flex;gap:14px;flex-wrap:wrap;font-size:13px;">
+        <a href="/" style="color:#ddd">Home</a>
+        <a href="/servicii/" style="color:#ddd">Servicii</a>
+        <a href="/produse/" style="color:#ddd">Produse</a>
+        <a href="/intrebari/" style="color:#ddd">Întrebări</a>
+        <a href="/faq-hub.html" style="color:#ddd">FAQ Hub</a>
+        <a href="/dictionar/" style="color:#ddd">Dicționar</a>
+        <a href="/contact/" style="color:#ddd">Contact</a>
+      </nav>
+      <span style="font:800 11px/1.2 ui-monospace,SFMono-Regular,Menlo,monospace;color:#5eead4;white-space:nowrap;">
+        SESSION 0003H · 2026-09-14 06:11 EEST
+      </span>
+    </div>
+  </div>
+</header>
+
+<div class="aiv-sessionbar"><div class="container">SESSION 0003H · 2026-09-13</div></div>
+<main><section class="hero"><div class="container"><div class="kicker">AIO · AI OPTIMIZATION · 31 SIGNALS</div><h1>AIO — AI Optimization</h1><p class="lead">Măsoară dacă site-ul și serviciile sunt ușor de interpretat, rezumat, citat, comparat și utilizat de modele AI.</p><p><strong>SEO ≠ AEO ≠ GEO ≠ AIO ≠ AI Signals.</strong> AIO este stratul dedicat înțelegerii și utilizării comerciale de către AI.</p></div></section>
+<section><div class="container"><h2>6 familii · 100%</h2><div class="grid"><article class='card'><div class='kicker'>A · 20%</div><h2>Identity & Positioning</h2><p>AIO001, AIO002, AIO003, AIO004, AIO005, AIO006, AIO007, AIO008, AIO009, AIO010</p></article><article class='card'><div class='kicker'>B · 25%</div><h2>Offer Structure</h2><p>AIO011, AIO012, AIO013, AIO014, AIO015, AIO016, AIO017, AIO018, AIO019</p></article><article class='card'><div class='kicker'>C · 20%</div><h2>Consistency & Evidence</h2><p>AIO020, AIO021, AIO022</p></article><article class='card'><div class='kicker'>D · 15%</div><h2>Answerability & Intent Coverage</h2><p>AIO023, AIO024, AIO025</p></article><article class='card'><div class='kicker'>E · 10%</div><h2>Comparison & Citation</h2><p>AIO026, AIO027</p></article><article class='card'><div class='kicker'>F · 10%</div><h2>Agentic Understanding & Actionability</h2><p>AIO028, AIO029, AIO030, AIO031</p></article></div></div></section>
+<section><div class="container"><h2>AIO001–AIO031</h2><table><thead><tr><th>ID</th><th>Semnal</th><th>Ce verifică</th></tr></thead><tbody><tr><td><strong>AIO001</strong></td><td>AI-readable primary proposition</td><td>Propunerea principală poate fi înțeleasă fără ambiguitate</td></tr><tr><td><strong>AIO002</strong></td><td>Canonical business identity</td><td>AI poate identifica exact cine este AiVenture</td></tr><tr><td><strong>AIO003</strong></td><td>Canonical category definition</td><td>Categoria Agent-Ready B2B Services este explicit definită</td></tr><tr><td><strong>AIO004</strong></td><td>Canonical product definition</td><td>Produsul principal este explicat într-o propoziție clară</td></tr><tr><td><strong>AIO005</strong></td><td>Primary audience clarity</td><td>Este clar cui se adresează serviciul</td></tr><tr><td><strong>AIO006</strong></td><td>Problem clarity</td><td>Problema rezolvată este exprimată explicit</td></tr><tr><td><strong>AIO007</strong></td><td>Outcome clarity</td><td>Rezultatul promis este explicit</td></tr><tr><td><strong>AIO008</strong></td><td>Differentiator clarity</td><td>Diferențiatorii sunt formulați explicit, nu implicit</td></tr><tr><td><strong>AIO009</strong></td><td>Negative positioning clarity</td><td>Este explicit ce NU oferă AiVenture</td></tr><tr><td><strong>AIO010</strong></td><td>Service-level granularity</td><td>AI poate separa firma de serviciile individuale</td></tr><tr><td><strong>AIO011</strong></td><td>Structured service definition</td><td>Fiecare serviciu are câmpuri structurabile clare</td></tr><tr><td><strong>AIO012</strong></td><td>Offer completeness</td><td>Oferta conține rezultat, livrabile, excluderi, termene, condiții</td></tr><tr><td><strong>AIO013</strong></td><td>Eligibility clarity</td><td>AI poate determina cine este eligibil</td></tr><tr><td><strong>AIO014</strong></td><td>Ineligibility clarity</td><td>AI poate determina cine nu este eligibil</td></tr><tr><td><strong>AIO015</strong></td><td>Geography clarity</td><td>Teritoriul și jurisdicția sunt explicite</td></tr><tr><td><strong>AIO016</strong></td><td>Language clarity</td><td>Limba serviciului este explicită</td></tr><tr><td><strong>AIO017</strong></td><td>Pricing clarity</td><td>Prețul sau regula de calcul este explicită</td></tr><tr><td><strong>AIO018</strong></td><td>Availability clarity</td><td>Disponibilitatea și capacitatea pot fi determinate</td></tr><tr><td><strong>AIO019</strong></td><td>Version freshness</td><td>AI poate vedea versiunea și data actualizării</td></tr><tr><td><strong>AIO020</strong></td><td>Source-of-truth consistency</td><td>Site, Schema.org, service.json, Agent Card și API nu se contrazic</td></tr><tr><td><strong>AIO021</strong></td><td>Claim-to-evidence linkage</td><td>Afirmațiile importante au dovezi asociate</td></tr><tr><td><strong>AIO022</strong></td><td>Evidence freshness</td><td>Dovezile sunt actualizate și versionate</td></tr><tr><td><strong>AIO023</strong></td><td>FAQ answerability</td><td>Întrebările comerciale principale au răspunsuri directe</td></tr><tr><td><strong>AIO024</strong></td><td>Intent coverage</td><td>Cele 50 TOF/MOF/BOF sunt acoperite semantic</td></tr><tr><td><strong>AIO025</strong></td><td>Conversational answer formatting</td><td>Conținutul permite răspunsuri scurte, clare, extragibile</td></tr><tr><td><strong>AIO026</strong></td><td>Comparison readiness</td><td>Serviciul poate fi comparat după dimensiuni explicite</td></tr><tr><td><strong>AIO027</strong></td><td>Citation readiness</td><td>Informațiile importante sunt ușor de citat și atribuit</td></tr><tr><td><strong>AIO028</strong></td><td>Entity relationship clarity</td><td>Relațiile firmă → serviciu → ofertă → RRVI → Evidence sunt explicite</td></tr><tr><td><strong>AIO029</strong></td><td>AI action boundary clarity</td><td>AI poate determina ce acțiuni sunt permise/interzise</td></tr><tr><td><strong>AIO030</strong></td><td>Human escalation clarity</td><td>Este explicit când trebuie intervenție umană</td></tr><tr><td><strong>AIO031</strong></td><td>Machine-reconstructible commercial model</td><td>Un model AI poate reconstrui complet oferta și lifecycle-ul fără presupuneri majore</td></tr></tbody></table></div></section>
+<section><div class="container"><h2>Scoring</h2><p><strong>PASS = 1 · PARTIAL = 0.5 · FAIL = 0 · NA = exclus din numitor.</strong></p><p>Identity & Positioning 20% · Offer Structure 25% · Consistency & Evidence 20% · Answerability & Intent 15% · Comparison & Citation 10% · Agentic Actionability 10%.</p></div></section>
+<section><div class="container"><h2>Mapping AiVenture</h2><p>Hero → AIO001, AIO003, AIO004, AIO005 · Ce nu este AiVenture → AIO009 · Service Offer Contract™ → AIO011–AIO019 · RRVI → AIO029–AIO030 · Evidence → AIO021–AIO022, AIO027 · FAQ → AIO023 · intents.json → AIO024 · Schema.org + ERE → AIO028 · lifecycle → AIO031.</p></div></section>
+<section><div class="container"><h2>Întrebări frecvente</h2><details><summary>Ce este AIO?</summary><p>AIO — AI Optimization măsoară cât de ușor poate un model AI să interpreteze, rezume, citeze, compare și utilizeze informația comercială.</p></details><details><summary>Este AIO același lucru cu SEO?</summary><p>Nu. SEO urmărește în principal descoperirea și performanța în motoarele de căutare; AIO urmărește interpretarea și utilizarea informației de modele AI.</p></details><details><summary>Este AIO același lucru cu AEO?</summary><p>Nu. AEO urmărește capacitatea de a răspunde la întrebări; AIO acoperă și identitatea, oferta, dovezile, comparația și actionability.</p></details><details><summary>Este AIO același lucru cu GEO?</summary><p>Nu. GEO urmărește vizibilitatea și citabilitatea în sisteme generative; AIO verifică mai larg dacă modelul comercial este reconstructibil de AI.</p></details><details><summary>Câte semnale AIO folosește AiVenture?</summary><p>Setul canonic curent conține 31 de semnale, AIO001–AIO031.</p></details><details><summary>Cum se calculează scorul AIO?</summary><p>PASS=1, PARTIAL=0.5, FAIL=0, iar NA este exclus din numitor. Familiile au ponderi care însumează 100%.</p></details><details><summary>Care este familia cu ponderea cea mai mare?</summary><p>Offer Structure are 25%, deoarece un Agent sau model AI trebuie să poată reconstrui oferta concretă.</p></details><details><summary>Ce verifică AIO031?</summary><p>Dacă un model AI poate reconstrui complet oferta și lifecycle-ul comercial fără presupuneri majore.</p></details><details><summary>Ce legătură are AIO cu RRVI?</summary><p>RRVI contribuie la claritatea limitelor de acțiune și a escaladării umane, în special AIO029 și AIO030.</p></details><details><summary>Ce legătură are AIO cu Evidence?</summary><p>Evidence susține legătura dintre afirmații și dovezi, prospețimea dovezilor și citation readiness.</p></details></div></section></main>
+
+<!-- ================================
+GLOBAL FOOTER · SESSION 0003H
+================================ -->
+
+<!-- GLOBAL FOOTER · SESSION 0003H -->
+<footer id="global-footer" style="border-top:1px solid #292929;background:#030303;padding:60px 0 30px;color:#fff;">
+  <div class="aiv-global-container" style="width:min(1180px,calc(100% - 36px));margin:auto;">
+    <div class="aiv-footer-grid" style="display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;">
+      <div>
+        <h3 style="font-size:22px;font-weight:950;margin:0 0 15px;color:#fff;">AIVENTURE</h3>
+        <p style="color:#888;line-height:1.7;font-size:14px;max-width:520px;">
+          AiVenture transformă serviciile B2B existente în servicii Agent-Ready pe care AI-urile le pot înțelege,
+          iar Agenții AI le pot descoperi, compara, solicita și utiliza în limite autorizate.
+        </p>
+        <p style="color:#666;line-height:1.6;font-size:12px;margin-top:12px;">Omul caută. AI-ul recomandă. Agentul acționează.</p>
+      </div>
+      <div>
+        <h4 style="font-size:13px;letter-spacing:.12em;color:#fff;margin-bottom:18px;">QUICK LINKS</h4>
+        <ul style="list-style:none;padding:0;margin:0;line-height:2;color:#999;">
+          <li><a href="/">Home</a></li>
+          <li><a href="/produse/">Produse</a></li>
+          <li><a href="/servicii/">Servicii</a></li>
+          <li><a href="/oferta/">Ofertă</a></li>
+          <li><a href="/resurse/">Resurse</a></li>
+          <li><a href="/faq-hub.html">FAQ Hub</a></li>
+          <li><a href="/dictionar/">Dicționar ERE</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="font-size:13px;letter-spacing:.12em;color:#fff;margin-bottom:18px;">MACHINE READABLE</h4>
+        <ul style="list-style:none;padding:0;margin:0;line-height:2;color:#999;">
+          <li><a href="/robots.txt">robots.txt</a></li>
+          <li><a href="/llms.txt">llms.txt</a></li>
+          <li><a href="/ai.json">ai.json</a></li>
+          <li><a href="/adn.json">adn.json</a></li>
+          <li><a href="/digital-dna.json">digital-dna.json</a></li>
+          <li><a href="/entities.json">entities.json</a></li>
+          <li><a href="/intents.json">intents.json</a></li>
+          <li><a href="/service.json">service.json</a></li>
+          <li><a href="/service-offer-contract.json">service-offer-contract.json</a></li>
+          <li><a href="/rrvi.json">rrvi.json</a></li>
+          <li><a href="/proof.json">proof.json</a></li>
+          <li><a href="/evidence.json">evidence.json</a></li>
+          <li><a href="/ere-dictionary.json">ere-dictionary.json</a></li>
+          <li><a href="/sitemap.xml">sitemap.xml</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="font-size:13px;letter-spacing:.12em;color:#fff;margin-bottom:18px;">CONTACT</h4>
+        <ul style="list-style:none;padding:0;margin:0;line-height:2;color:#999;">
+          <li><a href="mailto:contact@5thelement.ai">contact@5thelement.ai</a></li>
+          <li><a href="tel:+40737123540">+40 737 123 540</a></li>
+          <li><a href="https://5thelement.ai">5thelement.ai</a></li>
+          <li><a href="https://3webobs.com">3webobs.com</a></li>
+          <li><a href="https://ai-lens.eu">ai-lens.eu</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="aiv-footer-bottom" style="margin-top:45px;padding-top:25px;border-top:1px solid #292929;display:flex;justify-content:space-between;gap:20px;color:#666;font-size:12px;">
+      <span>© 2026 AiVenture S.R.L. · All rights reserved.</span>
+      <span>SESSION 0003H · 2026-09-14 06:11 EEST</span>
+    </div>
+  </div>
+</footer>
+<style id="aiv-global-shell-style">
+#aiv-global-header a,#global-footer a{text-decoration:none}
+#global-footer a{color:#999} #global-footer a:hover,#aiv-global-header a:hover{color:#fff;text-decoration:underline}
+@media(max-width:900px){#global-footer .aiv-footer-grid{grid-template-columns:1fr 1fr !important;}}
+@media(max-width:600px){#global-footer .aiv-footer-grid{grid-template-columns:1fr !important;}#global-footer .aiv-footer-bottom{flex-direction:column;}}
+</style>
+
+</body></html>
