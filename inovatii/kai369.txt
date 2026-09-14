@@ -1,0 +1,8 @@
+DOCUMENT_ID: AIV-KAI369-CANONICAL-0001
+NAME: KAI369
+CATEGORY: AI Operating Framework
+VERSION: 1.0
+DEFINITION: Cadru AiVenture pentru structurarea, coordonarea și operarea capabilităților AI într-un model repetabil și guvernat.
+STATUS_SOURCE: de completat
+SNAPSHOT_DATE: 2026-09-13
+NOTE: Website canonical snapshot; not historical priority proof.

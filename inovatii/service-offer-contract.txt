@@ -1,0 +1,8 @@
+DOCUMENT_ID: AIV-SOC-CANONICAL-0001
+NAME: Service Offer Contract™
+CATEGORY: Commercial Truth / Service Definition
+VERSION: 1.0
+DEFINITION: Sursa unică, versionată, de adevăr comercial, operațional și machine-readable pentru o ofertă de servicii.
+STATUS_SOURCE: FROZEN / de completat
+SNAPSHOT_DATE: 2026-09-13
+NOTE: Website canonical snapshot; not historical priority proof.

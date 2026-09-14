@@ -1,0 +1,8 @@
+DOCUMENT_ID: AIV-GROW-ENGINES-CANONICAL-0001
+NAME: Grow Engines
+CATEGORY: Growth Intelligence
+VERSION: 1.0
+DEFINITION: Sistem de identificare și prioritizare a oportunităților de creștere pe baza profilului clienților, pieței și semnalelor economice relevante.
+STATUS_SOURCE: de completat
+SNAPSHOT_DATE: 2026-09-13
+NOTE: Website canonical snapshot; not historical priority proof.

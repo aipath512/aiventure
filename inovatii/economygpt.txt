@@ -1,0 +1,8 @@
+DOCUMENT_ID: AIV-EGPT-AEC-CANONICAL-0001
+NAME: EconomyGPT™
+CATEGORY: Autonomous Economic Intelligence
+VERSION: 1.0
+DEFINITION: Sistem de observare și reconstrucție continuă a semnalelor economice publice pentru analiză și inteligență economică.
+STATUS_SOURCE: CANONICAL DECLARATION EXISTENT / de reverificat
+SNAPSHOT_DATE: 2026-09-13
+NOTE: Website canonical snapshot; not historical priority proof.

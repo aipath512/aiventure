@@ -1,0 +1,8 @@
+DOCUMENT_ID: AIV-MASTER-CONTEXT-CANONICAL-0001
+NAME: Master Context
+CATEGORY: Enterprise Context / Canonical Business Memory
+VERSION: 1.0
+DEFINITION: Reprezentarea canonică și versionată a identității, ofertei, regulilor, dovezilor și contextului operațional al unei organizații.
+STATUS_SOURCE: de completat
+SNAPSHOT_DATE: 2026-09-13
+NOTE: Website canonical snapshot; not historical priority proof.

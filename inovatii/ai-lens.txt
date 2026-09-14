@@ -1,0 +1,8 @@
+DOCUMENT_ID: AIV-AILENS-CANONICAL-0001
+NAME: AI-LENS™
+CATEGORY: AI Perception / Business Reconstruction
+VERSION: 1.0
+DEFINITION: Sistem de observare și reconstrucție a imaginii digitale a unei firme din perspectiva sistemelor AI.
+STATUS_SOURCE: de completat
+SNAPSHOT_DATE: 2026-09-13
+NOTE: Website canonical snapshot; not historical priority proof.
