@@ -1,0 +1,46 @@
+{
+  "name": "AiVenture Service Buyer Agent",
+  "description": "Buyer Agent pentru descoperirea, compararea și solicitarea controlată a serviciilor B2B Agent-Ready.",
+  "url": "https://aiventure.ro/api/a2a",
+  "version": "3.0",
+  "provider": {
+    "organization": "AiVenture S.R.L.",
+    "url": "https://aiventure.ro/"
+  },
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "defaultInputModes": [
+    "application/json",
+    "text/plain"
+  ],
+  "defaultOutputModes": [
+    "application/json",
+    "text/plain"
+  ],
+  "skills": [
+    {
+      "id": "discover-services",
+      "name": "Discover services",
+      "description": "Descoperă servicii B2B Agent-Ready."
+    },
+    {
+      "id": "compare-services",
+      "name": "Compare services",
+      "description": "Compară condiții publice și dovezi disponibile."
+    },
+    {
+      "id": "request-services",
+      "name": "Request services",
+      "description": "Inițiază cereri în limitele politicilor și RRVI."
+    }
+  ],
+  "humanInterface": "https://aiventure.ro/buyer-agent/",
+  "service": "https://aiventure.ro/service.json",
+  "governance": "https://aiventure.ro/governance.json",
+  "policy": "https://aiventure.ro/policy.json",
+  "authority": "https://aiventure.ro/authority.json",
+  "rrvi": "https://aiventure.ro/rrvi.json",
+  "evidence": "https://aiventure.ro/evidence.json"
+}
