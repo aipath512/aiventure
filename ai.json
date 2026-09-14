@@ -2,7 +2,7 @@
   "schema": "AIVENTURE_AI_DISCOVERY",
   "version": "5.7",
   "session": "0003H",
-  "generated_at": "2026-09-14T21:01:00+03:00",
+  "generated_at": "2026-09-14T21:35:00+03:00",
   "canonical": "https://aiventure.ro/",
   "language": "ro",
   "organization": {
@@ -63,9 +63,6 @@
     ]
   },
   "machine_readable": {
-    "sitemap": "https://aiventure.ro/sitemap.xml",
-    "robots": "https://aiventure.ro/robots.txt",
-    "llms_txt": "https://aiventure.ro/llms.txt",
     "entities": "https://aiventure.ro/entities.json",
     "intents": "https://aiventure.ro/intents.json",
     "service": "https://aiventure.ro/service.json",
@@ -88,5 +85,15 @@
     "adn": "https://aiventure.ro/adn.json",
     "ere_dictionary_page": "https://aiventure.ro/dictionar/",
     "faq_hub": "https://aiventure.ro/faq-hub.html"
-  }
+  },
+  "sitemap": "https://aiventure.ro/sitemap.xml",
+  "canonical_pages": [
+    "https://aiventure.ro/",
+    "https://aiventure.ro/servicii/",
+    "https://aiventure.ro/produse/",
+    "https://aiventure.ro/buyer-agent/",
+    "https://aiventure.ro/intrebari/",
+    "https://aiventure.ro/faq-hub.html",
+    "https://aiventure.ro/contact/"
+  ]
 }

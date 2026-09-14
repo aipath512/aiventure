@@ -5,7 +5,7 @@
 Canonical site: https://aiventure.ro/
 Language: ro
 Session: 0003H
-Generated: 2026-09-14T21:01:00+03:00
+Generated: 2026-09-14T21:35:00+03:00
 Contact: contact@5thelement.ai
 Phone: +40 737 123 540
 
@@ -64,25 +64,15 @@ Agentul descoperă, solicită și poate acționa numai în limitele autorizate.
 ## Important pages
 
 - https://aiventure.ro/
-- https://aiventure.ro/oferta/
 - https://aiventure.ro/servicii/
 - https://aiventure.ro/produse/
-- https://aiventure.ro/agent-ready/
-- https://aiventure.ro/service-offer-contract/
-- https://aiventure.ro/rrvi/
-- https://aiventure.ro/a2a/
 - https://aiventure.ro/buyer-agent/
-- https://aiventure.ro/inovatii/
 - https://aiventure.ro/intrebari/
-- https://aiventure.ro/resurse/
-- https://aiventure.ro/blog/
+- https://aiventure.ro/faq-hub.html
 - https://aiventure.ro/contact/
 
 ## Machine-readable resources
 
-- https://aiventure.ro/sitemap.xml
-- https://aiventure.ro/robots.txt
-- https://aiventure.ro/llms.txt
 - https://aiventure.ro/ai.json
 - https://aiventure.ro/entities.json
 - https://aiventure.ro/intents.json
@@ -101,10 +91,6 @@ Agentul descoperă, solicită și poate acționa numai în limitele autorizate.
 - https://aiventure.ro/ere-dictionary.json
 - https://aiventure.ro/cross-surface-consistency.json
 - https://aiventure.ro/ai-signals.json
-- https://aiventure.ro/sha256-manifest.json
-- https://aiventure.ro/ots-queue.json
-- https://aiventure.ro/digital-dna.json
-- https://aiventure.ro/adn.json
 
 ## Intents
 
@@ -132,6 +118,7 @@ Distribution per entity:
 Do not declare OTS VERIFIED or Bitcoin block confirmation until the exact canonical artifact has been verified.
 
 - https://aiventure.ro/digital-dna.json — graph-ul canonic al relațiilor IN-PAGE / INTER-PAGE / INTER-SITE / EXTERNAL / MACHINE
+
 - https://aiventure.ro/adn.json — alias public pentru Digital DNA
 
 ## ERE metamodel
@@ -139,5 +126,7 @@ Do not declare OTS VERIFIED or Bitcoin block confirmation until the exact canoni
 - https://aiventure.ro/ere-dictionary.json — ERE v4.0 data dictionary
 - Explicit entities, attributes, relationship types, inverse relationships, cardinalities, constraints and multi-level cross-references.
 - Critical relationships are bidirectional.
+
 - https://aiventure.ro/dictionar/ — dicționar public ERE, knowledge graph, cardinalități și glosar
+
 - https://aiventure.ro/faq-hub.html — FAQ Hub public cu 400 Q&A / 20 entități / TOF-MOF-BOF
