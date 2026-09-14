@@ -1,10 +1,9 @@
 {
   "schema": "AIVENTURE_SHA256_MANIFEST",
-  "version": "2.0",
+  "version": "PATCH-0003H-20260914-1252",
   "session": "0003H",
-  "generated_at": "2026-09-14T06:11:00+03:00",
+  "generated_at": "2026-09-14T12:52:00+03:00",
   "algorithm": "SHA-256",
-  "principle": "Hashes correspond to exact bytes in SESSION 0003H. Any prior OTS proof applies only to the exact bytes it timestamped.",
   "artifacts": [
     {
       "artifact": ".well-known/agent-card.json",
@@ -256,12 +255,6 @@
       "artifact": "blog/industrii-agent-ready/index.html",
       "sha256": "ba6278c6d88c2e3e57e2b00f5b6b3f368a38e5d38a5e32696d6bd8e73e57c58a",
       "sha256_file": "/artifacts/blog__industrii-agent-ready__index.html.sha256",
-      "ots_status": "NOT_REQUIRED"
-    },
-    {
-      "artifact": "buyer-agent/index.html",
-      "sha256": "fe8ee8a57d7053bf0ab5a504f6020dd65f34ff1ff4b6d1646f2d70ef5da9f86c",
-      "sha256_file": "/artifacts/buyer-agent__index.html.sha256",
       "ots_status": "NOT_REQUIRED"
     },
     {
@@ -1081,12 +1074,6 @@
       "ots_status": "NOT_REQUIRED"
     },
     {
-      "artifact": "preview-home.html",
-      "sha256": "3efab228ebd98de6e088e998a9bdb2659214ecc6bc54d3d9d05e5cc17467ead0",
-      "sha256_file": "/artifacts/preview-home.html.sha256",
-      "ots_status": "NOT_REQUIRED"
-    },
-    {
       "artifact": "produse/3webobs/index.html",
       "sha256": "8a5fa41106c19e62b55eee888824d5c5f7f51fcd83d0f73c801981622fa14f2f",
       "sha256_file": "/artifacts/produse__3webobs__index.html.sha256",
@@ -1429,12 +1416,6 @@
       "ots_status": "NOT_REQUIRED"
     },
     {
-      "artifact": "sitemap.xml",
-      "sha256": "b7db505ec1a07155fdd7e4f631f312410377a5b6406cc6a1e7eab620dd8c67dc",
-      "sha256_file": "/artifacts/sitemap.xml.sha256",
-      "ots_status": "NOT_REQUIRED"
-    },
-    {
       "artifact": "termeni-si-conditii/index.html",
       "sha256": "821cbb01157ca1645ee7a7c1aba970e57222f1d36934c2bfa40c85d42a6078ae",
       "sha256_file": "/artifacts/termeni-si-conditii__index.html.sha256",
@@ -1450,6 +1431,30 @@
       "artifact": "viziune/index.html",
       "sha256": "fae2df1e71e0844fd524c933349f48cb819a403627075ab2c225d26c233893a2",
       "sha256_file": "/artifacts/viziune__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "buyer-agent/index.html",
+      "sha256": "6212996082ff75056f865caf5555ea1ff1332a7aabd2873272f55ea92e62f77f",
+      "sha256_file": "/artifacts/buyer-agent__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "geo/index.html",
+      "sha256": "e2a662f0a0e137e3b44489b39aed31d8aa870c3b10a7864c49bbb7bab1f44a8a",
+      "sha256_file": "/artifacts/geo__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "verifica/index.html",
+      "sha256": "8046f764f2335999fdbd34f5e8b93449765b021e5cb07d18411523f1e03bdf2f",
+      "sha256_file": "/artifacts/verifica__index.html.sha256",
+      "ots_status": "NOT_REQUIRED"
+    },
+    {
+      "artifact": "sitemap.xml",
+      "sha256": "3bfc4bbe1d3df2b99abc516db913335458d445f29372fc35bbe1bb640479536c",
+      "sha256_file": "/artifacts/sitemap.xml.sha256",
       "ots_status": "NOT_REQUIRED"
     }
   ]
