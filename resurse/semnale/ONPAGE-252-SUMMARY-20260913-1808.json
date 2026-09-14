@@ -1,0 +1,352 @@
+{
+  "build": "AiVenture COMPLETE FULL A2A 20260913-1808",
+  "source_signal_catalog": "AIVENTURE_ONPAGE_SIGNALS v1.0 SESSION 0003H",
+  "pages": 56,
+  "signals_per_page": 252,
+  "evaluations": 14112,
+  "totals": {
+    "PASS": 5885,
+    "PARTIAL": 6666,
+    "NA": 1561
+  },
+  "page_summaries": [
+    {
+      "page": "/a2a/",
+      "PASS": 122,
+      "PARTIAL": 113,
+      "NA": 17
+    },
+    {
+      "page": "/a2a-secrets/01/",
+      "PASS": 102,
+      "PARTIAL": 113,
+      "NA": 37
+    },
+    {
+      "page": "/agent-ready/",
+      "PASS": 122,
+      "PARTIAL": 113,
+      "NA": 17
+    },
+    {
+      "page": "/blog/ai-visibility-vs-agent-ready/",
+      "PASS": 102,
+      "PARTIAL": 126,
+      "NA": 24
+    },
+    {
+      "page": "/blog/aiventure-vs-big-tech/",
+      "PASS": 102,
+      "PARTIAL": 126,
+      "NA": 24
+    },
+    {
+      "page": "/blog/autonomie-l1-l5/",
+      "PASS": 102,
+      "PARTIAL": 126,
+      "NA": 24
+    },
+    {
+      "page": "/blog/cand-poate-agentul-cumpara/",
+      "PASS": 102,
+      "PARTIAL": 126,
+      "NA": 24
+    },
+    {
+      "page": "/blog/cand-trebuie-firma-sa-devina-agent-ready/",
+      "PASS": 102,
+      "PARTIAL": 126,
+      "NA": 24
+    },
+    {
+      "page": "/blog/cat-costa-agent-ready/",
+      "PASS": 102,
+      "PARTIAL": 126,
+      "NA": 24
+    },
+    {
+      "page": "/blog/ce-este-evidence/",
+      "PASS": 102,
+      "PARTIAL": 126,
+      "NA": 24
+    },
+    {
+      "page": "/blog/ce-este-rrvi/",
+      "PASS": 102,
+      "PARTIAL": 126,
+      "NA": 24
+    },
+    {
+      "page": "/blog/ce-este-service-offer-contract/",
+      "PASS": 102,
+      "PARTIAL": 126,
+      "NA": 24
+    },
+    {
+      "page": "/blog/ce-inseamna-sa-vinzi-servicii-agentilor-ai/",
+      "PASS": 102,
+      "PARTIAL": 126,
+      "NA": 24
+    },
+    {
+      "page": "/blog/ce-nu-vinde-aiventure/",
+      "PASS": 102,
+      "PARTIAL": 126,
+      "NA": 24
+    },
+    {
+      "page": "/blog/cu-ce-serviciu-incepi/",
+      "PASS": 102,
+      "PARTIAL": 126,
+      "NA": 24
+    },
+    {
+      "page": "/blog/cui-se-adreseaza-agent-ready-b2b/",
+      "PASS": 102,
+      "PARTIAL": 126,
+      "NA": 24
+    },
+    {
+      "page": "/blog/cum-arata-un-pilot-real/",
+      "PASS": 102,
+      "PARTIAL": 126,
+      "NA": 24
+    },
+    {
+      "page": "/blog/cum-devine-serviciul-agent-ready/",
+      "PASS": 102,
+      "PARTIAL": 126,
+      "NA": 24
+    },
+    {
+      "page": "/blog/de-ce-nu-este-suficient-un-website-bun/",
+      "PASS": 102,
+      "PARTIAL": 126,
+      "NA": 24
+    },
+    {
+      "page": "/blog/de-ce-serviciile-sunt-mai-dificile/",
+      "PASS": 102,
+      "PARTIAL": 126,
+      "NA": 24
+    },
+    {
+      "page": "/blog/de-ce-single-source-of-truth/",
+      "PASS": 102,
+      "PARTIAL": 126,
+      "NA": 24
+    },
+    {
+      "page": "/blog/eu-ai-act-first/",
+      "PASS": 102,
+      "PARTIAL": 126,
+      "NA": 24
+    },
+    {
+      "page": "/blog/",
+      "PASS": 102,
+      "PARTIAL": 113,
+      "NA": 37
+    },
+    {
+      "page": "/blog/industrii-agent-ready/",
+      "PASS": 102,
+      "PARTIAL": 126,
+      "NA": 24
+    },
+    {
+      "page": "/buyer-agent/",
+      "PASS": 122,
+      "PARTIAL": 113,
+      "NA": 17
+    },
+    {
+      "page": "/contact/",
+      "PASS": 102,
+      "PARTIAL": 113,
+      "NA": 37
+    },
+    {
+      "page": "/cookies/",
+      "PASS": 102,
+      "PARTIAL": 113,
+      "NA": 37
+    },
+    {
+      "page": "/despre/",
+      "PASS": 102,
+      "PARTIAL": 113,
+      "NA": 37
+    },
+    {
+      "page": "/eu-ai-act/",
+      "PASS": 122,
+      "PARTIAL": 113,
+      "NA": 17
+    },
+    {
+      "page": "/faq/",
+      "PASS": 102,
+      "PARTIAL": 126,
+      "NA": 24
+    },
+    {
+      "page": "/glosar/",
+      "PASS": 102,
+      "PARTIAL": 113,
+      "NA": 37
+    },
+    {
+      "page": "/",
+      "PASS": 115,
+      "PARTIAL": 113,
+      "NA": 24
+    },
+    {
+      "page": "/inovatii/",
+      "PASS": 102,
+      "PARTIAL": 126,
+      "NA": 24
+    },
+    {
+      "page": "/legal/a2a-terms/",
+      "PASS": 102,
+      "PARTIAL": 113,
+      "NA": 37
+    },
+    {
+      "page": "/legal/ai-transparency/",
+      "PASS": 102,
+      "PARTIAL": 113,
+      "NA": 37
+    },
+    {
+      "page": "/legal/",
+      "PASS": 102,
+      "PARTIAL": 113,
+      "NA": 37
+    },
+    {
+      "page": "/misiune/",
+      "PASS": 102,
+      "PARTIAL": 113,
+      "NA": 37
+    },
+    {
+      "page": "/oferta/",
+      "PASS": 122,
+      "PARTIAL": 113,
+      "NA": 17
+    },
+    {
+      "page": "/politica-confidentialitate/",
+      "PASS": 102,
+      "PARTIAL": 113,
+      "NA": 37
+    },
+    {
+      "page": "/produse/3webobs/",
+      "PASS": 102,
+      "PARTIAL": 126,
+      "NA": 24
+    },
+    {
+      "page": "/produse/ai-lens/",
+      "PASS": 102,
+      "PARTIAL": 126,
+      "NA": 24
+    },
+    {
+      "page": "/produse/ai-ready-injector/",
+      "PASS": 102,
+      "PARTIAL": 126,
+      "NA": 24
+    },
+    {
+      "page": "/produse/",
+      "PASS": 122,
+      "PARTIAL": 113,
+      "NA": 17
+    },
+    {
+      "page": "/resurse/ghiduri/a2a-de-la-a-la-z/",
+      "PASS": 102,
+      "PARTIAL": 113,
+      "NA": 37
+    },
+    {
+      "page": "/resurse/ghiduri/agent-ready/",
+      "PASS": 102,
+      "PARTIAL": 113,
+      "NA": 37
+    },
+    {
+      "page": "/resurse/ghiduri/buyer-agent/",
+      "PASS": 102,
+      "PARTIAL": 113,
+      "NA": 37
+    },
+    {
+      "page": "/resurse/ghiduri/edge-injector/",
+      "PASS": 102,
+      "PARTIAL": 113,
+      "NA": 37
+    },
+    {
+      "page": "/resurse/ghiduri/primul-agent-ai/",
+      "PASS": 102,
+      "PARTIAL": 113,
+      "NA": 37
+    },
+    {
+      "page": "/resurse/ghiduri/seller-agent/",
+      "PASS": 102,
+      "PARTIAL": 113,
+      "NA": 37
+    },
+    {
+      "page": "/resurse/",
+      "PASS": 102,
+      "PARTIAL": 113,
+      "NA": 37
+    },
+    {
+      "page": "/rrvi/",
+      "PASS": 122,
+      "PARTIAL": 113,
+      "NA": 17
+    },
+    {
+      "page": "/service-offer-contract/",
+      "PASS": 122,
+      "PARTIAL": 113,
+      "NA": 17
+    },
+    {
+      "page": "/servicii/",
+      "PASS": 102,
+      "PARTIAL": 126,
+      "NA": 24
+    },
+    {
+      "page": "/termeni-si-conditii/",
+      "PASS": 102,
+      "PARTIAL": 113,
+      "NA": 37
+    },
+    {
+      "page": "/three-webs/",
+      "PASS": 102,
+      "PARTIAL": 113,
+      "NA": 37
+    },
+    {
+      "page": "/viziune/",
+      "PASS": 102,
+      "PARTIAL": 113,
+      "NA": 37
+    }
+  ],
+  "method": "Every OP001–OP252 evaluated on every public index.html. PASS only where directly provable from static source. PARTIAL for semantic/quality checks requiring judgment. NA only for genuinely inapplicable or deployed-runtime checks.",
+  "important": "The build implements the concrete static on-page controls that can be safely normalized globally. It does not fabricate content/evidence or claim runtime performance PASS without deployment measurement."
+}

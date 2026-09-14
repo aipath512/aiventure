@@ -1,0 +1,3314 @@
+{
+  "schema": "AIVENTURE_ONPAGE_SIGNALS",
+  "version": "1.0",
+  "session": "0003H",
+  "scope": "all_public_pages",
+  "domain": "https://aiventure.ro/",
+  "total_signals": 252,
+  "families": {
+    "meta_head": 31,
+    "page_structure": 20,
+    "content_core": 20,
+    "aeo_faq": 20,
+    "schema_org": 25,
+    "geo_ere": 20,
+    "aio_ai_readability": 16,
+    "internal_linking": 15,
+    "trust_evidence": 20,
+    "agent_ready_governance": 20,
+    "media_accessibility": 15,
+    "performance_rendering": 15,
+    "page_type_specific": 15
+  },
+  "status_model": [
+    "PASS",
+    "PARTIAL",
+    "FAIL",
+    "NA"
+  ],
+  "scoring": {
+    "PASS": 1,
+    "PARTIAL": 0.5,
+    "FAIL": 0,
+    "NA": "excluded"
+  },
+  "application_rule": "Apply every signal to every public page; use NA only when the signal is genuinely not applicable to that page type.",
+  "signals": [
+    {
+      "id": "OP001",
+      "family": "meta_head",
+      "name": "Unique title",
+      "check": "Fiecare pagină are <title> unic.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP002",
+      "family": "meta_head",
+      "name": "Title primary intent",
+      "check": "Title reflectă intenția principală a paginii.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP003",
+      "family": "meta_head",
+      "name": "Title entity clarity",
+      "check": "Title identifică entitatea/serviciul/subiectul.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP004",
+      "family": "meta_head",
+      "name": "Title brand suffix",
+      "check": "Brandul este folosit coerent în title unde se aplică.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP005",
+      "family": "meta_head",
+      "name": "Unique meta description",
+      "check": "Meta description este unică.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP006",
+      "family": "meta_head",
+      "name": "Meta description proposition",
+      "check": "Description exprimă clar valoarea paginii.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP007",
+      "family": "meta_head",
+      "name": "Meta description intent match",
+      "check": "Description corespunde intenției paginii.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP008",
+      "family": "meta_head",
+      "name": "Canonical present",
+      "check": "Pagina are link rel=canonical.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP009",
+      "family": "meta_head",
+      "name": "Canonical self-reference",
+      "check": "Canonical indică URL-ul canonic al paginii.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP010",
+      "family": "meta_head",
+      "name": "Canonical HTTPS",
+      "check": "Canonical folosește HTTPS.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP011",
+      "family": "meta_head",
+      "name": "Canonical host consistency",
+      "check": "Canonical folosește hostul frozen.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP012",
+      "family": "meta_head",
+      "name": "Robots meta present",
+      "check": "Meta robots este explicită unde este necesar.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP013",
+      "family": "meta_head",
+      "name": "Robots indexability correct",
+      "check": "Index/follow este corect pentru pagina publică.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP014",
+      "family": "meta_head",
+      "name": "Language declaration",
+      "check": "<html lang='ro'> este prezent.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP015",
+      "family": "meta_head",
+      "name": "Charset UTF-8",
+      "check": "UTF-8 este declarat.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP016",
+      "family": "meta_head",
+      "name": "Viewport present",
+      "check": "Meta viewport este prezent.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP017",
+      "family": "meta_head",
+      "name": "Theme color",
+      "check": "Theme-color este prezent dacă designul îl folosește.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP018",
+      "family": "meta_head",
+      "name": "OG title",
+      "check": "og:title este unic și relevant.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP019",
+      "family": "meta_head",
+      "name": "OG description",
+      "check": "og:description este unic și relevant.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP020",
+      "family": "meta_head",
+      "name": "OG URL",
+      "check": "og:url coincide cu canonical.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP021",
+      "family": "meta_head",
+      "name": "OG image",
+      "check": "og:image este valid.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP022",
+      "family": "meta_head",
+      "name": "OG type",
+      "check": "og:type corespunde tipului paginii.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP023",
+      "family": "meta_head",
+      "name": "Twitter card",
+      "check": "twitter:card este prezent.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP024",
+      "family": "meta_head",
+      "name": "Twitter title",
+      "check": "twitter:title este relevant.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP025",
+      "family": "meta_head",
+      "name": "Twitter description",
+      "check": "twitter:description este relevant.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP026",
+      "family": "meta_head",
+      "name": "Twitter image",
+      "check": "twitter:image este valid.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP027",
+      "family": "meta_head",
+      "name": "Primary image declaration",
+      "check": "Imaginea principală este identificabilă.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP028",
+      "family": "meta_head",
+      "name": "Published date metadata",
+      "check": "Data publicării există unde se aplică.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP029",
+      "family": "meta_head",
+      "name": "Modified date metadata",
+      "check": "Data modificării există unde se aplică.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP030",
+      "family": "meta_head",
+      "name": "Session metadata",
+      "check": "SESSION 0003H este prezentă în metadata.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP031",
+      "family": "meta_head",
+      "name": "Timestamp metadata",
+      "check": "Timestamp-ul paginii/buildului este declarat.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP032",
+      "family": "page_structure",
+      "name": "Header present",
+      "check": "Pagina are header global.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP033",
+      "family": "page_structure",
+      "name": "Header session visible",
+      "check": "SESSION 0003H este vizibil în header.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP034",
+      "family": "page_structure",
+      "name": "Header timestamp visible",
+      "check": "Timestamp-ul este vizibil în header.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP035",
+      "family": "page_structure",
+      "name": "Primary navigation present",
+      "check": "Navigația globală este prezentă.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP036",
+      "family": "page_structure",
+      "name": "Breadcrumb internal page",
+      "check": "Paginile interne au breadcrumb vizibil.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP037",
+      "family": "page_structure",
+      "name": "No breadcrumb on homepage",
+      "check": "Homepage nu afișează breadcrumb.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP038",
+      "family": "page_structure",
+      "name": "Breadcrumb position",
+      "check": "Breadcrumb apare între header și H1 pe paginile interne.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP039",
+      "family": "page_structure",
+      "name": "Unique H1",
+      "check": "Există un H1 unic.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP040",
+      "family": "page_structure",
+      "name": "H1 intent alignment",
+      "check": "H1 corespunde intenției principale.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP041",
+      "family": "page_structure",
+      "name": "H1 not duplicated",
+      "check": "H1 nu este duplicat în alte pagini fără motiv.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP042",
+      "family": "page_structure",
+      "name": "H2 semantic hierarchy",
+      "check": "H2 structurează subiectele majore.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP043",
+      "family": "page_structure",
+      "name": "H3 semantic hierarchy",
+      "check": "H3 structurează subsecțiunile.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP044",
+      "family": "page_structure",
+      "name": "No skipped hierarchy",
+      "check": "Ierarhia heading nu este haotică.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP045",
+      "family": "page_structure",
+      "name": "Main landmark",
+      "check": "Conținutul principal este în <main>.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP046",
+      "family": "page_structure",
+      "name": "Section semantics",
+      "check": "Secțiunile folosesc structură semantică.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP047",
+      "family": "page_structure",
+      "name": "Footer global",
+      "check": "Footer-ul global este prezent.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP048",
+      "family": "page_structure",
+      "name": "Footer quick links",
+      "check": "Quick links sunt prezente.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP049",
+      "family": "page_structure",
+      "name": "Footer contact",
+      "check": "Contactul este prezent.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP050",
+      "family": "page_structure",
+      "name": "Footer social links",
+      "check": "Rețelele sociale reale sunt prezente.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP051",
+      "family": "page_structure",
+      "name": "Footer legal links",
+      "check": "Legal/Terms/Privacy/Cookies sunt accesibile.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP052",
+      "family": "content_core",
+      "name": "Primary answer above fold",
+      "check": "Răspunsul/mesajul principal apare devreme.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP053",
+      "family": "content_core",
+      "name": "Canonical positioning consistency",
+      "check": "Poziționarea nu contrazice baseline-ul AiVenture.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP054",
+      "family": "content_core",
+      "name": "Audience explicit",
+      "check": "Este clar pentru cine este pagina.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP055",
+      "family": "content_core",
+      "name": "Problem explicit",
+      "check": "Problema este formulată explicit.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP056",
+      "family": "content_core",
+      "name": "Outcome explicit",
+      "check": "Rezultatul este formulat explicit.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP057",
+      "family": "content_core",
+      "name": "Offer explicit",
+      "check": "Oferta sau obiectul paginii este clar.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP058",
+      "family": "content_core",
+      "name": "Deliverables explicit",
+      "check": "Livrabilele sunt explicite unde se aplică.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP059",
+      "family": "content_core",
+      "name": "Exclusions explicit",
+      "check": "Excluderile sunt explicite unde se aplică.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP060",
+      "family": "content_core",
+      "name": "Differentiators explicit",
+      "check": "Diferențiatorii sunt expliciți.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP061",
+      "family": "content_core",
+      "name": "Negative scope explicit",
+      "check": "Ce NU oferă este clar unde relevant.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP062",
+      "family": "content_core",
+      "name": "Geography explicit",
+      "check": "Aria geografică este clară.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP063",
+      "family": "content_core",
+      "name": "Jurisdiction explicit",
+      "check": "Jurisdicția este clară unde relevant.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP064",
+      "family": "content_core",
+      "name": "Language scope explicit",
+      "check": "Limba serviciului este clară.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP065",
+      "family": "content_core",
+      "name": "Price/rule explicit",
+      "check": "Prețul sau regula de preț este clară unde se aplică.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP066",
+      "family": "content_core",
+      "name": "Availability explicit",
+      "check": "Disponibilitatea este clară unde se aplică.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP067",
+      "family": "content_core",
+      "name": "SLA explicit",
+      "check": "SLA/termenele sunt clare unde se aplică.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP068",
+      "family": "content_core",
+      "name": "Version explicit",
+      "check": "Versiunea este clară pentru obiectele versionate.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP069",
+      "family": "content_core",
+      "name": "Freshness explicit",
+      "check": "Data actualizării este clară.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP070",
+      "family": "content_core",
+      "name": "No stale contradiction",
+      "check": "Pagina nu conține poziționări vechi contradictorii.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP071",
+      "family": "content_core",
+      "name": "No generic AI drift",
+      "check": "Pagina nu revine generic la chatbot/AI automation ca ofertă principală.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP072",
+      "family": "aeo_faq",
+      "name": "Direct what answer",
+      "check": "Pagina răspunde la «Ce este?»",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP073",
+      "family": "aeo_faq",
+      "name": "Direct who answer",
+      "check": "Pagina răspunde la «Pentru cine?»",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP074",
+      "family": "aeo_faq",
+      "name": "Direct why answer",
+      "check": "Pagina răspunde la «De ce?»",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP075",
+      "family": "aeo_faq",
+      "name": "Direct how answer",
+      "check": "Pagina răspunde la «Cum?»",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP076",
+      "family": "aeo_faq",
+      "name": "Direct where answer",
+      "check": "Pagina răspunde la «Unde?»",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP077",
+      "family": "aeo_faq",
+      "name": "Direct when answer",
+      "check": "Pagina răspunde la «Când?»",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP078",
+      "family": "aeo_faq",
+      "name": "Direct cost answer",
+      "check": "Pagina răspunde la «Cât?» unde se aplică.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP079",
+      "family": "aeo_faq",
+      "name": "Direct eligibility answer",
+      "check": "Pagina răspunde la eligibilitate.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP080",
+      "family": "aeo_faq",
+      "name": "Direct next-step answer",
+      "check": "Pagina explică următorul pas.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP081",
+      "family": "aeo_faq",
+      "name": "FAQ visible",
+      "check": "FAQ-ul este vizibil.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP082",
+      "family": "aeo_faq",
+      "name": "10 contextual FAQs",
+      "check": "Există 10 FAQ contextuale când regula site-ului se aplică.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP083",
+      "family": "aeo_faq",
+      "name": "FAQ questions unique",
+      "check": "Întrebările sunt specifice paginii.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP084",
+      "family": "aeo_faq",
+      "name": "FAQ answers direct",
+      "check": "Răspunsurile FAQ încep direct.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP085",
+      "family": "aeo_faq",
+      "name": "FAQ no contradiction",
+      "check": "FAQ nu contrazice body-ul.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP086",
+      "family": "aeo_faq",
+      "name": "FAQ schema parity",
+      "check": "FAQPage JSON-LD coincide cu FAQ vizibil.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP087",
+      "family": "aeo_faq",
+      "name": "Intent mapping",
+      "check": "Pagina este mapată la intents relevante.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP088",
+      "family": "aeo_faq",
+      "name": "TOF/MOF/BOF role",
+      "check": "Rolul în funnel este determinabil.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP089",
+      "family": "aeo_faq",
+      "name": "Question hub linkage",
+      "check": "Pagina relevantă leagă /intrebari/.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP090",
+      "family": "aeo_faq",
+      "name": "Answer block quotability",
+      "check": "Răspunsurile sunt ușor citabile.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP091",
+      "family": "aeo_faq",
+      "name": "Conversational readability",
+      "check": "Textul este ușor de reprodus într-un răspuns AI.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP092",
+      "family": "schema_org",
+      "name": "JSON-LD present",
+      "check": "Pagina are JSON-LD unde se aplică.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP093",
+      "family": "schema_org",
+      "name": "WebPage type",
+      "check": "WebPage este prezent.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP094",
+      "family": "schema_org",
+      "name": "Correct page subtype",
+      "check": "Tipul specific este corect: AboutPage, ContactPage, Article etc. unde există.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP095",
+      "family": "schema_org",
+      "name": "Organization reference",
+      "check": "Pagina referă Organization canonic.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP096",
+      "family": "schema_org",
+      "name": "WebSite reference",
+      "check": "Pagina referă WebSite canonic.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP097",
+      "family": "schema_org",
+      "name": "mainEntity",
+      "check": "mainEntity indică entitatea principală.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP098",
+      "family": "schema_org",
+      "name": "about",
+      "check": "about indică subiectul real.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP099",
+      "family": "schema_org",
+      "name": "mentions",
+      "check": "mentions indică entități secundare reale.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP100",
+      "family": "schema_org",
+      "name": "BreadcrumbList",
+      "check": "BreadcrumbList este prezent pe paginile interne.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP101",
+      "family": "schema_org",
+      "name": "Service schema",
+      "check": "Service este folosit pentru pagini de servicii.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP102",
+      "family": "schema_org",
+      "name": "Offer schema",
+      "check": "Offer este folosit doar pentru ofertă reală.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP103",
+      "family": "schema_org",
+      "name": "OfferCatalog schema",
+      "check": "OfferCatalog este folosit coerent pe hub-uri.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP104",
+      "family": "schema_org",
+      "name": "FAQPage schema",
+      "check": "FAQPage este folosit doar când FAQ este vizibil.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP105",
+      "family": "schema_org",
+      "name": "DefinedTerm schema",
+      "check": "Termenii canonici au DefinedTerm.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP106",
+      "family": "schema_org",
+      "name": "DefinedTermSet schema",
+      "check": "Grupările de termeni au DefinedTermSet.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP107",
+      "family": "schema_org",
+      "name": "BlogPosting schema",
+      "check": "Articolele de blog folosesc BlogPosting.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP108",
+      "family": "schema_org",
+      "name": "Article dates",
+      "check": "datePublished/dateModified sunt corecte.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP109",
+      "family": "schema_org",
+      "name": "ImageObject",
+      "check": "Imaginea principală poate fi legată ca ImageObject.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP110",
+      "family": "schema_org",
+      "name": "inLanguage",
+      "check": "inLanguage este ro-RO.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP111",
+      "family": "schema_org",
+      "name": "Stable @id",
+      "check": "@id este stabil.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP112",
+      "family": "schema_org",
+      "name": "Cross-page @id consistency",
+      "check": "Aceeași entitate folosește același @id peste tot.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP113",
+      "family": "schema_org",
+      "name": "Visible-schema parity",
+      "check": "Schema reflectă conținutul vizibil.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP114",
+      "family": "schema_org",
+      "name": "No fake ratings",
+      "check": "Nu există AggregateRating/Review inventat.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP115",
+      "family": "schema_org",
+      "name": "No invented schema types",
+      "check": "Nu se inventează @type-uri.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP116",
+      "family": "schema_org",
+      "name": "No unsupported claims in schema",
+      "check": "Schema nu declară fapte care nu apar/nu sunt susținute.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP117",
+      "family": "geo_ere",
+      "name": "Primary entity ID",
+      "check": "Entitatea principală are ID stabil.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP118",
+      "family": "geo_ere",
+      "name": "Provider relationship",
+      "check": "Service → Provider este explicit.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP119",
+      "family": "geo_ere",
+      "name": "Provider inverse",
+      "check": "Organization → Service este explicit.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP120",
+      "family": "geo_ere",
+      "name": "Service-offer relation",
+      "check": "Service ↔ Offer este explicit.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP121",
+      "family": "geo_ere",
+      "name": "Service-SOC relation",
+      "check": "Service ↔ SOC este explicit.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP122",
+      "family": "geo_ere",
+      "name": "SOC-RRVI relation",
+      "check": "SOC ↔ RRVI este explicit.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP123",
+      "family": "geo_ere",
+      "name": "Service-audience relation",
+      "check": "Service ↔ Audience este explicit.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP124",
+      "family": "geo_ere",
+      "name": "Service-jurisdiction relation",
+      "check": "Service ↔ Jurisdiction este explicit.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP125",
+      "family": "geo_ere",
+      "name": "Jurisdiction-regulation relation",
+      "check": "Jurisdiction ↔ Regulation este explicit.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP126",
+      "family": "geo_ere",
+      "name": "Service-autonomy relation",
+      "check": "Service ↔ Autonomy este explicit.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP127",
+      "family": "geo_ere",
+      "name": "Action-autonomy relation",
+      "check": "Action ↔ Autonomy Level este explicit.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP128",
+      "family": "geo_ere",
+      "name": "Request-service relation",
+      "check": "Request ↔ Service este explicit.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP129",
+      "family": "geo_ere",
+      "name": "Request-quote relation",
+      "check": "Request ↔ Quote este explicit.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP130",
+      "family": "geo_ere",
+      "name": "Quote-order relation",
+      "check": "Quote ↔ Order este explicit.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP131",
+      "family": "geo_ere",
+      "name": "Order-delivery relation",
+      "check": "Order ↔ Delivery este explicit.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP132",
+      "family": "geo_ere",
+      "name": "Action-evidence relation",
+      "check": "Action ↔ Evidence este explicit.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP133",
+      "family": "geo_ere",
+      "name": "Cardinality available",
+      "check": "Cardinalitățile relevante sunt determinabile.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP134",
+      "family": "geo_ere",
+      "name": "Inverse relationships",
+      "check": "Relațiile critice au inversă.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP135",
+      "family": "geo_ere",
+      "name": "Cross-source entity match",
+      "check": "Pagina și JSON files folosesc aceleași entități.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP136",
+      "family": "geo_ere",
+      "name": "ERE reconstruction",
+      "check": "Modelul paginii poate fi reconstruit fără inferențe majore.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP137",
+      "family": "aio_ai_readability",
+      "name": "AI readable summary",
+      "check": "Pagina oferă rezumat clar.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP138",
+      "family": "aio_ai_readability",
+      "name": "Canonical definition",
+      "check": "Termenul/serviciul principal are definiție stabilă.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP139",
+      "family": "aio_ai_readability",
+      "name": "Context completeness",
+      "check": "Pagina oferă suficient context fără presupuneri.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP140",
+      "family": "aio_ai_readability",
+      "name": "Entity disambiguation",
+      "check": "Entitățile pot fi diferențiate.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP141",
+      "family": "aio_ai_readability",
+      "name": "Claim attribution",
+      "check": "Claim-urile importante au atribuire.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP142",
+      "family": "aio_ai_readability",
+      "name": "Claim evidence link",
+      "check": "Claim-urile importante au evidence.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP143",
+      "family": "aio_ai_readability",
+      "name": "Citation-ready sentence",
+      "check": "Există propoziții independente ușor citabile.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP144",
+      "family": "aio_ai_readability",
+      "name": "Comparison-ready fields",
+      "check": "Atributele utile comparației sunt explicite.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP145",
+      "family": "aio_ai_readability",
+      "name": "Decision-ready fields",
+      "check": "Atributele necesare deciziei sunt explicite.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP146",
+      "family": "aio_ai_readability",
+      "name": "Action boundary clarity",
+      "check": "Limitele acțiunii agentice sunt clare.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP147",
+      "family": "aio_ai_readability",
+      "name": "Escalation clarity",
+      "check": "Când trebuie om este clar.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP148",
+      "family": "aio_ai_readability",
+      "name": "Machine-readable mirror",
+      "check": "Există corespondent machine-readable pentru informația critică.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP149",
+      "family": "aio_ai_readability",
+      "name": "Cross-source consistency",
+      "check": "Body, schema și JSON sunt coerente.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP150",
+      "family": "aio_ai_readability",
+      "name": "No ambiguous pronouns in key facts",
+      "check": "Afirmațiile canonice evită referințe ambigue.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP151",
+      "family": "aio_ai_readability",
+      "name": "No hidden critical facts",
+      "check": "Datele critice nu sunt doar în imagine/script.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP152",
+      "family": "aio_ai_readability",
+      "name": "AI summary fidelity",
+      "check": "Un rezumat AI ar putea păstra diferențiatorii reali.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP153",
+      "family": "internal_linking",
+      "name": "Parent hub link",
+      "check": "Pagina leagă hub-ul părinte.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP154",
+      "family": "internal_linking",
+      "name": "Child page links",
+      "check": "Hub-ul leagă paginile copil.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP155",
+      "family": "internal_linking",
+      "name": "Sibling contextual links",
+      "check": "Există linkuri către pagini surori relevante.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP156",
+      "family": "internal_linking",
+      "name": "Canonical anchor text",
+      "check": "Anchor text folosește terminologie canonică.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP157",
+      "family": "internal_linking",
+      "name": "No generic click-here dominance",
+      "check": "Linkurile importante nu folosesc predominant «click aici».",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP158",
+      "family": "internal_linking",
+      "name": "No broken internal links",
+      "check": "Linkurile interne funcționează.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP159",
+      "family": "internal_linking",
+      "name": "No orphan page",
+      "check": "Pagina are cel puțin o cale internă de descoperire.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP160",
+      "family": "internal_linking",
+      "name": "Breadcrumb link integrity",
+      "check": "Linkurile breadcrumb sunt corecte.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP161",
+      "family": "internal_linking",
+      "name": "Footer link integrity",
+      "check": "Linkurile footer sunt corecte.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP162",
+      "family": "internal_linking",
+      "name": "Related content block",
+      "check": "Există conținut asociat unde e util.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP163",
+      "family": "internal_linking",
+      "name": "Intent cross-links",
+      "check": "Intenturile conexe sunt legate.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP164",
+      "family": "internal_linking",
+      "name": "Product-service separation",
+      "check": "Linkurile nu confundă produse și servicii.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP165",
+      "family": "internal_linking",
+      "name": "Innovation proof links",
+      "check": "Inovațiile leagă verificarea/proof unde există.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP166",
+      "family": "internal_linking",
+      "name": "Contact CTA integrity",
+      "check": "CTA de contact duce la destinația corectă.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP167",
+      "family": "internal_linking",
+      "name": "No excessive internal redirects",
+      "check": "Linkurile interne merg direct la URL canonical.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP168",
+      "family": "trust_evidence",
+      "name": "Legal entity visible",
+      "check": "Entitatea legală este identificabilă unde relevant.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP169",
+      "family": "trust_evidence",
+      "name": "Contact visible",
+      "check": "Contactul este disponibil.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP170",
+      "family": "trust_evidence",
+      "name": "Author/publisher visible",
+      "check": "Autorul/publisher-ul este identificabil unde relevant.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP171",
+      "family": "trust_evidence",
+      "name": "Date published visible",
+      "check": "Data publicării este vizibilă unde relevant.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP172",
+      "family": "trust_evidence",
+      "name": "Date modified visible",
+      "check": "Data modificării este vizibilă unde relevant.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP173",
+      "family": "trust_evidence",
+      "name": "Claim source visible",
+      "check": "Claim-ul important indică sursa.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP174",
+      "family": "trust_evidence",
+      "name": "Proof link visible",
+      "check": "Dovada poate fi accesată.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP175",
+      "family": "trust_evidence",
+      "name": "Document ID visible",
+      "check": "DOCUMENT_ID este prezent pentru canonical declarations.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP176",
+      "family": "trust_evidence",
+      "name": "Version visible",
+      "check": "Versiunea este prezentă.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP177",
+      "family": "trust_evidence",
+      "name": "SHA only if real",
+      "check": "SHA-256 este publicat doar dacă a fost calculat real.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP178",
+      "family": "trust_evidence",
+      "name": "OTS only if real",
+      "check": "OTS este publicat doar dacă există fișier/proof real.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP179",
+      "family": "trust_evidence",
+      "name": "OTS status explicit",
+      "check": "PENDING/VERIFIED este explicit.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP180",
+      "family": "trust_evidence",
+      "name": "No invented bitcoin block",
+      "check": "Block-ul nu este inventat.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP181",
+      "family": "trust_evidence",
+      "name": "Claim != Proof disclosure",
+      "check": "Declarația nu este prezentată ca dovadă.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP182",
+      "family": "trust_evidence",
+      "name": "Evidence relation",
+      "check": "Pagina leagă Evidence unde se aplică.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP183",
+      "family": "trust_evidence",
+      "name": "RRVI decision visibility",
+      "check": "Decizia RRVI poate fi explicată unde se aplică.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP184",
+      "family": "trust_evidence",
+      "name": "Human review disclosure",
+      "check": "Human review este explicat unde relevant.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP185",
+      "family": "trust_evidence",
+      "name": "No false compliance guarantee",
+      "check": "Nu se garantează conformitate juridică.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP186",
+      "family": "trust_evidence",
+      "name": "No false certification",
+      "check": "Nu se declară certificare inexistentă.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP187",
+      "family": "trust_evidence",
+      "name": "Trust consistency",
+      "check": "Datele de trust sunt coerente cu celelalte pagini.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP188",
+      "family": "agent_ready_governance",
+      "name": "SOC reference",
+      "check": "Pagina de serviciu indică SOC unde se aplică.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP189",
+      "family": "agent_ready_governance",
+      "name": "Max autonomy",
+      "check": "Nivelul maxim L1–L5 este explicit.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP190",
+      "family": "agent_ready_governance",
+      "name": "Allowed actions",
+      "check": "Acțiunile permise sunt explicite.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP191",
+      "family": "agent_ready_governance",
+      "name": "Forbidden actions",
+      "check": "Acțiunile interzise sunt explicite.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP192",
+      "family": "agent_ready_governance",
+      "name": "Eligibility rules",
+      "check": "Regulile de eligibilitate sunt explicite.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP193",
+      "family": "agent_ready_governance",
+      "name": "Ineligibility rules",
+      "check": "Regulile de ineligibilitate sunt explicite.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP194",
+      "family": "agent_ready_governance",
+      "name": "Jurisdiction gate",
+      "check": "Jurisdicția este verificabilă.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP195",
+      "family": "agent_ready_governance",
+      "name": "Regulation gate",
+      "check": "Regulile relevante sunt referite.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP196",
+      "family": "agent_ready_governance",
+      "name": "Financial threshold",
+      "check": "Pragurile sunt explicite unde se aplică.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP197",
+      "family": "agent_ready_governance",
+      "name": "Human approval",
+      "check": "Aprobarea umană este explicită.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP198",
+      "family": "agent_ready_governance",
+      "name": "RRVI publish gate",
+      "check": "Publish Gate este referit unde relevant.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP199",
+      "family": "agent_ready_governance",
+      "name": "RRVI runtime gate",
+      "check": "Runtime Gate este referit unde relevant.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP200",
+      "family": "agent_ready_governance",
+      "name": "allow outcome",
+      "check": "allow este explicabil.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP201",
+      "family": "agent_ready_governance",
+      "name": "allow_with_conditions outcome",
+      "check": "allow_with_conditions este explicabil.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP202",
+      "family": "agent_ready_governance",
+      "name": "human_review_required outcome",
+      "check": "human_review_required este explicabil.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP203",
+      "family": "agent_ready_governance",
+      "name": "block outcome",
+      "check": "block este explicabil.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP204",
+      "family": "agent_ready_governance",
+      "name": "No rule no autonomy",
+      "check": "Regula no-rule-no-autonomy este respectată.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP205",
+      "family": "agent_ready_governance",
+      "name": "No jurisdiction no sensitive action",
+      "check": "Regula de jurisdicție este respectată.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP206",
+      "family": "agent_ready_governance",
+      "name": "No approval no commitment",
+      "check": "Regula de aprobare este respectată.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP207",
+      "family": "agent_ready_governance",
+      "name": "No evidence no proof",
+      "check": "Regula Evidence este respectată.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP208",
+      "family": "media_accessibility",
+      "name": "Image alt",
+      "check": "Imaginile informative au alt.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP209",
+      "family": "media_accessibility",
+      "name": "Decorative image handling",
+      "check": "Imaginile decorative sunt tratate corect.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP210",
+      "family": "media_accessibility",
+      "name": "Image width/height",
+      "check": "Dimensiunile sunt declarate unde util.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP211",
+      "family": "media_accessibility",
+      "name": "Modern image format",
+      "check": "Formatele sunt eficiente unde posibil.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP212",
+      "family": "media_accessibility",
+      "name": "Lazy loading non-critical",
+      "check": "Imaginile non-critice pot fi lazy.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP213",
+      "family": "media_accessibility",
+      "name": "Hero image priority",
+      "check": "Imaginea LCP nu este penalizată de lazy loading neadecvat.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP214",
+      "family": "media_accessibility",
+      "name": "Readable contrast",
+      "check": "Contrastul textului este adecvat.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP215",
+      "family": "media_accessibility",
+      "name": "Keyboard navigation",
+      "check": "Elementele interactive sunt accesibile din tastatură.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP216",
+      "family": "media_accessibility",
+      "name": "Semantic buttons",
+      "check": "Acțiunile folosesc button/link corect.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP217",
+      "family": "media_accessibility",
+      "name": "Form labels",
+      "check": "Formurile au labels.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP218",
+      "family": "media_accessibility",
+      "name": "Error messages",
+      "check": "Erorile de formular sunt explicite.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP219",
+      "family": "media_accessibility",
+      "name": "ARIA correctness",
+      "check": "ARIA este folosit corect.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP220",
+      "family": "media_accessibility",
+      "name": "Mobile content parity",
+      "check": "Conținutul esențial există pe mobil.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP221",
+      "family": "media_accessibility",
+      "name": "No text only in image",
+      "check": "Informația critică nu există exclusiv în imagini.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP222",
+      "family": "media_accessibility",
+      "name": "No blocking popup",
+      "check": "Popup-urile nu blochează inutil conținutul.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP223",
+      "family": "performance_rendering",
+      "name": "Critical content server/render available",
+      "check": "Conținutul critic este disponibil crawlerului.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP224",
+      "family": "performance_rendering",
+      "name": "No JS-only canonical text",
+      "check": "Mesajele canonice nu depind exclusiv de JS.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP225",
+      "family": "performance_rendering",
+      "name": "Crawlable href links",
+      "check": "Linkurile importante au href.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP226",
+      "family": "performance_rendering",
+      "name": "LCP hygiene",
+      "check": "Elementul LCP este optimizat rezonabil.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP227",
+      "family": "performance_rendering",
+      "name": "CLS hygiene",
+      "check": "Layout-ul este stabil.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP228",
+      "family": "performance_rendering",
+      "name": "INP hygiene",
+      "check": "Interacțiunile sunt responsive.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP229",
+      "family": "performance_rendering",
+      "name": "CSS blocking control",
+      "check": "CSS nu blochează excesiv.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP230",
+      "family": "performance_rendering",
+      "name": "JS bloat control",
+      "check": "JS inutil este limitat.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP231",
+      "family": "performance_rendering",
+      "name": "Font loading hygiene",
+      "check": "Fonturile nu blochează inutil randarea.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP232",
+      "family": "performance_rendering",
+      "name": "Image optimization",
+      "check": "Imaginile sunt optimizate.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP233",
+      "family": "performance_rendering",
+      "name": "No huge DOM",
+      "check": "DOM-ul nu este inutil de mare.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP234",
+      "family": "performance_rendering",
+      "name": "No hidden duplicate content",
+      "check": "Nu există duplicate ascunse care confundă parsarea.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP235",
+      "family": "performance_rendering",
+      "name": "Rendered/body parity",
+      "check": "Conținutul randat corespunde sursei semantice.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP236",
+      "family": "performance_rendering",
+      "name": "Mobile performance parity",
+      "check": "Mobilul nu pierde conținut critic.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP237",
+      "family": "performance_rendering",
+      "name": "No layout dependency for semantics",
+      "check": "Semantica nu depinde de poziționare vizuală.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP238",
+      "family": "page_type_specific",
+      "name": "Homepage no breadcrumb",
+      "check": "Homepage respectă regula fără breadcrumb.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP239",
+      "family": "page_type_specific",
+      "name": "Internal page breadcrumb",
+      "check": "Paginile interne respectă breadcrumb.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP240",
+      "family": "page_type_specific",
+      "name": "Service page Service schema",
+      "check": "Paginile de serviciu folosesc Service.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP241",
+      "family": "page_type_specific",
+      "name": "Product page product semantics",
+      "check": "Paginile de produs folosesc tipul corect doar dacă este justificat.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP242",
+      "family": "page_type_specific",
+      "name": "Offer page commercial clarity",
+      "check": "/oferta/ prezintă oferta fundamentală fără revenire la vechiul ladder.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP243",
+      "family": "page_type_specific",
+      "name": "Agent-ready page category definition",
+      "check": "/agent-ready/ definește categoria canonică.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP244",
+      "family": "page_type_specific",
+      "name": "SOC page canonical definition",
+      "check": "/service-offer-contract/ păstrează definiția frozen.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP245",
+      "family": "page_type_specific",
+      "name": "RRVI page canonical definition",
+      "check": "/rrvi/ păstrează definiția frozen.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP246",
+      "family": "page_type_specific",
+      "name": "EU AI Act page scope control",
+      "check": "/eu-ai-act/ nu promite compliance garantat.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP247",
+      "family": "page_type_specific",
+      "name": "Innovation page proof block",
+      "check": "Paginile de inovație au canonical proof block.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP248",
+      "family": "page_type_specific",
+      "name": "Blog article BlogPosting",
+      "check": "Articolele au BlogPosting și date.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP249",
+      "family": "page_type_specific",
+      "name": "Question page Question/Answer semantics",
+      "check": "Paginile Q&A folosesc Question/Answer unde e corect.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP250",
+      "family": "page_type_specific",
+      "name": "Contact page ContactPage semantics",
+      "check": "Contactul folosește semantica potrivită.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP251",
+      "family": "page_type_specific",
+      "name": "Mission page unique content",
+      "check": "/misiune/ are conținut propriu.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    },
+    {
+      "id": "OP252",
+      "family": "page_type_specific",
+      "name": "Vision page unique content",
+      "check": "/viziune/ are conținut propriu.",
+      "scope": "per-page",
+      "status_model": [
+        "PASS",
+        "PARTIAL",
+        "FAIL",
+        "NA"
+      ]
+    }
+  ]
+}
