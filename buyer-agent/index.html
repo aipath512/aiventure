@@ -81,4 +81,42 @@ btn.addEventListener('click', async()=>{
 });
 </script></main>
 <footer><div class="container">© 2026 AiVenture S.R.L. · SESSION 0003H</div></footer>
+
+<section id="offerPanel" style="display:none;margin-top:28px;padding:24px;border:1px solid #343b46;border-radius:16px;background:#10151d;color:#fff">
+  <h2>AM GĂSIT UN SERVICIU</h2>
+  <p><strong>ECBTAX</strong> · ✓ Agent-Ready</p>
+  <p>Calcul salarial · România · 5 angajați</p>
+  <p><strong>Preț:</strong> <span id="offerPrice">NECOMUNICAT</span><br>
+     <strong>Status:</strong> DISPONIBIL<br>
+     <strong>Ofertă:</strong> Q-1042</p>
+  <p id="verifyResult">○ Verific oferta…</p>
+  <button id="rejectOffer" type="button">RESPING</button>
+  <button id="approveOffer" type="button" disabled>APROBĂ OFERTA</button>
+  <p style="font-size:12px;opacity:.75">Aprobarea rămâne blocată până când furnizorul comunică prețul.</p>
+</section>
+<script>
+window.showVerifiedQuote = async function(period='Septembrie 2026'){
+  const q=await fetch('/api/buyer/quote',{method:'POST',headers:{'content-type':'application/json'},
+    body:JSON.stringify({period,employees:5})});
+  const qj=await q.json();
+  const quote=qj?.seller_response?.result?.quote;
+  if(!quote) return false;
+  quote.provider='ECBTAX';
+  const v=await fetch('/api/buyer/verify',{method:'POST',headers:{'content-type':'application/json'},
+    body:JSON.stringify({quote})});
+  const verified=await v.json();
+  document.getElementById('offerPanel').style.display='block';
+  document.getElementById('offerPrice').textContent=
+    typeof quote.price==='number' ? '€ '+quote.price+' / lună' : 'NECOMUNICAT';
+  document.getElementById('verifyResult').textContent=
+    verified.verification_status==='VERIFIED'
+      ? '✓ Serviciu și ofertă verificate'
+      : verified.verification_status==='PARTIAL_PRICE_REQUIRED'
+      ? '✓ Serviciu verificat · ○ Preț necesar înainte de aprobare'
+      : '✕ Oferta nu respectă mandatul';
+  document.getElementById('approveOffer').disabled=verified.verification_status!=='VERIFIED';
+  return verified;
+};
+</script>
+
 </body></html>
