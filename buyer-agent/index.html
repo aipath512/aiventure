@@ -120,4 +120,49 @@ window.showVerifiedQuote = async function(period='Septembrie 2026'){
 };
 </script>
 
+
+<script>
+(function(){
+  const approve=document.getElementById('approveOffer');
+  const reject=document.getElementById('rejectOffer');
+  const result=document.getElementById('verifyResult');
+
+  if(approve){
+    approve.addEventListener('click', async ()=>{
+      if(approve.disabled) return;
+      approve.disabled=true;
+      if(result) result.textContent='● Trimit aprobarea către ECBTAX Seller Agent…';
+      try{
+        const r=await fetch('/api/buyer/accept',{
+          method:'POST',
+          headers:{'content-type':'application/json'},
+          body:JSON.stringify({quote_id:'Q-1042',human_approved:true})
+        });
+        const j=await r.json();
+        const accepted =
+          r.ok &&
+          j?.seller_response?.result?.event==='QUOTE_ACCEPTED';
+        if(accepted){
+          if(result) result.textContent='✓ Oferta Q-1042 acceptată de ECBTAX Seller Agent';
+          approve.textContent='OFERTĂ APROBATĂ ✓';
+        }else{
+          if(result) result.textContent='✕ Acceptarea nu a fost confirmată de Seller Agent';
+          approve.disabled=false;
+        }
+      }catch(e){
+        if(result) result.textContent='✕ Eroare de conexiune la acceptarea A2A';
+        approve.disabled=false;
+      }
+    });
+  }
+
+  if(reject){
+    reject.addEventListener('click', ()=>{
+      if(result) result.textContent='Oferta Q-1042 a fost respinsă de utilizator.';
+      if(approve) approve.disabled=true;
+    });
+  }
+})();
+</script>
+
 </body></html>
