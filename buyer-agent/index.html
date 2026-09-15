@@ -96,15 +96,6 @@ btn.addEventListener('click', async()=>{
  btn.disabled=false;
 });
 </script>
-<style id="a2a-ui-fix">
-#periodDialog,#offerPanel{box-sizing:border-box;width:min(92vw,780px);margin:28px auto 0;padding:24px;border:1px solid #343b46;border-radius:16px;background:#10151d;color:#fff}
-#offerPanel{margin-bottom:48px}
-#offerPanel h2{font-size:28px;margin:0 0 22px}
-#offerPanel p{font-size:17px;line-height:1.55}
-#offerPanel button{min-height:48px;padding:12px 18px;font-size:16px;margin-right:8px}
-#approveOffer:disabled{opacity:.45!important;cursor:not-allowed!important;pointer-events:none!important}
-</style>
-
 <!-- STEP-PERIOD-DIALOG START -->
 <div id="periodDialog" style="display:none;margin:18px auto 0;max-width:680px;text-align:left">
   <label for="periodInput" style="display:block;margin-bottom:8px;color:#b9c2cf">
@@ -158,8 +149,7 @@ btn.addEventListener('click', async()=>{
         ps.innerHTML='← ECBTAX: Oferta <strong>'+quote.quote_id+'</strong> emisă.<br>✓ Status: '+quote.status;
         if(typeof window.showVerifiedQuote==='function'){
           await window.showVerifiedQuote(period);
-          dialog.style.display='none';
-          setTimeout(()=>document.getElementById('offerPanel')?.scrollIntoView({behavior:'smooth',block:'start'}),150);
+          dialog.style.display='none'; document.getElementById('offerPanel')?.scrollIntoView({behavior:'smooth',block:'start'});
         }
       }else{
         ps.textContent='← ECBTAX: '+(result.status||result.event||'Răspuns primit');
@@ -176,8 +166,7 @@ btn.addEventListener('click', async()=>{
 })();
 </script>
 <!-- STEP-PERIOD-DIALOG END -->
-
-<section id="offerPanel" style="display:none;margin-top:28px;padding:24px;border:1px solid #343b46;border-radius:16px;background:#10151d;color:#fff">
+<section id="offerPanel" style="display:none;box-sizing:border-box;width:min(92vw,780px);margin:28px auto 48px;margin-top:28px;padding:24px;border:1px solid #343b46;border-radius:16px;background:#10151d;color:#fff">
   <h2>AM GĂSIT UN SERVICIU</h2>
   <p><strong>ECBTAX</strong> · ✓ Agent-Ready</p>
   <p>Calcul salarial · România · 5 angajați</p>
@@ -189,10 +178,6 @@ btn.addEventListener('click', async()=>{
   <button id="approveOffer" type="button">APROBĂ OFERTA</button>
   <p style="font-size:12px;opacity:.75">Aprobarea rămâne blocată până când furnizorul comunică prețul.</p>
 </section>
-</main>
-<footer><div class="container">© 2026 AiVenture S.R.L. · SESSION 0003H</div></footer>
-
-
 <script>
 window.showVerifiedQuote = async function(period='Septembrie 2026'){
   const q=await fetch('/api/buyer/quote',{method:'POST',headers:{'content-type':'application/json'},
@@ -217,8 +202,6 @@ window.showVerifiedQuote = async function(period='Septembrie 2026'){
   return verified;
 };
 </script>
-
-
 <script>
 (function(){
   const approve=document.getElementById('approveOffer');
@@ -228,7 +211,7 @@ window.showVerifiedQuote = async function(period='Septembrie 2026'){
   if(approve){
     approve.addEventListener('click', async ()=>{
       if(approve.disabled) return;
-      approve.disabled=false;
+      approve.disabled=true;
       if(result) result.textContent='● Trimit aprobarea către ECBTAX Seller Agent…';
       try{
         const r=await fetch('/api/buyer/accept',{
@@ -262,9 +245,6 @@ window.showVerifiedQuote = async function(period='Septembrie 2026'){
   }
 })();
 </script>
-
-
-
-
-
+</main>
+<footer><div class="container">© 2026 AiVenture S.R.L. · SESSION 0003H</div></footer>
 </body></html>
