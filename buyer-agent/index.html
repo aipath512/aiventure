@@ -87,8 +87,7 @@ btn.addEventListener('click', async()=>{
       return;
     }
     statusEl.innerHTML+=`<br>✓ Conexiune A2A stabilită<br>← ECBTAX: ${sr.question || sr.status}`;
-
-    await window.showVerifiedQuote('Septembrie 2026');
+    if(sr.status==='NEEDS_INFORMATION' && typeof window.openPayrollPeriodDialog==='function') window.openPayrollPeriodDialog();
   } else {
     statusEl.textContent='○ Nu am găsit încă un Seller Agent compatibil.';
   }
@@ -179,5 +178,76 @@ window.showVerifiedQuote = async function(period='Septembrie 2026'){
   }
 })();
 </script>
+
+
+<!-- STEP-PERIOD-DIALOG START -->
+<div id="periodDialog" style="display:none;margin:18px auto 0;max-width:680px;text-align:left">
+  <label for="periodInput" style="display:block;margin-bottom:8px;color:#b9c2cf">
+    Pentru ce perioadă salarială?
+  </label>
+  <input id="periodInput" type="text" placeholder="Ex: Iunie 2026"
+    style="box-sizing:border-box;width:100%;padding:14px 16px;border:1px solid #3b4450;border-radius:10px;background:#05070a;color:#fff;font-size:16px">
+  <button id="periodContinue" type="button"
+    style="display:block;margin:14px auto 0;padding:13px 22px;border:0;border-radius:999px;font-weight:800;cursor:pointer">
+    CONTINUĂ
+  </button>
+  <div id="periodStatus" style="margin-top:14px;text-align:center"></div>
+</div>
+
+<script>
+(function(){
+  const dialog=document.getElementById('periodDialog');
+  const input=document.getElementById('periodInput');
+  const go=document.getElementById('periodContinue');
+  const ps=document.getElementById('periodStatus');
+
+  window.openPayrollPeriodDialog=function(){
+    dialog.style.display='block';
+    input.focus();
+  };
+
+  go.addEventListener('click', async ()=>{
+    const period=input.value.trim();
+    if(!period){ ps.textContent='Scrie perioada salarială.'; return; }
+
+    go.disabled=true;
+    ps.textContent='→ AiVenture: '+period;
+
+    try{
+      const r=await fetch('/api/buyer/answer',{
+        method:'POST',
+        headers:{'content-type':'application/json'},
+        body:JSON.stringify({period,employees:5})
+      });
+      const j=await r.json();
+      const result=j?.seller_response?.result;
+
+      if(!r.ok || !result){
+        ps.textContent='✕ ECBTAX nu a confirmat răspunsul.';
+        go.disabled=false;
+        return;
+      }
+
+      const quote=result.quote;
+      if(result.event==='QUOTE_ISSUED' && quote){
+        ps.innerHTML='← ECBTAX: Oferta <strong>'+quote.quote_id+'</strong> emisă.<br>✓ Status: '+quote.status;
+        if(typeof window.showVerifiedQuote==='function'){
+          await window.showVerifiedQuote(period);
+        }
+      }else{
+        ps.textContent='← ECBTAX: '+(result.status||result.event||'Răspuns primit');
+      }
+    }catch(e){
+      ps.textContent='✕ Eroare de conexiune A2A.';
+      go.disabled=false;
+    }
+  });
+
+  input.addEventListener('keydown',e=>{
+    if(e.key==='Enter'){e.preventDefault();go.click();}
+  });
+})();
+</script>
+<!-- STEP-PERIOD-DIALOG END -->
 
 </body></html>
