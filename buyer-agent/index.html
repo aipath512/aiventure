@@ -65,7 +65,17 @@ btn.addEventListener('click', async()=>{
  try{
   const r=await fetch('/api/buyer/request',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({request})});
   const j=await r.json();
-  statusEl.textContent=r.ok ? `✓ Cerere primită · ${j.request_id}` : `Eroare: ${j.error||r.status}`;
+  if(!r.ok){statusEl.textContent=`Eroare: ${j.error||r.status}`;btn.disabled=false;return;}
+  statusEl.textContent='✓ Am înțeles cererea · Caut furnizori Agent-Ready…';
+
+  const d=await fetch('/api/buyer/discover',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({request,request_id:j.request_id})});
+  const dj=await d.json();
+  if(d.ok && dj.matches && dj.matches.length){
+    const seller=dj.matches[0];
+    statusEl.innerHTML=`✓ Caut furnizori Agent-Ready<br>✓ <strong>${seller.provider}</strong> descoperit · Agent-Ready<br>● Urmează conexiunea A2A cu ${seller.agent}`;
+  } else {
+    statusEl.textContent='○ Nu am găsit încă un Seller Agent compatibil.';
+  }
  }catch(e){statusEl.textContent='Eroare de conexiune.';}
  btn.disabled=false;
 });
