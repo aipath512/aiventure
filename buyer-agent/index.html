@@ -73,6 +73,7 @@ btn.addEventListener('click', async()=>{
   if(d.ok && dj.matches && dj.matches.length){
     const seller=dj.matches[0];
     statusEl.innerHTML=`✓ Caut furnizori Agent-Ready<br>✓ <strong>${seller.provider}</strong> descoperit · Agent-Ready<br>● Urmează conexiunea A2A cu ${seller.agent}`;
+    await window.showVerifiedQuote('Septembrie 2026');
   } else {
     statusEl.textContent='○ Nu am găsit încă un Seller Agent compatibil.';
   }
