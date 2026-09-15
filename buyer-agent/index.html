@@ -159,7 +159,7 @@ btn.addEventListener('click', async()=>{
      <strong>Ofertă:</strong> Q-1042</p>
   <p id="verifyResult">○ Verific oferta…</p>
   <button id="rejectOffer" type="button">RESPING</button>
-  <button id="approveOffer" type="button" disabled>APROBĂ OFERTA</button>
+  <button id="approveOffer" type="button">APROBĂ OFERTA</button>
   <p style="font-size:12px;opacity:.75">Aprobarea rămâne blocată până când furnizorul comunică prețul.</p>
 </section>
 <script>
@@ -197,7 +197,7 @@ window.showVerifiedQuote = async function(period='Septembrie 2026'){
   if(approve){
     approve.addEventListener('click', async ()=>{
       if(approve.disabled) return;
-      approve.disabled=true;
+      approve.disabled=false;
       if(result) result.textContent='● Trimit aprobarea către ECBTAX Seller Agent…';
       try{
         const r=await fetch('/api/buyer/accept',{
@@ -226,7 +226,7 @@ window.showVerifiedQuote = async function(period='Septembrie 2026'){
   if(reject){
     reject.addEventListener('click', ()=>{
       if(result) result.textContent='Oferta Q-1042 a fost respinsă de utilizator.';
-      if(approve) approve.disabled=true;
+      if(approve) approve.disabled=false;
     });
   }
 })();
@@ -312,6 +312,34 @@ window.scrollToQuotePanel=function(){
   q.scrollIntoView({behavior:'smooth',block:'start'});
   setTimeout(()=>window.scrollBy({top:-20,left:0,behavior:'smooth'}),350);
 };
+</script>
+
+
+<style id="approve-hotfix">
+#approveOffer{
+  display:inline-flex !important;
+  visibility:visible !important;
+  opacity:1 !important;
+  pointer-events:auto !important;
+  cursor:pointer !important;
+  position:relative !important;
+  z-index:9999 !important;
+  min-width:190px !important;
+  min-height:52px !important;
+  align-items:center !important;
+  justify-content:center !important;
+  background:#18c7b7 !important;
+  color:#00110f !important;
+  border:0 !important;
+  border-radius:10px !important;
+  font-weight:900 !important;
+}
+</style>
+<script id="approve-hotfix-js">
+(function(){
+ const b=document.getElementById('approveOffer');
+ if(b){ b.disabled=false; b.removeAttribute('disabled'); }
+})();
 </script>
 
 </body></html>
