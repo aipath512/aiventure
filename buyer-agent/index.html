@@ -176,7 +176,7 @@ btn.addEventListener('click', async()=>{
   <p id="verifyResult">○ Verific oferta…</p>
   <button id="rejectOffer" type="button">RESPING</button>
   <button id="approveOffer" type="button">APROBĂ OFERTA</button>
-  <p style="font-size:12px;opacity:.75">Aprobarea rămâne blocată până când furnizorul comunică prețul.</p>
+  <p id="approvalNote" style="font-size:12px;opacity:.75">Aprobarea rămâne blocată până când furnizorul comunică prețul.</p>
 </section>
 <script>
 window.showVerifiedQuote = async function(period='Septembrie 2026'){
@@ -237,10 +237,52 @@ window.showVerifiedQuote = async function(period='Septembrie 2026'){
             'Price: <strong>€ '+(ev.price??50)+' / lună</strong><br>'+
             'Human Approved: <strong>'+(ev.human_approved===true?'YES':'NO')+'</strong><br>'+
             'Status: <strong>'+(ev.status||sr.evidence_status||'VERIFIED')+'</strong>'+
+            '</div>'+
+            '<div id="orderAction" style="margin-top:18px;text-align:center">'+
+            '<button id="sendOrder" type="button" style="padding:13px 22px;border:0;border-radius:999px;background:#14b8a6;color:#001b1b;font-weight:900;cursor:pointer">TRIMITE COMANDA</button>'+
+            '<div id="orderResult" style="margin-top:16px"></div>'+
             '</div>';
           approve.textContent='OFERTĂ APROBATĂ ✓';
           const note=document.getElementById('approvalNote');
           if(note) note.style.display='none';
+
+          const sendOrder=document.getElementById('sendOrder');
+          const orderResult=document.getElementById('orderResult');
+          if(sendOrder){
+            sendOrder.addEventListener('click', async ()=>{
+              sendOrder.disabled=true;
+              sendOrder.textContent='TRIMIT COMANDA…';
+              if(orderResult) orderResult.textContent='● AiVenture Buyer trimite order.create către ECBTAX Seller Agent…';
+              try{
+                const or=await fetch('/api/buyer/order',{
+                  method:'POST',
+                  headers:{'content-type':'application/json'},
+                  body:JSON.stringify({quote_id:ev.quote_id||'Q-1042',evidence_id:ev.evidence_id||'EV-Q-1042'})
+                });
+                const oj=await or.json();
+                if(or.ok && oj?.event==='A2A_ORDER_CONFIRMED'){
+                  if(orderResult) orderResult.innerHTML=
+                    '<div style="padding:20px;border:1px solid #2dd4bf;border-radius:12px;background:#071411;color:#fff;line-height:1.65;text-align:left">'+
+                    '<strong style="font-size:20px;color:#5eead4">✓ ORDER CONFIRMED</strong><br>'+
+                    'Order: <strong>'+(oj.order_id||'ORD-1042')+'</strong><br>'+
+                    'Seller: '+(oj.seller||'ECBTAX Seller Agent')+'<br>'+
+                    'Quote: <strong>'+(oj.quote_id||'Q-1042')+'</strong><br>'+
+                    'Evidence: <strong>'+(oj.evidence_id||'EV-Q-1042')+'</strong><br>'+
+                    'Price: <strong>€ '+(oj.price??50)+' / lună</strong><br>'+
+                    'Status: <strong>'+(oj.status||'CONFIRMED')+'</strong><br>'+
+                    'Execution: <strong>'+(oj.execution_status||'READY_FOR_EXECUTION')+'</strong>'+
+                    '</div>';
+                  sendOrder.textContent='COMANDĂ TRIMISĂ ✓';
+                }else{
+                  if(orderResult) orderResult.textContent='✕ Comanda nu a fost confirmată de ECBTAX Seller Agent';
+                  sendOrder.disabled=false; sendOrder.textContent='TRIMITE COMANDA';
+                }
+              }catch(e){
+                if(orderResult) orderResult.textContent='✕ Eroare de conexiune la order.create';
+                sendOrder.disabled=false; sendOrder.textContent='TRIMITE COMANDA';
+              }
+            });
+          }
         }else{
           if(result) result.textContent='✕ Acceptarea nu a fost confirmată de Seller Agent';
           approve.disabled=false;
