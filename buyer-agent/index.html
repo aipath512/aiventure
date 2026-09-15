@@ -46,16 +46,29 @@ footer{border-top:1px solid #292929;padding:36px 0;color:#777}
 <body>
 <header><div class="container"><nav><a href="/"><strong>AiVenture</strong></a><span>SESSION 0003H · 2026-09-14 12:52 EEST</span></nav></div></header>
 <main><section class="hero"><div class="container">
-<div class="kicker">A2A · BUYER AGENT</div>
-<h1>Buyer Agent AiVenture</h1>
-<p class="lead">Un Agent cumpărător pentru servicii B2B: descoperă oferta, compară condițiile, verifică eligibilitatea și inițiază cereri în limite autorizate.</p>
-<a class="btn" href="/api/a2a">VEZI ENDPOINTUL A2A</a>
-<div class="grid">
-<article class="card"><h2>Discover</h2><p>Identifică servicii Agent-Ready și sursele lor canonice.</p></article>
-<article class="card"><h2>Compare</h2><p>Compară oferta, condițiile, eligibilitatea și limitele de autonomie.</p></article>
-<article class="card"><h2>Request</h2><p>Inițiază o cerere fără angajament financiar implicit.</p></article>
+<div class="kicker">A2A · BUYER AGENT ●</div>
+<h1 style="text-align:center">CE SERVICIU CAUȚI?</h1>
+<p class="lead" style="margin:0 auto 28px;text-align:center">Spune Agentului AiVenture serviciul de care ai nevoie.</p>
+<div class="card" style="max-width:780px;margin:0 auto">
+<textarea id="serviceRequest" style="box-sizing:border-box;width:100%;min-height:92px;background:#070707;color:#fff;border:1px solid #444;border-radius:12px;padding:18px;font:inherit;font-size:18px">Calcul salarii pentru 5 angajați în România</textarea>
+<div style="text-align:center;margin-top:22px"><button id="searchAgent" class="btn" style="border:0;cursor:pointer;font-size:16px">CAUTĂ CU AGENTUL AI</button></div>
+<p id="agentStatus" style="text-align:center;color:#5eead4;min-height:28px"></p>
 </div>
-<p><strong>Regulă:</strong> Capability ≠ Permission. No rule → no autonomy.</p>
-</div></section></main>
+<p style="text-align:center;color:#888;font-size:13px;margin-top:20px">Interacționezi cu un sistem AI. Nicio ofertă nu este acceptată fără aprobarea omului.</p>
+</div></section>
+<script>
+const btn=document.getElementById('searchAgent'), statusEl=document.getElementById('agentStatus');
+btn.addEventListener('click', async()=>{
+ const request=document.getElementById('serviceRequest').value.trim();
+ if(!request){statusEl.textContent='Scrie serviciul căutat.';return;}
+ btn.disabled=true; statusEl.textContent='Agentul tău pornește…';
+ try{
+  const r=await fetch('/api/buyer/request',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({request})});
+  const j=await r.json();
+  statusEl.textContent=r.ok ? `✓ Cerere primită · ${j.request_id}` : `Eroare: ${j.error||r.status}`;
+ }catch(e){statusEl.textContent='Eroare de conexiune.';}
+ btn.disabled=false;
+});
+</script></main>
 <footer><div class="container">© 2026 AiVenture S.R.L. · SESSION 0003H</div></footer>
 </body></html>
