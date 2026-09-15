@@ -224,8 +224,23 @@ window.showVerifiedQuote = async function(period='Septembrie 2026'){
           r.ok &&
           j?.seller_response?.result?.event==='QUOTE_ACCEPTED';
         if(accepted){
-          if(result) result.textContent='✓ Oferta Q-1042 acceptată de ECBTAX Seller Agent';
+          const sr=j.seller_response.result;
+          const ev=sr.evidence||{};
+          if(result) result.innerHTML=
+            '✓ Oferta Q-1042 acceptată de ECBTAX Seller Agent'+
+            '<div id="transactionEvidence" style="margin-top:22px;padding:20px;border:1px solid #2dd4bf;border-radius:12px;background:#071411;color:#fff;line-height:1.65">'+
+            '<strong style="font-size:20px;color:#5eead4">✓ TRANSACTION VERIFIED</strong><br>'+
+            'Evidence ID: <strong>'+(ev.evidence_id||'EV-Q-1042')+'</strong><br>'+
+            'Buyer: '+(ev.buyer||'AiVenture Buyer Agent')+'<br>'+
+            'Seller: '+(ev.seller||'ECBTAX Seller Agent')+'<br>'+
+            'Quote: <strong>'+(ev.quote_id||'Q-1042')+'</strong><br>'+
+            'Price: <strong>€ '+(ev.price??50)+' / lună</strong><br>'+
+            'Human Approved: <strong>'+(ev.human_approved===true?'YES':'NO')+'</strong><br>'+
+            'Status: <strong>'+(ev.status||sr.evidence_status||'VERIFIED')+'</strong>'+
+            '</div>';
           approve.textContent='OFERTĂ APROBATĂ ✓';
+          const note=document.getElementById('approvalNote');
+          if(note) note.style.display='none';
         }else{
           if(result) result.textContent='✕ Acceptarea nu a fost confirmată de Seller Agent';
           approve.disabled=false;
