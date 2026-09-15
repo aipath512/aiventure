@@ -42,6 +42,59 @@ nav a,footer a{color:#aaa;text-decoration:none}
 footer{border-top:1px solid #292929;padding:36px 0;color:#777}
 @media(max-width:800px){.grid{grid-template-columns:1fr}}
 </style>
+
+<style id="step-ui-readable">
+  html { scroll-behavior:smooth; }
+  body { overflow-x:hidden; }
+  #quotePanel {
+    box-sizing:border-box !important;
+    width:min(92vw,760px) !important;
+    margin:40px auto 80px !important;
+    padding:28px !important;
+    background:#0d1219 !important;
+    border:1px solid #3b4654 !important;
+    border-radius:18px !important;
+    color:#fff !important;
+    font-size:18px !important;
+    line-height:1.55 !important;
+    min-height:auto !important;
+    overflow:visible !important;
+  }
+  #quotePanel h2, #quotePanel h3 {
+    color:#fff !important;
+    font-size:28px !important;
+    line-height:1.15 !important;
+    margin:0 0 22px !important;
+  }
+  #quotePanel strong { color:#fff !important; }
+  #quotePanel button {
+    min-height:48px !important;
+    padding:12px 18px !important;
+    font-size:16px !important;
+    margin:8px 6px 8px 0 !important;
+  }
+  #verifyResult {
+    color:#fff !important;
+    font-size:17px !important;
+    line-height:1.5 !important;
+    margin-top:16px !important;
+  }
+  #periodDialog {
+    box-sizing:border-box !important;
+    width:min(92vw,680px) !important;
+    padding:20px !important;
+    margin:22px auto !important;
+    background:#0d1219 !important;
+    border:1px solid #3b4654 !important;
+    border-radius:16px !important;
+    color:#fff !important;
+  }
+  @media (max-width:640px){
+    #quotePanel { width:94vw !important; padding:20px !important; font-size:17px !important; }
+    #quotePanel h2, #quotePanel h3 { font-size:24px !important; }
+  }
+</style>
+
 </head>
 <body>
 <header><div class="container"><nav><a href="/"><strong>AiVenture</strong></a><span>SESSION 0003H · 2026-09-14 12:52 EEST</span></nav></div></header>
@@ -233,6 +286,7 @@ window.showVerifiedQuote = async function(period='Septembrie 2026'){
         ps.innerHTML='← ECBTAX: Oferta <strong>'+quote.quote_id+'</strong> emisă.<br>✓ Status: '+quote.status;
         if(typeof window.showVerifiedQuote==='function'){
           await window.showVerifiedQuote(period);
+          setTimeout(()=>window.scrollToQuotePanel && window.scrollToQuotePanel(),150);
         }
       }else{
         ps.textContent='← ECBTAX: '+(result.status||result.event||'Răspuns primit');
@@ -249,5 +303,15 @@ window.showVerifiedQuote = async function(period='Septembrie 2026'){
 })();
 </script>
 <!-- STEP-PERIOD-DIALOG END -->
+
+
+<script id="step-scroll-helper">
+window.scrollToQuotePanel=function(){
+  const q=document.getElementById('quotePanel');
+  if(!q) return;
+  q.scrollIntoView({behavior:'smooth',block:'start'});
+  setTimeout(()=>window.scrollBy({top:-20,left:0,behavior:'smooth'}),350);
+};
+</script>
 
 </body></html>
