@@ -72,7 +72,22 @@ btn.addEventListener('click', async()=>{
   const dj=await d.json();
   if(d.ok && dj.matches && dj.matches.length){
     const seller=dj.matches[0];
-    statusEl.innerHTML=`✓ Caut furnizori Agent-Ready<br>✓ <strong>${seller.provider}</strong> descoperit · Agent-Ready<br>● Urmează conexiunea A2A cu ${seller.agent}`;
+    statusEl.innerHTML=`✓ Caut furnizori Agent-Ready<br>✓ <strong>${seller.provider}</strong> descoperit · Agent-Ready<br>● Mă conectez A2A cu ${seller.agent}…`;
+
+    const c=await fetch('/api/buyer/contact',{
+      method:'POST',
+      headers:{'content-type':'application/json'},
+      body:JSON.stringify({request})
+    });
+    const cj=await c.json();
+    const sr=cj?.seller_response?.result;
+    if(!c.ok || !sr){
+      statusEl.innerHTML+=`<br>✕ Conexiunea A2A cu ECBTAX a eșuat`;
+      btn.disabled=false;
+      return;
+    }
+    statusEl.innerHTML+=`<br>✓ Conexiune A2A stabilită<br>← ECBTAX: ${sr.question || sr.status}`;
+
     await window.showVerifiedQuote('Septembrie 2026');
   } else {
     statusEl.textContent='○ Nu am găsit încă un Seller Agent compatibil.';
