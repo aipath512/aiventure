@@ -380,7 +380,6 @@ window.showVerifiedQuote = async function(period='Septembrie 2026'){
                                            delivery_evidence_id:rj.delivery_evidence_id||'DEL-EV-1042'
                                          })
                                        });
-
                                        const tj=await tr.json();
 
                                        if(tr.ok && tj?.event==='A2A_TRANSACTION_RECEIPT_VERIFIED'){
