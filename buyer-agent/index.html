@@ -1,3 +1,304 @@
+Text lipit(20260916-133424).txt
+Document
+Text lipit(20260916-134423).txt
+Document
+
+Da — captura arată că STEP 11C rămâne funcțional după modificările STEP 12: SERVICE COMPLETED, DEL-EV-1042, RECEIVED_AND_VERIFIED, TRANSACTION_COMPLETE.
+
+Dar STEP 12B nu este încă testat. Captura este încă ecranul STEP 11.
+
+Acum testăm receipt.js.
+
+Pe aiventure.ro → F12 → Console, lipește exact:
+
+fetch("/api/buyer/receipt",{
+  method:"POST",
+  headers:{"Content-Type":"application/json"},
+  body:JSON.stringify({
+    order_id:"ORD-1042",
+    job_id:"JOB-1042",
+    result_id:"RES-1042",
+    delivery_evidence_id:"DEL-EV-1042"
+  })
+}).then(r=>r.json()).then(console.log)
+
+Trebuie să vedem:
+
+event: A2A_TRANSACTION_RECEIPT_VERIFIED
+receipt_id: RCP-1042
+
+quote_id: Q-1042
+evidence_id: EV-Q-1042
+order_id: ORD-1042
+job_id: JOB-1042
+result_id: RES-1042
+delivery_evidence_id: DEL-EV-1042
+
+identity_verified: true
+audit_trail_verified: true
+
+status: COMPLETE
+audit_status: VERIFIED
+receipt_status: RECEIVED_AND_VERIFIED
+
+next_event: AUDIT_COMPLETE
+
+Trimite captura consolei. Dacă avem asta, STEP 12B = PASS și trecem la 12C: receipt-ul final vizibil în Buyer Agent.
+
+PASS ✅ STEP 12B.
+
+Captura confirmă explicit:
+
+event: "A2A_TRANSACTION_RECEIPT_VERIFIED"
+receipt_id: "RCP-1042"
+Buyer: AiVenture Buyer Agent
+Seller: ECBTAX Seller Agent
+Order: ORD-1042
+
+Mesajul CSP roșu este pentru Cloudflare Insights și nu a blocat tranzacția A2A.
+
+NEXT → STEP 12C — FINAL RECEIPT ÎN INTERFAȚĂ
+
+După SERVICE COMPLETED, adăugăm:
+
+VEZI DOVADA TRANZACȚIEI
+
+→ /api/buyer/receipt
+
+și afișăm final:
+
+✓ A2A TRANSACTION VERIFIED
+Receipt: RCP-1042
+Quote: Q-1042
+Evidence: EV-Q-1042
+Order: ORD-1042
+Execution: JOB-1042
+Result: RES-1042
+Delivery Evidence: DEL-EV-1042
+Human Approved: YES
+Transaction Verified: YES
+Delivery Verified: YES
+Audit Trail: VERIFIED
+Status: COMPLETE
+AUDIT COMPLETE ✓
+
+Trimite-mi buyer-agent/index.html actual STEP 11C și modific doar acel fișier, păstrând tot ce funcționează.
+
+Text lipit(20260916-140049).txt
+Document
+Analiza conține erori
+from pathlib import Path
+
+src = Path("/mnt/data/Text lipit(20260916-140049).txt")
+text = src.read_text(encoding="utf-8")
+
+old = """                                   receiveResult.textContent='REZULTAT PRIMIT ✓';
+                                 }else{"""
+
+new = """                                   receiveResult.textContent='REZULTAT PRIMIT ✓';
+
+                                   // =========================================================
+                                   // STEP 12C — FINAL RECEIPT / AUDIT TRAIL
+                                   // =========================================================
+                                   const receiptAction=document.createElement('div');
+                                   receiptAction.style.cssText='margin-top:18px;text-align:center';
+                                   receiptAction.innerHTML=
+                                     '<button id="showReceipt" type="button" style="padding:13px 22px;border:0;border-radius:999px;background:#14b8a6;color:#001b1b;font-weight:900;cursor:pointer">VEZI DOVADA TRANZACȚIEI</button>'+
+                                     '<div id="receiptResult" style="margin-top:16px"></div>';
+                                   serviceResult.appendChild(receiptAction);
+
+                                   const showReceipt=document.getElementById('showReceipt');
+                                   const receiptResult=document.getElementById('receiptResult');
+
+                                   showReceipt.addEventListener('click', async ()=>{
+                                     showReceipt.disabled=true;
+                                     showReceipt.textContent='VERIFIC DOVADA…';
+                                     receiptResult.textContent='● AiVenture Buyer verifică receipt-ul final și audit trail-ul…';
+
+                                     try{
+                                       const tr=await fetch('/api/buyer/receipt',{
+                                         method:'POST',
+                                         headers:{'content-type':'application/json'},
+                                         body:JSON.stringify({
+                                           order_id:rj.order_id||'ORD-1042',
+                                           job_id:rj.job_id||'JOB-1042',
+                                           result_id:rj.result_id||'RES-1042',
+                                           delivery_evidence_id:rj.delivery_evidence_id||'DEL-EV-1042'
+                                         })
+                                       });
+
+                                       const tj=await tr.json();
+
+                                       if(tr.ok && tj?.event==='A2A_TRANSACTION_RECEIPT_VERIFIED'){
+                                         receiptResult.innerHTML=
+                                           '<div style="padding:20px;border:1px solid #2dd4bf;border-radius:12px;background:#071411;color:#fff;line-height:1.65;text-align:left">'+
+                                           '<strong style="font-size:20px;color:#5eead4">✓ A2A TRANSACTION VERIFIED</strong><br>'+
+                                           'Receipt: <strong>'+(tj.receipt_id||'RCP-1042')+'</strong><br>'+
+                                           'Quote: <strong>'+(tj.quote_id||'Q-1042')+'</strong><br>'+
+                                           'Evidence: <strong>'+(tj.evidence_id||'EV-Q-1042')+'</strong><br>'+
+                                           'Order: <strong>'+(tj.order_id||'ORD-1042')+'</strong><br>'+
+                                           'Execution: <strong>'+(tj.job_id||'JOB-1042')+'</strong><br>'+
+                                           'Result: <strong>'+(tj.result_id||'RES-1042')+'</strong><br>'+
+                                           'Delivery Evidence: <strong>'+(tj.delivery_evidence_id||'DEL-EV-1042')+'</strong><br>'+
+                                           'Human Approved: <strong>'+(tj.human_approved===true?'YES':'NO')+'</strong><br>'+
+                                           'Transaction Verified: <strong>'+(tj.transaction_verified===true?'YES':'NO')+'</strong><br>'+
+                                           'Delivery Verified: <strong>'+(tj.delivery_verified===true?'YES':'NO')+'</strong><br>'+
+                                           'Identity Verified: <strong>'+(tj.identity_verified===true?'YES':'NO')+'</strong><br>'+
+                                           'Audit Trail: <strong>'+(tj.audit_trail_verified===true?'VERIFIED':'NOT VERIFIED')+'</strong><br>'+
+                                           'Status: <strong>'+(tj.status||'COMPLETE')+'</strong><br>'+
+                                           'Receipt Status: <strong>'+(tj.receipt_status||'RECEIVED_AND_VERIFIED')+'</strong><br>'+
+                                           '<div style="margin-top:14px;padding-top:12px;border-top:1px solid #24554d;color:#5eead4;font-weight:900">✓ AUDIT COMPLETE</div>'+
+                                           '</div>';
+                                         showReceipt.textContent='DOVADĂ VERIFICATĂ ✓';
+                                       }else{
+                                         receiptResult.textContent='✕ Receipt-ul final nu a fost verificat';
+                                         showReceipt.disabled=false;
+                                         showReceipt.textContent='VEZI DOVADA TRANZACȚIEI';
+                                       }
+                                     }catch(e){
+                                       receiptResult.textContent='✕ Eroare de conexiune la transaction receipt';
+                                       showReceipt.disabled=false;
+                                       showReceipt.textContent='VEZI DOVADA TRANZACȚIEI';
+                                     }
+                                   });
+                                 }else{"""
+
+if old not in text:
+    raise RuntimeError("Punctul STEP 11C nu a fost găsit exact; fișierul nu a fost modificat.")
+
+updated = text.replace(old, new, 1)
+out = Path("/mnt/data/buyer-agent-index-step12c.html")
+out.write_text(updated, encoding="utf-8")
+
+print("Creat:", out)
+print("Linii:", len(updated.splitlines()))
+print("STEP 12C:", "A2A TRANSACTION VERIFIED" in updated and "/api/buyer/receipt" in updated)
+
+---------------------------------------------------------------------------
+RuntimeError                              Traceback (most recent call last)
+Cell In[4], line 78
+     74                                    });
+     75                                  }else{"""
+     76 
+     77 if old not in text:
+---> 78     raise RuntimeError("Punctul STEP 11C nu a fost găsit exact; fișierul nu a fost modificat.")
+     79 
+     80 updated = text.replace(old, new, 1)
+     81 out = Path("/mnt/data/buyer-agent-index-step12c.html")
+
+RuntimeError: Punctul STEP 11C nu a fost găsit exact; fișierul nu a fost modificat.
+
+Analizat
+from pathlib import Path
+import re
+
+src = Path("/mnt/data/Text lipit(20260916-140049).txt")
+text = src.read_text(encoding="utf-8")
+
+needle = "receiveResult.textContent='REZULTAT PRIMIT ✓';"
+pos = text.find(needle)
+if pos < 0:
+    raise RuntimeError("Nu am găsit linia REZULTAT PRIMIT.")
+
+insert_at = pos + len(needle)
+
+addition = r'''
+
+                                   // =========================================================
+                                   // STEP 12C — FINAL RECEIPT / AUDIT TRAIL
+                                   // =========================================================
+                                   const receiptAction=document.createElement('div');
+                                   receiptAction.style.cssText='margin-top:18px;text-align:center';
+                                   receiptAction.innerHTML=
+                                     '<button id="showReceipt" type="button" style="padding:13px 22px;border:0;border-radius:999px;background:#14b8a6;color:#001b1b;font-weight:900;cursor:pointer">VEZI DOVADA TRANZACȚIEI</button>'+
+                                     '<div id="receiptResult" style="margin-top:16px"></div>';
+                                   serviceResult.appendChild(receiptAction);
+
+                                   const showReceipt=document.getElementById('showReceipt');
+                                   const receiptResult=document.getElementById('receiptResult');
+
+                                   showReceipt.addEventListener('click', async ()=>{
+                                     showReceipt.disabled=true;
+                                     showReceipt.textContent='VERIFIC DOVADA…';
+                                     receiptResult.textContent='● AiVenture Buyer verifică receipt-ul final și audit trail-ul…';
+
+                                     try{
+                                       const tr=await fetch('/api/buyer/receipt',{
+                                         method:'POST',
+                                         headers:{'content-type':'application/json'},
+                                         body:JSON.stringify({
+                                           order_id:rj.order_id||'ORD-1042',
+                                           job_id:rj.job_id||'JOB-1042',
+                                           result_id:rj.result_id||'RES-1042',
+                                           delivery_evidence_id:rj.delivery_evidence_id||'DEL-EV-1042'
+                                         })
+                                       });
+
+                                       const tj=await tr.json();
+
+                                       if(tr.ok && tj?.event==='A2A_TRANSACTION_RECEIPT_VERIFIED'){
+                                         receiptResult.innerHTML=
+                                           '<div style="padding:20px;border:1px solid #2dd4bf;border-radius:12px;background:#071411;color:#fff;line-height:1.65;text-align:left">'+
+                                           '<strong style="font-size:20px;color:#5eead4">✓ A2A TRANSACTION VERIFIED</strong><br>'+
+                                           'Receipt: <strong>'+(tj.receipt_id||'RCP-1042')+'</strong><br>'+
+                                           'Quote: <strong>'+(tj.quote_id||'Q-1042')+'</strong><br>'+
+                                           'Evidence: <strong>'+(tj.evidence_id||'EV-Q-1042')+'</strong><br>'+
+                                           'Order: <strong>'+(tj.order_id||'ORD-1042')+'</strong><br>'+
+                                           'Execution: <strong>'+(tj.job_id||'JOB-1042')+'</strong><br>'+
+                                           'Result: <strong>'+(tj.result_id||'RES-1042')+'</strong><br>'+
+                                           'Delivery Evidence: <strong>'+(tj.delivery_evidence_id||'DEL-EV-1042')+'</strong><br>'+
+                                           'Human Approved: <strong>'+(tj.human_approved===true?'YES':'NO')+'</strong><br>'+
+                                           'Transaction Verified: <strong>'+(tj.transaction_verified===true?'YES':'NO')+'</strong><br>'+
+                                           'Delivery Verified: <strong>'+(tj.delivery_verified===true?'YES':'NO')+'</strong><br>'+
+                                           'Identity Verified: <strong>'+(tj.identity_verified===true?'YES':'NO')+'</strong><br>'+
+                                           'Audit Trail: <strong>'+(tj.audit_trail_verified===true?'VERIFIED':'NOT VERIFIED')+'</strong><br>'+
+                                           'Status: <strong>'+(tj.status||'COMPLETE')+'</strong><br>'+
+                                           'Receipt Status: <strong>'+(tj.receipt_status||'RECEIVED_AND_VERIFIED')+'</strong><br>'+
+                                           '<div style="margin-top:14px;padding-top:12px;border-top:1px solid #24554d;color:#5eead4;font-weight:900">✓ AUDIT COMPLETE</div>'+
+                                           '</div>';
+                                         showReceipt.textContent='DOVADĂ VERIFICATĂ ✓';
+                                       }else{
+                                         receiptResult.textContent='✕ Receipt-ul final nu a fost verificat';
+                                         showReceipt.disabled=false;
+                                         showReceipt.textContent='VEZI DOVADA TRANZACȚIEI';
+                                       }
+                                     }catch(e){
+                                       receiptResult.textContent='✕ Eroare de conexiune la transaction receipt';
+                                       showReceipt.disabled=false;
+                                       showReceipt.textContent='VEZI DOVADA TRANZACȚIEI';
+                                     }
+                                   });'''
+
+updated = text[:insert_at] + addition + text[insert_at:]
+out = Path("/mnt/data/buyer-agent-index-step12c.html")
+out.write_text(updated, encoding="utf-8")
+
+print("Fișier creat cu succes:", out)
+print("Linii:", len(updated.splitlines()))
+print("Conține /api/buyer/receipt:", "/api/buyer/receipt" in updated)
+print("Conține A2A TRANSACTION VERIFIED:", "A2A TRANSACTION VERIFIED" in updated)
+
+STDOUT/STDERR
+Fișier creat cu succes: /mnt/data/buyer-agent-index-step12c.html
+Linii: 467
+Conține /api/buyer/receipt: True
+Conține A2A TRANSACTION VERIFIED: True
+
+
+Am primit buyer-agent/index.html actual. Este versiunea STEP 11C: afișarea SERVICE COMPLETED se termină la RECEIVED_AND_VERIFIED / TRANSACTION_COMPLETE.
+
+Am construit STEP 12C peste exact această versiune, fără să schimb pașii anteriori.
+
+Descarcă buyer-agent/index.html — STEP 12C complet
+
+În GitHub înlocuiești:
+
+aiventure/buyer-agent/index.html
+
+cu acest fișier și faci Commit.
+
+După Cloudflare Success, rulăm fluxul normal. După SERVICE COMPLETED trebuie să apară butonul VEZI DOVADA TRANZACȚIEI. Apăsarea lui va chema /api/buyer/receipt și trebuie să producă ✓ A2A TRANSACTION VERIFIED → RCP-1042 → ✓ AUDIT COMPLETE. 
+
 <!doctype html>
 <html lang="ro">
 <head>
@@ -350,6 +651,71 @@ window.showVerifiedQuote = async function(period='Septembrie 2026'){
                                     '</div>';
 
                                   receiveResult.textContent='REZULTAT PRIMIT ✓';
+
+                                   // =========================================================
+                                   // STEP 12C — FINAL RECEIPT / AUDIT TRAIL
+                                   // =========================================================
+                                   const receiptAction=document.createElement('div');
+                                   receiptAction.style.cssText='margin-top:18px;text-align:center';
+                                   receiptAction.innerHTML=
+                                     '<button id="showReceipt" type="button" style="padding:13px 22px;border:0;border-radius:999px;background:#14b8a6;color:#001b1b;font-weight:900;cursor:pointer">VEZI DOVADA TRANZACȚIEI</button>'+
+                                     '<div id="receiptResult" style="margin-top:16px"></div>';
+                                   serviceResult.appendChild(receiptAction);
+
+                                   const showReceipt=document.getElementById('showReceipt');
+                                   const receiptResult=document.getElementById('receiptResult');
+
+                                   showReceipt.addEventListener('click', async ()=>{
+                                     showReceipt.disabled=true;
+                                     showReceipt.textContent='VERIFIC DOVADA…';
+                                     receiptResult.textContent='● AiVenture Buyer verifică receipt-ul final și audit trail-ul…';
+
+                                     try{
+                                       const tr=await fetch('/api/buyer/receipt',{
+                                         method:'POST',
+                                         headers:{'content-type':'application/json'},
+                                         body:JSON.stringify({
+                                           order_id:rj.order_id||'ORD-1042',
+                                           job_id:rj.job_id||'JOB-1042',
+                                           result_id:rj.result_id||'RES-1042',
+                                           delivery_evidence_id:rj.delivery_evidence_id||'DEL-EV-1042'
+                                         })
+                                       });
+
+                                       const tj=await tr.json();
+
+                                       if(tr.ok && tj?.event==='A2A_TRANSACTION_RECEIPT_VERIFIED'){
+                                         receiptResult.innerHTML=
+                                           '<div style="padding:20px;border:1px solid #2dd4bf;border-radius:12px;background:#071411;color:#fff;line-height:1.65;text-align:left">'+
+                                           '<strong style="font-size:20px;color:#5eead4">✓ A2A TRANSACTION VERIFIED</strong><br>'+
+                                           'Receipt: <strong>'+(tj.receipt_id||'RCP-1042')+'</strong><br>'+
+                                           'Quote: <strong>'+(tj.quote_id||'Q-1042')+'</strong><br>'+
+                                           'Evidence: <strong>'+(tj.evidence_id||'EV-Q-1042')+'</strong><br>'+
+                                           'Order: <strong>'+(tj.order_id||'ORD-1042')+'</strong><br>'+
+                                           'Execution: <strong>'+(tj.job_id||'JOB-1042')+'</strong><br>'+
+                                           'Result: <strong>'+(tj.result_id||'RES-1042')+'</strong><br>'+
+                                           'Delivery Evidence: <strong>'+(tj.delivery_evidence_id||'DEL-EV-1042')+'</strong><br>'+
+                                           'Human Approved: <strong>'+(tj.human_approved===true?'YES':'NO')+'</strong><br>'+
+                                           'Transaction Verified: <strong>'+(tj.transaction_verified===true?'YES':'NO')+'</strong><br>'+
+                                           'Delivery Verified: <strong>'+(tj.delivery_verified===true?'YES':'NO')+'</strong><br>'+
+                                           'Identity Verified: <strong>'+(tj.identity_verified===true?'YES':'NO')+'</strong><br>'+
+                                           'Audit Trail: <strong>'+(tj.audit_trail_verified===true?'VERIFIED':'NOT VERIFIED')+'</strong><br>'+
+                                           'Status: <strong>'+(tj.status||'COMPLETE')+'</strong><br>'+
+                                           'Receipt Status: <strong>'+(tj.receipt_status||'RECEIVED_AND_VERIFIED')+'</strong><br>'+
+                                           '<div style="margin-top:14px;padding-top:12px;border-top:1px solid #24554d;color:#5eead4;font-weight:900">✓ AUDIT COMPLETE</div>'+
+                                           '</div>';
+                                         showReceipt.textContent='DOVADĂ VERIFICATĂ ✓';
+                                       }else{
+                                         receiptResult.textContent='✕ Receipt-ul final nu a fost verificat';
+                                         showReceipt.disabled=false;
+                                         showReceipt.textContent='VEZI DOVADA TRANZACȚIEI';
+                                       }
+                                     }catch(e){
+                                       receiptResult.textContent='✕ Eroare de conexiune la transaction receipt';
+                                       showReceipt.disabled=false;
+                                       showReceipt.textContent='VEZI DOVADA TRANZACȚIEI';
+                                     }
+                                   });
                                 }else{
                                   if(serviceResult)
                                     serviceResult.textContent='✕ Rezultatul nu a fost primit sau verificat';
@@ -400,3 +766,5 @@ window.showVerifiedQuote = async function(period='Septembrie 2026'){
 </main>
 <footer><div class="container">© 2026 AiVenture S.R.L. · SESSION 0003H</div></footer>
 </body></html>
+buyer-agent-index-step12c.html
+HTML
