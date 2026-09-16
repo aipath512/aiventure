@@ -297,8 +297,73 @@ window.showVerifiedQuote = async function(period='Septembrie 2026'){
                             'Status: <strong>'+(ej.status||'IN_PROGRESS')+'</strong><br>'+
                             'Execution: <strong>'+(ej.execution_status||'IN_PROGRESS')+'</strong><br>'+
                             'Next: <strong>'+(ej.next_event||'SERVICE_RESULT')+'</strong>'+
+                            '</div>'+
+                            '<div id="resultAction" style="margin-top:18px;text-align:center">'+
+                            '<button id="receiveResult" type="button" style="padding:13px 22px;border:0;border-radius:999px;background:#14b8a6;color:#001b1b;font-weight:900;cursor:pointer">PRIMEȘTE REZULTATUL</button>'+
+                            '<div id="serviceResult" style="margin-top:16px"></div>'+
                             '</div>';
                           startExecution.textContent='EXECUȚIE PORNITĂ ✓';
+
+                          const receiveResult=document.getElementById('receiveResult');
+                          const serviceResult=document.getElementById('serviceResult');
+
+                          if(receiveResult){
+                            receiveResult.addEventListener('click', async ()=>{
+                              receiveResult.disabled=true;
+                              receiveResult.textContent='PRIMESC REZULTATUL…';
+
+                              if(serviceResult)
+                                serviceResult.textContent='● AiVenture Buyer solicită service.result de la ECBTAX Seller Agent…';
+
+                              try{
+                                const rr=await fetch('/api/buyer/result',{
+                                  method:'POST',
+                                  headers:{'content-type':'application/json'},
+                                  body:JSON.stringify({
+                                    job_id:ej.job_id||'JOB-1042',
+                                    order_id:ej.order_id||'ORD-1042',
+                                    evidence_id:ej.evidence_id||'EV-Q-1042'
+                                  })
+                                });
+
+                                const rj=await rr.json();
+
+                                if(rr.ok && rj?.event==='A2A_SERVICE_RESULT_RECEIVED'){
+                                  if(serviceResult) serviceResult.innerHTML=
+                                    '<div style="padding:20px;border:1px solid #2dd4bf;border-radius:12px;background:#071411;color:#fff;line-height:1.65;text-align:left">'+
+                                    '<strong style="font-size:20px;color:#5eead4">✓ SERVICE COMPLETED</strong><br>'+
+                                    'Result: <strong>'+(rj.result_id||'RES-1042')+'</strong><br>'+
+                                    'Job: <strong>'+(rj.job_id||'JOB-1042')+'</strong><br>'+
+                                    'Order: <strong>'+(rj.order_id||'ORD-1042')+'</strong><br>'+
+                                    'Type: <strong>'+(rj.result_type||'PAYROLL_DEMO_RESULT')+'</strong><br>'+
+                                    'Period: <strong>'+(rj.period||'Iunie 2026')+'</strong><br>'+
+                                    'Employees: <strong>'+(rj.employees??5)+'</strong><br>'+
+                                    'Delivery Evidence: <strong>'+(rj.delivery_evidence_id||'DEL-EV-1042')+'</strong><br>'+
+                                    'Delivered: <strong>'+(rj.delivered===true?'YES':'NO')+'</strong><br>'+
+                                    'Delivery Verified: <strong>'+(rj.delivery_verified===true?'YES':'NO')+'</strong><br>'+
+                                    'Status: <strong>'+(rj.status||'COMPLETED')+'</strong><br>'+
+                                    'Receipt: <strong>'+(rj.receipt_status||'RECEIVED_AND_VERIFIED')+'</strong><br>'+
+                                    'Next: <strong>'+(rj.next_event||'TRANSACTION_COMPLETE')+'</strong>'+
+                                    '<div style="margin-top:14px;padding-top:12px;border-top:1px solid #24554d;color:#b9c2cf">'+
+                                    (rj.description||'Rezultat demonstrativ pentru validarea fluxului A2A. Nu reprezintă un calcul salarial real.')+
+                                    '</div>'+
+                                    '</div>';
+
+                                  receiveResult.textContent='REZULTAT PRIMIT ✓';
+                                }else{
+                                  if(serviceResult)
+                                    serviceResult.textContent='✕ Rezultatul nu a fost primit sau verificat';
+                                  receiveResult.disabled=false;
+                                  receiveResult.textContent='PRIMEȘTE REZULTATUL';
+                                }
+                              }catch(e){
+                                if(serviceResult)
+                                  serviceResult.textContent='✕ Eroare de conexiune la service.result';
+                                receiveResult.disabled=false;
+                                receiveResult.textContent='PRIMEȘTE REZULTATUL';
+                              }
+                            });
+                          }
                         }else{ if(executionResult) executionResult.textContent='✕ ECBTAX Seller Agent nu a pornit execuția'; startExecution.disabled=false; startExecution.textContent='PORNEȘTE EXECUȚIA'; }
                       }catch(e){ if(executionResult) executionResult.textContent='✕ Eroare de conexiune la service.execute'; startExecution.disabled=false; startExecution.textContent='PORNEȘTE EXECUȚIA'; }
                     });
