@@ -59,6 +59,19 @@ footer{border-top:1px solid #292929;padding:36px 0;color:#777}
 </div></section>
 <script>
 const btn=document.getElementById('searchAgent'), statusEl=document.getElementById('agentStatus');
+
+window.a2aState={
+  transaction_id:null,
+  quote_id:null,
+  evidence_id:null,
+  order_id:null,
+  job_id:null,
+  result_id:null,
+  delivery_evidence_id:null,
+  receipt_id:null,
+  period:null,
+  employees:5
+};
 btn.addEventListener('click', async()=>{
  const request=document.getElementById('serviceRequest').value.trim();
  if(!request){statusEl.textContent='Scrie serviciul căutat.';return;}
@@ -82,6 +95,7 @@ btn.addEventListener('click', async()=>{
     });
     const cj=await c.json();
     const sr=cj?.seller_response?.result;
+    if(sr?.transaction_id) window.a2aState.transaction_id=sr.transaction_id;
     if(!c.ok || !sr){
       statusEl.innerHTML+=`<br>✕ Conexiunea A2A cu ECBTAX a eșuat`;
       btn.disabled=false;
@@ -133,7 +147,7 @@ btn.addEventListener('click', async()=>{
       const r=await fetch('/api/buyer/answer',{
         method:'POST',
         headers:{'content-type':'application/json'},
-        body:JSON.stringify({period,employees:5})
+        body:JSON.stringify({transaction_id:window.a2aState.transaction_id,period,employees:window.a2aState.employees})
       });
       const j=await r.json();
       const result=j?.seller_response?.result;
@@ -145,6 +159,9 @@ btn.addEventListener('click', async()=>{
       }
 
       const quote=result.quote;
+      if(result?.transaction_id) window.a2aState.transaction_id=result.transaction_id;
+      if(quote?.quote_id) window.a2aState.quote_id=quote.quote_id;
+      window.a2aState.period=period;
       if(result.event==='QUOTE_ISSUED' && quote){
         ps.innerHTML='← ECBTAX: Oferta <strong>'+quote.quote_id+'</strong> emisă.<br>✓ Status: '+quote.status;
         if(typeof window.showVerifiedQuote==='function'){
@@ -172,7 +189,7 @@ btn.addEventListener('click', async()=>{
   <p>Calcul salarial · România · 5 angajați</p>
   <p><strong>Preț:</strong> <span id="offerPrice">NECOMUNICAT</span><br>
      <strong>Status:</strong> DISPONIBIL<br>
-     <strong>Ofertă:</strong> Q-1042</p>
+     <strong>Ofertă:</strong> <span id="offerQuoteId">—</span></p>
   <p id="verifyResult">○ Verific oferta…</p>
   <button id="rejectOffer" type="button">RESPING</button>
   <button id="approveOffer" type="button">APROBĂ OFERTA</button>
@@ -181,15 +198,18 @@ btn.addEventListener('click', async()=>{
 <script>
 window.showVerifiedQuote = async function(period='Septembrie 2026'){
   const q=await fetch('/api/buyer/quote',{method:'POST',headers:{'content-type':'application/json'},
-    body:JSON.stringify({period,employees:5})});
+    body:JSON.stringify({transaction_id:window.a2aState.transaction_id,period,employees:window.a2aState.employees})});
   const qj=await q.json();
   const quote=qj?.seller_response?.result?.quote;
   if(!quote) return false;
+  if(qj?.seller_response?.result?.transaction_id) window.a2aState.transaction_id=qj.seller_response.result.transaction_id;
+  if(quote?.quote_id) window.a2aState.quote_id=quote.quote_id;
   quote.provider='ECBTAX';
   const v=await fetch('/api/buyer/verify',{method:'POST',headers:{'content-type':'application/json'},
     body:JSON.stringify({quote})});
   const verified=await v.json();
   document.getElementById('offerPanel').style.display='block';
+  document.getElementById('offerQuoteId').textContent=quote.quote_id||window.a2aState.quote_id||'—';
   document.getElementById('offerPrice').textContent=
     typeof quote.price==='number' ? '€ '+quote.price+' / lună' : 'NECOMUNICAT';
   document.getElementById('verifyResult').textContent=
@@ -217,7 +237,7 @@ window.showVerifiedQuote = async function(period='Septembrie 2026'){
         const r=await fetch('/api/buyer/accept',{
           method:'POST',
           headers:{'content-type':'application/json'},
-          body:JSON.stringify({quote_id:'Q-1042',human_approved:true})
+          body:JSON.stringify({quote_id:window.a2aState.quote_id,human_approved:true})
         });
         const j=await r.json();
         const accepted =
@@ -226,14 +246,17 @@ window.showVerifiedQuote = async function(period='Septembrie 2026'){
         if(accepted){
           const sr=j.seller_response.result;
           const ev=sr.evidence||{};
+          if(sr?.transaction_id) window.a2aState.transaction_id=sr.transaction_id;
+          if(sr?.quote_id) window.a2aState.quote_id=sr.quote_id;
+          if(ev?.evidence_id) window.a2aState.evidence_id=ev.evidence_id;
           if(result) result.innerHTML=
-            '✓ Oferta Q-1042 acceptată de ECBTAX Seller Agent'+
+            '✓ Oferta '+window.a2aState.quote_id+' acceptată de ECBTAX Seller Agent'+
             '<div id="transactionEvidence" style="margin-top:22px;padding:20px;border:1px solid #2dd4bf;border-radius:12px;background:#071411;color:#fff;line-height:1.65">'+
             '<strong style="font-size:20px;color:#5eead4">✓ TRANSACTION VERIFIED </strong><br>'+
-            'Evidence ID: <strong>'+(ev.evidence_id||'EV-Q-1042')+'</strong><br>'+
+            'Evidence ID: <strong>'+(ev.evidence_id||window.a2aState.evidence_id||'—')+'</strong><br>'+
             'Buyer: '+(ev.buyer||'AiVenture Buyer Agent')+'<br>'+
             'Seller: '+(ev.seller||'ECBTAX Seller Agent')+'<br>'+
-            'Quote: <strong>'+(ev.quote_id||'Q-1042')+'</strong><br>'+
+            'Quote: <strong>'+(ev.quote_id||window.a2aState.quote_id||'—')+'</strong><br>'+
             'Price: <strong>€ '+(ev.price??50)+' / lună</strong><br>'+
             'Human Approved: <strong>'+(ev.human_approved===true?'YES':'NO')+'</strong><br>'+
             'Status: <strong>'+(ev.status||sr.evidence_status||'VERIFIED')+'</strong>'+
@@ -257,17 +280,20 @@ window.showVerifiedQuote = async function(period='Septembrie 2026'){
                 const or=await fetch('/api/buyer/order',{
                   method:'POST',
                   headers:{'content-type':'application/json'},
-                  body:JSON.stringify({quote_id:ev.quote_id||'Q-1042',evidence_id:ev.evidence_id||'EV-Q-1042'})
+                  body:JSON.stringify({quote_id:window.a2aState.quote_id,evidence_id:window.a2aState.evidence_id})
                 });
                 const oj=await or.json();
                 if(or.ok && oj?.event==='A2A_ORDER_CONFIRMED'){
+                  if(oj?.order_id) window.a2aState.order_id=oj.order_id;
+                  if(oj?.quote_id) window.a2aState.quote_id=oj.quote_id;
+                  if(oj?.evidence_id) window.a2aState.evidence_id=oj.evidence_id;
                   if(orderResult) orderResult.innerHTML=
                     '<div style="padding:20px;border:1px solid #2dd4bf;border-radius:12px;background:#071411;color:#fff;line-height:1.65;text-align:left">'+
                     '<strong style="font-size:20px;color:#5eead4">✓ ORDER CONFIRMED</strong><br>'+
-                    'Order: <strong>'+(oj.order_id||'ORD-1042')+'</strong><br>'+
+                    'Order: <strong>'+(oj.order_id||window.a2aState.order_id||'—')+'</strong><br>'+
                     'Seller: '+(oj.seller||'ECBTAX Seller Agent')+'<br>'+
-                    'Quote: <strong>'+(oj.quote_id||'Q-1042')+'</strong><br>'+
-                    'Evidence: <strong>'+(oj.evidence_id||'EV-Q-1042')+'</strong><br>'+
+                    'Quote: <strong>'+(oj.quote_id||window.a2aState.quote_id||'—')+'</strong><br>'+
+                    'Evidence: <strong>'+(oj.evidence_id||window.a2aState.evidence_id||'—')+'</strong><br>'+
                     'Price: <strong>€ '+(oj.price??50)+' / lună</strong><br>'+
                     'Status: <strong>'+(oj.status||'CONFIRMED')+'</strong><br>'+
                     'Execution: <strong>'+(oj.execution_status||'READY_FOR_EXECUTION')+'</strong>'+
@@ -284,14 +310,18 @@ window.showVerifiedQuote = async function(period='Septembrie 2026'){
                       startExecution.disabled=true; startExecution.textContent='PORNESC EXECUȚIA…';
                       if(executionResult) executionResult.textContent='● AiVenture Buyer trimite service.execute către ECBTAX Seller Agent…';
                       try{
-                        const er=await fetch('/api/buyer/execute',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({order_id:oj.order_id||'ORD-1042',quote_id:oj.quote_id||'Q-1042',evidence_id:oj.evidence_id||'EV-Q-1042'})});
+                        const er=await fetch('/api/buyer/execute',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({order_id:window.a2aState.order_id,quote_id:window.a2aState.quote_id,evidence_id:window.a2aState.evidence_id})});
                         const ej=await er.json();
                         if(er.ok && ej?.event==='A2A_EXECUTION_STARTED'){
+                          if(ej?.job_id) window.a2aState.job_id=ej.job_id;
+                          if(ej?.order_id) window.a2aState.order_id=ej.order_id;
+                          if(ej?.quote_id) window.a2aState.quote_id=ej.quote_id;
+                          if(ej?.evidence_id) window.a2aState.evidence_id=ej.evidence_id;
                           if(executionResult) executionResult.innerHTML=
                             '<div style="padding:20px;border:1px solid #2dd4bf;border-radius:12px;background:#071411;color:#fff;line-height:1.65;text-align:left">'+
                             '<strong style="font-size:20px;color:#5eead4">✓ EXECUTION STARTED</strong><br>'+
-                            'Job: <strong>'+(ej.job_id||'JOB-1042')+'</strong><br>'+
-                            'Order: <strong>'+(ej.order_id||'ORD-1042')+'</strong><br>'+
+                            'Job: <strong>'+(ej.job_id||window.a2aState.job_id||'—')+'</strong><br>'+
+                            'Order: <strong>'+(ej.order_id||window.a2aState.order_id||'—')+'</strong><br>'+
                             'Service: <strong>'+(ej.service||'Calcul salarial')+'</strong><br>'+
                             'Seller: '+(ej.seller||'ECBTAX Seller Agent')+'<br>'+
                             'Status: <strong>'+(ej.status||'IN_PROGRESS')+'</strong><br>'+
@@ -320,25 +350,29 @@ window.showVerifiedQuote = async function(period='Septembrie 2026'){
                                   method:'POST',
                                   headers:{'content-type':'application/json'},
                                   body:JSON.stringify({
-                                    job_id:ej.job_id||'JOB-1042',
-                                    order_id:ej.order_id||'ORD-1042',
-                                    evidence_id:ej.evidence_id||'EV-Q-1042'
+                                    job_id:window.a2aState.job_id,
+                                    order_id:window.a2aState.order_id,
+                                    evidence_id:window.a2aState.evidence_id
                                   })
                                 });
 
                                 const rj=await rr.json();
 
                                 if(rr.ok && rj?.event==='A2A_SERVICE_RESULT_RECEIVED'){
+                                  if(rj?.result_id) window.a2aState.result_id=rj.result_id;
+                                  if(rj?.job_id) window.a2aState.job_id=rj.job_id;
+                                  if(rj?.order_id) window.a2aState.order_id=rj.order_id;
+                                  if(rj?.delivery_evidence_id) window.a2aState.delivery_evidence_id=rj.delivery_evidence_id;
                                   if(serviceResult) serviceResult.innerHTML=
                                     '<div style="padding:20px;border:1px solid #2dd4bf;border-radius:12px;background:#071411;color:#fff;line-height:1.65;text-align:left">'+
                                     '<strong style="font-size:20px;color:#5eead4">✓ SERVICE COMPLETED</strong><br>'+
-                                    'Result: <strong>'+(rj.result_id||'RES-1042')+'</strong><br>'+
-                                    'Job: <strong>'+(rj.job_id||'JOB-1042')+'</strong><br>'+
-                                    'Order: <strong>'+(rj.order_id||'ORD-1042')+'</strong><br>'+
+                                    'Result: <strong>'+(rj.result_id||window.a2aState.result_id||'—')+'</strong><br>'+
+                                    'Job: <strong>'+(rj.job_id||window.a2aState.job_id||'—')+'</strong><br>'+
+                                    'Order: <strong>'+(rj.order_id||window.a2aState.order_id||'—')+'</strong><br>'+
                                     'Type: <strong>'+(rj.result_type||'PAYROLL_DEMO_RESULT')+'</strong><br>'+
                                     'Period: <strong>'+(rj.period||'Iunie 2026')+'</strong><br>'+
                                     'Employees: <strong>'+(rj.employees??5)+'</strong><br>'+
-                                    'Delivery Evidence: <strong>'+(rj.delivery_evidence_id||'DEL-EV-1042')+'</strong><br>'+
+                                    'Delivery Evidence: <strong>'+(rj.delivery_evidence_id||window.a2aState.delivery_evidence_id||'—')+'</strong><br>'+
                                     'Delivered: <strong>'+(rj.delivered===true?'YES':'NO')+'</strong><br>'+
                                     'Delivery Verified: <strong>'+(rj.delivery_verified===true?'YES':'NO')+'</strong><br>'+
                                     'Status: <strong>'+(rj.status||'COMPLETED')+'</strong><br>'+
@@ -374,25 +408,28 @@ window.showVerifiedQuote = async function(period='Septembrie 2026'){
                                          method:'POST',
                                          headers:{'content-type':'application/json'},
                                          body:JSON.stringify({
-                                           order_id:rj.order_id||'ORD-1042',
-                                           job_id:rj.job_id||'JOB-1042',
-                                           result_id:rj.result_id||'RES-1042',
-                                           delivery_evidence_id:rj.delivery_evidence_id||'DEL-EV-1042'
+                                           order_id:window.a2aState.order_id,
+                                           job_id:window.a2aState.job_id,
+                                           result_id:window.a2aState.result_id,
+                                           delivery_evidence_id:window.a2aState.delivery_evidence_id
                                          })
                                        });
                                        const tj=await tr.json();
 
                                        if(tr.ok && tj?.event==='A2A_TRANSACTION_RECEIPT_VERIFIED'){
+                                         if(tj?.receipt_id) window.a2aState.receipt_id=tj.receipt_id;
+                                         if(tj?.quote_id) window.a2aState.quote_id=tj.quote_id;
+                                         if(tj?.evidence_id) window.a2aState.evidence_id=tj.evidence_id;
                                          receiptResult.innerHTML=
                                            '<div style="padding:20px;border:1px solid #2dd4bf;border-radius:12px;background:#071411;color:#fff;line-height:1.65;text-align:left">'+
                                            '<strong style="font-size:20px;color:#5eead4">✓ A2A TRANSACTION VERIFIED</strong><br>'+
-                                           'Receipt: <strong>'+(tj.receipt_id||'RCP-1042')+'</strong><br>'+
-                                           'Quote: <strong>'+(tj.quote_id||'Q-1042')+'</strong><br>'+
-                                           'Evidence: <strong>'+(tj.evidence_id||'EV-Q-1042')+'</strong><br>'+
-                                           'Order: <strong>'+(tj.order_id||'ORD-1042')+'</strong><br>'+
-                                           'Execution: <strong>'+(tj.job_id||'JOB-1042')+'</strong><br>'+
-                                           'Result: <strong>'+(tj.result_id||'RES-1042')+'</strong><br>'+
-                                           'Delivery Evidence: <strong>'+(tj.delivery_evidence_id||'DEL-EV-1042')+'</strong><br>'+
+                                           'Receipt: <strong>'+(tj.receipt_id||window.a2aState.receipt_id||'—')+'</strong><br>'+
+                                           'Quote: <strong>'+(tj.quote_id||window.a2aState.quote_id||'—')+'</strong><br>'+
+                                           'Evidence: <strong>'+(tj.evidence_id||window.a2aState.evidence_id||'—')+'</strong><br>'+
+                                           'Order: <strong>'+(tj.order_id||window.a2aState.order_id||'—')+'</strong><br>'+
+                                           'Execution: <strong>'+(tj.job_id||window.a2aState.job_id||'—')+'</strong><br>'+
+                                           'Result: <strong>'+(tj.result_id||window.a2aState.result_id||'—')+'</strong><br>'+
+                                           'Delivery Evidence: <strong>'+(tj.delivery_evidence_id||window.a2aState.delivery_evidence_id||'—')+'</strong><br>'+
                                            'Human Approved: <strong>'+(tj.human_approved===true?'YES':'NO')+'</strong><br>'+
                                            'Transaction Verified: <strong>'+(tj.transaction_verified===true?'YES':'NO')+'</strong><br>'+
                                            'Delivery Verified: <strong>'+(tj.delivery_verified===true?'YES':'NO')+'</strong><br>'+
@@ -455,7 +492,7 @@ window.showVerifiedQuote = async function(period='Septembrie 2026'){
 
   if(reject){
     reject.addEventListener('click', ()=>{
-      if(result) result.textContent='Oferta Q-1042 a fost respinsă de utilizator.';
+      if(result) result.textContent='Oferta '+(window.a2aState.quote_id||'—')+' a fost respinsă de utilizator.';
       if(approve) approve.disabled=false;
     });
   }
