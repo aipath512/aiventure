@@ -350,6 +350,71 @@ window.showVerifiedQuote = async function(period='Septembrie 2026'){
                                     '</div>';
 
                                   receiveResult.textContent='REZULTAT PRIMIT ✓';
+
+                                   // =========================================================
+                                   // STEP 12C — FINAL RECEIPT / AUDIT TRAIL
+                                   // =========================================================
+                                   const receiptAction=document.createElement('div');
+                                   receiptAction.style.cssText='margin-top:18px;text-align:center';
+                                   receiptAction.innerHTML=
+                                     '<button id="showReceipt" type="button" style="padding:13px 22px;border:0;border-radius:999px;background:#14b8a6;color:#001b1b;font-weight:900;cursor:pointer">VEZI DOVADA TRANZACȚIEI</button>'+
+                                     '<div id="receiptResult" style="margin-top:16px"></div>';
+                                   serviceResult.appendChild(receiptAction);
+
+                                   const showReceipt=document.getElementById('showReceipt');
+                                   const receiptResult=document.getElementById('receiptResult');
+
+                                   showReceipt.addEventListener('click', async ()=>{
+                                     showReceipt.disabled=true;
+                                     showReceipt.textContent='VERIFIC DOVADA…';
+                                     receiptResult.textContent='● AiVenture Buyer verifică receipt-ul final și audit trail-ul…';
+
+                                     try{
+                                       const tr=await fetch('/api/buyer/receipt',{
+                                         method:'POST',
+                                         headers:{'content-type':'application/json'},
+                                         body:JSON.stringify({
+                                           order_id:rj.order_id||'ORD-1042',
+                                           job_id:rj.job_id||'JOB-1042',
+                                           result_id:rj.result_id||'RES-1042',
+                                           delivery_evidence_id:rj.delivery_evidence_id||'DEL-EV-1042'
+                                         })
+                                       });
+
+                                       const tj=await tr.json();
+
+                                       if(tr.ok && tj?.event==='A2A_TRANSACTION_RECEIPT_VERIFIED'){
+                                         receiptResult.innerHTML=
+                                           '<div style="padding:20px;border:1px solid #2dd4bf;border-radius:12px;background:#071411;color:#fff;line-height:1.65;text-align:left">'+
+                                           '<strong style="font-size:20px;color:#5eead4">✓ A2A TRANSACTION VERIFIED</strong><br>'+
+                                           'Receipt: <strong>'+(tj.receipt_id||'RCP-1042')+'</strong><br>'+
+                                           'Quote: <strong>'+(tj.quote_id||'Q-1042')+'</strong><br>'+
+                                           'Evidence: <strong>'+(tj.evidence_id||'EV-Q-1042')+'</strong><br>'+
+                                           'Order: <strong>'+(tj.order_id||'ORD-1042')+'</strong><br>'+
+                                           'Execution: <strong>'+(tj.job_id||'JOB-1042')+'</strong><br>'+
+                                           'Result: <strong>'+(tj.result_id||'RES-1042')+'</strong><br>'+
+                                           'Delivery Evidence: <strong>'+(tj.delivery_evidence_id||'DEL-EV-1042')+'</strong><br>'+
+                                           'Human Approved: <strong>'+(tj.human_approved===true?'YES':'NO')+'</strong><br>'+
+                                           'Transaction Verified: <strong>'+(tj.transaction_verified===true?'YES':'NO')+'</strong><br>'+
+                                           'Delivery Verified: <strong>'+(tj.delivery_verified===true?'YES':'NO')+'</strong><br>'+
+                                           'Identity Verified: <strong>'+(tj.identity_verified===true?'YES':'NO')+'</strong><br>'+
+                                           'Audit Trail: <strong>'+(tj.audit_trail_verified===true?'VERIFIED':'NOT VERIFIED')+'</strong><br>'+
+                                           'Status: <strong>'+(tj.status||'COMPLETE')+'</strong><br>'+
+                                           'Receipt Status: <strong>'+(tj.receipt_status||'RECEIVED_AND_VERIFIED')+'</strong><br>'+
+                                           '<div style="margin-top:14px;padding-top:12px;border-top:1px solid #24554d;color:#5eead4;font-weight:900">✓ AUDIT COMPLETE</div>'+
+                                           '</div>';
+                                         showReceipt.textContent='DOVADĂ VERIFICATĂ ✓';
+                                       }else{
+                                         receiptResult.textContent='✕ Receipt-ul final nu a fost verificat';
+                                         showReceipt.disabled=false;
+                                         showReceipt.textContent='VEZI DOVADA TRANZACȚIEI';
+                                       }
+                                     }catch(e){
+                                       receiptResult.textContent='✕ Eroare de conexiune la transaction receipt';
+                                       showReceipt.disabled=false;
+                                       showReceipt.textContent='VEZI DOVADA TRANZACȚIEI';
+                                     }
+                                   });
                                 }else{
                                   if(serviceResult)
                                     serviceResult.textContent='✕ Rezultatul nu a fost primit sau verificat';
