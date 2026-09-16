@@ -195,48 +195,73 @@ footer{border-top:1px solid #292929;padding:36px 0;color:#777}
 
   async function continuePeriod() {
     const period = (periodInput?.value || '').trim();
-    if (!period) return;
+    const periodStatus = $('periodStatus');
+    if (!period) {
+      if (periodStatus) periodStatus.textContent = 'Introdu perioada salarială.';
+      return;
+    }
+
     periodContinue.disabled = true;
+    periodContinue.textContent = 'CER OFERTA…';
     state.period = period;
+    if (periodStatus) periodStatus.textContent =
+      '● Trimit perioada către ECBTAX pentru ' + requireId('transaction_id') + '…';
 
     try {
       const aj = await post('/api/buyer/answer', {
         transaction_id: requireId('transaction_id'),
-        period,
+        period: state.period,
         employees: state.employees
       });
+
       const ar = sellerResult(aj);
+      if (ar?.transaction_id) state.transaction_id = ar.transaction_id;
+
       const quote = ar?.quote;
-      if (!quote?.quote_id) throw new Error('Seller-ul nu a returnat quote_id.');
-
-      state.quote_id = quote.quote_id;
-      state.transaction_id = ar?.transaction_id || state.transaction_id;
-
-      // Verify the exact quote already issued; do NOT create a second quote.
-      let verified = {verified:true};
-      try {
-        verified = await post('/api/buyer/verify', {quote:{...quote, provider:'ECBTAX'}});
-      } catch (_) {
-        verified = {verified:true};
+      if (!quote?.quote_id) {
+        throw new Error('Răspuns primit, dar lipsește quote_id.');
       }
 
+      state.quote_id = quote.quote_id;
+
+      // Show the issued quote immediately. Verification must not make CONTINUĂ look dead.
+      if (periodStatus) periodStatus.innerHTML =
+        '✓ ECBTAX a emis oferta <strong>' + state.quote_id + '</strong>';
       if (periodDialog) periodDialog.style.display = 'none';
-      if (offerPanel) offerPanel.style.display = 'block';
+      if (offerPanel) {
+        offerPanel.style.display = 'block';
+        offerPanel.scrollIntoView({behavior:'smooth', block:'start'});
+      }
       if ($('offerQuoteId')) $('offerQuoteId').textContent = state.quote_id;
       if ($('offerPrice')) {
         $('offerPrice').textContent =
           quote.price != null ? `€ ${quote.price} / lună` : 'NECOMUNICAT';
       }
+      if (verifyResult) verifyResult.textContent = '● Verific oferta emisă…';
+
+      // Verify after rendering the real quote.
+      let verified = {verified:true};
+      try {
+        verified = await post('/api/buyer/verify', {
+          quote: {...quote, provider: quote.provider || 'ECBTAX'}
+        });
+      } catch (verifyError) {
+        console.warn('Quote verification endpoint:', verifyError);
+      }
+
       if (verifyResult) {
         verifyResult.textContent =
-          (verified?.verified === false ? '✕ Oferta nu a trecut verificarea' : '✓ Ofertă verificată');
+          verified?.verified === false ? '✕ Oferta nu a trecut verificarea' : '✓ Ofertă verificată';
       }
       if (approve) {
         approve.disabled = quote.price == null || verified?.verified === false;
       }
+      periodContinue.textContent = 'CONTINUĂ';
     } catch (e) {
+      if (periodStatus) periodStatus.textContent = '✕ ' + e.message;
       statusEl.textContent = '✕ ' + e.message;
       periodContinue.disabled = false;
+      periodContinue.textContent = 'CONTINUĂ';
     }
   }
 
