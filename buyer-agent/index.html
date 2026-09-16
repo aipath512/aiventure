@@ -140,7 +140,7 @@ footer{border-top:1px solid #292929;padding:36px 0;color:#777}
   const verifyResult = $('verifyResult');
 
   async function startBuyer() {
-    const request = ($('need')?.value || '').trim();
+    const request = ($('serviceRequest')?.value || '').trim();
     if (!request) {
       statusEl.textContent = 'Spune serviciul de care ai nevoie.';
       return;
