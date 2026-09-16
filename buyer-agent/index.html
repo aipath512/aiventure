@@ -271,8 +271,38 @@ window.showVerifiedQuote = async function(period='Septembrie 2026'){
                     'Price: <strong>€ '+(oj.price??50)+' / lună</strong><br>'+
                     'Status: <strong>'+(oj.status||'CONFIRMED')+'</strong><br>'+
                     'Execution: <strong>'+(oj.execution_status||'READY_FOR_EXECUTION')+'</strong>'+
+                    '</div>'+
+                    '<div id="executionAction" style="margin-top:18px;text-align:center">'+
+                    '<button id="startExecution" type="button" style="padding:13px 22px;border:0;border-radius:999px;background:#14b8a6;color:#001b1b;font-weight:900;cursor:pointer">PORNEȘTE EXECUȚIA</button>'+
+                    '<div id="executionResult" style="margin-top:16px"></div>'+
                     '</div>';
                   sendOrder.textContent='COMANDĂ TRIMISĂ ✓';
+                  const startExecution=document.getElementById('startExecution');
+                  const executionResult=document.getElementById('executionResult');
+                  if(startExecution){
+                    startExecution.addEventListener('click', async ()=>{
+                      startExecution.disabled=true; startExecution.textContent='PORNESC EXECUȚIA…';
+                      if(executionResult) executionResult.textContent='● AiVenture Buyer trimite service.execute către ECBTAX Seller Agent…';
+                      try{
+                        const er=await fetch('/api/buyer/execute',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({order_id:oj.order_id||'ORD-1042',quote_id:oj.quote_id||'Q-1042',evidence_id:oj.evidence_id||'EV-Q-1042'})});
+                        const ej=await er.json();
+                        if(er.ok && ej?.event==='A2A_EXECUTION_STARTED'){
+                          if(executionResult) executionResult.innerHTML=
+                            '<div style="padding:20px;border:1px solid #2dd4bf;border-radius:12px;background:#071411;color:#fff;line-height:1.65;text-align:left">'+
+                            '<strong style="font-size:20px;color:#5eead4">✓ EXECUTION STARTED</strong><br>'+
+                            'Job: <strong>'+(ej.job_id||'JOB-1042')+'</strong><br>'+
+                            'Order: <strong>'+(ej.order_id||'ORD-1042')+'</strong><br>'+
+                            'Service: <strong>'+(ej.service||'Calcul salarial')+'</strong><br>'+
+                            'Seller: '+(ej.seller||'ECBTAX Seller Agent')+'<br>'+
+                            'Status: <strong>'+(ej.status||'IN_PROGRESS')+'</strong><br>'+
+                            'Execution: <strong>'+(ej.execution_status||'IN_PROGRESS')+'</strong><br>'+
+                            'Next: <strong>'+(ej.next_event||'SERVICE_RESULT')+'</strong>'+
+                            '</div>';
+                          startExecution.textContent='EXECUȚIE PORNITĂ ✓';
+                        }else{ if(executionResult) executionResult.textContent='✕ ECBTAX Seller Agent nu a pornit execuția'; startExecution.disabled=false; startExecution.textContent='PORNEȘTE EXECUȚIA'; }
+                      }catch(e){ if(executionResult) executionResult.textContent='✕ Eroare de conexiune la service.execute'; startExecution.disabled=false; startExecution.textContent='PORNEȘTE EXECUȚIA'; }
+                    });
+                  }
                 }else{
                   if(orderResult) orderResult.textContent='✕ Comanda nu a fost confirmată de ECBTAX Seller Agent';
                   sendOrder.disabled=false; sendOrder.textContent='TRIMITE COMANDA';
