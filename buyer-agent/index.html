@@ -3,418 +3,1487 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+
 <title>Buyer Agent AiVenture · Cumpără servicii B2B prin A2A</title>
-<meta name="description" content="Buyer Agent AiVenture descoperă, compară și solicită servicii B2B Agent-Ready prin A2A, în limitele Service Offer Contract™, governance și RRVI™.">
+
+<meta name="description"
+content="Buyer Agent AiVenture caută servicii B2B prin B2B AI Broker Agent, compară ofertele și continuă tranzacția numai cu aprobarea omului.">
+
 <meta name="robots" content="index,follow">
-<meta name="aiventure-session" content="0003H">
-<meta name="aiventure-build-timestamp" content="2026-09-14T12:52:00+03:00">
+<meta name="aiventure-session" content="0004H">
+<meta name="aiventure-build-timestamp" content="2026-09-17">
+
 <link rel="canonical" href="https://aiventure.ro/buyer-agent/">
+
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="AiVenture">
 <meta property="og:title" content="Buyer Agent AiVenture">
-<meta property="og:description" content="Descoperă, compară și solicită servicii B2B Agent-Ready prin A2A.">
+<meta property="og:description"
+content="Buyer Agent → B2B AI Broker Agent → Seller Agent → Offer → Evidence → Human Approval.">
 <meta property="og:url" content="https://aiventure.ro/buyer-agent/">
+
 <meta name="twitter:card" content="summary">
 
 <style>
-body{margin:0;font-family:Inter,system-ui,sans-serif;background:#070707;color:#f5f5f5;line-height:1.6}
-.container{width:min(1100px,calc(100% - 36px));margin:auto}
-header,footer{background:#030303;border-color:#292929}
-header{border-bottom:1px solid #292929}
-nav{display:flex;justify-content:space-between;gap:16px;align-items:center;padding:16px 0;flex-wrap:wrap}
-nav a,footer a{color:#aaa;text-decoration:none}
-.hero{padding:80px 0}h1{font-size:clamp(42px,7vw,76px);line-height:1}
-.kicker{color:#5eead4;font:800 12px ui-monospace,monospace;letter-spacing:.08em}
-.lead{font-size:20px;color:#aaa;max-width:800px}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:32px 0}
-.card{border:1px solid #292929;border-radius:16px;padding:22px;background:#0d0d0d}
-.btn{display:inline-block;padding:12px 18px;border-radius:999px;background:#14b8a6;color:#001b1b;text-decoration:none;font-weight:900}
-footer{border-top:1px solid #292929;padding:36px 0;color:#777}
-@media(max-width:800px){.grid{grid-template-columns:1fr}}
+*{box-sizing:border-box}
+
+body{
+margin:0;
+font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+background:#070707;
+color:#f5f5f5;
+line-height:1.6
+}
+
+.container{
+width:min(1100px,calc(100% - 36px));
+margin:auto
+}
+
+header,footer{
+background:#030303;
+border-color:#292929
+}
+
+header{
+border-bottom:1px solid #292929
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+gap:16px;
+align-items:center;
+padding:16px 0;
+flex-wrap:wrap
+}
+
+nav a,footer a{
+color:#aaa;
+text-decoration:none
+}
+
+.hero{
+padding:70px 0 35px
+}
+
+.kicker{
+color:#5eead4;
+font:800 12px ui-monospace,monospace;
+letter-spacing:.08em;
+text-align:center
+}
+
+h1{
+font-size:clamp(40px,7vw,72px);
+line-height:1;
+text-align:center;
+margin:18px 0
+}
+
+.lead{
+font-size:20px;
+color:#aaa;
+max-width:820px;
+margin:0 auto 30px;
+text-align:center
+}
+
+.card{
+border:1px solid #292929;
+border-radius:16px;
+padding:24px;
+background:#0d0d0d
+}
+
+.btn,button{
+display:inline-block;
+padding:13px 20px;
+border-radius:999px;
+border:0;
+background:#14b8a6;
+color:#001b1b;
+font-weight:900;
+cursor:pointer;
+font-size:15px
+}
+
+button:disabled{
+opacity:.45;
+cursor:not-allowed
+}
+
+textarea,input{
+width:100%;
+background:#070707;
+color:#fff;
+border:1px solid #444;
+border-radius:12px;
+padding:16px;
+font:inherit
+}
+
+textarea{
+min-height:100px;
+font-size:18px
+}
+
+.status{
+margin-top:20px;
+padding:18px;
+border:1px solid #292929;
+border-radius:12px;
+background:#090909;
+font-family:ui-monospace,monospace;
+font-size:14px;
+line-height:1.75
+}
+
+.ok{color:#5eead4}
+.bad{color:#fb7185}
+.muted{color:#888}
+
+#periodDialog,
+#offerPanel,
+#transactionPanel{
+display:none;
+width:min(92vw,780px);
+margin:28px auto;
+padding:24px;
+border:1px solid #343b46;
+border-radius:16px;
+background:#10151d
+}
+
+.offerPrice{
+font-size:34px;
+font-weight:900;
+color:#5eead4
+}
+
+.evidence{
+margin-top:18px;
+padding:16px;
+border:1px solid #28564f;
+border-radius:12px;
+background:#071411
+}
+
+.actions{
+display:flex;
+gap:12px;
+justify-content:center;
+flex-wrap:wrap;
+margin-top:22px
+}
+
+.secondary{
+background:#222;
+color:#fff;
+border:1px solid #444
+}
+
+footer{
+border-top:1px solid #292929;
+padding:36px 0;
+color:#777;
+margin-top:60px
+}
+
+@media(max-width:800px){
+.hero{padding-top:45px}
+}
 </style>
-
 </head>
+
 <body>
-<header><div class="container"><nav><a href="/"><strong>AiVenture</strong></a><span>SESSION 0003H · 2026-09-14 12:52 EEST</span></nav></div></header>
-<main><section class="hero"><div class="container">
-<div class="kicker">A2A · BUYER AGENT ●</div>
-<h1 style="text-align:center">CE SERVICIU CAUȚI?</h1>
-<p class="lead" style="margin:0 auto 28px;text-align:center">Spune Agentului AiVenture serviciul de care ai nevoie.</p>
-<div class="card" style="max-width:780px;margin:0 auto">
-<textarea id="serviceRequest" style="box-sizing:border-box;width:100%;min-height:92px;background:#070707;color:#fff;border:1px solid #444;border-radius:12px;padding:18px;font:inherit;font-size:18px">Calcul salarii pentru 5 angajați în România</textarea>
-<div style="text-align:center;margin-top:22px"><button id="searchAgent" class="btn" style="border:0;cursor:pointer;font-size:16px">CAUTĂ CU AGENTUL AI</button></div>
-<p id="agentStatus" style="text-align:center;color:#5eead4;min-height:28px"></p>
+
+<header>
+<div class="container">
+<nav>
+<a href="/"><strong>AiVenture</strong></a>
+<span>BUYER AGENT · SESSION 0004H</span>
+</nav>
 </div>
-<p style="text-align:center;color:#888;font-size:13px;margin-top:20px">Interacționezi cu un sistem AI. Nicio ofertă nu este acceptată fără aprobarea omului.</p>
-</div></section>
+</header>
 
-<!-- STEP-PERIOD-DIALOG START -->
-<div id="periodDialog" style="display:none;margin:18px auto 0;max-width:680px;text-align:left">
-  <label for="periodInput" style="display:block;margin-bottom:8px;color:#b9c2cf">
-    Pentru ce perioadă salarială?
-  </label>
-  <input id="periodInput" type="text" placeholder="Ex: Iunie 2026"
-    style="box-sizing:border-box;width:100%;padding:14px 16px;border:1px solid #3b4450;border-radius:10px;background:#05070a;color:#fff;font-size:16px">
-  <button id="periodContinue" type="button"
-    style="display:block;margin:14px auto 0;padding:13px 22px;border:0;border-radius:999px;font-weight:800;cursor:pointer">
-    CONTINUĂ
-  </button>
-  <div id="periodStatus" style="margin-top:14px;text-align:center"></div>
+<main>
+
+<section class="hero">
+<div class="container">
+
+<div class="kicker">A2A · BUYER AGENT → BROKER AGENT → SELLER AGENT</div>
+
+<h1>CE SERVICIU CAUȚI?</h1>
+
+<p class="lead">
+Spune Agentului AiVenture serviciul de care ai nevoie.
+Buyer Agent-ul caută prin B2B AI Broker Agent și îți prezintă
+o ofertă înainte de orice acțiune comercială.
+</p>
+
+<div class="card" style="max-width:780px;margin:auto">
+
+<textarea id="serviceRequest">Calcul salarii pentru 5 angajați în România</textarea>
+
+<div style="text-align:center;margin-top:22px">
+<button id="searchAgent">
+CAUTĂ CU AGENTUL AI
+</button>
 </div>
 
+<div id="agentStatus" class="status muted">
+Aștept cererea.
+</div>
 
-<!-- STEP-PERIOD-DIALOG END -->
-<section id="offerPanel" style="display:none;box-sizing:border-box;width:min(92vw,780px);margin:28px auto 48px;margin-top:28px;padding:24px;border:1px solid #343b46;border-radius:16px;background:#10151d;color:#fff">
-  <h2>AM GĂSIT UN SERVICIU</h2>
-  <p><strong>ECBTAX</strong> · ✓ Agent-Ready</p>
-  <p>Calcul salarial · România · 5 angajați</p>
-  <p><strong>Preț:</strong> <span id="offerPrice">NECOMUNICAT</span><br>
-     <strong>Status:</strong> DISPONIBIL<br>
-     <strong>Ofertă:</strong> <span id="offerQuoteId">—</span></p>
-  <p id="verifyResult">○ Verific oferta…</p>
-  <button id="rejectOffer" type="button">RESPING</button>
-  <button id="approveOffer" type="button">APROBĂ OFERTA</button>
-  <p id="approvalNote" style="font-size:12px;opacity:.75">Aprobarea rămâne blocată până când furnizorul comunică prețul.</p>
+</div>
+
+<p style="text-align:center;color:#888;font-size:13px;margin-top:20px">
+Interacționezi cu sisteme AI.
+Nicio ofertă, comandă sau tranzacție nu este acceptată fără aprobarea omului.
+</p>
+
+</div>
 </section>
 
 
+<section id="offerPanel">
+
+<div class="kicker" style="text-align:left">
+B2B AI BROKER AGENT · MATCH
+</div>
+
+<h2>AM GĂSIT UN SERVICIU</h2>
+
+<p>
+<strong id="offerProvider">—</strong>
+·
+<span id="offerAgent">—</span>
+</p>
+
+<p>
+<span id="offerIndustry">—</span>
+·
+<span id="offerActivity">—</span>
+·
+<span id="offerMarket">—</span>
+</p>
+
+<div class="offerPrice" id="offerPrice">—</div>
+
+<p>
+<strong>Ofertă:</strong>
+<span id="offerQuoteId">—</span>
+</p>
+
+<div class="evidence">
+
+<strong>EVIDENCE</strong>
+
+<div id="evidenceText" style="margin-top:8px">
+—
+</div>
+
+<div id="evidenceStatus" class="muted"></div>
+
+</div>
+
+<div class="actions">
+
+<button id="rejectOffer" class="secondary">
+RESPING
+</button>
+
+<button id="continueSeller">
+CONTINUĂ CU SELLER AGENT
+</button>
+
+</div>
+
+<p style="font-size:12px;opacity:.7;text-align:center">
+Brokerul găsește și compară.
+Acceptarea comercială rămâne sub control uman.
+</p>
+
+</section>
+
+
+<section id="periodDialog">
+
+<h2>ECBTAX SELLER AGENT</h2>
+
+<p id="sellerQuestion">
+Pentru ce perioadă salarială?
+</p>
+
+<input
+id="periodInput"
+type="text"
+placeholder="Ex: Septembrie 2026">
+
+<div class="actions">
+<button id="periodContinue">
+CERE OFERTA
+</button>
+</div>
+
+<div id="periodStatus" class="status muted">
+Aștept perioada salarială.
+</div>
+
+</section>
+
+
+<section id="transactionPanel">
+
+<h2>OFERTA SELLER AGENT</h2>
+
+<div id="transactionResult"></div>
+
+<div class="actions">
+<button id="rejectQuote" class="secondary">
+RESPING
+</button>
+
+<button id="approveQuote">
+APROBĂ OFERTA
+</button>
+</div>
+
+<div id="transactionStatus" class="status muted">
+Aștept aprobarea omului.
+</div>
+
+</section>
+
 </main>
-<footer><div class="container">© 2026 AiVenture S.R.L. · SESSION 0003H</div></footer>
+
+
+<footer>
+<div class="container">
+© 2026 AiVenture S.R.L. ·
+Buyer Agent → B2B AI Broker Agent → Seller Agent
+</div>
+</footer>
+
 
 <script>
 (() => {
-  'use strict';
 
-  const $ = id => document.getElementById(id);
-  const state = window.a2aState = {
-    transaction_id: null,
-    quote_id: null,
-    evidence_id: null,
-    order_id: null,
-    job_id: null,
-    result_id: null,
-    delivery_evidence_id: null,
-    receipt_id: null,
-    period: null,
-    employees: 5
-  };
+'use strict';
 
-  async function post(url, body) {
-    const r = await fetch(url, {
-      method: 'POST',
-      headers: {'content-type':'application/json'},
-      body: JSON.stringify(body)
-    });
-    const ct = r.headers.get('content-type') || '';
-    const raw = await r.text();
-    let data = null;
-    if (ct.includes('application/json')) {
-      try { data = JSON.parse(raw); } catch (_) {}
-    }
-    if (!r.ok) {
-      const msg = data?.error?.message || data?.error || data?.message || `HTTP ${r.status}`;
-      throw new Error(`${msg}`);
-    }
-    if (!data) throw new Error(`Răspuns non-JSON de la ${url}`);
-    return data;
-  }
+const $ = id => document.getElementById(id);
 
-  function requireId(name) {
-    const v = state[name];
-    if (!v) throw new Error(`Lipsește ${name}; fluxul A2A a fost oprit.`);
-    return v;
-  }
+const state = window.a2aState = {
 
-  function sellerResult(x) {
-    return x?.seller_response?.result || x?.result || x;
-  }
+  request: null,
 
-  const btn = $('searchAgent');
-  const statusEl = $('agentStatus');
-  const periodDialog = $('periodDialog');
-  const periodInput = $('periodInput');
-  const periodContinue = $('periodContinue');
-  const offerPanel = $('offerPanel');
-  const approve = $('approveOffer');
-  const reject = $('rejectOffer');
-  const verifyResult = $('verifyResult');
+  brokerCandidate: null,
 
-  async function startBuyer() {
-    const request = ($('serviceRequest')?.value || '').trim();
-    if (!request) {
-      statusEl.textContent = 'Spune serviciul de care ai nevoie.';
-      return;
-    }
-    btn.disabled = true;
-    statusEl.textContent = '● Agentul tău pornește…';
+  transaction_id: null,
+  quote_id: null,
+  evidence_id: null,
 
-    try {
-      const rq = await post('/api/buyer/request', {request});
-      statusEl.textContent = '✓ Am înțeles cererea · Caut furnizori Agent-Ready…';
+  order_id: null,
+  job_id: null,
+  result_id: null,
+  delivery_evidence_id: null,
+  receipt_id: null,
 
-      const dj = await post('/api/buyer/discover', {
-        request,
-        request_id: rq.request_id
-      });
-      const seller = dj?.matches?.[0];
-      if (!seller) throw new Error('Nu am găsit Seller Agent compatibil.');
+  period: null,
+  employees: 5
+};
 
-      statusEl.innerHTML =
-        '✓ Caut furnizori Agent-Ready<br>' +
-        '✓ <strong>' + (seller.provider || 'ECBTAX') + '</strong> descoperit · Agent-Ready<br>' +
-        '● Mă conectez A2A cu ' + (seller.agent || 'ECBTAX Seller Agent') + '…';
 
-      const cj = await post('/api/buyer/contact', {
-        request,
-        request_id: rq.request_id,
-        provider: seller.provider,
-        agent: seller.agent,
-        employees: state.employees
-      });
+async function post(url,body){
 
-      // CONFIRMED real response shape:
-      // seller_response.result.transaction_id
-      const sr = cj?.seller_response?.result;
-      state.transaction_id = sr?.transaction_id || null;
-      requireId('transaction_id');
-
-      statusEl.innerHTML =
-        '✓ Caut furnizori Agent-Ready<br>' +
-        '✓ <strong>' + (seller.provider || 'ECBTAX') + '</strong> descoperit · Agent-Ready<br>' +
-        '● Mă conectez A2A cu ' + (seller.agent || 'ECBTAX Seller Agent') + '…<br>' +
-        '✓ Conexiune A2A stabilită<br>' +
-        '← ECBTAX: ' + (sr?.question || 'Pentru ce perioadă salarială?');
-
-      if (periodDialog) periodDialog.style.display = 'block';
-      if (periodInput) periodInput.focus();
-    } catch (e) {
-      statusEl.textContent = '✕ ' + e.message;
-      btn.disabled = false;
-    }
-  }
-
-  async function continuePeriod() {
-    const period = (periodInput?.value || '').trim();
-    const periodStatus = $('periodStatus');
-    if (!period) {
-      if (periodStatus) periodStatus.textContent = 'Introdu perioada salarială.';
-      return;
-    }
-
-    periodContinue.disabled = true;
-    periodContinue.textContent = 'CER OFERTA…';
-    state.period = period;
-    if (periodStatus) periodStatus.textContent =
-      '● Trimit perioada către ECBTAX pentru ' + requireId('transaction_id') + '…';
-
-    try {
-      const aj = await post('/api/buyer/answer', {
-        transaction_id: requireId('transaction_id'),
-        period: state.period,
-        employees: state.employees
-      });
-
-      const ar = sellerResult(aj);
-      if (ar?.transaction_id) state.transaction_id = ar.transaction_id;
-
-      const quote = ar?.quote;
-      if (!quote?.quote_id) {
-        throw new Error('Răspuns primit, dar lipsește quote_id.');
-      }
-
-      state.quote_id = quote.quote_id;
-
-      // Show the issued quote immediately. Verification must not make CONTINUĂ look dead.
-      if (periodStatus) periodStatus.innerHTML =
-        '✓ ECBTAX a emis oferta <strong>' + state.quote_id + '</strong>';
-      if (periodDialog) periodDialog.style.display = 'none';
-      if (offerPanel) {
-        offerPanel.style.display = 'block';
-        offerPanel.scrollIntoView({behavior:'smooth', block:'start'});
-      }
-      if ($('offerQuoteId')) $('offerQuoteId').textContent = state.quote_id;
-      if ($('offerPrice')) {
-        $('offerPrice').textContent =
-          quote.price != null ? `€ ${quote.price} / lună` : 'NECOMUNICAT';
-      }
-      if (verifyResult) verifyResult.textContent = '● Verific oferta emisă…';
-
-      // Verify after rendering the real quote.
-      let verified = {verified:true};
-      try {
-        verified = await post('/api/buyer/verify', {
-          quote: {...quote, provider: quote.provider || 'ECBTAX'}
-        });
-      } catch (verifyError) {
-        console.warn('Quote verification endpoint:', verifyError);
-      }
-
-      if (verifyResult) {
-        verifyResult.textContent =
-          verified?.verified === false ? '✕ Oferta nu a trecut verificarea' : '✓ Ofertă verificată';
-      }
-      if (approve) {
-        approve.disabled = quote.price == null || verified?.verified === false;
-      }
-      periodContinue.textContent = 'CONTINUĂ';
-    } catch (e) {
-      if (periodStatus) periodStatus.textContent = '✕ ' + e.message;
-      statusEl.textContent = '✕ ' + e.message;
-      periodContinue.disabled = false;
-      periodContinue.textContent = 'CONTINUĂ';
-    }
-  }
-
-  async function acceptQuote() {
-    approve.disabled = true;
-    if (verifyResult) verifyResult.textContent = '● Trimit aprobarea către ECBTAX Seller Agent…';
-    try {
-      const j = await post('/api/buyer/accept', {
-        quote_id: requireId('quote_id'),
-        human_approved: true
-      });
-      const sr = sellerResult(j);
-      if (sr?.event !== 'QUOTE_ACCEPTED') throw new Error('QUOTE_ACCEPTED nu a fost confirmat.');
-      const ev = sr.evidence || {};
-      state.transaction_id = sr.transaction_id || state.transaction_id;
-      state.evidence_id = ev.evidence_id || sr.evidence_id || null;
-      requireId('evidence_id');
-
-      verifyResult.innerHTML =
-        '✓ Oferta <strong>' + state.quote_id + '</strong> acceptată de ECBTAX Seller Agent' +
-        '<div id="transactionEvidence" style="margin-top:22px;padding:20px;border:1px solid #2dd4bf;border-radius:12px;background:#071411;color:#fff;line-height:1.65">' +
-        '<strong style="font-size:20px;color:#5eead4">✓ TRANSACTION VERIFIED</strong><br>' +
-        'Transaction: <strong>' + state.transaction_id + '</strong><br>' +
-        'Evidence ID: <strong>' + state.evidence_id + '</strong><br>' +
-        'Quote: <strong>' + state.quote_id + '</strong><br>' +
-        'Human Approved: <strong>YES</strong><br>' +
-        'Status: <strong>' + (ev.status || sr.evidence_status || 'VERIFIED') + '</strong>' +
-        '</div>' +
-        '<div style="margin-top:18px;text-align:center">' +
-        '<button id="sendOrder" type="button">TRIMITE COMANDA</button>' +
-        '<div id="orderResult" style="margin-top:16px"></div></div>';
-
-      approve.textContent = 'OFERTĂ APROBATĂ ✓';
-      $('sendOrder').addEventListener('click', createOrder, {once:true});
-    } catch (e) {
-      verifyResult.textContent = '✕ ' + e.message;
-      approve.disabled = false;
-    }
-  }
-
-  async function createOrder() {
-    const b = $('sendOrder'), out = $('orderResult');
-    b.disabled = true; b.textContent = 'TRIMIT COMANDA…';
-    try {
-      const oj = sellerResult(await post('/api/buyer/order', {
-        quote_id: requireId('quote_id'),
-        evidence_id: requireId('evidence_id')
-      }));
-      state.order_id = oj?.order_id || null;
-      requireId('order_id');
-      out.innerHTML =
-        '<div style="padding:18px;border:1px solid #2dd4bf;border-radius:12px;background:#071411">' +
-        '<strong>✓ ORDER CONFIRMED</strong><br>Order: <strong>' + state.order_id + '</strong><br>' +
-        'Status: <strong>' + (oj.status || 'CONFIRMED') + '</strong></div>' +
-        '<div style="margin-top:16px;text-align:center"><button id="executeOrder" type="button">EXECUȚIE PORNITĂ ✓</button>' +
-        '<div id="executionResult" style="margin-top:16px"></div></div>';
-      $('executeOrder').addEventListener('click', executeOrder, {once:true});
-    } catch(e) { out.textContent = '✕ ' + e.message; b.disabled=false; }
-  }
-
-  async function executeOrder() {
-    const b=$('executeOrder'), out=$('executionResult');
-    b.disabled=true;
-    try {
-      const ej = sellerResult(await post('/api/buyer/execute', {
-        order_id: requireId('order_id'),
-        quote_id: requireId('quote_id'),
-        evidence_id: requireId('evidence_id')
-      }));
-      state.job_id = ej?.job_id || null;
-      requireId('job_id');
-      out.innerHTML =
-        '<div style="padding:18px;border:1px solid #2dd4bf;border-radius:12px;background:#071411">' +
-        '<strong>✓ EXECUTION STARTED</strong><br>Job: <strong>' + state.job_id + '</strong><br>' +
-        'Order: <strong>' + state.order_id + '</strong><br>Status: <strong>' + (ej.status || 'IN_PROGRESS') + '</strong></div>' +
-        '<div style="margin-top:16px;text-align:center"><button id="receiveResult" type="button">PRIMEȘTE REZULTATUL</button>' +
-        '<div id="serviceResult" style="margin-top:16px"></div></div>';
-      $('receiveResult').addEventListener('click', receiveServiceResult, {once:true});
-    } catch(e){ out.textContent='✕ '+e.message; b.disabled=false; }
-  }
-
-  async function receiveServiceResult() {
-    const b=$('receiveResult'), out=$('serviceResult');
-    b.disabled=true;
-    try {
-      const rj = sellerResult(await post('/api/buyer/result', {
-        job_id: requireId('job_id'),
-        order_id: requireId('order_id'),
-        evidence_id: requireId('evidence_id')
-      }));
-      state.result_id = rj?.result?.result_id || rj?.result_id || null;
-      state.delivery_evidence_id =
-        rj?.delivery_evidence?.delivery_evidence_id || rj?.delivery_evidence_id || null;
-      requireId('result_id');
-      requireId('delivery_evidence_id');
-
-      out.innerHTML =
-        '<div style="padding:18px;border:1px solid #2dd4bf;border-radius:12px;background:#071411;line-height:1.65">' +
-        '<strong style="font-size:20px;color:#5eead4">✓ SERVICE COMPLETED</strong><br>' +
-        'Result: <strong>' + state.result_id + '</strong><br>' +
-        'Job: <strong>' + state.job_id + '</strong><br>' +
-        'Order: <strong>' + state.order_id + '</strong><br>' +
-        'Delivery Evidence: <strong>' + state.delivery_evidence_id + '</strong><br>' +
-        'Status: <strong>' + (rj.status || 'COMPLETED') + '</strong></div>' +
-        '<div style="margin-top:16px;text-align:center"><button id="showReceipt" type="button">VEZI DOVADA TRANZACȚIEI</button>' +
-        '<div id="receiptResult" style="margin-top:16px"></div></div>';
-      $('showReceipt').addEventListener('click', receiveReceipt, {once:true});
-    } catch(e){ out.textContent='✕ '+e.message; b.disabled=false; }
-  }
-
-  async function receiveReceipt() {
-    const b=$('showReceipt'), out=$('receiptResult');
-    b.disabled=true;
-    try {
-      const tj = sellerResult(await post('/api/buyer/receipt', {
-        order_id: requireId('order_id'),
-        job_id: requireId('job_id'),
-        result_id: requireId('result_id'),
-        delivery_evidence_id: requireId('delivery_evidence_id')
-      }));
-      state.receipt_id = tj?.receipt_id || null;
-      requireId('receipt_id');
-
-      out.innerHTML =
-        '<div style="padding:20px;border:1px solid #2dd4bf;border-radius:12px;background:#071411;line-height:1.65">' +
-        '<strong style="font-size:20px;color:#5eead4">✓ A2A TRANSACTION VERIFIED</strong><br>' +
-        'Transaction: <strong>' + state.transaction_id + '</strong><br>' +
-        'Receipt: <strong>' + state.receipt_id + '</strong><br>' +
-        'Quote: <strong>' + state.quote_id + '</strong><br>' +
-        'Evidence: <strong>' + state.evidence_id + '</strong><br>' +
-        'Order: <strong>' + state.order_id + '</strong><br>' +
-        'Execution: <strong>' + state.job_id + '</strong><br>' +
-        'Result: <strong>' + state.result_id + '</strong><br>' +
-        'Delivery Evidence: <strong>' + state.delivery_evidence_id + '</strong><br>' +
-        'Human Approved: <strong>YES</strong><br>' +
-        'Transaction Verified: <strong>' + (tj.transaction_verified===false?'NO':'YES') + '</strong><br>' +
-        'Delivery Verified: <strong>' + (tj.delivery_verified===false?'NO':'YES') + '</strong><br>' +
-        'Audit Trail: <strong>' + (tj.audit_trail_verified===false?'NOT VERIFIED':'VERIFIED') + '</strong><br>' +
-        'Status: <strong>' + (tj.status || 'COMPLETE') + '</strong><hr>' +
-        '<strong style="font-size:18px;color:#5eead4">✓ AUDIT COMPLETE</strong></div>';
-      b.textContent='DOVADĂ VERIFICATĂ ✓';
-    } catch(e){ out.textContent='✕ '+e.message; b.disabled=false; }
-  }
-
-  btn?.addEventListener('click', startBuyer);
-  periodContinue?.addEventListener('click', continuePeriod);
-  approve?.addEventListener('click', acceptQuote);
-  reject?.addEventListener('click', () => {
-    if (verifyResult) verifyResult.textContent =
-      'Oferta ' + (state.quote_id || '') + ' a fost respinsă de utilizator.';
-    if (approve) approve.disabled = true;
+  const response = await fetch(url,{
+    method:'POST',
+    headers:{
+      'content-type':'application/json'
+    },
+    body:JSON.stringify(body)
   });
+
+  const raw = await response.text();
+
+  let data = null;
+
+  try{
+    data = JSON.parse(raw);
+  }catch(_){}
+
+  if(!response.ok){
+
+    const message =
+      data?.error?.message ||
+      data?.error ||
+      data?.message ||
+      `HTTP ${response.status}`;
+
+    throw new Error(message);
+  }
+
+  if(!data){
+    throw new Error('Răspuns non-JSON.');
+  }
+
+  return data;
+}
+
+
+function requireId(name){
+
+  const value = state[name];
+
+  if(!value){
+    throw new Error(
+      `Lipsește ${name}; fluxul A2A a fost oprit.`
+    );
+  }
+
+  return value;
+}
+
+
+function sellerResult(x){
+
+  return (
+    x?.seller_response?.result ||
+    x?.result ||
+    x
+  );
+}
+
+
+function setStatus(html,type='ok'){
+
+  const el = $('agentStatus');
+
+  el.className = `status ${type}`;
+  el.innerHTML = html;
+}
+
+
+/*
+==========================================================
+1. HUMAN → AIVENTURE BUYER AGENT
+2. BUYER → B2B AI BROKER AGENT
+3. BROKER → MARKETPLACE / D1
+==========================================================
+*/
+
+async function startBuyer(){
+
+  const request =
+    ($('serviceRequest').value || '').trim();
+
+  if(!request){
+
+    setStatus(
+      'Spune serviciul de care ai nevoie.',
+      'bad'
+    );
+
+    return;
+  }
+
+  state.request = request;
+
+  $('searchAgent').disabled = true;
+
+  setStatus(
+    '● Buyer Agent AiVenture pornește…'
+  );
+
+  try{
+
+    /*
+    SAME-ORIGIN AiVenture gateway.
+
+    /api/buyer/broker va transmite server-side
+    cererea către:
+
+    https://b2b-ai-library.org/a2a
+
+    Nu apelăm cross-origin direct din browser.
+    */
+
+    const broker = await post(
+      '/api/buyer/broker',
+      {
+        request,
+        industry:'accounting-payroll',
+        activity:'payroll-calculation',
+        market:'ro',
+        requires_api:true,
+        requires_a2a:true
+      }
+    );
+
+
+    const result =
+      broker?.result || broker;
+
+    const candidates =
+      result?.candidates || [];
+
+    if(!candidates.length){
+
+      setStatus(
+        '✓ Cererea a fost analizată.<br>' +
+        '✕ B2B AI Broker Agent nu a găsit o ofertă compatibilă.',
+        'bad'
+      );
+
+      $('searchAgent').disabled = false;
+
+      return;
+    }
+
+
+    const candidate = candidates[0];
+
+    state.brokerCandidate = candidate;
+
+
+    setStatus(
+
+      '✓ Buyer Agent AiVenture a înțeles cererea.<br>' +
+
+      '✓ B2B AI Broker Agent contactat prin A2A.<br>' +
+
+      '✓ Industry: <strong>' +
+      candidate.industry +
+      '</strong><br>' +
+
+      '✓ Activity: <strong>' +
+      candidate.activity +
+      '</strong><br>' +
+
+      '✓ Market: <strong>' +
+      candidate.market +
+      '</strong><br>' +
+
+      '✓ Seller Agent găsit: <strong>' +
+      candidate.agent +
+      '</strong><br>' +
+
+      '✓ Provider: <strong>' +
+      candidate.provider +
+      '</strong>'
+    );
+
+
+    renderBrokerOffer(candidate);
+
+  }
+  catch(error){
+
+    setStatus(
+      '✕ ' + error.message,
+      'bad'
+    );
+
+    $('searchAgent').disabled = false;
+  }
+}
+
+
+/*
+==========================================================
+BROKER RESULT
+==========================================================
+*/
+
+function renderBrokerOffer(candidate){
+
+  $('offerProvider').textContent =
+    candidate.provider || '—';
+
+  $('offerAgent').textContent =
+    candidate.agent || '—';
+
+  $('offerIndustry').textContent =
+    candidate.industry || '—';
+
+  $('offerActivity').textContent =
+    candidate.activity || '—';
+
+  $('offerMarket').textContent =
+    candidate.market || '—';
+
+
+  if(candidate.price_amount != null){
+
+    $('offerPrice').textContent =
+      `${candidate.price_amount} ${candidate.currency || ''}`;
+
+  }else{
+
+    $('offerPrice').textContent =
+      'PREȚ NECOMUNICAT';
+  }
+
+
+  $('offerQuoteId').textContent =
+    candidate.offer_id || '—';
+
+
+  const evidence =
+    candidate.evidence?.[0];
+
+
+  if(evidence){
+
+    $('evidenceText').textContent =
+      evidence.claim || 'Evidence disponibil.';
+
+    $('evidenceStatus').textContent =
+      `${evidence.source_type || ''} · ${evidence.verification_status || ''}`;
+
+  }else{
+
+    $('evidenceText').textContent =
+      'Nu există Evidence asociat.';
+
+    $('evidenceStatus').textContent =
+      'UNKNOWN';
+  }
+
+
+  $('offerPanel').style.display = 'block';
+
+  $('offerPanel').scrollIntoView({
+    behavior:'smooth',
+    block:'start'
+  });
+}
+
+
+/*
+==========================================================
+BROKER → ECBTAX SELLER AGENT
+==========================================================
+*/
+
+async function contactSeller(){
+
+  const candidate =
+    state.brokerCandidate;
+
+  if(!candidate){
+    return;
+  }
+
+
+  $('continueSeller').disabled = true;
+
+
+  setStatus(
+
+    '✓ B2B AI Broker Agent a selectat ' +
+    '<strong>' + candidate.agent + '</strong>.<br>' +
+
+    '● Buyer Agent AiVenture contactează Seller Agent…'
+  );
+
+
+  try{
+
+    /*
+    Refolosim endpoint-ul AiVenture existent
+    pentru conversația Buyer ↔ Seller.
+    */
+
+    const response = await post(
+      '/api/buyer/contact',
+      {
+        request:state.request,
+        provider:candidate.provider,
+        agent:candidate.agent,
+        employees:state.employees
+      }
+    );
+
+
+    const sr =
+      response?.seller_response?.result ||
+      response?.result ||
+      response;
+
+
+    state.transaction_id =
+      sr?.transaction_id || null;
+
+
+    requireId('transaction_id');
+
+
+    $('sellerQuestion').textContent =
+      sr?.question ||
+      'Pentru ce perioadă salarială?';
+
+
+    setStatus(
+
+      '✓ Broker discovery complet.<br>' +
+
+      '✓ ' + candidate.agent +
+      ' contactat.<br>' +
+
+      '✓ Conexiune Buyer ↔ Seller stabilită.<br>' +
+
+      'Transaction: <strong>' +
+      state.transaction_id +
+      '</strong>'
+    );
+
+
+    $('offerPanel').style.display = 'none';
+
+    $('periodDialog').style.display = 'block';
+
+    $('periodDialog').scrollIntoView({
+      behavior:'smooth',
+      block:'start'
+    });
+
+    $('periodInput').focus();
+
+  }
+  catch(error){
+
+    setStatus(
+      '✕ ' + error.message,
+      'bad'
+    );
+
+    $('continueSeller').disabled = false;
+  }
+}
+
+
+/*
+==========================================================
+SELLER QUESTION → PERIOD → QUOTE
+==========================================================
+*/
+
+async function continuePeriod(){
+
+  const period =
+    ($('periodInput').value || '').trim();
+
+
+  if(!period){
+
+    $('periodStatus').textContent =
+      'Introdu perioada salarială.';
+
+    return;
+  }
+
+
+  state.period = period;
+
+  $('periodContinue').disabled = true;
+
+  $('periodStatus').innerHTML =
+    '● Trimit perioada către ECBTAX Seller Agent…';
+
+
+  try{
+
+    const answer = await post(
+      '/api/buyer/answer',
+      {
+        transaction_id:
+          requireId('transaction_id'),
+
+        period:state.period,
+
+        employees:state.employees
+      }
+    );
+
+
+    const ar =
+      sellerResult(answer);
+
+
+    if(ar?.transaction_id){
+
+      state.transaction_id =
+        ar.transaction_id;
+    }
+
+
+    const quote =
+      ar?.quote;
+
+
+    if(!quote?.quote_id){
+
+      throw new Error(
+        'Seller Agent a răspuns, dar lipsește quote_id.'
+      );
+    }
+
+
+    state.quote_id =
+      quote.quote_id;
+
+
+    $('periodDialog').style.display =
+      'none';
+
+
+    $('transactionPanel').style.display =
+      'block';
+
+
+    $('transactionResult').innerHTML =
+
+      '<div class="evidence">' +
+
+      '<strong>ECBTAX SELLER AGENT</strong><br>' +
+
+      'Quote: <strong>' +
+      state.quote_id +
+      '</strong><br>' +
+
+      'Perioadă: <strong>' +
+      state.period +
+      '</strong><br>' +
+
+      'Angajați: <strong>' +
+      state.employees +
+      '</strong><br>' +
+
+      'Preț: <strong>' +
+
+      (
+        quote.price != null
+        ? `${quote.price} EUR`
+        : 'NECOMUNICAT'
+      ) +
+
+      '</strong>' +
+
+      '</div>';
+
+
+    $('transactionStatus').innerHTML =
+      '● Verific oferta înainte de aprobarea umană…';
+
+
+    let verified = {
+      verified:true
+    };
+
+
+    try{
+
+      verified = await post(
+        '/api/buyer/verify',
+        {
+          quote:{
+            ...quote,
+            provider:
+              quote.provider ||
+              state.brokerCandidate?.provider ||
+              'ECBTAX'
+          }
+        }
+      );
+
+    }
+    catch(verifyError){
+
+      console.warn(
+        'Verification:',
+        verifyError
+      );
+    }
+
+
+    if(verified?.verified === false){
+
+      $('transactionStatus').innerHTML =
+        '✕ Oferta nu a trecut verificarea.';
+
+      $('approveQuote').disabled = true;
+
+    }else{
+
+      $('transactionStatus').innerHTML =
+        '✓ Oferta verificată.<br>' +
+        '<strong>APROBAREA OMULUI ESTE NECESARĂ.</strong>';
+
+      $('approveQuote').disabled =
+        quote.price == null;
+    }
+
+
+    $('transactionPanel').scrollIntoView({
+      behavior:'smooth',
+      block:'start'
+    });
+
+  }
+  catch(error){
+
+    $('periodStatus').textContent =
+      '✕ ' + error.message;
+
+    $('periodContinue').disabled =
+      false;
+  }
+}
+
+
+/*
+==========================================================
+HUMAN APPROVAL
+==========================================================
+*/
+
+async function acceptQuote(){
+
+  $('approveQuote').disabled = true;
+
+  $('transactionStatus').innerHTML =
+    '● Trimit aprobarea umană către Seller Agent…';
+
+
+  try{
+
+    const response = await post(
+      '/api/buyer/accept',
+      {
+        quote_id:
+          requireId('quote_id'),
+
+        human_approved:true
+      }
+    );
+
+
+    const sr =
+      sellerResult(response);
+
+
+    if(sr?.event !== 'QUOTE_ACCEPTED'){
+
+      throw new Error(
+        'QUOTE_ACCEPTED nu a fost confirmat.'
+      );
+    }
+
+
+    const evidence =
+      sr.evidence || {};
+
+
+    state.transaction_id =
+      sr.transaction_id ||
+      state.transaction_id;
+
+
+    state.evidence_id =
+      evidence.evidence_id ||
+      sr.evidence_id ||
+      null;
+
+
+    requireId('evidence_id');
+
+
+    $('transactionStatus').innerHTML =
+
+      '<div class="evidence">' +
+
+      '<strong style="font-size:20px;color:#5eead4">' +
+      '✓ HUMAN APPROVAL CONFIRMED' +
+      '</strong><br>' +
+
+      'Transaction: <strong>' +
+      state.transaction_id +
+      '</strong><br>' +
+
+      'Quote: <strong>' +
+      state.quote_id +
+      '</strong><br>' +
+
+      'Evidence ID: <strong>' +
+      state.evidence_id +
+      '</strong><br>' +
+
+      'Human Approved: <strong>YES</strong>' +
+
+      '</div>' +
+
+      '<div class="actions">' +
+
+      '<button id="sendOrder">' +
+      'TRIMITE COMANDA' +
+      '</button>' +
+
+      '</div>' +
+
+      '<div id="orderResult"></div>';
+
+
+    $('approveQuote').textContent =
+      'OFERTĂ APROBATĂ ✓';
+
+
+    $('sendOrder').addEventListener(
+      'click',
+      createOrder,
+      {once:true}
+    );
+
+  }
+  catch(error){
+
+    $('transactionStatus').textContent =
+      '✕ ' + error.message;
+
+    $('approveQuote').disabled =
+      false;
+  }
+}
+
+
+/*
+==========================================================
+ORDER
+==========================================================
+*/
+
+async function createOrder(){
+
+  const output =
+    $('orderResult');
+
+
+  try{
+
+    const result = sellerResult(
+      await post(
+        '/api/buyer/order',
+        {
+          quote_id:
+            requireId('quote_id'),
+
+          evidence_id:
+            requireId('evidence_id')
+        }
+      )
+    );
+
+
+    state.order_id =
+      result?.order_id || null;
+
+
+    requireId('order_id');
+
+
+    output.innerHTML =
+
+      '<div class="evidence">' +
+
+      '<strong>✓ ORDER CONFIRMED</strong><br>' +
+
+      'Order: <strong>' +
+      state.order_id +
+      '</strong><br>' +
+
+      'Status: <strong>' +
+      (result.status || 'CONFIRMED') +
+      '</strong>' +
+
+      '</div>' +
+
+      '<div class="actions">' +
+
+      '<button id="executeOrder">' +
+      'PORNEȘTE EXECUȚIA' +
+      '</button>' +
+
+      '</div>' +
+
+      '<div id="executionResult"></div>';
+
+
+    $('executeOrder').addEventListener(
+      'click',
+      executeOrder,
+      {once:true}
+    );
+
+  }
+  catch(error){
+
+    output.textContent =
+      '✕ ' + error.message;
+  }
+}
+
+
+/*
+==========================================================
+EXECUTION
+==========================================================
+*/
+
+async function executeOrder(){
+
+  const output =
+    $('executionResult');
+
+
+  try{
+
+    const result = sellerResult(
+      await post(
+        '/api/buyer/execute',
+        {
+          order_id:
+            requireId('order_id'),
+
+          quote_id:
+            requireId('quote_id'),
+
+          evidence_id:
+            requireId('evidence_id')
+        }
+      )
+    );
+
+
+    state.job_id =
+      result?.job_id || null;
+
+
+    requireId('job_id');
+
+
+    output.innerHTML =
+
+      '<div class="evidence">' +
+
+      '<strong>✓ EXECUTION STARTED</strong><br>' +
+
+      'Job: <strong>' +
+      state.job_id +
+      '</strong><br>' +
+
+      'Order: <strong>' +
+      state.order_id +
+      '</strong>' +
+
+      '</div>' +
+
+      '<div class="actions">' +
+
+      '<button id="receiveResult">' +
+      'PRIMEȘTE REZULTATUL' +
+      '</button>' +
+
+      '</div>' +
+
+      '<div id="serviceResult"></div>';
+
+
+    $('receiveResult').addEventListener(
+      'click',
+      receiveServiceResult,
+      {once:true}
+    );
+
+  }
+  catch(error){
+
+    output.textContent =
+      '✕ ' + error.message;
+  }
+}
+
+
+/*
+==========================================================
+RESULT
+==========================================================
+*/
+
+async function receiveServiceResult(){
+
+  const output =
+    $('serviceResult');
+
+
+  try{
+
+    const result = sellerResult(
+      await post(
+        '/api/buyer/result',
+        {
+          job_id:
+            requireId('job_id'),
+
+          order_id:
+            requireId('order_id'),
+
+          evidence_id:
+            requireId('evidence_id')
+        }
+      )
+    );
+
+
+    state.result_id =
+      result?.result?.result_id ||
+      result?.result_id ||
+      null;
+
+
+    state.delivery_evidence_id =
+      result?.delivery_evidence?.delivery_evidence_id ||
+      result?.delivery_evidence_id ||
+      null;
+
+
+    requireId('result_id');
+    requireId('delivery_evidence_id');
+
+
+    output.innerHTML =
+
+      '<div class="evidence">' +
+
+      '<strong style="color:#5eead4">' +
+      '✓ SERVICE COMPLETED' +
+      '</strong><br>' +
+
+      'Result: <strong>' +
+      state.result_id +
+      '</strong><br>' +
+
+      'Delivery Evidence: <strong>' +
+      state.delivery_evidence_id +
+      '</strong>' +
+
+      '</div>' +
+
+      '<div class="actions">' +
+
+      '<button id="showReceipt">' +
+      'VEZI DOVADA TRANZACȚIEI' +
+      '</button>' +
+
+      '</div>' +
+
+      '<div id="receiptResult"></div>';
+
+
+    $('showReceipt').addEventListener(
+      'click',
+      receiveReceipt,
+      {once:true}
+    );
+
+  }
+  catch(error){
+
+    output.textContent =
+      '✕ ' + error.message;
+  }
+}
+
+
+/*
+==========================================================
+AUDIT RECEIPT
+==========================================================
+*/
+
+async function receiveReceipt(){
+
+  const output =
+    $('receiptResult');
+
+
+  try{
+
+    const receipt = sellerResult(
+      await post(
+        '/api/buyer/receipt',
+        {
+          order_id:
+            requireId('order_id'),
+
+          job_id:
+            requireId('job_id'),
+
+          result_id:
+            requireId('result_id'),
+
+          delivery_evidence_id:
+            requireId('delivery_evidence_id')
+        }
+      )
+    );
+
+
+    state.receipt_id =
+      receipt?.receipt_id ||
+      null;
+
+
+    requireId('receipt_id');
+
+
+    output.innerHTML =
+
+      '<div class="evidence">' +
+
+      '<strong style="font-size:20px;color:#5eead4">' +
+      '✓ A2A TRANSACTION COMPLETE' +
+      '</strong><br><br>' +
+
+      'Transaction: <strong>' +
+      state.transaction_id +
+      '</strong><br>' +
+
+      'Receipt: <strong>' +
+      state.receipt_id +
+      '</strong><br>' +
+
+      'Quote: <strong>' +
+      state.quote_id +
+      '</strong><br>' +
+
+      'Evidence: <strong>' +
+      state.evidence_id +
+      '</strong><br>' +
+
+      'Order: <strong>' +
+      state.order_id +
+      '</strong><br>' +
+
+      'Execution: <strong>' +
+      state.job_id +
+      '</strong><br>' +
+
+      'Result: <strong>' +
+      state.result_id +
+      '</strong><br>' +
+
+      'Delivery Evidence: <strong>' +
+      state.delivery_evidence_id +
+      '</strong><br><br>' +
+
+      'Human Approved: <strong>YES</strong><br>' +
+
+      'Transaction Verified: <strong>' +
+      (
+        receipt.transaction_verified === false
+        ? 'NO'
+        : 'YES'
+      ) +
+      '</strong><br>' +
+
+      'Delivery Verified: <strong>' +
+      (
+        receipt.delivery_verified === false
+        ? 'NO'
+        : 'YES'
+      ) +
+      '</strong>' +
+
+      '</div>';
+
+  }
+  catch(error){
+
+    output.textContent =
+      '✕ ' + error.message;
+  }
+}
+
+
+/*
+==========================================================
+EVENTS
+==========================================================
+*/
+
+$('searchAgent')
+.addEventListener(
+  'click',
+  startBuyer
+);
+
+
+$('continueSeller')
+.addEventListener(
+  'click',
+  contactSeller
+);
+
+
+$('periodContinue')
+.addEventListener(
+  'click',
+  continuePeriod
+);
+
+
+$('approveQuote')
+.addEventListener(
+  'click',
+  acceptQuote
+);
+
+
+$('rejectOffer')
+.addEventListener(
+  'click',
+  () => {
+
+    $('offerPanel').style.display =
+      'none';
+
+    setStatus(
+      'Oferta Brokerului a fost respinsă de utilizator.',
+      'bad'
+    );
+
+    $('searchAgent').disabled =
+      false;
+  }
+);
+
+
+$('rejectQuote')
+.addEventListener(
+  'click',
+  () => {
+
+    $('approveQuote').disabled =
+      true;
+
+    $('transactionStatus').textContent =
+      'Oferta Seller Agent a fost respinsă de utilizator.';
+  }
+);
+
 })();
 </script>
 
-</body></html>
+</body>
+</html>
