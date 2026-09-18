@@ -14,6 +14,7 @@ export async function onRequestOptions(){
 }
 
 export async function onRequestPost({request}){
+
   let body={};
 
   try{
@@ -22,41 +23,38 @@ export async function onRequestPost({request}){
     return reply({error:"INVALID_JSON"},400);
   }
 
-  const orderId=String(body.order_id||"").trim();
-  const quoteId=String(body.quote_id||"").trim();
-  const evidenceId=String(body.evidence_id||"").trim();
+  const orderId=
+    String(body.order_id||"").trim();
+
+  const quoteId=
+    String(body.quote_id||"").trim();
+
+  const evidenceId=
+    String(body.evidence_id||"").trim();
 
 
-  // =========================================================
-  // VERIFY ORDER
-  // =========================================================
-
-  if(orderId!=="ORD-1042"){
+  if(!orderId){
     return reply({
-      error:"ORDER_NOT_CONFIRMED"
+      error:"ORDER_ID_REQUIRED"
     },400);
   }
 
-  if(quoteId!=="Q-1042"){
+  if(!quoteId){
     return reply({
-      error:"QUOTE_NOT_VERIFIED"
+      error:"QUOTE_ID_REQUIRED"
     },400);
   }
 
-  if(evidenceId!=="EV-Q-1042"){
+  if(!evidenceId){
     return reply({
-      error:"EVIDENCE_NOT_VERIFIED"
+      error:"EVIDENCE_ID_REQUIRED"
     },400);
   }
 
-
-  // =========================================================
-  // BUILD A2A SERVICE EXECUTION REQUEST
-  // =========================================================
 
   const sellerRequest={
     jsonrpc:"2.0",
-    id:"EXECUTE-"+Date.now(),
+    id:crypto.randomUUID(),
 
     method:"service.execute",
 
@@ -68,35 +66,21 @@ export async function onRequestPost({request}){
   };
 
 
-  // =========================================================
-  // SEND TO ECBTAX SELLER AGENT
-  // =========================================================
-
-  let sellerResponse;
+  let response;
 
   try{
 
-    const response=await fetch(
+    response=await fetch(
       "https://ecbtax.com/api/a2a",
       {
         method:"POST",
         headers:{
-          "Content-Type":"application/json"
+          "content-type":"application/json",
+          "accept":"application/json"
         },
         body:JSON.stringify(sellerRequest)
       }
     );
-
-    sellerResponse=await response.json();
-
-    if(!response.ok){
-      return reply({
-        event:"EXECUTION_FAILED",
-        buyer:"AiVenture Buyer Agent",
-        seller:"ECBTAX Seller Agent",
-        seller_response:sellerResponse
-      },502);
-    }
 
   }catch(error){
 
@@ -109,18 +93,44 @@ export async function onRequestPost({request}){
   }
 
 
-  // =========================================================
-  // VERIFY SELLER RESPONSE
-  // =========================================================
+  const raw=await response.text();
+
+  let sellerResponse={};
+
+  try{
+    sellerResponse=JSON.parse(raw);
+  }catch{
+
+    return reply({
+      event:"EXECUTION_FAILED",
+      error:"SELLER_NON_JSON_RESPONSE",
+      seller_http_status:response.status,
+      raw
+    },502);
+  }
+
+
+  if(!response.ok){
+
+    return reply({
+      event:"EXECUTION_FAILED",
+      buyer:"AiVenture Buyer Agent",
+      seller:"ECBTAX Seller Agent",
+      seller_http_status:response.status,
+      seller_response:sellerResponse
+    },502);
+  }
+
 
   const result=sellerResponse?.result;
+
 
   if(
     !result ||
     result.event!=="EXECUTION_STARTED" ||
-    result.job_id!=="JOB-1042" ||
-    result.order_id!=="ORD-1042"
+    !result.job_id
   ){
+
     return reply({
       event:"EXECUTION_NOT_STARTED",
       buyer:"AiVenture Buyer Agent",
@@ -130,40 +140,90 @@ export async function onRequestPost({request}){
   }
 
 
-  // =========================================================
-  // BUYER CONFIRMATION
-  // =========================================================
+  if(
+    result.order_id!==orderId ||
+    result.quote_id!==quoteId ||
+    result.evidence_id!==evidenceId
+  ){
+
+    return reply({
+      event:"EXECUTION_EVIDENCE_MISMATCH",
+
+      expected:{
+        order_id:orderId,
+        quote_id:quoteId,
+        evidence_id:evidenceId
+      },
+
+      received:{
+        order_id:result.order_id,
+        quote_id:result.quote_id,
+        evidence_id:result.evidence_id
+      }
+
+    },502);
+  }
+
 
   return reply({
+
     event:"A2A_EXECUTION_STARTED",
 
     buyer:"AiVenture Buyer Agent",
     seller:"ECBTAX Seller Agent",
 
-    job_id:result.job_id,
-    order_id:result.order_id,
-    quote_id:result.quote_id,
-    evidence_id:result.evidence_id,
+    transaction_id:
+      result.transaction_id,
 
-    service:result.service,
-    employees:result.employees,
+    job_id:
+      result.job_id,
 
-    currency:result.currency,
-    price:result.price,
-    billing_period:result.billing_period,
+    order_id:
+      result.order_id,
 
-    human_approved:result.human_approved,
-    transaction_verified:result.transaction_verified,
+    quote_id:
+      result.quote_id,
 
-    order_status:result.order_status,
-    execution_status:result.execution_status,
+    evidence_id:
+      result.evidence_id,
 
-    started_at:result.started_at,
+    service:
+      result.service,
 
-    status:result.status,
+    employees:
+      result.employees,
 
-    next_event:result.next_event,
+    currency:
+      result.currency,
 
-    seller_response:sellerResponse
+    price:
+      result.price,
+
+    billing_period:
+      result.billing_period,
+
+    human_approved:
+      result.human_approved,
+
+    transaction_verified:
+      result.transaction_verified,
+
+    order_status:
+      result.order_status,
+
+    execution_status:
+      result.execution_status,
+
+    started_at:
+      result.started_at,
+
+    status:
+      result.status,
+
+    next_event:
+      result.next_event,
+
+    seller_response:
+      sellerResponse
   });
 }
