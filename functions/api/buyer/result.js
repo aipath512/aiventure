@@ -1,183 +1,315 @@
-function reply(data,status=200){
-  return Response.json(data,{
+function reply(data, status = 200) {
+  return Response.json(data, {
     status,
-    headers:{
-      "Access-Control-Allow-Origin":"https://aiventure.ro",
-      "Access-Control-Allow-Headers":"content-type",
-      "Access-Control-Allow-Methods":"POST,OPTIONS"
+    headers: {
+      "Access-Control-Allow-Origin": "https://aiventure.ro",
+      "Access-Control-Allow-Headers": "content-type",
+      "Access-Control-Allow-Methods": "POST,OPTIONS"
     }
   });
 }
 
-export async function onRequestOptions(){
-  return reply({ok:true});
+export async function onRequestOptions() {
+  return reply({ ok: true });
 }
 
-export async function onRequestPost({request}){
+export async function onRequestPost({ request }) {
 
-  let body={};
+  let body = {};
 
-  try{
-    body=await request.json();
-  }catch{
-    return reply({error:"INVALID_JSON"},400);
+  try {
+    body = await request.json();
+  } catch {
+    return reply({ error: "INVALID_JSON" }, 400);
   }
 
-  const jobId=
-    String(body.job_id||"").trim();
 
-  const orderId=
-    String(body.order_id||"").trim();
+  const jobId =
+    String(body.job_id || "").trim();
 
-  const evidenceId=
-    String(body.evidence_id||"").trim();
+  const orderId =
+    String(body.order_id || "").trim();
+
+  const evidenceId =
+    String(body.evidence_id || "").trim();
+
+  const sellerAgentId =
+    String(body.seller_agent_id || "").trim();
+
+  const sellerAgentName =
+    String(body.seller_agent_name || "").trim();
+
+  const sellerEndpointUrl =
+    String(body.seller_endpoint_url || "").trim();
 
 
-  if(!jobId){
+  if (!jobId) {
     return reply({
-      error:"JOB_ID_REQUIRED"
-    },400);
+      error: "JOB_ID_REQUIRED"
+    }, 400);
   }
 
-  if(!orderId){
+  if (!orderId) {
     return reply({
-      error:"ORDER_ID_REQUIRED"
-    },400);
+      error: "ORDER_ID_REQUIRED"
+    }, 400);
   }
 
-  if(!evidenceId){
+  if (!evidenceId) {
     return reply({
-      error:"EVIDENCE_ID_REQUIRED"
-    },400);
+      error: "EVIDENCE_ID_REQUIRED"
+    }, 400);
+  }
+
+  if (!sellerAgentId) {
+    return reply({
+      error: "SELLER_AGENT_ID_REQUIRED"
+    }, 400);
+  }
+
+  if (!sellerEndpointUrl) {
+    return reply({
+      error: "SELLER_ENDPOINT_REQUIRED"
+    }, 400);
   }
 
 
-  const sellerRequest={
-    jsonrpc:"2.0",
-    id:crypto.randomUUID(),
+  let sellerEndpoint;
 
-    method:"service.result",
+  try {
+    sellerEndpoint = new URL(sellerEndpointUrl);
+  } catch {
+    return reply({
+      error: "INVALID_SELLER_ENDPOINT"
+    }, 400);
+  }
 
-    params:{
-      job_id:jobId,
-      order_id:orderId,
-      evidence_id:evidenceId
+  if (sellerEndpoint.protocol !== "https:") {
+    return reply({
+      error: "SELLER_ENDPOINT_MUST_USE_HTTPS"
+    }, 400);
+  }
+
+
+  /*
+   * Layer 1 transaction continuity:
+   *
+   * Seller identity and endpoint originate from Broker discovery.
+   *
+   * job_id + order_id + evidence_id must remain bound
+   * to the same transaction.
+   *
+   * Delivery evidence must be returned and verified.
+   *
+   * THE EDGE MUST NEVER INVENT THE OFFER DURING A TRANSACTION.
+   *
+   * No payment or settlement is performed here.
+   */
+
+
+  const sellerRequest = {
+
+    jsonrpc: "2.0",
+
+    id: crypto.randomUUID(),
+
+    method: "service.result",
+
+    params: {
+      job_id: jobId,
+      order_id: orderId,
+      evidence_id: evidenceId,
+      seller_agent_id: sellerAgentId
     }
   };
 
 
   let response;
 
-  try{
+  try {
 
-    response=await fetch(
-      "https://ecbtax.com/api/a2a",
+    response = await fetch(
+      sellerEndpoint.toString(),
       {
-        method:"POST",
-        headers:{
-          "content-type":"application/json",
-          "accept":"application/json"
+        method: "POST",
+        headers: {
+          "content-type": "application/json",
+          "accept": "application/json"
         },
-        body:JSON.stringify(sellerRequest)
+        body: JSON.stringify(sellerRequest)
       }
     );
 
-  }catch(error){
+  } catch (error) {
 
     return reply({
-      event:"SERVICE_RESULT_CONNECTION_FAILED",
-      buyer:"AiVenture Buyer Agent",
-      seller:"ECBTAX Seller Agent",
-      error:String(error)
-    },502);
+      event: "SERVICE_RESULT_CONNECTION_FAILED",
+
+      buyer: "AiVenture Buyer Agent",
+
+      seller_agent_id:
+        sellerAgentId,
+
+      seller_agent_name:
+        sellerAgentName || sellerAgentId,
+
+      seller_endpoint_url:
+        sellerEndpoint.toString(),
+
+      error: String(error)
+    }, 502);
   }
 
 
-  const raw=await response.text();
+  const raw = await response.text();
 
-  let sellerResponse={};
+  let sellerResponse = {};
 
-  try{
-    sellerResponse=JSON.parse(raw);
-  }catch{
+  try {
+    sellerResponse = JSON.parse(raw);
+  } catch {
 
     return reply({
-      event:"SERVICE_RESULT_FAILED",
-      error:"SELLER_NON_JSON_RESPONSE",
-      seller_http_status:response.status,
+      event: "SERVICE_RESULT_FAILED",
+
+      seller_agent_id:
+        sellerAgentId,
+
+      seller_agent_name:
+        sellerAgentName || sellerAgentId,
+
+      seller_endpoint_url:
+        sellerEndpoint.toString(),
+
+      error: "SELLER_NON_JSON_RESPONSE",
+
+      seller_http_status:
+        response.status,
+
       raw
-    },502);
+    }, 502);
   }
 
 
-  if(!response.ok){
+  if (!response.ok) {
 
     return reply({
-      event:"SERVICE_RESULT_FAILED",
-      buyer:"AiVenture Buyer Agent",
-      seller:"ECBTAX Seller Agent",
-      seller_http_status:response.status,
-      seller_response:sellerResponse
-    },502);
+      event: "SERVICE_RESULT_FAILED",
+
+      buyer: "AiVenture Buyer Agent",
+
+      seller_agent_id:
+        sellerAgentId,
+
+      seller_agent_name:
+        sellerAgentName || sellerAgentId,
+
+      seller_endpoint_url:
+        sellerEndpoint.toString(),
+
+      seller_http_status:
+        response.status,
+
+      seller_response:
+        sellerResponse
+    }, 502);
   }
 
 
-  const result=
+  const result =
     sellerResponse?.result;
 
-  const serviceResult=
+  const serviceResult =
     result?.result;
 
-  const deliveryEvidence=
+  const deliveryEvidence =
     result?.delivery_evidence;
 
 
-  if(
+  if (
     !result ||
-    result.event!=="SERVICE_RESULT" ||
-    result.job_id!==jobId ||
-    result.order_id!==orderId ||
-    result.evidence_id!==evidenceId ||
-    result.status!=="COMPLETED"
-  ){
+    result.event !== "SERVICE_RESULT" ||
+    result.job_id !== jobId ||
+    result.order_id !== orderId ||
+    result.evidence_id !== evidenceId ||
+    result.status !== "COMPLETED"
+  ) {
 
     return reply({
-      event:"DELIVERY_NOT_VERIFIED",
-      reason:"TRANSACTION_REFERENCE_MISMATCH",
-      buyer:"AiVenture Buyer Agent",
-      seller:"ECBTAX Seller Agent",
-      seller_response:sellerResponse
-    },502);
+      event: "DELIVERY_NOT_VERIFIED",
+
+      reason:
+        "TRANSACTION_REFERENCE_MISMATCH",
+
+      buyer:
+        "AiVenture Buyer Agent",
+
+      seller_agent_id:
+        sellerAgentId,
+
+      seller_agent_name:
+        sellerAgentName || sellerAgentId,
+
+      seller_endpoint_url:
+        sellerEndpoint.toString(),
+
+      seller_response:
+        sellerResponse
+    }, 502);
   }
 
 
-  if(
+  if (
     !serviceResult?.result_id ||
     !deliveryEvidence?.delivery_evidence_id ||
-    deliveryEvidence.job_id!==jobId ||
-    deliveryEvidence.order_id!==orderId ||
-    deliveryEvidence.result_id!==serviceResult.result_id ||
-    deliveryEvidence.delivered!==true ||
-    deliveryEvidence.verified!==true ||
-    deliveryEvidence.status!=="VERIFIED"
-  ){
+    deliveryEvidence.job_id !== jobId ||
+    deliveryEvidence.order_id !== orderId ||
+    deliveryEvidence.result_id !== serviceResult.result_id ||
+    deliveryEvidence.delivered !== true ||
+    deliveryEvidence.verified !== true ||
+    deliveryEvidence.status !== "VERIFIED"
+  ) {
 
     return reply({
-      event:"DELIVERY_NOT_VERIFIED",
-      reason:"DELIVERY_EVIDENCE_INVALID",
-      buyer:"AiVenture Buyer Agent",
-      seller:"ECBTAX Seller Agent",
-      seller_response:sellerResponse
-    },502);
+      event: "DELIVERY_NOT_VERIFIED",
+
+      reason:
+        "DELIVERY_EVIDENCE_INVALID",
+
+      buyer:
+        "AiVenture Buyer Agent",
+
+      seller_agent_id:
+        sellerAgentId,
+
+      seller_agent_name:
+        sellerAgentName || sellerAgentId,
+
+      seller_endpoint_url:
+        sellerEndpoint.toString(),
+
+      seller_response:
+        sellerResponse
+    }, 502);
   }
 
 
   return reply({
 
-    event:"A2A_SERVICE_RESULT_RECEIVED",
+    event:
+      "A2A_SERVICE_RESULT_RECEIVED",
 
-    buyer:"AiVenture Buyer Agent",
-    seller:"ECBTAX Seller Agent",
+    buyer:
+      "AiVenture Buyer Agent",
+
+    seller_agent_id:
+      sellerAgentId,
+
+    seller_agent_name:
+      sellerAgentName || sellerAgentId,
+
+    seller_endpoint_url:
+      sellerEndpoint.toString(),
 
     transaction_id:
       result.transaction_id,
