@@ -1,4 +1,4 @@
-export async function onRequestPost({request}) {
+export async function onRequestPost({ request }) {
 
   let body = {};
 
@@ -6,12 +6,12 @@ export async function onRequestPost({request}) {
     body = await request.json();
   } catch {
     return Response.json(
-      {error:"INVALID_JSON"},
-      {status:400}
+      { error: "INVALID_JSON" },
+      { status: 400 }
     );
   }
 
-  const transaction_id =
+  const transactionId =
     String(body.transaction_id || "").trim();
 
   const period =
@@ -20,54 +20,104 @@ export async function onRequestPost({request}) {
   const employees =
     Number(body.employees || 5);
 
+  const sellerAgentId =
+    String(body.seller_agent_id || "").trim();
 
-  if (!transaction_id) {
+  const sellerAgentName =
+    String(body.seller_agent_name || "").trim();
+
+  const sellerEndpointUrl =
+    String(body.seller_endpoint_url || "").trim();
+
+
+  if (!transactionId) {
     return Response.json(
-      {error:"TRANSACTION_ID_REQUIRED"},
-      {status:400}
+      { error: "TRANSACTION_ID_REQUIRED" },
+      { status: 400 }
     );
   }
-
 
   if (!period) {
     return Response.json(
-      {error:"PERIOD_REQUIRED"},
-      {status:400}
+      { error: "PERIOD_REQUIRED" },
+      { status: 400 }
+    );
+  }
+
+  if (!sellerAgentId) {
+    return Response.json(
+      { error: "SELLER_AGENT_ID_REQUIRED" },
+      { status: 400 }
+    );
+  }
+
+  if (!sellerEndpointUrl) {
+    return Response.json(
+      { error: "SELLER_ENDPOINT_REQUIRED" },
+      { status: 400 }
     );
   }
 
 
+  let sellerEndpoint;
+
+  try {
+    sellerEndpoint = new URL(sellerEndpointUrl);
+  } catch {
+    return Response.json(
+      { error: "INVALID_SELLER_ENDPOINT" },
+      { status: 400 }
+    );
+  }
+
+  if (sellerEndpoint.protocol !== "https:") {
+    return Response.json(
+      { error: "SELLER_ENDPOINT_MUST_USE_HTTPS" },
+      { status: 400 }
+    );
+  }
+
+
+  /*
+   * Layer 1:
+   * Seller identity and endpoint originate from Broker discovery.
+   *
+   * THE EDGE MUST NEVER INVENT THE OFFER DURING A TRANSACTION.
+   *
+   * No payment or settlement is performed here.
+   */
+
   const message = {
 
-    jsonrpc:"2.0",
+    jsonrpc: "2.0",
 
-    id:crypto.randomUUID(),
+    id: crypto.randomUUID(),
 
-    method:"service.answer",
+    method: "service.answer",
 
-    params:{
-      transaction_id,
+    params: {
+      transaction_id: transactionId,
       period,
       employees,
-      buyer:"AiVenture Buyer Agent",
-      service:"payroll"
+      buyer: "AiVenture Buyer Agent",
+      seller_agent_id: sellerAgentId
     }
   };
 
 
-  let r;
+  let response;
 
   try {
 
-    r = await fetch(
-      "https://ecbtax.com/api/a2a",
+    response = await fetch(
+      sellerEndpoint.toString(),
       {
-        method:"POST",
-        headers:{
-          "content-type":"application/json",
-          "accept":"application/json"
+        method: "POST",
+        headers: {
+          "content-type": "application/json",
+          "accept": "application/json"
         },
-        body:JSON.stringify(message)
+        body: JSON.stringify(message)
       }
     );
 
@@ -75,23 +125,26 @@ export async function onRequestPost({request}) {
 
     return Response.json(
       {
-        event:"A2A_ANSWER_FAILED",
-        error:"SELLER_UNREACHABLE"
+        event: "A2A_ANSWER_FAILED",
+        seller_agent_id: sellerAgentId,
+        seller_agent_name: sellerAgentName || sellerAgentId,
+        seller_endpoint_url: sellerEndpoint.toString(),
+        error: "SELLER_UNREACHABLE"
       },
-      {status:502}
+      { status: 502 }
     );
   }
 
 
-  const raw = await r.text();
+  const raw = await response.text();
 
-  let seller = {};
+  let sellerResponse = {};
 
   try {
-    seller = JSON.parse(raw);
+    sellerResponse = JSON.parse(raw);
   } catch {
-    seller = {
-      error:"SELLER_NON_JSON_RESPONSE",
+    sellerResponse = {
+      error: "SELLER_NON_JSON_RESPONSE",
       raw
     };
   }
@@ -99,13 +152,26 @@ export async function onRequestPost({request}) {
 
   return Response.json(
     {
-      event:"A2A_ANSWER_COMPLETED",
-      transaction_id,
-      seller_http_status:r.status,
-      seller_response:seller
+      event: "A2A_ANSWER_COMPLETED",
+
+      transaction_id: transactionId,
+
+      seller_agent_id: sellerAgentId,
+
+      seller_agent_name:
+        sellerAgentName || sellerAgentId,
+
+      seller_endpoint_url:
+        sellerEndpoint.toString(),
+
+      seller_http_status:
+        response.status,
+
+      seller_response:
+        sellerResponse
     },
     {
-      status:r.ok ? 200 : 502
+      status: response.ok ? 200 : 502
     }
   );
 }
