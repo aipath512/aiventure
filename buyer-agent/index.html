@@ -310,7 +310,7 @@ Acceptarea comercială rămâne sub control uman.
 
 <section id="periodDialog">
 
-<h2>ECBTAX SELLER AGENT</h2>
+<h2 id="sellerDialogTitle">SELLER AGENT</h2>
 
 <p id="sellerQuestion">
 Pentru ce perioadă salarială?
@@ -453,6 +453,45 @@ function sellerResult(x){
     x?.result ||
     x
   );
+}
+
+
+function sellerContext(){
+
+  const candidate = state.brokerCandidate;
+
+  if(!candidate){
+    throw new Error(
+      'Lipsește Seller Agent selectat de Broker; fluxul A2A a fost oprit.'
+    );
+  }
+
+  const seller_agent_id =
+    String(candidate.id || '').trim();
+
+  const seller_agent_name =
+    String(candidate.agent || candidate.name || candidate.id || '').trim();
+
+  const seller_endpoint_url =
+    String(candidate.endpoint_url || '').trim();
+
+  if(!seller_agent_id){
+    throw new Error(
+      'Brokerul nu a furnizat seller_agent_id.'
+    );
+  }
+
+  if(!seller_endpoint_url){
+    throw new Error(
+      'Brokerul nu a furnizat seller_endpoint_url.'
+    );
+  }
+
+  return {
+    seller_agent_id,
+    seller_agent_name,
+    seller_endpoint_url
+  };
 }
 
 
@@ -663,85 +702,67 @@ function renderBrokerOffer(candidate){
 
 /*
 ==========================================================
-BROKER → ECBTAX SELLER AGENT
+BROKER → DISCOVERED SELLER AGENT
 ==========================================================
 */
 
 async function contactSeller(){
 
-  const candidate =
-    state.brokerCandidate;
+  const candidate = state.brokerCandidate;
 
   if(!candidate){
     return;
   }
 
-
   $('continueSeller').disabled = true;
 
-
   setStatus(
-
     '✓ B2B AI Broker Agent a selectat ' +
     '<strong>' + candidate.agent + '</strong>.<br>' +
-
     '● Buyer Agent AiVenture contactează Seller Agent…'
   );
 
-
   try{
 
-    /*
-    Refolosim endpoint-ul AiVenture existent
-    pentru conversația Buyer ↔ Seller.
-    */
+    const seller = sellerContext();
 
     const response = await post(
       '/api/buyer/contact',
       {
         request:state.request,
-        provider:candidate.provider,
-        agent:candidate.agent,
-        employees:state.employees
+        employees:state.employees,
+        ...seller
       }
     );
-
 
     const sr =
       response?.seller_response?.result ||
       response?.result ||
       response;
 
-
     state.transaction_id =
       sr?.transaction_id || null;
 
-
     requireId('transaction_id');
 
+    $('sellerDialogTitle').textContent =
+      seller.seller_agent_name || 'SELLER AGENT';
 
     $('sellerQuestion').textContent =
       sr?.question ||
       'Pentru ce perioadă salarială?';
 
-
     setStatus(
-
       '✓ Broker discovery complet.<br>' +
-
-      '✓ ' + candidate.agent +
+      '✓ ' + seller.seller_agent_name +
       ' contactat.<br>' +
-
       '✓ Conexiune Buyer ↔ Seller stabilită.<br>' +
-
       'Transaction: <strong>' +
       state.transaction_id +
       '</strong>'
     );
 
-
     $('offerPanel').style.display = 'none';
-
     $('periodDialog').style.display = 'block';
 
     $('periodDialog').scrollIntoView({
@@ -775,7 +796,6 @@ async function continuePeriod(){
   const period =
     ($('periodInput').value || '').trim();
 
-
   if(!period){
 
     $('periodStatus').textContent =
@@ -784,14 +804,16 @@ async function continuePeriod(){
     return;
   }
 
-
   state.period = period;
 
   $('periodContinue').disabled = true;
 
-  $('periodStatus').innerHTML =
-    '● Trimit perioada către ECBTAX Seller Agent…';
+  const seller = sellerContext();
 
+  $('periodStatus').innerHTML =
+    '● Trimit perioada către ' +
+    seller.seller_agent_name +
+    '…';
 
   try{
 
@@ -803,14 +825,14 @@ async function continuePeriod(){
 
         period:state.period,
 
-        employees:state.employees
+        employees:state.employees,
+
+        ...seller
       }
     );
 
-
     const ar =
       sellerResult(answer);
-
 
     if(ar?.transaction_id){
 
@@ -818,10 +840,8 @@ async function continuePeriod(){
         ar.transaction_id;
     }
 
-
     const quote =
       ar?.quote;
-
 
     if(!quote?.quote_id){
 
@@ -830,24 +850,22 @@ async function continuePeriod(){
       );
     }
 
-
     state.quote_id =
       quote.quote_id;
-
 
     $('periodDialog').style.display =
       'none';
 
-
     $('transactionPanel').style.display =
       'block';
-
 
     $('transactionResult').innerHTML =
 
       '<div class="evidence">' +
 
-      '<strong>ECBTAX SELLER AGENT</strong><br>' +
+      '<strong>' +
+      seller.seller_agent_name +
+      '</strong><br>' +
 
       'Quote: <strong>' +
       state.quote_id +
@@ -865,7 +883,7 @@ async function continuePeriod(){
 
       (
         quote.price != null
-        ? `${quote.price} EUR`
+        ? `${quote.price} ${quote.currency || state.brokerCandidate?.currency || 'EUR'}`
         : 'NECOMUNICAT'
       ) +
 
@@ -873,15 +891,10 @@ async function continuePeriod(){
 
       '</div>';
 
-
     $('transactionStatus').innerHTML =
       '● Verific oferta înainte de aprobarea umană…';
 
-
-    let verified = {
-      verified:true
-    };
-
+    let verified = null;
 
     try{
 
@@ -893,7 +906,7 @@ async function continuePeriod(){
             provider:
               quote.provider ||
               state.brokerCandidate?.provider ||
-              'ECBTAX'
+              null
           }
         }
       );
@@ -905,10 +918,30 @@ async function continuePeriod(){
         'Verification:',
         verifyError
       );
+
+      $('transactionStatus').innerHTML =
+        '✕ Verificarea ofertei a eșuat: ' +
+        verifyError.message;
+
+      $('approveQuote').disabled = true;
+
+      return;
     }
 
+    const verificationStatus =
+      String(
+        verified?.verification_status ||
+        verified?.status ||
+        ''
+      ).toUpperCase();
 
-    if(verified?.verified === false){
+    const verificationPassed =
+      verified?.verified === true ||
+      verificationStatus === 'VERIFIED' ||
+      verificationStatus === 'PASS' ||
+      verificationStatus === 'PASSED';
+
+    if(!verificationPassed){
 
       $('transactionStatus').innerHTML =
         '✕ Oferta nu a trecut verificarea.';
@@ -924,7 +957,6 @@ async function continuePeriod(){
       $('approveQuote').disabled =
         quote.price == null;
     }
-
 
     $('transactionPanel').scrollIntoView({
       behavior:'smooth',
@@ -956,8 +988,9 @@ async function acceptQuote(){
   $('transactionStatus').innerHTML =
     '● Trimit aprobarea umană către Seller Agent…';
 
-
   try{
+
+    const seller = sellerContext();
 
     const response = await post(
       '/api/buyer/accept',
@@ -965,14 +998,14 @@ async function acceptQuote(){
         quote_id:
           requireId('quote_id'),
 
-        human_approved:true
+        human_approved:true,
+
+        ...seller
       }
     );
 
-
     const sr =
       sellerResult(response);
-
 
     if(sr?.event !== 'QUOTE_ACCEPTED'){
 
@@ -981,24 +1014,19 @@ async function acceptQuote(){
       );
     }
 
-
     const evidence =
       sr.evidence || {};
-
 
     state.transaction_id =
       sr.transaction_id ||
       state.transaction_id;
-
 
     state.evidence_id =
       evidence.evidence_id ||
       sr.evidence_id ||
       null;
 
-
     requireId('evidence_id');
-
 
     $('transactionStatus').innerHTML =
 
@@ -1006,6 +1034,10 @@ async function acceptQuote(){
 
       '<strong style="font-size:20px;color:#5eead4">' +
       '✓ HUMAN APPROVAL CONFIRMED' +
+      '</strong><br>' +
+
+      'Seller: <strong>' +
+      seller.seller_agent_name +
       '</strong><br>' +
 
       'Transaction: <strong>' +
@@ -1034,10 +1066,8 @@ async function acceptQuote(){
 
       '<div id="orderResult"></div>';
 
-
     $('approveQuote').textContent =
       'OFERTĂ APROBATĂ ✓';
-
 
     $('sendOrder').addEventListener(
       'click',
@@ -1068,8 +1098,9 @@ async function createOrder(){
   const output =
     $('orderResult');
 
-
   try{
+
+    const seller = sellerContext();
 
     const result = sellerResult(
       await post(
@@ -1079,24 +1110,27 @@ async function createOrder(){
             requireId('quote_id'),
 
           evidence_id:
-            requireId('evidence_id')
+            requireId('evidence_id'),
+
+          ...seller
         }
       )
     );
 
-
     state.order_id =
       result?.order_id || null;
 
-
     requireId('order_id');
-
 
     output.innerHTML =
 
       '<div class="evidence">' +
 
       '<strong>✓ ORDER CONFIRMED</strong><br>' +
+
+      'Seller: <strong>' +
+      seller.seller_agent_name +
+      '</strong><br>' +
 
       'Order: <strong>' +
       state.order_id +
@@ -1117,7 +1151,6 @@ async function createOrder(){
       '</div>' +
 
       '<div id="executionResult"></div>';
-
 
     $('executeOrder').addEventListener(
       'click',
@@ -1145,8 +1178,9 @@ async function executeOrder(){
   const output =
     $('executionResult');
 
-
   try{
+
+    const seller = sellerContext();
 
     const result = sellerResult(
       await post(
@@ -1159,24 +1193,27 @@ async function executeOrder(){
             requireId('quote_id'),
 
           evidence_id:
-            requireId('evidence_id')
+            requireId('evidence_id'),
+
+          ...seller
         }
       )
     );
 
-
     state.job_id =
       result?.job_id || null;
 
-
     requireId('job_id');
-
 
     output.innerHTML =
 
       '<div class="evidence">' +
 
       '<strong>✓ EXECUTION STARTED</strong><br>' +
+
+      'Seller: <strong>' +
+      seller.seller_agent_name +
+      '</strong><br>' +
 
       'Job: <strong>' +
       state.job_id +
@@ -1197,7 +1234,6 @@ async function executeOrder(){
       '</div>' +
 
       '<div id="serviceResult"></div>';
-
 
     $('receiveResult').addEventListener(
       'click',
@@ -1225,8 +1261,9 @@ async function receiveServiceResult(){
   const output =
     $('serviceResult');
 
-
   try{
+
+    const seller = sellerContext();
 
     const result = sellerResult(
       await post(
@@ -1239,27 +1276,25 @@ async function receiveServiceResult(){
             requireId('order_id'),
 
           evidence_id:
-            requireId('evidence_id')
+            requireId('evidence_id'),
+
+          ...seller
         }
       )
     );
-
 
     state.result_id =
       result?.result?.result_id ||
       result?.result_id ||
       null;
 
-
     state.delivery_evidence_id =
       result?.delivery_evidence?.delivery_evidence_id ||
       result?.delivery_evidence_id ||
       null;
 
-
     requireId('result_id');
     requireId('delivery_evidence_id');
-
 
     output.innerHTML =
 
@@ -1267,6 +1302,10 @@ async function receiveServiceResult(){
 
       '<strong style="color:#5eead4">' +
       '✓ SERVICE COMPLETED' +
+      '</strong><br>' +
+
+      'Seller: <strong>' +
+      seller.seller_agent_name +
       '</strong><br>' +
 
       'Result: <strong>' +
@@ -1288,7 +1327,6 @@ async function receiveServiceResult(){
       '</div>' +
 
       '<div id="receiptResult"></div>';
-
 
     $('showReceipt').addEventListener(
       'click',
@@ -1316,8 +1354,9 @@ async function receiveReceipt(){
   const output =
     $('receiptResult');
 
-
   try{
+
+    const seller = sellerContext();
 
     const receipt = sellerResult(
       await post(
@@ -1333,19 +1372,18 @@ async function receiveReceipt(){
             requireId('result_id'),
 
           delivery_evidence_id:
-            requireId('delivery_evidence_id')
+            requireId('delivery_evidence_id'),
+
+          ...seller
         }
       )
     );
-
 
     state.receipt_id =
       receipt?.receipt_id ||
       null;
 
-
     requireId('receipt_id');
-
 
     output.innerHTML =
 
@@ -1354,6 +1392,10 @@ async function receiveReceipt(){
       '<strong style="font-size:20px;color:#5eead4">' +
       '✓ A2A TRANSACTION COMPLETE' +
       '</strong><br><br>' +
+
+      'Seller: <strong>' +
+      seller.seller_agent_name +
+      '</strong><br>' +
 
       'Transaction: <strong>' +
       state.transaction_id +
@@ -1387,22 +1429,16 @@ async function receiveReceipt(){
       state.delivery_evidence_id +
       '</strong><br><br>' +
 
-      'Human Approved: <strong>YES</strong><br>' +
+      'Human Approved: <strong>' +
+      (receipt.human_approved === true ? 'YES' : 'NO') +
+      '</strong><br>' +
 
       'Transaction Verified: <strong>' +
-      (
-        receipt.transaction_verified === false
-        ? 'NO'
-        : 'YES'
-      ) +
+      (receipt.transaction_verified === true ? 'YES' : 'NO') +
       '</strong><br>' +
 
       'Delivery Verified: <strong>' +
-      (
-        receipt.delivery_verified === false
-        ? 'NO'
-        : 'YES'
-      ) +
+      (receipt.delivery_verified === true ? 'YES' : 'NO') +
       '</strong>' +
 
       '</div>';
