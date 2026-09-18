@@ -14,6 +14,7 @@ export async function onRequestOptions(){
 }
 
 export async function onRequestPost({request}){
+
   let body={};
 
   try{
@@ -22,41 +23,38 @@ export async function onRequestPost({request}){
     return reply({error:"INVALID_JSON"},400);
   }
 
-  const jobId=String(body.job_id||"").trim();
-  const orderId=String(body.order_id||"").trim();
-  const evidenceId=String(body.evidence_id||"").trim();
+  const jobId=
+    String(body.job_id||"").trim();
+
+  const orderId=
+    String(body.order_id||"").trim();
+
+  const evidenceId=
+    String(body.evidence_id||"").trim();
 
 
-  // =========================================================
-  // VERIFY EXECUTION REFERENCES
-  // =========================================================
-
-  if(jobId!=="JOB-1042"){
+  if(!jobId){
     return reply({
-      error:"JOB_NOT_VERIFIED"
+      error:"JOB_ID_REQUIRED"
     },400);
   }
 
-  if(orderId!=="ORD-1042"){
+  if(!orderId){
     return reply({
-      error:"ORDER_NOT_VERIFIED"
+      error:"ORDER_ID_REQUIRED"
     },400);
   }
 
-  if(evidenceId!=="EV-Q-1042"){
+  if(!evidenceId){
     return reply({
-      error:"EVIDENCE_NOT_VERIFIED"
+      error:"EVIDENCE_ID_REQUIRED"
     },400);
   }
 
-
-  // =========================================================
-  // BUILD A2A SERVICE RESULT REQUEST
-  // =========================================================
 
   const sellerRequest={
     jsonrpc:"2.0",
-    id:"RESULT-"+Date.now(),
+    id:crypto.randomUUID(),
 
     method:"service.result",
 
@@ -68,36 +66,24 @@ export async function onRequestPost({request}){
   };
 
 
-  // =========================================================
-  // ASK ECBTAX SELLER AGENT FOR RESULT
-  // =========================================================
-
-  let sellerResponse;
+  let response;
 
   try{
-    const response=await fetch(
+
+    response=await fetch(
       "https://ecbtax.com/api/a2a",
       {
         method:"POST",
         headers:{
-          "Content-Type":"application/json"
+          "content-type":"application/json",
+          "accept":"application/json"
         },
         body:JSON.stringify(sellerRequest)
       }
     );
 
-    sellerResponse=await response.json();
-
-    if(!response.ok){
-      return reply({
-        event:"SERVICE_RESULT_FAILED",
-        buyer:"AiVenture Buyer Agent",
-        seller:"ECBTAX Seller Agent",
-        seller_response:sellerResponse
-      },502);
-    }
-
   }catch(error){
+
     return reply({
       event:"SERVICE_RESULT_CONNECTION_FAILED",
       buyer:"AiVenture Buyer Agent",
@@ -107,28 +93,57 @@ export async function onRequestPost({request}){
   }
 
 
-  // =========================================================
-  // VERIFY SELLER DELIVERY
-  // =========================================================
+  const raw=await response.text();
 
-  const result=sellerResponse?.result;
-  const serviceResult=result?.result;
-  const deliveryEvidence=result?.delivery_evidence;
+  let sellerResponse={};
 
-  const valid=
-    result?.event==="SERVICE_RESULT" &&
-    result?.job_id==="JOB-1042" &&
-    result?.order_id==="ORD-1042" &&
-    result?.status==="COMPLETED" &&
-    serviceResult?.result_id==="RES-1042" &&
-    deliveryEvidence?.delivery_evidence_id==="DEL-EV-1042" &&
-    deliveryEvidence?.delivered===true &&
-    deliveryEvidence?.verified===true &&
-    deliveryEvidence?.status==="VERIFIED";
+  try{
+    sellerResponse=JSON.parse(raw);
+  }catch{
 
-  if(!valid){
+    return reply({
+      event:"SERVICE_RESULT_FAILED",
+      error:"SELLER_NON_JSON_RESPONSE",
+      seller_http_status:response.status,
+      raw
+    },502);
+  }
+
+
+  if(!response.ok){
+
+    return reply({
+      event:"SERVICE_RESULT_FAILED",
+      buyer:"AiVenture Buyer Agent",
+      seller:"ECBTAX Seller Agent",
+      seller_http_status:response.status,
+      seller_response:sellerResponse
+    },502);
+  }
+
+
+  const result=
+    sellerResponse?.result;
+
+  const serviceResult=
+    result?.result;
+
+  const deliveryEvidence=
+    result?.delivery_evidence;
+
+
+  if(
+    !result ||
+    result.event!=="SERVICE_RESULT" ||
+    result.job_id!==jobId ||
+    result.order_id!==orderId ||
+    result.evidence_id!==evidenceId ||
+    result.status!=="COMPLETED"
+  ){
+
     return reply({
       event:"DELIVERY_NOT_VERIFIED",
+      reason:"TRANSACTION_REFERENCE_MISMATCH",
       buyer:"AiVenture Buyer Agent",
       seller:"ECBTAX Seller Agent",
       seller_response:sellerResponse
@@ -136,45 +151,92 @@ export async function onRequestPost({request}){
   }
 
 
-  // =========================================================
-  // BUYER RECEIPT
-  // =========================================================
+  if(
+    !serviceResult?.result_id ||
+    !deliveryEvidence?.delivery_evidence_id ||
+    deliveryEvidence.job_id!==jobId ||
+    deliveryEvidence.order_id!==orderId ||
+    deliveryEvidence.result_id!==serviceResult.result_id ||
+    deliveryEvidence.delivered!==true ||
+    deliveryEvidence.verified!==true ||
+    deliveryEvidence.status!=="VERIFIED"
+  ){
+
+    return reply({
+      event:"DELIVERY_NOT_VERIFIED",
+      reason:"DELIVERY_EVIDENCE_INVALID",
+      buyer:"AiVenture Buyer Agent",
+      seller:"ECBTAX Seller Agent",
+      seller_response:sellerResponse
+    },502);
+  }
+
 
   return reply({
+
     event:"A2A_SERVICE_RESULT_RECEIVED",
 
     buyer:"AiVenture Buyer Agent",
     seller:"ECBTAX Seller Agent",
 
-    job_id:result.job_id,
-    order_id:result.order_id,
-    quote_id:result.quote_id,
-    evidence_id:result.evidence_id,
+    transaction_id:
+      result.transaction_id,
 
-    result_id:serviceResult.result_id,
-    result_type:serviceResult.type,
-    description:serviceResult.description,
+    job_id:
+      result.job_id,
 
-    period:serviceResult.period,
-    employees:serviceResult.employees,
+    order_id:
+      result.order_id,
 
-    deliverable:serviceResult.deliverable,
+    quote_id:
+      result.quote_id,
+
+    evidence_id:
+      result.evidence_id,
+
+    result_id:
+      serviceResult.result_id,
+
+    result_type:
+      serviceResult.type,
+
+    description:
+      serviceResult.description,
+
+    period:
+      serviceResult.period,
+
+    employees:
+      serviceResult.employees,
+
+    deliverable:
+      serviceResult.deliverable,
 
     delivery_evidence_id:
       deliveryEvidence.delivery_evidence_id,
 
-    delivered:deliveryEvidence.delivered,
-    delivery_verified:deliveryEvidence.verified,
+    delivered:
+      deliveryEvidence.delivered,
 
-    status:result.status,
-    execution_status:result.execution_status,
+    delivery_verified:
+      deliveryEvidence.verified,
 
-    completed_at:result.completed_at,
+    status:
+      result.status,
 
-    receipt_status:"RECEIVED_AND_VERIFIED",
+    execution_status:
+      result.execution_status,
 
-    next_event:"TRANSACTION_COMPLETE",
+    completed_at:
+      result.completed_at,
 
-    seller_response:sellerResponse
+    receipt_status:
+      "RECEIVED_AND_VERIFIED",
+
+    next_event:
+      result.next_event || "BUYER_RECEIPT",
+
+    seller_response:
+      sellerResponse
   });
 }
