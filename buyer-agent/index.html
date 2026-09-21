@@ -313,22 +313,22 @@ Acceptarea comercială rămâne sub control uman.
 <h2 id="sellerDialogTitle">SELLER AGENT</h2>
 
 <p id="sellerQuestion">
-Pentru ce perioadă salarială?
+Seller Agent solicită informații suplimentare.
 </p>
 
 <input
 id="periodInput"
 type="text"
-placeholder="Ex: Septembrie 2026">
+placeholder="Răspuns pentru Seller Agent">
 
 <div class="actions">
 <button id="periodContinue">
-CERE OFERTA
+TRIMITE RĂSPUNSUL
 </button>
 </div>
 
 <div id="periodStatus" class="status muted">
-Aștept perioada salarială.
+Aștept răspunsul pentru Seller Agent.
 </div>
 
 </section>
@@ -390,6 +390,7 @@ const state = window.a2aState = {
   delivery_evidence_id: null,
   receipt_id: null,
 
+  seller_answer: null,
   period: null,
   employees: 5
 };
@@ -750,7 +751,7 @@ async function contactSeller(){
 
     $('sellerQuestion').textContent =
       sr?.question ||
-      'Pentru ce perioadă salarială?';
+      'Seller Agent solicită informații suplimentare.';
 
     setStatus(
       '✓ Broker discovery complet.<br>' +
@@ -793,18 +794,20 @@ SELLER QUESTION → PERIOD → QUOTE
 
 async function continuePeriod(){
 
-  const period =
+  const sellerAnswer =
     ($('periodInput').value || '').trim();
 
-  if(!period){
+  if(!sellerAnswer){
 
     $('periodStatus').textContent =
-      'Introdu perioada salarială.';
+      'Introdu răspunsul solicitat de Seller Agent.';
 
     return;
   }
 
-  state.period = period;
+  state.seller_answer = sellerAnswer;
+  // Compatibility for Reference Seller #001.
+  state.period = sellerAnswer;
 
   $('periodContinue').disabled = true;
 
@@ -823,6 +826,7 @@ async function continuePeriod(){
         transaction_id:
           requireId('transaction_id'),
 
+        answer:state.seller_answer,
         period:state.period,
 
         employees:state.employees,
@@ -871,13 +875,12 @@ async function continuePeriod(){
       state.quote_id +
       '</strong><br>' +
 
-      'Perioadă: <strong>' +
-      state.period +
+      'Răspuns Seller: <strong>' +
+      state.seller_answer +
       '</strong><br>' +
 
-      'Angajați: <strong>' +
-      state.employees +
-      '</strong><br>' +
+      (quote.period ? 'Perioadă: <strong>' + quote.period + '</strong><br>' : '') +
+      (quote.employees != null ? 'Angajați: <strong>' + quote.employees + '</strong><br>' : '') +
 
       'Preț: <strong>' +
 
@@ -903,11 +906,20 @@ async function continuePeriod(){
         {
           quote:{
             ...quote,
+            seller_agent_id:
+              quote.seller_agent_id ||
+              seller.seller_agent_id,
             provider:
               quote.provider ||
               state.brokerCandidate?.provider ||
+              null,
+            service:
+              quote.service ||
+              state.brokerCandidate?.service ||
+              state.brokerCandidate?.service_name ||
               null
-          }
+          },
+          seller_agent_id:seller.seller_agent_id
         }
       );
 
