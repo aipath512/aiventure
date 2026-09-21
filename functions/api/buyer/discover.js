@@ -1,43 +1,67 @@
-const SELLERS = [
-  {
-    seller_id: "ecbtax-payroll-ro",
-    provider: "ECBTAX",
-    agent: "ECBTAX Seller Agent",
-    service: "payroll",
-    service_label: "Calcul salarial",
-    country: "RO",
-    agent_ready: true,
-    endpoint: "https://ecbtax.com/api/a2a",
-    agent_card: "https://ecbtax.com/.well-known/agent-card.json",
-    evidence_status: "DISCOVERED_NOT_YET_VERIFIED"
-  }
-];
-
-function normalize(s="") {
-  return s.toLowerCase()
-    .normalize("NFD").replace(/[\u0300-\u036f]/g,"");
-}
-
 export async function onRequestPost(context) {
   let body={};
   try { body=await context.request.json(); }
-  catch (_) { return Response.json({error:"INVALID_JSON"},{status:400}); }
+  catch { return Response.json({error:"INVALID_JSON"},{status:400}); }
 
-  const human_request=String(body.request||"").trim();
-  if (!human_request) return Response.json({error:"REQUEST_REQUIRED"},{status:400});
+  const humanRequest=String(body.request||"").trim();
+  if(!humanRequest){
+    return Response.json({error:"REQUEST_REQUIRED"},{status:400});
+  }
 
-  const q=normalize(human_request);
-  const payrollIntent =
-    q.includes("salari") || q.includes("payroll") || q.includes("salar");
+  const rpcRequest={
+    jsonrpc:"2.0",
+    id:crypto.randomUUID(),
+    method:"message/send",
+    params:{
+      message:{
+        data:{
+          request:humanRequest,
+          requires_api:body.requires_api ?? true,
+          requires_a2a:body.requires_a2a ?? true
+        }
+      }
+    }
+  };
 
-  const matches = payrollIntent ? SELLERS : [];
+  let upstream;
+  try{
+    upstream=await fetch("https://b2b-ai-library.org/a2a",{
+      method:"POST",
+      headers:{
+        "content-type":"application/json",
+        "accept":"application/json"
+      },
+      body:JSON.stringify(rpcRequest)
+    });
+  }catch{
+    return Response.json({
+      event:"SERVICE_DISCOVERY",
+      status:"BROKER_UNREACHABLE",
+      query:humanRequest
+    },{status:502});
+  }
 
-  return Response.json({
-    event:"SERVICE_DISCOVERY",
-    timestamp:new Date().toISOString(),
-    query:human_request,
-    status:matches.length ? "SELLER_DISCOVERED" : "NO_SELLER_FOUND",
-    matches,
-    next_event:matches.length ? "A2A_REQUEST" : null
-  });
+  const raw=await upstream.text();
+  let data={};
+  try{ data=JSON.parse(raw); }
+  catch{
+    return Response.json({
+      event:"SERVICE_DISCOVERY",
+      status:"BROKER_INVALID_RESPONSE",
+      query:humanRequest,
+      upstream_status:upstream.status
+    },{status:502});
+  }
+
+  if(!upstream.ok){
+    return Response.json({
+      event:"SERVICE_DISCOVERY",
+      status:"BROKER_REQUEST_FAILED",
+      query:humanRequest,
+      upstream_status:upstream.status,
+      broker_response:data
+    },{status:502});
+  }
+
+  return Response.json(data);
 }

@@ -12,21 +12,42 @@ async function sha256(text){
 
 export async function onRequestPost({request}){
   let body={};
-  try{body=await request.json()}catch{return Response.json({error:"INVALID_JSON"},{status:400})}
+  try{ body=await request.json(); }
+  catch{ return Response.json({error:"INVALID_JSON"},{status:400}); }
 
   const sellerResult=body?.seller_response?.result || body?.seller_result || {};
-  if(sellerResult.event!=="QUOTE_ACCEPTED" || sellerResult.status!=="ACCEPTED")
+  const acceptedEvent=String(sellerResult.event||"");
+  const acceptedStatus=String(sellerResult.status||"");
+
+  if(
+    acceptedEvent!=="QUOTE_ACCEPTED" ||
+    !["ACCEPTED","QUOTE_ACCEPTED"].includes(acceptedStatus)
+  ){
     return Response.json({error:"CONFIRMED_ACCEPTANCE_REQUIRED"},{status:400});
+  }
+
+  const seller=
+    sellerResult.seller_agent_name ||
+    sellerResult.seller ||
+    sellerResult.provider ||
+    body.seller_agent_name ||
+    body.seller_agent_id ||
+    null;
+
+  if(!seller){
+    return Response.json({error:"SELLER_IDENTITY_REQUIRED"},{status:400});
+  }
 
   const evidence={
     schema:"aiventure.a2a.transaction-evidence.v1",
-    transaction_id:"TX-"+crypto.randomUUID(),
-    quote_id:sellerResult.quote_id,
+    transaction_id:sellerResult.transaction_id || body.transaction_id || ("TX-"+crypto.randomUUID()),
+    quote_id:sellerResult.quote_id || body.quote_id || null,
     buyer:"AiVenture Buyer Agent",
-    seller:"ECBTAX Seller Agent",
+    seller,
+    seller_agent_id:sellerResult.seller_agent_id || body.seller_agent_id || null,
     human_approved:sellerResult.human_approved===true,
-    seller_status:sellerResult.status,
-    seller_accepted_at:sellerResult.accepted_at,
+    seller_status:acceptedStatus,
+    seller_accepted_at:sellerResult.accepted_at || null,
     evidence_created_at:new Date().toISOString()
   };
 
