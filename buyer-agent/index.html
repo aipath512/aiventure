@@ -467,13 +467,13 @@ function sellerContext(){
   }
 
   const seller_agent_id =
-    String(candidate.id || '').trim();
+    String(candidate.id || candidate.seller_id || candidate.agent_id || '').trim();
 
   const seller_agent_name =
     String(candidate.agent || candidate.name || candidate.id || '').trim();
 
   const seller_endpoint_url =
-    String(candidate.endpoint_url || '').trim();
+    String(candidate.endpoint_url || candidate.endpoint || candidate.a2a_endpoint || '').trim();
 
   if(!seller_agent_id){
     throw new Error(
