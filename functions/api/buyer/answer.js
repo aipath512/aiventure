@@ -14,11 +14,14 @@ export async function onRequestPost({ request }) {
   const transactionId =
     String(body.transaction_id || "").trim();
 
+  const answer =
+    String(body.answer ?? body.period ?? "").trim();
+
   const period =
-    String(body.period || "").trim();
+    String(body.period ?? body.answer ?? "").trim();
 
   const employees =
-    Number(body.employees || 5);
+    body.employees == null ? null : Number(body.employees);
 
   const sellerAgentId =
     String(body.seller_agent_id || "").trim();
@@ -37,9 +40,9 @@ export async function onRequestPost({ request }) {
     );
   }
 
-  if (!period) {
+  if (!answer) {
     return Response.json(
-      { error: "PERIOD_REQUIRED" },
+      { error: "SELLER_ANSWER_REQUIRED" },
       { status: 400 }
     );
   }
@@ -97,8 +100,10 @@ export async function onRequestPost({ request }) {
 
     params: {
       transaction_id: transactionId,
+      answer,
+      // Backward-compatible field for Reference Seller #001 (ECBTAX Payroll).
       period,
-      employees,
+      ...(Number.isFinite(employees) ? {employees} : {}),
       buyer: "AiVenture Buyer Agent",
       seller_agent_id: sellerAgentId
     }

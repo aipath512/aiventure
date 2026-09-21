@@ -34,7 +34,7 @@ export async function onRequestPost({ request }) {
     String(body.request || "").trim();
 
   const employees =
-    Number(body.employees || 5);
+    body.employees == null ? null : Number(body.employees);
 
   const sellerAgentId =
     String(
@@ -134,7 +134,7 @@ export async function onRequestPost({ request }) {
     params: {
       request: humanRequest,
 
-      employees,
+      ...(Number.isFinite(employees) ? {employees} : {}),
 
       buyer:
         "AiVenture Buyer Agent",
