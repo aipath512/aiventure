@@ -8,7 +8,7 @@
     "claim_boundary": "File integrity and timestamp submission; not independent proof of semantic runtime truth."
   },
   "ai_evidence_status": {
-    "ChatGPT": "DETERMINISTIC_VALIDATOR_INCLUDED_NOT_OPENAI_CERTIFICATE",
+    "ChatGPT": "EVIDENCE_BOUNDED_ASSESSMENT_INCLUDED_NOT_OPENAI_CERTIFICATE",
     "Claude": "HASH_ATTESTATION_INCLUDED_WITH_LIMITATIONS",
     "Gemini": "SESSION_RECORD_INCLUDED_HASH_PLACEHOLDER_NOT_FINAL",
     "Perplexity": "ARCHITECTURE_EVIDENCE_RECORD_INCLUDED_AUTHORSHIP_SOURCE_REQUIRED",
