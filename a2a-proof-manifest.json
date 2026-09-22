@@ -1,0 +1,28 @@
+{
+  "pack_name": "AiVenture A2A Public Evidence Hub",
+  "pack_version": "2026-09-22.1",
+  "public_path": "/a2a-proof",
+  "runtime_evidence": {
+    "pdf_sha256": "9c9ac6c47f9dfedf9adef79e4dfff22f865b3d75506d38e200658abbdea2cad7",
+    "ots_status": "PENDING_AT_PACK_CREATION",
+    "claim_boundary": "File integrity and timestamp submission; not independent proof of semantic runtime truth."
+  },
+  "ai_evidence_status": {
+    "ChatGPT": "DETERMINISTIC_VALIDATOR_INCLUDED_NOT_OPENAI_CERTIFICATE",
+    "Claude": "HASH_ATTESTATION_INCLUDED_WITH_LIMITATIONS",
+    "Gemini": "SESSION_RECORD_INCLUDED_HASH_PLACEHOLDER_NOT_FINAL",
+    "Perplexity": "ARCHITECTURE_EVIDENCE_RECORD_INCLUDED_AUTHORSHIP_SOURCE_REQUIRED",
+    "Copilot": "NOT_INCLUDED"
+  },
+  "transaction_ids": {
+    "transaction": "TX-6419878A0708",
+    "quote": "Q-5F809AFB34AB",
+    "order": "ORD-034BD82866AF",
+    "execution": "JOB-9BD0C5B7E1CB",
+    "result": "RES-895BE47CBED1",
+    "evidence": "EV-DD22FB7EA5A8",
+    "delivery_evidence": "DEL-EV-97FDF02CB16A",
+    "receipt": "RCP-6D500CD52EF5"
+  },
+  "hash_inventory": "a2a-proof-SHA256SUMS.txt"
+}

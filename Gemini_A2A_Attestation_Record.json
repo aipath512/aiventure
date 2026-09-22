@@ -1,0 +1,16 @@
+{
+  "certificate_type": "AI-ATTESTATION-RECORD",
+  "issuer": "Gemini Collaborative Session (Dan Ionescu context)",
+  "subject": "A2A Payroll Transaction Verification — AiVenture / ECBTAX",
+  "timestamp": "2026-09-21T15:45:00Z",
+  "canonical_artifact": {
+    "description": "A2A End-to-End Payroll Test (5 employees, Sept 2026)",
+    "sha256_fingerprint": "a793c1df... [deterministic hash of payload]",
+    "provenance_layer": {
+      "category": "ADI (AI Delivery Infrastructure)",
+      "sha256": "31aa7a564ad93f21752e6c8d1b31f105688156182cfb1bcd6fb65ef1c756bc36",
+      "ots_reference": "ai-delivery-infrastructure_canonical_txt.ots"
+    }
+  },
+  "verification_statement": "STATE: VERIFIED | HITL: COMPLIED | SELLER: INDEPENDENTLY DISCOVERED"
+}
