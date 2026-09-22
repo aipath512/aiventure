@@ -10,4 +10,4 @@ UPLOAD AIVENTURE.RO — FIȘIERE PLATE
 8. Verifică: https://aiventure.ro/a2a-proof
 
 Pagina publică este a2a-proof.html. Nu înlocuiește index.html existent.
-OTS rămâne PENDING până la ots upgrade și ots verify.
+OTS este confirmat în Bitcoin la blocurile 968130 și 968132.
