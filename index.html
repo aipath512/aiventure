@@ -172,18 +172,344 @@
 
   <script type="application/ld+json">
   {
-    "@context":"https://schema.org",
-    "@graph":[
-      {"@type":"Organization","@id":"https://aiventure.ro/#organization","name":"AiVenture S.R.L.","url":"https://aiventure.ro/","logo":{"@type":"ImageObject","url":"https://aiventure.ro/icon-512.png","width":512,"height":512},"image":"https://aiventure.ro/social-preview.png","email":"contact@5thelement.ai","telephone":"+40737123540"},
-      {"@type":"WebSite","@id":"https://aiventure.ro/#website","url":"https://aiventure.ro/","name":"AiVenture","publisher":{"@id":"https://aiventure.ro/#organization"},"inLanguage":"ro"},
-      {"@type":"WebPage","@id":"https://aiventure.ro/#webpage","url":"https://aiventure.ro/","name":"AiVenture — Servicii pregătite pentru AI și A2A","description":"AiVenture transformă serviciile B2B existente în servicii pe care sistemele AI le pot înțelege, iar Agenții AI le pot descoperi și solicita, cu omul în control.","primaryImageOfPage":{"@type":"ImageObject","url":"https://aiventure.ro/social-preview.png","width":1200,"height":630},"isPartOf":{"@id":"https://aiventure.ro/#website"},"about":{"@id":"https://aiventure.ro/#organization"},"inLanguage":"ro"},
-      {"@type":"Service","name":"A2A Business Infrastructure","provider":{"@id":"https://aiventure.ro/#organization"},"areaServed":"EU","description":"Transformarea serviciilor B2B existente în servicii Agent-Ready și accesibile prin A2A, cu aprobare umană și evidence verificabil."},
-      {"@type":"FAQPage","mainEntity":[
-        {"@type":"Question","name":"Trebuie refăcut website-ul firmei?","acceptedAnswer":{"@type":"Answer","text":"Nu. AiVenture adaugă stratul AI și ușa A2A peste afacerea, website-ul și serviciul existente."}},
-        {"@type":"Question","name":"Poate Agentul AI inventa prețul sau oferta?","acceptedAnswer":{"@type":"Answer","text":"Nu. Oferta, prețul, limitele și condițiile sunt definite și validate de firmă. Agentul lucrează numai în aceste limite."}},
-        {"@type":"Question","name":"Cine aprobă o comandă?","acceptedAnswer":{"@type":"Answer","text":"Omul păstrează controlul. Aprobarea umană este obligatorie înaintea comenzilor sau acțiunilor pentru care politica firmei o cere."}},
-        {"@type":"Question","name":"Ce demonstrează dovada OpenTimestamps?","acceptedAnswer":{"@type":"Answer","text":"Demonstrează că fișierul identificat prin hash exista cel târziu la momentul ancorării Bitcoin. Nu demonstrează singură adevărul semantic al conținutului."}}
-      ]}
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://aiventure.ro/#organization",
+        "name": "AiVenture S.R.L.",
+        "alternateName": "AiVenture",
+        "url": "https://aiventure.ro/",
+        "logo": {"@id": "https://aiventure.ro/#logo"},
+        "image": {"@id": "https://aiventure.ro/#social-image"},
+        "slogan": "At the Edge. Human Controlled.",
+        "description": "AiVenture transformă serviciile B2B existente în servicii pregătite pentru AI și A2A, cu omul în control.",
+        "email": "contact@5thelement.ai",
+        "telephone": "+40737123540",
+        "identifier": [
+          {"@type": "PropertyValue", "name": "CUI", "value": "51415878"},
+          {"@type": "PropertyValue", "name": "EUID", "value": "ROONRC.J2025016406000"}
+        ],
+        "address": {"@id": "https://aiventure.ro/#address"},
+        "contactPoint": {"@id": "https://aiventure.ro/#contactpoint"},
+        "areaServed": {"@type": "Country", "name": "România"},
+        "knowsLanguage": ["ro", "en", "fr"],
+        "brand": {"@id": "https://aiventure.ro/#brand"},
+        "hasOfferCatalog": {"@id": "https://aiventure.ro/#offercatalog"}
+      },
+      {
+        "@type": "PostalAddress",
+        "@id": "https://aiventure.ro/#address",
+        "streetAddress": "Drumul Pădurea Pustnicu 141C, Corp A, Etaj 2, Ap. 5",
+        "addressLocality": "București",
+        "addressRegion": "Sectorul 1",
+        "addressCountry": "RO"
+      },
+      {
+        "@type": "ContactPoint",
+        "@id": "https://aiventure.ro/#contactpoint",
+        "contactType": "sales",
+        "email": "contact@5thelement.ai",
+        "telephone": "+40737123540",
+        "url": "https://aiventure.ro/contact/",
+        "areaServed": "RO",
+        "availableLanguage": ["ro", "en", "fr"]
+      },
+      {
+        "@type": "ImageObject",
+        "@id": "https://aiventure.ro/#logo",
+        "url": "https://aiventure.ro/icon-512.png",
+        "contentUrl": "https://aiventure.ro/icon-512.png",
+        "caption": "AiVenture",
+        "width": 512,
+        "height": 512,
+        "encodingFormat": "image/png"
+      },
+      {
+        "@type": "ImageObject",
+        "@id": "https://aiventure.ro/#social-image",
+        "url": "https://aiventure.ro/social-preview.png",
+        "contentUrl": "https://aiventure.ro/social-preview.png",
+        "caption": "AiVenture — Serviciul tău. O nouă ușă.",
+        "width": 1200,
+        "height": 630,
+        "encodingFormat": "image/png"
+      },
+      {
+        "@type": "Brand",
+        "@id": "https://aiventure.ro/#brand",
+        "name": "AiVenture",
+        "slogan": "At the Edge. Human Controlled.",
+        "url": "https://aiventure.ro/",
+        "logo": {"@id": "https://aiventure.ro/#logo"}
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://aiventure.ro/#website",
+        "url": "https://aiventure.ro/",
+        "name": "AiVenture",
+        "alternateName": "AiVenture A2A Business Infrastructure",
+        "description": "Servicii B2B pregătite pentru AI, Agenți AI și A2A.",
+        "inLanguage": "ro-RO",
+        "publisher": {"@id": "https://aiventure.ro/#organization"},
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": {"@type": "EntryPoint", "urlTemplate": "https://aiventure.ro/verifica/?domain={search_term_string}"},
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://aiventure.ro/#webpage",
+        "url": "https://aiventure.ro/",
+        "name": "AiVenture — Servicii pregătite pentru AI și A2A",
+        "headline": "Serviciul tău. O nouă ușă.",
+        "description": "AiVenture transformă serviciile B2B existente în servicii pe care sistemele AI le pot înțelege, iar Agenții AI le pot descoperi și solicita, cu omul în control.",
+        "inLanguage": "ro-RO",
+        "isPartOf": {"@id": "https://aiventure.ro/#website"},
+        "about": {"@id": "https://aiventure.ro/#organization"},
+        "mainEntity": {"@id": "https://aiventure.ro/#primary-service"},
+        "primaryImageOfPage": {"@id": "https://aiventure.ro/#social-image"},
+        "breadcrumb": {"@id": "https://aiventure.ro/#breadcrumb"},
+        "speakable": {"@type": "SpeakableSpecification", "cssSelector": ["h1", ".hero p", ".lead"]},
+        "significantLink": [
+          "https://aiventure.ro/buyer-agent/",
+          "https://aiventure.ro/a2a-proof",
+          "https://aiventure.ro/servicii/",
+          "https://aiventure.ro/contact/"
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://aiventure.ro/#breadcrumb",
+        "name": "Navigare principală",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Acasă", "item": "https://aiventure.ro/"}
+        ]
+      },
+      {
+        "@type": "SiteNavigationElement",
+        "@id": "https://aiventure.ro/#navigation",
+        "name": ["Cum funcționează", "Soluții", "Dovezi", "Contact", "Buyer Agent"],
+        "url": [
+          "https://aiventure.ro/cum/",
+          "https://aiventure.ro/solutii/",
+          "https://aiventure.ro/a2a-proof",
+          "https://aiventure.ro/contact/",
+          "https://aiventure.ro/buyer-agent/"
+        ],
+        "isPartOf": {"@id": "https://aiventure.ro/#website"}
+      },
+      {
+        "@type": "OfferCatalog",
+        "@id": "https://aiventure.ro/#offercatalog",
+        "name": "Serviciile AiVenture",
+        "description": "Servicii pentru vizibilitate AI, pregătire Agent-Ready și conectare A2A.",
+        "inLanguage": "ro-RO",
+        "provider": {"@id": "https://aiventure.ro/#organization"},
+        "itemListElement": [
+          {"@id": "https://aiventure.ro/solutii/ai-lens/#service"},
+          {"@id": "https://aiventure.ro/solutii/ai-audit/#service"},
+          {"@id": "https://aiventure.ro/solutii/ai-ready/#service"},
+          {"@id": "https://aiventure.ro/solutii/ai-edge/#service"},
+          {"@id": "https://aiventure.ro/solutii/agent-ready/#service"},
+          {"@id": "https://aiventure.ro/solutii/a2a/#service"},
+          {"@id": "https://aiventure.ro/eu-ai-act-ready/#service"}
+        ]
+      },
+      {
+        "@type": "Service",
+        "@id": "https://aiventure.ro/#primary-service",
+        "name": "A2A Business Infrastructure",
+        "alternateName": "Agent-Ready B2B Services",
+        "serviceType": "Transformare servicii B2B pentru AI și A2A",
+        "description": "Transformarea serviciilor B2B existente în servicii Agent-Ready și accesibile prin A2A, cu aprobare umană și evidence verificabil.",
+        "url": "https://aiventure.ro/",
+        "provider": {"@id": "https://aiventure.ro/#organization"},
+        "areaServed": {"@type": "AdministrativeArea", "name": "Uniunea Europeană"},
+        "audience": {"@type": "BusinessAudience", "audienceType": "Firme B2B și furnizori de servicii"},
+        "hasOfferCatalog": {"@id": "https://aiventure.ro/#offercatalog"},
+        "termsOfService": "https://aiventure.ro/termeni-si-conditii/",
+        "inLanguage": "ro-RO"
+      },
+      {
+        "@type": "Service",
+        "@id": "https://aiventure.ro/solutii/ai-lens/#service",
+        "name": "AI LENS",
+        "description": "Diagnostic privind modul în care firma apare în răspunsurile sistemelor AI.",
+        "serviceType": "AI visibility diagnostic",
+        "url": "https://aiventure.ro/solutii/ai-lens/",
+        "provider": {"@id": "https://aiventure.ro/#organization"},
+        "areaServed": {"@type": "Country", "name": "România"},
+        "inLanguage": "ro-RO"
+      },
+      {
+        "@type": "Service",
+        "@id": "https://aiventure.ro/solutii/ai-audit/#service",
+        "name": "AI AUDIT",
+        "description": "Analiza semnalelor lipsă sau contradictorii despre firmă.",
+        "serviceType": "AI signals audit",
+        "url": "https://aiventure.ro/solutii/ai-audit/",
+        "provider": {"@id": "https://aiventure.ro/#organization"},
+        "areaServed": {"@type": "Country", "name": "România"},
+        "inLanguage": "ro-RO"
+      },
+      {
+        "@type": "Service",
+        "@id": "https://aiventure.ro/solutii/ai-ready/#service",
+        "name": "AI READY",
+        "description": "Structurarea informației firmei pentru sisteme AI.",
+        "serviceType": "AI readiness",
+        "url": "https://aiventure.ro/solutii/ai-ready/",
+        "provider": {"@id": "https://aiventure.ro/#organization"},
+        "areaServed": {"@type": "Country", "name": "România"},
+        "inLanguage": "ro-RO"
+      },
+      {
+        "@type": "Service",
+        "@id": "https://aiventure.ro/solutii/ai-edge/#service",
+        "name": "AI EDGE",
+        "description": "Stratul AI adăugat fără reconstruirea website-ului existent.",
+        "serviceType": "Edge AI implementation",
+        "url": "https://aiventure.ro/solutii/ai-edge/",
+        "provider": {"@id": "https://aiventure.ro/#organization"},
+        "areaServed": {"@type": "Country", "name": "România"},
+        "inLanguage": "ro-RO"
+      },
+      {
+        "@type": "Service",
+        "@id": "https://aiventure.ro/solutii/agent-ready/#service",
+        "name": "AGENT READY",
+        "description": "Expunerea controlată a capabilităților și serviciilor firmei pentru Agenți AI.",
+        "serviceType": "Agent readiness",
+        "url": "https://aiventure.ro/solutii/agent-ready/",
+        "provider": {"@id": "https://aiventure.ro/#organization"},
+        "areaServed": {"@type": "Country", "name": "România"},
+        "inLanguage": "ro-RO"
+      },
+      {
+        "@type": "Service",
+        "@id": "https://aiventure.ro/solutii/a2a/#service",
+        "name": "A2A READY",
+        "description": "Interoperabilitate Agent-to-Agent pentru descoperirea și solicitarea serviciilor B2B.",
+        "serviceType": "A2A interoperability",
+        "url": "https://aiventure.ro/solutii/a2a/",
+        "provider": {"@id": "https://aiventure.ro/#organization"},
+        "areaServed": {"@type": "AdministrativeArea", "name": "Uniunea Europeană"},
+        "inLanguage": "ro-RO"
+      },
+      {
+        "@type": "Service",
+        "@id": "https://aiventure.ro/eu-ai-act-ready/#service",
+        "name": "EU AI ACT READY",
+        "description": "Pregătirea documentară pentru Regulamentul european privind inteligența artificială.",
+        "serviceType": "EU AI Act readiness",
+        "url": "https://aiventure.ro/eu-ai-act-ready/",
+        "provider": {"@id": "https://aiventure.ro/#organization"},
+        "areaServed": {"@type": "AdministrativeArea", "name": "Uniunea Europeană"},
+        "inLanguage": "ro-RO"
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://aiventure.ro/#three-webs",
+        "name": "The Three Webs",
+        "description": "Cele trei suprafețe prin care același serviciu poate fi accesat.",
+        "itemListOrder": "https://schema.org/ItemListOrderAscending",
+        "numberOfItems": 3,
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Human Web", "description": "Omul caută și cumpără prin website."},
+          {"@type": "ListItem", "position": 2, "name": "Web-AI", "description": "Sistemele AI înțeleg și recomandă oferta."},
+          {"@type": "ListItem", "position": 3, "name": "Web-A2A", "description": "Agenții AI descoperă și solicită serviciul."}
+        ]
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://aiventure.ro/#agent-ready-process",
+        "name": "Cum devine un serviciu pregătit pentru AI și A2A",
+        "description": "Procesul AiVenture de la diagnostic până la acces A2A și verificare.",
+        "inLanguage": "ro-RO",
+        "step": [
+          {"@type": "HowToStep", "position": 1, "name": "AI-LENS", "text": "Observă ce pot găsi și înțelege sistemele AI despre firmă.", "url": "https://aiventure.ro/solutii/ai-lens/"},
+          {"@type": "HowToStep", "position": 2, "name": "3WEBOBS", "text": "Măsoară semnalele tehnice și informaționale ale website-ului."},
+          {"@type": "HowToStep", "position": 3, "name": "AI EDGE", "text": "Adaugă stratul AI fără reconstruirea website-ului.", "url": "https://aiventure.ro/solutii/ai-edge/"},
+          {"@type": "HowToStep", "position": 4, "name": "AI KEY MAKER", "text": "Transformă oferta existentă într-un contract de serviciu inteligibil pentru agenți."},
+          {"@type": "HowToStep", "position": 5, "name": "RRVI", "text": "Leagă afirmațiile și acțiunile de evidence verificabil."},
+          {"@type": "HowToStep", "position": 6, "name": "AGENT", "text": "Expune serviciul printr-un Agent AI controlat de regulile firmei.", "url": "https://aiventure.ro/solutii/agent-ready/"},
+          {"@type": "HowToStep", "position": 7, "name": "A2A", "text": "Deschide accesul machine-to-machine pentru descoperire și solicitare.", "url": "https://aiventure.ro/solutii/a2a/"}
+        ]
+      },
+      {
+        "@type": "WebAPI",
+        "@id": "https://aiventure.ro/#a2a-api",
+        "name": "AiVenture Buyer Agent A2A API",
+        "description": "Interfață A2A pentru descoperirea, compararea și solicitarea controlată a serviciilor B2B Agent-Ready.",
+        "url": "https://aiventure.ro/api/a2a",
+        "documentation": "https://aiventure.ro/.well-known/agent-card.json",
+        "provider": {"@id": "https://aiventure.ro/#organization"},
+        "serviceType": "A2A service discovery",
+        "termsOfService": "https://aiventure.ro/termeni-si-conditii/",
+        "inLanguage": ["ro", "en"]
+      },
+      {
+        "@type": "CreativeWork",
+        "@id": "https://aiventure.ro/#a2a-evidence",
+        "name": "AiVenture A2A Evidence Hub",
+        "description": "Evidence public pentru demonstrația Buyer Agent → Broker → Seller Agent → Human Approval → Order → Result → Receipt.",
+        "url": "https://aiventure.ro/a2a-proof",
+        "creator": {"@id": "https://aiventure.ro/#organization"},
+        "publisher": {"@id": "https://aiventure.ro/#organization"},
+        "inLanguage": "ro-RO",
+        "encodingFormat": "text/html",
+        "isAccessibleForFree": true,
+        "about": {"@id": "https://aiventure.ro/#primary-service"}
+      },
+      {
+        "@type": "WebPageElement",
+        "@id": "https://aiventure.ro/#faqblock",
+        "name": "Întrebări frecvente",
+        "cssSelector": "#faq",
+        "isPartOf": {"@id": "https://aiventure.ro/#webpage"}
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://aiventure.ro/#faq",
+        "inLanguage": "ro-RO",
+        "isPartOf": {"@id": "https://aiventure.ro/#webpage"},
+        "mainEntity": [
+          {"@id": "https://aiventure.ro/#q1"},
+          {"@id": "https://aiventure.ro/#q2"},
+          {"@id": "https://aiventure.ro/#q3"},
+          {"@id": "https://aiventure.ro/#q4"}
+        ]
+      },
+      {
+        "@type": "Question",
+        "@id": "https://aiventure.ro/#q1",
+        "position": 1,
+        "name": "Trebuie refăcut website-ul firmei?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Nu. AiVenture adaugă stratul AI și ușa A2A peste afacerea, website-ul și serviciul existente."}
+      },
+      {
+        "@type": "Question",
+        "@id": "https://aiventure.ro/#q2",
+        "position": 2,
+        "name": "Poate Agentul AI inventa prețul sau oferta?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Nu. Oferta, prețul, limitele și condițiile sunt definite și validate de firmă. Agentul lucrează numai în aceste limite."}
+      },
+      {
+        "@type": "Question",
+        "@id": "https://aiventure.ro/#q3",
+        "position": 3,
+        "name": "Cine aprobă o comandă?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Omul păstrează controlul. Aprobarea umană este obligatorie înaintea comenzilor sau acțiunilor pentru care politica firmei o cere."}
+      },
+      {
+        "@type": "Question",
+        "@id": "https://aiventure.ro/#q4",
+        "position": 4,
+        "name": "Ce demonstrează dovada OpenTimestamps?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Demonstrează că fișierul identificat prin hash exista cel târziu la momentul ancorării Bitcoin. Nu demonstrează singură adevărul semantic al conținutului."}
+      }
     ]
   }
   </script>
