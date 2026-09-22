@@ -106,7 +106,7 @@
     .button.blue{background:var(--blue);border-color:var(--blue);color:#fff}
     .button.ghost{background:transparent;border-color:var(--line-strong);color:#fff}
 
-    .hero{position:relative;display:grid;place-items:center;min-height:calc(100svh - 92px);overflow:hidden;padding:118px 0 92px;text-align:center;border-bottom:1px solid var(--line);background:linear-gradient(180deg,rgba(0,0,0,.60) 0%,rgba(0,0,0,.48) 54%,#000 100%),url('/hero-aiventure-ai-act-a2a.jpg') center center/cover no-repeat}
+    .hero{position:relative;display:grid;place-items:center;min-height:calc(100svh - 92px);overflow:hidden;padding:118px 0 92px;text-align:center;border-bottom:1px solid var(--line);background:linear-gradient(180deg,rgba(0,0,0,.60) 0%,rgba(0,0,0,.48) 54%,#000 100%),url('/assets/hero-aiventure-ai-act-a2a.jpg') center center/cover no-repeat}
     .hero:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 28%,rgba(41,151,255,.14),transparent 55%);pointer-events:none}
     .eyebrow{color:var(--blue);font-size:13px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
     h1{position:relative;margin:18px auto 24px;max-width:1050px;font-size:clamp(52px,8vw,104px);line-height:.93;letter-spacing:-.065em;text-shadow:0 4px 34px rgba(0,0,0,.95)}
@@ -198,8 +198,7 @@
         "contactPoint": {"@id": "https://aiventure.ro/#contactpoint"},
         "areaServed": {"@type": "Country", "name": "România"},
         "knowsLanguage": ["ro", "en", "fr"],
-        "brand": {"@id": "https://aiventure.ro/#brand"},
-        "hasOfferCatalog": {"@id": "https://aiventure.ro/#offercatalog"}
+        "brand": {"@id": "https://aiventure.ro/#brand"}
       },
       {
         "@type": "PostalAddress",
@@ -292,42 +291,6 @@
         ]
       },
       {
-        "@type": "SiteNavigationElement",
-        "@id": "https://aiventure.ro/#navigation",
-        "name": ["Pentru cine", "Cum funcționează", "AI KEY MAKER", "RRVI", "Motoare", "Dovezi"],
-        "url": [
-          "https://aiventure.ro/#pentru-cine",
-          "https://aiventure.ro/#cum-functioneaza",
-          "https://aiventure.ro/#key-maker",
-          "https://aiventure.ro/#rrvi",
-          "https://aiventure.ro/#motoare",
-          "https://aiventure.ro/a2a-proof"
-        ],
-        "isPartOf": {"@id": "https://aiventure.ro/#website"}
-      },
-      {
-        "@type": "OfferCatalog",
-        "@id": "https://aiventure.ro/#offercatalog",
-        "name": "Serviciile AiVenture",
-        "description": "Servicii pentru vizibilitate AI, pregătire Agent-Ready și conectare A2A.",
-        "inLanguage": "ro-RO",
-        "provider": {"@id": "https://aiventure.ro/#organization"},
-        "itemListElement": [
-          {"@id": "https://aiventure.ro/#threewebobs-service"},
-          {"@id": "https://aiventure.ro/#visibility-service"},
-          {"@id": "https://aiventure.ro/#growth-service"},
-          {"@id": "https://aiventure.ro/#keymaker-service"},
-          {"@id": "https://aiventure.ro/#rrvi-service"},
-          {"@id": "https://aiventure.ro/solutii/ai-lens/#service"},
-          {"@id": "https://aiventure.ro/solutii/ai-audit/#service"},
-          {"@id": "https://aiventure.ro/solutii/ai-ready/#service"},
-          {"@id": "https://aiventure.ro/solutii/ai-edge/#service"},
-          {"@id": "https://aiventure.ro/solutii/agent-ready/#service"},
-          {"@id": "https://aiventure.ro/solutii/a2a/#service"},
-          {"@id": "https://aiventure.ro/eu-ai-act-ready/#service"}
-        ]
-      },
-      {
         "@type": "Service",
         "@id": "https://aiventure.ro/#threewebobs-service",
         "name": "3WEBOBS™",
@@ -392,7 +355,6 @@
         "provider": {"@id": "https://aiventure.ro/#organization"},
         "areaServed": {"@type": "AdministrativeArea", "name": "Uniunea Europeană"},
         "audience": {"@type": "BusinessAudience", "audienceType": "Proprietari de IMM, agenții digitale, freelanceri și consultanți B2B"},
-        "hasOfferCatalog": {"@id": "https://aiventure.ro/#offercatalog"},
         "termsOfService": "https://aiventure.ro/termeni-si-conditii/",
         "inLanguage": "ro-RO"
       },
@@ -487,124 +449,52 @@
         ]
       },
       {
-        "@type": "HowTo",
-        "@id": "https://aiventure.ro/#agent-ready-process",
-        "name": "Cum devine un serviciu pregătit pentru AI și A2A",
-        "description": "Procesul AiVenture de la diagnostic până la acces A2A și verificare.",
-        "inLanguage": "ro-RO",
-        "step": [
-          {"@type": "HowToStep", "position": 1, "name": "AI-LENS", "text": "Observă ce pot găsi și înțelege sistemele AI despre firmă.", "url": "https://aiventure.ro/solutii/ai-lens/"},
-          {"@type": "HowToStep", "position": 2, "name": "3WEBOBS", "text": "Măsoară semnalele tehnice și informaționale ale website-ului."},
-          {"@type": "HowToStep", "position": 3, "name": "AI EDGE", "text": "Adaugă stratul AI fără reconstruirea website-ului.", "url": "https://aiventure.ro/solutii/ai-edge/"},
-          {"@type": "HowToStep", "position": 4, "name": "AI KEY MAKER", "text": "Transformă oferta existentă într-un contract de serviciu inteligibil pentru agenți."},
-          {"@type": "HowToStep", "position": 5, "name": "RRVI", "text": "Leagă afirmațiile și acțiunile de evidence verificabil."},
-          {"@type": "HowToStep", "position": 6, "name": "AGENT", "text": "Expune serviciul printr-un Agent AI controlat de regulile firmei.", "url": "https://aiventure.ro/solutii/agent-ready/"},
-          {"@type": "HowToStep", "position": 7, "name": "A2A", "text": "Deschide accesul machine-to-machine pentru descoperire și solicitare.", "url": "https://aiventure.ro/solutii/a2a/"}
-        ]
-      },
-      {
-        "@type": "WebAPI",
-        "@id": "https://aiventure.ro/#a2a-api",
-        "name": "AiVenture Buyer Agent A2A API",
-        "description": "Interfață A2A pentru descoperirea, compararea și solicitarea controlată a serviciilor B2B Agent-Ready.",
-        "url": "https://aiventure.ro/api/a2a",
-        "documentation": "https://aiventure.ro/.well-known/agent-card.json",
-        "provider": {"@id": "https://aiventure.ro/#organization"},
-        "serviceType": "A2A service discovery",
-        "termsOfService": "https://aiventure.ro/termeni-si-conditii/",
-        "inLanguage": ["ro", "en"]
-      },
-      {
-        "@type": "CreativeWork",
-        "@id": "https://aiventure.ro/#a2a-evidence",
-        "name": "AiVenture A2A Evidence Hub",
-        "description": "Evidence public pentru demonstrația Buyer Agent → Broker → Seller Agent → Human Approval → Order → Result → Receipt.",
-        "url": "https://aiventure.ro/a2a-proof",
-        "creator": {"@id": "https://aiventure.ro/#organization"},
-        "publisher": {"@id": "https://aiventure.ro/#organization"},
-        "inLanguage": "ro-RO",
-        "encodingFormat": "text/html",
-        "isAccessibleForFree": true,
-        "about": {"@id": "https://aiventure.ro/#primary-service"}
-      },
-      {
-        "@type": "WebPageElement",
-        "@id": "https://aiventure.ro/#faqblock",
-        "name": "Întrebări frecvente",
-        "cssSelector": "#faq",
-        "isPartOf": {"@id": "https://aiventure.ro/#webpage"}
-      },
-      {
         "@type": "FAQPage",
         "@id": "https://aiventure.ro/#faq",
         "inLanguage": "ro-RO",
         "isPartOf": {"@id": "https://aiventure.ro/#webpage"},
         "mainEntity": [
-          {"@id": "https://aiventure.ro/#q1"},
-          {"@id": "https://aiventure.ro/#q2"},
-          {"@id": "https://aiventure.ro/#q3"},
-          {"@id": "https://aiventure.ro/#q4"},
-          {"@id": "https://aiventure.ro/#q5"},
-          {"@id": "https://aiventure.ro/#q6"},
-          {"@id": "https://aiventure.ro/#q7"},
-          {"@id": "https://aiventure.ro/#q8"}
+          {
+            "@type": "Question",
+            "name": "Este AiVenture pentru mine?",
+            "acceptedAnswer": {"@type": "Answer", "text": "Da, dacă ești proprietar de IMM, agenție sau freelancer și vinzi deja un serviciu. Începem cu un singur serviciu, nu cu transformarea întregii firme."}
+          },
+          {
+            "@type": "Question",
+            "name": "Ce primesc concret?",
+            "acceptedAnswer": {"@type": "Answer", "text": "O verificare inițială, un plan prioritizat și, dacă alegi implementarea, paginile, fișierele, regulile, Agentul sau endpoint-ul necesar, plus verificare before/after."}
+          },
+          {
+            "@type": "Question",
+            "name": "De ce am nevoie de asta?",
+            "acceptedAnswer": {"@type": "Answer", "text": "Pentru că un website construit pentru oameni nu este automat inteligibil și acționabil pentru AI sau Agenți AI."}
+          },
+          {
+            "@type": "Question",
+            "name": "Unde se instalează?",
+            "acceptedAnswer": {"@type": "Answer", "text": "Peste infrastructura existentă: website, Edge, repository, API sau integrarea potrivită. Website-ul nu trebuie automat reconstruit."}
+          },
+          {
+            "@type": "Question",
+            "name": "Cât costă?",
+            "acceptedAnswer": {"@type": "Answer", "text": "Verificarea inițială costă 0 €. Implementarea primește un preț fix după diagnostic, înainte să înceapă lucrul."}
+          },
+          {
+            "@type": "Question",
+            "name": "Cât durează?",
+            "acceptedAnswer": {"@type": "Answer", "text": "Estimarea este furnizată după verificare. Durata depinde de pagini, serviciul ales, integrări, reguli și nivelul de autonomie."}
+          },
+          {
+            "@type": "Question",
+            "name": "Agentul poate inventa oferta?",
+            "acceptedAnswer": {"@type": "Answer", "text": "Nu. Oferta, prețul, termenele, limitele și aprobările sunt stabilite de firmă și păstrate în Service Offer Contract."}
+          },
+          {
+            "@type": "Question",
+            "name": "Cine controlează Agentul?",
+            "acceptedAnswer": {"@type": "Answer", "text": "Firma. Omul stabilește mandatul și aprobă acțiunile pentru care politica serviciului cere human approval."}
+          }
         ]
-      },
-      {
-        "@type": "Question",
-        "@id": "https://aiventure.ro/#q1",
-        "position": 1,
-        "name": "Este AiVenture pentru mine?",
-        "acceptedAnswer": {"@type": "Answer", "text": "Da, dacă ești proprietar de IMM, agenție sau freelancer și vinzi deja un serviciu. Începem cu un singur serviciu, nu cu transformarea întregii firme."}
-      },
-      {
-        "@type": "Question",
-        "@id": "https://aiventure.ro/#q2",
-        "position": 2,
-        "name": "Ce primesc concret?",
-        "acceptedAnswer": {"@type": "Answer", "text": "O verificare inițială, un plan prioritizat și, dacă alegi implementarea, paginile, fișierele, regulile, Agentul sau endpoint-ul necesar, plus verificare before/after."}
-      },
-      {
-        "@type": "Question",
-        "@id": "https://aiventure.ro/#q3",
-        "position": 3,
-        "name": "De ce am nevoie de asta?",
-        "acceptedAnswer": {"@type": "Answer", "text": "Pentru că un website construit pentru oameni nu este automat inteligibil și acționabil pentru AI sau Agenți AI."}
-      },
-      {
-        "@type": "Question",
-        "@id": "https://aiventure.ro/#q4",
-        "position": 4,
-        "name": "Unde se instalează?",
-        "acceptedAnswer": {"@type": "Answer", "text": "Peste infrastructura existentă: website, Edge, repository, API sau integrarea potrivită. Website-ul nu trebuie automat reconstruit."}
-      },
-      {
-        "@type": "Question",
-        "@id": "https://aiventure.ro/#q5",
-        "position": 5,
-        "name": "Cât costă?",
-        "acceptedAnswer": {"@type": "Answer", "text": "Verificarea inițială costă 0 €. Implementarea primește un preț fix după diagnostic, înainte să înceapă lucrul."}
-      },
-      {
-        "@type": "Question",
-        "@id": "https://aiventure.ro/#q6",
-        "position": 6,
-        "name": "Cât durează?",
-        "acceptedAnswer": {"@type": "Answer", "text": "Estimarea este furnizată după verificare. Durata depinde de pagini, serviciul ales, integrări, reguli și nivelul de autonomie."}
-      },
-      {
-        "@type": "Question",
-        "@id": "https://aiventure.ro/#q7",
-        "position": 7,
-        "name": "Agentul poate inventa oferta?",
-        "acceptedAnswer": {"@type": "Answer", "text": "Nu. Oferta, prețul, termenele, limitele și aprobările sunt stabilite de firmă și păstrate în Service Offer Contract."}
-      },
-      {
-        "@type": "Question",
-        "@id": "https://aiventure.ro/#q8",
-        "position": 8,
-        "name": "Cine controlează Agentul?",
-        "acceptedAnswer": {"@type": "Answer", "text": "Firma. Omul stabilește mandatul și aprobă acțiunile pentru care politica serviciului cere human approval."}
       }
     ]
   }
