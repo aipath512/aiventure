@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <title>AiVenture — Servicii pregătite pentru AI și A2A</title>
-  <meta name="description" content="AiVenture transformă serviciile B2B existente în servicii pe care sistemele AI le pot înțelege, iar Agenții AI le pot descoperi și solicita, cu omul în control.">
+  <title>AiVenture — Servicii B2B găsite și solicitate de AI</title>
+  <meta name="description" content="AiVenture ajută IMM-urile, agențiile și consultanții să transforme serviciile B2B în oferte găsite, înțelese și solicitate de oameni și Agenți AI, cu control uman.">
   <meta name="keywords" content="AiVenture, A2A, Agenți AI, Buyer Agent, Seller Agent, servicii Agent-Ready, AI-ready, human approval, evidence verificabil">
   <meta name="author" content="AiVenture S.R.L.">
   <meta name="publisher" content="AiVenture S.R.L.">
@@ -41,8 +41,8 @@
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ro_RO">
   <meta property="og:site_name" content="AiVenture">
-  <meta property="og:title" content="AiVenture — Servicii pregătite pentru AI și A2A">
-  <meta property="og:description" content="Păstrează afacerea. Păstrează website-ul. Păstrează serviciul. Adaugă Agentul. Adaugă ușa A2A.">
+  <meta property="og:title" content="AiVenture — Servicii B2B găsite și solicitate de AI">
+  <meta property="og:description" content="Păstrează afacerea, website-ul și serviciul. Adaugă claritate pentru AI, o ofertă Agent-Ready și control verificabil.">
   <meta property="og:url" content="https://aiventure.ro/">
   <meta property="og:image" content="https://aiventure.ro/social-preview.png">
   <meta property="og:image:secure_url" content="https://aiventure.ro/social-preview.png">
@@ -53,13 +53,13 @@
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:url" content="https://aiventure.ro/">
-  <meta name="twitter:title" content="AiVenture — Servicii pregătite pentru AI și A2A">
-  <meta name="twitter:description" content="Păstrează afacerea, website-ul și serviciul. Adaugă Agentul și ușa A2A.">
+  <meta name="twitter:title" content="AiVenture — Servicii B2B găsite și solicitate de AI">
+  <meta name="twitter:description" content="Păstrează afacerea, website-ul și serviciul. Adaugă claritate pentru AI, o ofertă Agent-Ready și control verificabil.">
   <meta name="twitter:image" content="https://aiventure.ro/social-preview.png">
   <meta name="twitter:image:alt" content="AiVenture — Serviciul tău. O nouă ușă pentru AI și A2A.">
 
-  <meta name="DC.title" content="AiVenture — Servicii pregătite pentru AI și A2A">
-  <meta name="DC.description" content="AiVenture transformă serviciile B2B existente în servicii Agent-Ready și accesibile prin A2A, cu omul în control.">
+  <meta name="DC.title" content="AiVenture — Servicii B2B găsite și solicitate de AI">
+  <meta name="DC.description" content="AiVenture pregătește serviciile IMM-urilor, agențiilor și freelancerilor pentru vizibilitate AI, Agenți AI, A2A și verificare.">
   <meta name="DC.creator" content="AiVenture S.R.L.">
   <meta name="DC.publisher" content="AiVenture S.R.L.">
   <meta name="DC.language" content="ro">
@@ -138,16 +138,19 @@
     .send{border:0;border-radius:999px;background:#fff;color:#000;padding:0 18px;font-weight:800;cursor:pointer}.send:disabled{opacity:.5}
     .fine{font-size:12px;color:var(--muted)}
 
-    .three,.cards,.offers{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .three,.cards,.offers,.pricegrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .two{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
     .card{min-height:280px;padding:32px;border:1px solid var(--line);border-radius:28px;background:linear-gradient(145deg,var(--surface-2),#070708)}
     .card .num{color:var(--blue);font-size:12px;font-weight:800;letter-spacing:.1em}.card p{color:var(--muted)}
     .card .verb{margin-top:42px;font-size:18px;color:#d2d2d7}
+    .card ul{margin:20px 0 0;padding-left:18px;color:var(--muted)}.card li{margin:8px 0}.card strong{color:var(--text)}
+    .answer{padding:34px;border:1px solid var(--line);border-radius:28px;background:var(--surface)}.answer .label{color:var(--blue);font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase}.answer b{display:block;margin:12px 0 8px;font-size:25px;letter-spacing:-.03em}.answer p{margin:0;color:var(--muted)}
 
     .rule{padding:clamp(34px,6vw,72px);border:1px solid var(--line);border-radius:32px;background:linear-gradient(135deg,#0f1620,#070707)}
     .rule .big{max-width:960px;margin:0;font-size:clamp(35px,5vw,68px);line-height:1.04;letter-spacing:-.05em}.rule .big span{color:var(--yellow)}
     .rule p{max-width:760px;color:var(--muted);font-size:19px;margin:24px 0 0}
 
-    .pipeline{display:grid;grid-template-columns:repeat(7,1fr);border:1px solid var(--line);border-radius:24px;overflow:hidden}
+    .pipeline{display:grid;grid-template-columns:repeat(5,1fr);border:1px solid var(--line);border-radius:24px;overflow:hidden}
     .step{min-height:175px;padding:22px 16px;border-right:1px solid var(--line);background:var(--surface)}.step:last-child{border-right:0}.step small{color:var(--blue);font-weight:800}.step b{display:block;margin:32px 0 8px}.step span{font-size:12px;color:var(--muted)}
 
     .offer{padding:32px;border:1px solid var(--line);border-radius:28px;background:var(--surface)}
@@ -165,8 +168,9 @@
 
     footer{padding:72px 0 34px}.footergrid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px}.footer-title{margin:0 0 10px;color:var(--text);font-size:16px;font-weight:750;letter-spacing:-.015em}.footergrid p,.footergrid a{color:var(--muted);font-size:14px}.footergrid a{display:block;margin:9px 0}.footergrid a:hover{color:#fff}.copyright{display:flex;justify-content:space-between;gap:20px;margin-top:48px;padding-top:22px;border-top:1px solid var(--line);color:#6e6e73;font-size:12px}
 
-    @media(max-width:980px){.proofgrid{grid-template-columns:1fr 1fr}.proofitem:nth-child(2){border-right:0}.proofitem:nth-child(-n+2){border-bottom:1px solid var(--line)}.three,.cards,.offers{grid-template-columns:1fr}.demo,.evidence{grid-template-columns:1fr}.chat{border-left:0;border-top:1px solid var(--line)}.pipeline{grid-template-columns:1fr 1fr}.step{border-bottom:1px solid var(--line)}.footergrid{grid-template-columns:1fr 1fr}}
-    @media(max-width:700px){.navlinks a:not(.nav-cta){display:none}.topline .wrap{padding:7px 0;align-items:flex-start;flex-direction:column;gap:2px}.hero{padding:82px 0 66px}section{padding:76px 0}.proofgrid,.pipeline,.footergrid{grid-template-columns:1fr}.proofitem{border-right:0;border-bottom:1px solid var(--line)}.proofitem:last-child{border-bottom:0}.step{border-right:0}.demo-copy,.evidence>div{padding:27px}.chat-input{align-items:stretch;flex-direction:column}.send{min-height:44px}.copyright{flex-direction:column}}
+    @media(max-width:1100px){.navlinks a:not(.nav-cta){display:none}}
+    @media(max-width:980px){.proofgrid{grid-template-columns:1fr 1fr}.proofitem:nth-child(2){border-right:0}.proofitem:nth-child(-n+2){border-bottom:1px solid var(--line)}.three,.cards,.offers,.pricegrid,.two{grid-template-columns:1fr}.demo,.evidence{grid-template-columns:1fr}.chat{border-left:0;border-top:1px solid var(--line)}.pipeline{grid-template-columns:1fr 1fr}.step{border-bottom:1px solid var(--line)}.footergrid{grid-template-columns:1fr 1fr}}
+    @media(max-width:700px){.navlinks a:not(.nav-cta){display:none}.topline .wrap{padding:7px 0;align-items:flex-start;flex-direction:column;gap:2px}.hero{padding:82px 0 66px}h1{font-size:clamp(42px,12vw,56px);line-height:.98}section{padding:76px 0}.proofgrid,.pipeline,.footergrid{grid-template-columns:1fr}.proofitem{border-right:0;border-bottom:1px solid var(--line)}.proofitem:last-child{border-bottom:0}.step{border-right:0}.demo-copy,.evidence>div{padding:27px}.chat-input{align-items:stretch;flex-direction:column}.send{min-height:44px}.copyright{flex-direction:column}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button,.nav-cta{transition:none}}
   </style>
 
@@ -262,9 +266,9 @@
         "@type": "WebPage",
         "@id": "https://aiventure.ro/#webpage",
         "url": "https://aiventure.ro/",
-        "name": "AiVenture — Servicii pregătite pentru AI și A2A",
-        "headline": "Serviciul tău. O nouă ușă.",
-        "description": "AiVenture transformă serviciile B2B existente în servicii pe care sistemele AI le pot înțelege, iar Agenții AI le pot descoperi și solicita, cu omul în control.",
+        "name": "AiVenture — Servicii B2B găsite și solicitate de AI",
+        "headline": "Serviciile tale sunt pregătite să fie găsite și solicitate de Agenți AI?",
+        "description": "AiVenture transformă serviciile B2B existente în oferte pe care oamenii, sistemele AI și Agenții AI le pot găsi, înțelege și solicita, cu control uman și evidence verificabil.",
         "inLanguage": "ro-RO",
         "isPartOf": {"@id": "https://aiventure.ro/#website"},
         "about": {"@id": "https://aiventure.ro/#organization"},
@@ -290,13 +294,14 @@
       {
         "@type": "SiteNavigationElement",
         "@id": "https://aiventure.ro/#navigation",
-        "name": ["Cum funcționează", "Soluții", "Dovezi", "Contact", "Buyer Agent"],
+        "name": ["Pentru cine", "Cum funcționează", "AI KEY MAKER", "RRVI", "Motoare", "Dovezi"],
         "url": [
-          "https://aiventure.ro/cum/",
-          "https://aiventure.ro/solutii/",
-          "https://aiventure.ro/a2a-proof",
-          "https://aiventure.ro/contact/",
-          "https://aiventure.ro/buyer-agent/"
+          "https://aiventure.ro/#pentru-cine",
+          "https://aiventure.ro/#cum-functioneaza",
+          "https://aiventure.ro/#key-maker",
+          "https://aiventure.ro/#rrvi",
+          "https://aiventure.ro/#motoare",
+          "https://aiventure.ro/a2a-proof"
         ],
         "isPartOf": {"@id": "https://aiventure.ro/#website"}
       },
@@ -308,6 +313,11 @@
         "inLanguage": "ro-RO",
         "provider": {"@id": "https://aiventure.ro/#organization"},
         "itemListElement": [
+          {"@id": "https://aiventure.ro/#threewebobs-service"},
+          {"@id": "https://aiventure.ro/#visibility-service"},
+          {"@id": "https://aiventure.ro/#growth-service"},
+          {"@id": "https://aiventure.ro/#keymaker-service"},
+          {"@id": "https://aiventure.ro/#rrvi-service"},
           {"@id": "https://aiventure.ro/solutii/ai-lens/#service"},
           {"@id": "https://aiventure.ro/solutii/ai-audit/#service"},
           {"@id": "https://aiventure.ro/solutii/ai-ready/#service"},
@@ -319,6 +329,60 @@
       },
       {
         "@type": "Service",
+        "@id": "https://aiventure.ro/#threewebobs-service",
+        "name": "3WEBOBS™",
+        "alternateName": "Three Webs Observer",
+        "description": "Diagnostic pentru pregătirea firmei în Human Web, Web–AI și Web–A2A, cu semnale, scor, priorități și evidence.",
+        "serviceType": "Three Webs readiness assessment",
+        "url": "https://aiventure.ro/#motoare",
+        "provider": {"@id": "https://aiventure.ro/#organization"},
+        "audience": {"@type": "BusinessAudience", "audienceType": "IMM-uri, agenții digitale și consultanți B2B"},
+        "inLanguage": "ro-RO"
+      },
+      {
+        "@type": "Service",
+        "@id": "https://aiventure.ro/#visibility-service",
+        "name": "AI Visibility",
+        "description": "Structurare și remediere pentru ca informațiile firmei să fie găsite, înțelese și utilizate corect de sisteme AI.",
+        "serviceType": "AI visibility and machine readability",
+        "url": "https://aiventure.ro/#motoare",
+        "provider": {"@id": "https://aiventure.ro/#organization"},
+        "inLanguage": "ro-RO"
+      },
+      {
+        "@type": "Service",
+        "@id": "https://aiventure.ro/#growth-service",
+        "name": "AI Growth",
+        "description": "Descoperire și prioritizare explicabilă a oportunităților B2B, cu surse, scoruri, limite și decizie umană.",
+        "serviceType": "Explainable B2B opportunity discovery",
+        "url": "https://aiventure.ro/#motoare",
+        "provider": {"@id": "https://aiventure.ro/#organization"},
+        "inLanguage": "ro-RO"
+      },
+      {
+        "@type": "Service",
+        "@id": "https://aiventure.ro/#keymaker-service",
+        "name": "AI KEY MAKER™",
+        "alternateName": "Sales Door",
+        "description": "Transformă un serviciu B2B existent într-o ofertă Agent-Ready, controlată prin Service Offer Contract și human approval.",
+        "serviceType": "Agent-ready service offer design",
+        "url": "https://aiventure.ro/#key-maker",
+        "provider": {"@id": "https://aiventure.ro/#organization"},
+        "inLanguage": "ro-RO"
+      },
+      {
+        "@type": "Service",
+        "@id": "https://aiventure.ro/#rrvi-service",
+        "name": "RRVI™",
+        "alternateName": "Verification Door",
+        "description": "Strat de control, testare, evidence, verificare, remediere și re-verificare pentru servicii și acțiuni agentice.",
+        "serviceType": "Agentic controls and evidence verification",
+        "url": "https://aiventure.ro/#rrvi",
+        "provider": {"@id": "https://aiventure.ro/#organization"},
+        "inLanguage": "ro-RO"
+      },
+      {
+        "@type": "Service",
         "@id": "https://aiventure.ro/#primary-service",
         "name": "A2A Business Infrastructure",
         "alternateName": "Agent-Ready B2B Services",
@@ -327,7 +391,7 @@
         "url": "https://aiventure.ro/",
         "provider": {"@id": "https://aiventure.ro/#organization"},
         "areaServed": {"@type": "AdministrativeArea", "name": "Uniunea Europeană"},
-        "audience": {"@type": "BusinessAudience", "audienceType": "Firme B2B și furnizori de servicii"},
+        "audience": {"@type": "BusinessAudience", "audienceType": "Proprietari de IMM, agenții digitale, freelanceri și consultanți B2B"},
         "hasOfferCatalog": {"@id": "https://aiventure.ro/#offercatalog"},
         "termsOfService": "https://aiventure.ro/termeni-si-conditii/",
         "inLanguage": "ro-RO"
@@ -479,36 +543,68 @@
           {"@id": "https://aiventure.ro/#q1"},
           {"@id": "https://aiventure.ro/#q2"},
           {"@id": "https://aiventure.ro/#q3"},
-          {"@id": "https://aiventure.ro/#q4"}
+          {"@id": "https://aiventure.ro/#q4"},
+          {"@id": "https://aiventure.ro/#q5"},
+          {"@id": "https://aiventure.ro/#q6"},
+          {"@id": "https://aiventure.ro/#q7"},
+          {"@id": "https://aiventure.ro/#q8"}
         ]
       },
       {
         "@type": "Question",
         "@id": "https://aiventure.ro/#q1",
         "position": 1,
-        "name": "Trebuie refăcut website-ul firmei?",
-        "acceptedAnswer": {"@type": "Answer", "text": "Nu. AiVenture adaugă stratul AI și ușa A2A peste afacerea, website-ul și serviciul existente."}
+        "name": "Este AiVenture pentru mine?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Da, dacă ești proprietar de IMM, agenție sau freelancer și vinzi deja un serviciu. Începem cu un singur serviciu, nu cu transformarea întregii firme."}
       },
       {
         "@type": "Question",
         "@id": "https://aiventure.ro/#q2",
         "position": 2,
-        "name": "Poate Agentul AI inventa prețul sau oferta?",
-        "acceptedAnswer": {"@type": "Answer", "text": "Nu. Oferta, prețul, limitele și condițiile sunt definite și validate de firmă. Agentul lucrează numai în aceste limite."}
+        "name": "Ce primesc concret?",
+        "acceptedAnswer": {"@type": "Answer", "text": "O verificare inițială, un plan prioritizat și, dacă alegi implementarea, paginile, fișierele, regulile, Agentul sau endpoint-ul necesar, plus verificare before/after."}
       },
       {
         "@type": "Question",
         "@id": "https://aiventure.ro/#q3",
         "position": 3,
-        "name": "Cine aprobă o comandă?",
-        "acceptedAnswer": {"@type": "Answer", "text": "Omul păstrează controlul. Aprobarea umană este obligatorie înaintea comenzilor sau acțiunilor pentru care politica firmei o cere."}
+        "name": "De ce am nevoie de asta?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Pentru că un website construit pentru oameni nu este automat inteligibil și acționabil pentru AI sau Agenți AI."}
       },
       {
         "@type": "Question",
         "@id": "https://aiventure.ro/#q4",
         "position": 4,
-        "name": "Ce demonstrează dovada OpenTimestamps?",
-        "acceptedAnswer": {"@type": "Answer", "text": "Demonstrează că fișierul identificat prin hash exista cel târziu la momentul ancorării Bitcoin. Nu demonstrează singură adevărul semantic al conținutului."}
+        "name": "Unde se instalează?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Peste infrastructura existentă: website, Edge, repository, API sau integrarea potrivită. Website-ul nu trebuie automat reconstruit."}
+      },
+      {
+        "@type": "Question",
+        "@id": "https://aiventure.ro/#q5",
+        "position": 5,
+        "name": "Cât costă?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Verificarea inițială costă 0 €. Implementarea primește un preț fix după diagnostic, înainte să înceapă lucrul."}
+      },
+      {
+        "@type": "Question",
+        "@id": "https://aiventure.ro/#q6",
+        "position": 6,
+        "name": "Cât durează?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Estimarea este furnizată după verificare. Durata depinde de pagini, serviciul ales, integrări, reguli și nivelul de autonomie."}
+      },
+      {
+        "@type": "Question",
+        "@id": "https://aiventure.ro/#q7",
+        "position": 7,
+        "name": "Agentul poate inventa oferta?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Nu. Oferta, prețul, termenele, limitele și aprobările sunt stabilite de firmă și păstrate în Service Offer Contract."}
+      },
+      {
+        "@type": "Question",
+        "@id": "https://aiventure.ro/#q8",
+        "position": 8,
+        "name": "Cine controlează Agentul?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Firma. Omul stabilește mandatul și aprobă acțiunile pentru care politica serviciului cere human approval."}
       }
     ]
   }
@@ -525,11 +621,13 @@
     <nav class="wrap" aria-label="Navigație principală">
       <a class="brand" href="/">AiVenture<small>A2A Business Infrastructure</small></a>
       <div class="navlinks">
+        <a href="#pentru-cine">Pentru cine</a>
         <a href="#cum-functioneaza">Cum funcționează</a>
-        <a href="#solutii">Soluții</a>
+        <a href="#key-maker">AI KEY MAKER™</a>
+        <a href="#rrvi">RRVI™</a>
+        <a href="#motoare">Motoare</a>
         <a href="/a2a-proof">Dovezi</a>
-        <a href="/contact/">Contact</a>
-        <a class="nav-cta" href="/buyer-agent/">Încearcă agentul</a>
+        <a class="nav-cta" href="/verifica/">Află ce lipsește</a>
       </div>
     </nav>
   </header>
@@ -537,68 +635,76 @@
   <main id="main">
     <section class="hero">
       <div class="wrap">
-        <div class="eyebrow">AI first → Agent first → A2A enabled</div>
-        <h1>Serviciul tău.<br>O nouă ușă.</h1>
-        <p>Transformăm serviciile existente în oferte pe care sistemele AI le pot înțelege, iar Agenții AI le pot descoperi și solicita.</p>
+        <div class="eyebrow">Pentru IMM-uri · agenții digitale · consultanți B2B</div>
+        <h1>Serviciile tale sunt pregătite să fie găsite și solicitate de Agenți AI?</h1>
+        <p>AiVenture transformă serviciile B2B existente în oferte pe care oamenii, sistemele AI și Agenții AI le pot găsi, înțelege și solicita — cu control uman și evidence verificabil.</p>
         <div class="hero-actions">
-          <a class="button blue" href="/buyer-agent/">Încearcă Buyer Agent</a>
-          <a class="button ghost" href="#cum-functioneaza">Vezi cum funcționează</a>
+          <a class="button blue" href="/verifica/">Află dacă serviciile tale sunt pregătite</a>
+          <a class="button ghost" href="#pentru-cine">Vezi cum funcționează pentru mine</a>
         </div>
         <div class="formula"><strong>Păstrează afacerea. Păstrează website-ul. Păstrează serviciul.</strong><br>Adaugă Agentul. Adaugă ușa A2A.</div>
       </div>
     </section>
 
-    <div class="proofbar">
-      <div class="wrap proofgrid">
-        <div class="proofitem"><b>Buyer ↔ Seller</b><span>Tranzacție A2A demonstrată</span></div>
-        <div class="proofitem"><b>Human approved</b><span>Omul aprobă înainte de order</span></div>
-        <div class="proofitem"><b>€11 × 5 = €55</b><span>Preț controlat de ECBTAX</span></div>
-        <div class="proofitem"><b>Bitcoin anchored</b><span>OTS · blocurile 968130 și 968132</span></div>
-      </div>
-    </div>
-
-    <section id="cum-functioneaza">
+    <section id="pentru-cine">
       <div class="wrap">
-        <div class="section-head center">
-          <div class="eyebrow">A2A funcționând</div>
-          <h2>Spui ce cauți.<br>Agentul face restul.</h2>
-          <p class="lead">Buyer Agentul descoperă furnizorul, cere oferta și o aduce omului pentru aprobare.</p>
+        <div class="section-head center"><div class="eyebrow">E pentru mine?</div><h2>Da, dacă vinzi servicii B2B și vrei să fii găsit, înțeles și solicitat în economia AI.</h2><p class="lead">Nu trebuie să fii companie de tehnologie și nu trebuie să reconstruiești tot. Începem de la un serviciu real și de la rezultatul comercial dorit.</p></div>
+        <div class="three">
+          <article class="card"><div class="num">PROPRIETAR DE IMM</div><h3>Vrei cereri mai relevante fără să schimbi tot.</h3><p>Afli dacă AI înțelege exact ce vinzi, corectezi informațiile lipsă și pregătești treptat un serviciu pentru solicitări comerciale controlate.</p><ul><li>3WEBOBS™ arată ce lipsește</li><li>AI Visibility clarifică oferta</li><li>AI KEY MAKER™ pregătește serviciul prioritar</li></ul><a class="button ghost" href="/verifica/">Verifică pregătirea firmei</a></article>
+          <article class="card"><div class="num">AGENȚIE DE MARKETING DIGITAL</div><h3>Vrei să livrezi mai mult decât un raport GEO.</h3><p>Adaugi peste SEO și web un sistem pentru audit, remediere, ofertă Agent-Ready, reguli de aprobare și evidence.</p><ul><li>Human Web, Web–AI și Web–A2A</li><li>Implementare asistată la Edge</li><li>Model partner-ready pentru clienți</li></ul><a class="button ghost" href="/contact/">Vezi modelul pentru agenții</a></article>
+          <article class="card"><div class="num">FREELANCER / CONSULTANT B2B</div><h3>Vrei o ofertă repetabilă și greu de interpretat greșit.</h3><p>Definim serviciul, publicul, intrările, rezultatul, excluderile, prețul, aprobările și dovada livrării.</p><ul><li>Expertiză transformată în ofertă clară</li><li>Proces ușor de explicat și cumpărat</li><li>Control păstrat de tine</li></ul><a class="button ghost" href="/contact/">Pregătește serviciul meu</a></article>
         </div>
-        <div class="demo">
-          <div class="demo-copy">
-            <h3>Calcul salarial în România</h3>
-            <p>Test public: 5 angajați, septembrie 2026. Seller Agentul ECBTAX stabilește oferta pe baza configurației comerciale controlate de ECBTAX.</p>
-            <ul class="checks">
-              <li>Seller descoperit prin Broker</li>
-              <li>Quote primit: €55/lună</li>
-              <li>Aprobare umană obligatorie</li>
-              <li>Order, result și receipt corelate</li>
-              <li>Evidence public și verificabil</li>
-            </ul>
-            <a class="button ghost" href="/a2a-proof">Vezi dovada completă</a>
-          </div>
-          <div class="chat" aria-label="Demonstrație Buyer Agent">
-            <div class="chat-head"><span>AIVENTURE BUYER AGENT</span><span>DEMO LIVE</span></div>
-            <div class="messages" id="messages" aria-live="polite">
-              <div class="msg">Ce serviciu cauți?</div>
-            </div>
-            <div class="chat-input">
-              <input id="prompt" aria-label="Cererea către Buyer Agent" value="Calcul salarial pentru 5 angajați în România, septembrie 2026. Buget maxim €60.">
-              <button class="send" id="send" type="button">Trimite</button>
-            </div>
-          </div>
-        </div>
-        <p class="fine">Demonstrație Layer 1. Nu include plată și nu reprezintă executarea juridică a unui payroll real.</p>
       </div>
     </section>
 
-    <section>
+    <div class="proofbar">
+      <div class="wrap proofgrid">
+        <div class="proofitem"><b>Fără rebuild</b><span>Website-ul și CRM-ul pot rămâne</span></div>
+        <div class="proofitem"><b>Începi cu 1 serviciu</b><span>Nu transformi toată firma</span></div>
+        <div class="proofitem"><b>Omul controlează</b><span>Mandat și aprobări explicite</span></div>
+        <div class="proofitem"><b>Cu evidence</b><span>Acțiuni și rezultate verificabile</span></div>
+      </div>
+    </div>
+
+    <section id="ce-primesti">
       <div class="wrap">
-        <div class="section-head"><div class="eyebrow">The Three Webs</div><h2>Un serviciu.<br>Trei căi de acces.</h2><p class="lead">Același serviciu rămâne disponibil oamenilor și devine inteligibil pentru AI și accesibil Agenților.</p></div>
+        <div class="section-head"><div class="eyebrow">Ce primesc concret?</div><h2>Același serviciu.<br>Trei canale în care poate lucra.</h2><p class="lead">În loc ca serviciul să existe numai în pagini, PDF-uri și conversații, îl facem clar și utilizabil pentru oameni, sisteme AI și Agenți AI.</p></div>
         <div class="three">
-          <article class="card"><div class="num">01 · HUMAN WEB</div><div class="verb">Omul caută și cumpără.</div><h3>Website-ul rămâne.</h3><p>Clienții continuă să folosească pagina, formularul, telefonul și relația umană.</p></article>
-          <article class="card"><div class="num">02 · WEB-AI</div><div class="verb">AI-ul înțelege și recomandă.</div><h3>Oferta devine clară.</h3><p>Conținutul, serviciile și dovezile sunt structurate pentru motoarele și asistenții AI.</p></article>
-          <article class="card"><div class="num">03 · WEB-A2A</div><div class="verb">Agentul descoperă și solicită.</div><h3>Se deschide canalul A2A.</h3><p>Buyer Agents pot găsi serviciul, cere ofertă și continua numai în limitele autorizate.</p></article>
+          <article class="card"><div class="num">01 · WEB–OM</div><h3>Oamenii înțeleg și cer oferta.</h3><p>Pagina explică serviciul, rezultatul, limitele și următorul pas comercial.</p></article>
+          <article class="card"><div class="num">02 · WEB–AI</div><h3>AI găsește și extrage corect.</h3><p>Informația devine semantică, consecventă și machine-readable pentru crawlere, LLM-uri și asistenți.</p></article>
+          <article class="card"><div class="num">03 · WEB–A2A</div><h3>Agenții pregătesc o solicitare controlată.</h3><p>Oferta poate fi descoperită și verificată, fără angajamente în afara mandatului firmei.</p></article>
+        </div>
+        <div class="formula"><strong>Găsit → Înțeles → Solicitat → Aprobat → Executat → Verificat</strong><br>Nu abandonăm website-ul sau CRM-ul. Adăugăm un strat comercial și verificabil peste ceea ce există.</div>
+      </div>
+    </section>
+
+    <section id="key-maker">
+      <div class="wrap">
+        <div class="section-head"><div class="eyebrow">Cele două uși comerciale · 01</div><h2>AI KEY MAKER™<br><span style="color:var(--blue)">Sales Door.</span></h2><p class="lead">Transformă serviciul tău într-o ofertă pe care Agenții AI o pot descoperi, evalua și solicita.</p></div>
+        <div class="two">
+          <article class="card"><div class="num">SERVICE OFFER CONTRACT™</div><h3>Oferta este definită înaintea tranzacției.</h3><ul><li>Serviciu și cumpărător eligibil</li><li>Intrări și rezultat așteptat</li><li>Scope, limite și excluderi</li><li>Preț sau regulă de calcul</li><li>SLA și condiții</li><li>Puncte de aprobare umană</li><li>Evidence cerut după livrare</li></ul></article>
+          <article class="card"><div class="num">REZULTAT COMERCIAL</div><h3>Aceeași firmă. Aceleași servicii. Un al doilea canal.</h3><p>Buyer Agents pot descoperi și solicita serviciul; Seller Agentul răspunde numai din oferta validată; omul aprobă angajamentele importante.</p><div class="hero-actions" style="justify-content:flex-start"><a class="button blue" href="/contact/">Pregătește un serviciu</a></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="rrvi">
+      <div class="wrap">
+        <div class="section-head"><div class="eyebrow">Cele două uși comerciale · 02</div><h2>RRVI™<br><span style="color:var(--green)">Verification Door.</span></h2><p class="lead">Înainte ca Agentul să acționeze, verificăm ce are voie să facă, în ce condiții, cu ce aprobare și cu ce dovadă.</p></div>
+        <div class="two">
+          <article class="card"><div class="num">CONTROL</div><h3>Autonomia are limite explicite.</h3><ul><li>Reguli pentru acțiunile Agentului</li><li>Niveluri de autonomie</li><li>Human approval pentru angajamente</li><li>Jurnal de decizii și rezultate</li></ul></article>
+          <article class="card"><div class="num">VERIFY</div><h3>Cerință → Control → Test → Evidence.</h3><p>După test, rezultatul poate fi verificat, remediat și re-verificat. RRVI™ este un strat de control și evidence, nu o certificare juridică automată.</p><div class="hero-actions" style="justify-content:flex-start"><a class="button ghost" href="/contact/">Verifică regulile serviciului</a></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="motoare">
+      <div class="wrap">
+        <div class="section-head"><div class="eyebrow">Cele trei motoare</div><h2>Observe. Be Found.<br>Find Business.</h2><p class="lead">Nu sunt trei cataloage separate. Sunt motoarele comune care alimentează cele două uși comerciale.</p></div>
+        <div class="three">
+          <article class="card"><div class="num">3WEBOBS™ · OBSERVE</div><h3>Este firma pregătită pentru cele trei Web-uri?</h3><p>Scan → Signals → Score → Action Plan → Fix → Re-scan → Evidence.</p><ul><li>Human Web</li><li>Web–AI</li><li>Web–A2A</li></ul></article>
+          <article class="card"><div class="num">AI VISIBILITY · BE FOUND</div><h3>Poate AI să găsească și să utilizeze corect informația?</h3><p>Structură semantică, date machine-readable, AI-LENS, AI Signals, AEO, GEO, AIO, remediere și monitorizare.</p></article>
+          <article class="card"><div class="num">AI GROWTH · FIND BUSINESS</div><h3>Poate AI să identifice oportunități potrivite?</h3><p>Profil → Match → Rank → Explain → Verify, cu sursă, dată, scor, limite și decizie umană.</p></article>
         </div>
       </div>
     </section>
@@ -608,62 +714,107 @@
         <div class="rule">
           <div class="eyebrow">Regula care nu se negociază</div>
           <p class="big">Agentul nu inventează <span>niciodată</span> oferta în timpul tranzacției.</p>
-          <p>Firma stabilește serviciul, prețul, limitele, aprobările și excluderile. Agentul descoperă, explică și execută numai ceea ce firma a autorizat.</p>
+          <p>Firma stabilește serviciul, prețul, limitele, aprobările și excluderile. Agentul folosește numai Service Offer Contract-ul validat de om.</p>
         </div>
       </div>
     </section>
 
-    <section id="solutii">
+    <section id="cum-functioneaza">
       <div class="wrap">
-        <div class="section-head center"><div class="eyebrow">Transformarea completă</div><h2>De la website<br>la Agent-Ready.</h2><p class="lead">O singură linie de implementare, cu verificare după fiecare pas.</p></div>
+        <div class="section-head center"><div class="eyebrow">Cum funcționează pentru client?</div><h2>Începi simplu.<br>Activezi treptat.</h2><p class="lead">Nu construiești un Agent autonom din prima zi. Începi cu observare, claritate și un singur serviciu prioritar.</p></div>
         <div class="pipeline">
-          <div class="step"><small>01</small><b>AI-LENS</b><span>Ce văd sistemele AI?</span></div>
-          <div class="step"><small>02</small><b>3WEBOBS</b><span>Ce lipsește și ce trebuie reparat?</span></div>
-          <div class="step"><small>03</small><b>AI EDGE</b><span>Adăugăm stratul fără refacerea site-ului.</span></div>
-          <div class="step"><small>04</small><b>AI KEY MAKER™</b><span>Structurăm oferta controlată de firmă.</span></div>
-          <div class="step"><small>05</small><b>RRVI™</b><span>Verificăm reguli, evidence și limite.</span></div>
-          <div class="step"><small>06</small><b>AGENT</b><span>Implementăm Buyer, Seller sau Broker.</span></div>
-          <div class="step"><small>07</small><b>A2A</b><span>Deschidem noul canal de acces.</span></div>
+          <div class="step"><small>01</small><b>Observăm</b><span>Scor, semnale, blocaje și priorități.</span></div>
+          <div class="step"><small>02</small><b>Clarificăm</b><span>Serviciul devine inteligibil pentru oameni și AI.</span></div>
+          <div class="step"><small>03</small><b>Structurăm</b><span>Creăm oferta Agent-Ready validată de firmă.</span></div>
+          <div class="step"><small>04</small><b>Activăm</b><span>Deschidem cererea și calificarea controlată.</span></div>
+          <div class="step"><small>05</small><b>Verificăm</b><span>Testăm regulile și păstrăm evidence.</span></div>
+        </div>
+        <div class="hero-actions"><a class="button blue" href="/verifica/">Începe cu 3WEBOBS™</a></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-head"><div class="eyebrow">De ce acum?</div><h2>Website-ul există.<br>Dar traseul cumpărătorului se schimbă.</h2><p class="lead">Întrebările, comparațiile și selecțiile încep tot mai des în sisteme AI. Următorul pas este solicitarea pregătită de Agenți AI.</p></div>
+        <div class="two">
+          <article class="card"><div class="num">PROBLEMA</div><h3>Serviciul este adesea greu de extras și comparat.</h3><ul><li>Descrieri incomplete sau contradictorii</li><li>Ofertă diferită pe site, PDF și email</li><li>Preț, eligibilitate și aprobare neclare</li><li>Puțină evidence după recomandare sau acțiune</li></ul></article>
+          <article class="card"><div class="num">TRECEREA</div><h3>De la prezență online la serviciu solicitabil.</h3><p>AiVenture conectează claritatea pentru oameni, machine-readability pentru AI, oferta comercială pentru Agenți și verificarea acțiunilor importante.</p></article>
         </div>
       </div>
     </section>
 
     <section>
       <div class="wrap">
-        <div class="section-head"><div class="eyebrow">Cum începi</div><h2>Un serviciu real.<br>Trei căi.</h2></div>
-        <div class="offers">
-          <article class="offer"><div class="tag">DIY</div><h3>Construiești singur</h3><p>Primești ghiduri, exemple, structuri și cod pentru propria implementare.</p><a class="button ghost" href="/resurse/">Vezi resursele</a></article>
-          <article class="offer"><div class="tag">ASSISTED</div><h3>Construim împreună</h3><p>Echipa ta implementează, iar AiVenture ghidează și verifică fiecare etapă.</p><a class="button ghost" href="/contact/">Cere suport</a></article>
-          <article class="offer featured"><div class="tag">DONE FOR YOU</div><h3>Implementăm noi</h3><p>De la audit și ofertă structurată până la Agent, A2A și evidence public.</p><a class="button blue" href="/contact/">Transformă un serviciu</a></article>
+        <div class="section-head"><div class="eyebrow">Diferențiere</div><h2>Nu vindem doar vizibilitate.<br>Construim traseul către tranzacție.</h2><p class="lead">Observe → Be Found → Find Business → Sell → Verify.</p></div>
+        <div class="two">
+          <article class="card"><div class="num">PIAȚA OFERĂ</div><h3>Instrumente separate.</h3><ul><li>Monitorizare de mențiuni AI</li><li>Baze de date B2B și lookalike lists</li><li>Protocoale A2A și MCP</li><li>Governance enterprise</li><li>Website, CRM și formulare</li></ul></article>
+          <article class="card"><div class="num">AIVENTURE CONECTEAZĂ</div><h3>Un flux comercial controlat.</h3><ul><li>Observare și remediere</li><li>Matching explicabil și evidence</li><li>Ofertă validată și aprobări</li><li>Control pragmatic pentru servicii B2B</li><li>Strat Agent-Ready peste sistemele existente</li></ul></article>
         </div>
+      </div>
+    </section>
+
+    <section id="cost">
+      <div class="wrap">
+        <div class="section-head"><div class="eyebrow">Unde · când · cât</div><h2>Clar înainte<br>să plătești.</h2></div>
+        <div class="pricegrid">
+          <article class="offer"><div class="tag">UNDE?</div><h3>Peste website-ul existent.</h3><p>La Edge, în repository sau prin integrarea potrivită infrastructurii tale. Nu cerem automat schimbarea CMS-ului sau a CRM-ului.</p></article>
+          <article class="offer"><div class="tag">CÂND?</div><h3>Când ai un serviciu real.</h3><p>Poți începe imediat ce serviciul, rezultatul și persoana care aprobă sunt identificate.</p></article>
+          <article class="offer featured"><div class="tag">CÂT?</div><h3>Verificarea inițială: 0 €.</h3><p>După verificare primești exact ce lipsește și o ofertă fixă înainte de implementare. Agentul nu inventează prețul.</p></article>
+        </div>
+        <p class="fine">Durata și prețul implementării depind de website, serviciu, reguli, integrări și nivelul de autonomie. Nu promitem un termen sau un preț universal înainte de diagnostic.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-head center"><div class="eyebrow">Dovadă funcțională</div><h2>Buyer Agent ↔<br>Seller Agent.</h2><p class="lead">AiVenture a demonstrat un flux A2A Layer 1 cu ECBTAX, ofertă controlată de Seller și aprobare umană.</p></div>
+        <div class="demo">
+          <div class="demo-copy">
+            <h3>Calcul salarial pentru 5 angajați</h3>
+            <p>Buyer Agentul caută. Brokerul descoperă ECBTAX. Seller Agentul emite oferta pe baza prețului configurat de ECBTAX. Omul aprobă.</p>
+            <ul class="checks"><li>Seller descoperit</li><li>Ofertă: €55/lună</li><li>Human approval: YES</li><li>Order, result și receipt</li><li>Evidence și OpenTimestamps</li></ul>
+            <a class="button ghost" href="/a2a-proof">Vezi toate dovezile</a>
+          </div>
+          <div class="chat" aria-label="Demonstrație Buyer Agent">
+            <div class="chat-head"><span>AIVENTURE BUYER AGENT</span><span>DEMO</span></div>
+            <div class="messages" id="messages" aria-live="polite"><div class="msg">Ce serviciu cauți?</div></div>
+            <div class="chat-input"><input id="prompt" aria-label="Cererea către Buyer Agent" value="Calcul salarial pentru 5 angajați în România, septembrie 2026. Buget maxim €60."><button class="send" id="send" type="button">Trimite</button></div>
+          </div>
+        </div>
+        <p class="fine">Demonstrație Layer 1. Nu include plată și nu reprezintă executarea juridică a unui payroll real.</p>
       </div>
     </section>
 
     <section>
       <div class="wrap evidence">
-        <div>
-          <div class="status">Evidence publicat</div>
-          <h2>Nu cere încredere.<br>Oferă verificare.</h2>
-          <p>Publicăm materialele tranzacției, hash-urile, dovada OpenTimestamps și evaluările celor patru sisteme AI. Separăm observațiile directe de inferențe și declarăm limitele.</p>
-          <a class="button blue" href="/a2a-proof">Deschide Evidence Hub</a>
-        </div>
-        <div>
-          <h3>PDF-ul tranzacției</h3>
-          <span class="hash">9c9ac6c47f9dfedf9adef79e4dfff22f865b3d75506d38e200658abbdea2cad7</span>
-          <p><strong>SHA-256</strong> confirmă integritatea exactă a fișierului. <strong>OpenTimestamps</strong> confirmă existența lui cel târziu la ancorarea Bitcoin. Acestea nu certifică singure adevărul semantic al tranzacției.</p>
-          <a class="button ghost" href="/a2a-proof">Vezi fișierele și limitările</a>
+        <div><div class="status">Evidence publicat</div><h2>Nu cere încredere.<br>Oferă verificare.</h2><p>Publicăm materialele, hash-urile, OpenTimestamps și limitele. Separăm ceea ce poate fi verificat de ceea ce rămâne o afirmație.</p><a class="button blue" href="/a2a-proof">Deschide Evidence Hub</a></div>
+        <div><h3>PDF-ul tranzacției</h3><span class="hash">9c9ac6c47f9dfedf9adef79e4dfff22f865b3d75506d38e200658abbdea2cad7</span><p>SHA-256 confirmă integritatea fișierului. OpenTimestamps confirmă existența sa cel târziu la ancorarea Bitcoin. Nu certifică singure adevărul conținutului.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="rule">
+          <div class="eyebrow">Începe cu întrebarea corectă</div>
+          <p class="big">Poate firma mea să fie găsită, înțeleasă și solicitată corect de <span>AI?</span></p>
+          <p>Începe cu 3WEBOBS™. Vezi ce funcționează, ce lipsește și care dintre cele două uși comerciale merită deschisă prima.</p>
+          <div class="hero-actions" style="justify-content:flex-start"><a class="button blue" href="/verifica/">Află dacă serviciile tale sunt pregătite</a><a class="button ghost" href="/contact/">Vorbește despre AI KEY MAKER™</a><a class="button ghost" href="#rrvi">Explorează RRVI™</a></div>
+          <p class="fine">Nu trebuie să construiești un Agent autonom din prima zi. Începi cu observare, claritate și un serviciu prioritar.</p>
         </div>
       </div>
     </section>
 
     <section id="faq">
       <div class="wrap">
-        <div class="section-head"><div class="eyebrow">Întrebări frecvente</div><h2>Clar, înainte să începem.</h2></div>
-        <details><summary>Trebuie refăcut website-ul firmei?</summary><p>Nu. Păstrăm afacerea, website-ul și serviciul. Adăugăm stratul necesar pentru AI și ușa A2A.</p></details>
-        <details><summary>Agentul poate inventa un preț sau o condiție?</summary><p>Nu. Oferta este definită și validată de firmă. Agentul nu are voie să inventeze servicii, prețuri, termene, garanții sau obligații comerciale.</p></details>
-        <details><summary>Cine controlează tranzacția?</summary><p>Omul. Nivelul de autonomie este stabilit în avans, iar aprobarea umană rămâne obligatorie acolo unde politica firmei o cere.</p></details>
-        <details><summary>Ce este ușa A2A?</summary><p>Este interfața prin care un Agent AI poate descoperi un serviciu, cere informații sau ofertă și continua în limitele autorizate.</p></details>
-        <details><summary>Dovada OTS înseamnă audit sau certificare?</summary><p>Nu. Dovada OpenTimestamps confirmă integritatea și existența în timp a fișierului identificat prin hash. Nu înlocuiește auditul infrastructurii, certificarea juridică sau verificarea semantică a evenimentelor.</p></details>
+        <div class="section-head"><div class="eyebrow">Cine · ce · de ce · cum</div><h2>Răspuns direct.</h2></div>
+        <details><summary>Este AiVenture pentru mine?</summary><p>Da, dacă ești proprietar de IMM, agenție sau freelancer și vinzi deja un serviciu. Începem cu un singur serviciu, nu cu transformarea întregii firme.</p></details>
+        <details><summary>Ce primesc concret?</summary><p>O verificare inițială, un plan prioritizat și, dacă alegi implementarea, paginile, fișierele, regulile, Agentul sau endpoint-ul necesar, plus verificare before/after.</p></details>
+        <details><summary>De ce am nevoie de asta?</summary><p>Pentru că un website construit pentru oameni nu este automat inteligibil și acționabil pentru AI sau Agenți AI.</p></details>
+        <details><summary>Unde se instalează?</summary><p>Peste infrastructura existentă: website, Edge, repository, API sau integrarea potrivită. Website-ul nu trebuie automat reconstruit.</p></details>
+        <details><summary>Cât costă?</summary><p>Verificarea inițială costă 0 €. Implementarea primește un preț fix după diagnostic, înainte să înceapă lucrul.</p></details>
+        <details><summary>Cât durează?</summary><p>Primești estimarea după verificare. Durata depinde de numărul de pagini, serviciul ales, integrări, reguli și nivelul de autonomie.</p></details>
+        <details><summary>Agentul poate inventa oferta?</summary><p>Nu. Oferta, prețul, termenele, limitele și aprobările sunt stabilite de firmă și păstrate în Service Offer Contract.</p></details>
+        <details><summary>Cine controlează Agentul?</summary><p>Firma. Omul stabilește mandatul și aprobă acțiunile pentru care politica serviciului cere human approval.</p></details>
       </div>
     </section>
   </main>
