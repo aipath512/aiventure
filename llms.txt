@@ -147,4 +147,94 @@ Do not declare OTS VERIFIED or Bitcoin block confirmation until the exact canoni
 
 ## AIO coverage note
 
-26 semnale canonice AIO. 7 acoperite deja de infrastructura existentă (indexability, digital-dna, versioning, freshness, negative scope, allow-lane-matrix, faq-hub, LLM-readable metadata). 11 acoperite explicit de fișierele de mai sus. 6 nu au corespondent fișier: 5 sunt rezultate externe (Perplexity/ChatGPT/Gemini/Claude citation & indexing, Source Citation Quality) și 1 e o măsurătoare pe conținut (Fact Density vs Fluff Ratio), nu un artefact separat.
+26 semnale canonice AIO.
+
+8 sunt acoperite de infrastructura existentă:
+- Content Indexability by LLMs
+- Internal Link Semantic Map
+- Chronological Versioning
+- Content Freshness Signal
+- Contradiction Avoidance
+- Allow-Lane Matrix
+- Long-Form Completeness
+- LLM-Readable Metadata
+
+12 semnale sunt acoperite explicit de cele 11 fișiere AIO de mai sus:
+- Table / List Extractability
+- Token-Efficient Headings
+- Corpus Inclusion Signal
+- Contrastive Analysis Presence
+- Dense Paragraph Summaries
+- AI Summary Block
+- Semantic Keyword Clusters
+- Concept Cluster Coverage
+- Inference Trigger Keywords
+- Unique Data / Proprietary Stats
+- RAG-Ready Content Format
+- Expertise Signals in Content
+
+5 semnale sunt rezultate externe:
+- Perplexity Source Citation
+- ChatGPT Browse Visibility
+- Gemini Grounding Eligibility
+- Claude Source Indexing
+- Source Citation Quality
+
+1 semnal este măsurat direct pe conținut:
+- Fact Density vs Fluff Ratio
+
+## AIO Assessment
+
+Assessment date: 2026-09-24
+AIO score: 98.08 / 100
+
+Method:
+26 AIO signals.
+PASS = 1.0
+PARTIAL = 0.5
+FAIL = 0.0
+
+Result:
+- PASS: 25
+- PARTIAL: 1
+- FAIL: 0
+- Weighted result: 25.5 / 26
+- Score: 98.08%
+
+External AI tests:
+- Perplexity Source Citation: PASS
+- ChatGPT Browse Visibility: PASS
+- Gemini Grounding Eligibility: PASS
+- Claude Source Indexing: PASS
+- Source Citation Quality: PARTIAL
+
+Fact Density vs Fluff Ratio:
+- PASS
+
+Assessment calculated by GPT-5.6 Sol in a ChatGPT session using the 26-signal AIO framework supplied by AiVenture and the evidence/test results reviewed in that session.
+
+This assessment is not an OpenAI certification, an independent audit performed by OpenAI, or a guarantee of search ranking, AI citation, recommendation, legal compliance, security or commercial performance.
+
+## AIO Assessment evidence
+
+Human-readable assessment:
+- https://aiventure.ro/AiVenture_AIO_Assessment_2026-09-24.pdf
+
+Machine-readable assessment:
+- https://aiventure.ro/AiVenture_AIO_Assessment_2026-09-24.json
+
+Cryptographic integrity:
+- https://aiventure.ro/AiVenture_AIO_Assessment_2026-09-24_SHA256SUMS.txt
+
+SHA-256 PDF:
+3172c571c2ca0ccf3531abc4a6deb5e0c3ee917084876416157517866470ceaf
+
+SHA-256 JSON:
+dacf8e147734be87a59f3a99fdcc09a017aba188b84abf37f8e8e63ebae95767
+
+Integrity rule:
+The SHA-256 values identify the exact bytes of the assessed PDF and JSON artifacts.
+Any byte-level modification produces a different SHA-256 digest.
+
+Claim ≠ Proof.
+Assessment → Method → Evidence → SHA-256.
