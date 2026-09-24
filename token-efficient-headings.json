@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "site": "aiventure.ro",
+  "session": "0003H",
+  "generated": "2026-09-20T00:00:00+03:00",
+  "purpose": "Mapează ierarhia H1-H3 declarată explicit, cu numărul de tokeni per titlu — ca un LLM să navigheze structura fără să parseze tot HTML-ul.",
+  "pages": [
+    {
+      "url": "https://aiventure.ro/",
+      "headings": [
+        { "level": "h1", "text": "Omul caută. AI-ul recomandă. Agentul acționează.", "tokens": 8 },
+        { "level": "h2", "text": "Un serviciu. Trei Web-uri.", "tokens": 5 },
+        { "level": "h2", "text": "Buyer Agent AiVenture ↔ Payroll Agent ECBTAX", "tokens": 7 },
+        { "level": "h2", "text": "De la website la business Agent-Ready.", "tokens": 7 },
+        { "level": "h2", "text": "Un serviciu real. Trei căi.", "tokens": 5 },
+        { "level": "h2", "text": "Întrebări frecvente", "tokens": 2 }
+      ]
+    },
+    {
+      "url": "https://aiventure.ro/dictionar/",
+      "headings": [
+        { "level": "h1", "text": "Dicționar ERE", "tokens": 3 }
+      ]
+    }
+  ],
+  "convention": "H1 unic per pagină, sub 10 tokeni; H2 sub 8 tokeni; niciun heading gol sau decorativ"
+}

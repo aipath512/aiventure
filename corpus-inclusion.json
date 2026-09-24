@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "site": "aiventure.ro",
+  "session": "0003H",
+  "generated": "2026-09-20T00:00:00+03:00",
+  "purpose": "Declară explicit condițiile în care conținutul site-ului poate fi inclus în corpusuri de antrenare/indexare (Common Crawl și similare) — un LLM verifică aici înainte să presupună licența.",
+  "crawl_permissions": {
+    "GPTBot": "allow",
+    "ClaudeBot": "allow",
+    "Google-Extended": "allow",
+    "PerplexityBot": "allow",
+    "CCBot": "allow"
+  },
+  "license_declaration": "Conținutul public al aiventure.ro poate fi citat cu atribuire către AiVenture S.R.L. și link către sursă. Nu se acordă licență de republicare integrală.",
+  "sitemap": "https://aiventure.ro/sitemap.xml",
+  "last_common_crawl_check": "nu a fost verificat public — de completat după prima confirmare"
+}

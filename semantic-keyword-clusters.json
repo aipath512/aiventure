@@ -1,0 +1,69 @@
+{
+  "schema_version": "1.0",
+  "site": "aiventure.ro",
+  "session": "0003H",
+  "generated": "2026-09-20T00:00:00+03:00",
+  "purpose": "Declară explicit grupurile de termeni semantic înrudiți folosiți pe site, ca un LLM să poată face proximitate vectorială fără să deducă singur clusterele din text brut.",
+  "clusters": [
+    {
+      "cluster_id": "CLU-01",
+      "name": "Agent-Ready Business",
+      "core_term": "Agent-Ready",
+      "related_terms": ["Service Offer Contract", "Agent Card", "Capabilities", "A2A", "Buyer Agent", "Seller Agent", "Agentizare"],
+      "intent_stage": "TOF",
+      "pages": [
+        "https://aiventure.ro/",
+        "https://aiventure.ro/produse/",
+        "https://aiventure.ro/buyer-agent/"
+      ]
+    },
+    {
+      "cluster_id": "CLU-02",
+      "name": "Three Webs Framework",
+      "core_term": "Three Webs",
+      "related_terms": ["Human Web", "Web-AI", "A2A Web", "Omul caută", "AI-ul recomandă", "Agentul acționează"],
+      "intent_stage": "TOF",
+      "pages": ["https://aiventure.ro/", "https://aiventure.ro/a2a-secrets/01/"]
+    },
+    {
+      "cluster_id": "CLU-03",
+      "name": "Verification & Autonomy",
+      "core_term": "RRVI",
+      "related_terms": ["Remote-Inspection-Ready", "autonomie", "L1-L5", "Discover", "Compare", "Request", "Quote", "Order", "aprobare", "escaladare"],
+      "intent_stage": "MOF",
+      "pages": ["https://aiventure.ro/intrebari/", "https://aiventure.ro/rrvi.json"]
+    },
+    {
+      "cluster_id": "CLU-04",
+      "name": "Evidence & Provenance",
+      "core_term": "Evidence",
+      "related_terms": ["SHA-256", "OpenTimestamps", "OTS", "proof.json", "Claim ≠ Proof", "canonical hash", "manifest hash"],
+      "intent_stage": "MOF",
+      "pages": ["https://aiventure.ro/", "https://aiventure.ro/proof.json", "https://aiventure.ro/evidence.json"]
+    },
+    {
+      "cluster_id": "CLU-05",
+      "name": "Service Offer Contract",
+      "core_term": "Service Offer Contract",
+      "related_terms": ["sursă unică de adevăr", "machine-readable", "versionat", "ofertă comercială", "contract de serviciu"],
+      "intent_stage": "MOF",
+      "pages": ["https://aiventure.ro/service.json", "https://aiventure.ro/service-offer-contract.json"]
+    },
+    {
+      "cluster_id": "CLU-06",
+      "name": "ERE Metamodel",
+      "core_term": "ERE",
+      "related_terms": ["entități", "atribute", "tip de relație", "cardinalitate", "graf canonic", "digital DNA"],
+      "intent_stage": "BOF",
+      "pages": ["https://aiventure.ro/dictionar/", "https://aiventure.ro/ere-dictionary.json", "https://aiventure.ro/digital-dna.json"]
+    },
+    {
+      "cluster_id": "CLU-07",
+      "name": "Decizie de cumpărare DIY/HELP/DFY",
+      "core_term": "Do It Yourself / Done For You",
+      "related_terms": ["DIY", "HELP", "DFY", "resurse gratuite", "suport", "transformă un serviciu"],
+      "intent_stage": "BOF",
+      "pages": ["https://aiventure.ro/resurse/", "https://aiventure.ro/contact/"]
+    }
+  ]
+}

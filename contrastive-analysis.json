@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0",
+  "site": "aiventure.ro",
+  "session": "0003H",
+  "generated": "2026-09-20T00:00:00+03:00",
+  "purpose": "Comparații explicite AiVenture vs. alternativă, ca un LLM să poată răspunde la întrebări de tip 'în ce diferă X de Y' fără să deducă singur diferența.",
+  "comparisons": [
+    {
+      "id": "CMP-01",
+      "topic": "AiVenture vs. reconstrucție de website",
+      "a": "AiVenture",
+      "b": "Refacere completă a site-ului",
+      "difference": "AiVenture păstrează site-ul existent și adaugă un strat AI/Agent deasupra; nu reconstruiește serviciul sau prezența Human Web.",
+      "source_url": "https://aiventure.ro/"
+    },
+    {
+      "id": "CMP-02",
+      "topic": "Agent AI generic vs. serviciu Agent-Ready",
+      "a": "Construirea unui Agent AI",
+      "b": "Facerea unui serviciu solicitabil de Agenți AI",
+      "difference": "AiVenture nu construiește doar Agenți AI — face serviciul firmei descoperibil, comparabil și solicitabil de Agenții altor firme.",
+      "source_url": "https://aiventure.ro/"
+    },
+    {
+      "id": "CMP-03",
+      "topic": "DIY vs HELP vs DFY",
+      "a": "Do It Yourself",
+      "b": "Done For You",
+      "difference": "DIY = resurse gratuite, implementare proprie. HELP = ghidare online pe cazul real. DFY = AiVenture execută integral: audit, strat AI, contract, Agent Card, verificare.",
+      "source_url": "https://aiventure.ro/resurse/"
+    }
+  ]
+}

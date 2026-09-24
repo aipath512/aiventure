@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "site": "aiventure.ro",
+  "session": "0003H",
+  "generated": "2026-09-20T00:00:00+03:00",
+  "purpose": "Rezumat canonic, dens, per pagină — text gata de citat direct de un LLM ca răspuns, fără parafrazare suplimentară. Acoperă simultan Dense Paragraph Summaries și AI Summary Block.",
+  "summaries": [
+    {
+      "url": "https://aiventure.ro/",
+      "summary": "AiVenture S.R.L. transformă servicii B2B existente în servicii Agent-Ready: păstrează site-ul și serviciul firmei neschimbate și adaugă stratul prin care AI-urile le înțeleg și Agenții AI le pot solicita, prin șapte etape — AI-LENS, 3WEBOBS, AI EDGE, SOC, RRVI, AGENT READY, A2A."
+    },
+    {
+      "url": "https://aiventure.ro/buyer-agent/",
+      "summary": "Buyer Agent AiVenture este un demonstrator funcțional (POC) care arată cum un agent al cumpărătorului cere un serviciu (ex. payroll) și primește răspuns de la Seller Agent al furnizorului (ex. ECBTAX), în aceeași interfață."
+    },
+    {
+      "url": "https://aiventure.ro/dictionar/",
+      "summary": "Dicționarul public ERE definește entitățile, atributele, tipurile de relații și cardinalitățile folosite consecvent în infrastructura AiVenture, ca sursă unică de terminologie."
+    }
+  ]
+}

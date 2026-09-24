@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "site": "aiventure.ro",
+  "session": "0003H",
+  "generated": "2026-09-20T00:00:00+03:00",
+  "purpose": "Declară explicit granițele de chunking recomandate per pagină, ca un pipeline RAG să nu taie arbitrar textul la mijlocul unei idei. faq-hub.html are deja chunking implicit (1 pereche Q&A = 1 chunk); acest fișier îl face explicit și îl extinde la restul paginilor.",
+  "default_chunk_target_tokens": 150,
+  "pages": [
+    {
+      "url": "https://aiventure.ro/",
+      "chunk_strategy": "per-section",
+      "chunks": [
+        { "chunk_id": "home-01", "anchor": "#hero", "title": "Omul caută. AI-ul recomandă. Agentul acționează.", "token_estimate": 70 },
+        { "chunk_id": "home-02", "anchor": "#three-webs", "title": "Un serviciu. Trei Web-uri.", "token_estimate": 130 },
+        { "chunk_id": "home-03", "anchor": "#buyer-agent-poc", "title": "Buyer Agent AiVenture ↔ Payroll Agent ECBTAX", "token_estimate": 90 },
+        { "chunk_id": "home-04", "anchor": "#pipeline", "title": "De la website la business Agent-Ready", "token_estimate": 160 },
+        { "chunk_id": "home-05", "anchor": "#diy-help-dfy", "title": "Un serviciu real. Trei căi.", "token_estimate": 100 },
+        { "chunk_id": "home-06", "anchor": "#testimoniale", "title": "Human + AI Proof", "token_estimate": 180 },
+        { "chunk_id": "home-07", "anchor": "#faq", "title": "Întrebări frecvente (10 Q&A homepage)", "token_estimate": 220 }
+      ]
+    },
+    {
+      "url": "https://aiventure.ro/faq-hub.html",
+      "chunk_strategy": "per-qa-pair",
+      "chunking_note": "deja atomic — 400 perechi Q&A, fiecare pereche = 1 chunk",
+      "token_estimate_per_chunk": "40-80",
+      "chunk_count": 400
+    },
+    {
+      "url": "https://aiventure.ro/dictionar/",
+      "chunk_strategy": "per-concept",
+      "chunking_note": "1 concept ERE = 1 chunk (entitate, atribute, relații, cardinalitate)",
+      "token_estimate_per_chunk": "60-120"
+    },
+    {
+      "url": "https://aiventure.ro/intrebari/",
+      "chunk_strategy": "per-qa-pair",
+      "token_estimate_per_chunk": "50-100"
+    }
+  ]
+}

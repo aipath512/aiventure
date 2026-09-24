@@ -91,10 +91,6 @@ Agentul descoperă, solicită și poate acționa numai în limitele autorizate.
 - https://aiventure.ro/ere-dictionary.json
 - https://aiventure.ro/cross-surface-consistency.json
 - https://aiventure.ro/ai-signals.json
-- https://aiventure.ro/semantic-keyword-clusters.json — clustere semantice explicite (termeni înrudiți, pe pagini)
-- https://aiventure.ro/concept-cluster-coverage.json — acoperirea conceptelor ERE pe pagini, cu gap-uri declarate
-- https://aiventure.ro/proprietary-stats.json — date proprii marcate explicit ca atare, cu sursă
-- https://aiventure.ro/rag-chunk-map.json — granițe de chunking declarate per pagină
 
 ## Intents
 
@@ -141,3 +137,14 @@ Do not declare OTS VERIFIED or Bitcoin block confirmation until the exact canoni
 - https://aiventure.ro/concept-cluster-coverage.json
 - https://aiventure.ro/proprietary-stats.json
 - https://aiventure.ro/rag-chunk-map.json — faq-hub.html folosește deja chunking per-pereche-Q&A; acest fișier îl declară explicit pentru toate paginile
+- https://aiventure.ro/extractable-tables.json
+- https://aiventure.ro/token-efficient-headings.json
+- https://aiventure.ro/corpus-inclusion.json
+- https://aiventure.ro/contrastive-analysis.json
+- https://aiventure.ro/ai-summary-blocks.json
+- https://aiventure.ro/inference-trigger-keywords.json
+- https://aiventure.ro/expertise-signals.json
+
+## AIO coverage note
+
+26 semnale canonice AIO. 7 acoperite deja de infrastructura existentă (indexability, digital-dna, versioning, freshness, negative scope, allow-lane-matrix, faq-hub, LLM-readable metadata). 11 acoperite explicit de fișierele de mai sus. 6 nu au corespondent fișier: 5 sunt rezultate externe (Perplexity/ChatGPT/Gemini/Claude citation & indexing, Source Citation Quality) și 1 e o măsurătoare pe conținut (Fact Density vs Fluff Ratio), nu un artefact separat.

@@ -1,0 +1,73 @@
+{
+  "schema_version": "1.0",
+  "site": "aiventure.ro",
+  "session": "0003H",
+  "generated": "2026-09-20T00:00:00+03:00",
+  "purpose": "Pentru fiecare concept canonic din ere-dictionary.json, declară explicit UNDE și CÂT DE ADÂNC e acoperit pe site — ca un LLM să știe dacă un concept e doar menționat, definit, sau exemplificat, în loc să deducă asta din frecvența cuvântului.",
+  "source_of_truth": "https://aiventure.ro/ere-dictionary.json",
+  "depth_scale": ["mentioned", "defined", "exemplified", "proven"],
+  "concepts": [
+    {
+      "concept_id": "C-01",
+      "name": "Service Offer Contract",
+      "depth": "defined+exemplified",
+      "pages": ["https://aiventure.ro/", "https://aiventure.ro/service-offer-contract.json"],
+      "gap": "none"
+    },
+    {
+      "concept_id": "C-02",
+      "name": "RRVI",
+      "depth": "defined",
+      "pages": ["https://aiventure.ro/", "https://aiventure.ro/intrebari/"],
+      "gap": "lipsește un exemplu concret de refuz de autonomie pe caz real, momentan doar regula abstractă"
+    },
+    {
+      "concept_id": "C-03",
+      "name": "Autonomie L1–L5",
+      "depth": "defined",
+      "pages": ["https://aiventure.ro/intrebari/"],
+      "gap": "L1-L5 explicate doar în FAQ, nu apar ca pagină/schema dedicată — risc de subreprezentare vectorială"
+    },
+    {
+      "concept_id": "C-04",
+      "name": "Evidence",
+      "depth": "defined+proven",
+      "pages": ["https://aiventure.ro/evidence.json", "https://aiventure.ro/proof.json"],
+      "gap": "none"
+    },
+    {
+      "concept_id": "C-05",
+      "name": "Buyer Agent / Seller Agent",
+      "depth": "exemplified",
+      "pages": ["https://aiventure.ro/buyer-agent/", "https://aiventure.ro/"],
+      "gap": "none — POC live pe homepage cu ECBTAX ca Seller Agent"
+    },
+    {
+      "concept_id": "C-06",
+      "name": "Human Web / Web-AI / A2A Web",
+      "depth": "defined+exemplified",
+      "pages": ["https://aiventure.ro/", "https://aiventure.ro/a2a-secrets/01/"],
+      "gap": "none"
+    },
+    {
+      "concept_id": "C-07",
+      "name": "Agent Card",
+      "depth": "mentioned",
+      "pages": ["https://aiventure.ro/llms.txt"],
+      "gap": "conceptul apare doar ca link către /agent-card.json, fără nicio explicație în conținutul uman — cel mai slab acoperit concept de pe site"
+    },
+    {
+      "concept_id": "C-08",
+      "name": "ADI Maturity (L0-L5, 50 semnale)",
+      "depth": "mentioned",
+      "pages": [],
+      "gap": "nu apare deloc pe aiventure.ro — există doar în specificația internă, nu e publicat public pe acest domeniu"
+    }
+  ],
+  "coverage_summary": {
+    "total_concepts_tracked": 8,
+    "fully_covered": 4,
+    "partially_covered": 3,
+    "not_covered_on_this_domain": 1
+  }
+}

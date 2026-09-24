@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "site": "aiventure.ro",
+  "session": "0003H",
+  "generated": "2026-09-20T00:00:00+03:00",
+  "purpose": "Declară explicit care liste/tabele de pe site sunt structuri stabile de extras (nu proză continuă), ca un LLM să le poată prelua ca date, nu doar text.",
+  "extractable_blocks": [
+    {
+      "id": "EXT-01",
+      "url": "https://aiventure.ro/",
+      "anchor": "#three-webs",
+      "type": "ordered_list",
+      "items_count": 3,
+      "structure": "Human Web / Web-AI / A2A Web, fiecare cu verb-acțiune pereche"
+    },
+    {
+      "id": "EXT-02",
+      "url": "https://aiventure.ro/",
+      "anchor": "#pipeline",
+      "type": "ordered_list",
+      "items_count": 7,
+      "structure": "AI-LENS → 3WEBOBS → AI EDGE → SOC → RRVI → AGENT READY → A2A, fiecare cu etapă + acțiune"
+    },
+    {
+      "id": "EXT-03",
+      "url": "https://aiventure.ro/intrebari/",
+      "anchor": "#l1-l5",
+      "type": "ordered_list",
+      "items_count": 5,
+      "structure": "L1 Discover / L2 Compare / L3 Request / L4 Quote / L5 Order"
+    },
+    {
+      "id": "EXT-04",
+      "url": "https://aiventure.ro/",
+      "anchor": "#faq",
+      "type": "qa_pairs",
+      "items_count": 10,
+      "structure": "întrebare + răspuns direct, fără preambul"
+    }
+  ]
+}
