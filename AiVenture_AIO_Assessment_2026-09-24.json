@@ -1,0 +1,194 @@
+{
+  "artifact_type": "AIO Assessment",
+  "subject": {
+    "name": "AiVenture",
+    "domain": "https://aiventure.ro/"
+  },
+  "assessor": {
+    "system": "ChatGPT",
+    "model": "GPT-5.6 Sol",
+    "statement": "Calculated by GPT-5.6 Sol in this ChatGPT session; not an OpenAI certification or independent OpenAI audit."
+  },
+  "timestamp": "2026-09-24T18:06:44+03:00",
+  "method": {
+    "framework": "26-signal AIO framework supplied by AiVenture",
+    "weights": {
+      "PASS": 1.0,
+      "PARTIAL": 0.5,
+      "FAIL": 0.0
+    },
+    "formula": "sum(signal weights) / 26 * 100",
+    "limitations": [
+      "The framework and signal definitions were supplied by AiVenture; they are not represented here as an OpenAI standard.",
+      "External engine results for Perplexity, Gemini, and Claude were supplied in this conversation and evaluated as evidence of those test runs.",
+      "PASS for implementation signals reflects the implementation/evidence reviewed in this session; it is not a security, legal, financial, or standards certification.",
+      "Fact Density vs Fluff Ratio was assessed qualitatively because no canonical numeric threshold was supplied."
+    ]
+  },
+  "result": {
+    "pass": 25,
+    "partial": 1,
+    "fail": 0,
+    "weighted_points": 25.5,
+    "maximum_points": 26,
+    "score_percent": 98.08
+  },
+  "signals": [
+    {
+      "id": 1,
+      "name": "Perplexity Source Citation",
+      "status": "PASS",
+      "basis": "External test: Perplexity found and cited aiventure.ro."
+    },
+    {
+      "id": 2,
+      "name": "ChatGPT Browse Visibility",
+      "status": "PASS",
+      "basis": "External test: ChatGPT found aiventure.ro via web search and used it as a primary source."
+    },
+    {
+      "id": 3,
+      "name": "Gemini Grounding Eligibility",
+      "status": "PASS",
+      "basis": "External test supplied by user: Gemini reported finding and using aiventure.ro through Google Search / grounding."
+    },
+    {
+      "id": 4,
+      "name": "Claude Source Indexing",
+      "status": "PASS",
+      "basis": "External test supplied by user: Claude found aiventure.ro via web search and fetched multiple pages/resources."
+    },
+    {
+      "id": 5,
+      "name": "Source Citation Quality",
+      "status": "PARTIAL",
+      "basis": "Cross-engine citation/reconstruction quality was not fully consistent; Gemini showed semantic drift for RRVI."
+    },
+    {
+      "id": 6,
+      "name": "Table / List Extractability",
+      "status": "PASS",
+      "basis": "Covered by AIO implementation artifact extractable-tables.json."
+    },
+    {
+      "id": 7,
+      "name": "Content Indexability by LLMs",
+      "status": "PASS",
+      "basis": "Covered by existing crawl/indexability infrastructure."
+    },
+    {
+      "id": 8,
+      "name": "Internal Link Semantic Map",
+      "status": "PASS",
+      "basis": "Covered by existing Digital DNA / semantic relationship infrastructure."
+    },
+    {
+      "id": 9,
+      "name": "Chronological Versioning",
+      "status": "PASS",
+      "basis": "Covered by existing version/session metadata."
+    },
+    {
+      "id": 10,
+      "name": "Token-Efficient Headings",
+      "status": "PASS",
+      "basis": "Covered by token-efficient-headings.json."
+    },
+    {
+      "id": 11,
+      "name": "Content Freshness Signal",
+      "status": "PASS",
+      "basis": "Covered by existing generated/version/freshness metadata."
+    },
+    {
+      "id": 12,
+      "name": "Corpus Inclusion Signal",
+      "status": "PASS",
+      "basis": "Covered by corpus-inclusion.json and crawl-access declarations."
+    },
+    {
+      "id": 13,
+      "name": "Contrastive Analysis Presence",
+      "status": "PASS",
+      "basis": "Covered by contrastive-analysis.json."
+    },
+    {
+      "id": 14,
+      "name": "Dense Paragraph Summaries",
+      "status": "PASS",
+      "basis": "Covered by ai-summary-blocks.json."
+    },
+    {
+      "id": 15,
+      "name": "AI Summary Block",
+      "status": "PASS",
+      "basis": "Covered by ai-summary-blocks.json."
+    },
+    {
+      "id": 16,
+      "name": "Contradiction Avoidance",
+      "status": "PASS",
+      "basis": "Covered by canonical negative-scope/governance rules."
+    },
+    {
+      "id": 17,
+      "name": "Allow-Lane Matrix",
+      "status": "PASS",
+      "basis": "Covered by allow-lane-matrix.json."
+    },
+    {
+      "id": 18,
+      "name": "Semantic Keyword Clusters",
+      "status": "PASS",
+      "basis": "Covered by semantic-keyword-clusters.json."
+    },
+    {
+      "id": 19,
+      "name": "Fact Density vs Fluff Ratio",
+      "status": "PASS",
+      "basis": "Model assessment: principal public content is predominantly factual/operational; no canonical numeric threshold was supplied."
+    },
+    {
+      "id": 20,
+      "name": "Long-Form Completeness",
+      "status": "PASS",
+      "basis": "Covered by FAQ Hub / long-form structured content."
+    },
+    {
+      "id": 21,
+      "name": "Concept Cluster Coverage",
+      "status": "PASS",
+      "basis": "Covered by concept-cluster-coverage.json."
+    },
+    {
+      "id": 22,
+      "name": "Inference Trigger Keywords",
+      "status": "PASS",
+      "basis": "Covered by inference-trigger-keywords.json."
+    },
+    {
+      "id": 23,
+      "name": "LLM-Readable Metadata",
+      "status": "PASS",
+      "basis": "Covered by metadata / JSON-LD / machine-readable resources."
+    },
+    {
+      "id": 24,
+      "name": "Unique Data / Proprietary Stats",
+      "status": "PASS",
+      "basis": "Covered by proprietary-stats.json."
+    },
+    {
+      "id": 25,
+      "name": "RAG-Ready Content Format",
+      "status": "PASS",
+      "basis": "Covered by rag-chunk-map.json and structured Q&A/chunking."
+    },
+    {
+      "id": 26,
+      "name": "Expertise Signals in Content",
+      "status": "PASS",
+      "basis": "Covered by expertise-signals.json."
+    }
+  ]
+}
