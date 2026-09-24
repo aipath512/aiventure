@@ -1,0 +1,950 @@
+{
+  "schema": "AIVENTURE_VISION_PAGE_INTENTS",
+  "version": "1.0",
+  "language": "ro",
+  "page_url": "https://aiventure.ro/viziune/",
+  "source": "/viziune/#faq-viziune",
+  "intent_count": 50,
+  "faq_pair_count": 50,
+  "scope": "Intențiile acestei pagini; /intents.json rămâne registrul general al site-ului.",
+  "families": [
+    {
+      "name": "Viziunea și cele trei căi",
+      "range": [
+        1,
+        10
+      ]
+    },
+    {
+      "name": "Controlul firmei",
+      "range": [
+        11,
+        15
+      ]
+    },
+    {
+      "name": "Verificarea pregătirii",
+      "range": [
+        16,
+        22
+      ]
+    },
+    {
+      "name": "Pregătirea serviciului",
+      "range": [
+        23,
+        31
+      ]
+    },
+    {
+      "name": "Produse, dovezi și încredere",
+      "range": [
+        32,
+        39
+      ]
+    },
+    {
+      "name": "Cereri și fluxuri A2A",
+      "range": [
+        40,
+        50
+      ]
+    }
+  ],
+  "intents": [
+    {
+      "id": "understand-aiventure-vision",
+      "position": 1,
+      "family": "Viziunea și cele trei căi",
+      "stage": "TOF",
+      "intent_type": "Informare",
+      "actor": [
+        "human",
+        "ai_system",
+        "buyer_agent"
+      ],
+      "user_goal": "Să înțeleagă viziunea AiVenture despre Human Web, Web-AI și A2A Web",
+      "question": "Care este viziunea AiVenture?",
+      "answer": "Același serviciu B2B trebuie să poată fi accesat de oameni, înțeles de sisteme AI și solicitat de agenți AI, în condițiile validate de firmă.",
+      "canonical_url": "https://aiventure.ro/viziune/",
+      "faq_url": "https://aiventure.ro/viziune/#faq-understand-aiventure-vision",
+      "response_policy": "Informare, fără preț sau angajament inventat; orice ofertă necesită reguli validate și aprobarea aplicabilă."
+    },
+    {
+      "id": "understand-three-access-paths",
+      "position": 2,
+      "family": "Viziunea și cele trei căi",
+      "stage": "TOF",
+      "intent_type": "Informare",
+      "actor": [
+        "human",
+        "ai_system",
+        "buyer_agent"
+      ],
+      "user_goal": "Să afle de ce aceeași ofertă trebuie accesibilă oamenilor, AI-urilor și agenților",
+      "question": "De ce are aceeași ofertă trei căi de acces?",
+      "answer": "Clientul poate ajunge la serviciu direct pe web, prin recomandarea unui sistem AI sau printr-o cerere între agenți. Oferta și controlul firmei rămân aceleași.",
+      "canonical_url": "https://aiventure.ro/viziune/",
+      "faq_url": "https://aiventure.ro/viziune/#faq-understand-three-access-paths",
+      "response_policy": "Informare, fără preț sau angajament inventat; orice ofertă necesită reguli validate și aprobarea aplicabilă."
+    },
+    {
+      "id": "understand-human-web",
+      "position": 3,
+      "family": "Viziunea și cele trei căi",
+      "stage": "TOF",
+      "intent_type": "Informare",
+      "actor": [
+        "human",
+        "ai_system",
+        "buyer_agent"
+      ],
+      "user_goal": "Să înțeleagă ce înseamnă Human Web pentru un serviciu B2B",
+      "question": "Ce este Human Web pentru un serviciu B2B?",
+      "answer": "Este calea pe care un om descoperă informația, compară serviciile și contactează direct firma pe web.",
+      "canonical_url": "https://aiventure.ro/viziune/",
+      "faq_url": "https://aiventure.ro/viziune/#faq-understand-human-web",
+      "response_policy": "Informare, fără preț sau angajament inventat; orice ofertă necesită reguli validate și aprobarea aplicabilă."
+    },
+    {
+      "id": "understand-web-ai",
+      "position": 4,
+      "family": "Viziunea și cele trei căi",
+      "stage": "TOF",
+      "intent_type": "Informare",
+      "actor": [
+        "human",
+        "ai_system",
+        "buyer_agent"
+      ],
+      "user_goal": "Să înțeleagă cum găsește și explică un AI un serviciu",
+      "question": "Ce înseamnă Web-AI în această viziune?",
+      "answer": "Un sistem AI poate găsi, explica sau compara informațiile publicate despre serviciu pentru a răspunde unei persoane. Acest pas nu este o comandă A2A.",
+      "canonical_url": "https://aiventure.ro/viziune/",
+      "faq_url": "https://aiventure.ro/viziune/#faq-understand-web-ai",
+      "response_policy": "Informare, fără preț sau angajament inventat; orice ofertă necesită reguli validate și aprobarea aplicabilă."
+    },
+    {
+      "id": "understand-a2a-web",
+      "position": 5,
+      "family": "Viziunea și cele trei căi",
+      "stage": "TOF",
+      "intent_type": "Informare",
+      "actor": [
+        "human",
+        "ai_system",
+        "buyer_agent"
+      ],
+      "user_goal": "Să înțeleagă ce este A2A Web și ce rol are pentru firme",
+      "question": "Ce este A2A Web?",
+      "answer": "Este calea în care agenții AI pot comunica structurat pentru descoperire, clarificare sau solicitare, conform permisiunilor oferite de fiecare firmă.",
+      "canonical_url": "https://aiventure.ro/viziune/",
+      "faq_url": "https://aiventure.ro/viziune/#faq-understand-a2a-web",
+      "response_policy": "Informare, fără preț sau angajament inventat; orice ofertă necesită reguli validate și aprobarea aplicabilă."
+    },
+    {
+      "id": "understand-agent-ready-service",
+      "position": 6,
+      "family": "Viziunea și cele trei căi",
+      "stage": "TOF",
+      "intent_type": "Informare",
+      "actor": [
+        "human",
+        "ai_system",
+        "buyer_agent"
+      ],
+      "user_goal": "Să înțeleagă ce înseamnă un serviciu B2B Agent-Ready",
+      "question": "Ce înseamnă un serviciu Agent-Ready?",
+      "answer": "Este un serviciu existent descris prin ofertă, condiții, limite și pași de aprobare suficient de clari pentru a putea fi înțeles și solicitat de un agent.",
+      "canonical_url": "https://aiventure.ro/viziune/",
+      "faq_url": "https://aiventure.ro/viziune/#faq-understand-agent-ready-service",
+      "response_policy": "Informare, fără preț sau angajament inventat; orice ofertă necesită reguli validate și aprobarea aplicabilă."
+    },
+    {
+      "id": "understand-agent-discovery",
+      "position": 7,
+      "family": "Viziunea și cele trei căi",
+      "stage": "TOF",
+      "intent_type": "Informare",
+      "actor": [
+        "human",
+        "ai_system",
+        "buyer_agent"
+      ],
+      "user_goal": "Să afle cum poate fi descoperit un serviciu de un agent AI",
+      "question": "Cum poate un agent AI să descopere un serviciu?",
+      "answer": "Prin informații accesibile și structurate, prin descrierea capabilităților și prin integrarea cu o sursă pe care agentul o poate consulta. Publicarea nu garantează descoperirea universală.",
+      "canonical_url": "https://aiventure.ro/viziune/",
+      "faq_url": "https://aiventure.ro/viziune/#faq-understand-agent-discovery",
+      "response_policy": "Informare, fără preț sau angajament inventat; orice ofertă necesită reguli validate și aprobarea aplicabilă."
+    },
+    {
+      "id": "understand-agent-service-request",
+      "position": 8,
+      "family": "Viziunea și cele trei căi",
+      "stage": "TOF",
+      "intent_type": "Informare",
+      "actor": [
+        "human",
+        "ai_system",
+        "buyer_agent"
+      ],
+      "user_goal": "Să afle cum poate un agent să solicite un serviciu firmei",
+      "question": "Cum poate un agent să solicite un serviciu?",
+      "answer": "Trimite o cerere cu datele necesare printr-un canal acceptat de furnizor. Firma poate cere clarificări și decide dacă răspunde sau emite o ofertă.",
+      "canonical_url": "https://aiventure.ro/viziune/",
+      "faq_url": "https://aiventure.ro/viziune/#faq-understand-agent-service-request",
+      "response_policy": "Informare, fără preț sau angajament inventat; orice ofertă necesită reguli validate și aprobarea aplicabilă."
+    },
+    {
+      "id": "understand-agent-to-agent-communication",
+      "position": 9,
+      "family": "Viziunea și cele trei căi",
+      "stage": "TOF",
+      "intent_type": "Informare",
+      "actor": [
+        "human",
+        "ai_system",
+        "buyer_agent"
+      ],
+      "user_goal": "Să înțeleagă comunicația agent-la-agent în context comercial",
+      "question": "Ce comunică doi agenți într-un flux comercial A2A?",
+      "answer": "Pot transmite o cerere, întrebări de clarificare, răspunsuri și o ofertă, în limitele stabilite pentru serviciu și cu aprobarea umană cerută.",
+      "canonical_url": "https://aiventure.ro/viziune/",
+      "faq_url": "https://aiventure.ro/viziune/#faq-understand-agent-to-agent-communication",
+      "response_policy": "Informare, fără preț sau angajament inventat; orice ofertă necesită reguli validate și aprobarea aplicabilă."
+    },
+    {
+      "id": "understand-a2a-protocol",
+      "position": 10,
+      "family": "Viziunea și cele trei căi",
+      "stage": "TOF",
+      "intent_type": "Educațional",
+      "actor": [
+        "human",
+        "ai_system",
+        "buyer_agent"
+      ],
+      "user_goal": "Să înțeleagă protocolul Agent2Agent și relevanța lui",
+      "question": "Ce rol are protocolul Agent2Agent?",
+      "answer": "A2A descrie un mod de comunicare între agenți și de prezentare a capabilităților. Protocolul singur nu creează o piață universală și nu autorizează o vânzare.",
+      "canonical_url": "https://aiventure.ro/viziune/",
+      "faq_url": "https://aiventure.ro/viziune/#faq-understand-a2a-protocol",
+      "response_policy": "Informare, fără preț sau angajament inventat; orice ofertă necesită reguli validate și aprobarea aplicabilă."
+    },
+    {
+      "id": "why-prepare-for-ai-agents",
+      "position": 11,
+      "family": "Controlul firmei",
+      "stage": "TOF",
+      "intent_type": "Considerare",
+      "actor": [
+        "human",
+        "ai_system",
+        "buyer_agent"
+      ],
+      "user_goal": "Să afle de ce ar pregăti firma pentru agenți AI înainte ca piața să o impună",
+      "question": "De ce să pregătesc acum un serviciu pentru agenți AI?",
+      "answer": "Pregătirea poate clarifica oferta și fluxul de cereri și poate permite un pilot limitat. Decizia de investiție trebuie legată de o nevoie actuală și de un rezultat măsurabil.",
+      "canonical_url": "https://aiventure.ro/viziune/",
+      "faq_url": "https://aiventure.ro/viziune/#faq-why-prepare-for-ai-agents",
+      "response_policy": "Informare, fără preț sau angajament inventat; orice ofertă necesită reguli validate și aprobarea aplicabilă."
+    },
+    {
+      "id": "why-service-control-matters",
+      "position": 12,
+      "family": "Controlul firmei",
+      "stage": "TOF",
+      "intent_type": "Considerare",
+      "actor": [
+        "human",
+        "ai_system",
+        "buyer_agent"
+      ],
+      "user_goal": "Să afle de ce firma trebuie să păstreze controlul asupra ofertei",
+      "question": "De ce trebuie firma să controleze oferta?",
+      "answer": "Firma răspunde pentru serviciu, preț, limite și livrare. De aceea validează informațiile comerciale înainte ca agentul să le folosească.",
+      "canonical_url": "https://aiventure.ro/viziune/",
+      "faq_url": "https://aiventure.ro/viziune/#faq-why-service-control-matters",
+      "response_policy": "Informare, fără preț sau angajament inventat; orice ofertă necesită reguli validate și aprobarea aplicabilă."
+    },
+    {
+      "id": "why-not-let-agent-invent-offer",
+      "position": 13,
+      "family": "Controlul firmei",
+      "stage": "TOF",
+      "intent_type": "Risc / guvernanță",
+      "actor": [
+        "human",
+        "ai_system",
+        "buyer_agent"
+      ],
+      "user_goal": "Să înțeleagă riscul unei oferte inventate dinamic de un agent",
+      "question": "Poate agentul să inventeze o ofertă în timpul tranzacției?",
+      "answer": "Nu. Agentul trebuie să folosească numai oferta validată de un om; dacă lipsesc prețul, condițiile sau aprobarea, cere clarificare sau oprește fluxul.",
+      "canonical_url": "https://aiventure.ro/viziune/",
+      "faq_url": "https://aiventure.ro/viziune/#faq-why-not-let-agent-invent-offer",
+      "response_policy": "Informare, fără preț sau angajament inventat; orice ofertă necesită reguli validate și aprobarea aplicabilă."
+    },
+    {
+      "id": "understand-authorized-service-boundaries",
+      "position": 14,
+      "family": "Controlul firmei",
+      "stage": "TOF",
+      "intent_type": "Guvernanță",
+      "actor": [
+        "human",
+        "ai_system",
+        "buyer_agent"
+      ],
+      "user_goal": "Să afle cum sunt delimitate serviciul, prețul, excluderile și aprobările",
+      "question": "Cum sunt stabilite limitele unui serviciu solicitat de AI?",
+      "answer": "Firma definește ce vinde, prețul aplicabil, jurisdicția, excluderile, datele cerute și cine aprobă. Reguli absente sau nevalidate nu devin automat promisiuni comerciale.",
+      "canonical_url": "https://aiventure.ro/viziune/",
+      "faq_url": "https://aiventure.ro/viziune/#faq-understand-authorized-service-boundaries",
+      "response_policy": "Informare, fără preț sau angajament inventat; orice ofertă necesită reguli validate și aprobarea aplicabilă."
+    },
+    {
+      "id": "understand-human-control-in-agentic-sales",
+      "position": 15,
+      "family": "Controlul firmei",
+      "stage": "TOF",
+      "intent_type": "Guvernanță",
+      "actor": [
+        "human",
+        "ai_system",
+        "buyer_agent"
+      ],
+      "user_goal": "Să înțeleagă unde rămâne aprobarea umană într-un flux agentic",
+      "question": "Unde intervine aprobarea umană?",
+      "answer": "În punctele definite de firmă, în special înainte de acceptarea unei oferte ori de o comandă care depășește mandatul agentului.",
+      "canonical_url": "https://aiventure.ro/viziune/",
+      "faq_url": "https://aiventure.ro/viziune/#faq-understand-human-control-in-agentic-sales",
+      "response_policy": "Informare, fără preț sau angajament inventat; orice ofertă necesită reguli validate și aprobarea aplicabilă."
+    },
+    {
+      "id": "assess-agent-readiness",
+      "position": 16,
+      "family": "Verificarea pregătirii",
+      "stage": "MOF",
+      "intent_type": "Diagnostic",
+      "actor": [
+        "human",
+        "ai_system",
+        "buyer_agent"
+      ],
+      "user_goal": "Să evalueze dacă serviciul actual este pregătit pentru agenți AI",
+      "question": "Cum verific dacă serviciul meu este pregătit pentru agenți?",
+      "answer": "Alege un serviciu real și verifică descrierea, eligibilitatea, limitele, prețul sau regula de ofertare, permisiunile și aprobările. Lacunele devin un plan de remediere.",
+      "canonical_url": "https://aiventure.ro/viziune/",
+      "faq_url": "https://aiventure.ro/viziune/#faq-assess-agent-readiness",
+      "response_policy": "Informare, fără preț sau angajament inventat; orice ofertă necesită reguli validate și aprobarea aplicabilă."
+    },
+    {
+      "id": "assess-website-ai-readiness",
+      "position": 17,
+      "family": "Verificarea pregătirii",
+      "stage": "MOF",
+      "intent_type": "Audit",
+      "actor": [
+        "human",
+        "ai_system",
+        "buyer_agent"
+      ],
+      "user_goal": "Să afle dacă site-ul este inteligibil și utilizabil de sisteme AI",
+      "question": "Cum verific dacă website-ul meu este pregătit pentru AI?",
+      "answer": "Verifică dacă paginile importante sunt accesibile, descriu clar serviciile și oferă date verificabile și legături coerente. Un audit trebuie să arate sursa fiecărui rezultat.",
+      "canonical_url": "https://aiventure.ro/viziune/",
+      "faq_url": "https://aiventure.ro/viziune/#faq-assess-website-ai-readiness",
+      "response_policy": "Informare, fără preț sau angajament inventat; orice ofertă necesită reguli validate și aprobarea aplicabilă."
+    },
+    {
+      "id": "assess-service-discoverability",
+      "position": 18,
+      "family": "Verificarea pregătirii",
+      "stage": "MOF",
+      "intent_type": "Diagnostic",
+      "actor": [
+        "human",
+        "ai_system",
+        "buyer_agent"
+      ],
+      "user_goal": "Să verifice dacă un serviciu poate fi găsit de motoare AI și agenți",
+      "question": "Cum verific dacă agenții pot găsi serviciul?",
+      "answer": "Testează sursele și mecanismele concrete de descoperire folosite de agentul ales; păstrează cererea de test, răspunsul și limita testului.",
+      "canonical_url": "https://aiventure.ro/viziune/",
+      "faq_url": "https://aiventure.ro/viziune/#faq-assess-service-discoverability",
+      "response_policy": "Informare, fără preț sau angajament inventat; orice ofertă necesită reguli validate și aprobarea aplicabilă."
+    },
+    {
+      "id": "assess-service-understandability",
+      "position": 19,
+      "family": "Verificarea pregătirii",
+      "stage": "MOF",
+      "intent_type": "Diagnostic",
+      "actor": [
+        "human",
+        "ai_system",
+        "buyer_agent"
+      ],
+      "user_goal": "Să verifice dacă un AI poate înțelege corect oferta",
+      "question": "Cum verific dacă AI înțelege corect oferta?",
+      "answer": "Compară răspunsul generat despre serviciu cu oferta validată: ce include, ce exclude, cui se adresează și cine aprobă. Notează fiecare abatere.",
+      "canonical_url": "https://aiventure.ro/viziune/",
+      "faq_url": "https://aiventure.ro/viziune/#faq-assess-service-understandability",
+      "response_policy": "Informare, fără preț sau angajament inventat; orice ofertă necesită reguli validate și aprobarea aplicabilă."
+    },
+    {
+      "id": "assess-service-verifiability",
+      "position": 20,
+      "family": "Verificarea pregătirii",
+      "stage": "MOF",
+      "intent_type": "Diagnostic",
+      "actor": [
+        "human",
+        "ai_system",
+        "buyer_agent"
+      ],
+      "user_goal": "Să verifice dacă afirmațiile și controalele pot fi validate de la distanță",
+      "question": "Cum verific dacă un control sau o afirmație este verificabilă la distanță?",
+      "answer": "Identifică cerința, versiunea regulii, sursa dovezii și metoda de verificare. Dacă lipsește unul dintre acestea, marchează rezultatul ca neconfirmat.",
+      "canonical_url": "https://aiventure.ro/viziune/",
+      "faq_url": "https://aiventure.ro/viziune/#faq-assess-service-verifiability",
+      "response_policy": "Informare, fără preț sau angajament inventat; orice ofertă necesită reguli validate și aprobarea aplicabilă."
+    },
+    {
+      "id": "assess-service-recommendability",
+      "position": 21,
+      "family": "Verificarea pregătirii",
+      "stage": "MOF",
+      "intent_type": "Diagnostic",
+      "actor": [
+        "human",
+        "ai_system",
+        "buyer_agent"
+      ],
+      "user_goal": "Să afle dacă AI-ul are suficiente semnale pentru a recomanda firma",
+      "question": "Pot ști dacă un sistem AI îmi va recomanda firma?",
+      "answer": "Nu există garanție de recomandare. Poți testa dacă informațiile corecte sunt accesibile și poți măsura prezența sau absența firmei în scenarii și instrumente precizate.",
+      "canonical_url": "https://aiventure.ro/viziune/",
+      "faq_url": "https://aiventure.ro/viziune/#faq-assess-service-recommendability",
+      "response_policy": "Informare, fără preț sau angajament inventat; orice ofertă necesită reguli validate și aprobarea aplicabilă."
+    },
+    {
+      "id": "identify-missing-ai-signals",
+      "position": 22,
+      "family": "Verificarea pregătirii",
+      "stage": "MOF",
+      "intent_type": "Diagnostic",
+      "actor": [
+        "human",
+        "ai_system",
+        "buyer_agent"
+      ],
+      "user_goal": "Să identifice semnalele lipsă pentru discovery, înțelegere sau decizie",
+      "question": "Cum identific semnalele AI care lipsesc?",
+      "answer": "Pornește de la serviciul vândut și de la întrebările cumpărătorului; verifică pagina, structura datelor, identitatea firmei, dovezile și traseul cererii.",
+      "canonical_url": "https://aiventure.ro/viziune/",
+      "faq_url": "https://aiventure.ro/viziune/#faq-identify-missing-ai-signals",
+      "response_policy": "Informare, fără preț sau angajament inventat; orice ofertă necesită reguli validate și aprobarea aplicabilă."
+    },
+    {
+      "id": "make-service-machine-readable",
+      "position": 23,
+      "family": "Pregătirea serviciului",
+      "stage": "MOF",
+      "intent_type": "Implementare",
+      "actor": [
+        "human",
+        "ai_system",
+        "buyer_agent"
+      ],
+      "user_goal": "Să transforme oferta curentă în informație structurată și lizibilă de mașină",
+      "question": "Cum devine oferta lizibilă de mașină?",
+      "answer": "Firma descrie serviciul, condițiile și capabilitățile în câmpuri structurate, legate de pagini publice și de o versiune aprobată a ofertei.",
+      "canonical_url": "https://aiventure.ro/viziune/",
+      "faq_url": "https://aiventure.ro/viziune/#faq-make-service-machine-readable",
+      "response_policy": "Informare, fără preț sau angajament inventat; orice ofertă necesită reguli validate și aprobarea aplicabilă."
+    },
+    {
+      "id": "structure-b2b-service-offer",
+      "position": 24,
+      "family": "Pregătirea serviciului",
+      "stage": "MOF",
+      "intent_type": "Implementare",
+      "actor": [
+        "human",
+        "ai_system",
+        "buyer_agent"
+      ],
+      "user_goal": "Să structureze un serviciu B2B: scop, livrabile, preț, limite, eligibilitate",
+      "question": "Ce elemente trebuie să conțină oferta unui serviciu B2B?",
+      "answer": "Include furnizorul, scopul, livrabilele, eligibilitatea, limitele, excluderile, condițiile de preț, termenele și pașii de aprobare, acolo unde se aplică.",
+      "canonical_url": "https://aiventure.ro/viziune/",
+      "faq_url": "https://aiventure.ro/viziune/#faq-structure-b2b-service-offer",
+      "response_policy": "Informare, fără preț sau angajament inventat; orice ofertă necesită reguli validate și aprobarea aplicabilă."
+    },
+    {
+      "id": "publish-service-contract",
+      "position": 25,
+      "family": "Pregătirea serviciului",
+      "stage": "MOF",
+      "intent_type": "Implementare",
+      "actor": [
+        "human",
+        "ai_system",
+        "buyer_agent"
+      ],
+      "user_goal": "Să publice un contract de ofertă-serviciu pe care agentul să nu îl poată interpreta liber",
+      "question": "Când se publică un Service Offer Contract?",
+      "answer": "După ce firma validează conținutul și versiunea. Un document marcat DRAFT sau VALIDATION_REQUIRED nu trebuie prezentat ca ofertă finală ori executat de agent.",
+      "canonical_url": "https://aiventure.ro/viziune/",
+      "faq_url": "https://aiventure.ro/viziune/#faq-publish-service-contract",
+      "response_policy": "Informare, fără preț sau angajament inventat; orice ofertă necesită reguli validate și aprobarea aplicabilă."
+    },
+    {
+      "id": "define-agent-permissions",
+      "position": 26,
+      "family": "Pregătirea serviciului",
+      "stage": "MOF",
+      "intent_type": "Implementare / guvernanță",
+      "actor": [
+        "human",
+        "ai_system",
+        "buyer_agent"
+      ],
+      "user_goal": "Să stabilească ce poate și ce nu poate face agentul firmei",
+      "question": "Cum stabilesc ce are voie să facă agentul firmei?",
+      "answer": "Definește explicit acțiunile permise și interzise, datele accesibile și cazurile care cer intervenția unei persoane. Testează regulile înainte de utilizare.",
+      "canonical_url": "https://aiventure.ro/viziune/",
+      "faq_url": "https://aiventure.ro/viziune/#faq-define-agent-permissions",
+      "response_policy": "Informare, fără preț sau angajament inventat; orice ofertă necesită reguli validate și aprobarea aplicabilă."
+    },
+    {
+      "id": "define-agent-approval-rules",
+      "position": 27,
+      "family": "Pregătirea serviciului",
+      "stage": "MOF",
+      "intent_type": "Implementare / guvernanță",
+      "actor": [
+        "human",
+        "ai_system",
+        "buyer_agent"
+      ],
+      "user_goal": "Să stabilească ce solicitări pot fi răspunse automat și ce necesită aprobare",
+      "question": "Ce reguli de aprobare trebuie stabilite pentru agent?",
+      "answer": "Precizează pentru fiecare pas cine poate aproba, ce praguri se aplică, când se escaladează și cum rămâne înregistrată decizia.",
+      "canonical_url": "https://aiventure.ro/viziune/",
+      "faq_url": "https://aiventure.ro/viziune/#faq-define-agent-approval-rules",
+      "response_policy": "Informare, fără preț sau angajament inventat; orice ofertă necesită reguli validate și aprobarea aplicabilă."
+    },
+    {
+      "id": "define-price-and-scope-rules",
+      "position": 28,
+      "family": "Pregătirea serviciului",
+      "stage": "MOF",
+      "intent_type": "Implementare",
+      "actor": [
+        "human",
+        "ai_system",
+        "buyer_agent"
+      ],
+      "user_goal": "Să fixeze reguli verificabile pentru preț, volum, termen și excluderi",
+      "question": "Cum fixez prețul și limitele serviciului?",
+      "answer": "Firma validează regula de preț și condițiile de volum, termen, jurisdicție și excludere. Dacă datele necesare lipsesc, agentul cere clarificări; nu calculează un preț inventat.",
+      "canonical_url": "https://aiventure.ro/viziune/",
+      "faq_url": "https://aiventure.ro/viziune/#faq-define-price-and-scope-rules",
+      "response_policy": "Informare, fără preț sau angajament inventat; orice ofertă necesită reguli validate și aprobarea aplicabilă."
+    },
+    {
+      "id": "add-a2a-door-to-business",
+      "position": 29,
+      "family": "Pregătirea serviciului",
+      "stage": "MOF",
+      "intent_type": "Implementare",
+      "actor": [
+        "human",
+        "ai_system",
+        "buyer_agent"
+      ],
+      "user_goal": "Să adauge o „ușă A2A” fără să înlocuiască website-ul existent",
+      "question": "Cum adaug o ușă A2A fără să înlocuiesc website-ul?",
+      "answer": "Păstrezi serviciul și paginile actuale, apoi adaugi un canal controlat pentru descoperire și cereri între agenți, după integrarea și testarea necesare.",
+      "canonical_url": "https://aiventure.ro/viziune/",
+      "faq_url": "https://aiventure.ro/viziune/#faq-add-a2a-door-to-business",
+      "response_policy": "Informare, fără preț sau angajament inventat; orice ofertă necesită reguli validate și aprobarea aplicabilă."
+    },
+    {
+      "id": "retain-existing-website",
+      "position": 30,
+      "family": "Pregătirea serviciului",
+      "stage": "MOF",
+      "intent_type": "Obiecție / implementare",
+      "actor": [
+        "human",
+        "ai_system",
+        "buyer_agent"
+      ],
+      "user_goal": "Să pregătească firma pentru AI fără redesign complet sau schimbarea modelului comercial",
+      "question": "Trebuie să refac website-ul pentru a începe?",
+      "answer": "Nu neapărat. O integrare poate folosi website-ul existent, dar soluția exactă depinde de structura lui și de canalul prin care vor veni cererile.",
+      "canonical_url": "https://aiventure.ro/viziune/",
+      "faq_url": "https://aiventure.ro/viziune/#faq-retain-existing-website",
+      "response_policy": "Informare, fără preț sau angajament inventat; orice ofertă necesită reguli validate și aprobarea aplicabilă."
+    },
+    {
+      "id": "retain-control-of-existing-offer",
+      "position": 31,
+      "family": "Pregătirea serviciului",
+      "stage": "MOF",
+      "intent_type": "Obiecție / implementare",
+      "actor": [
+        "human",
+        "ai_system",
+        "buyer_agent"
+      ],
+      "user_goal": "Să păstreze serviciul și oferta actuală, dar să permită solicitări agentice",
+      "question": "Rămâne oferta actuală sub controlul meu?",
+      "answer": "Da, dacă firma validează versiunea folosită de agent, stabilește permisiunile și păstrează aprobarea asupra etapelor comerciale sensibile.",
+      "canonical_url": "https://aiventure.ro/viziune/",
+      "faq_url": "https://aiventure.ro/viziune/#faq-retain-control-of-existing-offer",
+      "response_policy": "Informare, fără preț sau angajament inventat; orice ofertă necesită reguli validate și aprobarea aplicabilă."
+    },
+    {
+      "id": "implement-ai-key-maker",
+      "position": 32,
+      "family": "Produse, dovezi și încredere",
+      "stage": "MOF",
+      "intent_type": "Produs / soluție",
+      "actor": [
+        "human",
+        "ai_system",
+        "buyer_agent"
+      ],
+      "user_goal": "Să înțeleagă ce livrează AI KEY MAKER™ și dacă este potrivit",
+      "question": "Ce face AI KEY MAKER™ pentru un serviciu existent?",
+      "answer": "Pregătește serviciul pentru a fi descoperit și solicitat de agenți AI, pe baza unei oferte structurate și validate de firmă. Detaliile se stabilesc pentru serviciul concret.",
+      "canonical_url": "https://aiventure.ro/viziune/",
+      "faq_url": "https://aiventure.ro/viziune/#faq-implement-ai-key-maker",
+      "response_policy": "Informare, fără preț sau angajament inventat; orice ofertă necesită reguli validate și aprobarea aplicabilă."
+    },
+    {
+      "id": "implement-rrvi",
+      "position": 33,
+      "family": "Produse, dovezi și încredere",
+      "stage": "MOF",
+      "intent_type": "Produs / soluție",
+      "actor": [
+        "human",
+        "ai_system",
+        "buyer_agent"
+      ],
+      "user_goal": "Să înțeleagă ce livrează RRVI™ și ce verifică",
+      "question": "Ce face RRVI™?",
+      "answer": "Organizează cerințele, controalele, permisiunile și dovezile astfel încât anumite verificări să poată fi făcute la distanță, cu limite și aprobare explicite.",
+      "canonical_url": "https://aiventure.ro/viziune/",
+      "faq_url": "https://aiventure.ro/viziune/#faq-implement-rrvi",
+      "response_policy": "Informare, fără preț sau angajament inventat; orice ofertă necesită reguli validate și aprobarea aplicabilă."
+    },
+    {
+      "id": "create-remote-verification-evidence",
+      "position": 34,
+      "family": "Produse, dovezi și încredere",
+      "stage": "MOF",
+      "intent_type": "Verificare",
+      "actor": [
+        "human",
+        "ai_system",
+        "buyer_agent"
+      ],
+      "user_goal": "Să creeze dovezi verificabile de la distanță despre cerințe și controale",
+      "question": "Ce este o dovadă verificabilă la distanță?",
+      "answer": "Este un artefact identificabil, legat de o afirmație sau de un control, cu sursă, versiune și metodă de verificare documentate. Existența lui nu dovedește automat orice afirmație comercială.",
+      "canonical_url": "https://aiventure.ro/viziune/",
+      "faq_url": "https://aiventure.ro/viziune/#faq-create-remote-verification-evidence",
+      "response_policy": "Informare, fără preț sau angajament inventat; orice ofertă necesită reguli validate și aprobarea aplicabilă."
+    },
+    {
+      "id": "publish-evidence-hub",
+      "position": 35,
+      "family": "Produse, dovezi și încredere",
+      "stage": "MOF",
+      "intent_type": "Verificare",
+      "actor": [
+        "human",
+        "ai_system",
+        "buyer_agent"
+      ],
+      "user_goal": "Să publice dovezi, materiale de test și artefacte pentru verificare independentă",
+      "question": "Unde publică AiVenture dovezile demonstrației A2A?",
+      "answer": "Materialele și limitele demonstrației AiVenture–ECBTAX sunt publicate în Evidence Hub, la /a2a-proof. Acestea trebuie citite împreună cu explicația despre ce dovedesc.",
+      "canonical_url": "https://aiventure.ro/viziune/",
+      "faq_url": "https://aiventure.ro/viziune/#faq-publish-evidence-hub",
+      "response_policy": "Informare, fără preț sau angajament inventat; orice ofertă necesită reguli validate și aprobarea aplicabilă."
+    },
+    {
+      "id": "verify-a2a-pilot-claims",
+      "position": 36,
+      "family": "Produse, dovezi și încredere",
+      "stage": "MOF",
+      "intent_type": "Verificare / due diligence",
+      "actor": [
+        "human",
+        "ai_system",
+        "buyer_agent"
+      ],
+      "user_goal": "Să distingă între un demo A2A, o implementare reală și o promisiune comercială",
+      "question": "Cum deosebesc un pilot A2A de o garanție comercială?",
+      "answer": "Verifică ce pași au fost observați, ce fișiere pot fi recalculate și ce depinde încă de validarea firmei. Un pilot nu garantează interoperabilitatea cu orice agent sau vânzări viitoare.",
+      "canonical_url": "https://aiventure.ro/viziune/",
+      "faq_url": "https://aiventure.ro/viziune/#faq-verify-a2a-pilot-claims",
+      "response_policy": "Informare, fără preț sau angajament inventat; orice ofertă necesită reguli validate și aprobarea aplicabilă."
+    },
+    {
+      "id": "verify-agent-capabilities",
+      "position": 37,
+      "family": "Produse, dovezi și încredere",
+      "stage": "MOF",
+      "intent_type": "Verificare",
+      "actor": [
+        "human",
+        "ai_system",
+        "buyer_agent"
+      ],
+      "user_goal": "Să afle concret ce poate face agentul și care sunt limitele sale autorizate",
+      "question": "Cum verific ce poate face efectiv un agent?",
+      "answer": "Compară capabilitățile declarate cu un test reproductibil: cererea trimisă, răspunsul primit, aprobarea cerută și dovezile rezultate. O descriere nu ține loc de test.",
+      "canonical_url": "https://aiventure.ro/viziune/",
+      "faq_url": "https://aiventure.ro/viziune/#faq-verify-agent-capabilities",
+      "response_policy": "Informare, fără preț sau angajament inventat; orice ofertă necesită reguli validate și aprobarea aplicabilă."
+    },
+    {
+      "id": "verify-service-provider-identity",
+      "position": 38,
+      "family": "Produse, dovezi și încredere",
+      "stage": "MOF",
+      "intent_type": "Trust",
+      "actor": [
+        "human",
+        "ai_system",
+        "buyer_agent"
+      ],
+      "user_goal": "Să verifice cine furnizează serviciul, identitatea firmei și datele de contact",
+      "question": "Cum verific identitatea furnizorului unui serviciu?",
+      "answer": "Consultă pagina furnizorului, datele de contact, domeniul și oferta validată; pentru un flux A2A, verifică și relația dintre identitatea agentului și firmă.",
+      "canonical_url": "https://aiventure.ro/viziune/",
+      "faq_url": "https://aiventure.ro/viziune/#faq-verify-service-provider-identity",
+      "response_policy": "Informare, fără preț sau angajament inventat; orice ofertă necesită reguli validate și aprobarea aplicabilă."
+    },
+    {
+      "id": "verify-offer-version-and-validity",
+      "position": 39,
+      "family": "Produse, dovezi și încredere",
+      "stage": "MOF",
+      "intent_type": "Trust / tranzacțional",
+      "actor": [
+        "human",
+        "ai_system",
+        "buyer_agent"
+      ],
+      "user_goal": "Să verifice versiunea ofertei, data de valabilitate și regulile aplicabile",
+      "question": "Cum verific versiunea și valabilitatea ofertei?",
+      "answer": "Caută identificatorul, versiunea, perioada de valabilitate și condițiile aprobate de firmă. Dacă lipsesc, cere confirmare înainte de a trata oferta ca activă.",
+      "canonical_url": "https://aiventure.ro/viziune/",
+      "faq_url": "https://aiventure.ro/viziune/#faq-verify-offer-version-and-validity",
+      "response_policy": "Informare, fără preț sau angajament inventat; orice ofertă necesită reguli validate și aprobarea aplicabilă."
+    },
+    {
+      "id": "request-a2a-pilot",
+      "position": 40,
+      "family": "Cereri și fluxuri A2A",
+      "stage": "BOF",
+      "intent_type": "Comercial",
+      "actor": [
+        "human",
+        "ai_system",
+        "buyer_agent"
+      ],
+      "user_goal": "Să solicite un pilot verificabil pentru un serviciu real",
+      "question": "Cum pot solicita un pilot A2A pentru firma mea?",
+      "answer": "Descrie serviciul, cine îl aprobă și ce vrei să testezi, apoi contactează AiVenture. Scopul și costul unui pilot se stabilesc după verificarea serviciului.",
+      "canonical_url": "https://aiventure.ro/viziune/",
+      "faq_url": "https://aiventure.ro/viziune/#faq-request-a2a-pilot",
+      "response_policy": "Informare, fără preț sau angajament inventat; orice ofertă necesită reguli validate și aprobarea aplicabilă."
+    },
+    {
+      "id": "request-agent-ready-audit",
+      "position": 41,
+      "family": "Cereri și fluxuri A2A",
+      "stage": "BOF",
+      "intent_type": "Comercial",
+      "actor": [
+        "human",
+        "ai_system",
+        "buyer_agent"
+      ],
+      "user_goal": "Să solicite un audit de pregătire pentru AI și agenți",
+      "question": "Cum solicit un audit Agent-Ready?",
+      "answer": "Transmite adresa site-ului și serviciul B2B pe care vrei să îl pregătești; cere un diagnostic cu observații și dovezi pentru fiecare blocaj.",
+      "canonical_url": "https://aiventure.ro/viziune/",
+      "faq_url": "https://aiventure.ro/viziune/#faq-request-agent-ready-audit",
+      "response_policy": "Informare, fără preț sau angajament inventat; orice ofertă necesită reguli validate și aprobarea aplicabilă."
+    },
+    {
+      "id": "request-service-structuring",
+      "position": 42,
+      "family": "Cereri și fluxuri A2A",
+      "stage": "BOF",
+      "intent_type": "Comercial",
+      "actor": [
+        "human",
+        "ai_system",
+        "buyer_agent"
+      ],
+      "user_goal": "Să solicite structurarea unui serviciu pentru discovery și solicitare AI",
+      "question": "Cum cer structurarea unui serviciu pentru agenți AI?",
+      "answer": "Prezintă oferta actuală, eligibilitatea, prețul sau regula de ofertare, excluderile și responsabilul de aprobare. AiVenture poate evalua apoi ce lipsește.",
+      "canonical_url": "https://aiventure.ro/viziune/",
+      "faq_url": "https://aiventure.ro/viziune/#faq-request-service-structuring",
+      "response_policy": "Informare, fără preț sau angajament inventat; orice ofertă necesită reguli validate și aprobarea aplicabilă."
+    },
+    {
+      "id": "request-rrvi-verification-design",
+      "position": 43,
+      "family": "Cereri și fluxuri A2A",
+      "stage": "BOF",
+      "intent_type": "Comercial",
+      "actor": [
+        "human",
+        "ai_system",
+        "buyer_agent"
+      ],
+      "user_goal": "Să solicite definirea controalelor și a dovezilor verificabile",
+      "question": "Cum solicit proiectarea verificărilor RRVI™?",
+      "answer": "Precizează cerințele, jurisdicțiile, controalele, dovezile disponibile și deciziile care necesită aprobare; discută apoi un domeniu de test limitat.",
+      "canonical_url": "https://aiventure.ro/viziune/",
+      "faq_url": "https://aiventure.ro/viziune/#faq-request-rrvi-verification-design",
+      "response_policy": "Informare, fără preț sau angajament inventat; orice ofertă necesită reguli validate și aprobarea aplicabilă."
+    },
+    {
+      "id": "request-a2a-integration-scope",
+      "position": 44,
+      "family": "Cereri și fluxuri A2A",
+      "stage": "BOF",
+      "intent_type": "Comercial / calificare",
+      "actor": [
+        "human",
+        "ai_system",
+        "buyer_agent"
+      ],
+      "user_goal": "Să afle ce ar presupune integrarea A2A pentru firma și serviciul său",
+      "question": "Ce presupune o integrare A2A pentru firma mea?",
+      "answer": "Depinde de serviciu, identitatea agenților, mecanismul de descoperire, permisiuni, fluxul de cereri, aprobări și dovezi. Evaluarea începe cu un singur serviciu.",
+      "canonical_url": "https://aiventure.ro/viziune/",
+      "faq_url": "https://aiventure.ro/viziune/#faq-request-a2a-integration-scope",
+      "response_policy": "Informare, fără preț sau angajament inventat; orice ofertă necesită reguli validate și aprobarea aplicabilă."
+    },
+    {
+      "id": "request-agent-to-company-service",
+      "position": 45,
+      "family": "Cereri și fluxuri A2A",
+      "stage": "BOF",
+      "intent_type": "Tranzacțional A2A",
+      "actor": [
+        "human",
+        "buyer_agent"
+      ],
+      "user_goal": "Un agent cumpărător cere firmei detalii sau inițiază o solicitare de serviciu",
+      "question": "Poate un agent cumpărător să ceară direct un serviciu?",
+      "answer": "Da, numai printr-un canal acceptat de furnizor și în limitele serviciului publicat. Trimiterea cererii nu înseamnă automat acceptare sau comandă.",
+      "canonical_url": "https://aiventure.ro/viziune/",
+      "faq_url": "https://aiventure.ro/viziune/#faq-request-agent-to-company-service",
+      "response_policy": "Informare, fără preț sau angajament inventat; orice ofertă necesită reguli validate și aprobarea aplicabilă."
+    },
+    {
+      "id": "request-service-eligibility-check",
+      "position": 46,
+      "family": "Cereri și fluxuri A2A",
+      "stage": "BOF",
+      "intent_type": "Tranzacțional A2A",
+      "actor": [
+        "human",
+        "buyer_agent"
+      ],
+      "user_goal": "Un agent verifică dacă solicitantul, cazul sau organizația este eligibilă",
+      "question": "Cum verifică un agent eligibilitatea unui solicitant?",
+      "answer": "Folosește criteriile validate pentru serviciu și datele cerute. Când criteriile sau informațiile lipsesc, solicită clarificare ori trimite cazul unui om.",
+      "canonical_url": "https://aiventure.ro/viziune/",
+      "faq_url": "https://aiventure.ro/viziune/#faq-request-service-eligibility-check",
+      "response_policy": "Informare, fără preț sau angajament inventat; orice ofertă necesită reguli validate și aprobarea aplicabilă."
+    },
+    {
+      "id": "request-service-quote",
+      "position": 47,
+      "family": "Cereri și fluxuri A2A",
+      "stage": "BOF",
+      "intent_type": "Tranzacțional A2A",
+      "actor": [
+        "human",
+        "buyer_agent"
+      ],
+      "user_goal": "Un agent cere ofertă în limitele parametrilor autorizați",
+      "question": "Poate un agent să ceară o ofertă de preț?",
+      "answer": "Poate transmite o cerere cu parametrii necesari. Un răspuns comercial se emite numai în baza regulilor validate și a aprobărilor aplicabile.",
+      "canonical_url": "https://aiventure.ro/viziune/",
+      "faq_url": "https://aiventure.ro/viziune/#faq-request-service-quote",
+      "response_policy": "Informare, fără preț sau angajament inventat; orice ofertă necesită reguli validate și aprobarea aplicabilă."
+    },
+    {
+      "id": "request-service-clarification",
+      "position": 48,
+      "family": "Cereri și fluxuri A2A",
+      "stage": "BOF",
+      "intent_type": "Conversațional A2A",
+      "actor": [
+        "human",
+        "buyer_agent"
+      ],
+      "user_goal": "Un agent cere clarificări controlate înainte de ofertă sau solicitare",
+      "question": "Poate un agent să ceară clarificări înainte de ofertă?",
+      "answer": "Da. Întrebările și răspunsurile pot completa cererea, dar agentul nu poate transforma datele incomplete într-o ofertă inventată.",
+      "canonical_url": "https://aiventure.ro/viziune/",
+      "faq_url": "https://aiventure.ro/viziune/#faq-request-service-clarification",
+      "response_policy": "Informare, fără preț sau angajament inventat; orice ofertă necesită reguli validate și aprobarea aplicabilă."
+    },
+    {
+      "id": "request-human-approval",
+      "position": 49,
+      "family": "Cereri și fluxuri A2A",
+      "stage": "BOF",
+      "intent_type": "Escaladare",
+      "actor": [
+        "human",
+        "buyer_agent"
+      ],
+      "user_goal": "Agentul escaladează către o persoană când depășește limitele autorizate",
+      "question": "Ce se întâmplă când agentul are nevoie de aprobare umană?",
+      "answer": "Agentul oprește pasul sensibil, prezintă persoanei responsabile cererea și limitele aplicabile și păstrează decizia împreună cu contextul ei.",
+      "canonical_url": "https://aiventure.ro/viziune/",
+      "faq_url": "https://aiventure.ro/viziune/#faq-request-human-approval",
+      "response_policy": "Informare, fără preț sau angajament inventat; orice ofertă necesită reguli validate și aprobarea aplicabilă."
+    },
+    {
+      "id": "request-a2a-interaction-evidence",
+      "position": 50,
+      "family": "Cereri și fluxuri A2A",
+      "stage": "BOF",
+      "intent_type": "Audit / post-interacțiune",
+      "actor": [
+        "human",
+        "buyer_agent"
+      ],
+      "user_goal": "Un solicitant cere istoricul, dovada, rezultatul sau artefactele interacțiunii",
+      "question": "Cum cer dovada unei interacțiuni A2A?",
+      "answer": "Solicită identificatorii cererii și ai ofertei, jurnalul pașilor, aprobarea și artefactele publicate, dacă există. Verifică separat integritatea fișierelor și adevărul afirmațiilor despre rulare.",
+      "canonical_url": "https://aiventure.ro/viziune/",
+      "faq_url": "https://aiventure.ro/viziune/#faq-request-a2a-interaction-evidence",
+      "response_policy": "Informare, fără preț sau angajament inventat; orice ofertă necesită reguli validate și aprobarea aplicabilă."
+    }
+  ]
+}
