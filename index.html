@@ -53,6 +53,41 @@
   @media (min-width: 860px) { nav.links { display: flex; } }
   nav.links a { color: var(--ink-dim); }
 
+  /* Navigare mobilă: panou nativ, accesibil fără JavaScript. */
+  .mobile-menu { display: none; flex: 0 0 auto; position: relative; }
+  .mobile-menu summary {
+    display: flex; align-items: center; gap: 9px; min-height: 44px;
+    padding: 8px 10px; border: 1px solid var(--gold-dim); border-radius: 4px;
+    color: var(--ink); cursor: pointer; list-style: none; font: 15px system-ui, sans-serif;
+  }
+  .mobile-menu summary::-webkit-details-marker { display: none; }
+  .menu-bars, .menu-bars::before, .menu-bars::after {
+    display: block; width: 20px; height: 2px; background: currentColor;
+    position: relative; border-radius: 2px;
+  }
+  .menu-bars::before, .menu-bars::after { content: ''; position: absolute; left: 0; }
+  .menu-bars::before { top: -6px; }
+  .menu-bars::after { top: 6px; }
+  .mobile-menu[open] .menu-bars { background: transparent; }
+  .mobile-menu[open] .menu-bars::before { top: 0; transform: rotate(45deg); background: var(--ink); }
+  .mobile-menu[open] .menu-bars::after { top: 0; transform: rotate(-45deg); background: var(--ink); }
+  .mobile-menu nav {
+    position: absolute; right: 0; top: calc(100% + 10px); width: min(88vw, 380px);
+    max-height: min(70vh, 650px); overflow-y: auto; overscroll-behavior: contain;
+    background: var(--bg-raised); border: 1px solid var(--gold-dim);
+    border-radius: 4px; box-shadow: 0 14px 32px rgba(0,0,0,.7); padding: 12px;
+  }
+  .mobile-menu h2 { color: var(--gold); font: 600 13px system-ui, sans-serif; margin: 16px 10px 6px; }
+  .mobile-menu h2:first-child { margin-top: 5px; }
+  .mobile-menu nav a { display: block; padding: 10px; color: var(--ink); font: 15px system-ui, sans-serif; border-bottom: 1px solid var(--border); }
+  .mobile-menu nav a:last-child { border-bottom: 0; }
+  @media (max-width: 859px) {
+    .mobile-menu { display: block; }
+    .nav { gap: 10px; }
+    .brand { min-width: 0; font-size: 16px; line-height: 1.25; }
+    .brand span { display: block; font-size: 12px; }
+  }
+
   section { padding: 64px 0; border-bottom: 1px solid var(--border); }
   .kicker { color: var(--gold-dim); font-size: 14px; margin-bottom: 10px; }
   h1 { font-size: clamp(30px, 5vw, 46px); line-height: 1.15; margin: 0 0 20px; font-weight: 500; max-width: 18ch; }
@@ -125,6 +160,53 @@
       <a href="https://aiventure.ro/a2a-proof">Evidence Hub</a>
       <a href="https://aiventure.ro/verifica/">Află ce lipsește</a>
     </nav>
+    <details class="mobile-menu">
+      <summary><span class="menu-bars" aria-hidden="true"></span>Meniu</summary>
+      <nav aria-label="Toate paginile AiVenture">
+        <h2>Principal</h2>
+        <a href="/">Acasă</a>
+        <a href="/viziune/">Viziune</a>
+        <a href="/despre/">Despre AiVenture</a>
+        <a href="/produse/">Produse</a>
+        <a href="/servicii/">Servicii</a>
+        <a href="/contact/">Contact</a>
+        <h2>Cum funcționează</h2>
+        <a href="/cum/">Prezentare</a>
+        <a href="/cum/descoperire/">Descoperire</a>
+        <a href="/cum/intelegere/">Înțelegere</a>
+        <a href="/cum/actiune/">Acțiune</a>
+        <a href="/cum/a2a/">Agent la agent</a>
+        <a href="/three-webs/">Cele trei weburi</a>
+        <a href="/niveluri/">Niveluri</a>
+        <a href="/tehnologie/">Tehnologie</a>
+        <a href="/de-ce-ai/">De ce AI</a>
+        <a href="/de-ce-acum/">De ce acum</a>
+        <h2>Soluții și dovezi</h2>
+        <a href="/solutii/">Soluții</a>
+        <a href="/solutii/a2a/">A2A</a>
+        <a href="/solutii/agent-ready/">Agent Ready</a>
+        <a href="/solutii/ai-audit/">AI Audit</a>
+        <a href="/solutii/ai-edge/">AI Edge</a>
+        <a href="/solutii/ai-lens/">AI-LENS</a>
+        <a href="/solutii/ai-ready/">AI Ready</a>
+        <a href="/buyer-agent/">Buyer Agent</a>
+        <a href="/exemplu-ecbtax/">Exemplu ECBTAX</a>
+        <a href="/a2a-proof.html">Evidence Hub</a>
+        <a href="/rezultate/">Rezultate</a>
+        <a href="/verifica/">Verifică site-ul</a>
+        <a href="/geo/">GEO</a>
+        <a href="/eu-ai-act-ready/">EU AI Act Ready</a>
+        <h2>Resurse</h2>
+        <a href="/faq/">FAQ</a>
+        <a href="/faq-hub.html">FAQ Hub</a>
+        <a href="/intrebari/">Întrebări</a>
+        <a href="/use-cases/">Cazuri de utilizare</a>
+        <h2>Legal</h2>
+        <a href="/legal/">Informații legale</a>
+        <a href="/termeni-si-conditii/">Termeni și condiții</a>
+        <a href="/niveluri/misiune/legal/">Misiune · Legal</a>
+      </nav>
+    </details>
   </div>
 </header>
 
@@ -133,9 +215,9 @@
   <!-- HERO -->
   <section class="wrap">
     <div class="kicker">Pentru IMM-uri · agenții digitale · consultanți B2B</div>
-    <h1>Transformăm serviciile firmei, în servicii de vânzare pentru Agenți AI.</h1>
-    <p class="verticals">Construit pentru servicii profesionale: <b>contabilitate</b> · <b>avocatură</b> · <b>consultanță</b> · <b>HR</b> · <b>IT &amp; cybersecurity</b> · <b>marketing</b> · <b>audit</b></p>
-    <p class="promise">Automat. Non-stop. Global. Fără să atingem site-ul.</p>
+    <h1>Vinde aceleași servicii oamenilor, sistemelor AI și agenților A2A.</h1>
+    <p class="verticals">Contabilitate · avocatură · consultanță · HR · IT &amp; cybersecurity · marketing · audit</p>
+    <p class="promise"><strong>Aceeași firmă. Aceleași servicii. Noi căi de vânzare.</strong> Global. Non-stop. Fără să modifici site-ul.</p>
     <div class="cta-row">
       <a class="btn btn-primary" href="#dovada">Vezi cum funcționează</a>
       <a class="btn btn-ghost" href="https://aiventure.ro/contact/">Discută cu un Agent</a>
