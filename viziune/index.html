@@ -59,6 +59,17 @@ section,.hero{background:#000!important;border-color:#303030}
 .lead,.card p,.muted,.kicker,#surse-viziune p,#surse-viziune li span{color:#b7b7b7!important}
 #surse-viziune a{color:#fff;text-decoration:underline;text-underline-offset:3px}
 #surse-viziune a:hover{color:#e2c45c}
+#main-content,#main-content h1,#main-content h2,#main-content h3,#main-content p,#main-content .breadcrumb,#main-content .breadcrumb a,#main-content .breadcrumb span,#surse-viziune li{color:#fff!important}
+#main-content .accent{color:#c5a43b!important}
+#main-content .kicker,#surse-viziune p,#surse-viziune li span{color:#b7b7b7!important}
+#main-content a{color:#fff;text-decoration:underline;text-underline-offset:3px}
+#main-content .vision-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:22px}
+#main-content .vision-grid.vision-two{grid-template-columns:repeat(2,minmax(0,1fr))}
+#main-content .vision-card{background:#000!important;border:1px solid #353535;padding:24px}
+#main-content .vision-card h3{margin:0 0 12px}
+#main-content .vision-card p{margin:0;color:#d1d1d1!important}
+#main-content .vision-manifest{border-left:3px solid #c5a43b;padding:18px 22px;margin-top:34px;font-weight:700}
+@media(max-width:750px){#main-content .vision-grid,#main-content .vision-grid.vision-two{grid-template-columns:1fr}}
 </style>
 </head><body>
 
@@ -84,7 +95,35 @@ section,.hero{background:#000!important;border-color:#303030}
 </header>
 <a class="skip-link" href="#main-content">Sari la conținut</a>
 </div>
-<main id="main-content"><nav aria-label="Breadcrumb" class="breadcrumb"><div class="container"><h2>De la Human Web la A2A Web</h2><a href="/">Acasă</a> / <span aria-current="page">From Human Web to AI Web to A2A Web.</span></div></nav><section class="hero"><div class="container"><div class="kicker">VISION</div><h1>From Human Web to AI Web to <span class="accent">A2A Web.</span></h1><p class="v3-big">O lume în care orice firmă își poate oferi serviciile nu doar oamenilor, ci și Agenților AI care acționează în numele lor.</p></div></section>
+<main id="main-content">
+<nav aria-label="Breadcrumb" class="breadcrumb"><div class="container"><a href="/">Acasă</a> / <span aria-current="page">Viziune</span></div></nav>
+<section class="hero"><div class="container">
+  <div class="kicker">VIZIUNEA AIVENTURE</div>
+  <h1>Aceleași servicii. <span class="accent">Trei căi de acces.</span></h1>
+  <p class="v3-big">O firmă își păstrează serviciile și controlul asupra ofertei. Oamenii, sistemele AI și agenții AI pot ajunge la aceeași ofertă pe căi diferite.</p>
+</div></section>
+<section aria-labelledby="trei-cai"><div class="container">
+  <h2 id="trei-cai">Human Web · Web-AI · A2A Web</h2>
+  <div class="vision-grid">
+    <div class="vision-card"><h3>Human Web</h3><p>Omul găsește serviciul și discută direct cu firma.</p></div>
+    <div class="vision-card"><h3>Web-AI</h3><p>Un sistem AI găsește, explică și compară serviciul în procesul de căutare al clientului.</p></div>
+    <div class="vision-card"><h3>A2A Web</h3><p>Un agent AI poate trimite o cerere agentului firmei, poate clarifica nevoia și poate primi un răspuns în limitele autorizate.</p></div>
+  </div>
+</div></section>
+<section aria-labelledby="control"><div class="container">
+  <h2 id="control">Firma stabilește oferta. Omul păstrează controlul.</h2>
+  <p>Serviciul, prețul, limitele, excluderile și aprobările sunt stabilite și validate de firmă. Agentul folosește numai oferta validată: nu inventează oferta în timpul tranzacției.</p>
+  <div class="vision-grid vision-two">
+    <div class="vision-card"><h3>AI KEY MAKER™ · Sales Door</h3><p>Pregătește serviciul existent pentru a fi descoperit și solicitat de agenți AI.</p></div>
+    <div class="vision-card"><h3>RRVI™ · Verification Door</h3><p>Face cerințele, controalele și dovezile verificabile de la distanță.</p></div>
+  </div>
+</div></section>
+<section aria-labelledby="dovada"><div class="container">
+  <h2 id="dovada">De la viziune la un test verificabil</h2>
+  <p>Începem cu un serviciu real și cu regulile aprobate de firmă. Verificăm ce poate fi descoperit, cum este transmisă cererea, cine aprobă oferta și ce dovezi rămân după interacțiune.</p>
+  <p><a href="/buyer-agent/">Exemplul AiVenture–ECBTAX</a> prezintă un flux pentru solicitarea unui serviciu de calcul salarial. <a href="/a2a-proof">Evidence Hub</a> publică materialele demonstrației. Exemplul nu garantează disponibilitatea pentru orice serviciu sau interoperabilitatea cu orice agent extern.</p>
+  <p class="vision-manifest">Păstrează afacerea. Păstrează website-ul. Păstrează serviciul. Adaugă agentul. Adaugă ușa A2A.</p>
+</div></section>
 <section id="surse-viziune" aria-labelledby="surse-viziune-titlu" style="padding:48px 0;border-top:1px solid #dedbd2;">
   <div class="container">
     <h2 id="surse-viziune-titlu" style="font-size:clamp(28px,3vw,42px);">Surse și context</h2>
