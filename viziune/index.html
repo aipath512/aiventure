@@ -52,10 +52,18 @@ footer{padding:44px 0 60px;background:#f7f7f4;border-top:1px solid var(--line)}.
 
 <meta name="aiventure-session" content="0003H">
 <meta name="aiventure-build-timestamp" content="2026-09-14T06:11:00+03:00">
+<style id="aiv-vision-black-background">
+:root{--bg:#000;--bg2:#000;--panel:#000;--text:#fff;--muted:#b7b7b7;--line:#303030}
+html,body,header,.livebar,.versionbar,.card,.quote,.flow,.related a,footer,.aiv-global-footer,#aiv-global-header,#global-footer{background:#000!important;color:#fff}
+section,.hero{background:#000!important;border-color:#303030}
+.lead,.card p,.muted,.kicker,#surse-viziune p,#surse-viziune li span{color:#b7b7b7!important}
+#surse-viziune a{color:#fff;text-decoration:underline;text-underline-offset:3px}
+#surse-viziune a:hover{color:#e2c45c}
+</style>
 </head><body>
 
 <!-- GLOBAL HEADER · SESSION 0003H -->
-<header id="aiv-global-header" style="background:#050505;color:#fff;border-bottom:1px solid #292929;">
+<header id="aiv-global-header" style="background:#000;color:#fff;border-bottom:1px solid #292929;">
   <div class="aiv-global-container" style="width:min(1180px,calc(100% - 36px));margin:auto;">
     <div style="display:flex;align-items:center;justify-content:space-between;gap:18px;padding:14px 0;flex-wrap:wrap;">
       <a href="/" style="display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-weight:900;">
@@ -71,31 +79,43 @@ footer{padding:44px 0 60px;background:#f7f7f4;border-top:1px solid var(--line)}.
         <a href="/dictionar/" style="color:#ddd">Dicționar</a>
         <a href="/contact/" style="color:#ddd">Contact</a>
       </nav>
-      <span style="font:800 11px/1.2 ui-monospace,SFMono-Regular,Menlo,monospace;color:#5eead4;white-space:nowrap;">
-        SESSION 0003H · 2026-09-14 06:11 EEST
-      </span>
     </div>
   </div>
 </header>
 <a class="skip-link" href="#main-content">Sari la conținut</a>
-<div class="livebar"><div class="container bar-inner"><span class="status">● AiVenture · A2A Business Infrastructure</span><span>Human Web · Web-AI · A2A Web</span></div></div>
-<div class="versionbar"><div class="container bar-inner"><span>v3.0 · 2026-09-13</span><span>Omul caută · AI-ul recomandă · Agentul acționează</span></div></div>
-<div class="livebar"><div class="container bar-inner"><span class="status">● AiVenture · A2A Business Infrastructure</span><span>Human Web · Web-AI · A2A Web</span></div></div>
-<div class="versionbar"><div class="container bar-inner"><span>v3.0 · 2026-09-13</span><span>Omul caută · AI-ul recomandă · Agentul acționează</span></div></div>
-<div class="aiv-sessionbar" role="note" aria-label="Build session">
-  <div class="aiv-sessionbar-inner">
-    <span><strong>SESSION 0003H</strong></span>
-    <span>2026-09-13 18:57 EEST</span>
-  </div>
 </div>
-<main id="main-content"><nav aria-label="Breadcrumb" class="breadcrumb"><div class="container"><h2>De la Human Web la A2A Web</h2><a href="/">Acasă</a> / <span aria-current="page">From Human Web to AI Web to A2A Web.</span></div></nav><section class="hero"><div class="container"><div class="kicker">VISION</div><h1>From Human Web to AI Web to <span class="accent">A2A Web.</span></h1><p class="v3-big">O lume în care orice firmă își poate oferi serviciile nu doar oamenilor, ci și Agenților AI care acționează în numele lor.</p></div></section></main>
+<main id="main-content"><nav aria-label="Breadcrumb" class="breadcrumb"><div class="container"><h2>De la Human Web la A2A Web</h2><a href="/">Acasă</a> / <span aria-current="page">From Human Web to AI Web to A2A Web.</span></div></nav><section class="hero"><div class="container"><div class="kicker">VISION</div><h1>From Human Web to AI Web to <span class="accent">A2A Web.</span></h1><p class="v3-big">O lume în care orice firmă își poate oferi serviciile nu doar oamenilor, ci și Agenților AI care acționează în numele lor.</p></div></section>
+<section id="surse-viziune" aria-labelledby="surse-viziune-titlu" style="padding:48px 0;border-top:1px solid #dedbd2;">
+  <div class="container">
+    <h2 id="surse-viziune-titlu" style="font-size:clamp(28px,3vw,42px);">Surse și context</h2>
+    <p style="max-width:900px;color:#62645f;">Referințele [1]–[3] descriu protocolul A2A; studiul [16] analizează citarea surselor în răspunsuri generative. Aceste publicații explică direcția tehnică, dar nu atestă performanța, interoperabilitatea sau rezultatele comerciale ale AiVenture.</p>
+    <ol style="max-width:1050px;padding-left:1.6em;line-height:1.65;overflow-wrap:anywhere;">
+      <li><a href="https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/" rel="noopener noreferrer">Anunțul Google despre protocolul Agent2Agent (A2A)</a><span> — Sursă primară: scopul protocolului și Agent Card.</span></li>
+      <li><a href="https://a2a-protocol.org/v0.2.6/specification/" rel="noopener noreferrer">Specificația A2A v0.2.6</a><span> — Versiune istorică; pentru cerințe actuale vezi [3].</span></li>
+      <li><a href="https://a2a-protocol.org/latest/specification/" rel="noopener noreferrer">Specificația A2A actuală</a><span> — Sursă primară pentru comunicația dintre agenți și descoperire.</span></li>
+      <li><a href="https://www.ibm.com/think/topics/agent2agent-protocol" rel="noopener noreferrer">IBM — explicația protocolului A2A</a><span> — Explicație secundară.</span></li>
+      <li><a href="https://codelabs.developers.google.com/intro-a2a-purchasing-concierge" rel="noopener noreferrer">Google Codelabs — Purchasing Concierge și Remote Seller Agent</a><span> — Exemplu tehnic, nu dovadă a implementării AiVenture.</span></li>
+      <li><a href="https://developers.google.com/solutions/learn/aiventure" rel="noopener noreferrer">Google for Developers — AIventure</a><span> — Material Google despre un proiect cu nume asemănător; nu este despre AiVenture S.R.L.</span></li>
+      <li><a href="https://a2a-protocol.org/v0.1.0/specification/" rel="noopener noreferrer">Specificația A2A v0.1.0</a><span> — Versiune istorică; pentru cerințe actuale vezi [3].</span></li>
+      <li><a href="https://arxiv.org/html/2508.03095v3" rel="noopener noreferrer">Evolution of AI Agent Registry Solutions</a><span> — Lucrare despre registre și descoperire; nu certifică oferta AiVenture.</span></li>
+      <li><a href="https://www.linuxfoundation.org/press/linux-foundation-launches-the-agent2agent-protocol-project-to-enable-secure-intelligent-communication-between-ai-agents" rel="noopener noreferrer">Linux Foundation — lansarea proiectului A2A</a><span> — Anunț instituțional.</span></li>
+      <li><a href="https://agent2agent.info/docs/topics/agent-discovery/" rel="noopener noreferrer">Agent Discovery — ghidul comunității A2A</a><span> — Documentație explicativă.</span></li>
+      <li><a href="https://agent2agent.info/docs/concepts/agentcard/" rel="noopener noreferrer">AgentCard — ghidul comunității A2A</a><span> — Documentație explicativă.</span></li>
+      <li><a href="https://agent2agent.info/specification/discovery/" rel="noopener noreferrer">Agent Discovery Mechanisms — comunitatea A2A</a><span> — Documentație explicativă; compară cu [3].</span></li>
+      <li><a href="https://aiventure.ro/robots.txt" rel="noopener noreferrer">AiVenture robots.txt</a><span> — Fișier tehnic al site-ului; nu este dovadă a unei tranzacții A2A.</span></li>
+      <li><a href="https://agent2agent.info/docs/topics/key-concepts/" rel="noopener noreferrer">A2A Key Concepts and Components — comunitatea A2A</a><span> — Documentație explicativă.</span></li>
+      <li><a href="https://agent2agent.info/" rel="noopener noreferrer">Agent2Agent Protocol — portalul comunității</a><span> — Portal de context; pentru cerințe normative vezi [3].</span></li>
+      <li><a href="https://collaborate.princeton.edu/en/publications/geo-generative-engine-optimization/" rel="noopener noreferrer">GEO: Generative Engine Optimization — Aggarwal et al., KDD 2024</a><span> — Studiul despre vizibilitatea conținutului în răspunsuri generative; nu garantează citarea acestei pagini.</span></li>
+    </ol>
+  </div>
+</section></main>
 
 <!-- ================================
 GLOBAL FOOTER · SESSION 0003H
 ================================ -->
 
 <!-- GLOBAL FOOTER · SESSION 0003H -->
-<footer id="global-footer" style="border-top:1px solid #292929;background:#030303;padding:60px 0 30px;color:#fff;">
+<footer id="global-footer" style="border-top:1px solid #292929;background:#000;padding:60px 0 30px;color:#fff;">
   <div class="aiv-global-container" style="width:min(1180px,calc(100% - 36px));margin:auto;">
     <div class="aiv-footer-grid" style="display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;">
       <div>
@@ -151,7 +171,6 @@ GLOBAL FOOTER · SESSION 0003H
     </div>
     <div class="aiv-footer-bottom" style="margin-top:45px;padding-top:25px;border-top:1px solid #292929;display:flex;justify-content:space-between;gap:20px;color:#666;font-size:12px;">
       <span>© 2026 AiVenture S.R.L. · All rights reserved.</span>
-      <span>SESSION 0003H · 2026-09-14 06:11 EEST</span>
     </div>
   </div>
 </footer>
