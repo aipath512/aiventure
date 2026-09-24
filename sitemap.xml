@@ -1,114 +1,128 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://aiventure.ro/buyer-agent/</loc>
-  </url>
-  <url>
-    <loc>https://aiventure.ro/contact/</loc>
-  </url>
-  <url>
-    <loc>https://aiventure.ro/cum/a2a/</loc>
-  </url>
-  <url>
-    <loc>https://aiventure.ro/cum/actiune/</loc>
-  </url>
-  <url>
-    <loc>https://aiventure.ro/cum/descoperire/</loc>
-  </url>
-  <url>
-    <loc>https://aiventure.ro/cum/</loc>
-  </url>
-  <url>
-    <loc>https://aiventure.ro/cum/intelegere/</loc>
-  </url>
-  <url>
-    <loc>https://aiventure.ro/de-ce-acum/</loc>
-  </url>
-  <url>
-    <loc>https://aiventure.ro/de-ce-ai/</loc>
-  </url>
-  <url>
-    <loc>https://aiventure.ro/despre/</loc>
-  </url>
-  <url>
-    <loc>https://aiventure.ro/eu-ai-act-ready/</loc>
-  </url>
-  <url>
-    <loc>https://aiventure.ro/exemplu-ecbtax/</loc>
-  </url>
-  <url>
-    <loc>https://aiventure.ro/faq/</loc>
-  </url>
-  <url>
-    <loc>https://aiventure.ro/faq-hub.html</loc>
-  </url>
-  <url>
-    <loc>https://aiventure.ro/geo/</loc>
-  </url>
-  <url>
-    <loc>https://aiventure.ro/</loc>
-  </url>
-  <url>
-    <loc>https://aiventure.ro/intrebari/</loc>
-  </url>
-  <url>
-    <loc>https://aiventure.ro/legal/</loc>
-  </url>
-  <url>
-    <loc>https://aiventure.ro/niveluri/</loc>
-  </url>
-  <url>
-    <loc>https://aiventure.ro/niveluri/misiune/legal/</loc>
-  </url>
-  <url>
-    <loc>https://aiventure.ro/produse/</loc>
-  </url>
-  <url>
-    <loc>https://aiventure.ro/rezultate/</loc>
-  </url>
-  <url>
-    <loc>https://aiventure.ro/servicii/</loc>
-  </url>
-  <url>
-    <loc>https://aiventure.ro/solutii/a2a/</loc>
-  </url>
-  <url>
-    <loc>https://aiventure.ro/solutii/agent-ready/</loc>
-  </url>
-  <url>
-    <loc>https://aiventure.ro/solutii/ai-audit/</loc>
-  </url>
-  <url>
-    <loc>https://aiventure.ro/solutii/ai-edge/</loc>
-  </url>
-  <url>
-    <loc>https://aiventure.ro/solutii/ai-lens/</loc>
-  </url>
-  <url>
-    <loc>https://aiventure.ro/solutii/ai-ready/</loc>
-  </url>
-  <url>
-    <loc>https://aiventure.ro/solutii/</loc>
-  </url>
-  <url>
-    <loc>https://aiventure.ro/tehnologie/</loc>
-  </url>
-  <url>
-    <loc>https://aiventure.ro/termeni-si-conditii/</loc>
-  </url>
-  <url>
-    <loc>https://aiventure.ro/three-webs/</loc>
-  </url>
-  <url>
-    <loc>https://aiventure.ro/use-cases/</loc>
-  </url>
-  <url>
-    <loc>https://aiventure.ro/verifica/</loc>
-  </url>
-  <url>
-    <loc>https://aiventure.ro/viziune/</loc>
-  </url>
-  <url>
-    <loc>https://aiventure.ro/a2a-proof.html</loc>
-  </url>
+<url>
+<loc>https://aiventure.ro/buyer-agent/</loc>
+</url>
+<url>
+<loc>https://aiventure.ro/contact/</loc>
+</url>
+<url>
+<loc>https://aiventure.ro/cum/a2a/</loc>
+</url>
+<url>
+<loc>https://aiventure.ro/cum/actiune/</loc>
+</url>
+<url>
+<loc>https://aiventure.ro/cum/descoperire/</loc>
+</url>
+<url>
+<loc>https://aiventure.ro/cum/</loc>
+</url>
+<url>
+<loc>https://aiventure.ro/cum/intelegere/</loc>
+</url>
+<url>
+<loc>https://aiventure.ro/de-ce-acum/</loc>
+</url>
+<url>
+<loc>https://aiventure.ro/de-ce-ai/</loc>
+</url>
+<url>
+<loc>https://aiventure.ro/despre/</loc>
+</url>
+<url>
+<loc>https://aiventure.ro/eu-ai-act-ready/</loc>
+</url>
+<url>
+<loc>https://aiventure.ro/exemplu-ecbtax/</loc>
+</url>
+<url>
+<loc>https://aiventure.ro/faq/</loc>
+</url>
+<url>
+<loc>https://aiventure.ro/faq-hub.html</loc>
+</url>
+<url>
+<loc>https://aiventure.ro/geo/</loc>
+</url>
+<url>
+<loc>https://aiventure.ro/</loc>
+</url>
+<url>
+<loc>https://aiventure.ro/intrebari/</loc>
+</url>
+<url>
+<loc>https://aiventure.ro/legal/</loc>
+</url>
+<url>
+<loc>https://aiventure.ro/niveluri/</loc>
+</url>
+<url>
+<loc>https://aiventure.ro/niveluri/misiune/legal/</loc>
+</url>
+<url>
+<loc>https://aiventure.ro/produse/</loc>
+</url>
+<url>
+<loc>https://aiventure.ro/rezultate/</loc>
+</url>
+<url>
+<loc>https://aiventure.ro/servicii/</loc>
+</url>
+<url>
+<loc>https://aiventure.ro/solutii/a2a/</loc>
+</url>
+<url>
+<loc>https://aiventure.ro/solutii/agent-ready/</loc>
+</url>
+<url>
+<loc>https://aiventure.ro/solutii/ai-audit/</loc>
+</url>
+<url>
+<loc>https://aiventure.ro/solutii/ai-edge/</loc>
+</url>
+<url>
+<loc>https://aiventure.ro/solutii/ai-lens/</loc>
+</url>
+<url>
+<loc>https://aiventure.ro/solutii/ai-ready/</loc>
+</url>
+<url>
+<loc>https://aiventure.ro/solutii/</loc>
+</url>
+<url>
+<loc>https://aiventure.ro/tehnologie/</loc>
+</url>
+<url>
+<loc>https://aiventure.ro/termeni-si-conditii/</loc>
+</url>
+<url>
+<loc>https://aiventure.ro/three-webs/</loc>
+</url>
+<url>
+<loc>https://aiventure.ro/use-cases/</loc>
+</url>
+<url>
+<loc>https://aiventure.ro/verifica/</loc>
+</url>
+<url>
+<loc>https://aiventure.ro/viziune/</loc>
+</url>
+<url>
+<loc>https://aiventure.ro/a2a-proof.html</loc>
+</url>
+<url>
+<loc>https://aiventure.ro/seo/</loc>
+</url>
+<url>
+<loc>https://aiventure.ro/aeo/</loc>
+</url>
+<url>
+<loc>https://aiventure.ro/aio/</loc>
+</url>
+<url>
+<loc>https://aiventure.ro/ai-signals/</loc>
+</url>
+<url>
+<loc>https://aiventure.ro/ai-key-maker/</loc>
+</url>
 </urlset>
