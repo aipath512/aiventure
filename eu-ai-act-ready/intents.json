@@ -1,0 +1,413 @@
+{
+  "schema_version": "1.0",
+  "entity_id": "E_EU_AI_ACT_READY",
+  "entity_name": "EU AI Act Ready™",
+  "canonical": "https://aiventure.ro/eu-ai-act-ready/",
+  "language": "ro-RO",
+  "content_type": "aeo_intents",
+  "intent_count": 50,
+  "legal_notice": "Material informativ, nu consultanță juridică. Aplicarea concretă depinde de rolul organizației, scopul AI-ului și contextul de utilizare. Pentru decizii de conformitate, verifică textul regulamentului și ghidurile oficiale actualizate.",
+  "official_reference": "Regulation (EU) 2024/1689 (Artificial Intelligence Act)",
+  "intents": [
+    {
+      "id": "eu-ai-act-01",
+      "position": 1,
+      "stage": "TOF",
+      "section": "Înțelegerea regulamentului",
+      "question": "Ce este EU AI Act?",
+      "answer": "Este regulamentul UE care stabilește reguli armonizate pentru dezvoltarea, introducerea pe piață și utilizarea sistemelor AI."
+    },
+    {
+      "id": "eu-ai-act-02",
+      "position": 2,
+      "stage": "TOF",
+      "section": "Înțelegerea regulamentului",
+      "question": "De ce a fost adoptat?",
+      "answer": "Pentru a reduce riscurile AI pentru sănătate, siguranță și drepturi fundamentale, susținând totodată inovarea."
+    },
+    {
+      "id": "eu-ai-act-03",
+      "position": 3,
+      "stage": "TOF",
+      "section": "Înțelegerea regulamentului",
+      "question": "Cui i se aplică?",
+      "answer": "Actorilor care furnizează, importă, distribuie sau utilizează sisteme AI în UE, în condițiile și cu excepțiile prevăzute de regulament."
+    },
+    {
+      "id": "eu-ai-act-04",
+      "position": 4,
+      "stage": "TOF",
+      "section": "Înțelegerea regulamentului",
+      "question": "Se aplică firmelor din afara UE?",
+      "answer": "Poate să se aplice dacă sistemul este introdus pe piața UE sau outputul său este utilizat în UE."
+    },
+    {
+      "id": "eu-ai-act-05",
+      "position": 5,
+      "stage": "TOF",
+      "section": "Înțelegerea regulamentului",
+      "question": "Ce înseamnă „sistem AI”?",
+      "answer": "În linii mari, un sistem bazat pe mașină care generează outputuri precum predicții, recomandări, conținut sau decizii, cu un anumit grad de autonomie și adaptabilitate."
+    },
+    {
+      "id": "eu-ai-act-06",
+      "position": 6,
+      "stage": "TOF",
+      "section": "Înțelegerea regulamentului",
+      "question": "Care este diferența dintre model și sistem AI?",
+      "answer": "Modelul este componenta antrenată; sistemul este produsul sau serviciul care folosește modelul pentru o funcție concretă."
+    },
+    {
+      "id": "eu-ai-act-07",
+      "position": 7,
+      "stage": "TOF",
+      "section": "Înțelegerea regulamentului",
+      "question": "Ce înseamnă abordarea bazată pe risc?",
+      "answer": "Nivelul obligațiilor depinde de riscul utilizării: risc inacceptabil, ridicat, transparență specifică sau risc minim."
+    },
+    {
+      "id": "eu-ai-act-08",
+      "position": 8,
+      "stage": "TOF",
+      "section": "Înțelegerea regulamentului",
+      "question": "Care sunt cele patru niveluri de risc?",
+      "answer": "Practicile interzise, sistemele high-risk, sistemele cu obligații specifice de transparență și sistemele cu risc minim."
+    },
+    {
+      "id": "eu-ai-act-09",
+      "position": 9,
+      "stage": "TOF",
+      "section": "Înțelegerea regulamentului",
+      "question": "Cercetarea și dezvoltarea sunt exceptate?",
+      "answer": "Unele activități de cercetare și dezvoltare pot fi exceptate, dar excepția nu trebuie presupusă pentru un produs pus ulterior pe piață sau utilizat operațional."
+    },
+    {
+      "id": "eu-ai-act-10",
+      "position": 10,
+      "stage": "TOF",
+      "section": "Înțelegerea regulamentului",
+      "question": "Cum se intersectează cu GDPR?",
+      "answer": "Conformitatea cu AI Act nu înlocuiește GDPR; prelucrarea datelor personale trebuie să respecte și legislația de protecție a datelor."
+    },
+    {
+      "id": "eu-ai-act-11",
+      "position": 11,
+      "stage": "TOF",
+      "section": "Roluri și responsabilități",
+      "question": "Ce este un provider?",
+      "answer": "Persoana sau organizația care dezvoltă ori comandă dezvoltarea unui sistem AI și îl introduce pe piață sau îl pune în funcțiune sub numele sau marca sa."
+    },
+    {
+      "id": "eu-ai-act-12",
+      "position": 12,
+      "stage": "TOF",
+      "section": "Roluri și responsabilități",
+      "question": "Ce este un deployer?",
+      "answer": "Organizația sau persoana care folosește un sistem AI sub autoritatea sa, în afara uzului personal neprofesional."
+    },
+    {
+      "id": "eu-ai-act-13",
+      "position": 13,
+      "stage": "TOF",
+      "section": "Roluri și responsabilități",
+      "question": "Care este diferența provider–deployer?",
+      "answer": "Providerul furnizează sistemul; deployerul îl utilizează într-un context real. O firmă poate avea ambele roluri."
+    },
+    {
+      "id": "eu-ai-act-14",
+      "position": 14,
+      "stage": "TOF",
+      "section": "Roluri și responsabilități",
+      "question": "O firmă care folosește chatbot SaaS ce rol are?",
+      "answer": "De regulă, deployer pentru utilizarea propriului serviciu; furnizorul SaaS este provider. Rolul poate deveni diferit dacă firma rebranduiește sau modifică sistemul în condițiile regulamentului."
+    },
+    {
+      "id": "eu-ai-act-15",
+      "position": 15,
+      "stage": "TOF",
+      "section": "Roluri și responsabilități",
+      "question": "Cine răspunde când integrez un model AI într-un produs?",
+      "answer": "Depinde de cine furnizează sistemul final, de modificări, de marca folosită și de scop; integrarea poate aduce obligații de provider."
+    },
+    {
+      "id": "eu-ai-act-16",
+      "position": 16,
+      "stage": "TOF",
+      "section": "Roluri și responsabilități",
+      "question": "Ce obligații am dacă folosesc AI la locul de muncă?",
+      "answer": "Identifică rolul și riscul, instruiește personalul, respectă transparența și protecția datelor și verifică dacă utilizarea intră în categoria high-risk."
+    },
+    {
+      "id": "eu-ai-act-17",
+      "position": 17,
+      "stage": "TOF",
+      "section": "Roluri și responsabilități",
+      "question": "Se aplică freelancerilor și consultanților?",
+      "answer": "Poate să se aplice dacă acționează profesional ca provider sau deployer; utilizarea exclusiv personală, neprofesională, este tratată diferit."
+    },
+    {
+      "id": "eu-ai-act-18",
+      "position": 18,
+      "stage": "TOF",
+      "section": "Roluri și responsabilități",
+      "question": "Ce se întâmplă dacă vând servicii AI în UE din afara UE?",
+      "answer": "Regulamentul poate viza furnizarea pe piața UE; trebuie analizate rolul, produsul și fluxul de distribuție."
+    },
+    {
+      "id": "eu-ai-act-19",
+      "position": 19,
+      "stage": "MOF",
+      "section": "Clasificarea riscurilor",
+      "question": "Cum aflu dacă un sistem e high-risk?",
+      "answer": "Verifică scopul și funcția sistemului față de Articolul 6 și anexele relevante; documentează raționamentul și cere evaluare specializată când există incertitudine."
+    },
+    {
+      "id": "eu-ai-act-20",
+      "position": 20,
+      "stage": "MOF",
+      "section": "Clasificarea riscurilor",
+      "question": "Ce utilizări sunt interzise?",
+      "answer": "Sunt interzise anumite practici considerate inacceptabile, precum unele forme de manipulare, exploatarea vulnerabilităților, scoring social și anumite utilizări biometrice."
+    },
+    {
+      "id": "eu-ai-act-21",
+      "position": 21,
+      "stage": "MOF",
+      "section": "Clasificarea riscurilor",
+      "question": "Ce intră la Annex III?",
+      "answer": "Domenii precum biometria, infrastructura critică, educația, ocuparea forței de muncă, servicii esențiale, aplicarea legii, migrația și justiția, în condițiile precise ale anexei."
+    },
+    {
+      "id": "eu-ai-act-22",
+      "position": 22,
+      "stage": "MOF",
+      "section": "Clasificarea riscurilor",
+      "question": "AI-ul pentru recrutare e high-risk?",
+      "answer": "Unele sisteme folosite la recrutare, selecție, evaluare sau decizii privind angajații sunt încadrate ca high-risk; verifică funcția exactă și excepțiile."
+    },
+    {
+      "id": "eu-ai-act-23",
+      "position": 23,
+      "stage": "MOF",
+      "section": "Clasificarea riscurilor",
+      "question": "AI-ul pentru creditare e high-risk?",
+      "answer": "Unele sisteme care evaluează bonitatea sau stabilesc scoruri de credit pentru persoane fizice sunt high-risk, cu excepții specifice."
+    },
+    {
+      "id": "eu-ai-act-24",
+      "position": 24,
+      "stage": "MOF",
+      "section": "Clasificarea riscurilor",
+      "question": "Un chatbot pentru clienți e high-risk?",
+      "answer": "De obicei nu doar pentru că este chatbot; poate avea însă obligații de transparență, iar funcția și contextul pot schimba clasificarea."
+    },
+    {
+      "id": "eu-ai-act-25",
+      "position": 25,
+      "stage": "MOF",
+      "section": "Clasificarea riscurilor",
+      "question": "Cum influențează scopul declarat clasificarea?",
+      "answer": "Scopul intenționat contează, dar contează și funcția reală, utilizarea efectivă și modul în care sistemul este comercializat."
+    },
+    {
+      "id": "eu-ai-act-26",
+      "position": 26,
+      "stage": "MOF",
+      "section": "Clasificarea riscurilor",
+      "question": "Ce înseamnă intended purpose?",
+      "answer": "Utilizarea pentru care providerul a proiectat sistemul, inclusiv contextul și condițiile de utilizare descrise în instrucțiuni și documentație."
+    },
+    {
+      "id": "eu-ai-act-27",
+      "position": 27,
+      "stage": "MOF",
+      "section": "Clasificarea riscurilor",
+      "question": "Se schimbă riscul dacă folosesc sistemul altfel?",
+      "answer": "Da, utilizarea într-un scop nou sau modificări substanțiale pot schimba rolurile și obligațiile; verifică înainte de implementare."
+    },
+    {
+      "id": "eu-ai-act-28",
+      "position": 28,
+      "stage": "MOF",
+      "section": "Clasificarea riscurilor",
+      "question": "Sistemele cu risc minim au obligații?",
+      "answer": "Nu au, în general, obligațiile extensive pentru high-risk, dar pot rămâne aplicabile alte legi și unele cerințe de transparență ori bune practici."
+    },
+    {
+      "id": "eu-ai-act-29",
+      "position": 29,
+      "stage": "MOF",
+      "section": "Guvernanță, competențe și transparență",
+      "question": "Ce este AI literacy?",
+      "answer": "Competențele și înțelegerea necesare pentru utilizarea informată a AI, inclusiv cunoașterea oportunităților, riscurilor și posibilelor prejudicii."
+    },
+    {
+      "id": "eu-ai-act-30",
+      "position": 30,
+      "stage": "MOF",
+      "section": "Guvernanță, competențe și transparență",
+      "question": "Trebuie să instruiesc angajații care folosesc AI?",
+      "answer": "Providerii și deployerii trebuie să ia măsuri pentru a asigura, în cea mai mare măsură posibilă, un nivel suficient de AI literacy pentru personalul relevant."
+    },
+    {
+      "id": "eu-ai-act-31",
+      "position": 31,
+      "stage": "MOF",
+      "section": "Guvernanță, competențe și transparență",
+      "question": "Ce este human oversight?",
+      "answer": "Supravegherea umană înseamnă ca persoane cu competență, instruire și autoritate adecvate să poată supraveghea utilizarea sistemului AI, acolo unde regulamentul o cere."
+    },
+    {
+      "id": "eu-ai-act-32",
+      "position": 32,
+      "stage": "MOF",
+      "section": "Guvernanță, competențe și transparență",
+      "question": "Trebuie să documentez sistemele AI folosite?",
+      "answer": "Pentru sistemele high-risk există cerințe explicite de documentare și trasabilitate; pentru celelalte, un inventar documentat ajută la stabilirea rolurilor și obligațiilor."
+    },
+    {
+      "id": "eu-ai-act-33",
+      "position": 33,
+      "stage": "MOF",
+      "section": "Guvernanță, competențe și transparență",
+      "question": "Ce este un AI inventory?",
+      "answer": "Un registru intern al sistemelor AI utilizate, cu scop, furnizor, utilizatori, date, rol și clasificare de risc."
+    },
+    {
+      "id": "eu-ai-act-34",
+      "position": 34,
+      "stage": "MOF",
+      "section": "Guvernanță, competențe și transparență",
+      "question": "De ce trebuie identificat scopul unui sistem AI?",
+      "answer": "Pentru că intended purpose influențează clasificarea, obligațiile și condițiile în care sistemul poate fi utilizat."
+    },
+    {
+      "id": "eu-ai-act-35",
+      "position": 35,
+      "stage": "MOF",
+      "section": "Guvernanță, competențe și transparență",
+      "question": "Trebuie să spun clientului că vorbește cu AI?",
+      "answer": "Pentru sistemele destinate să interacționeze direct cu persoane, Articolul 50 prevede informarea că interacțiunea este cu AI, cu excepțiile prevăzute de regulament."
+    },
+    {
+      "id": "eu-ai-act-36",
+      "position": 36,
+      "stage": "MOF",
+      "section": "Guvernanță, competențe și transparență",
+      "question": "Trebuie etichetat conținutul generat de AI?",
+      "answer": "Pentru anumite categorii de conținut AI-generat sau manipulat există obligații de marcare ori divulgare conform Articolului 50."
+    },
+    {
+      "id": "eu-ai-act-37",
+      "position": 37,
+      "stage": "MOF",
+      "section": "Guvernanță, competențe și transparență",
+      "question": "Trebuie marcate deepfake-urile?",
+      "answer": "Da, Articolul 50 stabilește obligații de transparență pentru anumite conținuturi deepfake."
+    },
+    {
+      "id": "eu-ai-act-38",
+      "position": 38,
+      "stage": "MOF",
+      "section": "Guvernanță, competențe și transparență",
+      "question": "Când au început obligațiile de transparență?",
+      "answer": "Articolul 50 se aplică din 2 august 2026, cu o perioadă limitată pentru anumite sisteme existente privind marcarea și detectarea conținutului."
+    },
+    {
+      "id": "eu-ai-act-39",
+      "position": 39,
+      "stage": "BOF",
+      "section": "Dovezi, conformitate și implementare",
+      "question": "Ce este documentația tehnică AI?",
+      "answer": "Documentația care descrie sistemul, scopul, funcționarea, limitele și elementele necesare demonstrării respectării cerințelor aplicabile."
+    },
+    {
+      "id": "eu-ai-act-40",
+      "position": 40,
+      "stage": "BOF",
+      "section": "Dovezi, conformitate și implementare",
+      "question": "Ce înseamnă logging pentru AI?",
+      "answer": "Înregistrarea evenimentelor relevante pentru trasabilitate, monitorizare și identificarea situațiilor de risc; pentru high-risk există cerințe specifice."
+    },
+    {
+      "id": "eu-ai-act-41",
+      "position": 41,
+      "stage": "BOF",
+      "section": "Dovezi, conformitate și implementare",
+      "question": "Trebuie monitorizat un sistem AI după implementare?",
+      "answer": "Pentru high-risk există obligații explicite de monitorizare și raportare; cerințele exacte depind de rolul organizației."
+    },
+    {
+      "id": "eu-ai-act-42",
+      "position": 42,
+      "stage": "BOF",
+      "section": "Dovezi, conformitate și implementare",
+      "question": "Ce fac dacă un sistem high-risk prezintă un risc?",
+      "answer": "În situațiile prevăzute de regulament, trebuie urmate măsurile aplicabile, inclusiv informarea actorilor relevanți și, după caz, suspendarea utilizării și notificarea autorităților."
+    },
+    {
+      "id": "eu-ai-act-43",
+      "position": 43,
+      "stage": "BOF",
+      "section": "Dovezi, conformitate și implementare",
+      "question": "Ce este conformity assessment?",
+      "answer": "Procesul prin care se verifică dacă un sistem AI high-risk respectă cerințele aplicabile înainte de introducerea pe piață sau punerea în funcțiune, în cazurile prevăzute de regulament."
+    },
+    {
+      "id": "eu-ai-act-44",
+      "position": 44,
+      "stage": "BOF",
+      "section": "Dovezi, conformitate și implementare",
+      "question": "Toate sistemele AI necesită conformity assessment?",
+      "answer": "Nu. Cerința este legată în principal de sistemele clasificate high-risk și de regimul aplicabil acestora."
+    },
+    {
+      "id": "eu-ai-act-45",
+      "position": 45,
+      "stage": "BOF",
+      "section": "Dovezi, conformitate și implementare",
+      "question": "Există amenzi pentru nerespectarea AI Act?",
+      "answer": "Da. Regulamentul prevede sancțiuni administrative, iar nivelul depinde de tipul încălcării și de circumstanțele aplicabile."
+    },
+    {
+      "id": "eu-ai-act-46",
+      "position": 46,
+      "stage": "BOF",
+      "section": "Dovezi, conformitate și implementare",
+      "question": "Cine aplică AI Act?",
+      "answer": "Aplicarea este împărțită între autoritățile naționale competente și, pentru anumite domenii, AI Office al Comisiei Europene."
+    },
+    {
+      "id": "eu-ai-act-47",
+      "position": 47,
+      "stage": "BOF",
+      "section": "Dovezi, conformitate și implementare",
+      "question": "Ce ar trebui să facă prima dată o firmă care folosește AI?",
+      "answer": "Să inventarieze sistemele AI, să identifice rolul organizației, intended purpose și categoria de risc și apoi să determine obligațiile aplicabile."
+    },
+    {
+      "id": "eu-ai-act-48",
+      "position": 48,
+      "stage": "BOF",
+      "section": "Dovezi, conformitate și implementare",
+      "question": "Pot verifica pregătirea pentru EU AI Act de la distanță?",
+      "answer": "O parte importantă a documentației, controalelor și dovezilor poate fi verificată remote dacă organizația le pune la dispoziție într-o formă verificabilă."
+    },
+    {
+      "id": "eu-ai-act-49",
+      "position": 49,
+      "stage": "BOF",
+      "section": "Dovezi, conformitate și implementare",
+      "question": "Ce dovezi pot păstra pentru AI governance?",
+      "answer": "Inventare, clasificări, politici, responsabilități, instruiri, aprobări, loguri, evaluări și alte artefacte relevante pentru obligațiile aplicabile."
+    },
+    {
+      "id": "eu-ai-act-50",
+      "position": 50,
+      "stage": "BOF",
+      "section": "Dovezi, conformitate și implementare",
+      "question": "EU AI Act Ready înseamnă certificat de conformitate?",
+      "answer": "Nu. „EU AI Act Ready” descrie pregătirea și organizarea dovezilor; conformitatea juridică trebuie stabilită în raport cu obligațiile concrete aplicabile organizației și sistemului."
+    }
+  ]
+}
