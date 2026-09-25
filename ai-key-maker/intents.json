@@ -1,0 +1,505 @@
+{
+  "schema_version": "1.0",
+  "document_type": "intent_catalog",
+  "entity": {
+    "name": "AiVenture",
+    "url": "https://aiventure.ro/"
+  },
+  "service": {
+    "name": "AI KEY MAKER",
+    "trademark": "AI KEY MAKER™",
+    "role": "SALES DOOR",
+    "canonical": "https://aiventure.ro/ai-key-maker/"
+  },
+  "language": "ro",
+  "intent_count": 50,
+  "funnel": {
+    "TOF": 20,
+    "MOF": 15,
+    "BOF": 15
+  },
+  "architecture": {
+    "principle": "KEEP THE BUSINESS. KEEP THE WEBSITE. KEEP THE SERVICE. ADD THE AGENT. ADD THE A2A DOOR.",
+    "non_negotiable_rule": "THE EDGE MUST NEVER INVENT THE OFFER DURING A TRANSACTION.",
+    "source_of_truth": "Human-validated Service Offer Contract (SOC)",
+    "layer_1_scope": [
+      "DISCOVER",
+      "MATCH",
+      "REQUEST",
+      "SELLER QUESTION",
+      "BUYER ANSWER",
+      "QUOTE",
+      "HUMAN APPROVAL",
+      "EVIDENCE",
+      "ORDER"
+    ],
+    "layer_1_money_scope": "No autonomous payment is implied."
+  },
+  "intents": [
+    {
+      "id": "AKM-TOF-001",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "ce este AI KEY MAKER",
+      "user_goal": "Să înțeleagă produsul.",
+      "expected_answer": "AI KEY MAKER™ este SALES DOOR-ul AiVenture: pregătește un serviciu B2B existent pentru a putea fi descoperit și accesat de AI Buyer Agents, în limite definite și controlate de companie.",
+      "target_page": "https://aiventure.ro/ai-key-maker/"
+    },
+    {
+      "id": "AKM-TOF-002",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "ce înseamnă Agent-Ready",
+      "user_goal": "Să înțeleagă Agent-Ready.",
+      "expected_answer": "Agent-Ready înseamnă că informațiile, regulile, capabilitățile și limitele unui serviciu sunt suficient de explicite pentru interacțiuni agentice controlate.",
+      "target_page": "https://aiventure.ro/ai-key-maker/"
+    },
+    {
+      "id": "AKM-TOF-003",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "ce este un serviciu Agent-Ready",
+      "user_goal": "Să înțeleagă caracteristicile serviciului.",
+      "expected_answer": "Un serviciu Agent-Ready poate fi descoperit, evaluat și solicitat de un Agent AI printr-o interfață și reguli definite de furnizor.",
+      "target_page": "https://aiventure.ro/ai-key-maker/"
+    },
+    {
+      "id": "AKM-TOF-004",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "cum poate un Agent AI cumpăra un serviciu B2B",
+      "user_goal": "Să înțeleagă fluxul A2A.",
+      "expected_answer": "Un Agent AI poate participa la etape precum discovery, request, clarificare și ofertare dacă serviciul expune capabilitățile și regulile necesare; angajamentele rămân în limitele mandatului și aprobărilor.",
+      "target_page": "https://aiventure.ro/ai-key-maker/"
+    },
+    {
+      "id": "AKM-TOF-005",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "cum poate firma mea vinde servicii către Agenți AI",
+      "user_goal": "Să deschidă un canal A2A.",
+      "expected_answer": "Firma își structurează oferta reală, definește reguli și limite, validează Service Offer Contract și expune capabilități controlate către Agenți.",
+      "target_page": "https://aiventure.ro/ai-key-maker/"
+    },
+    {
+      "id": "AKM-TOF-006",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "ce este A2A commerce",
+      "user_goal": "Să înțeleagă comerțul Agent-to-Agent.",
+      "expected_answer": "A2A commerce descrie interacțiuni comerciale machine-to-machine între agenți care reprezintă roluri precum cumpărător și vânzător, în limite explicite.",
+      "target_page": "https://aiventure.ro/ai-key-maker/"
+    },
+    {
+      "id": "AKM-TOF-007",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "ce este Web-A2A",
+      "user_goal": "Să înțeleagă suprafața A2A.",
+      "expected_answer": "Web-A2A este suprafața machine-to-machine prin care agenții pot descoperi și utiliza capabilități autorizate ale unui serviciu.",
+      "target_page": "https://aiventure.ro/ai-key-maker/"
+    },
+    {
+      "id": "AKM-TOF-008",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "ce este un Buyer Agent",
+      "user_goal": "Să înțeleagă rolul cumpărătorului.",
+      "expected_answer": "Buyer Agent acționează pentru cumpărător și poate descoperi, compara, solicita sau procesa oferte în limitele mandatului primit.",
+      "target_page": "https://aiventure.ro/ai-key-maker/"
+    },
+    {
+      "id": "AKM-TOF-009",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "ce este un Seller Agent",
+      "user_goal": "Să înțeleagă rolul vânzătorului.",
+      "expected_answer": "Seller Agent reprezintă serviciile furnizorului și răspunde numai pe baza ofertei, regulilor și limitelor validate.",
+      "target_page": "https://aiventure.ro/ai-key-maker/"
+    },
+    {
+      "id": "AKM-TOF-010",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "ce este un Broker Agent",
+      "user_goal": "Să înțeleagă intermedierea.",
+      "expected_answer": "Broker Agent poate facilita discovery și matching între cererea unui Buyer Agent și serviciile furnizorilor, fără a inventa oferta.",
+      "target_page": "https://aiventure.ro/ai-key-maker/"
+    },
+    {
+      "id": "AKM-TOF-011",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "ce este Service Offer Contract",
+      "user_goal": "Să înțeleagă sursa de adevăr comercială.",
+      "expected_answer": "Service Offer Contract este modelul AiVenture pentru reprezentarea structurată și validată uman a serviciului, condițiilor, limitelor și regulilor comerciale relevante.",
+      "target_page": "https://aiventure.ro/ai-key-maker/"
+    },
+    {
+      "id": "AKM-TOF-012",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "de ce are nevoie un Agent AI de o ofertă structurată",
+      "user_goal": "Să înțeleagă necesitatea SOC.",
+      "expected_answer": "O ofertă structurată reduce ambiguitatea și stabilește explicit ce poate comunica sau executa agentul fără să inventeze condiții comerciale.",
+      "target_page": "https://aiventure.ro/ai-key-maker/"
+    },
+    {
+      "id": "AKM-TOF-013",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "cum descoperă un Agent AI un furnizor",
+      "user_goal": "Să înțeleagă discovery.",
+      "expected_answer": "Discovery poate folosi informații și capabilități publicate machine-readable pentru identificarea unui furnizor compatibil cu cererea.",
+      "target_page": "https://aiventure.ro/ai-key-maker/"
+    },
+    {
+      "id": "AKM-TOF-014",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "cum solicită un Agent AI o ofertă",
+      "user_goal": "Să înțeleagă request-ul.",
+      "expected_answer": "Buyer Agent transmite o cerere structurată către Seller Agent, care o procesează conform capabilităților și regulilor serviciului validat.",
+      "target_page": "https://aiventure.ro/ai-key-maker/"
+    },
+    {
+      "id": "AKM-TOF-015",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "cum cere un Seller Agent clarificări",
+      "user_goal": "Să înțeleagă dialogul A2A.",
+      "expected_answer": "Dacă lipsesc date necesare, Seller Agent poate returna o solicitare de informații, iar Buyer Agent poate furniza răspunsul înainte de ofertare.",
+      "target_page": "https://aiventure.ro/ai-key-maker/"
+    },
+    {
+      "id": "AKM-TOF-016",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "cum funcționează aprobarea umană într-o tranzacție A2A",
+      "user_goal": "Să înțeleagă controlul uman.",
+      "expected_answer": "La punctele definite, procesul se oprește până când persoana autorizată aprobă acțiunea sau oferta.",
+      "target_page": "https://aiventure.ro/ai-key-maker/"
+    },
+    {
+      "id": "AKM-TOF-017",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "ce înseamnă Human-in-the-Loop pentru A2A",
+      "user_goal": "Să înțeleagă HITL.",
+      "expected_answer": "Human-in-the-Loop păstrează deciziile critice sub control uman prin puncte explicite de aprobare sau validare.",
+      "target_page": "https://aiventure.ro/ai-key-maker/"
+    },
+    {
+      "id": "AKM-TOF-018",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "ce este evidence într-o tranzacție A2A",
+      "user_goal": "Să înțeleagă verificabilitatea.",
+      "expected_answer": "Evidence este dovada trasabilă a etapelor relevante, precum cererea, clarificarea, oferta și aprobarea.",
+      "target_page": "https://aiventure.ro/ai-key-maker/"
+    },
+    {
+      "id": "AKM-TOF-019",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "poate un site existent deveni Agent-Ready",
+      "user_goal": "Să afle dacă trebuie înlocuit website-ul.",
+      "expected_answer": "Da, dacă infrastructura permite adăugarea unei suprafețe agentice și a regulilor necesare fără reconstruirea completă a website-ului.",
+      "target_page": "https://aiventure.ro/ai-key-maker/"
+    },
+    {
+      "id": "AKM-TOF-020",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "cum verific dacă serviciul meu este pregătit pentru Agenți AI",
+      "user_goal": "Să evalueze Agent-Ready.",
+      "expected_answer": "Se verifică oferta, datele de intrare, capabilitățile, limitele, aprobările, evidence-ul și posibilitatea de a executa un flux controlat end-to-end.",
+      "target_page": "https://aiventure.ro/ai-key-maker/"
+    },
+    {
+      "id": "AKM-MOF-001",
+      "funnel": "MOF",
+      "intent_type": "commercial_investigation",
+      "query": "care este diferența dintre AI-ready și Agent-Ready",
+      "user_goal": "Să compare nivelurile de pregătire.",
+      "expected_answer": "AI-ready privește în principal interpretarea informației de către sisteme AI; Agent-Ready adaugă capabilități și reguli pentru acțiuni controlate.",
+      "target_page": "https://aiventure.ro/ai-key-maker/"
+    },
+    {
+      "id": "AKM-MOF-002",
+      "funnel": "MOF",
+      "intent_type": "commercial_investigation",
+      "query": "care este diferența dintre Web-AI și Web-A2A",
+      "user_goal": "Să compare suprafețele.",
+      "expected_answer": "Web-AI asistă interacțiunea omului cu AI, iar Web-A2A permite interacțiuni machine-to-machine între agenți.",
+      "target_page": "https://aiventure.ro/ai-key-maker/"
+    },
+    {
+      "id": "AKM-MOF-003",
+      "funnel": "MOF",
+      "intent_type": "commercial_investigation",
+      "query": "care este diferența dintre chatbot și Seller Agent",
+      "user_goal": "Să compare conversația cu acțiunea.",
+      "expected_answer": "Un chatbot este în principal conversațional; Seller Agent este conectat la oferta validată și la capabilități comerciale explicit autorizate.",
+      "target_page": "https://aiventure.ro/ai-key-maker/"
+    },
+    {
+      "id": "AKM-MOF-004",
+      "funnel": "MOF",
+      "intent_type": "commercial_investigation",
+      "query": "care este diferența dintre API și serviciu Agent-Ready",
+      "user_goal": "Să compare API cu modelul Agent-Ready.",
+      "expected_answer": "Un API expune funcții tehnice; un serviciu Agent-Ready adaugă semantică comercială, reguli, limite, aprobări și evidence pentru utilizarea agentică.",
+      "target_page": "https://aiventure.ro/ai-key-maker/"
+    },
+    {
+      "id": "AKM-MOF-005",
+      "funnel": "MOF",
+      "intent_type": "commercial_investigation",
+      "query": "ce trebuie să conțină un Service Offer Contract",
+      "user_goal": "Să definească SOC.",
+      "expected_answer": "În funcție de serviciu, SOC poate include descriere, prețuri sau reguli de preț, limite, SLA, jurisdicții, excluderi, outputuri, praguri de aprobare, aprobatori și deadline-uri validate.",
+      "target_page": "https://aiventure.ro/ai-key-maker/"
+    },
+    {
+      "id": "AKM-MOF-006",
+      "funnel": "MOF",
+      "intent_type": "commercial_investigation",
+      "query": "cum se definește oferta pentru un Seller Agent",
+      "user_goal": "Să configureze sursa de adevăr.",
+      "expected_answer": "Oferta se extrage din informațiile reale ale companiei, se structurează într-un contract de serviciu și se validează uman înainte de utilizare.",
+      "target_page": "https://aiventure.ro/ai-key-maker/"
+    },
+    {
+      "id": "AKM-MOF-007",
+      "funnel": "MOF",
+      "intent_type": "commercial_investigation",
+      "query": "cum împiedic Agentul să inventeze prețuri sau condiții",
+      "user_goal": "Să controleze hallucination comercială.",
+      "expected_answer": "Seller Agent trebuie constrâns să folosească exclusiv informațiile validate din Service Offer Contract și să solicite clarificare sau aprobare când informația necesară lipsește.",
+      "target_page": "https://aiventure.ro/ai-key-maker/"
+    },
+    {
+      "id": "AKM-MOF-008",
+      "funnel": "MOF",
+      "intent_type": "commercial_investigation",
+      "query": "cum controlez ce poate face Agentul în numele firmei",
+      "user_goal": "Să controleze autonomia.",
+      "expected_answer": "Se definesc explicit capabilitățile, limitele, nivelul de autonomie, aprobările obligatorii și acțiunile interzise.",
+      "target_page": "https://aiventure.ro/ai-key-maker/"
+    },
+    {
+      "id": "AKM-MOF-009",
+      "funnel": "MOF",
+      "intent_type": "commercial_investigation",
+      "query": "cum funcționează DISCOVER MATCH REQUEST QUOTE APPROVAL ORDER",
+      "user_goal": "Să înțeleagă fluxul comercial.",
+      "expected_answer": "Fluxul pornește de la descoperirea și potrivirea serviciului, continuă cu cererea și clarificările, apoi oferta, aprobarea umană, evidence-ul și, când condițiile sunt îndeplinite, order.",
+      "target_page": "https://aiventure.ro/ai-key-maker/"
+    },
+    {
+      "id": "AKM-MOF-010",
+      "funnel": "MOF",
+      "intent_type": "commercial_investigation",
+      "query": "ce nivel de autonomie trebuie să aibă un Agent",
+      "user_goal": "Să aleagă nivelul de autonomie.",
+      "expected_answer": "Autonomia trebuie limitată la capabilitățile validate și mandatul real; AiVenture poate separa nivelurile de la discovery până la order.",
+      "target_page": "https://aiventure.ro/ai-key-maker/"
+    },
+    {
+      "id": "AKM-MOF-011",
+      "funnel": "MOF",
+      "intent_type": "commercial_investigation",
+      "query": "cum se verifică o ofertă emisă de Seller Agent",
+      "user_goal": "Să verifice oferta.",
+      "expected_answer": "Oferta se compară cu Service Offer Contract și cu datele cererii, iar evenimentele și identificatorii relevanți sunt păstrați ca evidence.",
+      "target_page": "https://aiventure.ro/ai-key-maker/"
+    },
+    {
+      "id": "AKM-MOF-012",
+      "funnel": "MOF",
+      "intent_type": "commercial_investigation",
+      "query": "cum păstrez aprobarea umană înainte de acceptarea ofertei",
+      "user_goal": "Să implementeze HITL.",
+      "expected_answer": "Fluxul poate marca oferta ca necesitând aprobare și poate refuza continuarea până la primirea unei aprobări umane valide.",
+      "target_page": "https://aiventure.ro/ai-key-maker/"
+    },
+    {
+      "id": "AKM-MOF-013",
+      "funnel": "MOF",
+      "intent_type": "commercial_investigation",
+      "query": "pot implementa A2A fără să schimb website-ul",
+      "user_goal": "Să păstreze website-ul existent.",
+      "expected_answer": "În infrastructurile compatibile, endpoint-urile și logica agentică pot fi adăugate separat sau la Edge, păstrând website-ul pentru oameni.",
+      "target_page": "https://aiventure.ro/ai-key-maker/"
+    },
+    {
+      "id": "AKM-MOF-014",
+      "funnel": "MOF",
+      "intent_type": "commercial_investigation",
+      "query": "AI KEY MAKER sau dezvoltare A2A custom",
+      "user_goal": "Să compare abordările.",
+      "expected_answer": "Comparația trebuie făcută după serviciu, complexitatea SOC, integrări, nivelul de autonomie, infrastructură, control și cerințele de evidence.",
+      "target_page": "https://aiventure.ro/ai-key-maker/"
+    },
+    {
+      "id": "AKM-MOF-015",
+      "funnel": "MOF",
+      "intent_type": "commercial_investigation",
+      "query": "cum verific dacă AI KEY MAKER funcționează",
+      "user_goal": "Să valideze implementarea.",
+      "expected_answer": "Se execută un flux real controlat Buyer-to-Seller și se verifică răspunsurile, oferta, aprobarea și evidence-ul față de Service Offer Contract validat.",
+      "target_page": "https://aiventure.ro/ai-key-maker/"
+    },
+    {
+      "id": "AKM-BOF-001",
+      "funnel": "BOF",
+      "intent_type": "transactional",
+      "query": "audit Agent-Ready pentru serviciul firmei",
+      "user_goal": "Să solicite sau să înceapă această acțiune AI KEY MAKER.",
+      "expected_answer": "AiVenture poate evalua serviciul, oferta, regulile, capabilitățile, aprobările și infrastructura necesară pentru Agent-Ready.",
+      "expected_action": "request_agent_ready_audit",
+      "target_page": "https://aiventure.ro/ai-key-maker/"
+    },
+    {
+      "id": "AKM-BOF-002",
+      "funnel": "BOF",
+      "intent_type": "transactional",
+      "query": "transformare serviciu B2B în serviciu Agent-Ready",
+      "user_goal": "Să solicite sau să înceapă această acțiune AI KEY MAKER.",
+      "expected_answer": "AiVenture poate structura serviciul existent pentru discovery, request, clarificare, ofertare și acțiunile autorizate.",
+      "expected_action": "request_ai_key_maker",
+      "target_page": "https://aiventure.ro/ai-key-maker/"
+    },
+    {
+      "id": "AKM-BOF-003",
+      "funnel": "BOF",
+      "intent_type": "transactional",
+      "query": "AI KEY MAKER pentru firmă B2B",
+      "user_goal": "Să solicite sau să înceapă această acțiune AI KEY MAKER.",
+      "expected_answer": "AI KEY MAKER™ adaugă SALES DOOR-ul agentic peste serviciul B2B existent, păstrând controlul companiei asupra ofertei.",
+      "expected_action": "request_ai_key_maker",
+      "target_page": "https://aiventure.ro/ai-key-maker/"
+    },
+    {
+      "id": "AKM-BOF-004",
+      "funnel": "BOF",
+      "intent_type": "transactional",
+      "query": "AI KEY MAKER pentru servicii profesionale",
+      "user_goal": "Să solicite sau să înceapă această acțiune AI KEY MAKER.",
+      "expected_answer": "Serviciile profesionale eligibile pot fi structurate pentru interacțiuni agentice pe baza condițiilor validate de furnizor.",
+      "expected_action": "request_ai_key_maker",
+      "target_page": "https://aiventure.ro/ai-key-maker/"
+    },
+    {
+      "id": "AKM-BOF-005",
+      "funnel": "BOF",
+      "intent_type": "transactional",
+      "query": "creare Service Offer Contract",
+      "user_goal": "Să solicite sau să înceapă această acțiune AI KEY MAKER.",
+      "expected_answer": "AiVenture poate structura informația comercială existentă într-un Service Offer Contract care trebuie validat de ownerul serviciului.",
+      "expected_action": "request_soc_creation",
+      "target_page": "https://aiventure.ro/ai-key-maker/"
+    },
+    {
+      "id": "AKM-BOF-006",
+      "funnel": "BOF",
+      "intent_type": "transactional",
+      "query": "creare Seller Agent pentru firmă",
+      "user_goal": "Să solicite sau să înceapă această acțiune AI KEY MAKER.",
+      "expected_answer": "AiVenture poate implementa un Seller Agent conectat la Service Offer Contract și la capabilitățile autorizate.",
+      "expected_action": "request_seller_agent",
+      "target_page": "https://aiventure.ro/ai-key-maker/"
+    },
+    {
+      "id": "AKM-BOF-007",
+      "funnel": "BOF",
+      "intent_type": "transactional",
+      "query": "conectare serviciu la Buyer Agents",
+      "user_goal": "Să solicite sau să înceapă această acțiune AI KEY MAKER.",
+      "expected_answer": "Serviciul poate fi expus printr-o suprafață A2A pentru discovery și interacțiuni compatibile cu mandatul definit.",
+      "expected_action": "request_buyer_agent_connection",
+      "target_page": "https://aiventure.ro/ai-key-maker/"
+    },
+    {
+      "id": "AKM-BOF-008",
+      "funnel": "BOF",
+      "intent_type": "transactional",
+      "query": "implementare Web-A2A pentru website existent",
+      "user_goal": "Să solicite sau să înceapă această acțiune AI KEY MAKER.",
+      "expected_answer": "AiVenture poate evalua și implementa o suprafață Web-A2A peste infrastructura existentă, când aceasta este compatibilă.",
+      "expected_action": "request_web_a2a_implementation",
+      "target_page": "https://aiventure.ro/ai-key-maker/"
+    },
+    {
+      "id": "AKM-BOF-009",
+      "funnel": "BOF",
+      "intent_type": "transactional",
+      "query": "implementare A2A la Edge",
+      "user_goal": "Să solicite sau să înceapă această acțiune AI KEY MAKER.",
+      "expected_answer": "Pentru infrastructurile compatibile, logica și endpoint-urile A2A pot fi implementate la Edge fără ca Edge-ul să inventeze oferta.",
+      "expected_action": "request_edge_a2a",
+      "target_page": "https://aiventure.ro/ai-key-maker/"
+    },
+    {
+      "id": "AKM-BOF-010",
+      "funnel": "BOF",
+      "intent_type": "transactional",
+      "query": "implementare A2A cu human approval",
+      "user_goal": "Să solicite sau să înceapă această acțiune AI KEY MAKER.",
+      "expected_answer": "Fluxurile pot include puncte obligatorii de aprobare umană înaintea acțiunilor comerciale definite.",
+      "expected_action": "request_hitl_a2a",
+      "target_page": "https://aiventure.ro/ai-key-maker/"
+    },
+    {
+      "id": "AKM-BOF-011",
+      "funnel": "BOF",
+      "intent_type": "transactional",
+      "query": "test Buyer Agent Seller Agent",
+      "user_goal": "Să solicite sau să înceapă această acțiune AI KEY MAKER.",
+      "expected_answer": "AiVenture poate executa un flux controlat între Buyer Agent și Seller Agent și poate verifica fiecare etapă față de contractul serviciului.",
+      "expected_action": "request_a2a_test",
+      "target_page": "https://aiventure.ro/ai-key-maker/"
+    },
+    {
+      "id": "AKM-BOF-012",
+      "funnel": "BOF",
+      "intent_type": "transactional",
+      "query": "raport A2A cu evidence verificabil",
+      "user_goal": "Să solicite sau să înceapă această acțiune AI KEY MAKER.",
+      "expected_answer": "Raportul poate documenta request-ul, clarificările, oferta, aprobarea, identificatorii și evidence-ul observat în rulare.",
+      "expected_action": "request_a2a_evidence_report",
+      "target_page": "https://aiventure.ro/ai-key-maker/"
+    },
+    {
+      "id": "AKM-BOF-013",
+      "funnel": "BOF",
+      "intent_type": "transactional",
+      "query": "cât costă AI KEY MAKER AiVenture",
+      "user_goal": "Să solicite sau să înceapă această acțiune AI KEY MAKER.",
+      "expected_answer": "Costul depinde de serviciu, complexitatea Service Offer Contract, integrări, nivelul de autonomie și infrastructura necesară.",
+      "expected_action": "request_ai_key_maker_quote",
+      "target_page": "https://aiventure.ro/ai-key-maker/"
+    },
+    {
+      "id": "AKM-BOF-014",
+      "funnel": "BOF",
+      "intent_type": "transactional",
+      "query": "solicită evaluare AI KEY MAKER",
+      "user_goal": "Să solicite sau să înceapă această acțiune AI KEY MAKER.",
+      "expected_answer": "Procesul poate începe cu selectarea serviciului B2B și evaluarea informațiilor, regulilor și acțiunilor care pot fi expuse controlat.",
+      "expected_action": "request_ai_key_maker",
+      "target_page": "https://aiventure.ro/ai-key-maker/"
+    },
+    {
+      "id": "AKM-BOF-015",
+      "funnel": "BOF",
+      "intent_type": "transactional",
+      "query": "începe AI KEY MAKER cu AiVenture",
+      "user_goal": "Să solicite sau să înceapă această acțiune AI KEY MAKER.",
+      "expected_answer": "Primul pas este alegerea serviciului, extragerea ofertei reale și validarea umană a Service Offer Contract înainte de activarea fluxurilor agentice.",
+      "expected_action": "start_ai_key_maker_engagement",
+      "target_page": "https://aiventure.ro/ai-key-maker/"
+    }
+  ]
+}
