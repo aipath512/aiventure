@@ -1,0 +1,599 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "id": "aiventure-data-dictionary-v1.0",
+  "name": "AiVenture Semantic Data Dictionary",
+  "version": "1.0",
+  "canonical_url": "https://aiventure.ro/data-dictionary.json",
+  "owner": "AiVenture S.R.L.",
+  "purpose": "Canonical semantic metamodel for AiVenture entities, concepts, objects and bidirectional relationships.",
+  "principles": [
+    "Single semantic source of truth",
+    "Every object has a canonical identifier",
+    "Every relationship has an explicit inverse",
+    "Every relationship declares cardinality",
+    "No transactional offer may be invented by the semantic layer",
+    "Claims and evidence remain distinguishable",
+    "Human Web, Web-AI and Web-A2A reference the same business objects"
+  ],
+  "cardinalities": {
+    "ZERO_OR_ONE": "0..1",
+    "EXACTLY_ONE": "1",
+    "ZERO_OR_MORE": "0..*",
+    "ONE_OR_MORE": "1..*"
+  },
+  "entity_types": {
+    "Organization": {
+      "description": "Legal, commercial or institutional organization.",
+      "required": [
+        "id",
+        "name"
+      ],
+      "recommended": [
+        "canonical_url",
+        "status"
+      ]
+    },
+    "Person": {
+      "description": "Human person associated with an organization, product, evidence or responsibility.",
+      "required": [
+        "id",
+        "name"
+      ]
+    },
+    "Product": {
+      "description": "Named AiVenture product.",
+      "required": [
+        "id",
+        "name",
+        "provider"
+      ],
+      "recommended": [
+        "canonical_url",
+        "status"
+      ]
+    },
+    "Service": {
+      "description": "Commercial or operational service that can be discovered, requested, quoted or delivered.",
+      "required": [
+        "id",
+        "name",
+        "provider"
+      ],
+      "recommended": [
+        "canonical_url",
+        "status"
+      ]
+    },
+    "Agent": {
+      "description": "AI or software agent capable of performing defined actions.",
+      "required": [
+        "id",
+        "name"
+      ],
+      "recommended": [
+        "capabilities",
+        "autonomy_level"
+      ]
+    },
+    "Concept": {
+      "description": "Canonical semantic concept used by AiVenture.",
+      "required": [
+        "id",
+        "name",
+        "definition"
+      ]
+    },
+    "WebPage": {
+      "description": "Canonical human-readable web resource.",
+      "required": [
+        "id",
+        "canonical_url"
+      ],
+      "recommended": [
+        "title",
+        "primary_entity"
+      ]
+    },
+    "MachineReadableResource": {
+      "description": "Machine-readable resource such as JSON, JSON-LD, XML or TXT.",
+      "required": [
+        "id",
+        "canonical_url",
+        "format"
+      ]
+    },
+    "Intent": {
+      "description": "Explicit user or agent information, evaluation or transaction intent.",
+      "required": [
+        "id",
+        "intent"
+      ],
+      "recommended": [
+        "funnel_stage",
+        "target"
+      ]
+    },
+    "Question": {
+      "description": "Canonical question associated with an intent, concept, product or service.",
+      "required": [
+        "id",
+        "text"
+      ]
+    },
+    "Answer": {
+      "description": "Canonical answer to a defined question.",
+      "required": [
+        "id",
+        "text"
+      ]
+    },
+    "Offer": {
+      "description": "Commercial offer derived only from validated business information.",
+      "required": [
+        "id",
+        "provider"
+      ],
+      "recommended": [
+        "price",
+        "currency",
+        "status"
+      ]
+    },
+    "ServiceOfferContract": {
+      "description": "Human-validated machine-readable contract defining what a Seller Agent may offer.",
+      "required": [
+        "id",
+        "service",
+        "status"
+      ]
+    },
+    "Capability": {
+      "description": "Declared capability of an agent, service, product or system.",
+      "required": [
+        "id",
+        "name"
+      ]
+    },
+    "Action": {
+      "description": "Executable or representable operation.",
+      "required": [
+        "id",
+        "name"
+      ]
+    },
+    "Claim": {
+      "description": "Statement that may require supporting evidence.",
+      "required": [
+        "id",
+        "statement"
+      ]
+    },
+    "Evidence": {
+      "description": "Evidence supporting or verifying a claim, action or transaction.",
+      "required": [
+        "id",
+        "status"
+      ]
+    },
+    "Requirement": {
+      "description": "Business, technical or regulatory requirement.",
+      "required": [
+        "id",
+        "statement"
+      ]
+    },
+    "Control": {
+      "description": "Control used to satisfy or verify a requirement.",
+      "required": [
+        "id",
+        "name"
+      ]
+    },
+    "Technology": {
+      "description": "Technology, protocol, platform or technical mechanism.",
+      "required": [
+        "id",
+        "name"
+      ]
+    },
+    "WebSurface": {
+      "description": "Access surface through which the same business/service can be consumed.",
+      "enum": [
+        "Human Web",
+        "Web-AI",
+        "Web-A2A"
+      ]
+    }
+  },
+  "relationship_types": {
+    "OFFERS": {
+      "inverse": "OFFERED_BY",
+      "domain": [
+        "Organization"
+      ],
+      "range": [
+        "Product",
+        "Service"
+      ],
+      "source_cardinality": "0..*",
+      "target_cardinality": "1"
+    },
+    "OFFERED_BY": {
+      "inverse": "OFFERS",
+      "domain": [
+        "Product",
+        "Service"
+      ],
+      "range": [
+        "Organization"
+      ],
+      "source_cardinality": "1",
+      "target_cardinality": "0..*"
+    },
+    "DESCRIBES": {
+      "inverse": "DESCRIBED_ON",
+      "domain": [
+        "WebPage",
+        "MachineReadableResource"
+      ],
+      "range": [
+        "Organization",
+        "Product",
+        "Service",
+        "Agent",
+        "Concept"
+      ],
+      "source_cardinality": "1..*",
+      "target_cardinality": "0..*"
+    },
+    "DESCRIBED_ON": {
+      "inverse": "DESCRIBES",
+      "domain": [
+        "Organization",
+        "Product",
+        "Service",
+        "Agent",
+        "Concept"
+      ],
+      "range": [
+        "WebPage",
+        "MachineReadableResource"
+      ],
+      "source_cardinality": "0..*",
+      "target_cardinality": "1..*"
+    },
+    "TARGETS": {
+      "inverse": "TARGETED_BY",
+      "domain": [
+        "Intent"
+      ],
+      "range": [
+        "Product",
+        "Service",
+        "Concept",
+        "WebPage"
+      ],
+      "source_cardinality": "1..*",
+      "target_cardinality": "0..*"
+    },
+    "TARGETED_BY": {
+      "inverse": "TARGETS",
+      "domain": [
+        "Product",
+        "Service",
+        "Concept",
+        "WebPage"
+      ],
+      "range": [
+        "Intent"
+      ],
+      "source_cardinality": "0..*",
+      "target_cardinality": "1..*"
+    },
+    "IMPLEMENTS": {
+      "inverse": "IMPLEMENTED_BY",
+      "domain": [
+        "Product",
+        "Service",
+        "Agent",
+        "Technology"
+      ],
+      "range": [
+        "Concept",
+        "Capability",
+        "Control"
+      ],
+      "source_cardinality": "0..*",
+      "target_cardinality": "0..*"
+    },
+    "IMPLEMENTED_BY": {
+      "inverse": "IMPLEMENTS",
+      "domain": [
+        "Concept",
+        "Capability",
+        "Control"
+      ],
+      "range": [
+        "Product",
+        "Service",
+        "Agent",
+        "Technology"
+      ],
+      "source_cardinality": "0..*",
+      "target_cardinality": "0..*"
+    },
+    "EXECUTES": {
+      "inverse": "EXECUTED_BY",
+      "domain": [
+        "Agent"
+      ],
+      "range": [
+        "Action"
+      ],
+      "source_cardinality": "0..*",
+      "target_cardinality": "0..*"
+    },
+    "EXECUTED_BY": {
+      "inverse": "EXECUTES",
+      "domain": [
+        "Action"
+      ],
+      "range": [
+        "Agent"
+      ],
+      "source_cardinality": "0..*",
+      "target_cardinality": "0..*"
+    },
+    "SUPPORTS": {
+      "inverse": "SUPPORTED_BY",
+      "domain": [
+        "Evidence"
+      ],
+      "range": [
+        "Claim"
+      ],
+      "source_cardinality": "1..*",
+      "target_cardinality": "0..*"
+    },
+    "SUPPORTED_BY": {
+      "inverse": "SUPPORTS",
+      "domain": [
+        "Claim"
+      ],
+      "range": [
+        "Evidence"
+      ],
+      "source_cardinality": "0..*",
+      "target_cardinality": "1..*"
+    },
+    "SATISFIES": {
+      "inverse": "SATISFIED_BY",
+      "domain": [
+        "Control"
+      ],
+      "range": [
+        "Requirement"
+      ],
+      "source_cardinality": "0..*",
+      "target_cardinality": "0..*"
+    },
+    "SATISFIED_BY": {
+      "inverse": "SATISFIES",
+      "domain": [
+        "Requirement"
+      ],
+      "range": [
+        "Control"
+      ],
+      "source_cardinality": "0..*",
+      "target_cardinality": "0..*"
+    },
+    "USES": {
+      "inverse": "USED_BY",
+      "domain": [
+        "Agent",
+        "Product",
+        "Service"
+      ],
+      "range": [
+        "Technology",
+        "MachineReadableResource",
+        "ServiceOfferContract"
+      ],
+      "source_cardinality": "0..*",
+      "target_cardinality": "0..*"
+    },
+    "USED_BY": {
+      "inverse": "USES",
+      "domain": [
+        "Technology",
+        "MachineReadableResource",
+        "ServiceOfferContract"
+      ],
+      "range": [
+        "Agent",
+        "Product",
+        "Service"
+      ],
+      "source_cardinality": "0..*",
+      "target_cardinality": "0..*"
+    },
+    "ANSWERS": {
+      "inverse": "ANSWERED_BY",
+      "domain": [
+        "Answer"
+      ],
+      "range": [
+        "Question"
+      ],
+      "source_cardinality": "1",
+      "target_cardinality": "1"
+    },
+    "ANSWERED_BY": {
+      "inverse": "ANSWERS",
+      "domain": [
+        "Question"
+      ],
+      "range": [
+        "Answer"
+      ],
+      "source_cardinality": "1",
+      "target_cardinality": "1"
+    },
+    "LINKS_TO": {
+      "inverse": "LINKED_FROM",
+      "domain": [
+        "WebPage"
+      ],
+      "range": [
+        "WebPage"
+      ],
+      "source_cardinality": "0..*",
+      "target_cardinality": "0..*"
+    },
+    "LINKED_FROM": {
+      "inverse": "LINKS_TO",
+      "domain": [
+        "WebPage"
+      ],
+      "range": [
+        "WebPage"
+      ],
+      "source_cardinality": "0..*",
+      "target_cardinality": "0..*"
+    }
+  },
+  "canonical_identifier_policy": {
+    "organization": "organization.<slug>",
+    "person": "person.<slug>",
+    "product": "product.<slug>",
+    "service": "service.<slug>",
+    "agent": "agent.<slug>",
+    "concept": "concept.<slug>",
+    "page": "page.<slug>",
+    "resource": "resource.<slug>",
+    "intent": "intent.<slug>.<number>",
+    "question": "question.<slug>",
+    "answer": "answer.<slug>",
+    "offer": "offer.<id>",
+    "soc": "soc.<id>",
+    "claim": "claim.<id>",
+    "evidence": "evidence.<id>",
+    "requirement": "requirement.<id>",
+    "control": "control.<id>"
+  },
+  "validation_rules": [
+    {
+      "id": "DD-001",
+      "rule": "Every object MUST have a globally unique canonical id."
+    },
+    {
+      "id": "DD-002",
+      "rule": "Every declared relationship MUST have its declared inverse."
+    },
+    {
+      "id": "DD-003",
+      "rule": "Every relationship MUST respect domain and range."
+    },
+    {
+      "id": "DD-004",
+      "rule": "Every relationship MUST respect source and target cardinalities."
+    },
+    {
+      "id": "DD-005",
+      "rule": "Every public WebPage MUST map to at least one semantic entity."
+    },
+    {
+      "id": "DD-006",
+      "rule": "Every active Product or Service SHOULD have a canonical public WebPage."
+    },
+    {
+      "id": "DD-007",
+      "rule": "Every Intent MUST target at least one Product, Service, Concept or WebPage."
+    },
+    {
+      "id": "DD-008",
+      "rule": "Every Question intended as canonical FAQ MUST have one canonical Answer."
+    },
+    {
+      "id": "DD-009",
+      "rule": "Every verifiable Claim SHOULD reference Evidence."
+    },
+    {
+      "id": "DD-010",
+      "rule": "Evidence MUST NOT be represented as VERIFIED unless the defined verification procedure has succeeded."
+    },
+    {
+      "id": "DD-011",
+      "rule": "A transactional Agent MUST NOT invent an Offer."
+    },
+    {
+      "id": "DD-012",
+      "rule": "An Agent generating an Offer MUST operate from a human-validated ServiceOfferContract."
+    },
+    {
+      "id": "DD-013",
+      "rule": "Human Web, Web-AI and Web-A2A MUST reference the same canonical business entities."
+    },
+    {
+      "id": "DD-014",
+      "rule": "Canonical URLs MUST NOT identify two semantically different canonical objects of the same type."
+    },
+    {
+      "id": "DD-015",
+      "rule": "No entity may remain orphaned unless explicitly marked standalone."
+    }
+  ],
+  "integrity_checks": [
+    "ORPHAN_ENTITY",
+    "DUPLICATE_ENTITY",
+    "BROKEN_RELATION",
+    "MISSING_INVERSE",
+    "DOMAIN_VIOLATION",
+    "RANGE_VIOLATION",
+    "CARDINALITY_VIOLATION",
+    "MISSING_CANONICAL",
+    "DUPLICATE_CANONICAL",
+    "UNMAPPED_PAGE",
+    "UNMAPPED_SERVICE",
+    "UNMAPPED_PRODUCT",
+    "UNMAPPED_INTENT",
+    "QUESTION_WITHOUT_ANSWER",
+    "CLAIM_WITHOUT_EVIDENCE",
+    "INVALID_EVIDENCE_STATUS",
+    "SOC_NOT_VALIDATED",
+    "OFFER_WITHOUT_SOC",
+    "BROKEN_INTERNAL_LINK"
+  ],
+  "semantic_integrity_score": {
+    "scale": "0-100",
+    "dimensions": {
+      "entity_coverage": 20,
+      "relationship_integrity": 20,
+      "inverse_relationship_integrity": 15,
+      "cardinality_integrity": 10,
+      "canonical_mapping": 10,
+      "intent_mapping": 10,
+      "claim_evidence_coverage": 10,
+      "internal_link_integrity": 5
+    },
+    "rule": "Score MUST be calculated from observed applicable objects and relations; missing or unknown evidence MUST NOT be counted as PASS."
+  },
+  "integration_targets": [
+    "entities.json",
+    "knowledge-graph.json",
+    "intents.json",
+    "Schema.org JSON-LD",
+    "FAQPage",
+    "BreadcrumbList",
+    "sitemap.xml",
+    "llms.txt",
+    "ai.json",
+    "agent-card.json",
+    "capabilities.json",
+    "governance.json",
+    "authority.json",
+    "policy.json",
+    "evidence resources"
+  ]
+}
