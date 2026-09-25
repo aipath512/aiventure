@@ -1,0 +1,487 @@
+{
+  "schema_version": "1.0",
+  "document_type": "intent_catalog",
+  "entity": {
+    "name": "AiVenture",
+    "url": "https://aiventure.ro/"
+  },
+  "service": {
+    "name": "AI Signals",
+    "canonical": "https://aiventure.ro/ai-signals/"
+  },
+  "language": "ro",
+  "intent_count": 50,
+  "funnel": {
+    "TOF": 20,
+    "MOF": 15,
+    "BOF": 15
+  },
+  "implementation_note": "Taxonomia și scorarea AI Signals descrise aici aparțin arhitecturii AiVenture; nu sunt prezentate ca standard universal sau cerință oficială a furnizorilor AI.",
+  "intents": [
+    {
+      "id": "AIS-TOF-001",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "ce sunt AI Signals",
+      "user_goal": "Să înțeleagă conceptul AI Signals.",
+      "expected_answer": "AI Signals sunt semnale structurate și verificabile care ajută sistemele AI și Agenții să interpreteze mai clar identitatea, oferta și informațiile unei firme.",
+      "target_page": "https://aiventure.ro/ai-signals/"
+    },
+    {
+      "id": "AIS-TOF-002",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "cum funcționează AI Signals",
+      "user_goal": "Să înțeleagă mecanismul.",
+      "expected_answer": "AI Signals fac informații importante mai explicite și mai ușor de procesat automat pe suprafețele publice relevante.",
+      "target_page": "https://aiventure.ro/ai-signals/"
+    },
+    {
+      "id": "AIS-TOF-003",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "de ce are nevoie AI de semnale machine-readable",
+      "user_goal": "Să înțeleagă problema rezolvată.",
+      "expected_answer": "Informația poate fi clară pentru un om, dar ambiguă sau dificil de extras automat; structurile machine-readable pot reduce această ambiguitate.",
+      "target_page": "https://aiventure.ro/ai-signals/"
+    },
+    {
+      "id": "AIS-TOF-004",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "cum fac informațiile firmei ușor de citit de AI",
+      "user_goal": "Să îmbunătățească machine readability.",
+      "expected_answer": "Informațiile trebuie să fie coerente, explicite, structurate și asociate cu entitățile, serviciile și sursele reale ale firmei.",
+      "target_page": "https://aiventure.ro/ai-signals/"
+    },
+    {
+      "id": "AIS-TOF-005",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "de ce AI înțelege greșit firma mea",
+      "user_goal": "Să identifice sursele ambiguității.",
+      "expected_answer": "Pot exista informații incomplete, contradictorii, neactualizate sau relații insuficient definite între companie, servicii și alte entități.",
+      "target_page": "https://aiventure.ro/ai-signals/"
+    },
+    {
+      "id": "AIS-TOF-006",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "ce sunt machine-readable signals",
+      "user_goal": "Să înțeleagă semnalele procesabile automat.",
+      "expected_answer": "Sunt informații exprimate într-o structură pe care software-ul o poate identifica și procesa automat.",
+      "target_page": "https://aiventure.ro/ai-signals/"
+    },
+    {
+      "id": "AIS-TOF-007",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "ce sunt identity signals",
+      "user_goal": "Să înțeleagă semnalele de identitate.",
+      "expected_answer": "Identity signals descriu explicit organizația și ajută la diferențierea ei de alte entități.",
+      "target_page": "https://aiventure.ro/ai-signals/"
+    },
+    {
+      "id": "AIS-TOF-008",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "ce sunt offer signals",
+      "user_goal": "Să înțeleagă semnalele despre ofertă.",
+      "expected_answer": "Offer signals descriu ce oferă firma, cui se adresează și informațiile validate relevante pentru serviciu.",
+      "target_page": "https://aiventure.ro/ai-signals/"
+    },
+    {
+      "id": "AIS-TOF-009",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "ce sunt intent signals",
+      "user_goal": "Să înțeleagă legătura cu intențiile.",
+      "expected_answer": "Intent signals leagă nevoile și întrebările utilizatorilor de paginile, răspunsurile și serviciile relevante.",
+      "target_page": "https://aiventure.ro/ai-signals/"
+    },
+    {
+      "id": "AIS-TOF-010",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "ce sunt trust signals pentru AI",
+      "user_goal": "Să înțeleagă semnalele de încredere.",
+      "expected_answer": "Trust signals sunt informații și dovezi care permit verificarea identității, afirmațiilor, autorității sau provenienței informației.",
+      "target_page": "https://aiventure.ro/ai-signals/"
+    },
+    {
+      "id": "AIS-TOF-011",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "ce sunt actionability signals",
+      "user_goal": "Să înțeleagă semnalele pentru acțiune.",
+      "expected_answer": "Actionability signals descriu dacă și cum poate fi solicitat sau utilizat un serviciu, împreună cu regulile și limitele relevante.",
+      "target_page": "https://aiventure.ro/ai-signals/"
+    },
+    {
+      "id": "AIS-TOF-012",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "ce este cross-surface consistency",
+      "user_goal": "Să înțeleagă consistența informației.",
+      "expected_answer": "Cross-surface consistency înseamnă că informațiile critice rămân coerente între HTML, date structurate, fișiere machine-readable, API-uri și alte suprafețe relevante.",
+      "target_page": "https://aiventure.ro/ai-signals/"
+    },
+    {
+      "id": "AIS-TOF-013",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "ce este evidence pentru AI Signals",
+      "user_goal": "Să diferențieze declarația de dovadă.",
+      "expected_answer": "Evidence este informația observabilă care susține evaluarea unui semnal și permite reverificarea rezultatului.",
+      "target_page": "https://aiventure.ro/ai-signals/"
+    },
+    {
+      "id": "AIS-TOF-014",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "un fișier JSON este suficient pentru AI Signals",
+      "user_goal": "Să înțeleagă limitele fișierelor declarative.",
+      "expected_answer": "Nu. Existența unui fișier nu demonstrează singură că informația este validă, consistentă sau utilizată de un sistem AI.",
+      "target_page": "https://aiventure.ro/ai-signals/"
+    },
+    {
+      "id": "AIS-TOF-015",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "ce fișiere machine-readable poate avea un website",
+      "user_goal": "Să descopere suprafețele machine-readable.",
+      "expected_answer": "Un website poate publica artefacte pentru identitate, servicii, intenții, capabilități, politici, dovezi și alte informații definite de propria arhitectură.",
+      "target_page": "https://aiventure.ro/ai-signals/"
+    },
+    {
+      "id": "AIS-TOF-016",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "AI Signals sunt utile pentru firme B2B",
+      "user_goal": "Să determine relevanța pentru B2B.",
+      "expected_answer": "Pot fi utile când serviciile trebuie descrise fără ambiguitate pentru discovery, evaluare și procese asistate de AI.",
+      "target_page": "https://aiventure.ro/ai-signals/"
+    },
+    {
+      "id": "AIS-TOF-017",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "AI Signals sunt utile pentru Agenți AI",
+      "user_goal": "Să înțeleagă relația cu Agenții.",
+      "expected_answer": "Semnalele explicite pot ajuta Agenții să identifice entitatea, oferta și regulile relevante fără a deduce informații comerciale critice.",
+      "target_page": "https://aiventure.ro/ai-signals/"
+    },
+    {
+      "id": "AIS-TOF-018",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "AI Signals pot face serviciile Agent-Ready",
+      "user_goal": "Să înțeleagă rolul semnalelor în Agent-Ready.",
+      "expected_answer": "AI Signals pot contribui la Agent-Ready, dar actionability necesită și ofertă validată, reguli, limite, aprobări și mecanisme de acțiune.",
+      "target_page": "https://aiventure.ro/ai-signals/"
+    },
+    {
+      "id": "AIS-TOF-019",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "care este legătura dintre AI Signals și Human Web Web-AI Web-A2A",
+      "user_goal": "Să înțeleagă arhitectura.",
+      "expected_answer": "AI Signals pot susține reprezentarea coerentă a firmei și ofertei între Human Web, Web-AI și Web-A2A.",
+      "target_page": "https://aiventure.ro/ai-signals/"
+    },
+    {
+      "id": "AIS-TOF-020",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "cum verific dacă site-ul are AI Signals",
+      "user_goal": "Să evalueze starea site-ului.",
+      "expected_answer": "Se inventariază semnalele definite, suprafețele unde trebuie să existe și evidence-ul public observabil pentru fiecare.",
+      "target_page": "https://aiventure.ro/ai-signals/"
+    },
+    {
+      "id": "AIS-MOF-001",
+      "funnel": "MOF",
+      "intent_type": "commercial_investigation",
+      "query": "care este diferența dintre AI Signals și SEO",
+      "user_goal": "Să compare AI Signals și SEO.",
+      "expected_answer": "SEO urmărește în principal vizibilitatea în search, iar AI Signals structurează informații explicite pentru interpretarea automată a firmei și ofertei.",
+      "target_page": "https://aiventure.ro/ai-signals/"
+    },
+    {
+      "id": "AIS-MOF-002",
+      "funnel": "MOF",
+      "intent_type": "commercial_investigation",
+      "query": "care este diferența dintre AI Signals și AEO",
+      "user_goal": "Să compare AI Signals și AEO.",
+      "expected_answer": "AEO organizează intenții și răspunsuri; AI Signals acoperă mai larg identitatea, oferta, trust, actionability și alte informații structurate.",
+      "target_page": "https://aiventure.ro/ai-signals/"
+    },
+    {
+      "id": "AIS-MOF-003",
+      "funnel": "MOF",
+      "intent_type": "commercial_investigation",
+      "query": "care este diferența dintre AI Signals și GEO",
+      "user_goal": "Să compare AI Signals și GEO.",
+      "expected_answer": "GEO urmărește reprezentarea în experiențe generative, iar AI Signals descriu semnale concrete care pot susține mai multe suprafețe AI și agentice.",
+      "target_page": "https://aiventure.ro/ai-signals/"
+    },
+    {
+      "id": "AIS-MOF-004",
+      "funnel": "MOF",
+      "intent_type": "commercial_investigation",
+      "query": "care este diferența dintre AI Signals și AIO",
+      "user_goal": "Să compare AI Signals și AIO.",
+      "expected_answer": "AIO optimizează interpretabilitatea informației, iar AI Signals reprezintă semnale concrete definite și verificate pe suprafețele relevante.",
+      "target_page": "https://aiventure.ro/ai-signals/"
+    },
+    {
+      "id": "AIS-MOF-005",
+      "funnel": "MOF",
+      "intent_type": "commercial_investigation",
+      "query": "ce trebuie să includă un audit AI Signals",
+      "user_goal": "Să evalueze un audit.",
+      "expected_answer": "Auditul trebuie să definească semnalele, să identifice suprafețele relevante și să clasifice fiecare semnal pe baza evidence-ului observat.",
+      "target_page": "https://aiventure.ro/ai-signals/"
+    },
+    {
+      "id": "AIS-MOF-006",
+      "funnel": "MOF",
+      "intent_type": "commercial_investigation",
+      "query": "cum se măsoară AI Signals",
+      "user_goal": "Să înțeleagă măsurarea.",
+      "expected_answer": "În arhitectura AiVenture, semnalele pot fi evaluate individual prin PASS, PARTIAL, FAIL sau N/A, cu evidence și reguli explicite.",
+      "target_page": "https://aiventure.ro/ai-signals/"
+    },
+    {
+      "id": "AIS-MOF-007",
+      "funnel": "MOF",
+      "intent_type": "commercial_investigation",
+      "query": "cum verific dacă un AI Signal este valid",
+      "user_goal": "Să diferențieze declarația de validare.",
+      "expected_answer": "Se verifică valoarea declarată față de sursa de adevăr și consistența sa pe suprafețele relevante.",
+      "target_page": "https://aiventure.ro/ai-signals/"
+    },
+    {
+      "id": "AIS-MOF-008",
+      "funnel": "MOF",
+      "intent_type": "commercial_investigation",
+      "query": "cum verific consistența AI Signals",
+      "user_goal": "Să detecteze contradicțiile.",
+      "expected_answer": "Aceeași informație critică este comparată între HTML, structured data, fișiere machine-readable și alte suprafețe definite.",
+      "target_page": "https://aiventure.ro/ai-signals/"
+    },
+    {
+      "id": "AIS-MOF-009",
+      "funnel": "MOF",
+      "intent_type": "commercial_investigation",
+      "query": "cum repar AI Signals lipsă",
+      "user_goal": "Să remedieze semnale absente.",
+      "expected_answer": "Se identifică sursa de adevăr, se publică semnalul pe suprafața potrivită și se reverifică rezultatul public.",
+      "target_page": "https://aiventure.ro/ai-signals/"
+    },
+    {
+      "id": "AIS-MOF-010",
+      "funnel": "MOF",
+      "intent_type": "commercial_investigation",
+      "query": "cum repar AI Signals contradictorii",
+      "user_goal": "Să elimine inconsistențele.",
+      "expected_answer": "Se validează valoarea corectă, se actualizează suprafețele contradictorii și se repetă verificarea cross-surface.",
+      "target_page": "https://aiventure.ro/ai-signals/"
+    },
+    {
+      "id": "AIS-MOF-011",
+      "funnel": "MOF",
+      "intent_type": "commercial_investigation",
+      "query": "cum public AI Signals fără să inventez informații",
+      "user_goal": "Să păstreze integritatea datelor.",
+      "expected_answer": "Semnalele trebuie generate numai din informații existente și validate; necunoscutele nu trebuie completate prin presupuneri.",
+      "target_page": "https://aiventure.ro/ai-signals/"
+    },
+    {
+      "id": "AIS-MOF-012",
+      "funnel": "MOF",
+      "intent_type": "commercial_investigation",
+      "query": "AI Signals manual sau automatizat",
+      "user_goal": "Să compare implementarea manuală și automată.",
+      "expected_answer": "Automatizarea poate accelera scanarea și monitorizarea, iar validarea umană rămâne importantă pentru sursa de adevăr și datele critice.",
+      "target_page": "https://aiventure.ro/ai-signals/"
+    },
+    {
+      "id": "AIS-MOF-013",
+      "funnel": "MOF",
+      "intent_type": "commercial_investigation",
+      "query": "poate un AI Agent monitoriza AI Signals",
+      "user_goal": "Să automatizeze monitorizarea.",
+      "expected_answer": "Un agent poate verifica periodic semnalele definite, detecta regresii și produce evidence pentru diferențele observate.",
+      "target_page": "https://aiventure.ro/ai-signals/"
+    },
+    {
+      "id": "AIS-MOF-014",
+      "funnel": "MOF",
+      "intent_type": "commercial_investigation",
+      "query": "pot adăuga AI Signals fără să reconstruiesc site-ul",
+      "user_goal": "Să păstreze website-ul existent.",
+      "expected_answer": "În funcție de infrastructură, semnalele pot fi adăugate în pagini, date structurate, fișiere, API-uri sau printr-un strat Edge.",
+      "target_page": "https://aiventure.ro/ai-signals/"
+    },
+    {
+      "id": "AIS-MOF-015",
+      "funnel": "MOF",
+      "intent_type": "commercial_investigation",
+      "query": "cum demonstrez AI Signals before after",
+      "user_goal": "Să dovedească remedierea.",
+      "expected_answer": "Se păstrează baseline-ul, intervenția, timestamp-ul, rerun-ul și evidence-ul AFTER pentru aceleași semnale.",
+      "target_page": "https://aiventure.ro/ai-signals/"
+    },
+    {
+      "id": "AIS-BOF-001",
+      "funnel": "BOF",
+      "intent_type": "transactional",
+      "query": "audit AI Signals pentru site",
+      "user_goal": "Să solicite sau să înceapă această acțiune AI Signals.",
+      "expected_answer": "AiVenture poate inventaria și evalua semnalele definite pentru suprafețele publice ale website-ului.",
+      "expected_action": "request_ai_signals_audit",
+      "target_page": "https://aiventure.ro/ai-signals/"
+    },
+    {
+      "id": "AIS-BOF-002",
+      "funnel": "BOF",
+      "intent_type": "transactional",
+      "query": "audit AI Signals pentru firmă B2B",
+      "user_goal": "Să solicite sau să înceapă această acțiune AI Signals.",
+      "expected_answer": "Auditul poate verifica identity, offer, intent, trust și actionability signals pentru serviciile prioritare.",
+      "expected_action": "request_b2b_ai_signals_audit",
+      "target_page": "https://aiventure.ro/ai-signals/"
+    },
+    {
+      "id": "AIS-BOF-003",
+      "funnel": "BOF",
+      "intent_type": "transactional",
+      "query": "implementare AI Signals pentru website",
+      "user_goal": "Să solicite sau să înceapă această acțiune AI Signals.",
+      "expected_answer": "După validarea surselor de adevăr, semnalele eligibile pot fi publicate pe suprafețele tehnice adecvate.",
+      "expected_action": "request_ai_signals_implementation",
+      "target_page": "https://aiventure.ro/ai-signals/"
+    },
+    {
+      "id": "AIS-BOF-004",
+      "funnel": "BOF",
+      "intent_type": "transactional",
+      "query": "AI Signals pentru servicii profesionale",
+      "user_goal": "Să solicite sau să înceapă această acțiune AI Signals.",
+      "expected_answer": "AiVenture poate structura semnale relevante despre identitate, servicii, expertiză, intenții și dovezi.",
+      "expected_action": "request_professional_ai_signals",
+      "target_page": "https://aiventure.ro/ai-signals/"
+    },
+    {
+      "id": "AIS-BOF-005",
+      "funnel": "BOF",
+      "intent_type": "transactional",
+      "query": "AI Signals Agent pentru firmă",
+      "user_goal": "Să solicite sau să înceapă această acțiune AI Signals.",
+      "expected_answer": "Un AI Signals Agent poate observa, detecta, prioritiza și reverifica semnalele definite în limite controlate.",
+      "expected_action": "request_ai_signals_agent",
+      "target_page": "https://aiventure.ro/ai-signals/"
+    },
+    {
+      "id": "AIS-BOF-006",
+      "funnel": "BOF",
+      "intent_type": "transactional",
+      "query": "generare fișiere machine-readable pentru firmă",
+      "user_goal": "Să solicite sau să înceapă această acțiune AI Signals.",
+      "expected_answer": "AiVenture poate genera artefacte din informația reală și validată a firmei, fără inventarea datelor lipsă.",
+      "expected_action": "request_machine_readable_files",
+      "target_page": "https://aiventure.ro/ai-signals/"
+    },
+    {
+      "id": "AIS-BOF-007",
+      "funnel": "BOF",
+      "intent_type": "transactional",
+      "query": "implementare AI Signals la Edge",
+      "user_goal": "Să solicite sau să înceapă această acțiune AI Signals.",
+      "expected_answer": "Pentru infrastructurile compatibile, anumite semnale pot fi servite sau injectate controlat la Edge.",
+      "expected_action": "request_edge_ai_signals",
+      "target_page": "https://aiventure.ro/ai-signals/"
+    },
+    {
+      "id": "AIS-BOF-008",
+      "funnel": "BOF",
+      "intent_type": "transactional",
+      "query": "monitorizare AI Signals automată",
+      "user_goal": "Să solicite sau să înceapă această acțiune AI Signals.",
+      "expected_answer": "AiVenture poate executa verificări periodice asupra semnalelor definite și raporta schimbările observate.",
+      "expected_action": "request_ai_signals_monitoring",
+      "target_page": "https://aiventure.ro/ai-signals/"
+    },
+    {
+      "id": "AIS-BOF-009",
+      "funnel": "BOF",
+      "intent_type": "transactional",
+      "query": "verificare cross-surface AI Signals",
+      "user_goal": "Să solicite sau să înceapă această acțiune AI Signals.",
+      "expected_answer": "Verificarea compară valorile critice între pagini, date structurate, fișiere și celelalte suprafețe definite.",
+      "expected_action": "request_cross_surface_verification",
+      "target_page": "https://aiventure.ro/ai-signals/"
+    },
+    {
+      "id": "AIS-BOF-010",
+      "funnel": "BOF",
+      "intent_type": "transactional",
+      "query": "raport AI Signals PASS PARTIAL FAIL",
+      "user_goal": "Să solicite sau să înceapă această acțiune AI Signals.",
+      "expected_answer": "Fiecare semnal poate fi clasificat conform regulilor AiVenture și asociat cu evidence-ul observat.",
+      "expected_action": "request_ai_signals_report",
+      "target_page": "https://aiventure.ro/ai-signals/"
+    },
+    {
+      "id": "AIS-BOF-011",
+      "funnel": "BOF",
+      "intent_type": "transactional",
+      "query": "raport AI Signals cu dovezi",
+      "user_goal": "Să solicite sau să înceapă această acțiune AI Signals.",
+      "expected_answer": "Raportul poate include semnalul, starea, URL-ul sau suprafața verificată, evidence-ul și timestamp-ul.",
+      "expected_action": "request_ai_signals_evidence_report",
+      "target_page": "https://aiventure.ro/ai-signals/"
+    },
+    {
+      "id": "AIS-BOF-012",
+      "funnel": "BOF",
+      "intent_type": "transactional",
+      "query": "AI Signals before after",
+      "user_goal": "Să solicite sau să înceapă această acțiune AI Signals.",
+      "expected_answer": "Aceleași semnale pot fi reverificate după intervenție pentru a documenta diferențele BEFORE și AFTER.",
+      "expected_action": "request_ai_signals_before_after",
+      "target_page": "https://aiventure.ro/ai-signals/"
+    },
+    {
+      "id": "AIS-BOF-013",
+      "funnel": "BOF",
+      "intent_type": "transactional",
+      "query": "cât costă AI Signals AiVenture",
+      "user_goal": "Să solicite sau să înceapă această acțiune AI Signals.",
+      "expected_answer": "Costul depinde de numărul de suprafețe, semnale, pagini, integrări și nivelul de implementare și monitorizare.",
+      "expected_action": "request_ai_signals_quote",
+      "target_page": "https://aiventure.ro/ai-signals/"
+    },
+    {
+      "id": "AIS-BOF-014",
+      "funnel": "BOF",
+      "intent_type": "transactional",
+      "query": "solicită audit AI Signals AiVenture",
+      "user_goal": "Să solicite sau să înceapă această acțiune AI Signals.",
+      "expected_answer": "Procesul poate începe cu URL-ul, serviciul prioritar și stabilirea baseline-ului pentru semnalele evaluate.",
+      "expected_action": "request_ai_signals_audit",
+      "target_page": "https://aiventure.ro/ai-signals/"
+    },
+    {
+      "id": "AIS-BOF-015",
+      "funnel": "BOF",
+      "intent_type": "transactional",
+      "query": "începe AI Signals cu AiVenture",
+      "user_goal": "Să solicite sau să înceapă această acțiune AI Signals.",
+      "expected_answer": "Primul pas este inventarierea semnalelor existente, identificarea gap-urilor și validarea sursei de adevăr înainte de intervenție.",
+      "expected_action": "start_ai_signals_engagement",
+      "target_page": "https://aiventure.ro/ai-signals/"
+    }
+  ]
+}
