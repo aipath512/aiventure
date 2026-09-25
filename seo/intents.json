@@ -1,0 +1,486 @@
+{
+  "schema_version": "1.0",
+  "document_type": "intent_catalog",
+  "entity": {
+    "name": "AiVenture",
+    "url": "https://aiventure.ro/"
+  },
+  "service": {
+    "name": "SEO",
+    "canonical": "https://aiventure.ro/seo/"
+  },
+  "language": "ro",
+  "intent_count": 50,
+  "funnel": {
+    "TOF": 20,
+    "MOF": 15,
+    "BOF": 15
+  },
+  "intents": [
+    {
+      "id": "SEO-TOF-001",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "ce este SEO",
+      "user_goal": "Să înțeleagă ce este SEO.",
+      "expected_answer": "SEO este procesul de optimizare a paginilor și structurii unui site pentru a îmbunătăți descoperirea, înțelegerea și vizibilitatea în motoarele de căutare.",
+      "target_page": "https://aiventure.ro/seo/"
+    },
+    {
+      "id": "SEO-TOF-002",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "cum funcționează SEO",
+      "user_goal": "Să înțeleagă mecanismele principale ale SEO.",
+      "expected_answer": "SEO combină accesibilitatea pentru crawlere, indexarea, structura tehnică, conținutul relevant, legăturile și alte semnale folosite de motoarele de căutare.",
+      "target_page": "https://aiventure.ro/seo/"
+    },
+    {
+      "id": "SEO-TOF-003",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "de ce este important SEO",
+      "user_goal": "Să înțeleagă valoarea SEO pentru o companie.",
+      "expected_answer": "SEO poate crește probabilitatea ca paginile relevante ale unei companii să fie descoperite de persoane care caută produsele, serviciile sau informațiile oferite.",
+      "target_page": "https://aiventure.ro/seo/"
+    },
+    {
+      "id": "SEO-TOF-004",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "cum ajunge un site în Google",
+      "user_goal": "Să înțeleagă procesul de crawl și indexare.",
+      "expected_answer": "Un site trebuie să poată fi descoperit și accesat de crawler, iar paginile eligibile pot fi indexate și evaluate pentru interogări relevante.",
+      "target_page": "https://aiventure.ro/seo/"
+    },
+    {
+      "id": "SEO-TOF-005",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "cum îmi fac site-ul vizibil în Google",
+      "user_goal": "Să afle ce elemente trebuie optimizate.",
+      "expected_answer": "Vizibilitatea depinde de accesibilitatea tehnică, indexare, relevanța conținutului, structură, legături și alte semnale de calitate și autoritate.",
+      "target_page": "https://aiventure.ro/seo/"
+    },
+    {
+      "id": "SEO-TOF-006",
+      "funnel": "TOF",
+      "intent_type": "problem_awareness",
+      "query": "de ce nu apare site-ul meu în Google",
+      "user_goal": "Să identifice cauzele lipsei de vizibilitate.",
+      "expected_answer": "Cauzele pot include probleme de crawl sau indexare, directive restrictive, canonicalizare incorectă, conținut insuficient sau relevanță redusă.",
+      "target_page": "https://aiventure.ro/seo/"
+    },
+    {
+      "id": "SEO-TOF-007",
+      "funnel": "TOF",
+      "intent_type": "problem_awareness",
+      "query": "de ce a scăzut traficul organic",
+      "user_goal": "Să identifice posibile cauze ale scăderii traficului SEO.",
+      "expected_answer": "Scăderea poate proveni din modificări ale cererii, concurenței, indexării, conținutului, structurii site-ului, performanței tehnice sau sistemelor de ranking.",
+      "target_page": "https://aiventure.ro/seo/"
+    },
+    {
+      "id": "SEO-TOF-008",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "cum verific dacă site-ul este indexat",
+      "user_goal": "Să verifice dacă paginile sunt prezente în index.",
+      "expected_answer": "Indexarea poate fi verificată prin instrumentele oficiale ale motorului de căutare și prin inspectarea URL-urilor și rapoartelor de indexare.",
+      "target_page": "https://aiventure.ro/seo/"
+    },
+    {
+      "id": "SEO-TOF-009",
+      "funnel": "TOF",
+      "intent_type": "problem_awareness",
+      "query": "cum găsesc problemele SEO ale site-ului",
+      "user_goal": "Să identifice erorile SEO.",
+      "expected_answer": "Un audit SEO verifică accesul, indexarea, metadata, canonicalizarea, structura paginilor, conținutul, legăturile, performanța și datele structurate.",
+      "target_page": "https://aiventure.ro/seo/"
+    },
+    {
+      "id": "SEO-TOF-010",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "ce este SEO tehnic",
+      "user_goal": "Să înțeleagă componenta tehnică SEO.",
+      "expected_answer": "SEO tehnic urmărește ca site-ul să poată fi accesat, interpretat și indexat corect și include elemente precum crawlability, canonicalizare, sitemap, robots și statusuri HTTP.",
+      "target_page": "https://aiventure.ro/seo/"
+    },
+    {
+      "id": "SEO-TOF-011",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "ce este SEO on-page",
+      "user_goal": "Să înțeleagă optimizarea la nivelul paginii.",
+      "expected_answer": "SEO on-page optimizează elementele unei pagini precum titlul, headings, conținutul, legăturile interne, imaginile, metadata și structurarea semantică.",
+      "target_page": "https://aiventure.ro/seo/"
+    },
+    {
+      "id": "SEO-TOF-012",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "ce este SEO off-page",
+      "user_goal": "Să înțeleagă semnalele SEO externe site-ului.",
+      "expected_answer": "SEO off-page privește semnale externe site-ului, inclusiv mențiuni și legături relevante bazate pe surse și relații reale.",
+      "target_page": "https://aiventure.ro/seo/"
+    },
+    {
+      "id": "SEO-TOF-013",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "ce sunt cuvintele cheie SEO",
+      "user_goal": "Să înțeleagă rolul termenilor de căutare.",
+      "expected_answer": "Cuvintele și expresiile cheie sunt formulări asociate nevoilor și intențiilor utilizatorilor și ajută la structurarea conținutului relevant.",
+      "target_page": "https://aiventure.ro/seo/"
+    },
+    {
+      "id": "SEO-TOF-014",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "ce este intenția de căutare",
+      "user_goal": "Să înțeleagă search intent.",
+      "expected_answer": "Intenția de căutare descrie obiectivul din spatele unei interogări, de exemplu informare, comparație, navigare sau acțiune comercială.",
+      "target_page": "https://aiventure.ro/seo/"
+    },
+    {
+      "id": "SEO-TOF-015",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "ce este un audit SEO",
+      "user_goal": "Să înțeleagă scopul auditului SEO.",
+      "expected_answer": "Un audit SEO analizează starea actuală a site-ului, identifică probleme și oportunități și produce constatări care pot fi transformate într-un plan de acțiune.",
+      "target_page": "https://aiventure.ro/seo/"
+    },
+    {
+      "id": "SEO-TOF-016",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "ce sunt Core Web Vitals",
+      "user_goal": "Să înțeleagă indicatorii de experiență a paginii.",
+      "expected_answer": "Core Web Vitals sunt indicatori pentru anumite aspecte ale experienței utilizatorului, precum încărcarea, interactivitatea și stabilitatea vizuală.",
+      "target_page": "https://aiventure.ro/seo/"
+    },
+    {
+      "id": "SEO-TOF-017",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "ce este Schema.org pentru SEO",
+      "user_goal": "Să înțeleagă rolul datelor structurate.",
+      "expected_answer": "Schema.org oferă un vocabular pentru descrierea structurată a entităților și informațiilor unei pagini; datele declarate trebuie să corespundă conținutului real.",
+      "target_page": "https://aiventure.ro/seo/"
+    },
+    {
+      "id": "SEO-TOF-018",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "ce este sitemap.xml și de ce contează",
+      "user_goal": "Să înțeleagă rolul sitemap-ului.",
+      "expected_answer": "sitemap.xml semnalează URL-uri relevante pentru descoperire, dar nu garantează indexarea lor.",
+      "target_page": "https://aiventure.ro/seo/"
+    },
+    {
+      "id": "SEO-TOF-019",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "ce este robots.txt și de ce contează",
+      "user_goal": "Să înțeleagă controlul accesului crawlerelor.",
+      "expected_answer": "robots.txt oferă crawlerelor compatibile directive privind zonele site-ului pe care le pot sau nu le pot accesa.",
+      "target_page": "https://aiventure.ro/seo/"
+    },
+    {
+      "id": "SEO-TOF-020",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "cum influențează AI căutarea și SEO",
+      "user_goal": "Să înțeleagă relația dintre SEO și experiențele AI.",
+      "expected_answer": "Experiențele AI schimbă modul în care informația poate fi descoperită și prezentată, dar fundamentele de accesibilitate, relevanță și structură ale paginilor rămân importante.",
+      "target_page": "https://aiventure.ro/seo/"
+    },
+    {
+      "id": "SEO-MOF-021",
+      "funnel": "MOF",
+      "intent_type": "commercial_investigation",
+      "query": "cum aleg un serviciu SEO",
+      "user_goal": "Să evalueze furnizori și soluții SEO.",
+      "expected_answer": "Compară metodologia de audit, implementarea, monitorizarea, KPI-urile, transparența modificărilor și dovezile oferite.",
+      "target_page": "https://aiventure.ro/seo/"
+    },
+    {
+      "id": "SEO-MOF-022",
+      "funnel": "MOF",
+      "intent_type": "commercial_investigation",
+      "query": "ce trebuie să includă un audit SEO",
+      "user_goal": "Să compare profunzimea auditurilor SEO.",
+      "expected_answer": "Un audit poate acoperi crawl, indexare, statusuri HTTP, canonical, sitemap, robots, metadata, headings, conținut, linking intern, date structurate și performanță.",
+      "target_page": "https://aiventure.ro/seo/"
+    },
+    {
+      "id": "SEO-MOF-023",
+      "funnel": "MOF",
+      "intent_type": "commercial_investigation",
+      "query": "SEO manual sau automatizat",
+      "user_goal": "Să compare două modele de operare SEO.",
+      "expected_answer": "Automatizarea poate accelera monitorizarea și detectarea, în timp ce intervenția umană rămâne importantă pentru strategie, validare și decizii contextuale.",
+      "target_page": "https://aiventure.ro/seo/"
+    },
+    {
+      "id": "SEO-MOF-024",
+      "funnel": "MOF",
+      "intent_type": "commercial_investigation",
+      "query": "agenție SEO sau AI SEO Agent",
+      "user_goal": "Să compare serviciile tradiționale cu automatizarea.",
+      "expected_answer": "Comparația trebuie făcută după acoperire, automatizare, control uman, frecvența monitorizării, dovezi și cost.",
+      "target_page": "https://aiventure.ro/seo/"
+    },
+    {
+      "id": "SEO-MOF-025",
+      "funnel": "MOF",
+      "intent_type": "commercial_investigation",
+      "query": "SEO tradițional sau SEO asistat de AI",
+      "user_goal": "Să compare metodele de optimizare.",
+      "expected_answer": "AI poate automatiza analiza, clasificarea și monitorizarea unor semnale SEO, în timp ce deciziile strategice și validarea pot rămâne sub control uman.",
+      "target_page": "https://aiventure.ro/seo/"
+    },
+    {
+      "id": "SEO-MOF-026",
+      "funnel": "MOF",
+      "intent_type": "commercial_investigation",
+      "query": "care este diferența dintre SEO AEO GEO și AIO",
+      "user_goal": "Să determine ce tip de optimizare îi este necesar.",
+      "expected_answer": "SEO pregătește paginile pentru search; AEO leagă întrebările de răspunsuri; GEO tratează utilizarea informației în răspunsuri generative; AIO extinde pregătirea informației pentru sisteme AI.",
+      "target_page": "https://aiventure.ro/seo/"
+    },
+    {
+      "id": "SEO-MOF-027",
+      "funnel": "MOF",
+      "intent_type": "commercial_investigation",
+      "query": "cum verific calitatea serviciilor SEO",
+      "user_goal": "Să evalueze obiectiv un furnizor SEO.",
+      "expected_answer": "Solicită indicatori măsurabili, metodologie, modificări documentate, starea înainte și după intervenție și dovezi verificabile.",
+      "target_page": "https://aiventure.ro/seo/"
+    },
+    {
+      "id": "SEO-MOF-028",
+      "funnel": "MOF",
+      "intent_type": "commercial_investigation",
+      "query": "cum măsor rezultatele SEO",
+      "user_goal": "Să stabilească indicatorii de performanță.",
+      "expected_answer": "Rezultatele pot fi evaluate prin indexare, impresii, poziții, clickuri, trafic organic, conversii și indicatori tehnici, raportate la un baseline.",
+      "target_page": "https://aiventure.ro/seo/"
+    },
+    {
+      "id": "SEO-MOF-029",
+      "funnel": "MOF",
+      "intent_type": "commercial_investigation",
+      "query": "ce KPI trebuie urmăriți pentru SEO",
+      "user_goal": "Să definească măsurarea SEO.",
+      "expected_answer": "KPI-urile depind de obiectiv și pot include pagini indexate, impresii, clickuri, CTR, poziții, trafic organic, conversii și indicatori tehnici.",
+      "target_page": "https://aiventure.ro/seo/"
+    },
+    {
+      "id": "SEO-MOF-030",
+      "funnel": "MOF",
+      "intent_type": "commercial_investigation",
+      "query": "cum identific problemele SEO prioritare",
+      "user_goal": "Să prioritizeze remedierea.",
+      "expected_answer": "Problemele pot fi prioritizate după impact, severitate, numărul de pagini afectate, efectul asupra crawlării și indexării și costul remedierii.",
+      "target_page": "https://aiventure.ro/seo/"
+    },
+    {
+      "id": "SEO-MOF-031",
+      "funnel": "MOF",
+      "intent_type": "commercial_investigation",
+      "query": "cum repar problemele SEO tehnice",
+      "user_goal": "Să găsească o soluție pentru erorile tehnice.",
+      "expected_answer": "Procesul presupune detectarea problemei, identificarea cauzei, aplicarea unei remedieri controlate și reverificarea URL-ului public.",
+      "target_page": "https://aiventure.ro/seo/"
+    },
+    {
+      "id": "SEO-MOF-032",
+      "funnel": "MOF",
+      "intent_type": "commercial_investigation",
+      "query": "cum optimizez SEO fără să reconstruiesc site-ul",
+      "user_goal": "Să păstreze site-ul existent.",
+      "expected_answer": "Se pornește de la paginile existente, se identifică lipsurile și se aplică numai schimbările necesare, când infrastructura permite.",
+      "target_page": "https://aiventure.ro/seo/"
+    },
+    {
+      "id": "SEO-MOF-033",
+      "funnel": "MOF",
+      "intent_type": "commercial_investigation",
+      "query": "poate fi implementat SEO la Edge",
+      "user_goal": "Să evalueze o arhitectură Edge pentru optimizare.",
+      "expected_answer": "Anumite optimizări tehnice pot fi implementate la Edge dacă infrastructura permite modificarea controlată a răspunsului HTTP.",
+      "target_page": "https://aiventure.ro/seo/"
+    },
+    {
+      "id": "SEO-MOF-034",
+      "funnel": "MOF",
+      "intent_type": "commercial_investigation",
+      "query": "poate un AI Agent monitoriza SEO continuu",
+      "user_goal": "Să automatizeze monitorizarea SEO.",
+      "expected_answer": "Un agent software poate executa periodic verificări definite, detecta schimbări, prioritiza probleme și produce rapoarte în limitele stabilite.",
+      "target_page": "https://aiventure.ro/seo/"
+    },
+    {
+      "id": "SEO-MOF-035",
+      "funnel": "MOF",
+      "intent_type": "commercial_investigation",
+      "query": "cum verific cu dovezi modificările SEO",
+      "user_goal": "Să poată demonstra ce s-a schimbat.",
+      "expected_answer": "Păstrează starea înainte, acțiunea executată, timestamp-ul și starea publică după implementare pentru reverificare.",
+      "target_page": "https://aiventure.ro/seo/"
+    },
+    {
+      "id": "SEO-BOF-036",
+      "funnel": "BOF",
+      "intent_type": "transactional",
+      "query": "audit SEO pentru site-ul firmei",
+      "user_goal": "Să solicite o analiză SEO pentru site.",
+      "expected_answer": "AiVenture poate analiza paginile și semnalele SEO observabile și poate identifica probleme și acțiuni de remediere.",
+      "expected_action": "request_seo_audit",
+      "target_page": "https://aiventure.ro/seo/"
+    },
+    {
+      "id": "SEO-BOF-037",
+      "funnel": "BOF",
+      "intent_type": "transactional",
+      "query": "verificare automată SEO pentru site",
+      "user_goal": "Să solicite verificări SEO automatizate.",
+      "expected_answer": "AiVenture poate evalua automat semnale SEO definite și poate documenta constatările.",
+      "expected_action": "request_automated_seo_check",
+      "target_page": "https://aiventure.ro/seo/"
+    },
+    {
+      "id": "SEO-BOF-038",
+      "funnel": "BOF",
+      "intent_type": "transactional",
+      "query": "analiză SEO pentru IMM",
+      "user_goal": "Să solicite o evaluare SEO pentru un IMM.",
+      "expected_answer": "Evaluarea poate porni de la paginile și serviciile prioritare ale firmei și de la problemele SEO observabile.",
+      "expected_action": "request_seo_analysis",
+      "target_page": "https://aiventure.ro/seo/"
+    },
+    {
+      "id": "SEO-BOF-039",
+      "funnel": "BOF",
+      "intent_type": "transactional",
+      "query": "serviciu SEO pentru companie B2B",
+      "user_goal": "Să solicite SEO pentru o companie B2B.",
+      "expected_answer": "AiVenture abordează SEO pornind de la serviciul B2B real, paginile care îl descriu și întrebările clienților.",
+      "expected_action": "request_b2b_seo",
+      "target_page": "https://aiventure.ro/seo/"
+    },
+    {
+      "id": "SEO-BOF-040",
+      "funnel": "BOF",
+      "intent_type": "transactional",
+      "query": "optimizare SEO pentru servicii profesionale",
+      "user_goal": "Să optimizeze paginile unor servicii profesionale.",
+      "expected_answer": "AiVenture poate analiza și optimiza semnalele relevante ale paginilor care descriu servicii profesionale.",
+      "expected_action": "request_professional_services_seo",
+      "target_page": "https://aiventure.ro/seo/"
+    },
+    {
+      "id": "SEO-BOF-041",
+      "funnel": "BOF",
+      "intent_type": "transactional",
+      "query": "AI SEO Agent pentru firmă",
+      "user_goal": "Să evalueze utilizarea unui agent pentru activități SEO.",
+      "expected_answer": "Un AI SEO Agent poate automatiza verificări și monitorizare în limite definite, cu validare umană unde este necesară.",
+      "expected_action": "request_ai_seo_agent",
+      "target_page": "https://aiventure.ro/seo/"
+    },
+    {
+      "id": "SEO-BOF-042",
+      "funnel": "BOF",
+      "intent_type": "transactional",
+      "query": "monitorizare SEO automată",
+      "user_goal": "Să solicite monitorizarea periodică a stării SEO.",
+      "expected_answer": "AiVenture poate automatiza verificarea periodică a semnalelor SEO definite și raportarea schimbărilor detectate.",
+      "expected_action": "request_seo_monitoring",
+      "target_page": "https://aiventure.ro/seo/"
+    },
+    {
+      "id": "SEO-BOF-043",
+      "funnel": "BOF",
+      "intent_type": "transactional",
+      "query": "remediere automată probleme SEO",
+      "user_goal": "Să evalueze automatizarea remedierii problemelor eligibile.",
+      "expected_answer": "Problemele eligibile pot fi transformate în acțiuni controlate, urmate de reverificarea rezultatului public.",
+      "expected_action": "request_seo_remediation",
+      "target_page": "https://aiventure.ro/seo/"
+    },
+    {
+      "id": "SEO-BOF-044",
+      "funnel": "BOF",
+      "intent_type": "transactional",
+      "query": "implementare SEO fără modificarea site-ului existent",
+      "user_goal": "Să păstreze site-ul și infrastructura existente.",
+      "expected_answer": "În cazurile tehnic compatibile, anumite optimizări pot fi aplicate fără reconstruirea completă a site-ului.",
+      "expected_action": "request_edge_seo_assessment",
+      "target_page": "https://aiventure.ro/seo/"
+    },
+    {
+      "id": "SEO-BOF-045",
+      "funnel": "BOF",
+      "intent_type": "transactional",
+      "query": "SEO Edge implementation",
+      "user_goal": "Să solicite evaluarea unei implementări SEO la Edge.",
+      "expected_answer": "AiVenture poate evalua ce intervenții SEO sunt compatibile cu un strat Edge și cu infrastructura existentă.",
+      "expected_action": "request_edge_implementation",
+      "target_page": "https://aiventure.ro/seo/"
+    },
+    {
+      "id": "SEO-BOF-046",
+      "funnel": "BOF",
+      "intent_type": "transactional",
+      "query": "verificare SEO înainte și după implementare",
+      "user_goal": "Să obțină dovada modificărilor executate.",
+      "expected_answer": "Procesul compară starea observată înainte de intervenție cu starea publică observată după implementare.",
+      "expected_action": "request_before_after_verification",
+      "target_page": "https://aiventure.ro/seo/"
+    },
+    {
+      "id": "SEO-BOF-047",
+      "funnel": "BOF",
+      "intent_type": "transactional",
+      "query": "raport SEO cu dovezi verificabile",
+      "user_goal": "Să primească un raport bazat pe dovezi.",
+      "expected_answer": "Constatările pot fi asociate cu URL-uri, observații și stări BEFORE/AFTER pentru reverificare.",
+      "expected_action": "request_evidence_seo_report",
+      "target_page": "https://aiventure.ro/seo/"
+    },
+    {
+      "id": "SEO-BOF-048",
+      "funnel": "BOF",
+      "intent_type": "transactional",
+      "query": "cât costă serviciile SEO AiVenture",
+      "user_goal": "Să solicite prețul serviciului.",
+      "expected_answer": "Costul trebuie stabilit în funcție de domeniul analizat, volumul de pagini și nivelul de audit, implementare și monitorizare solicitat.",
+      "expected_action": "request_seo_quote",
+      "target_page": "https://aiventure.ro/seo/"
+    },
+    {
+      "id": "SEO-BOF-049",
+      "funnel": "BOF",
+      "intent_type": "transactional",
+      "query": "solicită audit SEO AiVenture",
+      "user_goal": "Să înceapă procesul de audit SEO.",
+      "expected_answer": "Procesul poate începe cu URL-ul site-ului, paginile prioritare și definirea domeniului auditului.",
+      "expected_action": "request_seo_audit",
+      "target_page": "https://aiventure.ro/seo/"
+    },
+    {
+      "id": "SEO-BOF-050",
+      "funnel": "BOF",
+      "intent_type": "transactional",
+      "query": "începe optimizarea SEO cu AiVenture",
+      "user_goal": "Să înceapă colaborarea.",
+      "expected_answer": "Primul pas este observarea stării actuale, identificarea problemelor și definirea acțiunilor care pot fi implementate și verificate.",
+      "expected_action": "start_seo_engagement",
+      "target_page": "https://aiventure.ro/seo/"
+    }
+  ]
+}
