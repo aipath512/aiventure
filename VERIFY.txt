@@ -1,0 +1,5 @@
+EU AI Act Ready delta
+- Existing index.html left unchanged.
+- Existing canonical confirmed: https://aiventure.ro/eu-ai-act-ready/
+- Existing JSON-LD contains 46 unique properties + 24 Schema.org types = 70 distinct schema terms (>=60).
+- Added eu-ai-act-ready/intents.json with exactly 50 Q&A intents.
