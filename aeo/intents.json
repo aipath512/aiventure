@@ -1,0 +1,487 @@
+{
+  "schema_version": "1.0",
+  "document_type": "intent_catalog",
+  "entity": {
+    "name": "AiVenture",
+    "url": "https://aiventure.ro/"
+  },
+  "service": {
+    "name": "AEO",
+    "full_name": "Answer Engine Optimization",
+    "canonical": "https://aiventure.ro/aeo/"
+  },
+  "language": "ro",
+  "intent_count": 50,
+  "funnel": {
+    "TOF": 20,
+    "MOF": 15,
+    "BOF": 15
+  },
+  "intents": [
+    {
+      "id": "AEO-TOF-001",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "ce este AEO",
+      "user_goal": "Să înțeleagă AEO.",
+      "expected_answer": "AEO înseamnă Answer Engine Optimization și pregătește informațiile unei firme pentru a fi regăsite ca răspunsuri în căutările AI.",
+      "target_page": "https://aiventure.ro/aeo/"
+    },
+    {
+      "id": "AEO-TOF-002",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "cum funcționează AEO",
+      "user_goal": "Să înțeleagă procesul AEO.",
+      "expected_answer": "AEO pornește de la ceea ce firma vinde, identifică intențiile clienților, formulează întrebări și răspunsuri și le structurează pentru verificare și actualizare.",
+      "target_page": "https://aiventure.ro/aeo/"
+    },
+    {
+      "id": "AEO-TOF-003",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "ce înseamnă Answer Engine Optimization",
+      "user_goal": "Să înțeleagă termenul.",
+      "expected_answer": "Answer Engine Optimization leagă întrebările și intențiile utilizatorilor de răspunsurile relevante despre produsele sau serviciile unei firme.",
+      "target_page": "https://aiventure.ro/aeo/"
+    },
+    {
+      "id": "AEO-TOF-004",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "cum poate ChatGPT găsi serviciile firmei mele",
+      "user_goal": "Să îmbunătățească regăsirea serviciilor în AI.",
+      "expected_answer": "Informațiile despre servicii trebuie să fie publice, clare, accesibile și asociate cu întrebările și intențiile relevante ale clienților.",
+      "target_page": "https://aiventure.ro/aeo/"
+    },
+    {
+      "id": "AEO-TOF-005",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "de ce AI nu găsește firma mea",
+      "user_goal": "Să identifice problemele de discoverability.",
+      "expected_answer": "Cauzele pot include informații insuficiente, pagini greu accesibile, entități ambigue, lipsa răspunsurilor relevante sau inconsistențe între surse.",
+      "target_page": "https://aiventure.ro/aeo/"
+    },
+    {
+      "id": "AEO-TOF-006",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "de ce AI nu recomandă serviciile firmei mele",
+      "user_goal": "Să înțeleagă limitele vizibilității AI.",
+      "expected_answer": "Nicio optimizare nu garantează recomandarea; informațiile trebuie însă să fie clare, relevante, verificabile și ușor de asociat cu nevoia utilizatorului.",
+      "target_page": "https://aiventure.ro/aeo/"
+    },
+    {
+      "id": "AEO-TOF-007",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "ce este un answer engine",
+      "user_goal": "Să înțeleagă conceptul.",
+      "expected_answer": "Un answer engine încearcă să furnizeze direct un răspuns la o întrebare folosind informațiile pe care le poate accesa și procesa.",
+      "target_page": "https://aiventure.ro/aeo/"
+    },
+    {
+      "id": "AEO-TOF-008",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "ce sunt intențiile de căutare pentru AEO",
+      "user_goal": "Să înțeleagă rolul intențiilor.",
+      "expected_answer": "Intențiile exprimă ceea ce utilizatorul încearcă să afle, să compare sau să cumpere și conectează cererea cu oferta relevantă.",
+      "target_page": "https://aiventure.ro/aeo/"
+    },
+    {
+      "id": "AEO-TOF-009",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "ce este intents.json",
+      "user_goal": "Să înțeleagă artefactul AiVenture.",
+      "expected_answer": "intents.json este un artefact machine-readable folosit de AiVenture pentru a structura intenții, întrebări, obiective și răspunsuri asociate unei pagini sau unui serviciu.",
+      "target_page": "https://aiventure.ro/aeo/"
+    },
+    {
+      "id": "AEO-TOF-010",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "ce sunt întrebările TOF MOF BOF",
+      "user_goal": "Să înțeleagă funnel-ul intențiilor.",
+      "expected_answer": "TOF acoperă descoperirea și educarea, MOF evaluarea și comparația, iar BOF intențiile comerciale apropiate de acțiune.",
+      "target_page": "https://aiventure.ro/aeo/"
+    },
+    {
+      "id": "AEO-TOF-011",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "cum identific întrebările clienților",
+      "user_goal": "Să construiască un set de întrebări AEO.",
+      "expected_answer": "Se pornește de la serviciile vândute, tipurile de clienți, problemele lor și întrebările folosite în etapele de informare, comparație și cumpărare.",
+      "target_page": "https://aiventure.ro/aeo/"
+    },
+    {
+      "id": "AEO-TOF-012",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "cum transform serviciile firmei în răspunsuri pentru AI",
+      "user_goal": "Să facă oferta answer-ready.",
+      "expected_answer": "Descrie explicit serviciul, beneficiarul, problema rezolvată, condițiile și dovezile și leagă aceste informații de întrebările reale ale clienților.",
+      "target_page": "https://aiventure.ro/aeo/"
+    },
+    {
+      "id": "AEO-TOF-013",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "ce înseamnă answerability",
+      "user_goal": "Să înțeleagă capacitatea conținutului de a răspunde clar.",
+      "expected_answer": "Answerability descrie cât de direct și neambiguu poate o sursă să răspundă unei întrebări relevante.",
+      "target_page": "https://aiventure.ro/aeo/"
+    },
+    {
+      "id": "AEO-TOF-014",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "ce este FAQ pentru AEO",
+      "user_goal": "Să înțeleagă rolul FAQ.",
+      "expected_answer": "Un FAQ bine construit poate oferi răspunsuri directe la întrebări reale, dar AEO nu se limitează la o secțiune FAQ.",
+      "target_page": "https://aiventure.ro/aeo/"
+    },
+    {
+      "id": "AEO-TOF-015",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "este AEO același lucru cu FAQPage",
+      "user_goal": "Să diferențieze AEO de markup-ul FAQ.",
+      "expected_answer": "Nu. AEO este un proces mai larg de mapare a intențiilor și răspunsurilor; FAQPage este un tip de date structurate aplicabil doar când pagina îndeplinește cerințele relevante.",
+      "target_page": "https://aiventure.ro/aeo/"
+    },
+    {
+      "id": "AEO-TOF-016",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "AEO ajută la vizibilitatea în ChatGPT",
+      "user_goal": "Să înțeleagă relația cu ChatGPT.",
+      "expected_answer": "AEO poate îmbunătăți claritatea și answerability informației publice, dar nu garantează apariția într-un anumit răspuns ChatGPT.",
+      "target_page": "https://aiventure.ro/aeo/"
+    },
+    {
+      "id": "AEO-TOF-017",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "AEO ajută la vizibilitatea în Gemini",
+      "user_goal": "Să înțeleagă relația cu Gemini.",
+      "expected_answer": "AEO poate face informația mai explicită și relevantă pentru întrebări, fără a garanta includerea într-un răspuns Gemini.",
+      "target_page": "https://aiventure.ro/aeo/"
+    },
+    {
+      "id": "AEO-TOF-018",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "AEO este util pentru firme B2B",
+      "user_goal": "Să determine relevanța AEO pentru B2B.",
+      "expected_answer": "Da, mai ales când cumpărătorii formulează întrebări specifice despre servicii, condiții, diferențe și furnizori.",
+      "target_page": "https://aiventure.ro/aeo/"
+    },
+    {
+      "id": "AEO-TOF-019",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "de ce contează AEO pentru servicii profesionale",
+      "user_goal": "Să înțeleagă utilitatea pentru servicii complexe.",
+      "expected_answer": "AEO poate transforma expertiza și oferta într-un set clar de răspunsuri asociate întrebărilor pe care potențialii clienți le formulează.",
+      "target_page": "https://aiventure.ro/aeo/"
+    },
+    {
+      "id": "AEO-TOF-020",
+      "funnel": "TOF",
+      "intent_type": "informational",
+      "query": "cum verific dacă site-ul este pregătit pentru AEO",
+      "user_goal": "Să evalueze AEO readiness.",
+      "expected_answer": "Se verifică serviciile, intențiile, întrebările, răspunsurile, accesibilitatea, consistența și dovezile disponibile.",
+      "target_page": "https://aiventure.ro/aeo/"
+    },
+    {
+      "id": "AEO-MOF-001",
+      "funnel": "MOF",
+      "intent_type": "commercial_investigation",
+      "query": "care este diferența dintre SEO și AEO",
+      "user_goal": "Să compare SEO și AEO.",
+      "expected_answer": "SEO urmărește vizibilitatea în search, iar AEO pregătește informația pentru a răspunde direct intențiilor și întrebărilor utilizatorilor.",
+      "target_page": "https://aiventure.ro/aeo/"
+    },
+    {
+      "id": "AEO-MOF-002",
+      "funnel": "MOF",
+      "intent_type": "commercial_investigation",
+      "query": "care este diferența dintre AEO și GEO",
+      "user_goal": "Să compare AEO și GEO.",
+      "expected_answer": "AEO se concentrează pe intenții și răspunsuri; GEO extinde perspectiva către utilizarea, atribuirea și citarea informației în experiențe generative.",
+      "target_page": "https://aiventure.ro/aeo/"
+    },
+    {
+      "id": "AEO-MOF-003",
+      "funnel": "MOF",
+      "intent_type": "commercial_investigation",
+      "query": "care este diferența dintre AEO și AIO",
+      "user_goal": "Să compare AEO și AIO.",
+      "expected_answer": "AEO organizează întrebări și răspunsuri, iar AIO tratează mai larg structurarea informației pentru interpretare și utilizare de către sisteme AI.",
+      "target_page": "https://aiventure.ro/aeo/"
+    },
+    {
+      "id": "AEO-MOF-004",
+      "funnel": "MOF",
+      "intent_type": "commercial_investigation",
+      "query": "SEO AEO GEO AIO ce trebuie să implementez",
+      "user_goal": "Să aleagă componentele potrivite.",
+      "expected_answer": "Alegerea depinde de problemele observate; disciplinele sunt complementare și pot acoperi search, answerability, generative visibility și AI interpretability.",
+      "target_page": "https://aiventure.ro/aeo/"
+    },
+    {
+      "id": "AEO-MOF-005",
+      "funnel": "MOF",
+      "intent_type": "commercial_investigation",
+      "query": "cum se face un audit AEO",
+      "user_goal": "Să înțeleagă metodologia.",
+      "expected_answer": "Auditul pornește de la ofertă și verifică intențiile relevante, acoperirea întrebărilor, calitatea răspunsurilor, structura și posibilitatea de verificare.",
+      "target_page": "https://aiventure.ro/aeo/"
+    },
+    {
+      "id": "AEO-MOF-006",
+      "funnel": "MOF",
+      "intent_type": "commercial_investigation",
+      "query": "ce trebuie să conțină un audit AEO",
+      "user_goal": "Să evalueze un audit AEO.",
+      "expected_answer": "Auditul trebuie să inventarieze serviciile, intențiile TOF/MOF/BOF, întrebările, răspunsurile, gap-urile și evidence-ul observabil.",
+      "target_page": "https://aiventure.ro/aeo/"
+    },
+    {
+      "id": "AEO-MOF-007",
+      "funnel": "MOF",
+      "intent_type": "commercial_investigation",
+      "query": "cum creez intents.json pentru site",
+      "user_goal": "Să implementeze catalogul de intenții.",
+      "expected_answer": "Se definesc intențiile reale ale utilizatorilor, obiectivele, răspunsurile validate și pagina țintă într-o structură JSON coerentă.",
+      "target_page": "https://aiventure.ro/aeo/"
+    },
+    {
+      "id": "AEO-MOF-008",
+      "funnel": "MOF",
+      "intent_type": "commercial_investigation",
+      "query": "câte intents trebuie să aibă o pagină de serviciu",
+      "user_goal": "Să dimensioneze catalogul.",
+      "expected_answer": "Nu există un număr universal obligatoriu; setul trebuie să acopere suficient intențiile relevante fără a inventa sau multiplica artificial întrebările.",
+      "target_page": "https://aiventure.ro/aeo/"
+    },
+    {
+      "id": "AEO-MOF-009",
+      "funnel": "MOF",
+      "intent_type": "commercial_investigation",
+      "query": "cum creez răspunsuri AEO pentru serviciile firmei",
+      "user_goal": "Să construiască răspunsuri utile.",
+      "expected_answer": "Răspunsurile trebuie să fie scurte, exacte, specifice serviciului real și susținute de informația validată a companiei.",
+      "target_page": "https://aiventure.ro/aeo/"
+    },
+    {
+      "id": "AEO-MOF-010",
+      "funnel": "MOF",
+      "intent_type": "commercial_investigation",
+      "query": "cum măsor rezultatele AEO",
+      "user_goal": "Să definească măsurarea.",
+      "expected_answer": "Se poate urmări acoperirea intențiilor, answerability, consistența răspunsurilor și rezultatele testelor repetabile în sisteme relevante.",
+      "target_page": "https://aiventure.ro/aeo/"
+    },
+    {
+      "id": "AEO-MOF-011",
+      "funnel": "MOF",
+      "intent_type": "commercial_investigation",
+      "query": "cum verific dacă AEO funcționează",
+      "user_goal": "Să verifice rezultatul.",
+      "expected_answer": "Se stabilește un baseline de întrebări, se execută testele, se implementează schimbările și se repetă aceleași verificări pentru comparație.",
+      "target_page": "https://aiventure.ro/aeo/"
+    },
+    {
+      "id": "AEO-MOF-012",
+      "funnel": "MOF",
+      "intent_type": "commercial_investigation",
+      "query": "AEO manual sau automatizat",
+      "user_goal": "Să compare modelele de operare.",
+      "expected_answer": "Automatizarea poate accelera descoperirea și monitorizarea, iar validarea umană rămâne importantă pentru oferta și afirmațiile companiei.",
+      "target_page": "https://aiventure.ro/aeo/"
+    },
+    {
+      "id": "AEO-MOF-013",
+      "funnel": "MOF",
+      "intent_type": "commercial_investigation",
+      "query": "consultant AEO sau AI AEO Agent",
+      "user_goal": "Să compare două modele de furnizare.",
+      "expected_answer": "Compară acoperirea, frecvența, automatizarea, controlul uman, dovezile și costul.",
+      "target_page": "https://aiventure.ro/aeo/"
+    },
+    {
+      "id": "AEO-MOF-014",
+      "funnel": "MOF",
+      "intent_type": "commercial_investigation",
+      "query": "poate un AI Agent face AEO continuu",
+      "user_goal": "Să automatizeze ciclul AEO.",
+      "expected_answer": "Un agent poate executa repetat procesul de observare, identificare a gap-urilor, verificare și monitorizare în limite definite.",
+      "target_page": "https://aiventure.ro/aeo/"
+    },
+    {
+      "id": "AEO-MOF-015",
+      "funnel": "MOF",
+      "intent_type": "commercial_investigation",
+      "query": "pot implementa AEO fără să reconstruiesc site-ul",
+      "user_goal": "Să păstreze website-ul existent.",
+      "expected_answer": "În funcție de infrastructură, elemente AEO pot fi adăugate paginilor și suprafețelor machine-readable fără reconstruirea completă a site-ului.",
+      "target_page": "https://aiventure.ro/aeo/"
+    },
+    {
+      "id": "AEO-BOF-001",
+      "funnel": "BOF",
+      "intent_type": "transactional",
+      "query": "audit AEO pentru site",
+      "user_goal": "Să solicite un audit AEO.",
+      "expected_answer": "AiVenture poate evalua serviciile, intențiile, întrebările și răspunsurile existente și poate identifica gap-urile AEO.",
+      "target_page": "https://aiventure.ro/aeo/",
+      "expected_action": "request_aeo_audit"
+    },
+    {
+      "id": "AEO-BOF-002",
+      "funnel": "BOF",
+      "intent_type": "transactional",
+      "query": "audit AEO pentru firmă B2B",
+      "user_goal": "Să solicite un audit B2B.",
+      "expected_answer": "Auditul poate porni de la serviciile B2B prioritare și de la intențiile cumpărătorilor relevanți.",
+      "target_page": "https://aiventure.ro/aeo/",
+      "expected_action": "request_b2b_aeo_audit"
+    },
+    {
+      "id": "AEO-BOF-003",
+      "funnel": "BOF",
+      "intent_type": "transactional",
+      "query": "servicii AEO pentru IMM",
+      "user_goal": "Să solicite servicii AEO.",
+      "expected_answer": "AiVenture poate structura și verifica intențiile și răspunsurile relevante pentru serviciile companiei.",
+      "target_page": "https://aiventure.ro/aeo/",
+      "expected_action": "request_aeo_service"
+    },
+    {
+      "id": "AEO-BOF-004",
+      "funnel": "BOF",
+      "intent_type": "transactional",
+      "query": "AEO pentru servicii profesionale",
+      "user_goal": "Să optimizeze servicii profesionale.",
+      "expected_answer": "Procesul poate transforma expertiza și oferta reală în răspunsuri clare pentru întrebările relevante ale clienților.",
+      "target_page": "https://aiventure.ro/aeo/",
+      "expected_action": "request_professional_aeo"
+    },
+    {
+      "id": "AEO-BOF-005",
+      "funnel": "BOF",
+      "intent_type": "transactional",
+      "query": "AI AEO Agent pentru firmă",
+      "user_goal": "Să utilizeze automatizare AEO.",
+      "expected_answer": "AI AEO Agent poate automatiza componente ale ciclului AEO, cu validarea informației comerciale de către companie.",
+      "target_page": "https://aiventure.ro/aeo/",
+      "expected_action": "request_aeo_agent"
+    },
+    {
+      "id": "AEO-BOF-006",
+      "funnel": "BOF",
+      "intent_type": "transactional",
+      "query": "generare intents.json pentru firmă",
+      "user_goal": "Să obțină un catalog machine-readable de intenții.",
+      "expected_answer": "AiVenture poate genera intents.json pornind de la serviciile și informațiile reale ale firmei.",
+      "target_page": "https://aiventure.ro/aeo/",
+      "expected_action": "request_intents_json"
+    },
+    {
+      "id": "AEO-BOF-007",
+      "funnel": "BOF",
+      "intent_type": "transactional",
+      "query": "50 intents TOF MOF BOF pentru site",
+      "user_goal": "Să obțină o structură de 50 de intenții.",
+      "expected_answer": "AiVenture poate construi un catalog TOF/MOF/BOF adaptat paginii și serviciului real, dacă 50 de intenții sunt relevante pentru acoperirea dorită.",
+      "target_page": "https://aiventure.ro/aeo/",
+      "expected_action": "request_intent_catalog"
+    },
+    {
+      "id": "AEO-BOF-008",
+      "funnel": "BOF",
+      "intent_type": "transactional",
+      "query": "optimizare site pentru răspunsuri ChatGPT",
+      "user_goal": "Să îmbunătățească answerability pentru ChatGPT.",
+      "expected_answer": "AiVenture poate optimiza claritatea și structurarea informației fără a garanta includerea într-un anumit răspuns.",
+      "target_page": "https://aiventure.ro/aeo/",
+      "expected_action": "request_chatgpt_answer_optimization"
+    },
+    {
+      "id": "AEO-BOF-009",
+      "funnel": "BOF",
+      "intent_type": "transactional",
+      "query": "optimizare site pentru answer engines",
+      "user_goal": "Să pregătească site-ul pentru answer engines.",
+      "expected_answer": "AiVenture poate structura informațiile și răspunsurile relevante pornind de la intențiile utilizatorilor.",
+      "target_page": "https://aiventure.ro/aeo/",
+      "expected_action": "request_answer_engine_optimization"
+    },
+    {
+      "id": "AEO-BOF-010",
+      "funnel": "BOF",
+      "intent_type": "transactional",
+      "query": "implementare AEO fără modificarea site-ului",
+      "user_goal": "Să păstreze site-ul existent.",
+      "expected_answer": "Pentru infrastructurile compatibile, anumite componente AEO pot fi adăugate fără reconstruirea website-ului.",
+      "target_page": "https://aiventure.ro/aeo/",
+      "expected_action": "request_non_rebuild_aeo"
+    },
+    {
+      "id": "AEO-BOF-011",
+      "funnel": "BOF",
+      "intent_type": "transactional",
+      "query": "monitorizare AEO automată",
+      "user_goal": "Să monitorizeze AEO periodic.",
+      "expected_answer": "AiVenture poate repeta verificări definite și raporta schimbările observate.",
+      "target_page": "https://aiventure.ro/aeo/",
+      "expected_action": "request_aeo_monitoring"
+    },
+    {
+      "id": "AEO-BOF-012",
+      "funnel": "BOF",
+      "intent_type": "transactional",
+      "query": "raport AEO înainte și după",
+      "user_goal": "Să obțină dovada intervenției.",
+      "expected_answer": "Aceleași intenții și teste pot fi evaluate înainte și după implementare pentru o comparație reproductibilă.",
+      "target_page": "https://aiventure.ro/aeo/",
+      "expected_action": "request_aeo_before_after"
+    },
+    {
+      "id": "AEO-BOF-013",
+      "funnel": "BOF",
+      "intent_type": "transactional",
+      "query": "cât costă AEO AiVenture",
+      "user_goal": "Să solicite prețul serviciului.",
+      "expected_answer": "Costul depinde de numărul de servicii, pagini, intenții și nivelul de audit, implementare și monitorizare solicitat.",
+      "target_page": "https://aiventure.ro/aeo/",
+      "expected_action": "request_aeo_quote"
+    },
+    {
+      "id": "AEO-BOF-014",
+      "funnel": "BOF",
+      "intent_type": "transactional",
+      "query": "solicită audit AEO AiVenture",
+      "user_goal": "Să înceapă evaluarea.",
+      "expected_answer": "Procesul poate începe cu URL-ul, serviciile prioritare și definirea domeniului auditului.",
+      "target_page": "https://aiventure.ro/aeo/",
+      "expected_action": "request_aeo_audit"
+    },
+    {
+      "id": "AEO-BOF-015",
+      "funnel": "BOF",
+      "intent_type": "transactional",
+      "query": "începe AEO cu AiVenture",
+      "user_goal": "Să înceapă implementarea.",
+      "expected_answer": "Primul pas este identificarea a ceea ce firma vinde, cui vinde și ce caută clienții, urmată de INTENTS → QUESTIONS → ANSWERS → VERIFY → UPDATE → REPEAT.",
+      "target_page": "https://aiventure.ro/aeo/",
+      "expected_action": "start_aeo_engagement"
+    }
+  ]
+}
