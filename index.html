@@ -744,6 +744,35 @@ section,.hero{background:#000!important;border-color:#303030}
   #main-content #pentru-cine p{margin-top:8px;margin-bottom:8px}
 }
 </style>
+
+<style id="aiv-controls-definitive">
+/* Controale definitive: transparente, discrete, complet în viewport. */
+#main-content .hero .related a{
+  background:transparent!important;border:1px solid rgba(213,181,68,.72)!important;color:#f1d97d!important;
+  border-radius:999px!important;min-height:48px!important;padding:0 24px!important;box-shadow:none!important;text-decoration:none!important;
+}
+#main-content .hero .related a:hover,#main-content .hero .related a:focus-visible{
+  background:rgba(213,181,68,.07)!important;border-color:#e2c45c!important;color:#fff2b4!important;
+}
+#aiv-page-tools{position:fixed!important;left:auto!important;right:12px!important;bottom:18px!important;z-index:9998!important;display:flex!important;flex-direction:column!important;align-items:flex-end!important;gap:7px!important;transform:none!important;max-width:calc(100vw - 24px)!important}
+#aiv-page-tools a,#aiv-page-tools button{
+  margin:0!important;background:rgba(0,0,0,.18)!important;color:#f3f3f3!important;border:1px solid rgba(255,255,255,.28)!important;
+  border-radius:999px!important;height:40px!important;min-height:40px!important;box-shadow:0 3px 16px rgba(0,0,0,.22)!important;
+  backdrop-filter:blur(7px);-webkit-backdrop-filter:blur(7px);display:flex!important;align-items:center!important;justify-content:center!important;
+  font:800 10px/1 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif!important;text-decoration:none!important;transform:none!important;
+}
+#aiv-page-tools #aiv-top,#aiv-page-tools #aiv-down{width:44px!important;min-width:44px!important;padding:0!important}
+#aiv-page-tools .aiv-wa,#aiv-page-tools .aiv-call,#aiv-page-tools .aiv-contact{width:108px!important;min-width:108px!important;padding:0 14px!important}
+#aiv-page-tools .aiv-wa{color:#58df92!important;border-color:rgba(65,207,128,.62)!important}
+#aiv-page-tools .aiv-call{color:#e4c65c!important;border-color:rgba(213,181,68,.68)!important}
+#aiv-page-tools .aiv-contact{color:#f3f3f3!important;border-color:rgba(255,255,255,.34)!important}
+#aiv-page-tools a:hover,#aiv-page-tools button:hover,#aiv-page-tools a:focus-visible,#aiv-page-tools button:focus-visible{background:rgba(255,255,255,.07)!important;border-color:#e2c45c!important;color:#fff!important;transform:none!important}
+@media(max-width:700px){
+  #aiv-page-tools{right:10px!important;bottom:12px!important;max-width:calc(100vw - 20px)!important}
+  #aiv-page-tools #aiv-top,#aiv-page-tools #aiv-down{width:42px!important;min-width:42px!important;height:42px!important}
+  #aiv-page-tools .aiv-wa,#aiv-page-tools .aiv-call,#aiv-page-tools .aiv-contact{width:98px!important;min-width:98px!important;height:40px!important}
+}
+</style>
 </head><body>
 
 <!-- GLOBAL HEADER · COMPACT HAMBURGER -->
@@ -1004,75 +1033,3 @@ GLOBAL FOOTER · SESSION 0003H
 </script>
 
 </body></html>
-<style id="aiv-elegant-controls-final">
-/* FINAL: controale uniforme, transparente, compacte, rotunjite */
-#main-content .hero .related a{
-  background:transparent!important;
-  border:1px solid #b9962e!important;
-  color:#f0d77c!important;
-  border-radius:999px!important;
-  min-height:48px!important;
-  padding:0 22px!important;
-  box-shadow:none!important;
-  text-decoration:none!important;
-  font-weight:800!important;
-  letter-spacing:.025em!important;
-}
-#main-content .hero .related a:hover,
-#main-content .hero .related a:focus-visible{
-  background:rgba(197,164,59,.08)!important;
-  border-color:#e2c45c!important;
-  color:#fff0ad!important;
-}
-#aiv-page-tools{
-  right:14px!important;
-  gap:8px!important;
-  align-items:stretch!important;
-}
-#aiv-page-tools a,
-#aiv-page-tools button,
-#aiv-page-tools .aiv-wa,
-#aiv-page-tools .aiv-call,
-#aiv-page-tools .aiv-contact{
-  width:104px!important;
-  height:40px!important;
-  min-height:40px!important;
-  padding:0 12px!important;
-  border-radius:999px!important;
-  background:rgba(0,0,0,.12)!important;
-  backdrop-filter:blur(5px);
-  -webkit-backdrop-filter:blur(5px);
-  border:1px solid #555!important;
-  color:#eee!important;
-  box-shadow:none!important;
-  font:800 10px/1 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif!important;
-  letter-spacing:.02em!important;
-  text-decoration:none!important;
-  transition:border-color .16s ease,color .16s ease,background-color .16s ease,transform .16s ease!important;
-}
-#aiv-page-tools .aiv-wa{border-color:#2a8152!important;color:#55dc8e!important}
-#aiv-page-tools .aiv-call{border-color:#b9962e!important;color:#e0bd4e!important}
-#aiv-page-tools a:hover,
-#aiv-page-tools button:hover,
-#aiv-page-tools a:focus-visible,
-#aiv-page-tools button:focus-visible{
-  background:rgba(255,255,255,.045)!important;
-  border-color:#c5a43b!important;
-  color:#fff!important;
-  transform:translateX(-2px);
-}
-@media(max-width:700px){
-  #aiv-page-tools{right:8px!important;bottom:10px!important;gap:7px!important}
-  #aiv-page-tools a,
-  #aiv-page-tools button,
-  #aiv-page-tools .aiv-wa,
-  #aiv-page-tools .aiv-call,
-  #aiv-page-tools .aiv-contact{
-    width:94px!important;
-    height:38px!important;
-    min-height:38px!important;
-    padding:0 9px!important;
-    font-size:9px!important;
-  }
-}
-</style>
