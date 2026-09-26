@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+
+<html lang="ro">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>Web-A2A | Servicii B2B vandabile agenților AI | AiVenture</title>
+<meta content="Web-A2A AiVenture transformă serviciile oferite oamenilor în servicii vandabile agenților AI: Buyer Agent ↔ Seller Agent, cu ofertă validată, control uman și dovezi verificabile." name="description"/>
+<meta content="Web-A2A, Agent-to-Agent, servicii B2B, agenți AI, Buyer Agent, Seller Agent, Agent-Ready, Service Offer Contract, SOC, AiVenture" name="keywords"/>
+<meta content="AiVenture S.R.L." name="author"/>
+<meta content="AiVenture S.R.L." name="creator"/>
+<meta content="AiVenture S.R.L." name="publisher"/>
+<meta content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" name="robots"/>
+<meta content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" name="googlebot"/>
+<meta content="index,follow" name="bingbot"/>
+<meta content="strict-origin-when-cross-origin" name="referrer"/>
+<meta content="telephone=yes" name="format-detection"/>
+<meta content="#0a0a0a" name="theme-color"/>
+<meta content="dark" name="color-scheme"/>
+<meta content="ro-RO" http-equiv="content-language"/>
+<link href="https://aiventure.ro/web-a2a/" rel="canonical"/>
+<link href="https://aiventure.ro/web-a2a/" hreflang="ro" rel="alternate"/>
+<link href="https://aiventure.ro/web-a2a/" hreflang="x-default" rel="alternate"/>
+<meta content="website" property="og:type"/>
+<meta content="ro_RO" property="og:locale"/>
+<meta content="AiVenture" property="og:site_name"/>
+<meta content="Web-A2A | Servicii B2B vandabile agenților AI | AiVenture" property="og:title"/>
+<meta content="Transformăm serviciile oferite oamenilor în servicii vandabile agenților AI." property="og:description"/>
+<meta content="https://aiventure.ro/web-a2a/" property="og:url"/>
+<meta content="summary" name="twitter:card"/>
+<meta content="Web-A2A | AiVenture" name="twitter:title"/>
+<meta content="Transformăm serviciile oferite oamenilor în servicii vandabile agenților AI." name="twitter:description"/>
+
+<style>
+  :root {
+    --bg: #0a0a0a;
+    --bg-raised: #131313;
+    --border: #262421;
+    --ink: #ece7de;
+    --ink-dim: #9c968a;
+    --gold: #c9a24b;
+    --gold-dim: #8a7238;
+    --green: #4f8f6b;
+    --blue: #5b84ad;
+    --max: 1040px;
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  * { box-sizing: inherit; }
+  html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Iowan Old Style', 'Palatino Linotype', Georgia, serif;
+    line-height: 1.55;
+    font-size: 17px;
+  }
+  .mono { font-family: ui-monospace, 'SF Mono', Menlo, monospace; }
+  a { color: var(--gold); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+  .wrap { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
+  header.site {
+    position: sticky; top: 0; z-index: 10;
+    background: rgba(10,10,10,.92); backdrop-filter: blur(6px);
+    border-bottom: 1px solid var(--border);
+    padding-top: env(safe-area-inset-top, 0px);
+  }
+  .top-strip {
+    font-size: 13px; color: var(--ink-dim); text-align: center;
+    padding: 6px 12px; border-bottom: 1px solid var(--border);
+  }
+  .nav { display: flex; align-items: center; justify-content: space-between; padding: 14px 0; }
+  .brand { font-weight: 600; font-size: 18px; color: var(--ink); }
+  .brand span { color: var(--gold); }
+  nav.links { display: none; gap: 20px; font-size: 14px; color: var(--ink-dim); }
+  @media (min-width: 860px) { nav.links { display: flex; } }
+  nav.links a { color: var(--ink-dim); }
+
+  /* Navigare mobilă: panou nativ, accesibil fără JavaScript. */
+  .mobile-menu { display: none; flex: 0 0 auto; position: relative; }
+  .mobile-menu summary {
+    display: flex; align-items: center; gap: 9px; min-height: 44px;
+    padding: 8px 10px; border: 1px solid var(--gold-dim); border-radius: 4px;
+    color: var(--ink); cursor: pointer; list-style: none; font: 15px system-ui, sans-serif;
+  }
+  .mobile-menu summary::-webkit-details-marker { display: none; }
+  .menu-bars, .menu-bars::before, .menu-bars::after {
+    display: block; width: 20px; height: 2px; background: currentColor;
+    position: relative; border-radius: 2px;
+  }
+  .menu-bars::before, .menu-bars::after { content: ''; position: absolute; left: 0; }
+  .menu-bars::before { top: -6px; }
+  .menu-bars::after { top: 6px; }
+  .mobile-menu[open] .menu-bars { background: transparent; }
+  .mobile-menu[open] .menu-bars::before { top: 0; transform: rotate(45deg); background: var(--ink); }
+  .mobile-menu[open] .menu-bars::after { top: 0; transform: rotate(-45deg); background: var(--ink); }
+  .mobile-menu nav {
+    position: absolute; right: 0; top: calc(100% + 10px); width: min(88vw, 380px);
+    max-height: min(70vh, 650px); overflow-y: auto; overscroll-behavior: contain;
+    background: var(--bg-raised); border: 1px solid var(--gold-dim);
+    border-radius: 4px; box-shadow: 0 14px 32px rgba(0,0,0,.7); padding: 12px;
+  }
+  .mobile-menu .menu-group { color: var(--gold); font: 600 13px system-ui, sans-serif; margin: 16px 10px 6px; }
+  .mobile-menu .menu-group:first-child { margin-top: 5px; }
+  .mobile-menu .menu-group { display:block; }
+  .mobile-menu nav a { display: block; padding: 10px; color: var(--ink); font: 15px system-ui, sans-serif; border-bottom: 1px solid var(--border); }
+  .mobile-menu nav a:last-child { border-bottom: 0; }
+  @media (max-width: 859px) {
+    .mobile-menu { display: block; }
+    .nav { gap: 10px; }
+    .brand { min-width: 0; font-size: 16px; line-height: 1.25; }
+    .brand span { display: block; font-size: 12px; }
+  }
+
+  /* Oferta vizibilă pe homepage. */
+  .offer-intro { max-width: 72ch; color: var(--ink-dim); margin: 0 0 26px; }
+  .offer-grid { display: grid; gap: 16px; grid-template-columns: repeat(3, minmax(0, 1fr)); margin: 24px 0 30px; }
+  .offer-card { border: 1px solid var(--border); background: var(--bg-raised); padding: 20px; border-radius: 4px; }
+  .offer-card h3 { color: var(--gold); font-size: 19px; font-weight: 600; margin: 0 0 10px; }
+  .offer-card p { color: var(--ink-dim); font-size: 15px; margin: 0; }
+  .offer-columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+  .offer-list { border: 1px solid var(--border); padding: 22px; border-radius: 4px; }
+  .offer-list h3 { font-size: 20px; margin: 0 0 10px; }
+  .offer-list ul { padding-left: 20px; margin: 0 0 14px; color: var(--ink-dim); font-size: 15px; }
+  .offer-list li { margin: 6px 0; }
+  .offer-list a { font-size: 15px; }
+  @media (max-width: 700px) { .offer-grid, .offer-columns { grid-template-columns: 1fr; } }
+
+  section { padding: 64px 0; border-bottom: 1px solid var(--border); }
+  .kicker { color: var(--gold-dim); font-size: 14px; margin-bottom: 10px; }
+  h1 { font-size: clamp(30px, 5vw, 46px); line-height: 1.15; margin: 0 0 20px; font-weight: 500; max-width: 18ch; }
+  h2 { font-size: clamp(24px, 3.4vw, 32px); line-height: 1.2; font-weight: 500; margin: 0 0 18px; max-width: 24ch; }
+  p.lede { font-size: 19px; color: var(--ink-dim); max-width: 60ch; margin: 0 0 28px; }
+  .verticals { color: var(--ink-dim); font-size: 15px; margin: 0 0 22px; max-width: 68ch; }
+  .verticals b { color: var(--ink); font-weight: 500; }
+  .promise { font-size: 15px; color: var(--ink-dim); margin: 0 0 30px; }
+
+  .cta-row { display: flex; gap: 14px; flex-wrap: wrap; }
+  .btn { display: inline-block; padding: 13px 22px; border-radius: 3px; font-size: 15px; }
+  .btn-primary { background: var(--gold); color: #171410; font-weight: 600; }
+  .btn-primary:hover { background: #d9b35d; text-decoration: none; }
+  .btn-ghost { border: 1px solid var(--border); color: var(--ink); }
+  .btn-ghost:hover { border-color: var(--gold-dim); text-decoration: none; }
+
+  .layers { display: grid; gap: 18px; margin: 30px 0; }
+  @media (min-width: 700px) { .layers { grid-template-columns: 1fr 1fr; } }
+  .layer { border: 1px solid var(--border); background: var(--bg-raised); padding: 22px; border-radius: 4px; }
+  .layer .tag { font-size: 13px; color: var(--gold-dim); margin-bottom: 8px; }
+  .layer p { margin: 0; color: var(--ink-dim); font-size: 15px; }
+
+  .verify-box { border-left: 2px solid var(--gold-dim); padding-left: 20px; margin-top: 34px; }
+  .verify-box h3 { font-size: 17px; margin: 0 0 6px; font-weight: 600; }
+  .verify-box p { color: var(--ink-dim); font-size: 15px; margin: 0 0 16px; max-width: 60ch; }
+  details.prompt { border: 1px solid var(--border); border-radius: 4px; background: var(--bg-raised); }
+  details.prompt summary {
+    cursor: pointer; padding: 14px 18px; font-size: 15px; color: var(--gold);
+    list-style: none; display: flex; align-items: center; gap: 8px;
+  }
+  details.prompt summary::-webkit-details-marker { display: none; }
+  details.prompt summary::before { content: "▸"; transition: transform .15s; }
+  details.prompt[open] summary::before { transform: rotate(90deg); }
+  .prompt-body { padding: 0 18px 18px; }
+  pre.prompt-text {
+    white-space: pre-wrap; font-size: 13px; line-height: 1.6; color: var(--ink-dim);
+    background: #0d0d0c; border: 1px solid var(--border); border-radius: 3px;
+    padding: 16px; margin: 0 0 12px; max-height: 340px; overflow-y: auto;
+  }
+  .copy-btn {
+    font-size: 13px; padding: 8px 14px; border: 1px solid var(--gold-dim); color: var(--gold);
+    background: transparent; border-radius: 3px; cursor: pointer;
+  }
+  .copy-btn:hover { background: rgba(201,162,75,.08); }
+  .copy-status { font-size: 13px; color: var(--ink-dim); margin-left: 10px; }
+
+  .proof-card { border: 1px solid var(--border); background: var(--bg-raised); padding: 26px; border-radius: 4px; margin-top: 24px; }
+  .proof-card h3 { margin: 0 0 10px; font-size: 19px; font-weight: 600; }
+  .proof-card p { color: var(--ink-dim); font-size: 15px; margin: 0 0 14px; max-width: 62ch; }
+  .human-note { font-size: 14px; color: var(--green); margin: 14px 0 20px; }
+
+  footer.site { padding: 50px 0 40px; }
+  .foot-grid { display: flex; flex-wrap: wrap; gap: 40px; font-size: 14px; color: var(--ink-dim); margin-top: 26px; }
+  .foot-grid a { display: block; color: var(--ink-dim); margin-bottom: 8px; }
+  .foot-tag { font-size: 13px; color: var(--gold-dim); margin-top: 24px; }
+
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+  .home-faq { display:grid; gap:14px; margin-top:24px; }
+  .home-faq article { border:1px solid var(--border); background:var(--bg-raised); padding:20px; border-radius:4px; }
+  .home-faq h3 { font-size:18px; margin:0 0 8px; }
+  .home-faq p { color:var(--ink-dim); font-size:15px; margin:0; }
+</style>
+<style>
+/* Web-Om content primitives; all visual tokens inherited from the AiVenture homepage. */
+.breadcrumb{color:var(--ink-dim)}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:24px 0}
+.card{border:1px solid var(--border);background:var(--bg-raised);padding:22px;border-radius:4px}
+.card h3{font-size:19px;font-weight:600;margin:0 0 10px;color:var(--gold)}
+.card p{color:var(--ink-dim);font-size:15px;margin:0}
+.flow{border:1px solid var(--border);background:var(--bg-raised);padding:20px;border-radius:4px;color:var(--ink-dim);font-size:15px;margin:24px 0}
+.cols{columns:2;column-gap:44px;color:var(--ink-dim);font-size:15px;padding-left:20px}
+.cols li{break-inside:avoid;margin:7px 0}
+details:not(.mobile-menu):not(.prompt){border:1px solid var(--border);background:var(--bg-raised);border-radius:4px;margin:10px 0}
+details:not(.mobile-menu):not(.prompt) summary{cursor:pointer;padding:14px 18px;color:var(--gold);font-size:15px}
+details:not(.mobile-menu):not(.prompt) p{padding:0 18px 16px;color:var(--ink-dim);font-size:15px;margin:0}
+@media(max-width:700px){.grid{grid-template-columns:1fr}.cols{columns:1}}
+</style>
+<link href="https://aiventure.ro/web-a2a/intents.json" rel="alternate" title="Web-A2A Intent Catalog" type="application/json"/><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://aiventure.ro/#organization",
+      "name": "AiVenture S.R.L.",
+      "url": "https://aiventure.ro/",
+      "email": "contact@5thelement.ai",
+      "telephone": "+40 737 123 540"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://aiventure.ro/#website",
+      "url": "https://aiventure.ro/",
+      "name": "AiVenture",
+      "publisher": {
+        "@id": "https://aiventure.ro/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://aiventure.ro/web-a2a/#webpage",
+      "url": "https://aiventure.ro/web-a2a/",
+      "name": "Web-A2A",
+      "headline": "Web-A2A — Transformăm serviciile oferite oamenilor în servicii vandabile agenților AI.",
+      "description": "Web-A2A este suprafața comercială prin care serviciile B2B existente devin accesibile agenților AI.",
+      "inLanguage": "ro-RO",
+      "isPartOf": {
+        "@id": "https://aiventure.ro/#website"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://aiventure.ro/web-a2a/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Acasă",
+          "item": "https://aiventure.ro/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Web-A2A",
+          "item": "https://aiventure.ro/web-a2a/"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://aiventure.ro/web-a2a/#service",
+      "name": "Web-A2A Enablement",
+      "serviceType": "Agent-to-Agent enablement pentru servicii B2B",
+      "provider": {
+        "@id": "https://aiventure.ro/#organization"
+      },
+      "url": "https://aiventure.ro/web-a2a/",
+      "description": "Transformarea serviciilor oferite oamenilor în servicii vandabile agenților AI.",
+      "areaServed": "Global"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://aiventure.ro/web-a2a/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Ce este Web-A2A?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Web-A2A este suprafața prin care serviciile pe care o firmă le oferă oamenilor pot deveni accesibile comercial agenților AI."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Ce transformă AiVenture prin Web-A2A?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Serviciile B2B existente, nu întreaga firmă. Serviciul oferit oamenilor devine accesibil și agenților AI."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Web-A2A înlocuiește serviciul existent?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nu. Serviciul existent rămâne obiectul comercial."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Trebuie înlocuit website-ul?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nu. Website-ul poate continua să deservească oamenii. Web-A2A adaugă o nouă cale de acces."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Ce este Seller Agent?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Este agentul care reprezintă serviciile și condițiile validate de furnizor în interacțiunea cu Buyer Agent."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Ce este Buyer Agent?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Este agentul care reprezintă cererea cumpărătorului și caută, evaluează sau solicită servicii în limitele mandatului primit."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Poate Seller Agent inventa prețuri sau condiții?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nu. Seller Agent trebuie să opereze numai asupra ofertei validate de furnizor."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Ce este Service Offer Contract?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Este reprezentarea structurată și validată a serviciului și a regulilor comerciale pe care Seller Agent le poate utiliza."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Unde intervine omul?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Omul validează oferta, stabilește mandatul agenților și aprobă acțiunile pentru care este necesară autorizarea umană."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Care este diferența dintre Web-Om, Web-AI și Web-A2A?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Web-Om permite oamenilor să acceseze serviciul. Web-AI permite sistemelor AI să îl găsească și să îl înțeleagă. Web-A2A permite agenților să interacționeze comercial cu serviciul."
+          }
+        }
+      ]
+    }
+  ]
+}</script><style>
+/* Web-A2A content primitives; visual tokens inherited unchanged from AiVenture Web-Om/Web-AI. */
+.breadcrumb{color:var(--ink-dim);font-size:14px;padding-top:22px}
+.breadcrumb a{color:var(--gold)}
+.a2a-list{color:var(--ink-dim);font-size:15px;padding-left:22px}
+.a2a-list li{margin:7px 0}
+.rule{border-left:3px solid var(--gold);padding:4px 0 4px 18px;margin:24px 0}
+.rule strong{color:var(--gold)}
+</style></head>
+<body>
+<header class="site">
+<div class="top-strip">● LIVE · AiVenture Buyer Agent ↔ ECBTAX Seller Agent — At the Edge. Human Controlled.</div>
+<div class="wrap nav">
+<div class="brand">AiVenture <span>· A2A Business Infrastructure</span></div>
+<nav class="links">
+<a href="#produse-servicii">Produse &amp; Servicii</a>
+<a href="#ce-inseamna">Ce înseamnă asta</a>
+<a href="#dovada">Dovadă</a>
+<a href="https://aiventure.ro/a2a-proof">Evidence Hub</a>
+<a href="https://aiventure.ro/verifica/">Află ce lipsește</a>
+</nav>
+<details class="mobile-menu">
+<summary><span aria-hidden="true" class="menu-bars"></span>Meniu</summary>
+<nav aria-label="Toate paginile AiVenture">
+<span class="menu-group">Principal</span>
+<a href="/">Acasă</a>
+<a href="#produse-servicii">Produse &amp; Servicii</a>
+<a href="/viziune/">Viziune</a>
+<a href="/despre/">Despre AiVenture</a>
+<a href="/produse/">Produse</a>
+<a href="/servicii/">Servicii</a>
+<a href="/contact/">Contact</a>
+<span class="menu-group">Cum funcționează</span>
+<a href="/cum/">Prezentare</a>
+<a href="/cum/descoperire/">Descoperire</a>
+<a href="/cum/intelegere/">Înțelegere</a>
+<a href="/cum/actiune/">Acțiune</a>
+<a href="/cum/a2a/">Agent la agent</a>
+<a href="/three-webs/">Cele trei weburi</a>
+<a href="/niveluri/">Niveluri</a>
+<a href="/tehnologie/">Tehnologie</a>
+<a href="/de-ce-ai/">De ce AI</a>
+<a href="/de-ce-acum/">De ce acum</a>
+<span class="menu-group">Soluții și dovezi</span>
+<a href="/solutii/">Soluții</a>
+<a href="/solutii/a2a/">A2A</a>
+<a href="/solutii/agent-ready/">Agent Ready</a>
+<a href="/solutii/ai-audit/">AI Audit</a>
+<a href="/solutii/ai-edge/">AI Edge</a>
+<a href="/solutii/ai-lens/">AI-LENS</a>
+<a href="/solutii/ai-ready/">AI Ready</a>
+<a href="/buyer-agent/">Buyer Agent</a>
+<a href="/exemplu-ecbtax/">Exemplu ECBTAX</a>
+<a href="/a2a-proof.html">Evidence Hub</a>
+<a href="/rezultate/">Rezultate</a>
+<a href="/verifica/">Verifică site-ul</a>
+<a href="/seo/">SEO</a>
+<a href="/aeo/">AEO</a>
+<a href="/geo/">GEO</a>
+<a href="/aio/">AIO</a>
+<a href="/ai-signals/">AI Signals</a>
+<a href="/ai-key-maker/">AI KEY MAKER™</a>
+<a href="/eu-ai-act-ready/">EU AI Act Ready</a>
+<span class="menu-group">Resurse</span>
+<a href="/faq/">FAQ</a>
+<a href="/faq-hub.html">FAQ Hub</a>
+<a href="/intrebari/">Întrebări</a>
+<a href="/use-cases/">Cazuri de utilizare</a>
+<span class="menu-group">Legal</span>
+<a href="/legal/">Informații legale</a>
+<a href="/termeni-si-conditii/">Termeni și condiții</a>
+<a href="/niveluri/misiune/legal/">Misiune · Legal</a>
+</nav>
+</details>
+</div>
+</header>
+<main>
+<div class="wrap breadcrumb"><a href="/">AiVenture</a> › Cele trei Web-uri › <strong>Web-A2A</strong></div>
+<header class="hero wrap">
+<p class="tag">WEB-A2A · AGENT-TO-AGENT</p>
+<h1>Transformăm serviciile oferite oamenilor în servicii vandabile agenților AI.</h1>
+<p class="lead">Același business. Același website. Același serviciu. O nouă cale comercială: agentul AI.</p>
+<div class="flow"><strong>Păstrezi businessul. Păstrezi website-ul. Păstrezi serviciul. Adaugi ușa Web-A2A.</strong></div>
+</header>
+<section class="wrap">
+<h2>Ce este Web-A2A?</h2>
+<p>Web-A2A este suprafața comercială prin care serviciile pe care o firmă le oferă astăzi oamenilor devin servicii accesibile și vandabile agenților AI.</p>
+<p>Web-A2A nu înseamnă automatizarea întregii firme. Nu înseamnă că firma trebuie să își schimbe activitatea. Nu înseamnă că serviciul existent trebuie înlocuit. Și nu înseamnă că website-ul destinat oamenilor dispare.</p>
+<p><strong>Punctul de plecare este exact serviciul pe care firma îl vinde deja.</strong></p>
+<p>Web-A2A adaugă o nouă cale prin care acel serviciu poate fi descoperit, evaluat, solicitat și, în limitele autorizate, cumpărat de un agent AI.</p>
+<h3>Același serviciu. Un nou cumpărător: agentul AI.</h3>
+<p>Astăzi, un client poate intra pe website, poate citi oferta, poate cere informații și poate solicita serviciul.</p>
+<p>În Web-A2A, cumpărătorul poate fi reprezentat de un <strong>Buyer Agent</strong>. Acesta poate căuta serviciul potrivit și poate comunica programatic cu <strong>Seller Agent-ul</strong> furnizorului.</p>
+<p>Firma continuă să vândă același serviciu. Se schimbă <strong>calea de acces la serviciu</strong>.</p>
+</section>
+<section class="wrap">
+<h2>Un serviciu. Trei Web-uri.</h2>
+<div class="grid">
+<div class="card"><h3>Web-Om</h3><p>Omul caută firma, citește informațiile, compară oferta, contactează furnizorul și cumpără serviciul.</p><strong>OM → BUSINESS</strong></div>
+<div class="card"><h3>Web-AI</h3><p>Sistemele AI descoperă, interpretează și utilizează informațiile publicate de firmă.</p><strong>OM → AI → BUSINESS</strong></div>
+<div class="card"><h3>Web-A2A</h3><p>Buyer Agent-ul cumpărătorului comunică direct cu Seller Agent-ul furnizorului.</p><strong>BUYER AGENT ↔ SELLER AGENT</strong></div>
+</div>
+<p>Aceasta este diferența fundamentală. Web-A2A nu este doar despre faptul că AI-ul poate <strong>citi</strong> oferta. Este despre posibilitatea ca un agent să poată <strong>acționa asupra ofertei</strong> în limitele stabilite de firmă.</p>
+</section>
+<section class="wrap">
+<h2>De la serviciul pentru om la serviciul pentru agentul AI</h2>
+<p>Transformarea începe de la serviciul comercial existent.</p>
+<h3>1. Serviciul B2B existent</h3>
+<p>Firma continuă să ofere serviciul pe care îl cunoaște și îl livrează deja. Poate fi contabilitate, payroll, avocatură, consultanță, HR, IT, cybersecurity, marketing, audit sau alt serviciu profesional.</p>
+<p>Web-A2A nu inventează un business nou. <strong>Folosește serviciul existent ca obiect comercial.</strong></p>
+<h3>2. Service Offer Contract</h3>
+<p>Pentru ca un agent AI să poată lucra cu serviciul, oferta trebuie exprimată într-o formă structurată și controlată de furnizor. <strong>Service Offer Contract — SOC</strong> reprezintă această ofertă validată.</p>
+<ul class="a2a-list"><li>ce serviciu este oferit;</li><li>pentru cine este oferit;</li><li>ce include și ce nu include;</li><li>ce informații sunt necesare;</li><li>prețul sau regula de preț;</li><li>limitele și jurisdicțiile;</li><li>disponibilitatea și SLA-ul;</li><li>condițiile comerciale;</li><li>pragurile și rolurile de aprobare;</li><li>condițiile de ofertare și comandă.</li></ul>
+<p>SOC devine <strong>adevărul comercial controlat de firmă</strong> pe care Seller Agent îl poate utiliza.</p>
+<h3>3. Seller Agent</h3>
+<p>Seller Agent reprezintă serviciul furnizorului în Web-A2A. Poate primi o cerere, verifica relevanța, solicita informații suplimentare și emite un răspuns sau o ofertă în limitele stabilite.</p>
+<p>Seller Agent nu primește libertatea de a inventa businessul firmei.</p>
+<h3>4. Buyer Agent</h3>
+<p>Buyer Agent reprezintă nevoia cumpărătorului. De exemplu: <strong>„Am nevoie de calcul salarial pentru 5 angajați în România.”</strong></p>
+<p>Poate căuta furnizori, identifica un serviciu compatibil, transmite cererea și răspunde întrebărilor necesare procesării acesteia.</p>
+<h3>5. Human Approval</h3>
+<p>Agentic nu înseamnă obligatoriu autonom fără control uman. Firma și cumpărătorul stabilesc limitele mandatului. Dacă o acțiune necesită aprobarea unei persoane, fluxul se oprește înaintea acțiunii respective.</p>
+<p><strong>AI-ul pregătește. Omul controlează.</strong></p>
+<h3>6. Evidence</h3>
+<p>Interacțiunea trebuie să poată produce dovezi verificabile: cererea transmisă, informațiile furnizate, oferta emisă, versiunea ofertei, aprobarea, condițiile aprobate și comanda rezultată.</p>
+<p>Web-A2A este <strong>automatizare controlată și verificabilă</strong>.</p>
+</section>
+<section class="wrap">
+<h2>Cum funcționează Web-A2A?</h2>
+<div class="flow"><strong>DISCOVER → MATCH → REQUEST → SELLER QUESTION → BUYER ANSWER → QUOTE → HUMAN APPROVAL → EVIDENCE → ORDER</strong></div>
+<div class="grid">
+<div class="card"><h3>DISCOVER</h3><p>Buyer Agent descoperă serviciul și capabilitățile furnizorului.</p></div>
+<div class="card"><h3>MATCH</h3><p>Cerințele cumpărătorului sunt comparate cu oferta validată.</p></div>
+<div class="card"><h3>REQUEST</h3><p>Buyer Agent transmite cererea către Seller Agent.</p></div>
+<div class="card"><h3>SELLER QUESTION</h3><p>Dacă lipsesc informații necesare, Seller Agent cere clarificări.</p></div>
+<div class="card"><h3>BUYER ANSWER</h3><p>Buyer Agent furnizează informațiile autorizate.</p></div>
+<div class="card"><h3>QUOTE</h3><p>Seller Agent emite oferta pe baza informațiilor și condițiilor validate.</p></div>
+<div class="card"><h3>HUMAN APPROVAL</h3><p>Dacă mandatul o cere, oferta este prezentată persoanei autorizate.</p></div>
+<div class="card"><h3>EVIDENCE</h3><p>Acceptarea și starea tranzacției produc dovezi verificabile.</p></div>
+<div class="card"><h3>ORDER</h3><p>După îndeplinirea condițiilor și aprobărilor necesare, poate fi creată comanda.</p></div>
+</div>
+</section>
+<section class="wrap">
+<h2>Ce NU face Web-A2A</h2>
+<p>Web-A2A nu trebuie să transforme un agent AI într-un vânzător care improvizează oferta firmei.</p>
+<div class="rule"><h3>THE EDGE MUST NEVER INVENT THE OFFER DURING A TRANSACTION.</h3></div>
+<div class="grid">
+<div class="card"><strong>NU inventează prețul.</strong></div><div class="card"><strong>NU inventează serviciul.</strong></div>
+<div class="card"><strong>NU inventează livrabilele.</strong></div><div class="card"><strong>NU inventează disponibilitatea.</strong></div>
+<div class="card"><strong>NU inventează SLA-ul.</strong></div><div class="card"><strong>NU inventează jurisdicțiile.</strong></div>
+<div class="card"><strong>NU inventează excluderile.</strong></div><div class="card"><strong>NU inventează condițiile comerciale.</strong></div>
+</div>
+<p>Dacă informația necesară nu există în oferta validată, agentul trebuie să ceară clarificare sau intervenție umană.</p>
+</section>
+<section class="wrap">
+<h2>Ce se schimbă pentru firmă?</h2>
+<div class="grid">
+<div class="card"><h3>KEEP THE BUSINESS.</h3><p>Businessul rămâne.</p></div>
+<div class="card"><h3>KEEP THE WEBSITE.</h3><p>Website-ul rămâne.</p></div>
+<div class="card"><h3>KEEP THE SERVICE.</h3><p>Serviciul rămâne.</p></div>
+<div class="card"><h3>ADD THE A2A DOOR.</h3><p>Se adaugă o nouă suprafață comercială prin care agenții AI pot accesa serviciul.</p></div>
+</div>
+</section>
+<section class="wrap">
+<h2>De ce contează Web-A2A?</h2>
+<p>Website-ul tradițional a fost construit pentru oameni. Web-AI adaugă posibilitatea ca sistemele AI să găsească și să înțeleagă informația. Web-A2A merge mai departe.</p>
+<p>Permite ca serviciul să devină <strong>acționabil de către agenți</strong>.</p>
+<div class="flow"><strong>READ → UNDERSTAND → ACT</strong></div>
+<p>Un agent nu trebuie doar să știe că firma există. Trebuie să poată determina:</p>
+<ul class="a2a-list"><li>Ce vinzi?</li><li>Pentru cine?</li><li>În ce condiții?</li><li>La ce preț?</li><li>Ce informații sunt necesare?</li><li>Poate solicita serviciul?</li><li>Poate primi o ofertă?</li><li>Este necesară aprobarea unui om?</li><li>Poate fi creată o comandă?</li></ul>
+<p>Aceasta este trecerea de la <strong>website ca document</strong> la <strong>serviciu ca obiect comercial accesibil agenților</strong>.</p>
+</section>
+<section class="wrap">
+<h2>Ce servicii pot deveni Web-A2A?</h2>
+<p>În special serviciile B2B care pot fi descrise prin reguli, intrări, livrabile, limite și condiții explicite.</p>
+<div class="grid">
+<div class="card"><h3>Contabilitate &amp; Payroll</h3><p>Calcul salarial, contabilitate, raportare și servicii fiscale.</p></div>
+<div class="card"><h3>Avocatură</h3><p>Servicii juridice cu scope și jurisdicție definite.</p></div>
+<div class="card"><h3>Consultanță</h3><p>Servicii profesionale bazate pe cerințe și livrabile identificabile.</p></div>
+<div class="card"><h3>HR</h3><p>Recrutare, administrare și alte servicii profesionale HR.</p></div>
+<div class="card"><h3>IT &amp; Cybersecurity</h3><p>Audituri, evaluări, implementări și servicii tehnice.</p></div>
+<div class="card"><h3>Marketing &amp; Audit</h3><p>Servicii definite prin scope, livrabile, obiect și metodologie.</p></div>
+</div>
+</section>
+<section class="wrap">
+<h2>De la Human Web la Agentic Commerce</h2>
+<p>Evoluția nu presupune eliminarea etapelor precedente. Ele se acumulează:</p>
+<div class="flow"><strong>WEB-OM → WEB-AI → WEB-A2A</strong></div>
+<p>Firma continuă să deservească oamenii. Devine mai ușor de găsit și înțeles de AI. Și adaugă posibilitatea ca agenții să interacționeze comercial cu serviciile sale.</p>
+<p><strong>Same business. Same services. Second sales channel.</strong></p>
+</section>
+<section class="wrap" id="faq">
+<p class="tag">ÎNTREBĂRI FRECVENTE</p>
+<h2>FAQ Web-A2A</h2>
+<details><summary>1. Ce este Web-A2A?</summary><p>Web-A2A este suprafața prin care serviciile pe care o firmă le oferă oamenilor pot deveni accesibile comercial agenților AI.</p></details>
+<details><summary>2. Ce transformă AiVenture prin Web-A2A?</summary><p>Serviciile B2B existente, nu întreaga firmă. Serviciul oferit oamenilor devine accesibil și agenților AI.</p></details>
+<details><summary>3. Web-A2A înlocuiește serviciul existent?</summary><p>Nu. Serviciul existent rămâne obiectul comercial.</p></details>
+<details><summary>4. Trebuie înlocuit website-ul?</summary><p>Nu. Website-ul poate continua să deservească oamenii. Web-A2A adaugă o nouă cale de acces.</p></details>
+<details><summary>5. Ce este Seller Agent?</summary><p>Este agentul care reprezintă serviciile și condițiile validate de furnizor în interacțiunea cu Buyer Agent.</p></details>
+<details><summary>6. Ce este Buyer Agent?</summary><p>Este agentul care reprezintă cererea cumpărătorului și caută, evaluează sau solicită servicii în limitele mandatului primit.</p></details>
+<details><summary>7. Poate Seller Agent inventa prețuri sau condiții?</summary><p>Nu. Seller Agent trebuie să opereze numai asupra ofertei validate de furnizor.</p></details>
+<details><summary>8. Ce este Service Offer Contract?</summary><p>Este reprezentarea structurată și validată a serviciului și a regulilor comerciale pe care Seller Agent le poate utiliza.</p></details>
+<details><summary>9. Unde intervine omul?</summary><p>Omul validează oferta, stabilește mandatul agenților și aprobă acțiunile pentru care este necesară autorizarea umană.</p></details>
+<details><summary>10. Care este diferența dintre Web-Om, Web-AI și Web-A2A?</summary><p>Web-Om permite oamenilor să acceseze serviciul. Web-AI permite sistemelor AI să îl găsească și să îl înțeleagă. Web-A2A permite agenților să interacționeze comercial cu serviciul.</p></details>
+</section>
+<section class="wrap">
+<h2>100 de intenții comerciale Web-A2A</h2>
+<p>Catalogul machine-readable acoperă descoperirea, evaluarea și cumpărarea prin agenți AI: <strong>30 TOFU + 30 MOFU + 40 BOFU.</strong></p>
+<p><a class="btn" href="/web-a2a/intents.json">Vezi intents.json →</a></p>
+</section>
+<section class="wrap">
+<p class="tag">WEB-A2A</p>
+<h2>Serviciile tale sunt gata pentru oameni. Le facem gata și pentru agenți AI.</h2>
+<p class="lead">Păstrează businessul. Păstrează website-ul. Păstrează serviciul. Adaugă Web-A2A.</p>
+<a class="btn primary" href="mailto:contact@5thelement.ai">Discută cu un Agent</a>
+</section>
+</main>
+<footer>
+<div class="wrap">
+<strong>AiVenture S.R.L.</strong><br/>
+<a href="mailto:contact@5thelement.ai">contact@5thelement.ai</a> · <a href="tel:+40737123540">+40 737 123 540</a>
+<p class="muted">KEEP THE BUSINESS. KEEP THE WEBSITE. KEEP THE SERVICE. ADD THE AGENT. ADD THE A2A DOOR.</p>
+</div>
+</footer>
+</body>
+</html>
