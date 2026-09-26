@@ -1,0 +1,841 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "document_type": "AiVenture Web-Om Intent Map",
+  "version": "1.0",
+  "canonical_page": "https://aiventure.ro/web-om/",
+  "language": "ro",
+  "generated_for": "AiVenture S.R.L.",
+  "model": {
+    "web": "WEB-OM",
+    "growth_engines": {
+      "PULL": "Clientul inițiază descoperirea sau căutarea.",
+      "PUSH": "Firma inițiază identificarea, distribuția sau contactul."
+    },
+    "funnel": [
+      "TOF",
+      "MOF",
+      "BOF"
+    ]
+  },
+  "counts": {
+    "total": 100,
+    "pull": 50,
+    "push": 50,
+    "pull_by_stage": {
+      "TOF": 20,
+      "MOF": 15,
+      "BOF": 15
+    },
+    "push_by_stage": {
+      "TOF": 20,
+      "MOF": 15,
+      "BOF": 15
+    }
+  },
+  "intents": {
+    "pull": [
+      {
+        "id": "PULL-TOF-001",
+        "direction": "PULL",
+        "funnel_stage": "TOF",
+        "intent_type": "informational",
+        "question": "Ce este Web-Om?",
+        "answer": "Web-Om este suprafața digitală prin care oamenii descoperă, înțeleg și contactează o firmă, iar firma își construiește vizibilitatea pentru audiența umană."
+      },
+      {
+        "id": "PULL-TOF-002",
+        "direction": "PULL",
+        "funnel_stage": "TOF",
+        "intent_type": "problem_awareness",
+        "question": "Cum își găsesc clienții furnizorii online?",
+        "answer": "Clienții pot descoperi furnizori prin motoare de căutare, hărți, video, social search, marketplace-uri, directoare, reviews și alte suprafețe digitale."
+      },
+      {
+        "id": "PULL-TOF-003",
+        "direction": "PULL",
+        "funnel_stage": "TOF",
+        "intent_type": "informational",
+        "question": "Ce înseamnă PULL în marketing?",
+        "answer": "PULL descrie situația în care clientul are inițiativa și caută activ informații, soluții, produse, servicii sau furnizori."
+      },
+      {
+        "id": "PULL-TOF-004",
+        "direction": "PULL",
+        "funnel_stage": "TOF",
+        "intent_type": "informational",
+        "question": "Ce este search intent?",
+        "answer": "Search intent este obiectivul pe care utilizatorul încearcă să îl atingă printr-o căutare."
+      },
+      {
+        "id": "PULL-TOF-005",
+        "direction": "PULL",
+        "funnel_stage": "TOF",
+        "intent_type": "informational",
+        "question": "Care este diferența dintre intent și keyword?",
+        "answer": "Intentul exprimă scopul utilizatorului, iar keyword-ul sau query-ul este una dintre formulările prin care acel scop este exprimat."
+      },
+      {
+        "id": "PULL-TOF-006",
+        "direction": "PULL",
+        "funnel_stage": "TOF",
+        "intent_type": "problem_awareness",
+        "question": "De ce site-ul unei firme nu este găsit de clienți?",
+        "answer": "Cauzele pot include probleme tehnice, conținut nepotrivit intenției, acoperire insuficientă a subiectelor, autoritate redusă sau prezență slabă pe canalele unde caută publicul."
+      },
+      {
+        "id": "PULL-TOF-007",
+        "direction": "PULL",
+        "funnel_stage": "TOF",
+        "intent_type": "informational",
+        "question": "Ce este SEO?",
+        "answer": "SEO este optimizarea prezenței web pentru a crește posibilitatea ca paginile relevante să fie găsite în rezultatele organice ale motoarelor de căutare."
+      },
+      {
+        "id": "PULL-TOF-008",
+        "direction": "PULL",
+        "funnel_stage": "TOF",
+        "intent_type": "informational",
+        "question": "Ce este Local SEO?",
+        "answer": "Local SEO optimizează vizibilitatea pentru căutări cu relevanță geografică, inclusiv rezultate locale și hărți."
+      },
+      {
+        "id": "PULL-TOF-009",
+        "direction": "PULL",
+        "funnel_stage": "TOF",
+        "intent_type": "informational",
+        "question": "Ce este Video Search?",
+        "answer": "Video Search este descoperirea de informații, produse, servicii sau furnizori prin motoare și suprafețe de căutare video."
+      },
+      {
+        "id": "PULL-TOF-010",
+        "direction": "PULL",
+        "funnel_stage": "TOF",
+        "intent_type": "informational",
+        "question": "Ce este Social Search?",
+        "answer": "Social Search este folosirea platformelor sociale pentru a căuta și descoperi companii, experți, produse, servicii și conținut."
+      },
+      {
+        "id": "PULL-TOF-011",
+        "direction": "PULL",
+        "funnel_stage": "TOF",
+        "intent_type": "informational",
+        "question": "Ce este Marketplace Search?",
+        "answer": "Marketplace Search este căutarea directă de produse, servicii sau furnizori în interiorul unei piețe digitale."
+      },
+      {
+        "id": "PULL-TOF-012",
+        "direction": "PULL",
+        "funnel_stage": "TOF",
+        "intent_type": "informational",
+        "question": "Ce este Directory Search?",
+        "answer": "Directory Search este descoperirea furnizorilor prin directoare profesionale, baze de furnizori și platforme verticale."
+      },
+      {
+        "id": "PULL-TOF-013",
+        "direction": "PULL",
+        "funnel_stage": "TOF",
+        "intent_type": "informational",
+        "question": "Ce este Image Search?",
+        "answer": "Image Search este descoperirea prin rezultate vizuale asociate unui produs, serviciu, proiect sau subiect."
+      },
+      {
+        "id": "PULL-TOF-014",
+        "direction": "PULL",
+        "funnel_stage": "TOF",
+        "intent_type": "informational",
+        "question": "Ce este Brand Search?",
+        "answer": "Brand Search cuprinde căutările după numele unei firme, produs, serviciu, recenzii, preț, alternative sau comparații."
+      },
+      {
+        "id": "PULL-TOF-015",
+        "direction": "PULL",
+        "funnel_stage": "TOF",
+        "intent_type": "problem_awareness",
+        "question": "Unde caută clienții B2B servicii?",
+        "answer": "În funcție de categorie, pot căuta în motoare web, LinkedIn, YouTube, directoare profesionale, marketplace-uri, comunități și platforme de reviews."
+      },
+      {
+        "id": "PULL-TOF-016",
+        "direction": "PULL",
+        "funnel_stage": "TOF",
+        "intent_type": "informational",
+        "question": "Cum identific întrebările pe care le pun clienții?",
+        "answer": "Prin date de căutare, conversații comerciale, analytics, Search Console, cercetarea SERP-urilor, feedback și analiza limbajului utilizat de clienți."
+      },
+      {
+        "id": "PULL-TOF-017",
+        "direction": "PULL",
+        "funnel_stage": "TOF",
+        "intent_type": "problem_awareness",
+        "question": "Cum aflu ce caută publicul meu țintă?",
+        "answer": "Mapează nevoile și rolurile publicului la intenții, queries, subiecte și canalele pe care acesta le folosește."
+      },
+      {
+        "id": "PULL-TOF-018",
+        "direction": "PULL",
+        "funnel_stage": "TOF",
+        "intent_type": "informational",
+        "question": "Ce este un keyword cluster?",
+        "answer": "Un keyword cluster grupează expresii diferite care reflectă aceeași nevoie, intenție sau temă apropiată."
+      },
+      {
+        "id": "PULL-TOF-019",
+        "direction": "PULL",
+        "funnel_stage": "TOF",
+        "intent_type": "informational",
+        "question": "Ce este customer journey în PULL?",
+        "answer": "Este traseul de la nevoie și căutare la descoperire, evaluare, încredere, contact și conversie."
+      },
+      {
+        "id": "PULL-TOF-020",
+        "direction": "PULL",
+        "funnel_stage": "TOF",
+        "intent_type": "problem_awareness",
+        "question": "De ce traficul nu este suficient?",
+        "answer": "Traficul are valoare comercială doar dacă atrage audiența relevantă și contribuie la contacte, oportunități sau venit."
+      },
+      {
+        "id": "PULL-MOF-021",
+        "direction": "PULL",
+        "funnel_stage": "MOF",
+        "intent_type": "commercial_investigation",
+        "question": "Cum aleg canalele PULL potrivite?",
+        "answer": "Alege canalele în funcție de locul în care audiența exprimă efectiv intenția și de capacitatea canalului de a conduce către evaluare și conversie."
+      },
+      {
+        "id": "PULL-MOF-022",
+        "direction": "PULL",
+        "funnel_stage": "MOF",
+        "intent_type": "commercial_investigation",
+        "question": "SEO sau Social Search?",
+        "answer": "Nu sunt alternative obligatorii; pot acoperi momente și comportamente diferite ale aceleiași audiențe."
+      },
+      {
+        "id": "PULL-MOF-023",
+        "direction": "PULL",
+        "funnel_stage": "MOF",
+        "intent_type": "commercial_investigation",
+        "question": "SEO sau YouTube pentru servicii B2B?",
+        "answer": "Alegerea depinde de intenție și format: search web poate capta cererea explicită, iar video poate explica și demonstra subiecte complexe."
+      },
+      {
+        "id": "PULL-MOF-024",
+        "direction": "PULL",
+        "funnel_stage": "MOF",
+        "intent_type": "commercial_investigation",
+        "question": "Cum mapăm intents la pagini?",
+        "answer": "Fiecare cluster de intenții trebuie asociat cu pagina care răspunde cel mai bine nevoii și cu următorul pas relevant."
+      },
+      {
+        "id": "PULL-MOF-025",
+        "direction": "PULL",
+        "funnel_stage": "MOF",
+        "intent_type": "commercial_investigation",
+        "question": "Cum mapăm keywords la servicii?",
+        "answer": "Keywords sunt grupate după intenție și conectate la serviciul real care poate satisface nevoia exprimată."
+      },
+      {
+        "id": "PULL-MOF-026",
+        "direction": "PULL",
+        "funnel_stage": "MOF",
+        "intent_type": "commercial_investigation",
+        "question": "Cum construim o strategie SEO pentru servicii?",
+        "answer": "Pornim de la servicii, audiențe și nevoi, construim intent și keyword clusters, pagini relevante, structură tehnică, dovezi și măsurare."
+      },
+      {
+        "id": "PULL-MOF-027",
+        "direction": "PULL",
+        "funnel_stage": "MOF",
+        "intent_type": "commercial_investigation",
+        "question": "Cum evaluăm vizibilitatea organică?",
+        "answer": "Prin acoperirea queries relevante, impresii, poziții, CTR, trafic calificat, conversii și rezultate comerciale."
+      },
+      {
+        "id": "PULL-MOF-028",
+        "direction": "PULL",
+        "funnel_stage": "MOF",
+        "intent_type": "commercial_investigation",
+        "question": "Cum alegem între pagină de serviciu și articol?",
+        "answer": "Pagina de serviciu răspunde în principal intenției comerciale, iar articolul poate satisface nevoi informaționale și conduce spre serviciu."
+      },
+      {
+        "id": "PULL-MOF-029",
+        "direction": "PULL",
+        "funnel_stage": "MOF",
+        "intent_type": "commercial_investigation",
+        "question": "Cum folosim reviews în PULL?",
+        "answer": "Reviews pot ajuta utilizatorii să valideze furnizorul în etapele de evaluare și brand search."
+      },
+      {
+        "id": "PULL-MOF-030",
+        "direction": "PULL",
+        "funnel_stage": "MOF",
+        "intent_type": "commercial_investigation",
+        "question": "Cum folosim directoarele B2B?",
+        "answer": "Selectăm directoarele relevante pentru industrie și menținem informații consistente, complete și verificabile."
+      },
+      {
+        "id": "PULL-MOF-031",
+        "direction": "PULL",
+        "funnel_stage": "MOF",
+        "intent_type": "commercial_investigation",
+        "question": "Cum folosim Local SEO pentru servicii?",
+        "answer": "Construim pagini și profiluri locale relevante, informații consistente, dovezi locale și experiență clară pentru intențiile geografice."
+      },
+      {
+        "id": "PULL-MOF-032",
+        "direction": "PULL",
+        "funnel_stage": "MOF",
+        "intent_type": "commercial_investigation",
+        "question": "Cum măsurăm un canal-pereche?",
+        "answer": "Urmărim originea descoperirii, touchpoint-urile intermediare, destinația și conversia finală."
+      },
+      {
+        "id": "PULL-MOF-033",
+        "direction": "PULL",
+        "funnel_stage": "MOF",
+        "intent_type": "commercial_investigation",
+        "question": "Cum prioritizăm cele 50 de intents?",
+        "answer": "Prioritizăm după relevanță comercială, volum sau frecvență observată, dificultate, proximitate față de cumpărare și capacitatea firmei de a răspunde."
+      },
+      {
+        "id": "PULL-MOF-034",
+        "direction": "PULL",
+        "funnel_stage": "MOF",
+        "intent_type": "commercial_investigation",
+        "question": "Cum verificăm dacă pagina răspunde intenției?",
+        "answer": "Comparăm întrebarea utilizatorului cu informația, dovezile și CTA-ul paginii și măsurăm comportamentul și conversia."
+      },
+      {
+        "id": "PULL-MOF-035",
+        "direction": "PULL",
+        "funnel_stage": "MOF",
+        "intent_type": "commercial_investigation",
+        "question": "Cum combinăm On-Site, On-Page și Off-Page?",
+        "answer": "On-Site asigură arhitectura, On-Page optimizează pagina și răspunsul, iar Off-Page dezvoltă semnale externe și căi de descoperire."
+      },
+      {
+        "id": "PULL-BOF-036",
+        "direction": "PULL",
+        "funnel_stage": "BOF",
+        "intent_type": "transactional",
+        "question": "Cât costă optimizarea Web-Om?",
+        "answer": "Costul depinde de site, piață, numărul de servicii, canalele vizate, starea tehnică și volumul de implementare; este necesară o evaluare pentru o ofertă concretă."
+      },
+      {
+        "id": "PULL-BOF-037",
+        "direction": "PULL",
+        "funnel_stage": "BOF",
+        "intent_type": "transactional",
+        "question": "Pot solicita un audit Web-Om?",
+        "answer": "Da. Auditul poate evalua PULL, structura SEO, acoperirea intențiilor, paginile și traseele către conversie."
+      },
+      {
+        "id": "PULL-BOF-038",
+        "direction": "PULL",
+        "funnel_stage": "BOF",
+        "intent_type": "transactional",
+        "question": "Pot primi o hartă de intents și keywords?",
+        "answer": "Da. Intențiile pot fi mapate la keyword clusters, canale, pagini, CTA-uri și KPI-uri."
+      },
+      {
+        "id": "PULL-BOF-039",
+        "direction": "PULL",
+        "funnel_stage": "BOF",
+        "intent_type": "transactional",
+        "question": "Puteți identifica paginile lipsă?",
+        "answer": "Da. Analiza poate identifica intenții relevante fără o destinație adecvată și poate defini paginile necesare."
+      },
+      {
+        "id": "PULL-BOF-040",
+        "direction": "PULL",
+        "funnel_stage": "BOF",
+        "intent_type": "transactional",
+        "question": "Puteți optimiza paginile existente?",
+        "answer": "Da, dacă există acces și autorizare pentru implementare, paginile pot fi optimizate fără a inventa informații comerciale."
+      },
+      {
+        "id": "PULL-BOF-041",
+        "direction": "PULL",
+        "funnel_stage": "BOF",
+        "intent_type": "transactional",
+        "question": "Puteți analiza Local SEO?",
+        "answer": "Da. Evaluarea poate include prezența locală, consistența informațiilor, paginile locale și traseele de conversie."
+      },
+      {
+        "id": "PULL-BOF-042",
+        "direction": "PULL",
+        "funnel_stage": "BOF",
+        "intent_type": "transactional",
+        "question": "Puteți analiza Social Search?",
+        "answer": "Da. Se poate analiza dacă informațiile și conținutul firmei corespund modului în care audiența caută pe platformele relevante."
+      },
+      {
+        "id": "PULL-BOF-043",
+        "direction": "PULL",
+        "funnel_stage": "BOF",
+        "intent_type": "transactional",
+        "question": "Puteți analiza Video Search?",
+        "answer": "Da. Se pot mapa intențiile potrivite pentru video la subiecte, conținut, metadata și destinații."
+      },
+      {
+        "id": "PULL-BOF-044",
+        "direction": "PULL",
+        "funnel_stage": "BOF",
+        "intent_type": "transactional",
+        "question": "Puteți analiza marketplace-uri și directoare?",
+        "answer": "Da. Se pot identifica suprafețele relevante și consistența prezenței firmei în acestea."
+      },
+      {
+        "id": "PULL-BOF-045",
+        "direction": "PULL",
+        "funnel_stage": "BOF",
+        "intent_type": "transactional",
+        "question": "Pot vedea ce intents nu sunt acoperite?",
+        "answer": "Da. Un intent-gap map poate evidenția intențiile fără conținut sau pagini adecvate."
+      },
+      {
+        "id": "PULL-BOF-046",
+        "direction": "PULL",
+        "funnel_stage": "BOF",
+        "intent_type": "transactional",
+        "question": "Pot primi un plan de acțiune prioritar?",
+        "answer": "Da. Problemele și oportunitățile pot fi ordonate după impact, dependențe și efort de implementare."
+      },
+      {
+        "id": "PULL-BOF-047",
+        "direction": "PULL",
+        "funnel_stage": "BOF",
+        "intent_type": "transactional",
+        "question": "Cum verific rezultatul după implementare?",
+        "answer": "Se repetă măsurătorile și se compară vizibilitatea, traficul calificat, conversiile și dovezile înainte și după modificări."
+      },
+      {
+        "id": "PULL-BOF-048",
+        "direction": "PULL",
+        "funnel_stage": "BOF",
+        "intent_type": "transactional",
+        "question": "Pot cere o demonstrație?",
+        "answer": "Da. O demonstrație poate arăta modelul intent → query → canal → pagină → CTA → măsurare pe un caz concret."
+      },
+      {
+        "id": "PULL-BOF-049",
+        "direction": "PULL",
+        "funnel_stage": "BOF",
+        "intent_type": "transactional",
+        "question": "Pot solicita o ofertă pentru Web-Om?",
+        "answer": "Da. Oferta trebuie construită pe domeniul, serviciile, audiențele și canalele care intră efectiv în proiect."
+      },
+      {
+        "id": "PULL-BOF-050",
+        "direction": "PULL",
+        "funnel_stage": "BOF",
+        "intent_type": "transactional",
+        "question": "Cum încep implementarea Web-Om?",
+        "answer": "Începe cu inventarul serviciilor, audiențele țintă, intents, canalele actuale și o măsurătoare inițială verificabilă."
+      }
+    ],
+    "push": [
+      {
+        "id": "PUSH-TOF-001",
+        "direction": "PUSH",
+        "funnel_stage": "TOF",
+        "intent_type": "audience_awareness",
+        "question": "Ce este PUSH în Web-Om?",
+        "answer": "PUSH este motorul în care firma are inițiativa și ajunge la o audiență relevantă prin distribuție, prospectare, publicitate, parteneriate sau evenimente."
+      },
+      {
+        "id": "PUSH-TOF-002",
+        "direction": "PUSH",
+        "funnel_stage": "TOF",
+        "intent_type": "audience_awareness",
+        "question": "De ce avem nevoie de PUSH dacă există SEO?",
+        "answer": "SEO captează în principal cererea exprimată prin căutare; PUSH poate ajunge la audiențe care nu caută încă sau nu cunosc firma."
+      },
+      {
+        "id": "PUSH-TOF-003",
+        "direction": "PUSH",
+        "funnel_stage": "TOF",
+        "intent_type": "audience_awareness",
+        "question": "Ce este audiența țintă?",
+        "answer": "Audiența țintă este grupul de organizații și persoane pentru care oferta poate avea relevanță reală."
+      },
+      {
+        "id": "PUSH-TOF-004",
+        "direction": "PUSH",
+        "funnel_stage": "TOF",
+        "intent_type": "audience_awareness",
+        "question": "Ce este ICP?",
+        "answer": "ICP, Ideal Customer Profile, descrie caracteristicile conturilor pentru care oferta are cea mai bună potrivire ipotetică sau demonstrată."
+      },
+      {
+        "id": "PUSH-TOF-005",
+        "direction": "PUSH",
+        "funnel_stage": "TOF",
+        "intent_type": "audience_awareness",
+        "question": "Ce este un buying signal?",
+        "answer": "Este un semnal observabil care poate indica o nevoie, o schimbare de context sau un interes relevant, fără a garanta intenția de cumpărare."
+      },
+      {
+        "id": "PUSH-TOF-006",
+        "direction": "PUSH",
+        "funnel_stage": "TOF",
+        "intent_type": "audience_awareness",
+        "question": "Ce este trigger-based prospecting?",
+        "answer": "Este inițierea prospectării pe baza unui eveniment sau semnal verificabil care poate face oferta relevantă în acel moment."
+      },
+      {
+        "id": "PUSH-TOF-007",
+        "direction": "PUSH",
+        "funnel_stage": "TOF",
+        "intent_type": "audience_awareness",
+        "question": "Ce este outbound B2B?",
+        "answer": "Outbound B2B este contactarea proactivă a organizațiilor sau rolurilor relevante prin canale precum email, LinkedIn sau telefon."
+      },
+      {
+        "id": "PUSH-TOF-008",
+        "direction": "PUSH",
+        "funnel_stage": "TOF",
+        "intent_type": "audience_awareness",
+        "question": "Ce este social selling?",
+        "answer": "Social selling folosește interacțiuni și conținut profesional pentru a construi relevanță și conversații comerciale."
+      },
+      {
+        "id": "PUSH-TOF-009",
+        "direction": "PUSH",
+        "funnel_stage": "TOF",
+        "intent_type": "audience_awareness",
+        "question": "Ce este ABM?",
+        "answer": "Account-Based Marketing concentrează efortul pe conturi selectate și adaptează mesajele și experiențele la acestea."
+      },
+      {
+        "id": "PUSH-TOF-010",
+        "direction": "PUSH",
+        "funnel_stage": "TOF",
+        "intent_type": "audience_awareness",
+        "question": "Ce este content distribution?",
+        "answer": "Este distribuirea activă a conținutului către audiențele și canalele relevante, fără a aștepta doar descoperirea organică."
+      },
+      {
+        "id": "PUSH-TOF-011",
+        "direction": "PUSH",
+        "funnel_stage": "TOF",
+        "intent_type": "audience_awareness",
+        "question": "Ce este paid media?",
+        "answer": "Paid media este distribuția plătită prin search ads, social ads, display, video, sponsored content sau alte formate."
+      },
+      {
+        "id": "PUSH-TOF-012",
+        "direction": "PUSH",
+        "funnel_stage": "TOF",
+        "intent_type": "audience_awareness",
+        "question": "Ce este retargeting?",
+        "answer": "Retargeting permite adresarea din nou a unor audiențe care au interacționat anterior, în limitele regulilor și consimțămintelor aplicabile."
+      },
+      {
+        "id": "PUSH-TOF-013",
+        "direction": "PUSH",
+        "funnel_stage": "TOF",
+        "intent_type": "audience_awareness",
+        "question": "Cum pot partenerii genera clienți?",
+        "answer": "Partenerii pot crea introduceri, referrals, co-marketing, distribuție sau acces la audiențe complementare."
+      },
+      {
+        "id": "PUSH-TOF-014",
+        "direction": "PUSH",
+        "funnel_stage": "TOF",
+        "intent_type": "audience_awareness",
+        "question": "Cum pot evenimentele genera cerere?",
+        "answer": "Webinarele, workshopurile și demonstrațiile pot educa audiența și crea contexte pentru conversații comerciale."
+      },
+      {
+        "id": "PUSH-TOF-015",
+        "direction": "PUSH",
+        "funnel_stage": "TOF",
+        "intent_type": "audience_awareness",
+        "question": "Cum identificăm companii potrivite?",
+        "answer": "Prin criterii firmografice, industrie, geografie, dimensiune, tehnologie, nevoi observabile și potrivire cu oferta."
+      },
+      {
+        "id": "PUSH-TOF-016",
+        "direction": "PUSH",
+        "funnel_stage": "TOF",
+        "intent_type": "audience_awareness",
+        "question": "Cum identificăm persoana potrivită într-o companie?",
+        "answer": "Mapăm rolurile implicate: responsabilul problemei, evaluatorul, decidentul economic, utilizatorul și funcțiile de risc sau achiziții."
+      },
+      {
+        "id": "PUSH-TOF-017",
+        "direction": "PUSH",
+        "funnel_stage": "TOF",
+        "intent_type": "audience_awareness",
+        "question": "Ce înseamnă right message, right time?",
+        "answer": "Înseamnă ca mesajul să fie justificat de contextul și momentul observabil al prospectului, nu doar de existența datelor sale de contact."
+      },
+      {
+        "id": "PUSH-TOF-018",
+        "direction": "PUSH",
+        "funnel_stage": "TOF",
+        "intent_type": "audience_awareness",
+        "question": "Care este diferența dintre PUSH și spam?",
+        "answer": "PUSH urmărește relevanță, selecție și context; spamul distribuie mesaje nesolicitate în masă fără suficientă relevanță sau control."
+      },
+      {
+        "id": "PUSH-TOF-019",
+        "direction": "PUSH",
+        "funnel_stage": "TOF",
+        "intent_type": "audience_awareness",
+        "question": "Ce este un canal-pereche în PUSH?",
+        "answer": "Este traseul dintre canalul în care firma creează prima interacțiune și canalul în care prospectul continuă evaluarea sau conversia."
+      },
+      {
+        "id": "PUSH-TOF-020",
+        "direction": "PUSH",
+        "funnel_stage": "TOF",
+        "intent_type": "audience_awareness",
+        "question": "Cum se combină PUSH cu PULL?",
+        "answer": "PUSH poate genera awareness, după care prospectul caută independent firma prin PULL și continuă evaluarea pe alte canale."
+      },
+      {
+        "id": "PUSH-MOF-021",
+        "direction": "PUSH",
+        "funnel_stage": "MOF",
+        "intent_type": "solution_evaluation",
+        "question": "Cum construim un ICP pentru outbound?",
+        "answer": "Pornim de la oferta reală, clienții potriviți, problemele rezolvate și criteriile verificabile care disting conturile relevante."
+      },
+      {
+        "id": "PUSH-MOF-022",
+        "direction": "PUSH",
+        "funnel_stage": "MOF",
+        "intent_type": "solution_evaluation",
+        "question": "Cum segmentăm audiența PUSH?",
+        "answer": "Separăm conturile după fit și apoi după semnal, moment, rol, nevoie ipotetică și canalul adecvat."
+      },
+      {
+        "id": "PUSH-MOF-023",
+        "direction": "PUSH",
+        "funnel_stage": "MOF",
+        "intent_type": "solution_evaluation",
+        "question": "Cum alegem semnalele de prospectare?",
+        "answer": "Alegem semnale verificabile care au o legătură logică cu problema rezolvată de ofertă și le datăm și documentăm sursa."
+      },
+      {
+        "id": "PUSH-MOF-024",
+        "direction": "PUSH",
+        "funnel_stage": "MOF",
+        "intent_type": "solution_evaluation",
+        "question": "Cum prioritizăm conturile?",
+        "answer": "Putem combina fit, relevanța semnalului, recența și accesul la rolul potrivit într-un scor intern de prioritizare."
+      },
+      {
+        "id": "PUSH-MOF-025",
+        "direction": "PUSH",
+        "funnel_stage": "MOF",
+        "intent_type": "solution_evaluation",
+        "question": "Outbound sau ABM?",
+        "answer": "Outbound poate opera pe segmente mai largi; ABM concentrează resurse mai mari pe conturi selectate și experiențe adaptate."
+      },
+      {
+        "id": "PUSH-MOF-026",
+        "direction": "PUSH",
+        "funnel_stage": "MOF",
+        "intent_type": "solution_evaluation",
+        "question": "LinkedIn sau email pentru B2B?",
+        "answer": "Canalul depinde de rol, context, acces, reguli aplicabile și comportamentul audienței; adesea pot funcționa complementar."
+      },
+      {
+        "id": "PUSH-MOF-027",
+        "direction": "PUSH",
+        "funnel_stage": "MOF",
+        "intent_type": "solution_evaluation",
+        "question": "Paid media sau outbound?",
+        "answer": "Paid media distribuie la scară către audiențe definite, în timp ce outbound permite inițiere mai directă și personalizată."
+      },
+      {
+        "id": "PUSH-MOF-028",
+        "direction": "PUSH",
+        "funnel_stage": "MOF",
+        "intent_type": "solution_evaluation",
+        "question": "Cum personalizăm mesajul fără să presupunem prea mult?",
+        "answer": "Pornim de la un fapt verificabil, formulăm nevoia ca ipoteză și cerem validarea prospectului."
+      },
+      {
+        "id": "PUSH-MOF-029",
+        "direction": "PUSH",
+        "funnel_stage": "MOF",
+        "intent_type": "solution_evaluation",
+        "question": "Cum folosim evenimentele ca motor PUSH?",
+        "answer": "Selectăm o problemă relevantă, invităm audiența potrivită, oferim valoare concretă și definim un pas ulterior opțional."
+      },
+      {
+        "id": "PUSH-MOF-030",
+        "direction": "PUSH",
+        "funnel_stage": "MOF",
+        "intent_type": "solution_evaluation",
+        "question": "Cum folosim conținutul în outbound?",
+        "answer": "Trimitem resursa numai când răspunde contextului prospectului și o folosim pentru a facilita evaluarea, nu ca atașament generic."
+      },
+      {
+        "id": "PUSH-MOF-031",
+        "direction": "PUSH",
+        "funnel_stage": "MOF",
+        "intent_type": "solution_evaluation",
+        "question": "Cum folosim parteneriatele pentru distribuție?",
+        "answer": "Identificăm parteneri cu audiențe complementare și definim valoarea, regulile de introducere și măsurarea contribuției."
+      },
+      {
+        "id": "PUSH-MOF-032",
+        "direction": "PUSH",
+        "funnel_stage": "MOF",
+        "intent_type": "solution_evaluation",
+        "question": "Cum măsurăm calitatea PUSH?",
+        "answer": "Prin răspunsuri calificate, întâlniri relevante, oportunități, pipeline și venit, nu doar prin reach sau open rate."
+      },
+      {
+        "id": "PUSH-MOF-033",
+        "direction": "PUSH",
+        "funnel_stage": "MOF",
+        "intent_type": "solution_evaluation",
+        "question": "Cum conectăm PUSH cu landing pages?",
+        "answer": "Mesajul și landing page-ul trebuie să continue aceeași problemă, ofertă și dovadă, cu un CTA coerent."
+      },
+      {
+        "id": "PUSH-MOF-034",
+        "direction": "PUSH",
+        "funnel_stage": "MOF",
+        "intent_type": "solution_evaluation",
+        "question": "Cum evităm abordarea conturilor nepotrivite?",
+        "answer": "Definim criterii anti-ICP, verificăm datele și eliminăm conturile fără relevanță, capacitate sau context adecvat."
+      },
+      {
+        "id": "PUSH-MOF-035",
+        "direction": "PUSH",
+        "funnel_stage": "MOF",
+        "intent_type": "solution_evaluation",
+        "question": "Cum testăm un segment PUSH?",
+        "answer": "Pornim cu un eșantion controlat, mesaj și CTA definite, măsurăm răspunsurile calificate și ajustăm segmentul pe baza rezultatelor."
+      },
+      {
+        "id": "PUSH-BOF-036",
+        "direction": "PUSH",
+        "funnel_stage": "BOF",
+        "intent_type": "activation",
+        "question": "Puteți construi lista de conturi țintă?",
+        "answer": "Da, dacă sunt definite oferta, criteriile ICP, sursele permise și regulile de utilizare a datelor."
+      },
+      {
+        "id": "PUSH-BOF-037",
+        "direction": "PUSH",
+        "funnel_stage": "BOF",
+        "intent_type": "activation",
+        "question": "Puteți segmenta conturile după semnale?",
+        "answer": "Da. Conturile pot fi clasificate după fit, semnal observabil, recență, rol și prioritate."
+      },
+      {
+        "id": "PUSH-BOF-038",
+        "direction": "PUSH",
+        "funnel_stage": "BOF",
+        "intent_type": "activation",
+        "question": "Puteți identifica rolurile relevante?",
+        "answer": "Da. Pentru fiecare tip de cont pot fi mapate rolurile implicate în problemă, evaluare, decizie și implementare."
+      },
+      {
+        "id": "PUSH-BOF-039",
+        "direction": "PUSH",
+        "funnel_stage": "BOF",
+        "intent_type": "activation",
+        "question": "Puteți genera mesaje pe segment?",
+        "answer": "Da. Mesajele pot fi construite pe baza contextului verificabil și a ipotezei de nevoie, fără a inventa fapte despre prospect."
+      },
+      {
+        "id": "PUSH-BOF-040",
+        "direction": "PUSH",
+        "funnel_stage": "BOF",
+        "intent_type": "activation",
+        "question": "Puteți crea un workflow outbound?",
+        "answer": "Da. Workflow-ul poate defini selecția, verificarea, mesajul, canalul, follow-up-ul, oprirea și măsurarea."
+      },
+      {
+        "id": "PUSH-BOF-041",
+        "direction": "PUSH",
+        "funnel_stage": "BOF",
+        "intent_type": "activation",
+        "question": "Puteți construi un pilot ABM?",
+        "answer": "Da. Pilotul poate selecta un număr limitat de conturi și poate testa mesaje, conținut și trasee adaptate."
+      },
+      {
+        "id": "PUSH-BOF-042",
+        "direction": "PUSH",
+        "funnel_stage": "BOF",
+        "intent_type": "activation",
+        "question": "Puteți defini trigger-ele de prospectare?",
+        "answer": "Da. Trigger-ele pot fi definite prin evenimente și semnale publice sau autorizate care au relevanță pentru oferta firmei."
+      },
+      {
+        "id": "PUSH-BOF-043",
+        "direction": "PUSH",
+        "funnel_stage": "BOF",
+        "intent_type": "activation",
+        "question": "Puteți conecta LinkedIn cu website-ul?",
+        "answer": "Da. Se poate proiecta traseul LinkedIn → conținut sau landing page → CTA → măsurare, respectând capabilitățile și regulile platformei."
+      },
+      {
+        "id": "PUSH-BOF-044",
+        "direction": "PUSH",
+        "funnel_stage": "BOF",
+        "intent_type": "activation",
+        "question": "Puteți crea landing pages pentru campanii?",
+        "answer": "Da. Fiecare landing page poate fi aliniată segmentului, mesajului, dovezii și acțiunii urmărite."
+      },
+      {
+        "id": "PUSH-BOF-045",
+        "direction": "PUSH",
+        "funnel_stage": "BOF",
+        "intent_type": "activation",
+        "question": "Puteți măsura canalele-pereche?",
+        "answer": "Da. Se pot defini identificatori și evenimente pentru a urmări traseele dintre sursa PUSH și destinațiile ulterioare."
+      },
+      {
+        "id": "PUSH-BOF-046",
+        "direction": "PUSH",
+        "funnel_stage": "BOF",
+        "intent_type": "activation",
+        "question": "Puteți integra PUSH și PULL într-un singur model?",
+        "answer": "Da. Modelul poate urmări cum expunerea PUSH produce ulterior căutări PULL, vizite, reveniri și oportunități."
+      },
+      {
+        "id": "PUSH-BOF-047",
+        "direction": "PUSH",
+        "funnel_stage": "BOF",
+        "intent_type": "activation",
+        "question": "Puteți crea un dashboard de pipeline?",
+        "answer": "Da, dacă sursele de date necesare sunt disponibile, se pot urmări segmente, interacțiuni, oportunități și rezultate."
+      },
+      {
+        "id": "PUSH-BOF-048",
+        "direction": "PUSH",
+        "funnel_stage": "BOF",
+        "intent_type": "activation",
+        "question": "Cum verificăm dacă pilotul PUSH funcționează?",
+        "answer": "Stabilim baseline, segment, volum, perioadă și KPI, apoi comparăm răspunsurile calificate, întâlnirile, oportunitățile și costul."
+      },
+      {
+        "id": "PUSH-BOF-049",
+        "direction": "PUSH",
+        "funnel_stage": "BOF",
+        "intent_type": "activation",
+        "question": "Pot solicita o demonstrație a modelului PUSH?",
+        "answer": "Da. Demonstrația poate arăta traseul ICP → signal → account → role → message → channel → response → opportunity."
+      },
+      {
+        "id": "PUSH-BOF-050",
+        "direction": "PUSH",
+        "funnel_stage": "BOF",
+        "intent_type": "activation",
+        "question": "Cum încep implementarea PUSH?",
+        "answer": "Începe cu oferta, ICP-ul, sursele de date permise, semnalele, segmentul pilot, mesajul, canalul și KPI-urile."
+      }
+    ]
+  }
+}
