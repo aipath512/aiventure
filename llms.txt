@@ -50,22 +50,55 @@ AiVenture nu garantează:
 - autonomie nelimitată pentru Agenți;
 - acțiuni financiare fără autorizare explicită.
 
-## Human Web / Web-AI / A2A Web
+## Web-Om / Web-AI / Web-A2A
 
-Human Web:
-Omul caută, înțelege, compară și cumpără.
+Web-Om:
+Firma este accesibilă oamenilor. Omul caută, înțelege, compară și cumpără serviciul.
+OM → BUSINESS
 
 Web-AI:
-AI-ul găsește, reconstruiește, compară și recomandă.
+Serviciile firmei pot fi găsite, înțelese și reprezentate de sistemele AI.
+OM → AI → BUSINESS
 
-A2A Web:
-Agentul descoperă, solicită și poate acționa numai în limitele autorizate.
+Web-A2A:
+Serviciile oferite oamenilor devin servicii accesibile comercial agenților AI.
+BUYER AGENT ↔ SELLER AGENT
+
+Web-A2A nu automatizează întreaga firmă.
+Punctul de plecare este serviciul B2B existent.
+
+Canonical transformation:
+SERVICIU PENTRU OM
+→ SERVICE OFFER CONTRACT
+→ SELLER AGENT
+→ A2A
+→ BUYER AGENT
+
+Web-A2A principle:
+THE EDGE MUST NEVER INVENT THE OFFER DURING A TRANSACTION.
+
+Seller Agent operează numai asupra Service Offer Contract validat de om.
+Prețul, livrabilele, limitele, SLA-ul, jurisdicțiile, excluderile și condițiile comerciale nu sunt inventate în timpul tranzacției.
+
+Layer-1 flow:
+DISCOVER
+→ MATCH
+→ REQUEST
+→ SELLER QUESTION
+→ BUYER ANSWER
+→ QUOTE
+→ HUMAN APPROVAL
+→ EVIDENCE
+→ ORDER
 
 ## Important pages
 
 - https://aiventure.ro/
 - https://aiventure.ro/servicii/
 - https://aiventure.ro/produse/
+- https://aiventure.ro/web-om/
+- https://aiventure.ro/web-ai/
+- https://aiventure.ro/web-a2a/
 - https://aiventure.ro/buyer-agent/
 - https://aiventure.ro/intrebari/
 - https://aiventure.ro/faq-hub.html
@@ -76,6 +109,9 @@ Agentul descoperă, solicită și poate acționa numai în limitele autorizate.
 - https://aiventure.ro/ai.json
 - https://aiventure.ro/entities.json
 - https://aiventure.ro/intents.json
+- https://aiventure.ro/web-om/intents.json
+- https://aiventure.ro/web-ai/intents.json
+- https://aiventure.ro/web-a2a/intents.json
 - https://aiventure.ro/service.json
 - https://aiventure.ro/service-offer-contract.json
 - https://aiventure.ro/capabilities.json
