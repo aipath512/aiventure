@@ -773,6 +773,63 @@ section,.hero{background:#000!important;border-color:#303030}
   #aiv-page-tools .aiv-wa,#aiv-page-tools .aiv-call,#aiv-page-tools .aiv-contact{width:98px!important;min-width:98px!important;height:40px!important}
 }
 </style>
+
+<style id="aiv-premium-buttons-unified">
+/* Sistem unic pentru toate butoanele/CTA-urile HOME: transparent, premium, coerent. */
+:root{--aiv-gold:#d5b544;--aiv-gold-hi:#f0d878;--aiv-btn-line:rgba(213,181,68,.62);--aiv-btn-glass:rgba(255,255,255,.025)}
+#aiv-global-header .aiv-menu-btn,
+#main-content .vision-local-nav a,
+#main-content .vision-page-links a,
+#main-content .hero .related a,
+#main-content .vision-card>a,
+#main-content .related>a,
+#aiv-page-tools a,#aiv-page-tools button{
+  -webkit-appearance:none;appearance:none;
+  display:inline-flex!important;align-items:center!important;justify-content:center!important;
+  min-height:46px!important;padding:0 20px!important;
+  border:1px solid var(--aiv-btn-line)!important;border-radius:999px!important;
+  background:var(--aiv-btn-glass)!important;color:#f5f5f2!important;
+  font:800 12px/1 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif!important;
+  letter-spacing:.025em!important;text-decoration:none!important;text-underline-offset:0!important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.06),0 8px 24px rgba(0,0,0,.18)!important;
+  transition:border-color .18s ease,color .18s ease,background .18s ease,transform .18s ease,box-shadow .18s ease!important;
+}
+#aiv-global-header .aiv-menu-btn:hover,#aiv-global-header .aiv-menu-btn:focus-visible,
+#main-content .vision-local-nav a:hover,#main-content .vision-local-nav a:focus-visible,
+#main-content .vision-page-links a:hover,#main-content .vision-page-links a:focus-visible,
+#main-content .hero .related a:hover,#main-content .hero .related a:focus-visible,
+#main-content .vision-card>a:hover,#main-content .vision-card>a:focus-visible,
+#main-content .related>a:hover,#main-content .related>a:focus-visible,
+#aiv-page-tools a:hover,#aiv-page-tools a:focus-visible,#aiv-page-tools button:hover,#aiv-page-tools button:focus-visible{
+  background:rgba(213,181,68,.075)!important;border-color:var(--aiv-gold-hi)!important;color:#fff4bf!important;
+  transform:translateY(-1px)!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.08),0 10px 28px rgba(0,0,0,.24)!important;
+}
+/* CTA-uri din carduri: compacte, nu mai sunt linkuri subliniate. */
+#main-content .vision-card>a{margin-top:8px!important;min-height:42px!important;padding:0 17px!important;font-size:12px!important;width:auto!important;max-width:100%!important;text-align:center!important}
+/* Navigația locală: compactă și uniformă. */
+#main-content .vision-local-nav{gap:9px!important}
+#main-content .vision-local-nav a{min-height:40px!important;padding:0 15px!important;font-size:11px!important}
+/* HERO: butoane mari, aceeași familie vizuală. */
+#main-content .hero .related a{min-height:52px!important;padding:0 25px!important;font-size:12px!important;color:#f4df91!important}
+/* Floating: toate transparente; TOP/DOWN rotunde, restul pill. */
+#aiv-page-tools{right:12px!important;gap:8px!important}
+#aiv-page-tools a,#aiv-page-tools button{background:rgba(0,0,0,.32)!important;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);font-size:11px!important}
+#aiv-page-tools #aiv-top,#aiv-page-tools #aiv-down{width:52px!important;min-width:52px!important;height:52px!important;min-height:52px!important;padding:0!important;border-color:rgba(255,255,255,.34)!important}
+#aiv-page-tools .aiv-wa,#aiv-page-tools .aiv-call,#aiv-page-tools .aiv-contact{width:132px!important;min-width:132px!important;height:48px!important;min-height:48px!important;padding:0 18px!important}
+#aiv-page-tools .aiv-wa{color:#55e49a!important;border-color:rgba(45,211,123,.72)!important}
+#aiv-page-tools .aiv-call{color:#efd15d!important;border-color:rgba(213,181,68,.82)!important}
+#aiv-page-tools .aiv-contact{color:#f7f7f7!important;border-color:rgba(255,255,255,.38)!important}
+/* Meniu hamburger în aceeași familie. */
+#aiv-global-header .aiv-menu-btn{min-height:40px!important;padding:0 14px!important;border-color:rgba(255,255,255,.28)!important}
+@media(max-width:700px){
+  #main-content .vision-card>a{min-height:44px!important;padding:0 16px!important;font-size:11px!important}
+  #main-content .vision-local-nav a{min-height:38px!important;padding:0 13px!important}
+  #aiv-page-tools{right:10px!important;bottom:12px!important}
+  #aiv-page-tools #aiv-top,#aiv-page-tools #aiv-down{width:50px!important;min-width:50px!important;height:50px!important;min-height:50px!important}
+  #aiv-page-tools .aiv-wa,#aiv-page-tools .aiv-call,#aiv-page-tools .aiv-contact{width:126px!important;min-width:126px!important;height:46px!important;min-height:46px!important}
+}
+</style>
+
 </head><body>
 
 <!-- GLOBAL HEADER · COMPACT HAMBURGER -->
@@ -841,7 +898,7 @@ section,.hero{background:#000!important;border-color:#303030}
 
 <section class="hero"><div class="container">
   <div class="kicker">AIVENTURE · SERVICII B2B PENTRU ECONOMIA AI</div>
-  <h1>Vinde serviciile firmei și cu <span class="accent">Agenții AI.</span></h1>
+  <h1>Fă serviciile firmei ușor de găsit și de solicitat — de oameni și de <span class="accent">Agenți AI.</span></h1>
   <p class="v3-big">Pentru IMM-uri · agenții digitale · consultanți B2B</p>
   <p>Contabilitate · Avocatură · Consultanță · Resurse Umane · IT și Securitate Cibernetică · Marketing · Audit</p>
   <p><strong>La scară globală. Fără să modifici site-ul.</strong></p>
