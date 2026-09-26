@@ -1,0 +1,1016 @@
+{
+  "schema_version": "1.0",
+  "name": "AiVenture Web-AI Intents",
+  "canonical": "https://aiventure.ro/web-ai/",
+  "language": "ro",
+  "intent_model": "INTENT = ACTION + TARGET",
+  "scope": "Web-AI; 100% internal website signals where implementation claims are made: On-Site + On-Page",
+  "counts": {
+    "total": 100,
+    "TOF": 35,
+    "MOF": 35,
+    "BOF": 30
+  },
+  "intents": [
+    {
+      "id": "WEB-AI-INT-001",
+      "funnel_stage": "TOF",
+      "intent_type": "informational",
+      "action": "UNDERSTAND",
+      "target": "Web-AI",
+      "question": "Ce este web-AI?",
+      "answer": "Web-AI este stratul în care AI-ul mediază descoperirea și interpretarea informației dintre om și firmă. Unitatea centrală este intenția explicită: ACTION + TARGET.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-002",
+      "funnel_stage": "TOF",
+      "intent_type": "informational",
+      "action": "UNDERSTAND",
+      "target": "Web-AI",
+      "question": "Ce înseamnă AEO?",
+      "answer": "AEO, Answer Engine Optimization, pregătește informațiile firmei pentru a putea fi regăsite și folosite ca răspunsuri de sisteme AI și motoare de răspuns.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-003",
+      "funnel_stage": "TOF",
+      "intent_type": "informational",
+      "action": "UNDERSTAND",
+      "target": "Web-AI",
+      "question": "Ce înseamnă GEO?",
+      "answer": "GEO, Generative Engine Optimization, urmărește ca informația unei firme să poată fi găsită, înțeleasă, verificată și utilizată de motoare generative.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-004",
+      "funnel_stage": "TOF",
+      "intent_type": "informational",
+      "action": "UNDERSTAND",
+      "target": "Web-AI",
+      "question": "Ce este optimizarea pentru motoarele de răspuns AI?",
+      "answer": "În Web-AI, răspunsul depinde de cât de bine poate sistemul AI să găsească, citească, înțeleagă și verifica informația publică relevantă a firmei. Se optimizează mai întâi semnalele interne controlabile ale site-ului.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-005",
+      "funnel_stage": "TOF",
+      "intent_type": "informational",
+      "action": "UNDERSTAND",
+      "target": "Web-AI",
+      "question": "Cum funcționează căutarea cu inteligență artificială?",
+      "answer": "În Web-AI, răspunsul depinde de cât de bine poate sistemul AI să găsească, citească, înțeleagă și verifica informația publică relevantă a firmei. Se optimizează mai întâi semnalele interne controlabile ale site-ului.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-006",
+      "funnel_stage": "TOF",
+      "intent_type": "informational",
+      "action": "UNDERSTAND",
+      "target": "Web-AI",
+      "question": "Cum diferă căutarea AI de căutarea Google tradițională?",
+      "answer": "În Web-AI, răspunsul depinde de cât de bine poate sistemul AI să găsească, citească, înțeleagă și verifica informația publică relevantă a firmei. Se optimizează mai întâi semnalele interne controlabile ale site-ului.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-007",
+      "funnel_stage": "TOF",
+      "intent_type": "informational",
+      "action": "UNDERSTAND",
+      "target": "Web-AI",
+      "question": "Ce sunt AI Overviews?",
+      "answer": "În Web-AI, răspunsul depinde de cât de bine poate sistemul AI să găsească, citească, înțeleagă și verifica informația publică relevantă a firmei. Se optimizează mai întâi semnalele interne controlabile ale site-ului.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-008",
+      "funnel_stage": "TOF",
+      "intent_type": "informational",
+      "action": "UNDERSTAND",
+      "target": "Web-AI",
+      "question": "Ce este AI Mode în Google Search?",
+      "answer": "În Web-AI, răspunsul depinde de cât de bine poate sistemul AI să găsească, citească, înțeleagă și verifica informația publică relevantă a firmei. Se optimizează mai întâi semnalele interne controlabile ale site-ului.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-009",
+      "funnel_stage": "TOF",
+      "intent_type": "informational",
+      "action": "UNDERSTAND",
+      "target": "Web-AI",
+      "question": "Cum folosesc ChatGPT și Perplexity informațiile de pe site-uri?",
+      "answer": "În Web-AI, răspunsul depinde de cât de bine poate sistemul AI să găsească, citească, înțeleagă și verifica informația publică relevantă a firmei. Se optimizează mai întâi semnalele interne controlabile ale site-ului.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-010",
+      "funnel_stage": "TOF",
+      "intent_type": "informational",
+      "action": "UNDERSTAND",
+      "target": "Web-AI",
+      "question": "Cum ajunge un site să fie citat într-un răspuns AI?",
+      "answer": "În Web-AI, răspunsul depinde de cât de bine poate sistemul AI să găsească, citească, înțeleagă și verifica informația publică relevantă a firmei. Se optimizează mai întâi semnalele interne controlabile ale site-ului.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-011",
+      "funnel_stage": "TOF",
+      "intent_type": "informational",
+      "action": "UNDERSTAND",
+      "target": "Web-AI",
+      "question": "De ce contează vizibilitatea în răspunsurile generate de AI?",
+      "answer": "În Web-AI, răspunsul depinde de cât de bine poate sistemul AI să găsească, citească, înțeleagă și verifica informația publică relevantă a firmei. Se optimizează mai întâi semnalele interne controlabile ale site-ului.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-012",
+      "funnel_stage": "TOF",
+      "intent_type": "informational",
+      "action": "UNDERSTAND",
+      "target": "Web-AI",
+      "question": "Cum se schimbă SEO odată cu apariția căutării AI?",
+      "answer": "În Web-AI, răspunsul depinde de cât de bine poate sistemul AI să găsească, citească, înțeleagă și verifica informația publică relevantă a firmei. Se optimizează mai întâi semnalele interne controlabile ale site-ului.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-013",
+      "funnel_stage": "TOF",
+      "intent_type": "informational",
+      "action": "UNDERSTAND",
+      "target": "Web-AI",
+      "question": "Care este diferența dintre SEO, AEO și GEO?",
+      "answer": "SEO optimizează descoperirea în motoarele de căutare; AEO optimizează informația pentru răspunsuri; GEO urmărește reprezentarea și utilizarea informației de motoare generative. În Web-AI, SEO rămâne fundația.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-014",
+      "funnel_stage": "TOF",
+      "intent_type": "informational",
+      "action": "UNDERSTAND",
+      "target": "Web-AI",
+      "question": "Ce înseamnă „AI search visibility”?",
+      "answer": "În Web-AI, răspunsul depinde de cât de bine poate sistemul AI să găsească, citească, înțeleagă și verifica informația publică relevantă a firmei. Se optimizează mai întâi semnalele interne controlabile ale site-ului.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-015",
+      "funnel_stage": "TOF",
+      "intent_type": "informational",
+      "action": "UNDERSTAND",
+      "target": "Web-AI",
+      "question": "Ce tipuri de întrebări pun oamenii motoarelor de căutare AI?",
+      "answer": "În Web-AI, răspunsul depinde de cât de bine poate sistemul AI să găsească, citească, înțeleagă și verifica informația publică relevantă a firmei. Se optimizează mai întâi semnalele interne controlabile ale site-ului.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-016",
+      "funnel_stage": "TOF",
+      "intent_type": "informational",
+      "action": "UNDERSTAND",
+      "target": "Web-AI",
+      "question": "Cum caută clienții produse și servicii folosind AI?",
+      "answer": "În Web-AI, răspunsul depinde de cât de bine poate sistemul AI să găsească, citească, înțeleagă și verifica informația publică relevantă a firmei. Se optimizează mai întâi semnalele interne controlabile ale site-ului.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-017",
+      "funnel_stage": "TOF",
+      "intent_type": "informational",
+      "action": "UNDERSTAND",
+      "target": "Web-AI",
+      "question": "Ce înseamnă să fii recomandat de un asistent AI?",
+      "answer": "În Web-AI, răspunsul depinde de cât de bine poate sistemul AI să găsească, citească, înțeleagă și verifica informația publică relevantă a firmei. Se optimizează mai întâi semnalele interne controlabile ale site-ului.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-018",
+      "funnel_stage": "TOF",
+      "intent_type": "informational",
+      "action": "UNDERSTAND",
+      "target": "Web-AI",
+      "question": "De ce unele branduri apar în răspunsurile AI, iar altele nu?",
+      "answer": "În Web-AI, răspunsul depinde de cât de bine poate sistemul AI să găsească, citească, înțeleagă și verifica informația publică relevantă a firmei. Se optimizează mai întâi semnalele interne controlabile ale site-ului.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-019",
+      "funnel_stage": "TOF",
+      "intent_type": "informational",
+      "action": "UNDERSTAND",
+      "target": "Web-AI",
+      "question": "Poate inteligența artificială să găsească informațiile de pe site-ul meu?",
+      "answer": "În Web-AI, răspunsul depinde de cât de bine poate sistemul AI să găsească, citească, înțeleagă și verifica informația publică relevantă a firmei. Se optimizează mai întâi semnalele interne controlabile ale site-ului.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-020",
+      "funnel_stage": "TOF",
+      "intent_type": "informational",
+      "action": "UNDERSTAND",
+      "target": "Web-AI",
+      "question": "Ce rol au conținutul și autoritatea brandului în căutarea AI?",
+      "answer": "În Web-AI, răspunsul depinde de cât de bine poate sistemul AI să găsească, citească, înțeleagă și verifica informația publică relevantă a firmei. Se optimizează mai întâi semnalele interne controlabile ale site-ului.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-021",
+      "funnel_stage": "TOF",
+      "intent_type": "informational",
+      "action": "UNDERSTAND",
+      "target": "Web-AI",
+      "question": "Contează în continuare să apar în rezultatele Google?",
+      "answer": "În Web-AI, răspunsul depinde de cât de bine poate sistemul AI să găsească, citească, înțeleagă și verifica informația publică relevantă a firmei. Se optimizează mai întâi semnalele interne controlabile ale site-ului.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-022",
+      "funnel_stage": "TOF",
+      "intent_type": "informational",
+      "action": "UNDERSTAND",
+      "target": "Web-AI",
+      "question": "Cum afectează căutarea AI traficul organic al unui site?",
+      "answer": "În Web-AI, răspunsul depinde de cât de bine poate sistemul AI să găsească, citească, înțeleagă și verifica informația publică relevantă a firmei. Se optimizează mai întâi semnalele interne controlabile ale site-ului.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-023",
+      "funnel_stage": "TOF",
+      "intent_type": "informational",
+      "action": "UNDERSTAND",
+      "target": "Web-AI",
+      "question": "Căutarea AI trimite vizitatori către site-uri?",
+      "answer": "În Web-AI, răspunsul depinde de cât de bine poate sistemul AI să găsească, citească, înțeleagă și verifica informația publică relevantă a firmei. Se optimizează mai întâi semnalele interne controlabile ale site-ului.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-024",
+      "funnel_stage": "TOF",
+      "intent_type": "informational",
+      "action": "UNDERSTAND",
+      "target": "Web-AI",
+      "question": "Ce este un crawler AI?",
+      "answer": "Un crawler AI este un agent automat care accesează resurse web pentru discovery, indexare, antrenare sau furnizarea de informații către servicii AI, în funcție de operator și scop.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-025",
+      "funnel_stage": "TOF",
+      "intent_type": "informational",
+      "action": "UNDERSTAND",
+      "target": "Web-AI",
+      "question": "Cum citesc roboții AI paginile web?",
+      "answer": "În Web-AI, răspunsul depinde de cât de bine poate sistemul AI să găsească, citească, înțeleagă și verifica informația publică relevantă a firmei. Se optimizează mai întâi semnalele interne controlabile ale site-ului.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-026",
+      "funnel_stage": "TOF",
+      "intent_type": "informational",
+      "action": "UNDERSTAND",
+      "target": "Web-AI",
+      "question": "Ce înseamnă indexarea unui site?",
+      "answer": "În Web-AI, răspunsul depinde de cât de bine poate sistemul AI să găsească, citească, înțeleagă și verifica informația publică relevantă a firmei. Se optimizează mai întâi semnalele interne controlabile ale site-ului.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-027",
+      "funnel_stage": "TOF",
+      "intent_type": "informational",
+      "action": "UNDERSTAND",
+      "target": "Web-AI",
+      "question": "Cum descopăr dacă site-ul meu este accesibil pentru AI?",
+      "answer": "În Web-AI, răspunsul depinde de cât de bine poate sistemul AI să găsească, citească, înțeleagă și verifica informația publică relevantă a firmei. Se optimizează mai întâi semnalele interne controlabile ale site-ului.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-028",
+      "funnel_stage": "TOF",
+      "intent_type": "informational",
+      "action": "UNDERSTAND",
+      "target": "Web-AI",
+      "question": "Ce informații despre o companie caută utilizatorii în AI?",
+      "answer": "În Web-AI, răspunsul depinde de cât de bine poate sistemul AI să găsească, citească, înțeleagă și verifica informația publică relevantă a firmei. Se optimizează mai întâi semnalele interne controlabile ale site-ului.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-029",
+      "funnel_stage": "TOF",
+      "intent_type": "informational",
+      "action": "UNDERSTAND",
+      "target": "Web-AI",
+      "question": "Ce înseamnă conținut „ușor de înțeles” pentru motoarele AI?",
+      "answer": "În Web-AI, răspunsul depinde de cât de bine poate sistemul AI să găsească, citească, înțeleagă și verifica informația publică relevantă a firmei. Se optimizează mai întâi semnalele interne controlabile ale site-ului.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-030",
+      "funnel_stage": "TOF",
+      "intent_type": "informational",
+      "action": "UNDERSTAND",
+      "target": "Web-AI",
+      "question": "Cum poate o firmă mică să devină mai vizibilă în căutarea AI?",
+      "answer": "În Web-AI, răspunsul depinde de cât de bine poate sistemul AI să găsească, citească, înțeleagă și verifica informația publică relevantă a firmei. Se optimizează mai întâi semnalele interne controlabile ale site-ului.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-031",
+      "funnel_stage": "TOF",
+      "intent_type": "informational",
+      "action": "UNDERSTAND",
+      "target": "Web-AI",
+      "question": "Este suficient să public articole de blog pentru a apărea în răspunsurile AI?",
+      "answer": "În Web-AI, răspunsul depinde de cât de bine poate sistemul AI să găsească, citească, înțeleagă și verifica informația publică relevantă a firmei. Se optimizează mai întâi semnalele interne controlabile ale site-ului.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-032",
+      "funnel_stage": "TOF",
+      "intent_type": "informational",
+      "action": "UNDERSTAND",
+      "target": "Web-AI",
+      "question": "Ce probleme de site pot împiedica motoarele AI să-mi găsească paginile?",
+      "answer": "În Web-AI, răspunsul depinde de cât de bine poate sistemul AI să găsească, citească, înțeleagă și verifica informația publică relevantă a firmei. Se optimizează mai întâi semnalele interne controlabile ale site-ului.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-033",
+      "funnel_stage": "TOF",
+      "intent_type": "informational",
+      "action": "UNDERSTAND",
+      "target": "Web-AI",
+      "question": "Ce este robots.txt și de ce este relevant pentru crawlere?",
+      "answer": "În Web-AI, răspunsul depinde de cât de bine poate sistemul AI să găsească, citească, înțeleagă și verifica informația publică relevantă a firmei. Se optimizează mai întâi semnalele interne controlabile ale site-ului.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-034",
+      "funnel_stage": "TOF",
+      "intent_type": "informational",
+      "action": "UNDERSTAND",
+      "target": "Web-AI",
+      "question": "Ce sunt datele structurate sau schema markup?",
+      "answer": "Datele structurate descriu explicit entități, proprietăți și relații într-un format machine-readable. Schema.org este vocabularul cel mai răspândit pentru această descriere.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-035",
+      "funnel_stage": "TOF",
+      "intent_type": "informational",
+      "action": "UNDERSTAND",
+      "target": "Web-AI",
+      "question": "Cum influențează recenziile online răspunsurile generate de AI?",
+      "answer": "În Web-AI, răspunsul depinde de cât de bine poate sistemul AI să găsească, citească, înțeleagă și verifica informația publică relevantă a firmei. Se optimizează mai întâi semnalele interne controlabile ale site-ului.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-036",
+      "funnel_stage": "MOF",
+      "intent_type": "commercial_investigation",
+      "action": "EVALUATE",
+      "target": "Web-AI",
+      "question": "Cum verific dacă brandul meu apare în răspunsurile ChatGPT?",
+      "answer": "Se verifică sistematic semnalele On-Site și On-Page, accesibilitatea, structura semantică, entitățile, intențiile, datele structurate și dovezile, apoi se măsoară rezultatele separat pe AI, intenție și timp.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-037",
+      "funnel_stage": "MOF",
+      "intent_type": "commercial_investigation",
+      "action": "EVALUATE",
+      "target": "Web-AI",
+      "question": "Cum verific dacă site-ul meu este citat de Perplexity?",
+      "answer": "Se verifică sistematic semnalele On-Site și On-Page, accesibilitatea, structura semantică, entitățile, intențiile, datele structurate și dovezile, apoi se măsoară rezultatele separat pe AI, intenție și timp.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-038",
+      "funnel_stage": "MOF",
+      "intent_type": "commercial_investigation",
+      "action": "EVALUATE",
+      "target": "Web-AI",
+      "question": "Cum testez vizibilitatea brandului în Google AI Overviews?",
+      "answer": "Se verifică sistematic semnalele On-Site și On-Page, accesibilitatea, structura semantică, entitățile, intențiile, datele structurate și dovezile, apoi se măsoară rezultatele separat pe AI, intenție și timp.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-039",
+      "funnel_stage": "MOF",
+      "intent_type": "commercial_investigation",
+      "action": "EVALUATE",
+      "target": "Web-AI",
+      "question": "Cum pot urmări mențiunile brandului în răspunsurile AI?",
+      "answer": "Se verifică sistematic semnalele On-Site și On-Page, accesibilitatea, structura semantică, entitățile, intențiile, datele structurate și dovezile, apoi se măsoară rezultatele separat pe AI, intenție și timp.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-040",
+      "funnel_stage": "MOF",
+      "intent_type": "commercial_investigation",
+      "action": "EVALUATE",
+      "target": "Web-AI",
+      "question": "Ce indicatori măsoară performanța AEO sau GEO?",
+      "answer": "Se verifică sistematic semnalele On-Site și On-Page, accesibilitatea, structura semantică, entitățile, intențiile, datele structurate și dovezile, apoi se măsoară rezultatele separat pe AI, intenție și timp.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-041",
+      "funnel_stage": "MOF",
+      "intent_type": "commercial_investigation",
+      "action": "EVALUATE",
+      "target": "Web-AI",
+      "question": "Cum identific întrebările relevante pentru clienții mei în căutarea AI?",
+      "answer": "Se verifică sistematic semnalele On-Site și On-Page, accesibilitatea, structura semantică, entitățile, intențiile, datele structurate și dovezile, apoi se măsoară rezultatele separat pe AI, intenție și timp.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-042",
+      "funnel_stage": "MOF",
+      "intent_type": "commercial_investigation",
+      "action": "EVALUATE",
+      "target": "Web-AI",
+      "question": "Cum aleg subiectele pentru conținut optimizat pentru căutare AI?",
+      "answer": "Se verifică sistematic semnalele On-Site și On-Page, accesibilitatea, structura semantică, entitățile, intențiile, datele structurate și dovezile, apoi se măsoară rezultatele separat pe AI, intenție și timp.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-043",
+      "funnel_stage": "MOF",
+      "intent_type": "commercial_investigation",
+      "action": "EVALUATE",
+      "target": "Web-AI",
+      "question": "Cum structurez o pagină web astfel încât AI să-i înțeleagă răspunsul?",
+      "answer": "Se verifică sistematic semnalele On-Site și On-Page, accesibilitatea, structura semantică, entitățile, intențiile, datele structurate și dovezile, apoi se măsoară rezultatele separat pe AI, intenție și timp.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-044",
+      "funnel_stage": "MOF",
+      "intent_type": "commercial_investigation",
+      "action": "EVALUATE",
+      "target": "Web-AI",
+      "question": "Cum scriu răspunsuri clare la întrebările clienților pe site?",
+      "answer": "Se verifică sistematic semnalele On-Site și On-Page, accesibilitatea, structura semantică, entitățile, intențiile, datele structurate și dovezile, apoi se măsoară rezultatele separat pe AI, intenție și timp.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-045",
+      "funnel_stage": "MOF",
+      "intent_type": "commercial_investigation",
+      "action": "EVALUATE",
+      "target": "Web-AI",
+      "question": "Ce informații ar trebui să includă o pagină de servicii pentru vizibilitate AI?",
+      "answer": "Se verifică sistematic semnalele On-Site și On-Page, accesibilitatea, structura semantică, entitățile, intențiile, datele structurate și dovezile, apoi se măsoară rezultatele separat pe AI, intenție și timp.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-046",
+      "funnel_stage": "MOF",
+      "intent_type": "commercial_investigation",
+      "action": "EVALUATE",
+      "target": "Web-AI",
+      "question": "Cum optimizez paginile locale pentru întrebările adresate asistenților AI?",
+      "answer": "Se verifică sistematic semnalele On-Site și On-Page, accesibilitatea, structura semantică, entitățile, intențiile, datele structurate și dovezile, apoi se măsoară rezultatele separat pe AI, intenție și timp.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-047",
+      "funnel_stage": "MOF",
+      "intent_type": "commercial_investigation",
+      "action": "EVALUATE",
+      "target": "Web-AI",
+      "question": "Cum îmbunătățesc descrierea companiei pe site pentru motoarele AI?",
+      "answer": "Se verifică sistematic semnalele On-Site și On-Page, accesibilitatea, structura semantică, entitățile, intențiile, datele structurate și dovezile, apoi se măsoară rezultatele separat pe AI, intenție și timp.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-048",
+      "funnel_stage": "MOF",
+      "intent_type": "commercial_investigation",
+      "action": "EVALUATE",
+      "target": "Web-AI",
+      "question": "Ce rol au paginile „Despre noi”, „Servicii” și „Contact” în vizibilitatea AI?",
+      "answer": "Se verifică sistematic semnalele On-Site și On-Page, accesibilitatea, structura semantică, entitățile, intențiile, datele structurate și dovezile, apoi se măsoară rezultatele separat pe AI, intenție și timp.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-049",
+      "funnel_stage": "MOF",
+      "intent_type": "commercial_investigation",
+      "action": "EVALUATE",
+      "target": "Web-AI",
+      "question": "Cum folosesc întrebările frecvente într-o strategie AEO?",
+      "answer": "Se verifică sistematic semnalele On-Site și On-Page, accesibilitatea, structura semantică, entitățile, intențiile, datele structurate și dovezile, apoi se măsoară rezultatele separat pe AI, intenție și timp.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-050",
+      "funnel_stage": "MOF",
+      "intent_type": "commercial_investigation",
+      "action": "EVALUATE",
+      "target": "Web-AI",
+      "question": "Ajută schema markup la apariția în răspunsurile AI?",
+      "answer": "Se verifică sistematic semnalele On-Site și On-Page, accesibilitatea, structura semantică, entitățile, intențiile, datele structurate și dovezile, apoi se măsoară rezultatele separat pe AI, intenție și timp.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-051",
+      "funnel_stage": "MOF",
+      "intent_type": "commercial_investigation",
+      "action": "EVALUATE",
+      "target": "Web-AI",
+      "question": "Ce tipuri de date structurate sunt utile pentru site-ul unei companii?",
+      "answer": "Se verifică sistematic semnalele On-Site și On-Page, accesibilitatea, structura semantică, entitățile, intențiile, datele structurate și dovezile, apoi se măsoară rezultatele separat pe AI, intenție și timp.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-052",
+      "funnel_stage": "MOF",
+      "intent_type": "commercial_investigation",
+      "action": "EVALUATE",
+      "target": "Web-AI",
+      "question": "Cum verific dacă Google poate accesa paginile mele?",
+      "answer": "Se verifică sistematic semnalele On-Site și On-Page, accesibilitatea, structura semantică, entitățile, intențiile, datele structurate și dovezile, apoi se măsoară rezultatele separat pe AI, intenție și timp.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-053",
+      "funnel_stage": "MOF",
+      "intent_type": "commercial_investigation",
+      "action": "EVALUATE",
+      "target": "Web-AI",
+      "question": "Cum verific dacă un crawler AI este blocat de robots.txt sau de hosting?",
+      "answer": "Se verifică sistematic semnalele On-Site și On-Page, accesibilitatea, structura semantică, entitățile, intențiile, datele structurate și dovezile, apoi se măsoară rezultatele separat pe AI, intenție și timp.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-054",
+      "funnel_stage": "MOF",
+      "intent_type": "commercial_investigation",
+      "action": "EVALUATE",
+      "target": "Web-AI",
+      "question": "Cum aflu dacă paginile importante sunt indexate?",
+      "answer": "Se verifică sistematic semnalele On-Site și On-Page, accesibilitatea, structura semantică, entitățile, intențiile, datele structurate și dovezile, apoi se măsoară rezultatele separat pe AI, intenție și timp.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-055",
+      "funnel_stage": "MOF",
+      "intent_type": "commercial_investigation",
+      "action": "EVALUATE",
+      "target": "Web-AI",
+      "question": "Ce trebuie să verific în Google Search Console pentru vizibilitatea AI?",
+      "answer": "Se verifică sistematic semnalele On-Site și On-Page, accesibilitatea, structura semantică, entitățile, intențiile, datele structurate și dovezile, apoi se măsoară rezultatele separat pe AI, intenție și timp.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-056",
+      "funnel_stage": "MOF",
+      "intent_type": "commercial_investigation",
+      "action": "EVALUATE",
+      "target": "Web-AI",
+      "question": "Cum mă asigur că informațiile din schema markup corespund cu textul vizibil?",
+      "answer": "Se verifică sistematic semnalele On-Site și On-Page, accesibilitatea, structura semantică, entitățile, intențiile, datele structurate și dovezile, apoi se măsoară rezultatele separat pe AI, intenție și timp.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-057",
+      "funnel_stage": "MOF",
+      "intent_type": "commercial_investigation",
+      "action": "EVALUATE",
+      "target": "Web-AI",
+      "question": "Cum pot face conținutul site-ului mai ușor de citat de AI?",
+      "answer": "Se verifică sistematic semnalele On-Site și On-Page, accesibilitatea, structura semantică, entitățile, intențiile, datele structurate și dovezile, apoi se măsoară rezultatele separat pe AI, intenție și timp.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-058",
+      "funnel_stage": "MOF",
+      "intent_type": "commercial_investigation",
+      "action": "EVALUATE",
+      "target": "Web-AI",
+      "question": "Ajută linkurile interne la descoperirea paginilor de către AI?",
+      "answer": "Se verifică sistematic semnalele On-Site și On-Page, accesibilitatea, structura semantică, entitățile, intențiile, datele structurate și dovezile, apoi se măsoară rezultatele separat pe AI, intenție și timp.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-059",
+      "funnel_stage": "MOF",
+      "intent_type": "commercial_investigation",
+      "action": "EVALUATE",
+      "target": "Web-AI",
+      "question": "Cum actualizez conținutul vechi pentru căutarea AI?",
+      "answer": "Se verifică sistematic semnalele On-Site și On-Page, accesibilitatea, structura semantică, entitățile, intențiile, datele structurate și dovezile, apoi se măsoară rezultatele separat pe AI, intenție și timp.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-060",
+      "funnel_stage": "MOF",
+      "intent_type": "commercial_investigation",
+      "action": "EVALUATE",
+      "target": "Web-AI",
+      "question": "Cum optimizez imaginile și videoclipurile pentru a completa conținutul textual?",
+      "answer": "Se verifică sistematic semnalele On-Site și On-Page, accesibilitatea, structura semantică, entitățile, intențiile, datele structurate și dovezile, apoi se măsoară rezultatele separat pe AI, intenție și timp.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-061",
+      "funnel_stage": "MOF",
+      "intent_type": "commercial_investigation",
+      "action": "EVALUATE",
+      "target": "Web-AI",
+      "question": "Ce diferență este între optimizarea tehnică și optimizarea editorială pentru AI?",
+      "answer": "Se verifică sistematic semnalele On-Site și On-Page, accesibilitatea, structura semantică, entitățile, intențiile, datele structurate și dovezile, apoi se măsoară rezultatele separat pe AI, intenție și timp.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-062",
+      "funnel_stage": "MOF",
+      "intent_type": "commercial_investigation",
+      "action": "EVALUATE",
+      "target": "Web-AI",
+      "question": "Ce trebuie să conțină un audit de vizibilitate AI?",
+      "answer": "Se verifică sistematic semnalele On-Site și On-Page, accesibilitatea, structura semantică, entitățile, intențiile, datele structurate și dovezile, apoi se măsoară rezultatele separat pe AI, intenție și timp.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-063",
+      "funnel_stage": "MOF",
+      "intent_type": "commercial_investigation",
+      "action": "EVALUATE",
+      "target": "Web-AI",
+      "question": "Ce instrumente pot folosi pentru cercetarea întrebărilor despre brandul meu?",
+      "answer": "Se verifică sistematic semnalele On-Site și On-Page, accesibilitatea, structura semantică, entitățile, intențiile, datele structurate și dovezile, apoi se măsoară rezultatele separat pe AI, intenție și timp.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-064",
+      "funnel_stage": "MOF",
+      "intent_type": "commercial_investigation",
+      "action": "EVALUATE",
+      "target": "Web-AI",
+      "question": "Cum compar vizibilitatea mea AI cu cea a concurenților?",
+      "answer": "Se verifică sistematic semnalele On-Site și On-Page, accesibilitatea, structura semantică, entitățile, intențiile, datele structurate și dovezile, apoi se măsoară rezultatele separat pe AI, intenție și timp.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-065",
+      "funnel_stage": "MOF",
+      "intent_type": "commercial_investigation",
+      "action": "EVALUATE",
+      "target": "Web-AI",
+      "question": "Cât de des ar trebui să testez răspunsurile AI despre compania mea?",
+      "answer": "Se verifică sistematic semnalele On-Site și On-Page, accesibilitatea, structura semantică, entitățile, intențiile, datele structurate și dovezile, apoi se măsoară rezultatele separat pe AI, intenție și timp.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-066",
+      "funnel_stage": "MOF",
+      "intent_type": "commercial_investigation",
+      "action": "EVALUATE",
+      "target": "Web-AI",
+      "question": "Cum aflu ce surse citează AI când recomandă concurenții?",
+      "answer": "Se verifică sistematic semnalele On-Site și On-Page, accesibilitatea, structura semantică, entitățile, intențiile, datele structurate și dovezile, apoi se măsoară rezultatele separat pe AI, intenție și timp.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-067",
+      "funnel_stage": "MOF",
+      "intent_type": "commercial_investigation",
+      "action": "EVALUATE",
+      "target": "Web-AI",
+      "question": "Cum integrez SEO tradițional cu AEO și GEO?",
+      "answer": "Se verifică sistematic semnalele On-Site și On-Page, accesibilitatea, structura semantică, entitățile, intențiile, datele structurate și dovezile, apoi se măsoară rezultatele separat pe AI, intenție și timp.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-068",
+      "funnel_stage": "MOF",
+      "intent_type": "commercial_investigation",
+      "action": "EVALUATE",
+      "target": "Web-AI",
+      "question": "Cum măsor dacă vizitele venite din căutarea AI generează conversii?",
+      "answer": "Se verifică sistematic semnalele On-Site și On-Page, accesibilitatea, structura semantică, entitățile, intențiile, datele structurate și dovezile, apoi se măsoară rezultatele separat pe AI, intenție și timp.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-069",
+      "funnel_stage": "MOF",
+      "intent_type": "commercial_investigation",
+      "action": "EVALUATE",
+      "target": "Web-AI",
+      "question": "Ce pagini ar trebui optimizate primele pentru un site B2B?",
+      "answer": "Se verifică sistematic semnalele On-Site și On-Page, accesibilitatea, structura semantică, entitățile, intențiile, datele structurate și dovezile, apoi se măsoară rezultatele separat pe AI, intenție și timp.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-070",
+      "funnel_stage": "MOF",
+      "intent_type": "commercial_investigation",
+      "action": "EVALUATE",
+      "target": "Web-AI",
+      "question": "Cum prioritizez problemele tehnice care afectează accesibilitatea site-ului?",
+      "answer": "Se verifică sistematic semnalele On-Site și On-Page, accesibilitatea, structura semantică, entitățile, intențiile, datele structurate și dovezile, apoi se măsoară rezultatele separat pe AI, intenție și timp.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-071",
+      "funnel_stage": "BOF",
+      "intent_type": "transactional",
+      "action": "BUY",
+      "target": "Web-AI",
+      "question": "Cât costă un audit de vizibilitate AI pentru un site?",
+      "answer": "Proiectul trebuie definit prin scope, baseline, semnale aplicabile, implementare și verificare BEFORE/AFTER. Costul, durata și accesurile depind de dimensiunea site-ului și de nivelul de implementare ales.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-072",
+      "funnel_stage": "BOF",
+      "intent_type": "transactional",
+      "action": "BUY",
+      "target": "Web-AI",
+      "question": "Cât costă serviciile AEO sau GEO?",
+      "answer": "Proiectul trebuie definit prin scope, baseline, semnale aplicabile, implementare și verificare BEFORE/AFTER. Costul, durata și accesurile depind de dimensiunea site-ului și de nivelul de implementare ales.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-073",
+      "funnel_stage": "BOF",
+      "intent_type": "transactional",
+      "action": "BUY",
+      "target": "Web-AI",
+      "question": "Ce include un audit SEO și AI-readiness?",
+      "answer": "Proiectul trebuie definit prin scope, baseline, semnale aplicabile, implementare și verificare BEFORE/AFTER. Costul, durata și accesurile depind de dimensiunea site-ului și de nivelul de implementare ales.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-074",
+      "funnel_stage": "BOF",
+      "intent_type": "transactional",
+      "action": "BUY",
+      "target": "Web-AI",
+      "question": "Ce primesc concret după un audit de vizibilitate AI?",
+      "answer": "Proiectul trebuie definit prin scope, baseline, semnale aplicabile, implementare și verificare BEFORE/AFTER. Costul, durata și accesurile depind de dimensiunea site-ului și de nivelul de implementare ales.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-075",
+      "funnel_stage": "BOF",
+      "intent_type": "transactional",
+      "action": "BUY",
+      "target": "Web-AI",
+      "question": "Cât durează un audit AEO/GEO?",
+      "answer": "Proiectul trebuie definit prin scope, baseline, semnale aplicabile, implementare și verificare BEFORE/AFTER. Costul, durata și accesurile depind de dimensiunea site-ului și de nivelul de implementare ales.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-076",
+      "funnel_stage": "BOF",
+      "intent_type": "transactional",
+      "action": "BUY",
+      "target": "Web-AI",
+      "question": "În cât timp pot vedea schimbări în vizibilitatea AI?",
+      "answer": "Proiectul trebuie definit prin scope, baseline, semnale aplicabile, implementare și verificare BEFORE/AFTER. Costul, durata și accesurile depind de dimensiunea site-ului și de nivelul de implementare ales.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-077",
+      "funnel_stage": "BOF",
+      "intent_type": "transactional",
+      "action": "BUY",
+      "target": "Web-AI",
+      "question": "Cum aleg o agenție sau un consultant AEO/GEO?",
+      "answer": "Proiectul trebuie definit prin scope, baseline, semnale aplicabile, implementare și verificare BEFORE/AFTER. Costul, durata și accesurile depind de dimensiunea site-ului și de nivelul de implementare ales.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-078",
+      "funnel_stage": "BOF",
+      "intent_type": "transactional",
+      "action": "BUY",
+      "target": "Web-AI",
+      "question": "Ce întrebări să pun înainte să contractez servicii de optimizare pentru AI?",
+      "answer": "Proiectul trebuie definit prin scope, baseline, semnale aplicabile, implementare și verificare BEFORE/AFTER. Costul, durata și accesurile depind de dimensiunea site-ului și de nivelul de implementare ales.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-079",
+      "funnel_stage": "BOF",
+      "intent_type": "transactional",
+      "action": "BUY",
+      "target": "Web-AI",
+      "question": "Cum verific experiența unui consultant în vizibilitatea AI?",
+      "answer": "Proiectul trebuie definit prin scope, baseline, semnale aplicabile, implementare și verificare BEFORE/AFTER. Costul, durata și accesurile depind de dimensiunea site-ului și de nivelul de implementare ales.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-080",
+      "funnel_stage": "BOF",
+      "intent_type": "transactional",
+      "action": "BUY",
+      "target": "Web-AI",
+      "question": "Există garanții că site-ul meu va fi citat de ChatGPT sau Perplexity?",
+      "answer": "Nu. Nicio implementare serioasă nu poate garanta citarea de către un sistem AI extern. Se pot îmbunătăți semnalele controlabile și se poate măsura rezultatul prin teste repetabile.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-081",
+      "funnel_stage": "BOF",
+      "intent_type": "transactional",
+      "action": "BUY",
+      "target": "Web-AI",
+      "question": "Cum se stabilește dacă un proiect AEO/GEO a avut succes?",
+      "answer": "Proiectul trebuie definit prin scope, baseline, semnale aplicabile, implementare și verificare BEFORE/AFTER. Costul, durata și accesurile depind de dimensiunea site-ului și de nivelul de implementare ales.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-082",
+      "funnel_stage": "BOF",
+      "intent_type": "transactional",
+      "action": "BUY",
+      "target": "Web-AI",
+      "question": "Pot cumpăra un audit punctual fără abonament lunar?",
+      "answer": "Proiectul trebuie definit prin scope, baseline, semnale aplicabile, implementare și verificare BEFORE/AFTER. Costul, durata și accesurile depind de dimensiunea site-ului și de nivelul de implementare ales.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-083",
+      "funnel_stage": "BOF",
+      "intent_type": "transactional",
+      "action": "BUY",
+      "target": "Web-AI",
+      "question": "Ce diferență este între un audit punctual și optimizarea lunară?",
+      "answer": "Proiectul trebuie definit prin scope, baseline, semnale aplicabile, implementare și verificare BEFORE/AFTER. Costul, durata și accesurile depind de dimensiunea site-ului și de nivelul de implementare ales.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-084",
+      "funnel_stage": "BOF",
+      "intent_type": "transactional",
+      "action": "BUY",
+      "target": "Web-AI",
+      "question": "Ce tip de raport primesc pentru monitorizarea mențiunilor AI?",
+      "answer": "Proiectul trebuie definit prin scope, baseline, semnale aplicabile, implementare și verificare BEFORE/AFTER. Costul, durata și accesurile depind de dimensiunea site-ului și de nivelul de implementare ales.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-085",
+      "funnel_stage": "BOF",
+      "intent_type": "transactional",
+      "action": "BUY",
+      "target": "Web-AI",
+      "question": "Cât costă monitorizarea lunară a brandului în răspunsurile AI?",
+      "answer": "Proiectul trebuie definit prin scope, baseline, semnale aplicabile, implementare și verificare BEFORE/AFTER. Costul, durata și accesurile depind de dimensiunea site-ului și de nivelul de implementare ales.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-086",
+      "funnel_stage": "BOF",
+      "intent_type": "transactional",
+      "action": "BUY",
+      "target": "Web-AI",
+      "question": "Ce informații trebuie să ofer pentru a începe un audit de site?",
+      "answer": "Proiectul trebuie definit prin scope, baseline, semnale aplicabile, implementare și verificare BEFORE/AFTER. Costul, durata și accesurile depind de dimensiunea site-ului și de nivelul de implementare ales.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-087",
+      "funnel_stage": "BOF",
+      "intent_type": "transactional",
+      "action": "BUY",
+      "target": "Web-AI",
+      "question": "Pot primi o evaluare gratuită a vizibilității AI a site-ului?",
+      "answer": "Proiectul trebuie definit prin scope, baseline, semnale aplicabile, implementare și verificare BEFORE/AFTER. Costul, durata și accesurile depind de dimensiunea site-ului și de nivelul de implementare ales.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-088",
+      "funnel_stage": "BOF",
+      "intent_type": "transactional",
+      "action": "BUY",
+      "target": "Web-AI",
+      "question": "Cum programez o consultație pentru optimizarea site-ului meu pentru AI?",
+      "answer": "Proiectul trebuie definit prin scope, baseline, semnale aplicabile, implementare și verificare BEFORE/AFTER. Costul, durata și accesurile depind de dimensiunea site-ului și de nivelul de implementare ales.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-089",
+      "funnel_stage": "BOF",
+      "intent_type": "transactional",
+      "action": "BUY",
+      "target": "Web-AI",
+      "question": "Ce pagini va analiza consultantul în timpul auditului?",
+      "answer": "Proiectul trebuie definit prin scope, baseline, semnale aplicabile, implementare și verificare BEFORE/AFTER. Costul, durata și accesurile depind de dimensiunea site-ului și de nivelul de implementare ales.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-090",
+      "funnel_stage": "BOF",
+      "intent_type": "transactional",
+      "action": "BUY",
+      "target": "Web-AI",
+      "question": "Auditul include verificarea robots.txt, indexării și crawlabilității?",
+      "answer": "Proiectul trebuie definit prin scope, baseline, semnale aplicabile, implementare și verificare BEFORE/AFTER. Costul, durata și accesurile depind de dimensiunea site-ului și de nivelul de implementare ales.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-091",
+      "funnel_stage": "BOF",
+      "intent_type": "transactional",
+      "action": "BUY",
+      "target": "Web-AI",
+      "question": "Auditul include analiza concurenților citați de AI?",
+      "answer": "Proiectul trebuie definit prin scope, baseline, semnale aplicabile, implementare și verificare BEFORE/AFTER. Costul, durata și accesurile depind de dimensiunea site-ului și de nivelul de implementare ales.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-092",
+      "funnel_stage": "BOF",
+      "intent_type": "transactional",
+      "action": "BUY",
+      "target": "Web-AI",
+      "question": "Primesc o listă de priorități și pași de implementare?",
+      "answer": "Proiectul trebuie definit prin scope, baseline, semnale aplicabile, implementare și verificare BEFORE/AFTER. Costul, durata și accesurile depind de dimensiunea site-ului și de nivelul de implementare ales.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-093",
+      "funnel_stage": "BOF",
+      "intent_type": "transactional",
+      "action": "BUY",
+      "target": "Web-AI",
+      "question": "Cine implementează recomandările: consultantul sau echipa mea?",
+      "answer": "Proiectul trebuie definit prin scope, baseline, semnale aplicabile, implementare și verificare BEFORE/AFTER. Costul, durata și accesurile depind de dimensiunea site-ului și de nivelul de implementare ales.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-094",
+      "funnel_stage": "BOF",
+      "intent_type": "transactional",
+      "action": "BUY",
+      "target": "Web-AI",
+      "question": "Se pot implementa recomandările fără să refacem site-ul?",
+      "answer": "Da, multe semnale interne On-Site și On-Page pot fi adăugate printr-un Edge programabil fără modificarea CMS-ului sau a codului origin, dacă routing-ul și răspunsurile site-ului sunt compatibile.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-095",
+      "funnel_stage": "BOF",
+      "intent_type": "transactional",
+      "action": "BUY",
+      "target": "Web-AI",
+      "question": "Ce accesuri sunt necesare pentru un audit tehnic și de conținut?",
+      "answer": "Proiectul trebuie definit prin scope, baseline, semnale aplicabile, implementare și verificare BEFORE/AFTER. Costul, durata și accesurile depind de dimensiunea site-ului și de nivelul de implementare ales.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-096",
+      "funnel_stage": "BOF",
+      "intent_type": "transactional",
+      "action": "BUY",
+      "target": "Web-AI",
+      "question": "Serviciile AEO/GEO se potrivesc unei firme mici sau unui cabinet profesional?",
+      "answer": "Proiectul trebuie definit prin scope, baseline, semnale aplicabile, implementare și verificare BEFORE/AFTER. Costul, durata și accesurile depind de dimensiunea site-ului și de nivelul de implementare ales.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-097",
+      "funnel_stage": "BOF",
+      "intent_type": "transactional",
+      "action": "BUY",
+      "target": "Web-AI",
+      "question": "Pot optimiza site-ul pentru AI dacă nu am deja o strategie SEO?",
+      "answer": "Da, dar SEO tehnic și editorial rămâne fundația. Web-AI extinde această bază cu semantică, intenții, date structurate, dovezi și resurse machine-readable.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-098",
+      "funnel_stage": "BOF",
+      "intent_type": "transactional",
+      "action": "BUY",
+      "target": "Web-AI",
+      "question": "Cum pot solicita o ofertă pentru auditul site-ului meu?",
+      "answer": "Proiectul trebuie definit prin scope, baseline, semnale aplicabile, implementare și verificare BEFORE/AFTER. Costul, durata și accesurile depind de dimensiunea site-ului și de nivelul de implementare ales.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-099",
+      "funnel_stage": "BOF",
+      "intent_type": "transactional",
+      "action": "BUY",
+      "target": "Web-AI",
+      "question": "Ce se întâmplă după finalizarea auditului?",
+      "answer": "Proiectul trebuie definit prin scope, baseline, semnale aplicabile, implementare și verificare BEFORE/AFTER. Costul, durata și accesurile depind de dimensiunea site-ului și de nivelul de implementare ales.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB-AI-INT-100",
+      "funnel_stage": "BOF",
+      "intent_type": "transactional",
+      "action": "BUY",
+      "target": "Web-AI",
+      "question": "Cum încep un proiect de creștere a vizibilității site-ului în căutarea AI?",
+      "answer": "Proiectul trebuie definit prin scope, baseline, semnale aplicabile, implementare și verificare BEFORE/AFTER. Costul, durata și accesurile depind de dimensiunea site-ului și de nivelul de implementare ales.",
+      "canonical_page": "https://aiventure.ro/web-ai/"
+    }
+  ]
+}
