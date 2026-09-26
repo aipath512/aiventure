@@ -1,0 +1,729 @@
+{
+  "schema_version": "1.0",
+  "document_type": "aiventure-intent-catalog",
+  "language": "ro",
+  "name": "Web-A2A Intent Catalog",
+  "canonical_page": "https://aiventure.ro/web-a2a/",
+  "canonical_resource": "https://aiventure.ro/web-a2a/intents.json",
+  "publisher": {
+    "name": "AiVenture S.R.L.",
+    "url": "https://aiventure.ro/"
+  },
+  "scope": {
+    "name": "Web-A2A",
+    "definition": "Transformarea serviciilor oferite oamenilor în servicii vandabile agenților AI.",
+    "commercial_object": "B2B Service",
+    "buyer_interface": "Buyer Agent",
+    "seller_interface": "Seller Agent",
+    "offer_source": "Human-validated Service Offer Contract",
+    "principle": "THE EDGE MUST NEVER INVENT THE OFFER DURING A TRANSACTION."
+  },
+  "funnel": {
+    "TOFU": 30,
+    "MOFU": 30,
+    "BOFU": 40,
+    "total": 100
+  },
+  "intents": [
+    {
+      "intent_id": "A2A-TOFU-001",
+      "funnel_stage": "TOFU",
+      "action": "DISCOVER",
+      "question": "Ce serviciu caută agentul cumpărător?",
+      "answer": "Caută servicii care corespund problemei, rezultatului dorit și criteriilor furnizate."
+    },
+    {
+      "intent_id": "A2A-TOFU-002",
+      "funnel_stage": "TOFU",
+      "action": "DISCOVER",
+      "question": "Ce face serviciul X?",
+      "answer": "Descrierea validată a ofertei precizează scopul și activitățile incluse."
+    },
+    {
+      "intent_id": "A2A-TOFU-003",
+      "funnel_stage": "TOFU",
+      "action": "DISCOVER",
+      "question": "Pentru cine este destinat serviciul?",
+      "answer": "Pentru tipurile de clienți indicate de furnizor în oferta validată."
+    },
+    {
+      "intent_id": "A2A-TOFU-004",
+      "funnel_stage": "TOFU",
+      "action": "DISCOVER",
+      "question": "Ce problemă rezolvă serviciul?",
+      "answer": "Răspunsul trebuie să reflecte problema descrisă în oferta furnizorului, fără a promite rezultate suplimentare."
+    },
+    {
+      "intent_id": "A2A-TOFU-005",
+      "funnel_stage": "TOFU",
+      "action": "MATCH",
+      "question": "Ce rezultat urmărește clientul?",
+      "answer": "Agentul cumpărător transmite rezultatul dorit; agentul furnizor verifică dacă oferta îl acoperă."
+    },
+    {
+      "intent_id": "A2A-TOFU-006",
+      "funnel_stage": "TOFU",
+      "action": "DISCOVER",
+      "question": "Există servicii pentru companii din domeniul X?",
+      "answer": "Agentul caută ofertele care declară că deservesc domeniul respectiv."
+    },
+    {
+      "intent_id": "A2A-TOFU-007",
+      "funnel_stage": "TOFU",
+      "action": "DISCOVER",
+      "question": "Sunt disponibile servicii în regiunea X?",
+      "answer": "Sunt prezentate numai regiunile confirmate de furnizor."
+    },
+    {
+      "intent_id": "A2A-TOFU-008",
+      "funnel_stage": "TOFU",
+      "action": "DISCOVER",
+      "question": "Ce tipuri de furnizori pot rezolva această nevoie?",
+      "answer": "Agentul identifică furnizori ale căror capabilități declarate se potrivesc cererii."
+    },
+    {
+      "intent_id": "A2A-TOFU-009",
+      "funnel_stage": "TOFU",
+      "action": "REQUEST",
+      "question": "Ce informații sunt necesare pentru a căuta o ofertă?",
+      "answer": "De regulă, categoria serviciului, obiectivul, locația și eventual constrângerile clientului."
+    },
+    {
+      "intent_id": "A2A-TOFU-010",
+      "funnel_stage": "TOFU",
+      "action": "DISCOVER",
+      "question": "Trebuie să alegem deja un furnizor?",
+      "answer": "Nu; în etapa de descoperire se identifică opțiuni relevante."
+    },
+    {
+      "intent_id": "A2A-TOFU-011",
+      "funnel_stage": "TOFU",
+      "action": "DISCOVER",
+      "question": "Ce servicii oferă furnizorul X?",
+      "answer": "Agentul prezintă serviciile publicate sau confirmate de furnizor."
+    },
+    {
+      "intent_id": "A2A-TOFU-012",
+      "funnel_stage": "TOFU",
+      "action": "DISCOVER",
+      "question": "Furnizorul acceptă solicitări prin agenți AI?",
+      "answer": "Agentul verifică metodele de interacțiune și cerințele de acces declarate."
+    },
+    {
+      "intent_id": "A2A-TOFU-013",
+      "funnel_stage": "TOFU",
+      "action": "DISCOVER",
+      "question": "Cum află agentul ce poate face un agent furnizor?",
+      "answer": "Consultă informațiile sale de descoperire, precum Agent Card-ul și capabilitățile declarate."
+    },
+    {
+      "intent_id": "A2A-TOFU-014",
+      "funnel_stage": "TOFU",
+      "action": "DISCOVER",
+      "question": "Ce înseamnă o capabilitate declarată?",
+      "answer": "Este o descriere a sarcinilor pe care agentul afirmă că le poate gestiona."
+    },
+    {
+      "intent_id": "A2A-TOFU-015",
+      "funnel_stage": "TOFU",
+      "action": "REQUEST",
+      "question": "Pot cere doar informații, fără să inițiez o achiziție?",
+      "answer": "Da; o întrebare informativă nu trebuie tratată ca acceptare sau comandă."
+    },
+    {
+      "intent_id": "A2A-TOFU-016",
+      "funnel_stage": "TOFU",
+      "action": "MATCH",
+      "question": "Ce diferență există între serviciile X și Y?",
+      "answer": "Agentul compară doar scopul, livrabilele și condițiile publicate pentru fiecare."
+    },
+    {
+      "intent_id": "A2A-TOFU-017",
+      "funnel_stage": "TOFU",
+      "action": "MATCH",
+      "question": "Există servicii potrivite pentru bugetul nostru estimativ?",
+      "answer": "Agentul poate filtra după preț sau interval numai dacă informația este disponibilă și actuală."
+    },
+    {
+      "intent_id": "A2A-TOFU-018",
+      "funnel_stage": "TOFU",
+      "action": "DISCOVER",
+      "question": "Putem găsi furnizori cu disponibilitate în perioada X?",
+      "answer": "Agentul poate solicita ori verifica disponibilitatea; nu o presupune."
+    },
+    {
+      "intent_id": "A2A-TOFU-019",
+      "funnel_stage": "TOFU",
+      "action": "MATCH",
+      "question": "Ce criterii putem folosi pentru căutare?",
+      "answer": "De exemplu: tipul serviciului, locație, livrabile, buget și termen."
+    },
+    {
+      "intent_id": "A2A-TOFU-020",
+      "funnel_stage": "TOFU",
+      "action": "MATCH",
+      "question": "Poate agentul recomanda un serviciu înainte să știe toate detaliile?",
+      "answer": "Poate prezenta opțiuni preliminare și poate indica ce informații lipsesc."
+    },
+    {
+      "intent_id": "A2A-TOFU-021",
+      "funnel_stage": "TOFU",
+      "action": "VERIFY",
+      "question": "Ce nu ar trebui să presupună agentul despre ofertă?",
+      "answer": "Nu ar trebui să inventeze prețuri, livrabile, rezultate sau disponibilitate."
+    },
+    {
+      "intent_id": "A2A-TOFU-022",
+      "funnel_stage": "TOFU",
+      "action": "VERIFY",
+      "question": "Putem vedea doar servicii verificate de furnizor?",
+      "answer": "Da, dacă sistemul filtrează ofertele după validarea firmei și versiunea contractului."
+    },
+    {
+      "intent_id": "A2A-TOFU-023",
+      "funnel_stage": "TOFU",
+      "action": "DISCOVER",
+      "question": "Ce înseamnă că un serviciu este disponibil pentru intermediere?",
+      "answer": "Înseamnă că furnizorul permite transmiterea unei solicitări prin agent, în condițiile declarate."
+    },
+    {
+      "intent_id": "A2A-TOFU-024",
+      "funnel_stage": "TOFU",
+      "action": "DISCOVER",
+      "question": "Agentul poate contacta mai mulți furnizori pentru explorare?",
+      "answer": "Poate identifica opțiuni; transmiterea efectivă a cererilor poate necesita aprobarea clientului."
+    },
+    {
+      "intent_id": "A2A-TOFU-025",
+      "funnel_stage": "TOFU",
+      "action": "DISCOVER",
+      "question": "Ce ar trebui să primim după căutare?",
+      "answer": "O listă de opțiuni relevante, cu sursa și condițiile cunoscute."
+    },
+    {
+      "intent_id": "A2A-TOFU-026",
+      "funnel_stage": "TOFU",
+      "action": "MATCH",
+      "question": "Poate agentul spune de ce a inclus o ofertă?",
+      "answer": "Da, indicând criteriile de potrivire observate și eventualele informații lipsă."
+    },
+    {
+      "intent_id": "A2A-TOFU-027",
+      "funnel_stage": "TOFU",
+      "action": "MATCH",
+      "question": "Ce se întâmplă dacă nu există o ofertă potrivită?",
+      "answer": "Agentul raportează lipsa potrivirii și poate solicita ajustarea criteriilor."
+    },
+    {
+      "intent_id": "A2A-TOFU-028",
+      "funnel_stage": "TOFU",
+      "action": "DISCOVER",
+      "question": "Putem căuta servicii complementare?",
+      "answer": "Da, dacă cererea include acea nevoie și furnizorii declară capabilități relevante."
+    },
+    {
+      "intent_id": "A2A-TOFU-029",
+      "funnel_stage": "TOFU",
+      "action": "DISCOVER",
+      "question": "Este serviciul o achiziție unică sau recurentă?",
+      "answer": "Agentul prezintă modelul numai dacă furnizorul l-a specificat."
+    },
+    {
+      "intent_id": "A2A-TOFU-030",
+      "funnel_stage": "TOFU",
+      "action": "REQUEST",
+      "question": "Ce ar trebui să întrebăm înainte de evaluarea ofertelor?",
+      "answer": "Întrebați ce include serviciul, cui se adresează și ce informații cere furnizorul pentru o ofertă relevantă."
+    },
+    {
+      "intent_id": "A2A-MOFU-031",
+      "funnel_stage": "MOFU",
+      "action": "MATCH",
+      "question": "Care ofertă se potrivește cel mai bine cerințelor noastre?",
+      "answer": "Agentul compară criteriile clientului cu condițiile confirmate din fiecare ofertă."
+    },
+    {
+      "intent_id": "A2A-MOFU-032",
+      "funnel_stage": "MOFU",
+      "action": "MATCH",
+      "question": "Ce criterii îndeplinește furnizorul A?",
+      "answer": "Agentul enumeră potrivirile susținute de datele ofertei și marchează necunoscutele separat."
+    },
+    {
+      "intent_id": "A2A-MOFU-033",
+      "funnel_stage": "MOFU",
+      "action": "VERIFY",
+      "question": "Ce criterii nu sunt confirmate?",
+      "answer": "Agentul indică informațiile care lipsesc sau necesită răspunsul furnizorului."
+    },
+    {
+      "intent_id": "A2A-MOFU-034",
+      "funnel_stage": "MOFU",
+      "action": "VERIFY",
+      "question": "Ce livrabile sunt incluse?",
+      "answer": "Sunt enumerate livrabilele prevăzute în oferta validată."
+    },
+    {
+      "intent_id": "A2A-MOFU-035",
+      "funnel_stage": "MOFU",
+      "action": "VERIFY",
+      "question": "Ce nu este inclus?",
+      "answer": "Sunt prezentate excluderile declarate; dacă nu sunt precizate, agentul semnalează că trebuie clarificate."
+    },
+    {
+      "intent_id": "A2A-MOFU-036",
+      "funnel_stage": "MOFU",
+      "action": "VERIFY",
+      "question": "Ce responsabilități avem ca beneficiar?",
+      "answer": "Agentul redă responsabilitățile clientului menționate în ofertă."
+    },
+    {
+      "intent_id": "A2A-MOFU-037",
+      "funnel_stage": "MOFU",
+      "action": "REQUEST",
+      "question": "Ce documente sau date trebuie să furnizăm?",
+      "answer": "Agentul listează intrările cerute de furnizor și solicită doar informațiile necesare."
+    },
+    {
+      "intent_id": "A2A-MOFU-038",
+      "funnel_stage": "MOFU",
+      "action": "SELLER_QUESTION",
+      "question": "Ce întrebări ar trebui să clarificăm cu furnizorul?",
+      "answer": "Agentul propune întrebări legate de cerințele neconfirmate, livrabile și condiții."
+    },
+    {
+      "intent_id": "A2A-MOFU-039",
+      "funnel_stage": "MOFU",
+      "action": "VERIFY",
+      "question": "Furnizorul acceptă clienți din domeniul nostru?",
+      "answer": "Răspunde numai pe baza criteriilor confirmate sau după verificarea directă cu furnizorul."
+    },
+    {
+      "intent_id": "A2A-MOFU-040",
+      "funnel_stage": "MOFU",
+      "action": "VERIFY",
+      "question": "Furnizorul deservește locația noastră?",
+      "answer": "Agentul verifică aria geografică declarată și cere confirmare dacă situația rămâne neclară."
+    },
+    {
+      "intent_id": "A2A-MOFU-041",
+      "funnel_stage": "MOFU",
+      "action": "MATCH",
+      "question": "Prețul se încadrează în bugetul nostru?",
+      "answer": "Agentul compară bugetul cu prețul sau intervalul confirmat, dacă acestea sunt publicate."
+    },
+    {
+      "intent_id": "A2A-MOFU-042",
+      "funnel_stage": "MOFU",
+      "action": "VERIFY",
+      "question": "Prețul este final?",
+      "answer": "Este final doar dacă furnizorul îl confirmă ca atare pentru cerințele respective."
+    },
+    {
+      "intent_id": "A2A-MOFU-043",
+      "funnel_stage": "MOFU",
+      "action": "VERIFY",
+      "question": "Furnizorul poate livra până la data dorită?",
+      "answer": "Agentul cere confirmarea disponibilității; nu deduce termenul din informații generale."
+    },
+    {
+      "intent_id": "A2A-MOFU-044",
+      "funnel_stage": "MOFU",
+      "action": "MATCH",
+      "question": "Ce variante ale serviciului există?",
+      "answer": "Agentul prezintă pachetele sau nivelurile descrise de furnizor."
+    },
+    {
+      "intent_id": "A2A-MOFU-045",
+      "funnel_stage": "MOFU",
+      "action": "MATCH",
+      "question": "Care sunt diferențele dintre variante?",
+      "answer": "Compară elementele confirmate: livrabile, condiții, termene și preț, când sunt disponibile."
+    },
+    {
+      "intent_id": "A2A-MOFU-046",
+      "funnel_stage": "MOFU",
+      "action": "MATCH",
+      "question": "Care ofertă respectă toate criteriile obligatorii?",
+      "answer": "Agentul afișează doar ofertele pentru care fiecare criteriu obligatoriu este confirmat."
+    },
+    {
+      "intent_id": "A2A-MOFU-047",
+      "funnel_stage": "MOFU",
+      "action": "MATCH",
+      "question": "De ce a fost exclus furnizorul B?",
+      "answer": "Agentul indică criteriul neîndeplinit sau informația lipsă care împiedică validarea."
+    },
+    {
+      "intent_id": "A2A-MOFU-048",
+      "funnel_stage": "MOFU",
+      "action": "MATCH",
+      "question": "Putem compara furnizorii într-un tabel?",
+      "answer": "Da, folosind aceleași criterii și marcând explicit datele necunoscute."
+    },
+    {
+      "intent_id": "A2A-MOFU-049",
+      "funnel_stage": "MOFU",
+      "action": "SELLER_QUESTION",
+      "question": "Poți cere o clarificare furnizorului?",
+      "answer": "Da, agentul poate pregăti o solicitare și o transmite în limitele autorizării clientului."
+    },
+    {
+      "intent_id": "A2A-MOFU-050",
+      "funnel_stage": "MOFU",
+      "action": "REQUEST",
+      "question": "Poți cere o ofertă personalizată?",
+      "answer": "Da, dar propunerea rămâne neconfirmată până când furnizorul o validează."
+    },
+    {
+      "intent_id": "A2A-MOFU-051",
+      "funnel_stage": "MOFU",
+      "action": "REQUEST",
+      "question": "Poți intermedia o cerere de ofertă?",
+      "answer": "Da, după confirmarea clientului asupra conținutului și destinatarului."
+    },
+    {
+      "intent_id": "A2A-MOFU-052",
+      "funnel_stage": "MOFU",
+      "action": "REQUEST",
+      "question": "Ce informații transmiți furnizorului?",
+      "answer": "Numai datele aprobate și necesare pentru evaluarea cererii."
+    },
+    {
+      "intent_id": "A2A-MOFU-053",
+      "funnel_stage": "MOFU",
+      "action": "REQUEST",
+      "question": "Poți solicita oferte de la trei furnizori?",
+      "answer": "Da, dacă clientul aprobă destinatarii și solicitarea transmisă fiecăruia."
+    },
+    {
+      "intent_id": "A2A-MOFU-054",
+      "funnel_stage": "MOFU",
+      "action": "REQUEST",
+      "question": "Ce se întâmplă dacă furnizorul nu răspunde?",
+      "answer": "Agentul raportează lipsa răspunsului și poate solicita o alternativă autorizată."
+    },
+    {
+      "intent_id": "A2A-MOFU-055",
+      "funnel_stage": "MOFU",
+      "action": "VERIFY",
+      "question": "Cum știm dacă informația despre ofertă este actuală?",
+      "answer": "Agentul indică sursa și versiunea disponibile și cere reconfirmare când este necesar."
+    },
+    {
+      "intent_id": "A2A-MOFU-056",
+      "funnel_stage": "MOFU",
+      "action": "SELLER_QUESTION",
+      "question": "Oferta se poate modifica pentru cerințele noastre?",
+      "answer": "Furnizorul trebuie să confirme orice abatere sau variantă personalizată."
+    },
+    {
+      "intent_id": "A2A-MOFU-057",
+      "funnel_stage": "MOFU",
+      "action": "MATCH",
+      "question": "Care sunt motivele recomandării?",
+      "answer": "Agentul prezintă criteriile de potrivire, nu o garanție că serviciul va produce un rezultat."
+    },
+    {
+      "intent_id": "A2A-MOFU-058",
+      "funnel_stage": "MOFU",
+      "action": "SELLER_QUESTION",
+      "question": "Putem negocia termenii?",
+      "answer": "Agentul poate transmite o solicitare de negociere dacă furnizorul permite și clientul aprobă."
+    },
+    {
+      "intent_id": "A2A-MOFU-059",
+      "funnel_stage": "MOFU",
+      "action": "VERIFY",
+      "question": "Ce trebuie să știm înainte să alegem?",
+      "answer": "Trebuie clarificate condițiile esențiale încă neconfirmate: preț, livrabile, termen și excluderi relevante."
+    },
+    {
+      "intent_id": "A2A-MOFU-060",
+      "funnel_stage": "MOFU",
+      "action": "REQUEST",
+      "question": "Care este următorul pas fără angajament de cumpărare?",
+      "answer": "Se poate solicita o clarificare sau ofertă, precizând că aceasta nu reprezintă acceptare."
+    },
+    {
+      "intent_id": "A2A-BOFU-061",
+      "funnel_stage": "BOFU",
+      "action": "VERIFY",
+      "question": "Oferta selectată este încă valabilă?",
+      "answer": "Agentul cere furnizorului confirmarea valabilității pentru versiunea identificată."
+    },
+    {
+      "intent_id": "A2A-BOFU-062",
+      "funnel_stage": "BOFU",
+      "action": "QUOTE",
+      "question": "Care este prețul final pentru cerințele noastre?",
+      "answer": "Agentul folosește numai prețul confirmat explicit de furnizor."
+    },
+    {
+      "intent_id": "A2A-BOFU-063",
+      "funnel_stage": "BOFU",
+      "action": "VERIFY",
+      "question": "Ce exact cumpărăm?",
+      "answer": "Agentul rezumă serviciul, livrabilele și limitele din oferta aprobată."
+    },
+    {
+      "intent_id": "A2A-BOFU-064",
+      "funnel_stage": "BOFU",
+      "action": "HUMAN_APPROVAL",
+      "question": "Ce termen de livrare acceptăm?",
+      "answer": "Agentul prezintă termenul confirmat și cere aprobarea cumpărătorului autorizat."
+    },
+    {
+      "intent_id": "A2A-BOFU-065",
+      "funnel_stage": "BOFU",
+      "action": "HUMAN_APPROVAL",
+      "question": "Putem accepta oferta automat?",
+      "answer": "Numai dacă mandatul cumpărătorului permite acest lucru și toate condițiile sunt confirmate."
+    },
+    {
+      "intent_id": "A2A-BOFU-066",
+      "funnel_stage": "BOFU",
+      "action": "HUMAN_APPROVAL",
+      "question": "Este necesară aprobarea unei persoane?",
+      "answer": "Agentul verifică regulile de autorizare și escaladează dacă este cerută aprobarea umană."
+    },
+    {
+      "intent_id": "A2A-BOFU-067",
+      "funnel_stage": "BOFU",
+      "action": "VERIFY",
+      "question": "Agentul are autoritate să cumpere?",
+      "answer": "Cumpărarea poate continua doar în limitele mandatului explicit al agentului."
+    },
+    {
+      "intent_id": "A2A-BOFU-068",
+      "funnel_stage": "BOFU",
+      "action": "VERIFY",
+      "question": "Ce plafon de buget se aplică?",
+      "answer": "Agentul verifică limita autorizată înainte să accepte sau să inițieze plata."
+    },
+    {
+      "intent_id": "A2A-BOFU-069",
+      "funnel_stage": "BOFU",
+      "action": "HUMAN_APPROVAL",
+      "question": "Poți accepta această ofertă în numele nostru?",
+      "answer": "Numai dacă agentul are autorizare explicită și condițiile corespund aprobării."
+    },
+    {
+      "intent_id": "A2A-BOFU-070",
+      "funnel_stage": "BOFU",
+      "action": "REQUEST",
+      "question": "Poți transmite intenția noastră de cumpărare?",
+      "answer": "Da, dacă clientul o aprobă; transmiterea intenției nu înseamnă automat că plata s-a efectuat."
+    },
+    {
+      "intent_id": "A2A-BOFU-071",
+      "funnel_stage": "BOFU",
+      "action": "ORDER",
+      "question": "Poți plasa comanda?",
+      "answer": "Numai după aprobarea cumpărătorului și verificarea condițiilor comenzii."
+    },
+    {
+      "intent_id": "A2A-BOFU-072",
+      "funnel_stage": "BOFU",
+      "action": "HUMAN_APPROVAL",
+      "question": "Poți semna contractul?",
+      "answer": "Numai dacă există autoritate explicită de semnare; altfel, agentul solicită intervenția persoanei responsabile."
+    },
+    {
+      "intent_id": "A2A-BOFU-073",
+      "funnel_stage": "BOFU",
+      "action": "HUMAN_APPROVAL",
+      "question": "Poți iniția plata?",
+      "answer": "Numai dacă există mandat de plată, metoda autorizată și suma respectă limita stabilită."
+    },
+    {
+      "intent_id": "A2A-BOFU-074",
+      "funnel_stage": "BOFU",
+      "action": "HUMAN_APPROVAL",
+      "question": "Ce se întâmplă dacă suma diferă de cea aprobată?",
+      "answer": "Agentul oprește tranzacția și cere o nouă aprobare."
+    },
+    {
+      "intent_id": "A2A-BOFU-075",
+      "funnel_stage": "BOFU",
+      "action": "HUMAN_APPROVAL",
+      "question": "Ce se întâmplă dacă furnizorul schimbă termenii?",
+      "answer": "Agentul nu acceptă modificarea automat; cere confirmarea cumpărătorului."
+    },
+    {
+      "intent_id": "A2A-BOFU-076",
+      "funnel_stage": "BOFU",
+      "action": "REQUEST",
+      "question": "Putem cere contractul înainte de acceptare?",
+      "answer": "Da; agentul poate solicita documentul pentru verificare înainte de angajare."
+    },
+    {
+      "intent_id": "A2A-BOFU-077",
+      "funnel_stage": "BOFU",
+      "action": "VERIFY",
+      "question": "Datele noastre sunt suficiente pentru comandă?",
+      "answer": "Agentul verifică cerințele furnizorului și solicită doar câmpurile necesare."
+    },
+    {
+      "intent_id": "A2A-BOFU-078",
+      "funnel_stage": "BOFU",
+      "action": "REQUEST",
+      "question": "Poți trimite datele de facturare?",
+      "answer": "Numai după autorizarea clientului și către destinatarul confirmat."
+    },
+    {
+      "intent_id": "A2A-BOFU-079",
+      "funnel_stage": "BOFU",
+      "action": "EVIDENCE",
+      "question": "Cum știm că furnizorul a primit comanda?",
+      "answer": "Agentul solicită confirmarea și identificatorul comenzii."
+    },
+    {
+      "intent_id": "A2A-BOFU-080",
+      "funnel_stage": "BOFU",
+      "action": "VERIFY",
+      "question": "Când începe serviciul?",
+      "answer": "Agentul raportează data confirmată de furnizor, nu o presupunere."
+    },
+    {
+      "intent_id": "A2A-BOFU-081",
+      "funnel_stage": "BOFU",
+      "action": "VERIFY",
+      "question": "Cine va presta serviciul?",
+      "answer": "Agentul cere numele echipei sau persoanei responsabile dacă furnizorul îl poate confirma."
+    },
+    {
+      "intent_id": "A2A-BOFU-082",
+      "funnel_stage": "BOFU",
+      "action": "VERIFY",
+      "question": "Ce facem dacă documentul de comandă diferă de ofertă?",
+      "answer": "Agentul oprește acceptarea și semnalează diferențele pentru clarificare."
+    },
+    {
+      "intent_id": "A2A-BOFU-083",
+      "funnel_stage": "BOFU",
+      "action": "REQUEST",
+      "question": "Putem anula cererea?",
+      "answer": "Agentul verifică stadiul și condițiile aplicabile înainte de a transmite anularea."
+    },
+    {
+      "intent_id": "A2A-BOFU-084",
+      "funnel_stage": "BOFU",
+      "action": "HUMAN_APPROVAL",
+      "question": "Putem modifica cerințele după acceptare?",
+      "answer": "Agentul solicită furnizorului o modificare și obține aprobarea clientului pentru noii termeni."
+    },
+    {
+      "intent_id": "A2A-BOFU-085",
+      "funnel_stage": "BOFU",
+      "action": "EVIDENCE",
+      "question": "Cum confirmăm că furnizorul a acceptat comanda?",
+      "answer": "Agentul solicită un răspuns explicit și înregistrează statusul comunicat."
+    },
+    {
+      "intent_id": "A2A-BOFU-086",
+      "funnel_stage": "BOFU",
+      "action": "EVIDENCE",
+      "question": "Ce status are achiziția?",
+      "answer": "Agentul raportează statusul confirmat: în așteptare, acceptat, refuzat sau necesită intervenție."
+    },
+    {
+      "intent_id": "A2A-BOFU-087",
+      "funnel_stage": "BOFU",
+      "action": "HUMAN_APPROVAL",
+      "question": "Ce facem dacă furnizorul refuză?",
+      "answer": "Agentul comunică motivul disponibil și nu inițiază o comandă alternativă fără autorizare."
+    },
+    {
+      "intent_id": "A2A-BOFU-088",
+      "funnel_stage": "BOFU",
+      "action": "HUMAN_APPROVAL",
+      "question": "Când trebuie să intervină un om?",
+      "answer": "Când lipsește autorizarea, termenii sunt ambigui, apare o excepție sau tranzacția depășește mandatul."
+    },
+    {
+      "intent_id": "A2A-BOFU-089",
+      "funnel_stage": "BOFU",
+      "action": "VERIFY",
+      "question": "Putem finaliza tranzacția dacă nu putem verifica furnizorul?",
+      "answer": "Nu; agentul oprește fluxul până la verificarea identității și a condițiilor relevante."
+    },
+    {
+      "intent_id": "A2A-BOFU-090",
+      "funnel_stage": "BOFU",
+      "action": "QUOTE",
+      "question": "Putem continua dacă oferta a expirat?",
+      "answer": "Nu pe baza acelei versiuni; agentul cere o ofertă actualizată."
+    },
+    {
+      "intent_id": "A2A-BOFU-091",
+      "funnel_stage": "BOFU",
+      "action": "HUMAN_APPROVAL",
+      "question": "Ce versiune a ofertei aprobăm?",
+      "answer": "Cumpărătorul aprobă o ofertă identificată prin versiune sau identificator clar."
+    },
+    {
+      "intent_id": "A2A-BOFU-092",
+      "funnel_stage": "BOFU",
+      "action": "HUMAN_APPROVAL",
+      "question": "Ce se întâmplă dacă se schimbă versiunea după aprobare?",
+      "answer": "Agentul cere reconfirmarea cumpărătorului pentru termenii modificați."
+    },
+    {
+      "intent_id": "A2A-BOFU-093",
+      "funnel_stage": "BOFU",
+      "action": "EVIDENCE",
+      "question": "Poți confirma comanda către agentul cumpărător?",
+      "answer": "Da, după ce furnizorul confirmă acceptarea și oferă un status sau identificator."
+    },
+    {
+      "intent_id": "A2A-BOFU-094",
+      "funnel_stage": "BOFU",
+      "action": "EVIDENCE",
+      "question": "Cum se înregistrează acceptarea?",
+      "answer": "Sistemul păstrează oferta aprobată, autorizarea și confirmarea furnizorului."
+    },
+    {
+      "intent_id": "A2A-BOFU-095",
+      "funnel_stage": "BOFU",
+      "action": "EVIDENCE",
+      "question": "Ce dovadă avem că serviciul a fost comandat?",
+      "answer": "Confirmarea furnizorului, identificatorul comenzii sau documentul de contractare, dacă sunt emise."
+    },
+    {
+      "intent_id": "A2A-BOFU-096",
+      "funnel_stage": "BOFU",
+      "action": "QUOTE",
+      "question": "Putem cumpăra doar o parte din serviciu?",
+      "answer": "Numai dacă furnizorul oferă acea variantă și o confirmă în termeni clari."
+    },
+    {
+      "intent_id": "A2A-BOFU-097",
+      "funnel_stage": "BOFU",
+      "action": "VERIFY",
+      "question": "Ce facem dacă factura nu corespunde comenzii?",
+      "answer": "Agentul semnalează diferența și nu autorizează plata fără clarificare."
+    },
+    {
+      "intent_id": "A2A-BOFU-098",
+      "funnel_stage": "BOFU",
+      "action": "VERIFY",
+      "question": "Cum evităm o comandă dublă?",
+      "answer": "Agentul verifică statusul și identificatorii existenți înainte să trimită o nouă comandă."
+    },
+    {
+      "intent_id": "A2A-BOFU-099",
+      "funnel_stage": "BOFU",
+      "action": "EVIDENCE",
+      "question": "Când este achiziția finalizată?",
+      "answer": "Când acceptarea este autorizată, furnizorul confirmă comanda și pașii comerciali conveniți sunt înregistrați."
+    },
+    {
+      "intent_id": "A2A-BOFU-100",
+      "funnel_stage": "BOFU",
+      "action": "VERIFY",
+      "question": "Care este regula finală înainte de cumpărare?",
+      "answer": "Agentul tranzacționează numai oferta validată de firmă și aprobată de cumpărător; nu inventează sau modifică termenii."
+    }
+  ]
+}
