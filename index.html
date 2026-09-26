@@ -86,26 +86,63 @@ section,.hero{background:#000!important;border-color:#303030}
 
 </head><body>
 
-<!-- GLOBAL HEADER · SESSION 0003H -->
-<header id="aiv-global-header" style="background:#000;color:#fff;border-bottom:1px solid #292929;">
-  <div class="aiv-global-container" style="width:min(1180px,calc(100% - 36px));margin:auto;">
-    <div style="display:flex;align-items:center;justify-content:space-between;gap:18px;padding:14px 0;flex-wrap:wrap;">
-      <a href="/" style="display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-weight:900;">
-        <span style="display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;background:#14b8a6;color:#052a33;">AI</span>
-        <span>AiVenture <small style="display:block;color:#8b949e;font-size:10px;letter-spacing:.08em;">INFRASTRUCTURĂ A2A PENTRU AFACERI</small></span>
-      </a>
-      <nav aria-label="Navigație principală" style="display:flex;gap:14px;flex-wrap:wrap;font-size:13px;">
-        <a href="/" style="color:#ddd">Acasă</a>
-        <a href="/servicii/" style="color:#ddd">Servicii</a>
-        <a href="/produse/" style="color:#ddd">Produse</a>
-        <a href="/intrebari/" style="color:#ddd">Întrebări</a>
-        <a href="/faq-hub.html" style="color:#ddd">Centru FAQ</a>
-        <a href="/ere-dictionary.json" style="color:#ddd">Dicționar</a>
-        <a href="/contact/" style="color:#ddd">Contact</a>
-      </nav>
-    </div>
+<!-- GLOBAL HEADER · COMPACT HAMBURGER -->
+<style>
+#aiv-global-header{background:#000;color:#fff;border-bottom:1px solid #292929;position:relative;z-index:1000}
+.aiv-head{width:min(1180px,calc(100% - 36px));margin:auto;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 0}
+.aiv-brand{display:flex;align-items:center;gap:10px;color:#fff!important;text-decoration:none;font-weight:900}
+.aiv-brand-mark{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;background:#14b8a6;color:#052a33}
+.aiv-brand small{display:block;color:#8b949e;font-size:10px;letter-spacing:.08em}
+.aiv-menu-btn{display:flex;align-items:center;gap:9px;border:1px solid #3a3a3a;background:#111;color:#fff;padding:8px 11px;border-radius:7px;cursor:pointer;font:700 12px/1 system-ui}
+.aiv-menu-btn:hover,.aiv-menu-btn:focus-visible{border-color:#c5a43b;color:#e2c45c;outline:none}
+.aiv-burger{width:19px;height:14px;display:flex;flex-direction:column;justify-content:space-between}
+.aiv-burger i{display:block;height:2px;background:currentColor;border-radius:2px}
+#aiv-menu-panel{display:none;position:absolute;right:max(18px,calc((100% - 1180px)/2));top:61px;width:min(720px,calc(100vw - 36px));max-height:calc(100vh - 82px);overflow:auto;background:#0a0a0a;border:1px solid #333;border-radius:10px;padding:14px;box-shadow:0 18px 45px rgba(0,0,0,.55)}
+#aiv-menu-panel.open{display:block}
+.aiv-menu-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.aiv-menu-group{border:1px solid #252525;border-radius:8px;padding:10px;background:#0e0e0e}
+.aiv-menu-group h3{font-size:11px;line-height:1.2;margin:0 0 7px;color:#c5a43b;text-transform:uppercase;letter-spacing:.07em}
+.aiv-menu-group a{display:block;color:#ddd!important;text-decoration:none;font-size:12px;line-height:1.25;padding:5px 4px;border-radius:4px}
+.aiv-menu-group a:hover,.aiv-menu-group a:focus-visible{background:#191919;color:#fff!important;outline:none}
+@media(max-width:720px){.aiv-head{width:calc(100% - 24px);padding:9px 0}.aiv-brand small{display:none}.aiv-menu-btn span:last-child{display:none}#aiv-menu-panel{right:12px;top:54px;width:calc(100vw - 24px);padding:10px}.aiv-menu-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.aiv-menu-group{padding:8px}.aiv-menu-group a{font-size:12px;padding:5px 3px}}
+@media(max-width:420px){.aiv-menu-grid{grid-template-columns:1fr 1fr}.aiv-menu-group h3{font-size:10px}.aiv-menu-group a{font-size:11px}}
+</style>
+<header id="aiv-global-header">
+  <div class="aiv-head">
+    <a class="aiv-brand" href="/">
+      <span class="aiv-brand-mark">AI</span>
+      <span>AiVenture <small>INFRASTRUCTURĂ A2A PENTRU AFACERI</small></span>
+    </a>
+    <button class="aiv-menu-btn" id="aiv-menu-btn" type="button" aria-expanded="false" aria-controls="aiv-menu-panel" aria-label="Deschide meniul">
+      <span class="aiv-burger" aria-hidden="true"><i></i><i></i><i></i></span><span>MENIU</span>
+    </button>
+    <nav id="aiv-menu-panel" aria-label="Navigație principală">
+      <div class="aiv-menu-grid">
+        <section class="aiv-menu-group"><h3>Servicii</h3>
+          <a href="/servicii/">Toate serviciile</a><a href="/web-om/">WEB-OM</a><a href="/web-ai/">WEB-AI</a><a href="/web-a2a/">WEB-A2A</a><a href="/seo/">SEO</a>
+        </section>
+        <section class="aiv-menu-group"><h3>AI Visibility</h3>
+          <a href="/geo/">GEO</a><a href="/aeo/">AEO</a><a href="/aio/">AIO</a><a href="/ai-signals/">AI Signals</a><a href="/de-ce-ai/">De ce AI?</a><a href="/de-ce-acum/">De ce acum?</a>
+        </section>
+        <section class="aiv-menu-group"><h3>Soluții & Produse</h3>
+          <a href="/produse/">Produse</a><a href="/solutii/">Soluții</a><a href="/solutii/ai-lens/">AI-LENS</a><a href="/solutii/ai-audit/">AI Audit</a><a href="/solutii/ai-edge/">AI Edge</a><a href="/solutii/ai-ready/">AI-Ready</a><a href="/ai-key-maker/">AI KEY MAKER</a><a href="/eu-ai-act-ready/">EU AI Act Ready</a>
+        </section>
+        <section class="aiv-menu-group"><h3>A2A & Cum funcționează</h3>
+          <a href="/solutii/a2a/">Soluție A2A</a><a href="/solutii/agent-ready/">Agent-Ready</a><a href="/buyer-agent/">Buyer Agent</a><a href="/cum/">Cum funcționează</a><a href="/cum/descoperire/">Descoperire</a><a href="/cum/intelegere/">Înțelegere</a><a href="/cum/actiune/">Acțiune</a><a href="/cum/a2a/">A2A</a>
+        </section>
+        <section class="aiv-menu-group"><h3>Dovezi & Resurse</h3>
+          <a href="/exemplu-ecbtax/">Exemplu ECBTAX</a><a href="/a2a-proof.html">A2A Proof</a><a href="/rezultate/">Rezultate</a><a href="/verifica/">Verifică</a><a href="/use-cases/">Use Cases</a><a href="/three-webs/">Three Webs</a><a href="/niveluri/">Niveluri</a><a href="/intrebari/">Întrebări</a><a href="/faq/">FAQ</a><a href="/faq-hub.html">Centru FAQ</a>
+        </section>
+        <section class="aiv-menu-group"><h3>Companie & Legal</h3>
+          <a href="/">Acasă</a><a href="/despre/">Despre</a><a href="/viziune/">Viziune</a><a href="/tehnologie/">Tehnologie</a><a href="/contact/">Contact</a><a href="/legal/">Legal</a><a href="/termeni-si-conditii/">Termeni și condiții</a><a href="/niveluri/misiune/legal/">Misiune / Legal</a>
+        </section>
+      </div>
+    </nav>
   </div>
 </header>
+<script>
+(()=>{const b=document.getElementById('aiv-menu-btn'),p=document.getElementById('aiv-menu-panel');if(!b||!p)return;const close=()=>{p.classList.remove('open');b.setAttribute('aria-expanded','false')};b.addEventListener('click',e=>{e.stopPropagation();const o=p.classList.toggle('open');b.setAttribute('aria-expanded',String(o))});p.addEventListener('click',e=>e.stopPropagation());document.addEventListener('click',close);document.addEventListener('keydown',e=>{if(e.key==='Escape')close()})})();
+</script>
 <a class="skip-link" href="#main-content">Sari la conținut</a>
 </div>
 <main id="main-content">
