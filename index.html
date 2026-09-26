@@ -710,6 +710,30 @@ section,.hero{background:#000!important;border-color:#303030}
 #main-content .vision-faq details p{margin:10px 0 0;color:#ddd!important;max-width:920px}
 </style>
 
+
+<style id="aiv-home-hero-premium-cta">
+/* HOME hero: CTA-uri premium + titlu responsive. Restul paginii rămâne neschimbat. */
+#main-content .hero{overflow:hidden}
+#main-content .hero h1{font-size:clamp(42px,6.1vw,78px);line-height:.98;letter-spacing:-.05em;max-width:1100px;overflow-wrap:normal;word-break:normal}
+#main-content .hero .related{display:flex;flex-wrap:wrap;gap:14px;margin-top:24px;align-items:stretch}
+#main-content .hero .related a{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 24px;border-radius:3px;font:800 13px/1 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;letter-spacing:.035em;text-transform:uppercase;text-decoration:none!important;transition:transform .16s ease,background-color .16s ease,border-color .16s ease,color .16s ease;box-shadow:none}
+#main-content .hero .related a:first-child{background:#c5a43b!important;border:1px solid #c5a43b!important;color:#050505!important}
+#main-content .hero .related a:last-child{background:#000!important;border:1px solid #c5a43b!important;color:#f2df9a!important}
+#main-content .hero .related a:hover,#main-content .hero .related a:focus-visible{transform:translateY(-2px)}
+#main-content .hero .related a:first-child:hover,#main-content .hero .related a:first-child:focus-visible{background:#e2c45c!important;border-color:#e2c45c!important;color:#000!important}
+#main-content .hero .related a:last-child:hover,#main-content .hero .related a:last-child:focus-visible{background:#15120a!important;border-color:#e2c45c!important;color:#fff3bd!important}
+@media(max-width:760px){
+ #main-content .hero{padding-top:52px}
+ #main-content .hero h1{font-size:clamp(40px,11.5vw,62px);letter-spacing:-.045em;max-width:100%}
+ #main-content .hero .related{gap:10px}
+ #main-content .hero .related a{min-height:50px;padding:0 18px;font-size:12px}
+}
+@media(max-width:520px){
+ #main-content .hero h1{font-size:clamp(38px,11vw,54px)}
+ #main-content .hero .related{display:grid;grid-template-columns:1fr;width:100%}
+ #main-content .hero .related a{width:100%;min-height:52px}
+}
+</style>
 </head><body>
 
 <!-- GLOBAL HEADER · COMPACT HAMBURGER -->
@@ -941,7 +965,7 @@ GLOBAL FOOTER · SESSION 0003H
 
 <!-- AIVENTURE · FLOATING PAGE NAV + DIRECT CONTACT -->
 <style id="aiv-direct-contact-style">
-#aiv-page-tools{position:fixed;left:18px;bottom:22px;z-index:9998;display:flex;flex-direction:column;align-items:flex-start;gap:8px}
+#aiv-page-tools{position:fixed;right:18px;left:auto;bottom:22px;z-index:9998;display:flex;flex-direction:column;align-items:flex-end;gap:8px}
 #aiv-page-tools a,#aiv-page-tools button{box-sizing:border-box;width:54px;height:44px;border:1px solid #3a3a3a;background:#090909;color:#fff;display:flex;align-items:center;justify-content:center;text-decoration:none;font:800 11px/1 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;cursor:pointer}
 #aiv-page-tools a:hover,#aiv-page-tools button:hover{border-color:#d6aa22;color:#d6aa22}
 #aiv-page-tools .aiv-wa{width:112px;color:#45d483;border-color:#246a45}
@@ -951,7 +975,7 @@ GLOBAL FOOTER · SESSION 0003H
 #aiv-footer-contact-email{background:#000;border-top:1px solid #292929;padding:18px 18px 24px;text-align:center;color:#888;font:700 12px/1.5 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;letter-spacing:.04em}
 #aiv-footer-contact-email a{color:#fff;text-decoration:none}
 #aiv-footer-contact-email a:hover{text-decoration:underline;color:#d6aa22}
-@media(max-width:700px){#aiv-page-tools{left:10px;right:auto;bottom:12px}#aiv-page-tools a,#aiv-page-tools button{height:42px}#aiv-page-tools .aiv-wa,#aiv-page-tools .aiv-call,#aiv-page-tools .aiv-contact{width:96px}}
+@media(max-width:700px){#aiv-page-tools{right:10px;left:auto;bottom:12px}#aiv-page-tools a,#aiv-page-tools button{height:42px}#aiv-page-tools .aiv-wa,#aiv-page-tools .aiv-call,#aiv-page-tools .aiv-contact{width:96px}}
 </style>
 <div id="aiv-page-tools" aria-label="Navigare și contact rapid">
   <button type="button" id="aiv-top" aria-label="Sus la începutul paginii" title="TOP">↑ TOP</button>
