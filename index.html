@@ -941,22 +941,24 @@ GLOBAL FOOTER · SESSION 0003H
 
 <!-- AIVENTURE · FLOATING PAGE NAV + DIRECT CONTACT -->
 <style id="aiv-direct-contact-style">
-#aiv-page-tools{position:fixed;right:18px;bottom:22px;z-index:9998;display:flex;flex-direction:column;gap:8px}
+#aiv-page-tools{position:fixed;right:18px;bottom:22px;z-index:9998;display:flex;flex-direction:column;align-items:flex-end;gap:8px}
 #aiv-page-tools a,#aiv-page-tools button{box-sizing:border-box;width:54px;height:44px;border:1px solid #3a3a3a;background:#090909;color:#fff;display:flex;align-items:center;justify-content:center;text-decoration:none;font:800 11px/1 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;cursor:pointer}
 #aiv-page-tools a:hover,#aiv-page-tools button:hover{border-color:#d6aa22;color:#d6aa22}
 #aiv-page-tools .aiv-wa{width:112px;color:#45d483;border-color:#246a45}
 #aiv-page-tools .aiv-call{width:112px;background:#d6aa22;color:#050505;border-color:#d6aa22}
+#aiv-page-tools .aiv-contact{width:112px;color:#fff;border-color:#666}
 #aiv-page-tools .aiv-call:hover{color:#050505;border-color:#fff}
 #aiv-footer-contact-email{background:#000;border-top:1px solid #292929;padding:18px 18px 24px;text-align:center;color:#888;font:700 12px/1.5 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;letter-spacing:.04em}
 #aiv-footer-contact-email a{color:#fff;text-decoration:none}
 #aiv-footer-contact-email a:hover{text-decoration:underline;color:#d6aa22}
-@media(max-width:700px){#aiv-page-tools{right:10px;bottom:12px}#aiv-page-tools a,#aiv-page-tools button{height:42px}#aiv-page-tools .aiv-wa,#aiv-page-tools .aiv-call{width:96px}}
+@media(max-width:700px){#aiv-page-tools{right:10px;bottom:12px}#aiv-page-tools a,#aiv-page-tools button{height:42px}#aiv-page-tools .aiv-wa,#aiv-page-tools .aiv-call,#aiv-page-tools .aiv-contact{width:96px}}
 </style>
 <div id="aiv-page-tools" aria-label="Navigare și contact rapid">
   <button type="button" id="aiv-top" aria-label="Sus la începutul paginii" title="TOP">↑ TOP</button>
   <button type="button" id="aiv-down" aria-label="Jos la finalul paginii" title="DOWN">↓ DOWN</button>
   <a class="aiv-wa" href="https://api.whatsapp.com/send/?phone=40737123540" target="_blank" rel="noopener" aria-label="WhatsApp AiVenture">WhatsApp</a>
   <a class="aiv-call" href="tel:+40737123540" aria-label="Sună AiVenture">☎ APEL</a>
+  <a class="aiv-contact" href="/contact/" aria-label="Formular de contact AiVenture">FORMULAR</a>
 </div>
 <div id="aiv-footer-contact-email" aria-label="Contact email AiVenture">
   CONTACT EMAIL · <a href="mailto:contact@5thelement.ai">contact@5thelement.ai</a>
