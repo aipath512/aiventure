@@ -1,0 +1,24 @@
+Cum verifici dacă robots.txt funcționează corect pentru Google și agenții AI
+
+ID: ART-000007
+Category: AI Signals · Technical Verification
+Author: AiVenture
+Published: 2026-09-27
+Version: 1.0
+Canonical: https://aiventure.ro/blog/verificare-robots-txt-google-ai-crawlers/
+
+`robots.txt` este o declarație de acces pentru crawlere, nu o dovadă de indexare sau citare.
+
+## Nivelurile trebuie separate
+1. Regula este publicată.
+2. Crawlerul poate ajunge tehnic la resursă.
+3. Furnizorul respectă regula pentru crawlerul respectiv.
+4. Conținutul ajunge în index/retrieval.
+5. Conținutul este folosit sau citat.
+
+## Ce verifici
+HTTP status, sintaxa, User-agent, Allow/Disallow, sitemap, redirecturi, WAF/Bot Management, rate limits, challenge-uri, loguri unde sunt disponibile și identitatea crawlerului.
+
+O linie `Allow: /` demonstrează configurația publicată, nu accesarea, indexarea sau citarea.
+
+**ROBOTS DECLARED ≠ CRAWLED ≠ INDEXED ≠ RETRIEVED ≠ CITED.**
