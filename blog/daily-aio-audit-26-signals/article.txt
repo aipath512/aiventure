@@ -1,0 +1,25 @@
+DAILY AIO AUDIT — 26 de semnale, aceeași metodă, în fiecare zi
+
+ID: ART-000010
+Category: AIO · Daily Audit · Observability
+Author: AiVenture
+Published: 2026-09-27
+Version: 1.0
+Canonical: https://aiventure.ro/blog/daily-aio-audit-26-signals/
+
+AIO devine măsurabil atunci când aceleași semnale sunt verificate repetabil, cu aceeași metodă și cu dovezi păstrate.
+
+## Protocolul zilnic
+Pentru fiecare dintre cele 26 de semnale ale registrului AIO activ se atribuie PASS / PARTIAL / FAIL / UNKNOWN / N/A. UNKNOWN nu este FAIL.
+
+## Verificarea resurselor
+HTTP 200 nu este suficient:
+**STATUS → CONTENT-TYPE → FINAL URL → TITLE → H1 → CANONICAL → EXPECTED CONTENT.**
+
+## Live versus repository
+**REPOSITORY ≠ DEPLOYED ≠ LIVE ≠ VERIFIED.**
+
+## Remediere
+**PROBLEM → WHERE → ACTION → VERIFY.**
+
+Un run poate folosi ID-ul `AIO-RUN-YYYYMMDD-HHMM`. Păstrarea rezultatelor permite diferențe T1→T2 și identificarea regresiilor.
