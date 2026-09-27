@@ -1,0 +1,25 @@
+AI Signals × Perplexity: 27, 19 sau alt număr de semnale?
+
+ID: ART-000011
+Category: AI Signals · Perplexity · Methodology
+Author: AiVenture
+Published: 2026-09-27
+Version: 1.0
+Canonical: https://aiventure.ro/blog/ai-signals-perplexity-taxonomy-versioning/
+
+Un audit nu poate începe corect până când taxonomia nu este înghețată.
+
+Dacă într-o versiune apar 27 de semnale, iar într-o versiune ulterioară apar 19, nu se inventează opt semnale pentru a păstra un total istoric.
+
+## Registry first
+Fiecare rulare declară `AI_SIGNALS@VERSION_X = N` și încarcă exact lista acelei versiuni.
+
+## Migrarea taxonomiei
+**SAME / RENAMED / MERGED / SPLIT / MOVED / DEPRECATED / NEW.**
+
+Scorurile istorice nu se rescriu retroactiv.
+
+## Verification mode
+**DETERMINISTIC / MODEL_OBSERVATION / BOTH.**
+
+**REGISTRY FIRST. AUDIT SECOND. SCORE THIRD.**
