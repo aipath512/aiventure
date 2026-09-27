@@ -1,0 +1,22 @@
+{
+  "schema": "aiventure.report.manifest.v1",
+  "report_id": "RPT-ECBTAX-AILENS-20260910-BEFORE-P7",
+  "canonical_url": "https://aiventure.ro/rapoarte/ecbtax-ai-lens-2026-09-10/",
+  "generated_at": "2026-09-10T00:00:00+03:00",
+  "artifacts": [
+    {
+      "path": "index.html"
+    },
+    {
+      "path": "report.json"
+    },
+    {
+      "path": "ecbtax-ai-lens-report.pdf",
+      "sha256": "9e013a566cdf3d0daacd1619e4b536fe316a3b78be98c106c5fcd4ec5c8b86d2"
+    },
+    {
+      "path": "sha256.txt"
+    }
+  ],
+  "evidence_rule": "Claim ≠ Proof. Hash verifies file integrity; it does not independently validate the report's substantive conclusions."
+}

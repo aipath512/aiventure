@@ -1,0 +1,69 @@
+{
+  "schema": "aiventure.report.v1",
+  "id": "RPT-ECBTAX-AILENS-20260910-BEFORE-P7",
+  "title": "AI-LENS™ — ECBTAX — BEFORE P7",
+  "subject": {
+    "name": "ECBTAX",
+    "domain": "https://ecbtax.com/"
+  },
+  "publisher": "AiVenture S.R.L.",
+  "product": "AI-LENS™",
+  "session": "0001H",
+  "audit_date": "2026-09-10",
+  "published_timestamp": "2026-09-10T00:00:00+03:00",
+  "scope": "P0–P6 BEFORE P7; multi-model comparison",
+  "models": [
+    "ChatGPT",
+    "Claude",
+    "Gemini",
+    "Perplexity"
+  ],
+  "methodology": [
+    "Observe the official ECBTAX web presence across independent AI systems.",
+    "Compare findability, official-domain selection, business-core survival, offer, audience, trust, operating model, digital/AI differentiation and evidence survival.",
+    "Preserve disagreements between models rather than collapsing them into a single synthetic answer.",
+    "P7 cross-AI merge is outside this report."
+  ],
+  "headline_finding": "All four measured AI systems find ECBTAX and reach the official source, but they do not construct the same representation of the business.",
+  "results": {
+    "ChatGPT": {
+      "find": "PASS",
+      "survival": "PARTIAL",
+      "why_ecbtax": "INCOMPLETE"
+    },
+    "Claude": {
+      "find": "PASS",
+      "survival": "PARTIAL",
+      "why_ecbtax": "INCOMPLETE"
+    },
+    "Gemini": {
+      "find": "PASS",
+      "survival": "FULL",
+      "why_ecbtax": "COMPLETE"
+    },
+    "Perplexity": {
+      "find": "PASS",
+      "survival": "FULL_WITH_LIMITATION",
+      "why_ecbtax": "COMPLETE",
+      "limitation": "Controlled deep proof was NOT_MEASURED."
+    }
+  },
+  "conclusions": [
+    "ECBTAX is findable by all four AI systems measured in this BEFORE state.",
+    "The official ECBTAX domain is selected by all four.",
+    "The reconstructed business representation diverges by model.",
+    "ChatGPT and Claude preserve only part of the measured commercial representation.",
+    "Gemini preserves the measured commercial representation more completely, with deep-proof loss.",
+    "Perplexity preserves the measured commercial representation strongly, but controlled deep proof was not measured.",
+    "P0–P6 does not prove recommendation behavior, competitor preference, technical root cause or remediation."
+  ],
+  "files": {
+    "pdf": "/rapoarte/ecbtax-ai-lens-2026-09-10/ecbtax-ai-lens-report.pdf",
+    "sha256": "/rapoarte/ecbtax-ai-lens-2026-09-10/sha256.txt",
+    "manifest": "/rapoarte/ecbtax-ai-lens-2026-09-10/manifest.json"
+  },
+  "integrity": {
+    "algorithm": "SHA-256",
+    "pdf_sha256": "9e013a566cdf3d0daacd1619e4b536fe316a3b78be98c106c5fcd4ec5c8b86d2"
+  }
+}
