@@ -1,0 +1,23 @@
+Cum se configurează llms.txt pentru GEO și accesul agenților AI
+
+ID: ART-000008
+Category: GEO · AI Signals · Technical Configuration
+Author: AiVenture
+Published: 2026-09-27
+Version: 1.0
+Canonical: https://aiventure.ro/blog/llms-txt-geo-ai-agents/
+
+`llms.txt` poate fi folosit ca resursă machine-readable pentru a prezenta poziționarea, paginile importante și regulile de interpretare ale unui site. Nu garantează indexarea sau citarea de către toate sistemele AI.
+
+## Ce poate conține
+Identitatea canonică, descrierea firmei, serviciile, paginile importante, negative scope, reguli de guvernanță, resurse machine-readable, contacte și surse de dovadă.
+
+## Principiul critic
+Fișierul trebuie să reflecte site-ul live. Un `llms.txt` vechi poate introduce contradicții.
+
+## Verificare
+**STATUS → CONTENT-TYPE → FINAL URL → CONTENT → REFERENCES → CURRENTNESS.**
+
+În GEO, valoarea sa este reducerea ambiguității și indicarea surselor canonice.
+
+**LLMS.TXT EXISTS ≠ AI INDEXING ≠ AI CITATION.**
