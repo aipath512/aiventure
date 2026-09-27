@@ -1,0 +1,54 @@
+AIO — AI Optimization: cum pregătești un site pentru a fi înțeles și utilizat de sisteme AI
+
+ID: ART-000013
+Category: AIO · Methodology · Technical Architecture
+Author: AiVenture
+Published: 2026-09-27
+Version: 1.0
+Canonical: https://aiventure.ro/blog/aio-ai-optimization-26-signals/
+
+AIO — AI Optimization — urmărește ca informația unui site să poată fi înțeleasă, procesată și utilizată de sisteme AI fără ca acestea să fie obligate să ghicească elementele esențiale.
+
+**Poate un sistem AI reconstrui corect ceea ce firma este, oferă, dovedește și permite?**
+
+## De la implicit la explicit
+**IMPLICIT → EXPLICIT**
+**AMBIGUOUS → MACHINE-INTERPRETABLE**
+
+**ENTITY → PROPERTY → RELATIONSHIP → SOURCE → EVIDENCE → VERSION.**
+
+## 26 de semnale ale registrului de lucru
+1. Perplexity Source Citation
+2. ChatGPT Browse Visibility
+3. Gemini Grounding Eligibility
+4. Claude Source Indexing
+5. Source Citation Quality
+6. Table / List Extractability
+7. Content Indexability by LLMs
+8. Internal Link Semantic Map
+9. Chronological Versioning
+10. Token-Efficient Headings
+11. Content Freshness Signal
+12. Corpus Inclusion Signal
+13. Contrastive Analysis Presence
+14. Dense Paragraph Summaries
+15. AI Summary Block
+16. Contradiction Avoidance
+17. Allow-Lane Matrix
+18. Semantic Keyword Clusters
+19. Fact Density vs Fluff Ratio
+20. Long-Form Completeness
+21. Concept Cluster Coverage
+22. Inference Trigger Keywords
+23. LLM-Readable Metadata
+24. Unique Data / Proprietary Stats
+25. RAG-Ready Content Format
+26. Expertise Signals in Content
+
+Lista trebuie legată de registry_version.
+
+**MORE FILES ≠ BETTER AIO.**
+
+**JSON EXISTS → JSON VALID → REFERENCES VALID → CONTENT CURRENT → EVIDENCE VALID → PASS.**
+
+**DECLARED ≠ DEPLOYED ≠ VALID ≠ VERIFIED.**
