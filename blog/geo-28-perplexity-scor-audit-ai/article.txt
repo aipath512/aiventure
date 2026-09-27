@@ -1,0 +1,25 @@
+GEO 28 × Perplexity: cum se calculează și se verifică scorul GEO
+
+ID: ART-000009
+Category: GEO · Multi-Model Measurement
+Author: AiVenture
+Published: 2026-09-27
+Version: 1.0
+Canonical: https://aiventure.ro/blog/geo-28-perplexity-scor-audit-ai/
+
+Un audit GEO trebuie să separe scorul tehnic al paginii de ceea ce observă un anumit sistem AI.
+
+## PASS coverage
+Numărul de semnale PASS arată acoperirea, nu neapărat calitatea ponderată.
+
+## Weighted GEO score
+**GEO = Σ(sᵢ × wᵢ) / Σ(wᵢ)** pentru semnalele evaluabile. N/A este exclus. UNKNOWN nu este FAIL.
+
+## Observația Perplexity
+Perplexity este un observator extern: ce găsește, ce surse folosește, ce citează și ce omite.
+
+**GEO SCORE ≠ PERPLEXITY SCORE.**
+
+Trebuie păstrate separat GEO PASS COVERAGE, GEO WEIGHTED SCORE, MODEL OBSERVABILITY, MODEL AGREEMENT și EVIDENCE COVERAGE.
+
+Orice listă de 28 semnale trebuie legată de o versiune explicită a registrului.
