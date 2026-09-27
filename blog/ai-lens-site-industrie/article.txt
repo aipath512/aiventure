@@ -1,0 +1,30 @@
+AI-LENS™: de la analiza unui site la perspectiva multi-model asupra unei industrii
+
+ID: ART-000001
+Category: AI-LENS · Research
+Author: AiVenture
+Published: 2026-09-27
+Version: 1.0
+Canonical: https://aiventure.ro/blog/ai-lens-site-industrie/
+
+AI-LENS™ pornește de la o idee simplă: aceeași firmă poate fi reprezentată diferit de sisteme AI diferite. O singură observație nu este suficientă pentru a descrie această realitate.
+
+## De la o pagină la reprezentarea firmei
+Analiza începe cu homepage-ul și continuă cu paginile publice relevante identificate în sitemap. Pentru fiecare model observăm ce informații poate găsi, cum descrie firma, ce servicii identifică, ce surse folosește, ce omite și unde apar contradicții.
+
+ChatGPT, Claude, Gemini și Perplexity sunt tratați ca observatori independenți. Rezultatele lor nu sunt combinate înainte de păstrarea răspunsului brut și a dovezilor.
+
+## Două experimente diferite
+**SAME INPUT** oferă acelorași modele același conținut și aceleași dovezi. Măsoară diferențele de interpretare.
+
+**NATIVE ACCESS** lasă fiecare sistem să folosească propriul mecanism de search, browsing sau retrieval. Măsoară ceea ce sistemul poate găsi și reprezenta în condițiile sale reale.
+
+Cele două experimente nu trebuie amestecate într-un singur rezultat.
+
+## De la firmă la industrie
+Aceeași metodă poate fi aplicată mai multor firme grupate după activitate, CAEN principal/secundar și servicii efectiv oferite. Repetarea în timp creează istoric și permite observarea schimbărilor în eșantionul măsurat.
+
+## Regula de adevăr
+Acordul dintre patru modele nu înlocuiește adevărul verificat în sursa validată. Consensul este o observație despre modele, nu o probă suficientă despre realitate.
+
+**PAGE → SERVICE → COMPANY → ACTIVITY → INDUSTRY → HISTORY.**
