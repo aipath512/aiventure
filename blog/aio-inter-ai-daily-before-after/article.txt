@@ -1,0 +1,29 @@
+AIO INTER-AI: audit zilnic comparabil între ChatGPT, Claude, Gemini și Perplexity
+
+ID: ART-000012
+Category: AIO · INTER-AI · Multi-Model Observability
+Author: AiVenture
+Published: 2026-09-27
+Version: 1.0
+Canonical: https://aiventure.ro/blog/aio-inter-ai-daily-before-after/
+
+AIO INTER-AI măsoară cum aceeași realitate digitală este observată de patru sisteme AI în timp.
+
+**ONE TARGET × ONE FROZEN TAXONOMY × ONE TEST PROTOCOL × CHATGPT/CLAUDE/GEMINI/PERPLEXITY × TIME.**
+
+## Două straturi
+Deterministic AIO verifică ce există. INTER-AI verifică ce găsește, înțelege, utilizează sau citează fiecare model.
+
+**SITE TRUTH ≠ MODEL OBSERVATION.**
+
+## Protocol comun
+Se îngheață registry_version, semnalele, definițiile, criteriile, ponderile, protocolul, promptul și întrebările. Capabilitatea nesuportată produce UNKNOWN.
+
+20 întrebări × 3 rulări × 4 platforme = 240 observații, nu 240 semnale.
+
+## BEFORE / AFTER
+Comparația cere metodă și condiții compatibile.
+
+AIO deterministic score, AI visibility, citation rate, correct representation și model agreement rămân metrici separate.
+
+Dezacordul dintre modele este informație.
