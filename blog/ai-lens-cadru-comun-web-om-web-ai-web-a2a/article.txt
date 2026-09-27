@@ -1,0 +1,24 @@
+AI-LENS™: cadrul comun de observare pentru WEB-OM, WEB-AI și WEB-A2A
+
+ID: ART-000005
+Category: AI-LENS · Methodology
+Author: AiVenture
+Published: 2026-09-27
+Version: 1.0
+Canonical: https://aiventure.ro/blog/ai-lens-cadru-comun-web-om-web-ai-web-a2a/
+
+AI-LENS organizează observația pe trei dimensiuni: **cale × categorie × locul intervenției**.
+
+## Calea
+WEB-OM urmărește accesul oamenilor. WEB-AI urmărește accesul și reprezentarea prin sisteme AI. WEB-A2A urmărește interacțiunea operațională dintre agenți.
+
+## Categoria
+SEO, AEO, GEO, AIO, AI Signals și semnalele A2A au obiective diferite. Fiecare categorie păstrează propria taxonomie.
+
+## Locul intervenției
+ON-SITE și ON-PAGE sunt controlabile direct de proprietarul site-ului. OFF-PAGE depinde de surse externe și nu trebuie prezentat ca fiind controlabil prin simpla modificare a site-ului sau prin Edge.
+
+## Scara obiectului
+**PAGE → SERVICE → COMPANY → ACTIVITY → INDUSTRY → HISTORY.**
+
+Diferențele dintre modele sunt date: arată unde reprezentarea este robustă și unde depinde de mecanismul particular de retrieval sau interpretare al unui sistem.
