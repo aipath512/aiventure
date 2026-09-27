@@ -1,0 +1,31 @@
+Metodologia AI-LENS™: cadrul comun de observare pentru WEB-OM, WEB-AI și WEB-A2A
+
+ID: ART-000002
+Category: AI-LENS · Research
+Author: AiVenture
+Published: 2026-09-27
+Version: 1.0
+Canonical: https://aiventure.ro/blog/metodologia-ai-lens-web-om-web-ai-web-a2a/
+
+AI-LENS™ poate funcționa ca un cadru comun de observare pentru cele trei căi prin care o firmă este accesată în economia digitală: WEB-OM, WEB-AI și WEB-A2A.
+
+## WEB-OM
+WEB-OM descrie relația directă dintre firmă și oameni. PULL înseamnă că omul caută firma. PUSH înseamnă că firma caută omul.
+
+## WEB-AI
+WEB-AI descrie relația în care sistemele AI intermediază descoperirea, înțelegerea, compararea sau recomandarea. Unitatea operațională este intentul: **VERB/ACTION + TARGET**.
+
+## WEB-A2A
+WEB-A2A descrie interacțiunea dintre agenți: BUYER ↔ BROKER ↔ SELLER, cu mandate, reguli, control uman și dovezi.
+
+## Același principiu de observație
+Pentru fiecare cale se definesc obiectele, semnalele și criteriile aplicabile. Apoi aceleași criterii sunt evaluate independent cu ChatGPT, Claude, Gemini și Perplexity.
+
+Metodologia nu presupune că toate categoriile folosesc aceeași listă de semnale. SEO, AEO, GEO, AIO și AI Signals au registre proprii, versionate.
+
+## Trei axe
+1. Calea de acces: WEB-OM / WEB-AI / WEB-A2A.
+2. Categoria: SEO / AEO / GEO / AIO / AI Signals / semnale tranzacționale.
+3. Locul intervenției: ON-SITE / ON-PAGE / OFF-PAGE.
+
+**CATEGORY × SIGNAL × OBJECT × MODEL × TIME × VERSION → OBSERVATION + EVIDENCE + VERDICT.**
