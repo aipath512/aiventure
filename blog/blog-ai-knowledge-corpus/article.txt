@@ -1,0 +1,48 @@
+BLOG în era AI: de la Content Marketing la AI Knowledge Corpus
+
+ID: ART-000014
+Category: AIO · Content · AI Knowledge Corpus
+Author: AiVenture
+Published: 2026-09-27
+Version: 1.0
+Canonical: https://aiventure.ro/blog/blog-ai-knowledge-corpus/
+
+Blogul nu mai trebuie privit exclusiv ca instrument de Content Marketing sau SEO.
+
+În era AI, blogul poate deveni una dintre cele mai eficiente metode prin care o firmă își **îmbogățește continuu corpusul informațional public**.
+
+## De la articol la corpus
+Fiecare articol poate adăuga informații, definiții, întrebări și răspunsuri, entități, proprietăți, relații, servicii, exemple, date, surse și dovezi.
+
+**ARTICLE → ENTITY → CONCEPT → RELATIONSHIP → EVIDENCE → KNOWLEDGE CORPUS**
+
+## De la Content Marketing la AI Knowledge Corpus
+Modelul clasic:
+**BLOG → KEYWORDS → GOOGLE → TRAFFIC → CONVERSION**
+
+Extensia Web-AI:
+**BLOG → CONTENT → INTENTS / QUESTIONS → SEMANTIC COVERAGE → INTERNAL LINKS → RETRIEVAL → AI UNDERSTANDING → POSSIBLE CITATION / RECOMMENDATION**
+
+## Exemplul ECBTAX
+Pentru ECBTAX, blogul poate transforma expertiza reală în contabilitate, fiscalitate, HR și calculul salariilor într-un corpus public, structurat și actualizat.
+
+Un articol despre calculul salariilor poate conecta:
+**angajat → salariu brut → contribuții → impozit → salariu net → declarații → obligații → termene.**
+
+## Publici o dată, deservești mai multe sisteme
+**OM → citește**
+**SEARCH ENGINE → indexează**
+**AI SYSTEM → procesează / recuperează**
+**AI AGENT → poate utiliza informația în limitele accesului și mandatului său**
+
+## Distincția critică
+**CRAWLER ACCESS ≠ INDEXING ≠ RETRIEVAL ≠ CITATION ≠ RECOMMENDATION.**
+
+Nu afirmăm fără măsurători că blogul este una dintre cele mai căutate forme de conținut de crawlerele AI. Afirmația verificabilă este că un blog bine construit mărește corpusul public pe care sistemele îl pot descoperi și procesa.
+
+## Cantitatea nu este suficientă
+**MORE ARTICLES ≠ BETTER AI REPRESENTATION.**
+
+Conținutul trebuie să fie factual, actual, coerent, canonicalizat, semantic structurat, legat intern și susținut de surse sau dovezi unde este necesar.
+
+**BLOG → CONTENT LIBRARY → KNOWLEDGE BASE → AI KNOWLEDGE CORPUS.**
