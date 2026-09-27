@@ -1,0 +1,26 @@
+ALL CATEGORIES · MULTI-MODEL · SAME KPI
+
+ID: ART-000004
+Category: AI-LENS · Multi-Model Signal Intelligence
+Author: AiVenture
+Published: 2026-09-27
+Version: 1.0
+Canonical: https://aiventure.ro/blog/all-categories-multi-model-same-kpi/
+
+Principiul **SAME KPI** înseamnă că, în interiorul aceleiași categorii și versiuni de taxonomie, fiecare model este evaluat prin același semnal, aceeași întrebare și aceeași regulă de verdict.
+
+## Registru canonic
+Fiecare categorie are propria listă versionată. Înaintea auditului se îngheață registry_version, definiția semnalelor, criteriile, metoda, prompt_version și evidence snapshot.
+
+## Două straturi
+**Deterministic truth** verifică direct ceea ce există: HTTP, HTML, structured data, fișiere, linkuri, API-uri și dovezi tehnice.
+
+**Multi-model observation** verifică ceea ce fiecare sistem AI găsește, înțelege, omite sau citează.
+
+## Independența observatorilor
+ChatGPT, Claude, Gemini și Perplexity rulează separat. Răspunsul brut este păstrat înainte de normalizare.
+
+## Metrici separate
+Site quality, model agreement, evidence coverage și run completeness sunt dimensiuni diferite.
+
+**SITE TRUTH → SIGNAL → SAME KPI → SAME TEST → 4 AI → 4 OBSERVATIONS → EVIDENCE → AGREEMENT / DISAGREEMENT → HISTORY.**
