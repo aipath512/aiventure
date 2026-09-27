@@ -1,0 +1,30 @@
+Misiunea AiVenture: de la WEB-OM la WEB-AI și WEB-A2A
+
+ID: ART-000003
+Category: AiVenture · Methodology
+Author: AiVenture
+Published: 2026-09-27
+Version: 1.0
+Canonical: https://aiventure.ro/blog/misiunea-web-om-web-ai-web-a2a/
+
+Misiunea AiVenture este: **facem serviciile firmei ușor de găsit, înțeles, verificat și cumpărat de oameni și agenți AI — păstrând controlul uman.**
+
+## WEB-OM
+Firma trebuie să poată fi găsită și utilizată de oameni.
+**BUSINESS → AUDIENCE → INTENT → CHANNEL → CONTENT → SERVICE → EVIDENCE → CTA → CONVERSION.**
+
+WEB-OM = PULL + PUSH. Omul caută firma. Firma caută omul.
+
+## WEB-AI
+Firma și serviciile sale trebuie să poată fi reconstruite corect de sisteme AI. Aici intervin AEO, GEO, AIO, AI-SEO și AI Signals, construite peste fundația web și SEO existentă.
+
+## WEB-A2A
+Serviciul devine accesibil agenților AI:
+**BUYER → BROKER → SELLER → HUMAN APPROVAL → EVIDENCE.**
+
+Oferta este definită de firmă. Edge-ul nu inventează niciodată oferta în timpul unei tranzacții.
+
+## Verificarea
+**SIGNAL → OBJECT → REQUIREMENT → SOURCE → METHOD → EVIDENCE → CONTEXT → VERDICT → REMEDIATION.**
+
+Verdictele sunt PASS, PARTIAL, FAIL, UNKNOWN și N/A. UNKNOWN nu este FAIL.
