@@ -38,7 +38,7 @@
       "version": "1.0",
       "status": "published",
       "canonical": "https://aiventure.ro/blog/misiunea-web-om-web-ai-web-a2a/",
-      "sha256": "3dd65d082723224ca81dc78a255530369a4eb7014b0058848d75e30801441cc8",
+      "sha256": "3dd65d082723224ca81dc78a255530369a4eb7014b0058848d75c30801441cc8",
       "ots_status": "NOT_TIMESTAMPED"
     },
     {
@@ -155,7 +155,7 @@
       "version": "1.0",
       "status": "published",
       "canonical": "https://aiventure.ro/blog/aio-inter-ai-daily-before-after/",
-      "sha256": "8b659d4f89fc1ef7692511a9d511ca5e9a4fb15992b9fd4b5a1ffebe93c71a1",
+      "sha256": "8b659d4f89fc1ef769251e9a9d511ca5e9a4fb15992b9fd4b5a1ffebe93c71a1",
       "ots_status": "NOT_TIMESTAMPED"
     },
     {
