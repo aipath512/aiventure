@@ -1,0 +1,41 @@
+# Cum interpretezi corect scorul dintr-un audit AI
+
+Un scor dintr-un audit AI arată ce a măsurat metoda acelui audit. Nu este un procent universal al vizibilității în AI și nu este o predicție directă a vânzărilor.
+
+## Întrebarea-cheie: ce scor?
+
+Înainte să citești cifra, află ce numără: pregătire tehnică, vizibilitate în răspunsuri, calitatea informației sau rezultate comerciale.
+
+Acestea sunt măsurători diferite. Un site poate fi accesibil unui crawler fără să apară în recomandările generate. Menționarea brandului, citarea site-ului și recomandarea activă trebuie raportate separat.
+
+## Cum citești un exemplu
+
+Într-un raport AiVenture, 7 din 19 înseamnă că 7 condiții verificate au fost confirmate complet dintre cele 19 rubrici măsurate.
+
+Nu înseamnă 37% vizibilitate în ChatGPT, 37% șanse de recomandare sau 37% din performanța posibilă. Numără rubrici de audit tehnic și informațional, nu răspunsuri AI sau clienți.
+
+Rubricile nemăsurate nu sunt eșecuri. Semnalele care privesc un alt model nu trebuie introduse în numitorul unei verificări specifice ChatGPT.
+
+## Când sunt două scoruri comparabile
+
+Pentru comparație trebuie să rămână aceleași:
+
+- rubricile și definiția rezultatului reușit;
+- modelul, întrebările, limba și regiunea;
+- numărul de rulări și tratarea rezultatelor nemăsurate;
+- data testului și copiile probelor;
+- formula de calcul și ponderile.
+
+Pentru vizibilitate în răspunsuri, păstrează întrebările identice și notează răspunsul, mențiunea brandului, recomandarea și sursele citate.
+
+## Folosește scorul ca instrument
+
+Un scor este util când arată ce s-a verificat, ce nu s-a verificat și ce repari mai întâi.
+
+Nu deduce dintr-un scor tehnic că AI recomandă firma. Nu deduce din apariția într-un răspuns că au venit clienți. Impactul comercial are nevoie de date separate despre trafic, conversii și atribuire.
+
+## Concluzie
+
+Un scor este util numai dacă spune clar ce a măsurat, ce nu a măsurat, ce dovezi susțin rezultatul și ce trebuie reparat în continuare.
+
+Sursă: metodologia și exemplele de audit AI analizate de AiVenture.
