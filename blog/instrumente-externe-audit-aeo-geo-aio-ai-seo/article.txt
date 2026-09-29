@@ -1,0 +1,53 @@
+# Ce instrumente externe se folosesc într-un audit AEO, GEO, AIO și AI-SEO
+
+Un audit complet AEO, GEO, AIO și AI-SEO nu se face cu un singur scor de vizibilitate AI. Este nevoie de crawl tehnic, date first-party de la motoarele de căutare, monitorizare de răspunsuri AI și analiză off-page.
+
+## Crawl tehnic on-site și on-page
+
+Screaming Frog SEO Spider, Sitebulb sau un crawler propriu pot verifica status HTTP, indexabilitate, canonical, robots directives, titluri, headinguri, linkuri interne, conținut duplicat și structured data.
+
+Pentru site-uri cu JavaScript, crawl-ul trebuie rulat și cu rendering pentru a verifica HTML-ul pe care îl primește efectiv un crawler.
+
+## Search și indexare
+
+Google Search Console și Bing Webmaster Tools oferă date first-party despre indexare, crawl și performanță în propriile ecosisteme.
+
+Aceste date trebuie separate de rezultatele instrumentelor terțe. Un tracker de prompturi observă un eșantion de răspunsuri; o platformă de căutare raportează propriile date.
+
+## Validarea schema
+
+Rich Results Test și Schema Markup Validator ajută la verificarea erorilor de sintaxă și a eligibilității pentru rich results.
+
+Schema ajută la claritatea informației pentru motoarele de căutare, dar nu există markup special care să garanteze apariția într-un răspuns generativ.
+
+## Vizibilitate în răspunsuri AI
+
+Ahrefs Brand Radar, Semrush AI Visibility Toolkit, Peec AI, Otterly.AI și Profound pot urmări mențiuni de brand, citări, pagini-sursă, concurenți și un set de prompturi în timp.
+
+Rezultatele pot varia după întrebare, limbă, locație, cont și momentul rulării. De aceea, auditul trebuie să păstreze promptul, data, modelul, URL-ul citat și răspunsul observat.
+
+## Off-page și reputație
+
+Ahrefs și Semrush ajută la analiza backlinkurilor și a domeniilor referitoare. Brand24 poate ajuta la monitorizarea mențiunilor în web și social media.
+
+Numărul de mențiuni nu demonstrează automat autoritate sau vizibilitate AI. Contează relevanța, credibilitatea și contextul sursei.
+
+## Loguri și date de acces reale
+
+Logurile serverului sau CDN-ului confirmă cereri reale, răspunsuri 403 sau 429 și resurse blocate. Un User-Agent declarat nu este, singur, dovada identității crawlerului; verificarea trebuie făcută după documentația fiecărui furnizor.
+
+## Stack practic pentru IMM-uri
+
+Un stack simplu poate include:
+
+- Screaming Frog pentru crawl tehnic;
+- Google Search Console și Bing Webmaster Tools pentru date first-party;
+- Ahrefs sau Semrush pentru off-page și competitori;
+- un tracker AI pentru monitorizare recurentă de prompturi;
+- un dashboard propriu pentru probe, URL-uri, dată, platformă și rezultat.
+
+## Concluzie
+
+Un audit verificabil separă semnalele observabile on-site, datele first-party, observațiile din prompt tracking și interpretarea editorială. Această separare arată exact ce a fost măsurat, ce a fost observat și ce nu poate fi încă afirmat.
+
+Sursă: documentația și materialele de instrumente citate în analiza AiVenture.
