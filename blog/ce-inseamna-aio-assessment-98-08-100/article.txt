@@ -1,0 +1,39 @@
+# Ce înseamnă evaluarea AIO 98,08/100 pentru AiVenture
+
+AiVenture a publicat o evaluare AIO cu scorul 98,08 din 100. Evaluarea folosește un cadru cu 26 de semnale privind vizibilitatea, structurarea și interpretarea informației de către sisteme AI.
+
+## Cum a fost calculat scorul
+
+Metoda acordă 1 punct pentru PASS, 0,5 puncte pentru PARTIAL și 0 pentru FAIL.
+
+Rezultatul evaluării a fost:
+
+- 25 PASS;
+- 1 PARTIAL;
+- 0 FAIL.
+
+Calculul este: 25,5 din 26, adică 98,08%.
+
+## Ce acoperă evaluarea
+
+Semnalele verificate includ citarea în motoare AI, indexabilitatea pentru LLM-uri, liste și tabele ușor de extras, metadate machine-readable, rezumate AI, date structurate, clustere semantice, semnale de expertiză, formate RAG-ready și mecanisme de versionare.
+
+Evaluarea indică faptul că AiVenture are infrastructură publică pentru a face serviciile, informațiile și resursele sale mai ușor de găsit și interpretat de oameni și sisteme AI.
+
+## De ce există un semnal PARTIAL
+
+Singurul rezultat PARTIAL este Source Citation Quality. Într-un test furnizat pentru Gemini, RRVI a fost reconstruit cu o extindere istorică sau diferită față de definiția actuală analizată în artefactul RRVI.
+
+Aceasta înseamnă că descoperirea și grounding-ul au trecut, dar calitatea reconstrucției semantice nu a fost complet consecventă în toate motoarele testate.
+
+## Ce nu înseamnă scorul
+
+Scorul nu este o certificare OpenAI și nu reprezintă un audit independent realizat de OpenAI. Nu este o certificare juridică sau de conformitate.
+
+De asemenea, nu garantează clasare, citare, trafic, lead-uri, conversii, securitate sau performanță A2A. Aceste rezultate trebuie măsurate separat, în timp, după publicare și testare reală.
+
+## Concluzie
+
+Evaluarea AIO 98,08/100 este un indicator de readiness al infrastructurii informaționale AiVenture. Ea arată că majoritatea semnalelor definite în metodologie sunt acoperite, iar semnalul rămas parțial indică o zonă concretă de îmbunătățire: consistența semantică a citării între motoare AI.
+
+Sursă: AiVenture AIO Assessment, 24 septembrie 2026.
