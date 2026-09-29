@@ -1,0 +1,22 @@
+GEO GOLD: de la 92/100 la un standard verificabil de AI Readiness
+
+ID: ART-000016
+Category: GEO · Readiness · Evidence
+Author: Dan Ionescu · Founder, AiVenture
+Published: 2026-09-29
+Version: 1.0
+Canonical: https://aiventure.ro/blog/geo-gold-readiness-92-98-100-verified/
+
+GEO Readiness și GEO Performance trebuie măsurate separat.
+
+92 → 98: citate credibile și provenance academic explicit.
+98 → 100 VERIFIED: FREEZE → SHA-256 → OTS → DEPLOY → HTTP 200 → CONTENT/HASH VERIFICATION.
+
+Cercetarea de referință: GEO: Generative Engine Optimization, arXiv:2311.09735, KDD 2024, DOI 10.1145/3637528.3671900.
+
+Studiul raportează că GEO poate crește vizibilitatea cu până la 40% în răspunsurile motoarelor generative; rezultatul experimental nu este o garanție pentru o pagină sau un sistem AI concret.
+
+Generated ≠ Deployed ≠ Live ≠ Verified.
+Readiness ≠ Performance.
+
+GOLD Library → AI-Ready Snapshot → Diagnostic → Pilot → Implementation → Measurement.
