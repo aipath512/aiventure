@@ -1,0 +1,46 @@
+# Prima verificare AIO ChatGPT pentru aiventure.ro: ce funcționează și ce trebuie sincronizat
+
+La 28 septembrie 2026 a fost realizată o primă verificare AIO pentru aiventure.ro, din perspectiva unei rulări ChatGPT. Auditul nu măsoară vânzări, trafic sau recomandări comerciale. El verifică dacă informațiile site-ului pot fi găsite, deschise și interpretate corect de sisteme AI.
+
+## Rezultatul pe scurt
+
+Din 23 de semnale aplicabile rulării ChatGPT, 19 au putut fi verificate:
+
+- 7 au trecut;
+- 11 au fost parțial îndeplinite;
+- 1 a eșuat;
+- 4 au rămas netestate.
+
+Trei semnale specifice Perplexity, Gemini și Claude au fost excluse, deoarece acele modele nu au fost testate în această rulare.
+
+Site-ul poate fi deschis de roboți AI și include 400 de întrebări și răspunsuri publicate. Problema principală este concordanța dintre paginile live și fișierele care le descriu pentru sisteme AI.
+
+## Ce funcționează
+
+Roboții ChatGPT sunt permiși, iar toate cele 37 de adrese testate au răspuns HTTP 200. Pagina AIO conține un rezumat identificabil. Site-ul declară explicit limitele promisiunilor sale și separă accesul unui robot de dreptul de a plasa comenzi.
+
+Au fost confirmate și 400 de întrebări și răspunsuri pe 20 de teme, date structurate pentru homepage și consecvența formulărilor de guvernanță între documentele verificate.
+
+## Ce trebuie corectat
+
+Unele fișiere pentru AI descriu o versiune veche a homepage-ului. Lista de headinguri declarate nu corespunde titlurilor actuale ale paginii, iar rezumatele și data de actualizare nu sunt sincronizate cu versiunea live.
+
+Mai multe trimiteri către secțiuni sau pagini nu duc la conținutul promis. În test, unele adrese precum /dictionar/, /resurse/ și /a2a-secrets/01/ au răspuns cu homepage-ul în locul conținutului indicat.
+
+Acest lucru poate face ca un agent AI să primească harta unei versiuni vechi sau să ajungă la pagina greșită.
+
+## Priorități
+
+1. Actualizarea linkurilor care indică secțiuni inexistente sau pagini care redirecționează la homepage.
+2. Sincronizarea headingurilor, rezumatelor, sesiunii și datei cu pagina live.
+3. Verificarea paginilor care răspund HTTP 200, dar nu servesc conținutul promis.
+
+## Ce nu măsoară raportul
+
+Faptul că un robot poate deschide site-ul nu dovedește că ChatGPT îl citează sau îl recomandă. Raportul nu măsoară citarea repetată, includerea în Common Crawl, acreditarea independentă a experților sau rentabilitatea reclamelor.
+
+## Concluzie
+
+Prima verificare oferă un punct de referință: infrastructura de acces și conținutul de întrebări-răspunsuri există, dar harta semantică și metadatele trebuie sincronizate cu site-ul publicat. Următoarea rulare comparabilă poate măsura progresul după corecții.
+
+Sursă: Ce vede ChatGPT pe aiventure.ro — prima verificare AIO, 28 septembrie 2026.
