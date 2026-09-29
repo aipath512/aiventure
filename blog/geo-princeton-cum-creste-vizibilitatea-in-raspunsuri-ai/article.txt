@@ -1,0 +1,43 @@
+# GEO: ce arată studiul Princeton despre vizibilitatea în răspunsuri AI
+
+Generative Engine Optimization, sau GEO, este modul de a pregăti conținutul pentru motoare care răspund cu texte sintetizate și citări, nu doar cu liste de linkuri.
+
+Un studiu prezentat la KDD 2024 propune GEO ca un cadru pentru creșterea vizibilității unei surse în răspunsurile generate de AI. Autorii arată că vizibilitatea nu înseamnă doar poziția unei pagini, ci și cât este folosită și citată în răspuns.
+
+## Ce au testat autorii
+
+Studiul a evaluat nouă metode de modificare a conținutului pe un benchmark de 10.000 de întrebări. Au fost măsurate prezența sursei, poziția citării și influența ei în răspuns.
+
+Metodele cu cele mai bune rezultate au fost:
+
+- adăugarea de surse citabile;
+- adăugarea de citate relevante;
+- adăugarea de statistici;
+- îmbunătățirea fluenței și clarității textului.
+
+În experimente, aceste metode au crescut vizibilitatea cu până la aproximativ 40%. În testele realizate pe Perplexity, adăugarea de citate a îmbunătățit una dintre măsurile de vizibilitate cu aproximativ 22%, iar adăugarea de statistici a îmbunătățit măsura de impresie subiectivă cu aproximativ 37%.
+
+## Ce nu a funcționat bine
+
+Keyword stuffing, o tactică veche de SEO, a avut rezultate slabe și uneori mai proaste decât conținutul neoptimizat.
+
+Mesajul este simplu: pentru răspunsuri AI, repetarea cuvintelor-cheie nu este suficientă. Contează mai mult informația verificabilă, claritatea, sursele și datele concrete.
+
+## Ce înseamnă pentru o firmă
+
+O pagină de servicii poate deveni mai utilă pentru sisteme AI dacă include:
+
+- afirmații precise;
+- date și statistici cu sursă;
+- citate relevante;
+- explicații ușor de înțeles;
+- termeni tehnici folosiți corect;
+- exemple și comparații.
+
+GEO nu garantează citarea într-un anumit produs AI. Algoritmii sunt proprietari și se schimbă. Dar studiul oferă o direcție practică: construiește conținut credibil, clar și susținut de dovezi.
+
+## Concluzie
+
+SEO rămâne important, dar nu este suficient pentru motoarele generative. GEO completează SEO prin optimizarea informației pentru răspunsuri AI cu citări. Pentru firme, oportunitatea este să transforme paginile de marketing în surse clare, verificabile și ușor de utilizat de agenți AI.
+
+Sursă: Aggarwal et al., GEO: Generative Engine Optimization, KDD 2024.
