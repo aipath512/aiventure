@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated": "2026-09-27",
+  "updated": "2026-09-29",
   "articles": [
     {
       "id": "ART-000001",
@@ -195,6 +195,19 @@
       "status": "published",
       "canonical": "https://aiventure.ro/blog/test-repetabil-vizibilitate-ai/",
       "sha256": "9dce7a009b932bb87e8d207663e1f8e62cb1833e241852c314d6b7bb79cb20a6",
+      "ots_status": "NOT_TIMESTAMPED"
+    },
+    {
+      "id": "ART-000016",
+      "title": "GEO GOLD: de la 92/100 la un standard verificabil de AI Readiness",
+      "slug": "geo-gold-readiness-92-98-100-verified",
+      "category": "GEO · Readiness · Evidence",
+      "author": "Dan Ionescu",
+      "published": "2026-09-29",
+      "version": "1.0",
+      "status": "published",
+      "canonical": "https://aiventure.ro/blog/geo-gold-readiness-92-98-100-verified/",
+      "sha256": "02bba94658a8b26df5e9dedc7b4171983605c3dc40a2b6d418eb5098b1e0996e",
       "ots_status": "NOT_TIMESTAMPED"
     }
   ]
