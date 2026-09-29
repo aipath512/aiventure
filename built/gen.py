@@ -1899,7 +1899,6 @@ open(os.path.join(OUT, "_redirects"), "w", encoding="utf-8").write(
 /agent-ready/          /solutii/agent-ready/   301
 /a2a/                  /solutii/a2a/           301
 /ai-maturity/          /niveluri/              301
-/blog/                 /resurse/               301
 /proof.json            /ai.json                301
 """)
 
