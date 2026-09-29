@@ -1,1 +1,125 @@
-<!doctype html><html lang="ro"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Blog · AiVenture Knowledge Base</title><meta name="description" content="AiVenture Knowledge Base: AI-LENS, AIO, GEO, AI Signals, WEB-OM, WEB-AI și WEB-A2A."><link rel="canonical" href="https://aiventure.ro/blog/"><style>*{box-sizing:border-box}body{margin:0;background:#090b10;color:#f5f5f5;font:16px/1.55 system-ui,-apple-system,Segoe UI,sans-serif}main{max-width:1000px;margin:auto;padding:28px 18px 80px}a{color:#e7c86e;text-decoration:none}.crumb{font-size:13px;color:#999}h1{font-size:clamp(36px,8vw,64px);line-height:1;margin:30px 0 12px}.lead{max-width:760px;color:#c6c9d0}.search{position:sticky;top:0;background:#090b10;padding:18px 0 12px;z-index:3}input{width:100%;padding:16px 18px;font-size:18px;border-radius:14px;border:1px solid #343945;background:#11141b;color:white}.filters{display:flex;gap:8px;overflow:auto;padding:4px 0 20px}.filters button{white-space:nowrap;background:#11141b;color:#ddd;border:1px solid #343945;border-radius:999px;padding:8px 12px}.item{padding:20px 0;border-top:1px solid #282c35}.id{font:12px ui-monospace,monospace;color:#e7c86e}.item h2{font-size:21px;line-height:1.25;margin:5px 0}.meta,.count{font-size:13px;color:#999}</style></head><body><main><div class="crumb"><a href="/">AiVenture</a> / Blog</div><h1>AiVenture Knowledge Base</h1><p class="lead">Articole metodologice și tehnice despre Web-Om, Web-AI, Web-A2A, AI-LENS, AIO, GEO și AI Signals. Navigare clasică + căutare instant în aceeași bază de cunoștințe.</p><div class="search"><input id="q" type="search" placeholder="Caută articol, ID, AIO, GEO, Perplexity…"></div><div class="filters" id="filters"><button data-f="">Toate</button><button data-f="AI-LENS">AI-LENS</button><button data-f="AIO">AIO</button><button data-f="GEO">GEO</button><button data-f="AI Signals">AI Signals</button><button data-f="WEB">WEB</button></div><div id="count" class="count"></div><section id="list"></section><script>let data=[],f="";const esc=s=>String(s||"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]));async function init(){data=(await(await fetch("/blog/articles.json",{cache:"no-store"})).json()).articles;draw()}function draw(){let q=document.querySelector("#q").value.toLowerCase().trim(),r=data.filter(a=>{let h=(a.id+" "+a.title+" "+a.category).toLowerCase();return(!q||h.includes(q))&&(!f||h.includes(f.toLowerCase()))});document.querySelector("#count").textContent=r.length+" articole";document.querySelector("#list").innerHTML=r.map(a=>`<article class="item"><div class="id">${esc(a.id)}</div><h2><a href="/blog/${esc(a.slug)}/">${esc(a.title)}</a></h2><div class="meta">${esc(a.category)} · v${esc(a.version)}</div></article>`).join("")}document.querySelector("#q").oninput=draw;document.querySelector("#filters").onclick=e=>{if(e.target.dataset.f!==undefined){f=e.target.dataset.f;draw()}};init();</script></main></body></html>
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Blog · AiVenture Knowledge Base</title>
+<meta name="description" content="AiVenture Knowledge Base: AI-LENS, AIO, GEO, AI Signals, WEB-OM, WEB-AI și WEB-A2A.">
+<link rel="canonical" href="https://aiventure.ro/blog/">
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#090b10;color:#f5f5f5;font:16px/1.55 system-ui,-apple-system,Segoe UI,sans-serif}
+main{max-width:1000px;margin:auto;padding:28px 18px 80px}
+a{color:#e7c86e;text-decoration:none}
+.crumb{font-size:13px;color:#999}
+h1{font-size:clamp(36px,8vw,64px);line-height:1;margin:30px 0 12px}
+.lead{max-width:760px;color:#c6c9d0}
+.search{position:sticky;top:0;background:#090b10;padding:18px 0 12px;z-index:3}
+input{width:100%;padding:16px 18px;font-size:18px;border-radius:14px;border:1px solid #343945;background:#11141b;color:white}
+.item{padding:20px 0;border-top:1px solid #282c35}
+.id{font:12px ui-monospace,monospace;color:#e7c86e}
+.item h2{font-size:21px;line-height:1.25;margin:5px 0}
+.meta,.count{font-size:13px;color:#999}
+.read{display:inline-block;margin-top:10px;font-weight:700}
+</style>
+</head>
+<body>
+<main>
+<div class="crumb"><a href="/">AiVenture</a> / Blog</div>
+<h1>AiVenture Knowledge Base</h1>
+<p class="lead">Articole metodologice și tehnice despre Web-Om, Web-AI, Web-A2A, AI-LENS, AIO, GEO și AI Signals.</p>
+<div class="search"><input id="q" type="search" placeholder="Caută articol, ID, AIO, GEO, Perplexity…"></div>
+<div id="count" class="count">15 articole</div>
+<section id="list">
+<article class="item" data-search="art-000015 verifică vizibilitatea ai printr-un test repetabil ai visibility · measurement · monitoring">
+<div class="id">ART-000015</div>
+<h2><a href="/blog/test-repetabil-vizibilitate-ai/">Verifică vizibilitatea AI printr-un test repetabil</a></h2>
+<div class="meta">AI Visibility · Measurement · Monitoring · 2026-09-27 · v1.0</div>
+<a class="read" href="/blog/test-repetabil-vizibilitate-ai/">Citește articolul →</a>
+</article><article class="item" data-search="art-000014 blog în era ai: de la content marketing la ai knowledge corpus aio · content · ai knowledge corpus">
+<div class="id">ART-000014</div>
+<h2><a href="/blog/blog-ai-knowledge-corpus/">BLOG în era AI: de la Content Marketing la AI Knowledge Corpus</a></h2>
+<div class="meta">AIO · Content · AI Knowledge Corpus · 2026-09-27 · v1.0</div>
+<a class="read" href="/blog/blog-ai-knowledge-corpus/">Citește articolul →</a>
+</article><article class="item" data-search="art-000013 aio — ai optimization: cum pregătești un site pentru a fi înțeles și utilizat de sisteme ai aio · methodology · technical architecture">
+<div class="id">ART-000013</div>
+<h2><a href="/blog/aio-ai-optimization-26-signals/">AIO — AI Optimization: cum pregătești un site pentru a fi înțeles și utilizat de sisteme AI</a></h2>
+<div class="meta">AIO · Methodology · Technical Architecture · 2026-09-27 · v1.0</div>
+<a class="read" href="/blog/aio-ai-optimization-26-signals/">Citește articolul →</a>
+</article><article class="item" data-search="art-000012 aio inter-ai: audit zilnic comparabil între chatgpt, claude, gemini și perplexity aio · inter-ai · multi-model observability">
+<div class="id">ART-000012</div>
+<h2><a href="/blog/aio-inter-ai-daily-before-after/">AIO INTER-AI: audit zilnic comparabil între ChatGPT, Claude, Gemini și Perplexity</a></h2>
+<div class="meta">AIO · INTER-AI · Multi-Model Observability · 2026-09-27 · v1.0</div>
+<a class="read" href="/blog/aio-inter-ai-daily-before-after/">Citește articolul →</a>
+</article><article class="item" data-search="art-000011 ai signals × perplexity: 27, 19 sau alt număr de semnale? ai signals · perplexity · methodology">
+<div class="id">ART-000011</div>
+<h2><a href="/blog/ai-signals-perplexity-taxonomy-versioning/">AI Signals × Perplexity: 27, 19 sau alt număr de semnale?</a></h2>
+<div class="meta">AI Signals · Perplexity · Methodology · 2026-09-27 · v1.0</div>
+<a class="read" href="/blog/ai-signals-perplexity-taxonomy-versioning/">Citește articolul →</a>
+</article><article class="item" data-search="art-000010 daily aio audit — 26 de semnale, aceeași metodă, în fiecare zi aio · daily audit · observability">
+<div class="id">ART-000010</div>
+<h2><a href="/blog/daily-aio-audit-26-signals/">DAILY AIO AUDIT — 26 de semnale, aceeași metodă, în fiecare zi</a></h2>
+<div class="meta">AIO · Daily Audit · Observability · 2026-09-27 · v1.0</div>
+<a class="read" href="/blog/daily-aio-audit-26-signals/">Citește articolul →</a>
+</article><article class="item" data-search="art-000009 geo 28 × perplexity: cum se calculează și se verifică scorul geo geo · multi-model measurement">
+<div class="id">ART-000009</div>
+<h2><a href="/blog/geo-28-perplexity-scor-audit-ai/">GEO 28 × Perplexity: cum se calculează și se verifică scorul GEO</a></h2>
+<div class="meta">GEO · Multi-Model Measurement · 2026-09-27 · v1.0</div>
+<a class="read" href="/blog/geo-28-perplexity-scor-audit-ai/">Citește articolul →</a>
+</article><article class="item" data-search="art-000008 cum se configurează llms.txt pentru geo și accesul agenților ai geo · ai signals · technical configuration">
+<div class="id">ART-000008</div>
+<h2><a href="/blog/llms-txt-geo-ai-agents/">Cum se configurează llms.txt pentru GEO și accesul agenților AI</a></h2>
+<div class="meta">GEO · AI Signals · Technical Configuration · 2026-09-27 · v1.0</div>
+<a class="read" href="/blog/llms-txt-geo-ai-agents/">Citește articolul →</a>
+</article><article class="item" data-search="art-000007 cum verifici dacă robots.txt funcționează corect pentru google și agenții ai ai signals · technical verification">
+<div class="id">ART-000007</div>
+<h2><a href="/blog/verificare-robots-txt-google-ai-crawlers/">Cum verifici dacă robots.txt funcționează corect pentru Google și agenții AI</a></h2>
+<div class="meta">AI Signals · Technical Verification · 2026-09-27 · v1.0</div>
+<a class="read" href="/blog/verificare-robots-txt-google-ai-crawlers/">Citește articolul →</a>
+</article><article class="item" data-search="art-000006 de la audit punctual la observare ai zilnică și verificabilă ai-lens · automation">
+<div class="id">ART-000006</div>
+<h2><a href="/blog/ai-lens-daily-multi-model-observability/">De la audit punctual la observare AI zilnică și verificabilă</a></h2>
+<div class="meta">AI-LENS · Automation · 2026-09-27 · v1.0</div>
+<a class="read" href="/blog/ai-lens-daily-multi-model-observability/">Citește articolul →</a>
+</article><article class="item" data-search="art-000005 ai-lens™: cadrul comun de observare pentru web-om, web-ai și web-a2a ai-lens · methodology">
+<div class="id">ART-000005</div>
+<h2><a href="/blog/ai-lens-cadru-comun-web-om-web-ai-web-a2a/">AI-LENS™: cadrul comun de observare pentru WEB-OM, WEB-AI și WEB-A2A</a></h2>
+<div class="meta">AI-LENS · Methodology · 2026-09-27 · v1.0</div>
+<a class="read" href="/blog/ai-lens-cadru-comun-web-om-web-ai-web-a2a/">Citește articolul →</a>
+</article><article class="item" data-search="art-000004 all categories · multi-model · same kpi ai-lens · multi-model signal intelligence">
+<div class="id">ART-000004</div>
+<h2><a href="/blog/all-categories-multi-model-same-kpi/">ALL CATEGORIES · MULTI-MODEL · SAME KPI</a></h2>
+<div class="meta">AI-LENS · Multi-Model Signal Intelligence · 2026-09-27 · v1.0</div>
+<a class="read" href="/blog/all-categories-multi-model-same-kpi/">Citește articolul →</a>
+</article><article class="item" data-search="art-000003 misiunea aiventure: de la web-om la web-ai și web-a2a aiventure · methodology">
+<div class="id">ART-000003</div>
+<h2><a href="/blog/misiunea-web-om-web-ai-web-a2a/">Misiunea AiVenture: de la WEB-OM la WEB-AI și WEB-A2A</a></h2>
+<div class="meta">AiVenture · Methodology · 2026-09-27 · v1.0</div>
+<a class="read" href="/blog/misiunea-web-om-web-ai-web-a2a/">Citește articolul →</a>
+</article><article class="item" data-search="art-000002 metodologia ai-lens™: cadrul comun de observare pentru web-om, web-ai și web-a2a ai-lens · research">
+<div class="id">ART-000002</div>
+<h2><a href="/blog/metodologia-ai-lens-web-om-web-ai-web-a2a/">Metodologia AI-LENS™: cadrul comun de observare pentru WEB-OM, WEB-AI și WEB-A2A</a></h2>
+<div class="meta">AI-LENS · Research · 2026-09-27 · v1.0</div>
+<a class="read" href="/blog/metodologia-ai-lens-web-om-web-ai-web-a2a/">Citește articolul →</a>
+</article><article class="item" data-search="art-000001 ai-lens™: de la analiza unui site la perspectiva multi-model asupra unei industrii ai-lens · research">
+<div class="id">ART-000001</div>
+<h2><a href="/blog/ai-lens-site-industrie/">AI-LENS™: de la analiza unui site la perspectiva multi-model asupra unei industrii</a></h2>
+<div class="meta">AI-LENS · Research · 2026-09-27 · v1.0</div>
+<a class="read" href="/blog/ai-lens-site-industrie/">Citește articolul →</a>
+</article>
+</section>
+<script>
+const q=document.getElementById('q');
+const items=[...document.querySelectorAll('.item')];
+const count=document.getElementById('count');
+function filter(){
+  const s=q.value.toLowerCase().trim();
+  let n=0;
+  items.forEach(el=>{const ok=!s||el.dataset.search.includes(s);el.hidden=!ok;if(ok)n++;});
+  count.textContent=n+' articole';
+}
+q.addEventListener('input',filter);
+</script>
+</main>
+</body>
+</html>
