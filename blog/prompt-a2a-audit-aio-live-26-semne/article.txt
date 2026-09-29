@@ -1,0 +1,35 @@
+# Prompt A2A pentru audit AIO live: 26 de semnale, dovezi și scor reproducibil
+
+Un audit AIO util trebuie să fie live, repetabil și bazat pe dovezi. Nu este suficient să verifici dacă există fișiere precum llms.txt sau ai.json. Trebuie verificat dacă ele descriu corect paginile live.
+
+## Ce face promptul
+
+Promptul definește un agent A2A care auditează live homepage-ul, pagina AIO, robots.txt, sitemap.xml, llms.txt și artefactele AIO declarate.
+
+Pentru fiecare resursă, agentul verifică accesul HTTP, validitatea formatului și concordanța dintre afirmații, headinguri, ancore, rezumate, sesiuni, date și paginile publicate.
+
+## Cele 26 de semnale
+
+Auditul evaluează exact 26 de semnale: citarea și vizibilitatea în modele AI, extractabilitatea listelor, indexabilitatea, harta semantică internă, versionarea, prospețimea, metadatele, formatele RAG, datele proprii și semnalele de expertiză.
+
+Fiecare semnal trebuie să includă număr, nume, verdict, regulă verificată, observație concretă, URL, evidence_id și motiv.
+
+## Reguli de scor
+
+PASS valorează un punct. PARTIAL și FAIL valorează zero. UNKNOWN este raportat separat atunci când platforma nu poate fi testată direct sau nu există o regulă măsurabilă.
+
+Scorul confirmat este PASS împărțit la 26, înmulțit cu 100. Limita superioară ipotetică poate include UNKNOWN, dar nu trebuie prezentată drept scor obținut.
+
+## Comparația în timp
+
+BEFORE și AFTER sunt comparabile doar dacă folosesc aceeași rubrică, aceeași metodă și dovezi păstrate. Dacă baseline-ul nu este comparabil, raportul trebuie să spună DELTA NECALCULABILĂ, nu să pretindă o regresie a site-ului.
+
+## Dovezi și limite
+
+Raportul trebuie să includă timestamp complet Europe/Bucharest, URL-uri testate, coduri HTTP, hash SHA-256 pentru resursele descărcate, toate cele 26 de verdicte, limitele testului și primele trei corecții prioritare.
+
+Faptul că robots.txt permite un crawler nu dovedește citarea sau includerea într-un corpus. Existența unui fișier nu dovedește că informația lui este actuală sau corectă.
+
+## Concluzie
+
+Promptul transformă auditul AIO dintr-un scor declarativ într-un proces verificabil: observă, păstrează dovezi, compară numai rezultate comparabile și separă clar ce este măsurat de ceea ce rămâne necunoscut.
