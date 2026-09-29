@@ -1,1 +1,51 @@
-Articolul aprobat: Cât costă SEO, AEO, GEO și serviciile AI pentru o firmă?
+# Cât costă SEO, AEO, GEO și serviciile AI?
+
+O firmă poate investi în SEO, conținut, optimizare pentru răspunsuri AI și automatizări. Prețul nu depinde doar de software, ci mai ales de obiective, muncă, implementare și controlul uman.
+
+## SEO clasic
+
+SEO ajută site-ul să fie găsit în Google și în alte motoare de căutare.
+
+Ca reper orientativ:
+
+- România: aproximativ €300–€1.000 pe lună
+- Europa de Vest: aproximativ €800–€2.500 pe lună
+- SUA: aproximativ $500–$5.000 pe lună
+
+Prețul real depinde de site, concurență, numărul de pagini, conținut și livrabile.
+
+## AEO, GEO și AI-SEO
+
+AEO organizează conținutul pentru întrebări și răspunsuri clare.
+
+GEO urmărește ca o firmă să fie mai ușor de găsit și folosită ca sursă în răspunsurile generate de AI.
+
+AI-SEO combină SEO clasic cu optimizarea și măsurarea vizibilității în căutări AI.
+
+Aceste servicii se suprapun frecvent. De exemplu, o pagină de servicii mai clară poate ajuta simultan SEO, AEO, GEO și conversia comercială.
+
+## Software nu înseamnă serviciu
+
+Un instrument poate analiza site-ul, monitoriza apariții sau sugera îmbunătățiri. Nu înlocuiește automat strategia, scrierea, implementarea, verificarea și responsabilitatea.
+
+De aceea, un abonament software poate costa zeci sau sute de dolari pe lună, în timp ce un serviciu complet de agenție poate costa mii.
+
+## De la manual la agentic
+
+În modelul clasic, specialistul verifică și intervine periodic.
+
+În modelul agentic, sistemele pot monitoriza permanent, pot semnala probleme și pot executa acțiuni aprobate în prealabil. Omul rămâne responsabil pentru reguli, excepții și decizii importante.
+
+Un serviciu agentic nu este doar un chatbot sau un abonament AI. El poate include implementare, integrări, consum software, monitorizare, mentenanță și verificare umană.
+
+## Fără costuri duble
+
+SEO, AEO, GEO, ON-PAGE și ON-SITE nu trebuie facturate ca servicii complet separate atunci când includ aceeași muncă.
+
+O ofertă corectă se construiește pe livrabile clare: audit tehnic, pagini optimizate, conținut pentru întrebări frecvente, date structurate, monitorizare, automatizări, rapoarte și intervenții.
+
+## Concluzie
+
+Prețurile sunt doar repere de planificare, nu tarife fixe. O firmă trebuie să compare ofertele după ce primește concret: ce se implementează, cine verifică, ce este automatizat și ce rezultate pot fi măsurate.
+
+Reperele de cost și delimitarea dintre servicii manuale, software și operare agentică provin din documentul AiVenture „Servicii și bugete orientative”, revizia 27 septembrie 2026.
