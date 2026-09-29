@@ -1,0 +1,35 @@
+# Cum se calculează corect scorul GEO într-un audit AI
+
+Un scor GEO arată ce a măsurat metodologia acelui audit. Nu este un procent universal al vizibilității în AI și nu este o predicție directă a vânzărilor.
+
+În cadrul publicat de 3webobs.com, scorul GEO se calculează ca medie ponderată a 28 de semnale GEO. Nu este simplul număr de semnale PASS din 28.
+
+## Formula
+
+Scor GEO = suma punctajelor semnalelor înmulțite cu ponderile lor, împărțită la suma ponderilor semnalelor evaluabile.
+
+Semnalele not applicable sunt excluse atât din punctaj, cât și din totalul ponderilor.
+
+## De ce contează ponderile
+
+Nu toate semnalele au aceeași importanță. Catalogul publică ponderi individuale. De exemplu, datele structurate pentru graful entităților au pondere 10, completitudinea schema Organization are pondere 9, iar ai.json și declarația de intenții au câte 6.
+
+Un scor de tipul X din 28 PASS este util ca indicator de numărare, dar nu este automat scorul GEO ponderat.
+
+## Ce trebuie verificat
+
+Un audit GEO poate verifica llms.txt, politica AI, directivele din robots.txt, datele structurate, Organization schema, referințe de identitate, ai.json, intenții, guvernanță machine-readable, entități, profiluri independente, LinkedIn, mențiuni editoriale, expertiza autorului, canonical, hreflang, context geografic, Open Graph, integritate, istoric de modificări și linkuri externe.
+
+## Ce nu trebuie inventat
+
+Ponderile nu sunt suficiente pentru a calcula un scor final dacă metodologia nu precizează scala numerică pentru PASS, PARTIAL și FAIL.
+
+Nu trebuie presupus că PARTIAL valorează jumătate din pondere fără o regulă explicită. Semnalele care nu pot fi verificate nu trebuie tratate automat ca FAIL.
+
+## Concluzie
+
+Un scor GEO nu spune câte fișiere are un site. Spune cât de coerent și verificabil este reprezentată firma ca entitate pentru sisteme AI.
+
+Pentru interpretare corectă, citește întotdeauna formula, ponderile, numitorul, regulile pentru semnale neaplicabile și dovezile aferente fiecărui verdict.
+
+Sursă: catalogul și glosarul GEO publicate de 3webobs.com.
