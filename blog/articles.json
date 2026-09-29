@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated": "2026-09-27",
+  "updated": "2026-09-29",
   "articles": [
     {
       "id": "ART-000001",
@@ -195,6 +195,18 @@
       "status": "published",
       "canonical": "https://aiventure.ro/blog/test-repetabil-vizibilitate-ai/",
       "sha256": "9dce7a009b932bb87e8d207663e1f8e62cb1833e241852c314d6b7bb79cb20a6",
+      "ots_status": "NOT_TIMESTAMPED"
+    },
+    {
+      "id": "ART-000016",
+      "title": "GEO GOLD: de la readiness verificabil la performanță măsurabilă",
+      "slug": "geo-gold-readiness-performance",
+      "category": "GEO · AI Readiness · Measurement",
+      "author": "Dan Ionescu",
+      "published": "2026-09-29",
+      "version": "1.0",
+      "status": "draft",
+      "canonical": "https://aiventure.ro/blog/geo-gold-readiness-performance/",
       "ots_status": "NOT_TIMESTAMPED"
     }
   ]
