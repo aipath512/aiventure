@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated": "2026-09-29",
+  "updated": "2026-10-01",
   "articles": [
     {
       "id": "ART-000001",
@@ -209,6 +209,182 @@
       "canonical": "https://aiventure.ro/blog/geo-gold-readiness-92-98-100-verified/",
       "sha256": "02bba94658a8b26df5e9dedc7b4171983605c3dc40a2b6d418eb5098b1e0996e",
       "ots_status": "NOT_TIMESTAMPED"
+    },
+    {
+      "id": "ART-000017",
+      "title": "Audit AIO pentru aiventure.ro: ce funcționează și ce trebuie corectat",
+      "slug": "audit-aio-aiventure-ce-functioneaza-ce-corectam",
+      "category": "AIO · AI Visibility · Audit",
+      "author": "AiVenture",
+      "published": "2026-09-29",
+      "version": "1.0",
+      "status": "published",
+      "canonical": "https://aiventure.ro/blog/audit-aio-aiventure-ce-functioneaza-ce-corectam/"
+    },
+    {
+      "id": "ART-000018",
+      "title": "GEO: ce arată studiul Princeton despre vizibilitatea în răspunsuri AI",
+      "slug": "geo-princeton-cum-creste-vizibilitatea-in-raspunsuri-ai",
+      "category": "GEO · AI Visibility · Research",
+      "author": "AiVenture",
+      "published": "2026-09-29",
+      "version": "1.0",
+      "status": "published",
+      "canonical": "https://aiventure.ro/blog/geo-princeton-cum-creste-vizibilitatea-in-raspunsuri-ai/"
+    },
+    {
+      "id": "ART-000019",
+      "title": "Ce înseamnă GEO Readiness 100/100 și ce nu garantează",
+      "slug": "ce-inseamna-geo-readiness-100-100",
+      "category": "GEO · Evidence · Verification",
+      "author": "AiVenture",
+      "published": "2026-09-29",
+      "version": "1.0",
+      "status": "published",
+      "canonical": "https://aiventure.ro/blog/ce-inseamna-geo-readiness-100-100/"
+    },
+    {
+      "id": "ART-000020",
+      "title": "Ce înseamnă evaluarea AIO 98,08/100 pentru AiVenture",
+      "slug": "ce-inseamna-aio-assessment-98-08-100",
+      "category": "AIO · Assessment · AI Visibility",
+      "author": "AiVenture",
+      "published": "2026-09-29",
+      "version": "1.0",
+      "status": "published",
+      "canonical": "https://aiventure.ro/blog/ce-inseamna-aio-assessment-98-08-100/"
+    },
+    {
+      "id": "ART-000021",
+      "title": "Prima verificare AIO ChatGPT pentru aiventure.ro: ce funcționează și ce trebuie sincronizat",
+      "slug": "prima-verificare-aio-chatgpt-aiventure-ro",
+      "category": "AIO · ChatGPT · Audit",
+      "author": "AiVenture",
+      "published": "2026-09-29",
+      "version": "1.0",
+      "status": "published",
+      "canonical": "https://aiventure.ro/blog/prima-verificare-aio-chatgpt-aiventure-ro/"
+    },
+    {
+      "id": "ART-000022",
+      "title": "Ce face AiVenture diferit: de la optimizare la control loop pentru creștere digitală",
+      "slug": "ce-face-aiventure-diferit-control-loop-crestere-digitala",
+      "category": "AI Strategy · Growth · AI-LENS",
+      "author": "AiVenture",
+      "published": "2026-09-29",
+      "version": "1.0",
+      "status": "published",
+      "canonical": "https://aiventure.ro/blog/ce-face-aiventure-diferit-control-loop-crestere-digitala/"
+    },
+    {
+      "id": "ART-000023",
+      "title": "Ce instrumente externe se folosesc într-un audit AEO, GEO, AIO și AI-SEO",
+      "slug": "instrumente-externe-audit-aeo-geo-aio-ai-seo",
+      "category": "Tools · AEO · GEO · AI-SEO",
+      "author": "AiVenture",
+      "published": "2026-09-29",
+      "version": "1.0",
+      "status": "published",
+      "canonical": "https://aiventure.ro/blog/instrumente-externe-audit-aeo-geo-aio-ai-seo/"
+    },
+    {
+      "id": "ART-000024",
+      "title": "Prompt A2A pentru audit AIO live: 26 de semnale, dovezi și scor reproducibil",
+      "slug": "prompt-a2a-audit-aio-live-26-semne",
+      "category": "A2A · AIO · Audit Methodology",
+      "author": "AiVenture",
+      "published": "2026-09-29",
+      "version": "1.0",
+      "status": "published",
+      "canonical": "https://aiventure.ro/blog/prompt-a2a-audit-aio-live-26-semne/"
+    },
+    {
+      "id": "ART-000025",
+      "title": "Cum se calculează corect scorul GEO într-un audit AI",
+      "slug": "cum-se-calculeaza-scorul-geo-audit-ai",
+      "category": "GEO · Scoring · Audit Methodology",
+      "author": "AiVenture",
+      "published": "2026-09-29",
+      "version": "1.0",
+      "status": "published",
+      "canonical": "https://aiventure.ro/blog/cum-se-calculeaza-scorul-geo-audit-ai/"
+    },
+    {
+      "id": "ART-000026",
+      "title": "Cum interpretezi corect scorul dintr-un audit AI",
+      "slug": "cum-interpretezi-corect-scorul-audit-ai",
+      "category": "AI Audit · Scoring · Methodology",
+      "author": "AiVenture",
+      "published": "2026-09-29",
+      "version": "1.0",
+      "status": "published",
+      "canonical": "https://aiventure.ro/blog/cum-interpretezi-corect-scorul-audit-ai/"
+    },
+    {
+      "id": "ART-000027",
+      "title": "Cât costă SEO, AEO, GEO și serviciile AI?",
+      "slug": "cat-costa-seo-aeo-geo-serviciile-ai",
+      "category": "SEO · AEO · GEO · AI Services",
+      "author": "AiVenture",
+      "published": "2026-09-29",
+      "version": "1.0",
+      "status": "published",
+      "canonical": "https://aiventure.ro/blog/cat-costa-seo-aeo-geo-serviciile-ai/"
+    },
+    {
+      "id": "ART-000028",
+      "title": "Cum implementezi Web-AI pentru o firmă",
+      "slug": "implementare-web-ai-firma",
+      "category": "",
+      "author": "AiVenture",
+      "published": "",
+      "version": "1.0",
+      "status": "published",
+      "canonical": "https://aiventure.ro/blog/implementare-web-ai-firma/"
+    },
+    {
+      "id": "ART-000029",
+      "title": "Cum măsori vizibilitatea firmei în AI Search",
+      "slug": "masurare-vizibilitate-ai-ghid",
+      "category": "",
+      "author": "AiVenture",
+      "published": "",
+      "version": "1.0",
+      "status": "published",
+      "canonical": "https://aiventure.ro/blog/masurare-vizibilitate-ai-ghid/"
+    },
+    {
+      "id": "ART-000030",
+      "title": "Cum optimizezi un site pentru AI Search",
+      "slug": "optimizare-site-ai-search",
+      "category": "",
+      "author": "AiVenture",
+      "published": "",
+      "version": "1.0",
+      "status": "published",
+      "canonical": "https://aiventure.ro/blog/optimizare-site-ai-search/"
+    },
+    {
+      "id": "ART-000031",
+      "title": "Servicii și bugete orientative pentru AI și agenți",
+      "slug": "servicii-bugete-orientative-agent-ai",
+      "category": "",
+      "author": "AiVenture",
+      "published": "",
+      "version": "1.0",
+      "status": "published",
+      "canonical": "https://aiventure.ro/blog/servicii-bugete-orientative-agent-ai/"
+    },
+    {
+      "id": "ART-000032",
+      "title": "Cum pregătești un serviciu B2B pentru agenți AI",
+      "slug": "serviciu-b2b-agent-ready",
+      "category": "",
+      "author": "AiVenture",
+      "published": "",
+      "version": "1.0",
+      "status": "published",
+      "canonical": "https://aiventure.ro/blog/serviciu-b2b-agent-ready/"
     }
   ]
 }
