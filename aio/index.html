@@ -50,20 +50,314 @@ section{padding:52px 0;border-top:1px solid var(--line)} .grid{display:grid;grid
 </style>
 <script type="application/ld+json">
 {
-"@context":"https://schema.org",
-"@graph":[
-{"@type":"Organization","@id":"https://aiventure.ro/#organization","name":"AiVenture S.R.L.","url":"https://aiventure.ro/","email":"contact@5thelement.ai","telephone":"+40737123540"},
-{"@type":"WebSite","@id":"https://aiventure.ro/#website","url":"https://aiventure.ro/","name":"AiVenture","publisher":{"@id":"https://aiventure.ro/#organization"}},
-{"@type":["WebPage","AboutPage"],"@id":"https://aiventure.ro/aio/#webpage","url":"https://aiventure.ro/aio/","name":"AIO — AI Optimization","inLanguage":"ro","isPartOf":{"@id":"https://aiventure.ro/#website"},"about":{"@id":"https://aiventure.ro/aio/#service"}},
-{"@type":"Service","@id":"https://aiventure.ro/aio/#service","name":"AIO — AI Optimization","provider":{"@id":"https://aiventure.ro/#organization"},"description":"Pregătirea structurală, semantică și tehnică a informației pentru înțelegere, procesare și utilizare de către sisteme AI."},
-{"@type":"BreadcrumbList","itemListElement":[
-{"@type":"ListItem","position":1,"name":"Acasă","item":"https://aiventure.ro/"},
-{"@type":"ListItem","position":2,"name":"Produse & Servicii","item":"https://aiventure.ro/produse/"},
-{"@type":"ListItem","position":3,"name":"AIO","item":"https://aiventure.ro/aio/"}
-]},
-{"@type":"ItemList","name":"26 semnale AIO","numberOfItems":26,"itemListElement":[{"@type":"ListItem","position":1,"name":"Perplexity Source Citation"},{"@type":"ListItem","position":2,"name":"ChatGPT Browse Visibility"},{"@type":"ListItem","position":3,"name":"Gemini Grounding Eligibility"},{"@type":"ListItem","position":4,"name":"Claude Source Indexing"},{"@type":"ListItem","position":5,"name":"Source Citation Quality"},{"@type":"ListItem","position":6,"name":"Table / List Extractability"},{"@type":"ListItem","position":7,"name":"Content Indexability by LLMs"},{"@type":"ListItem","position":8,"name":"Internal Link Semantic Map"},{"@type":"ListItem","position":9,"name":"Chronological Versioning"},{"@type":"ListItem","position":10,"name":"Token-Efficient Headings"},{"@type":"ListItem","position":11,"name":"Content Freshness Signal"},{"@type":"ListItem","position":12,"name":"Corpus Inclusion Signal"},{"@type":"ListItem","position":13,"name":"Contrastive Analysis Presence"},{"@type":"ListItem","position":14,"name":"Dense Paragraph Summaries"},{"@type":"ListItem","position":15,"name":"AI Summary Block"},{"@type":"ListItem","position":16,"name":"Contradiction Avoidance"},{"@type":"ListItem","position":17,"name":"Allow-Lane Matrix"},{"@type":"ListItem","position":18,"name":"Semantic Keyword Clusters"},{"@type":"ListItem","position":19,"name":"Fact Density vs Fluff Ratio"},{"@type":"ListItem","position":20,"name":"Long-Form Completeness"},{"@type":"ListItem","position":21,"name":"Concept Cluster Coverage"},{"@type":"ListItem","position":22,"name":"Inference Trigger Keywords"},{"@type":"ListItem","position":23,"name":"LLM-Readable Metadata"},{"@type":"ListItem","position":24,"name":"Unique Data / Proprietary Stats"},{"@type":"ListItem","position":25,"name":"RAG-Ready Content Format"},{"@type":"ListItem","position":26,"name":"Expertise Signals in Content"}]},
-{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Ce este AIO?","acceptedAnswer":{"@type":"Answer","text":"AIO = AI Optimization: pregătirea structurală, semantică și tehnică a unui site astfel încât conținutul să poată fi înțeles, procesat și folosit corect de sisteme AI."}},{"@type":"Question","name":"Care este diferența dintre SEO și AIO?","acceptedAnswer":{"@type":"Answer","text":"SEO urmărește vizibilitatea în motoarele de căutare clasice. AIO urmărește înțelegerea corectă a afacerii și conținutului de către sisteme AI."}},{"@type":"Question","name":"Care este diferența dintre AEO și AIO?","acceptedAnswer":{"@type":"Answer","text":"AEO optimizează conținutul pentru extragerea răspunsurilor. AIO este mai larg și pregătește structura, semantica și metadatele pentru consum AI."}},{"@type":"Question","name":"Care este diferența dintre GEO și AIO?","acceptedAnswer":{"@type":"Answer","text":"GEO urmărește citarea sau menționarea în răspunsuri generative. AIO pregătește sursa pentru a putea fi interpretată și utilizată corect de sisteme AI."}},{"@type":"Question","name":"Câte semnale AIO urmărește AiVenture?","acceptedAnswer":{"@type":"Answer","text":"Registrul utilizat pentru această pagină conține 26 de semnale AIO canonice."}},{"@type":"Question","name":"Ce sunt artefactele AIO?","acceptedAnswer":{"@type":"Answer","text":"Sunt resurse machine-readable care declară explicit clustere semantice, acoperire conceptuală, statistici, chunk-uri RAG, tabele extractabile, rezumate AI și alte structuri."}},{"@type":"Question","name":"AIO garantează citarea de către ChatGPT sau Gemini?","acceptedAnswer":{"@type":"Answer","text":"Nu. AiVenture nu garantează citarea, recomandarea sau indexarea de către un model AI; acestea depind și de platformele externe."}},{"@type":"Question","name":"Ce înseamnă RAG-ready?","acceptedAnswer":{"@type":"Answer","text":"Conținutul este structurat în unități coerente și identificabile care pot fi recuperate și folosite de sisteme de retrieval fără fragmentare arbitrară."}},{"@type":"Question","name":"De ce sunt importante heading-urile pentru AIO?","acceptedAnswer":{"@type":"Answer","text":"Heading-urile scurte și semantice ajută sistemele AI să identifice rapid ierarhia și subiectele paginii."}},{"@type":"Question","name":"FAQ-urile sunt vizibile și în Schema.org?","acceptedAnswer":{"@type":"Answer","text":"Da. Întrebările și răspunsurile de mai jos sunt vizibile pentru utilizator și sunt reprezentate 1:1 în JSON-LD FAQPage."}},{"@type":"Question","name":"Ce înseamnă LLM-readable metadata?","acceptedAnswer":{"@type":"Answer","text":"Metadatele descriu explicit pagina, identitatea, canonical-ul, relațiile și resursele relevante într-o formă ușor de procesat automat."}},{"@type":"Question","name":"Pagina AIO este ea însăși optimizată AIO?","acceptedAnswer":{"@type":"Answer","text":"Da. Pagina folosește structură semantică, rezumat dens, liste extractabile, FAQ vizibil, JSON-LD, metadate și legături către artefactele machine-readable."}}]}
-]}
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://aiventure.ro/#organization",
+      "name": "AiVenture S.R.L.",
+      "url": "https://aiventure.ro/",
+      "email": "contact@5thelement.ai",
+      "telephone": "+40737123540"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://aiventure.ro/#website",
+      "url": "https://aiventure.ro/",
+      "name": "AiVenture",
+      "publisher": {
+        "@id": "https://aiventure.ro/#organization"
+      },
+      "inLanguage": "ro-RO"
+    },
+    {
+      "@type": [
+        "WebPage",
+        "AboutPage"
+      ],
+      "@id": "https://aiventure.ro/aio/#webpage",
+      "url": "https://aiventure.ro/aio/",
+      "name": "AIO — AI Optimization",
+      "inLanguage": "ro-RO",
+      "isPartOf": {
+        "@id": "https://aiventure.ro/#website"
+      },
+      "about": {
+        "@id": "https://aiventure.ro/aio/#service"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://aiventure.ro/aio/#service",
+      "name": "AIO — AI Optimization",
+      "provider": {
+        "@id": "https://aiventure.ro/#organization"
+      },
+      "description": "Pregătirea structurală, semantică și tehnică a informației pentru înțelegere, procesare și utilizare de către sisteme AI."
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Acasă",
+          "item": "https://aiventure.ro/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Produse & Servicii",
+          "item": "https://aiventure.ro/produse/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "AIO",
+          "item": "https://aiventure.ro/aio/"
+        }
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "name": "26 semnale AIO",
+      "numberOfItems": 26,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Perplexity Source Citation"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "ChatGPT Browse Visibility"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Gemini Grounding Eligibility"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Claude Source Indexing"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "Source Citation Quality"
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "name": "Table / List Extractability"
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "name": "Content Indexability by LLMs"
+        },
+        {
+          "@type": "ListItem",
+          "position": 8,
+          "name": "Internal Link Semantic Map"
+        },
+        {
+          "@type": "ListItem",
+          "position": 9,
+          "name": "Chronological Versioning"
+        },
+        {
+          "@type": "ListItem",
+          "position": 10,
+          "name": "Token-Efficient Headings"
+        },
+        {
+          "@type": "ListItem",
+          "position": 11,
+          "name": "Content Freshness Signal"
+        },
+        {
+          "@type": "ListItem",
+          "position": 12,
+          "name": "Corpus Inclusion Signal"
+        },
+        {
+          "@type": "ListItem",
+          "position": 13,
+          "name": "Contrastive Analysis Presence"
+        },
+        {
+          "@type": "ListItem",
+          "position": 14,
+          "name": "Dense Paragraph Summaries"
+        },
+        {
+          "@type": "ListItem",
+          "position": 15,
+          "name": "AI Summary Block"
+        },
+        {
+          "@type": "ListItem",
+          "position": 16,
+          "name": "Contradiction Avoidance"
+        },
+        {
+          "@type": "ListItem",
+          "position": 17,
+          "name": "Allow-Lane Matrix"
+        },
+        {
+          "@type": "ListItem",
+          "position": 18,
+          "name": "Semantic Keyword Clusters"
+        },
+        {
+          "@type": "ListItem",
+          "position": 19,
+          "name": "Fact Density vs Fluff Ratio"
+        },
+        {
+          "@type": "ListItem",
+          "position": 20,
+          "name": "Long-Form Completeness"
+        },
+        {
+          "@type": "ListItem",
+          "position": 21,
+          "name": "Concept Cluster Coverage"
+        },
+        {
+          "@type": "ListItem",
+          "position": 22,
+          "name": "Inference Trigger Keywords"
+        },
+        {
+          "@type": "ListItem",
+          "position": 23,
+          "name": "LLM-Readable Metadata"
+        },
+        {
+          "@type": "ListItem",
+          "position": 24,
+          "name": "Unique Data / Proprietary Stats"
+        },
+        {
+          "@type": "ListItem",
+          "position": 25,
+          "name": "RAG-Ready Content Format"
+        },
+        {
+          "@type": "ListItem",
+          "position": 26,
+          "name": "Expertise Signals in Content"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Ce este AIO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "AIO = AI Optimization: pregătirea structurală, semantică și tehnică a unui site astfel încât conținutul să poată fi înțeles, procesat și folosit corect de sisteme AI."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Care este diferența dintre SEO și AIO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SEO urmărește vizibilitatea în motoarele de căutare clasice. AIO urmărește înțelegerea corectă a afacerii și conținutului de către sisteme AI."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Care este diferența dintre AEO și AIO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "AEO optimizează conținutul pentru extragerea răspunsurilor. AIO este mai larg și pregătește structura, semantica și metadatele pentru consum AI."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Care este diferența dintre GEO și AIO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "GEO urmărește citarea sau menționarea în răspunsuri generative. AIO pregătește sursa pentru a putea fi interpretată și utilizată corect de sisteme AI."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Câte semnale AIO urmărește AiVenture?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Registrul utilizat pentru această pagină conține 26 de semnale AIO canonice."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Ce sunt artefactele AIO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sunt resurse machine-readable care declară explicit clustere semantice, acoperire conceptuală, statistici, chunk-uri RAG, tabele extractabile, rezumate AI și alte structuri."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "AIO garantează citarea de către ChatGPT sau Gemini?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nu. AiVenture nu garantează citarea, recomandarea sau indexarea de către un model AI; acestea depind și de platformele externe."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Ce înseamnă RAG-ready?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Conținutul este structurat în unități coerente și identificabile care pot fi recuperate și folosite de sisteme de retrieval fără fragmentare arbitrară."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "De ce sunt importante heading-urile pentru AIO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Heading-urile scurte și semantice ajută sistemele AI să identifice rapid ierarhia și subiectele paginii."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "FAQ-urile sunt vizibile și în Schema.org?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Da. Întrebările și răspunsurile de mai jos sunt vizibile pentru utilizator și sunt reprezentate 1:1 în JSON-LD FAQPage."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Ce înseamnă LLM-readable metadata?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Metadatele descriu explicit pagina, identitatea, canonical-ul, relațiile și resursele relevante într-o formă ușor de procesat automat."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Pagina AIO este ea însăși optimizată AIO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Da. Pagina folosește structură semantică, rezumat dens, liste extractabile, FAQ vizibil, JSON-LD, metadate și legături către artefactele machine-readable."
+          }
+        }
+      ]
+    }
+  ]
+}
 </script>
 </head>
 <body>
