@@ -8,7 +8,7 @@
  * lead-ul este salvat. Emailul este opțional, best-effort.
  *
  * Variabile opționale (Cloudflare Pages → Settings → Environment variables):
- *   LEAD_TO      — adresa unde vrei notificarea (ex. contact@aiventure.ro)
+ *   LEAD_TO      — adresa unde vrei notificarea (ex. contact@5thelement.ai)
  *   LEAD_FROM    — adresa expeditor de pe domeniul tău (ex. site@aiventure.ro)
  *   RESEND_KEY   — dacă folosești Resend; fără ea se încearcă MailChannels
  */
