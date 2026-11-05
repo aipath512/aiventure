@@ -1152,6 +1152,25 @@ GLOBAL FOOTER · SESSION 0003H
 #aiv-footer-contact-email a:hover{text-decoration:underline;color:#d6aa22}
 @media(max-width:700px){#aiv-page-tools{right:10px;left:auto;bottom:12px}#aiv-page-tools a,#aiv-page-tools button{height:42px}#aiv-page-tools .aiv-wa,#aiv-page-tools .aiv-call,#aiv-page-tools .aiv-contact{width:96px}}
 </style>
+<style id="aiv-page-tools-center-right">
+/* Keep TOP/DOWN at mid-right, clear of the bottom-right assistant bubble. */
+#aiv-page-tools{
+  position:fixed!important;
+  top:50%!important;
+  bottom:auto!important;
+  right:12px!important;
+  left:auto!important;
+  transform:translateY(-50%)!important;
+  display:flex!important;
+  flex-direction:column!important;
+  gap:10px!important;
+  align-items:center!important;
+  z-index:9998!important;
+}
+@media(max-width:700px){
+  #aiv-page-tools{top:50%!important;bottom:auto!important;right:10px!important;transform:translateY(-50%)!important}
+}
+</style>
 <div id="aiv-page-tools" aria-label="Navigare rapidă">
   <button type="button" id="aiv-top" aria-label="Sus la începutul paginii" title="TOP">↑ TOP</button>
   <button type="button" id="aiv-down" aria-label="Jos la finalul paginii" title="DOWN">↓ DOWN</button>
