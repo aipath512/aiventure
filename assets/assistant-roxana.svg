@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Avatar animat Roxana Deak">
+<defs><clipPath id="c"><circle cx="100" cy="100" r="100"/></clipPath></defs>
+<g clip-path="url(#c)">
+<rect width="200" height="200" fill="#365a50"/>
+<image href="https://ecbtax.com/assets/roxana-profile.webp" x="-16" y="-10" width="232" height="222" preserveAspectRatio="xMidYMid slice">
+<animateTransform attributeName="transform" type="rotate" values="-2 100 100;2 100 100;-2 100 100" dur="2.8s" repeatCount="indefinite"/>
+</image></g></svg>
