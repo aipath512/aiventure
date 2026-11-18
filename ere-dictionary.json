@@ -113,7 +113,7 @@
       "id": "E_ORG_AIVENTURE",
       "type": "Organization",
       "name": "AiVenture S.R.L.",
-      "canonical_uri": "https://aiventure.ro/#organization",
+      "canonical_uri": "https://5thelement.ai/#organization",
       "identity_keys": [
         "legal_name",
         "canonical_uri"

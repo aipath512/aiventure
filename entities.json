@@ -8,7 +8,7 @@
     {
       "id": "E_ORG_AIVENTURE",
       "type": "Organization",
-      "canonical_uri": "https://aiventure.ro/#organization",
+      "canonical_uri": "https://5thelement.ai/#organization",
       "name": "AiVenture S.R.L.",
       "relationships": {
         "HAS_BRAND": [

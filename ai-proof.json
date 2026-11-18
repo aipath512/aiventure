@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1",
-  "entity": "https://aiventure.ro/#organization",
+  "entity": "https://5thelement.ai/#organization",
   "verification_endpoint": null,
   "note": "Registrul de verificare a documentelor rulează pe proprietatea dedicată conformității. Acest fișier declară metoda, nu conține amprente de documente ale clienților.",
   "method": {
