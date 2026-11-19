@@ -463,7 +463,7 @@
       "published": "2026-11-19",
       "published_at": "2026-11-19T13:27:55+02:00",
       "version": "1.0",
-      "status": "published",
+      "status": "withdrawn",
       "canonical": "https://aiventure.ro/blog/intrebari-frecvente-trebuie-sa-percep-tva-pentru-clientul-din/",
       "sha256": "c13d74dae80a2b507ebe8707cf7717aa97c40bc308cfb1c2d901e0edce4fad81",
       "ots_status": "PENDING",
@@ -475,7 +475,9 @@
           "sha256": "c13d74dae80a2b507ebe8707cf7717aa97c40bc308cfb1c2d901e0edce4fad81",
           "path": "/blog/intrebari-frecvente-trebuie-sa-percep-tva-pentru-clientul-din/"
         }
-      ]
+      ],
+      "withdrawn_at": "2026-11-19T11:35:00Z",
+      "withdrawn_reason": "text incomplet (inceput lipsa), titlu gresit"
     }
   ]
 }
