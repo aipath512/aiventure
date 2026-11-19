@@ -943,6 +943,7 @@ section,.hero{background:#000!important;border-color:#303030}
       <span class="aiv-brand-mark">AI</span>
       <span>AiVenture <small>INFRASTRUCTURĂ A2A PENTRU AFACERI</small></span>
     </a>
+    <label class="aiv-lang-control" aria-label="Limba site-ului"><select id="aiv-language-navigation" aria-label="Selectează limba"><option value="/" selected>RO</option><option value="/en/">EN</option><option value="/fr/">FR</option></select><span class="aiv-lang-chevron" aria-hidden="true">⌄</span></label>
     <button class="aiv-menu-btn" id="aiv-menu-btn" type="button" aria-expanded="false" aria-controls="aiv-menu-panel" aria-label="Deschide meniul">
       <span class="aiv-burger" aria-hidden="true"><i></i><i></i><i></i></span><span>MENIU</span>
     </button>
@@ -1178,4 +1179,10 @@ GLOBAL FOOTER · SESSION 0003H
 </script>
 
 <script defer src="/assets/assistant-widget.js" data-company="AiVenture" data-avatar="/assets/assistant-portrait-v2.svg" data-contact="/contact/" data-accent="#d5ae37"></script>
-<style>#aiv-language-navigation{position:fixed;top:15px;right:15px;z-index:9999;display:flex;gap:3px;padding:4px;border:1px solid #393a49;border-radius:60px;background:#101116e8;box-shadow:0 10px 30px #0008}#aiv-language-navigation a{font:700 12px/1.2 system-ui,sans-serif;color:#d1d2e0;text-decoration:none;padding:9px;border-radius:60px}#aiv-language-navigation a[aria-current]{background:#f3f3ff;color:#11121a}@media(max-width:650px){#aiv-language-navigation{top:auto;bottom:14px;right:14px}}</style><nav id="aiv-language-navigation" aria-label="Selectează limba"><a href="/" aria-current="page">RO</a><a href="/en/">EN</a><a href="/fr/">FR</a></nav></body></html>
+<style id="aiv-header-language-style">
+#aiv-global-header .aiv-lang-control{position:relative;display:inline-flex;align-items:center;flex:0 0 auto;margin-left:auto}
+#aiv-global-header #aiv-language-navigation{appearance:none;-webkit-appearance:none;display:block;width:67px;height:44px;border:1px solid #3c414a;border-radius:999px;background:#14191f;color:#f4f4f7;font:700 14px/1 system-ui,sans-serif;padding:0 24px 0 13px;cursor:pointer}
+#aiv-global-header .aiv-lang-chevron{position:absolute;right:10px;top:50%;transform:translateY(-57%);pointer-events:none;color:#e1e3e8;font:700 18px/1 system-ui}
+#aiv-global-header #aiv-language-navigation:focus-visible{outline:2px solid #d3aa60;outline-offset:3px}
+@media(max-width:600px){#aiv-global-header .aiv-head{gap:8px}#aiv-global-header #aiv-language-navigation{width:62px;height:42px;font-size:13px;padding-left:11px;padding-right:22px}#aiv-global-header .aiv-lang-chevron{right:9px}}
+</style><script id="aiv-header-language-script">(function(){var s=document.getElementById('aiv-language-navigation');if(s)s.addEventListener('change',function(){if(this.value)window.location.assign(this.value);});})();</script></body></html>
