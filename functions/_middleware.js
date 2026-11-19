@@ -218,6 +218,7 @@ function metaFamily(A, cur, url, title) {
   const d = esc(A.desc || title);
   add(/name=["']robots["']/i, `<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">`);
   add(/name=["']author["']/i, `<meta name="author" content="${AUTHOR_NAME}">`);
+  if (A.desc) add(/name=["']description["']/i, `<meta name="description" content="${esc(A.desc)}">`);
   const kw = (A.keywords || []).join(", ");
   if (kw) add(/name=["']keywords["']/i, `<meta name="keywords" content="${esc(kw)}">`);
   add(/rel=["']canonical["']/i, `<link rel="canonical" href="${url}">`);
