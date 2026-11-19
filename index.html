@@ -1165,17 +1165,34 @@ GLOBAL FOOTER · SESSION 0003H
 @media(max-width:700px){#aiv-page-tools{right:10px;left:auto;bottom:12px}#aiv-page-tools a,#aiv-page-tools button{height:42px}#aiv-page-tools .aiv-wa,#aiv-page-tools .aiv-call,#aiv-page-tools .aiv-contact{width:96px}}
 </style>
 <style id="aiv-hero-scroll-style">
-.hero.hero-photo{position:relative}
-#aiv-hero-down{position:absolute;right:18px;top:52%;z-index:8;width:60px;height:60px;display:flex;align-items:center;justify-content:center;border-radius:50%;border:1.5px solid #d3aa60;background:rgba(10,24,29,.72);color:#dcb268;font:400 39px/1 system-ui,-apple-system,sans-serif;box-shadow:0 7px 20px rgba(0,0,0,.32);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);cursor:pointer;transition:background .2s,transform .2s}
-#aiv-hero-down:hover,#aiv-hero-down:focus-visible{background:rgba(38,47,49,.96);transform:translateY(3px);outline:2px solid #d3aa60;outline-offset:3px}
-@media(max-width:700px){#aiv-hero-down{right:14px;top:55%;width:56px;height:56px;font-size:36px}}
+#aiv-hero-down{position:fixed;right:12px;top:52%;transform:translateY(-50%);z-index:950;width:44px;height:44px;display:flex;align-items:center;justify-content:center;border-radius:50%;border:1px solid rgba(211,170,96,.7);background:rgba(11,19,24,.53);color:#d9b16b;font:300 25px/1 system-ui,-apple-system,sans-serif;box-shadow:0 3px 12px rgba(0,0,0,.16);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);cursor:pointer;opacity:.82;transition:opacity .18s,background .18s,border-color .18s}
+#aiv-hero-down:hover,#aiv-hero-down:focus-visible{opacity:1;background:rgba(27,35,38,.9);border-color:#e0bd78;outline-offset:3px}
+@media(max-width:700px){#aiv-hero-down{right:10px;top:51%;width:40px;height:40px;font-size:23px}}
 @media(prefers-reduced-motion:reduce){#aiv-hero-down{transition:none}}
 </style>
 <div id="aiv-footer-contact-email" aria-label="Contact email AiVenture">
   CONTACT EMAIL · <a href="mailto:contact@5thelement.ai">contact@5thelement.ai</a>
 </div>
 <script id="aiv-hero-down-script">
-(function(){var button=document.getElementById('aiv-hero-down'),target=document.getElementById('pentru-cine');if(!button||!target)return;button.addEventListener('click',function(){target.scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});});})();
+(function(){
+ var button=document.getElementById('aiv-hero-down'),target=document.getElementById('pentru-cine');
+ if(!button||!target)return;
+ var up=false;
+ function update(){
+  up=window.scrollY>=Math.max(160,target.offsetTop-window.innerHeight*.35);
+  button.querySelector('span').textContent=up?'↑':'↓';
+  var label=up?'Înapoi la începutul paginii':'Derulează la secțiunea următoare';
+  button.setAttribute('aria-label',label);button.title=label;
+ }
+ button.addEventListener('click',function(){
+  var behavior=window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth';
+  if(up)window.scrollTo({top:0,behavior:behavior});
+  else target.scrollIntoView({behavior:behavior,block:'start'});
+ });
+ window.addEventListener('scroll',update,{passive:true});
+ window.addEventListener('resize',update);
+ update();
+})();
 </script>
 
 <script defer src="/assets/assistant-widget.js" data-company="AiVenture" data-avatar="/assets/assistant-portrait-v2.svg" data-contact="/contact/" data-accent="#d5ae37"></script>
