@@ -1,0 +1,28 @@
+{
+  "id": "ART-000035",
+  "title": "Întrebări frecvente: „Trebuie să percep TVA pentru clientul din Germania?”, „Cum se declară serviciile către clienți din SUA?”, „Ce declarații depun un SRL IT?”",
+  "seo_title": "Întrebări frecvente: „Trebuie să percep TVA pentru clientul din Germania?”, „Cum se declară serviciile către clienți din SUA?”, „Ce declarații depun un SRL IT?”",
+  "description": "Dovadă: cazuri generale, număr de clienți IT, experiența contabilului responsabil, surse oficiale ANAF/UE unde e cazul.",
+  "keywords": [],
+  "faq": 0,
+  "slug": "intrebari-frecvente-trebuie-sa-percep-tva-pentru-clientul-din",
+  "category": "Articol",
+  "author": "Dan Ionescu",
+  "publisher": "AiVenture S.R.L.",
+  "published": "2026-11-19",
+  "published_at": "2026-11-19T13:27:55+02:00",
+  "version": "1.0",
+  "status": "published",
+  "canonical": "https://aiventure.ro/blog/intrebari-frecvente-trebuie-sa-percep-tva-pentru-clientul-din/",
+  "sha256": "c13d74dae80a2b507ebe8707cf7717aa97c40bc308cfb1c2d901e0edce4fad81",
+  "ots_status": "PENDING",
+  "source": "telegram",
+  "versions": [
+    {
+      "version": "1.0",
+      "at": "2026-11-19T13:27:55+02:00",
+      "sha256": "c13d74dae80a2b507ebe8707cf7717aa97c40bc308cfb1c2d901e0edce4fad81",
+      "path": "/blog/intrebari-frecvente-trebuie-sa-percep-tva-pentru-clientul-din/"
+    }
+  ]
+}
