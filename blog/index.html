@@ -31,10 +31,13 @@ li a{display:block;padding:18px 4px;border-bottom:1px solid #292d36;color:#f5f5f
 li a:hover .t,li a:focus .t{color:#e7c86e}li a:focus{outline:2px solid #e7c86e;outline-offset:2px}
 .t{display:block;font-size:19px;font-weight:600;line-height:1.35}.m{display:block;font-size:13px;color:#9298a4;margin-top:6px}
 .n{font-size:13px;color:#9298a4;margin-top:28px}
+.srch{margin:0 0 22px}.srch input{width:100%;padding:13px 15px;border-radius:10px;border:1px solid #3a3f4b;background:#11141b;color:#f5f5f5;font:16px system-ui,sans-serif}.srch input:focus{outline:2px solid #e7c86e;border-color:#e7c86e}.sr{position:absolute;left:-9999px}
 </style></head><body><main>
 <div class="crumb"><a href="/">AiVenture</a> / Blog</div>
 <h1>Blog AiVenture</h1>
-<p class="lead">Metode, măsurători și dovezi despre cum văd sistemele AI o firmă: AI-LENS, GEO, AEO, AIO și web-ul agenților.</p>
+<p class="lead">Metode, măsurători și dovezi despre cum văd sistemele AI o firmă: AI-LENS, GEO, AEO, AIO și web-ul agenților. Autor: <a href="/autor/aiventure-team/">AiVenture Team</a> (AiVenture S.R.L.).</p>
+<form class="srch" role="search" onsubmit="return false"><label for="q" class="sr">Căutați în blog</label><input id="q" type="search" placeholder="🔎 Căutați în blog: GEO, ChatGPT, contabil, audit…" autocomplete="off" aria-label="Căutați în blog"></form>
+<p class="n" id="nores" hidden>Niciun articol găsit. Încercați alt cuvânt sau <a href="https://wa.me/40737123540">întrebați-ne pe WhatsApp</a>.</p>
 <ol id="list">
 <li><a href="/blog/cat-costa-seo-aeo-geo-serviciile-ai/"><span class="t">Cât costă SEO, AEO, GEO și serviciile AI?</span><span class="m">ART-000027 &nbsp;|&nbsp; SEO · AEO · GEO · AI Services &nbsp;|&nbsp; 29.09.2026</span></a></li>
 <li><a href="/blog/cum-interpretezi-corect-scorul-audit-ai/"><span class="t">Cum interpretezi corect scorul dintr-un audit AI</span><span class="m">ART-000026 &nbsp;|&nbsp; AI Audit · Scoring · Methodology &nbsp;|&nbsp; 29.09.2026</span></a></li>
@@ -72,15 +75,35 @@ li a:hover .t,li a:focus .t{color:#e7c86e}li a:focus{outline:2px solid #e7c86e;o
 <p class="n" id="count">32 articole</p>
 </main>
 <script>
-/* Lista se citeste din /blog/articles.json. Pentru un articol nou: NU modificati acest fisier. */
+/* Lista se citeste din /blog/articles.json. Pentru un articol nou: NU modificati acest fisier.
+   v1.1 · 2026-11-19: cautare dupa titlu, categorie, numar, cuvinte cheie, descriere (fara diacritice, mai multe cuvinte = toate trebuie sa apara); ?q=... in adresa */
+(function(){
+const norm=s=>String(s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
+const esc=s=>String(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const list=document.getElementById('list'),cnt=document.getElementById('count'),q=document.getElementById('q'),nores=document.getElementById('nores');
+let all=null;
+function fromDom(){return [...list.querySelectorAll('li a')].map(a=>({html:a.parentElement.outerHTML,hay:norm(a.textContent)}));}
+function render(){
+  const terms=norm(q.value).split(/\s+/).filter(Boolean);
+  const items=all||fromDom();
+  const hit=items.filter(x=>terms.every(t=>x.hay.includes(t)));
+  list.innerHTML=hit.map(x=>x.html).join('');
+  cnt.textContent=(terms.length?hit.length+' din '+items.length:items.length)+' articole';
+  nores.hidden=!!hit.length;
+  try{const u=new URL(location);if(terms.length)u.searchParams.set('q',q.value);else u.searchParams.delete('q');history.replaceState(null,'',u);}catch(e){}
+}
+q.addEventListener('input',render);
+const q0=new URLSearchParams(location.search).get('q');if(q0)q.value=q0;
 (async()=>{try{
-const r=await fetch('/blog/articles.json',{cache:'no-store'});if(!r.ok)return;
-const d=await r.json();const esc=s=>String(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-const k=x=>(x.published||'0000')+x.id;const a=(d.articles||[]).filter(x=>x.status==='published').sort((x,y)=>k(y).localeCompare(k(x)));
+const r=await fetch('/blog/articles.json',{cache:'no-store'});if(!r.ok){if(q0)render();return;}
+const d=await r.json();
+const k=x=>(x.published_at||x.published||'0000')+x.id;const a=(d.articles||[]).filter(x=>x.status==='published').sort((x,y)=>k(y).localeCompare(k(x)));
 if(!a.length)return;
-document.getElementById('list').innerHTML=a.map(x=>{const dt=x.published?x.published.split('-').reverse().join('.'):'';
+all=a.map(x=>{const dt=x.published?x.published.split('-').reverse().join('.'):'';
 const m=[x.id,x.category,dt].filter(Boolean).map(esc).join(' &nbsp;|&nbsp; ');
-return `<li><a href="/blog/${encodeURIComponent(x.slug)}/"><span class="t">${esc(x.title)}</span><span class="m">${m}</span></a></li>`}).join('');
-document.getElementById('count').textContent=a.length+' articole';
-}catch(e){}})();
+return {html:`<li><a href="/blog/${encodeURIComponent(x.slug)}/"><span class="t">${esc(x.title)}</span><span class="m">${m}</span></a></li>`,
+hay:norm([x.title,x.category,x.id,x.slug,x.description,(x.keywords||[]).join(' ')].join(' '))};});
+render();
+}catch(e){if(q0)render();}})();
+})();
 </script></body></html>
