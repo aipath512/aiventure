@@ -1,6 +1,7 @@
 // AiVenture — middleware pe TOATE paginile aiventure.ro
 // v1.4.1 · 2026-11-19
 //
+// v1.4.2: buton „📋 Copiază linkul articolului” sus, lângă autor și dată.
 // v1.4.1: sub autor, vizibil pe fiecare articol: „Publicat de AiVenture S.R.L. — firmă din București, România · CUI 51415878 · contact@5thelement.ai”;
 //         schema: Organization cu CUI/EUID/ONRC + contactPoint, Person cu workLocation București.
 // v1.4: AUTOR = Dan Ionescu (persoană, ORCID), PUBLICAT DE AiVenture S.R.L. (decizie 19.11.2026, varianta C).
@@ -134,7 +135,7 @@ const SITE_CSS = `<style>
 .aiv-hdr nav{display:flex;flex-wrap:wrap;gap:4px 14px}.aiv-hdr nav a{color:#c9ccd3;font-size:14px;text-decoration:none}.aiv-hdr nav a:hover{color:#e7c86e}
 .aiv-hdr form{margin-left:auto;display:flex}.aiv-hdr input{width:210px;max-width:52vw;padding:7px 10px;border-radius:8px;border:1px solid #292d36;background:#0d1016;color:#f5f5f5;font-size:14px}
 .aiv-bc{font-size:13px;color:#9298a4}.aiv-bc a{color:#9298a4}.aiv-bc span[aria-current]{color:#c9ccd3}
-.aiv-by{font-size:14px;color:#b8bcc6;margin:6px 0 0}.aiv-by a{color:#e7c86e}
+.aiv-by{font-size:14px;color:#b8bcc6;margin:6px 0 0}.aiv-cp{padding:4px 10px;border-radius:8px;border:1px solid #e7c86e;background:transparent;color:#e7c86e;font:600 13px system-ui,sans-serif;cursor:pointer}.aiv-cp:hover{background:#e7c86e;color:#090b10}.aiv-by a{color:#e7c86e}
 .aiv-pub{font-size:14px;color:#b8bcc6;margin:4px 0 0;padding:8px 12px;border-left:3px solid #e7c86e;background:#0d1016;border-radius:0 8px 8px 0}.aiv-pub a{color:#e7c86e}
 .aiv-toc{margin:22px 0;padding:12px 16px;border:1px solid #292d36;border-radius:10px;background:#0d1016;font-size:15px}.aiv-toc strong{display:block;margin-bottom:4px}.aiv-toc ol{margin:0;padding-left:20px}.aiv-toc a{color:#e7c86e}
 .aiv-ftr{border-top:1px solid #292d36;margin-top:40px;padding:22px 18px;font-size:13px;color:#9298a4;text-align:center}.aiv-ftr a{color:#9298a4;margin:0 6px}
@@ -292,7 +293,7 @@ export async function onRequest(context) {
       const blocks = articleBlocks(I, all, slug, pageUrl);
       const crumb = `<nav class="aiv-bc" aria-label="Fir de navigare"><a href="/">Acasă</a> › <a href="/blog/">Blog</a> › <span aria-current="page">${esc(title)}</span>${cur && cur.id ? ` · ${esc(cur.id)}` : ""}</nav>`;
       const F = I.firma || {}, S = F.sediu || {}, email = (I.contact || {}).email || "contact@5thelement.ai";
-      const by = `<p class="aiv-by">de <a href="${AUTHOR_PATH}" rel="author">${AUTHOR_NAME}</a>${cur && (cur.published_at || cur.published) ? ` · <time datetime="${esc(cur.published_at || cur.published)}">${esc(fmtRo(cur))}</time>` : ""}${cur && cur.version ? ` · v${esc(cur.version)}` : ""}</p>`
+      const by = `<p class="aiv-by">de <a href="${AUTHOR_PATH}" rel="author">${AUTHOR_NAME}</a>${cur && (cur.published_at || cur.published) ? ` · <time datetime="${esc(cur.published_at || cur.published)}">${esc(fmtRo(cur))}</time>` : ""}${cur && cur.version ? ` · v${esc(cur.version)}` : ""} · <button class="aiv-cp" type="button" data-url="${esc(pageUrl)}" title="${esc(pageUrl)}" onclick="var b=this,u=b.dataset.url,t=b.textContent;function d(){b.textContent='✓ Copiat';setTimeout(function(){b.textContent=t},1500)}if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(u).then(d,function(){prompt('Copiați linkul:',u)})}else{prompt('Copiați linkul:',u)}">📋 Copiază linkul articolului</button></p>`
         + `<p class="aiv-pub">Publicat de <strong>${esc(F.denumire_legala || "AiVenture S.R.L.")}</strong> — firmă din <strong>${esc(S.localitate || "București")}, România</strong> · <strong>CUI ${esc(F.cui || "51415878")}</strong> · <!--email_off--><a href="mailto:${esc(email)}">${esc(email)}</a><!--/email_off--></p>`;
       const toc = A.h2s.length >= 3 ? `<nav class="aiv-toc" aria-label="Cuprins"><strong>Cuprins</strong><ol>${A.h2s.map((t, i) => `<li><a href="#s${i + 1}">${esc(t)}</a></li>`).join("")}</ol></nav>` : "";
       let n = 0, crumbDone = false, h1Done = false;
