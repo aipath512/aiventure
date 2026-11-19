@@ -1,6 +1,8 @@
 // AiVenture — middleware pe TOATE paginile aiventure.ro
 // v1.5 · 2026-11-19
 //
+// v1.5.1: fără autor dublat (dacă fișierul are deja „Autor:” în linia .meta, rămân doar butonul de copiere și rândul „Publicat de”);
+//         întrebări FAQ detectate și din subtitluri H3 (secțiunea „Întrebări frecvente” scrisă din pagina de scris).
 // v1.5: STRAT DE ÎMBOGĂȚIRE /blog/imbogatire.json (descriere, cuvinte cheie, subiecte, întrebări-răspuns din text) — secțiune vizibilă
 //       „Întrebări frecvente” + FAQPage pereche, meta description/keywords, BlogPosting cu ~30 de proprietăți (keywords, about,
 //       mentions, abstract, speakable, timeRequired …); articolele vechi scrise ca text brut (## în <pre>) afișate ca HTML real.
@@ -203,8 +205,9 @@ function analyze(html) {
   const h1 = strip((/<h1[^>]*>([\s\S]*?)<\/h1>/i.exec(art) || [])[1]);
   const h2s = [...art.matchAll(/<h2[^>]*>([\s\S]*?)<\/h2>/gi)].map((m) => strip(m[1]));
   const faq = [];
-  for (const m of art.matchAll(/<h2[^>]*>([\s\S]*?)<\/h2>\s*((?:<(?:p|ul|ol|div class="tw")[\s\S]*?<\/(?:p|ul|ol|div)>\s*){1,2})/gi)) {
+  for (const m of art.matchAll(/<h[23][^>]*>([\s\S]*?)<\/h[23]>\s*((?:<(?:p|ul|ol|div class="tw")[\s\S]*?<\/(?:p|ul|ol|div)>\s*){1,2})/gi)) {
     const q = strip(m[1]).replace(/^\d+[.)]\s*/, "");
+    if (faq.some((x) => x.q === q)) continue;
     const ans = strip(m[2]);
     if (q.endsWith("?") && ans.length >= 30) faq.push({ q, a: ans.length > 900 ? ans.slice(0, 897).replace(/\s+\S*$/, "") + "…" : ans });
   }
@@ -366,7 +369,10 @@ export async function onRequest(context) {
       const blocks = articleBlocks(I, all, slug, pageUrl);
       const crumb = `<nav class="aiv-bc" aria-label="Fir de navigare"><a href="/">Acasă</a> › <a href="/blog/">Blog</a> › <span aria-current="page">${esc(title)}</span>${cur && cur.id ? ` · ${esc(cur.id)}` : ""}</nav>`;
       const F = I.firma || {}, S = F.sediu || {}, email = (I.contact || {}).email || "contact@5thelement.ai";
-      const by = `<p class="aiv-by">de <a href="${AUTHOR_PATH}" rel="author">${AUTHOR_NAME}</a>${cur && (cur.published_at || cur.published) ? ` · <time datetime="${esc(cur.published_at || cur.published)}">${esc(fmtRo(cur))}</time>` : ""}${cur && cur.version ? ` · v${esc(cur.version)}` : ""} · <button class="aiv-cp" type="button" data-url="${esc(pageUrl)}" title="${esc(pageUrl)}" onclick="var b=this,u=b.dataset.url,t=b.textContent;function d(){b.textContent='✓ Copiat';setTimeout(function(){b.textContent=t},1500)}if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(u).then(d,function(){prompt('Copiați linkul:',u)})}else{prompt('Copiați linkul:',u)}">📋 Copiază linkul articolului</button></p>`
+      const metaHasAuthor = /class="meta"[^>]*>[\s\S]{0,300}?Autor:/i.test(html);
+      const by = metaHasAuthor ? `<p class="aiv-by"><button class="aiv-cp" type="button" data-url="${esc(pageUrl)}" title="${esc(pageUrl)}" onclick="var b=this,u=b.dataset.url,t=b.textContent;function d(){b.textContent='✓ Copiat';setTimeout(function(){b.textContent=t},1500)}if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(u).then(d,function(){prompt('Copiați linkul:',u)})}else{prompt('Copiați linkul:',u)}">📋 Copiază linkul articolului</button></p>`
+        + `<p class="aiv-pub">Publicat de <strong>${esc((I.firma || {}).denumire_legala || "AiVenture S.R.L.")}</strong> — firmă din <strong>${esc(((I.firma || {}).sediu || {}).localitate || "București")}, România</strong> · <strong>CUI ${esc((I.firma || {}).cui || "51415878")}</strong> · <!--email_off--><a href="mailto:${esc((I.contact || {}).email || "contact@5thelement.ai")}">${esc((I.contact || {}).email || "contact@5thelement.ai")}</a><!--/email_off--></p>`
+        : `<p class="aiv-by">de <a href="${AUTHOR_PATH}" rel="author">${AUTHOR_NAME}</a>${cur && (cur.published_at || cur.published) ? ` · <time datetime="${esc(cur.published_at || cur.published)}">${esc(fmtRo(cur))}</time>` : ""}${cur && cur.version ? ` · v${esc(cur.version)}` : ""} · <button class="aiv-cp" type="button" data-url="${esc(pageUrl)}" title="${esc(pageUrl)}" onclick="var b=this,u=b.dataset.url,t=b.textContent;function d(){b.textContent='✓ Copiat';setTimeout(function(){b.textContent=t},1500)}if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(u).then(d,function(){prompt('Copiați linkul:',u)})}else{prompt('Copiați linkul:',u)}">📋 Copiază linkul articolului</button></p>`
         + `<p class="aiv-pub">Publicat de <strong>${esc(F.denumire_legala || "AiVenture S.R.L.")}</strong> — firmă din <strong>${esc(S.localitate || "București")}, România</strong> · <strong>CUI ${esc(F.cui || "51415878")}</strong> · <!--email_off--><a href="mailto:${esc(email)}">${esc(email)}</a><!--/email_off--></p>`;
       const toc = A.h2s.length >= 3 ? `<nav class="aiv-toc" aria-label="Cuprins"><strong>Cuprins</strong><ol>${A.h2s.map((t, i) => `<li><a href="#s${i + 1}">${esc(t)}</a></li>`).join("")}</ol></nav>` : "";
       let n = 0, crumbDone = false, h1Done = false;
