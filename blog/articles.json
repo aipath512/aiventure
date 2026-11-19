@@ -478,6 +478,39 @@
       ],
       "withdrawn_at": "2026-11-19T11:35:00Z",
       "withdrawn_reason": "text incomplet (inceput lipsa), titlu gresit"
+    },
+    {
+      "id": "ART-000036",
+      "title": "Cum ajunge site-ul firmei în Google și AI?",
+      "seo_title": "Cum ajunge site-ul firmei în Google și AI? | AiVenture",
+      "description": "Ce se întâmplă de la publicarea unei pagini până când Google și ChatGPT o pot găsi și cita, pas cu pas.",
+      "keywords": [
+        "indexare Google",
+        "IndexNow",
+        "ChatGPT",
+        "AI"
+      ],
+      "faq": 3,
+      "slug": "cum-ajunge-site-ul-firmei-in-google-si-ai",
+      "category": "SEO · GEO . AEO . AIO . AI-SEO",
+      "author": "Dan Ionescu",
+      "publisher": "AiVenture S.R.L.",
+      "published": "2026-11-19",
+      "published_at": "2026-11-19T15:11:38+02:00",
+      "version": "1.0",
+      "status": "published",
+      "canonical": "https://aiventure.ro/blog/cum-ajunge-site-ul-firmei-in-google-si-ai/",
+      "sha256": "4d575fb46e9415c9e53550a2f2223be59531d33d84714a892a0506145536e645",
+      "ots_status": "PENDING",
+      "source": "pagina-de-scris",
+      "versions": [
+        {
+          "version": "1.0",
+          "at": "2026-11-19T15:11:38+02:00",
+          "sha256": "4d575fb46e9415c9e53550a2f2223be59531d33d84714a892a0506145536e645",
+          "path": "/blog/cum-ajunge-site-ul-firmei-in-google-si-ai/"
+        }
+      ]
     }
   ]
 }
