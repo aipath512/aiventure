@@ -985,7 +985,7 @@ section,.hero{background:#000!important;border-color:#303030}
   <p><strong>Global. Fără să modifici site-ul.</strong></p>
   <div class="related"><a href="#doua-motoare">Vezi cum funcționează →</a><a href="/contact/">Discută cu un agent →</a></div>
   <p class="kicker" style="margin-top:22px;color:#c5a43b!important;">● LIVE · Agent Cumpărător AiVenture ↔ Agent Vânzător ECBTAX</p>
-</div></section>
+<button type="button" id="aiv-hero-down" aria-label="Derulează la secțiunea următoare" title="Derulează în jos"><span aria-hidden="true">↓</span></button></div></section>
 
 <section id="pentru-cine" aria-labelledby="pentru-cine-titlu"><div class="container">
   <div class="kicker">PENTRU CINE</div><h2 id="pentru-cine-titlu">Vinzi servicii B2B?</h2>
@@ -1163,42 +1163,18 @@ GLOBAL FOOTER · SESSION 0003H
 #aiv-footer-contact-email a:hover{text-decoration:underline;color:#d6aa22}
 @media(max-width:700px){#aiv-page-tools{right:10px;left:auto;bottom:12px}#aiv-page-tools a,#aiv-page-tools button{height:42px}#aiv-page-tools .aiv-wa,#aiv-page-tools .aiv-call,#aiv-page-tools .aiv-contact{width:96px}}
 </style>
-<style id="aiv-page-tools-center-right">
-/* Keep TOP/DOWN at mid-right, clear of the bottom-right assistant bubble. */
-#aiv-page-tools{
-  position:fixed!important;
-  top:50%!important;
-  bottom:auto!important;
-  right:12px!important;
-  left:auto!important;
-  transform:translateY(-50%)!important;
-  display:flex!important;
-  flex-direction:column!important;
-  gap:10px!important;
-  align-items:center!important;
-  z-index:9998!important;
-}
-@media(max-width:700px){
-  #aiv-page-tools{top:50%!important;bottom:auto!important;right:10px!important;transform:translateY(-50%)!important}
-}
+<style id="aiv-hero-scroll-style">
+.hero.hero-photo{position:relative}
+#aiv-hero-down{position:absolute;right:18px;top:52%;z-index:8;width:60px;height:60px;display:flex;align-items:center;justify-content:center;border-radius:50%;border:1.5px solid #d3aa60;background:rgba(10,24,29,.72);color:#dcb268;font:400 39px/1 system-ui,-apple-system,sans-serif;box-shadow:0 7px 20px rgba(0,0,0,.32);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);cursor:pointer;transition:background .2s,transform .2s}
+#aiv-hero-down:hover,#aiv-hero-down:focus-visible{background:rgba(38,47,49,.96);transform:translateY(3px);outline:2px solid #d3aa60;outline-offset:3px}
+@media(max-width:700px){#aiv-hero-down{right:14px;top:55%;width:56px;height:56px;font-size:36px}}
+@media(prefers-reduced-motion:reduce){#aiv-hero-down{transition:none}}
 </style>
-<div id="aiv-page-tools" aria-label="Navigare rapidă">
-  <button type="button" id="aiv-top" aria-label="Sus la începutul paginii" title="TOP">↑ TOP</button>
-  <button type="button" id="aiv-down" aria-label="Jos la finalul paginii" title="DOWN">↓ DOWN</button>
-
-
-
-</div>
 <div id="aiv-footer-contact-email" aria-label="Contact email AiVenture">
   CONTACT EMAIL · <a href="mailto:contact@5thelement.ai">contact@5thelement.ai</a>
 </div>
-<script id="aiv-page-tools-script">
-(function(){
-  var topBtn=document.getElementById('aiv-top');
-  var downBtn=document.getElementById('aiv-down');
-  if(topBtn) topBtn.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
-  if(downBtn) downBtn.addEventListener('click',function(){window.scrollTo({top:document.documentElement.scrollHeight,behavior:'smooth'});});
-})();
+<script id="aiv-hero-down-script">
+(function(){var button=document.getElementById('aiv-hero-down'),target=document.getElementById('pentru-cine');if(!button||!target)return;button.addEventListener('click',function(){target.scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});});})();
 </script>
 
 <script defer src="/assets/assistant-widget.js" data-company="AiVenture" data-avatar="/assets/assistant-portrait-v2.svg" data-contact="/contact/" data-accent="#d5ae37"></script>
