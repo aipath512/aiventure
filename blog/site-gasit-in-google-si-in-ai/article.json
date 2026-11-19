@@ -9,5 +9,14 @@
   "status": "published",
   "canonical": "https://aiventure.ro/blog/site-gasit-in-google-si-in-ai/",
   "sha256": "16ebd8405b2272a4c88e449e103d995864a52946ccea4d8d9f89f3e38fac193c",
-  "ots_status": "NOT_TIMESTAMPED"
+  "ots_status": "PENDING",
+  "published_at": "2026-11-19T08:24:32Z",
+  "versions": [
+    {
+      "version": "1.0",
+      "at": "2026-11-19T08:24:32Z",
+      "sha256": "16ebd8405b2272a4c88e449e103d995864a52946ccea4d8d9f89f3e38fac193c",
+      "path": "/blog/site-gasit-in-google-si-in-ai/"
+    }
+  ]
 }

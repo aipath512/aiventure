@@ -1,0 +1,57 @@
+
+<p class="lead"><strong>Întrebarea:</strong> cum construiești astăzi un site astfel încât să fie găsit atât când cineva caută în Google, cât și când pune o întrebare unui sistem AI?</p>
+<p><strong>Răspunsul scurt:</strong> pornești de la ce vrea să afle sau să facă omul, apoi construiești pagini care răspund clar. Cuvintele-cheie ajută la formularea acelor pagini, iar intențiile ajută la alegerea conținutului.</p>
+<p>O precizare: și Google caută să înțeleagă intenția, nu doar să potrivească niște cuvinte. Iar sistemele AI folosesc și ele cuvintele din întrebare pentru a găsi informații. Diferența este mai ales în felul în care omul întreabă și primește răspunsul.</p>
+
+<h2>1. Ce sunt cuvintele-cheie și ce este intenția?</h2>
+<p>Să luăm un exemplu generic: o firmă de contabilitate. Omul caută:</p>
+<blockquote>„contabilitate SRL București”</blockquote>
+<p>Acestea sunt cuvintele folosite în căutare. Dar ce dorește omul? Ar putea fi:</p>
+<ul><li>să înțeleagă ce presupune contabilitatea unui SRL;</li><li>să afle cât costă;</li><li>să găsească un contabil în București;</li><li>să compare mai multe oferte;</li><li>să contacteze o firmă.</li></ul>
+<p>Acestea sunt intenții diferite, chiar dacă folosesc unele cuvinte comune.</p>
+<div class="tw"><table><thead><tr><th>Căutarea sau întrebarea</th><th>Intenția probabilă</th><th>Ce ar trebui să găsească pe site</th></tr></thead><tbody>
+<tr><td>„ce înseamnă contabilitate SRL”</td><td>Să înțeleagă</td><td>O explicație clară</td></tr>
+<tr><td>„preț contabilitate SRL”</td><td>Să afle costul</td><td>Prețuri sau criterii de estimare</td></tr>
+<tr><td>„contabil SRL București”</td><td>Să găsească un furnizor</td><td>Serviciile, zona și datele firmei</td></tr>
+<tr><td>„schimbare contabil SRL”</td><td>Să rezolve o problemă</td><td>Pașii de preluare a contabilității</td></tr>
+<tr><td>„vreau ofertă contabilitate SRL”</td><td>Să cumpere</td><td>Formular sau contact direct</td></tr>
+</tbody></table></div>
+<p><strong>Cuvântul spune despre ce vorbește omul. Intenția arată ce vrea să obțină.</strong></p>
+
+<h2>2. Cum funcționează căutarea în Google?</h2>
+<p>Un om scrie, de exemplu:</p>
+<blockquote>„cât costă contabilitatea unui SRL”</blockquote>
+<p>Google caută pagini pe care le consideră relevante și utile pentru acea căutare. În rezultatele clasice, poate afișa linkuri către pagini de servicii, articole sau alte surse. Omul poate:</p>
+<ol><li>să citească titlul și descrierea unui rezultat;</li><li>să intre pe site;</li><li>să citească răspunsul;</li><li>să contacteze firma, dacă oferta îl interesează.</li></ol>
+<p>Pentru firmă, întrebarea este: <em>avem o pagină care răspunde bine la această căutare și care poate fi găsită de Google?</em></p>
+<p>Asta implică, printre altele, un titlu clar, conținut util, o pagină accesibilă pentru indexare și linkuri interne care o fac ușor de găsit. Cuvintele relevante contează, dar simpla lor repetare nu este suficientă.</p>
+
+<h2>3. Cum funcționează căutarea cu AI?</h2>
+<p>Același om poate întreba:</p>
+<blockquote>„Am un SRL nou în București, fără angajați. Ce servicii de contabilitate îmi trebuie, cam cât ar costa și cum aleg un contabil?”</blockquote>
+<p>Aici, întrebarea conține mai mult context:</p>
+<ul><li>tipul firmei: SRL nou;</li><li>localizarea: București;</li><li>situația: fără angajați;</li><li>nevoile: servicii, cost și alegerea furnizorului.</li></ul>
+<p>Un sistem AI care are acces la căutare pe web poate consulta mai multe pagini, poate sintetiza informațiile și poate afișa linkuri către surse. Utilizatorul poate apoi pune întrebări suplimentare.</p>
+<p>În funcțiile AI ale Google, sistemul poate efectua mai multe căutări conexe pentru a acoperi părți diferite ale unei întrebări complexe. Google precizează însă că apariția unei pagini în răspuns nu este garantată.</p>
+<p>Pentru firmă, întrebarea devine: <em>avem informații suficient de clare și utile încât un sistem AI să le poată găsi, înțelege și eventual folosi ca sursă?</em></p>
+
+<h2>4. Ce se schimbă în construcția site-ului?</h2>
+<p>Site-ul poate fi gândit din perspectiva serviciilor firmei și a întrebărilor clienților. De exemplu:</p>
+<h3>Pagina de serviciu: Contabilitate pentru SRL</h3>
+<p>Explică:</p>
+<ul><li>cui i se adresează serviciul;</li><li>ce include și ce nu include;</li><li>cum se lucrează;</li><li>cum se stabilește prețul;</li><li>cum poate clientul cere o ofertă.</li></ul>
+<h3>Conținut care răspunde la întrebări</h3>
+<p>Pe aceeași pagină sau în pagini separate, după amploarea subiectului:</p>
+<ul><li>Ce obligații contabile are un SRL?</li><li>Ce documente trebuie să trimit contabilului?</li><li>Cât costă contabilitatea?</li><li>Pot schimba contabilul în cursul anului?</li><li>Cum aleg un contabil?</li></ul>
+<p>Nu este obligatoriu să existe o pagină pentru fiecare întrebare. Întrebările apropiate pot fi grupate într-o pagină utilă și bine organizată. O pagină separată are sens când subiectul este suficient de important și poate fi tratat în profunzime.</p>
+
+<h2>5. Cum ajunge omul la firmă?</h2>
+<p>Există mai multe trasee posibile:</p>
+<ul><li><strong>Prin Google clasic:</strong> căutare → rezultat cu link → pagină pe site → contact</li><li><strong>Prin căutare cu răspuns AI:</strong> întrebare → răspuns generat, eventual cu surse → posibil click pe site → contact</li><li><strong>Direct pe site:</strong> vizitatorul citește o pagină → pune întrebări asistentului site-ului → cere o ofertă sau contactează firma</li></ul>
+<p>Ultimul asistent este o componentă a site-ului. El este distinct de sistemul AI extern prin care omul a descoperit eventual firma.</p>
+
+<h2>6. Ce trebuie făcut concret?</h2>
+<p>Pentru un site nou sau existent, aș proceda astfel:</p>
+<ol><li><strong>Identificăm clienții:</strong> cine sunt și ce situații au.</li><li><strong>Identificăm intențiile:</strong> ce vor să înțeleagă, să compare, să rezolve sau să cumpere.</li><li><strong>Căutăm formulările folosite:</strong> cuvinte-cheie și întrebări reale sau plauzibile.</li><li><strong>Organizăm răspunsurile:</strong> pagini de servicii, explicații, prețuri, dovezi și contact.</li><li><strong>Verificăm calitatea și accesul:</strong> informații corecte, actualizate, pagini accesibile și indexabile.</li><li><strong>Măsurăm:</strong> ce căutări aduc vizitatori, ce pagini sunt consultate și câte cereri ajung la firmă.</li></ol>
+<p>Google spune că pentru funcțiile sale AI rămân valabile bunele practici SEO obișnuite: nu cere un format special sau un fișier AI special pentru a permite apariția ca sursă. Respectarea acestor practici oferă o posibilitate de vizibilitate, nu o garanție de citare sau de vânzare.</p>
+<p class="concl"><strong>Prin urmare:</strong> începi cu intenția omului, folosești cuvintele prin care acesta o exprimă și publici un răspuns util, legat de o acțiune potrivită — să afle mai mult, să compare, să ceară o ofertă sau să contacteze firma.</p>
