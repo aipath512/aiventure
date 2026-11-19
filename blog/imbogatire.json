@@ -1,0 +1,1263 @@
+{
+  "_meta": {
+    "versiune": "1.0",
+    "data": "2026-11-19",
+    "autor": "Dan Ionescu",
+    "descriere": "Strat de îmbogățire pentru articolele blogului aiventure.ro: descriere, cuvinte cheie, subiecte și întrebări-răspuns luate strict din textul fiecărui articol. Textul articolelor nu se modifică (SHA-256/OTS rămân valabile). Afișat de functions/_middleware.js."
+  },
+  "articole": {
+    "ai-lens-site-industrie": {
+      "description": "AI-LENS™ observă cum ChatGPT, Claude, Gemini și Perplexity reprezintă o firmă, de la o pagină până la o industrie întreagă, cu dovezi păstrate.",
+      "keywords": [
+        "AI-LENS",
+        "reprezentare firmă în AI",
+        "ChatGPT",
+        "Claude",
+        "Gemini",
+        "Perplexity",
+        "analiză multi-model",
+        "industrie"
+      ],
+      "about": [
+        "AI-LENS",
+        "Generative Engine Optimization",
+        "Multi-model observation"
+      ],
+      "mentions": [
+        "ChatGPT",
+        "Claude",
+        "Gemini",
+        "Perplexity",
+        "CAEN"
+      ],
+      "faq": [
+        {
+          "q": "Ce observă AI-LENS™ pe un site?",
+          "a": "Pornește de la homepage și paginile publice din sitemap și notează, pentru fiecare model, ce informații găsește, cum descrie firma, ce servicii identifică, ce surse folosește, ce omite și unde apar contradicții."
+        },
+        {
+          "q": "Care e diferența dintre SAME INPUT și NATIVE ACCESS?",
+          "a": "SAME INPUT dă tuturor modelelor același conținut și aceleași dovezi și măsoară diferențele de interpretare. NATIVE ACCESS lasă fiecare sistem să caute cu propriul mecanism și măsoară ce poate găsi în condiții reale. Cele două nu se amestecă într-un singur rezultat."
+        },
+        {
+          "q": "Cum se trece de la o firmă la o industrie?",
+          "a": "Aceeași metodă se aplică mai multor firme grupate după activitate, cod CAEN principal sau secundar și serviciile efectiv oferite; repetarea în timp creează istoric."
+        },
+        {
+          "q": "Dacă patru modele AI sunt de acord, înseamnă că informația e adevărată?",
+          "a": "Nu. Consensul este o observație despre modele, nu o probă despre realitate; adevărul rămâne cel verificat în sursa validată."
+        }
+      ]
+    },
+    "metodologia-ai-lens-web-om-web-ai-web-a2a": {
+      "description": "Metodologia AI-LENS™: un cadru comun de observare pentru WEB-OM, WEB-AI și WEB-A2A, evaluat independent cu patru modele AI.",
+      "keywords": [
+        "metodologie AI-LENS",
+        "WEB-OM",
+        "WEB-AI",
+        "WEB-A2A",
+        "SEO",
+        "AEO",
+        "GEO",
+        "AIO",
+        "AI Signals"
+      ],
+      "about": [
+        "AI-LENS",
+        "WEB-OM",
+        "WEB-AI",
+        "WEB-A2A"
+      ],
+      "mentions": [
+        "ChatGPT",
+        "Claude",
+        "Gemini",
+        "Perplexity",
+        "SEO",
+        "AEO",
+        "GEO",
+        "AIO"
+      ],
+      "faq": [
+        {
+          "q": "Ce sunt WEB-OM, WEB-AI și WEB-A2A?",
+          "a": "Sunt cele trei căi prin care o firmă e accesată: WEB-OM este relația directă cu oamenii (PULL și PUSH), WEB-AI este descoperirea și recomandarea prin sisteme AI, iar WEB-A2A este interacțiunea dintre agenți BUYER, BROKER și SELLER, cu control uman și dovezi."
+        },
+        {
+          "q": "Care este unitatea de lucru în WEB-AI?",
+          "a": "Intentul, definit ca VERB/ACTION + TARGET."
+        },
+        {
+          "q": "Folosesc toate categoriile aceeași listă de semnale?",
+          "a": "Nu. SEO, AEO, GEO, AIO și AI Signals au registre proprii, versionate."
+        },
+        {
+          "q": "Care sunt cele trei axe ale metodologiei?",
+          "a": "Calea de acces (WEB-OM, WEB-AI, WEB-A2A), categoria (SEO, AEO, GEO, AIO, AI Signals, semnale tranzacționale) și locul intervenției (ON-SITE, ON-PAGE, OFF-PAGE)."
+        }
+      ]
+    },
+    "misiunea-web-om-web-ai-web-a2a": {
+      "description": "Misiunea AiVenture: serviciile firmei ușor de găsit, înțeles, verificat și cumpărat de oameni și agenți AI, cu control uman.",
+      "keywords": [
+        "misiunea AiVenture",
+        "WEB-OM",
+        "WEB-AI",
+        "WEB-A2A",
+        "agenți AI",
+        "control uman",
+        "verificare"
+      ],
+      "about": [
+        "AiVenture",
+        "WEB-OM",
+        "WEB-AI",
+        "WEB-A2A"
+      ],
+      "mentions": [
+        "AEO",
+        "GEO",
+        "AIO",
+        "AI-SEO",
+        "AI Signals"
+      ],
+      "faq": [
+        {
+          "q": "Care este misiunea AiVenture?",
+          "a": "Să facă serviciile firmei ușor de găsit, înțeles, verificat și cumpărat de oameni și agenți AI, păstrând controlul uman."
+        },
+        {
+          "q": "Ce înseamnă WEB-A2A pentru o firmă?",
+          "a": "Serviciul devine accesibil agenților AI pe traseul BUYER → BROKER → SELLER → HUMAN APPROVAL → EVIDENCE; oferta este definită de firmă, iar edge-ul nu o inventează în timpul tranzacției."
+        },
+        {
+          "q": "Ce verdicte se folosesc la verificare?",
+          "a": "PASS, PARTIAL, FAIL, UNKNOWN și N/A. UNKNOWN nu este FAIL."
+        }
+      ]
+    },
+    "all-categories-multi-model-same-kpi": {
+      "description": "Principiul SAME KPI: fiecare model AI e evaluat prin același semnal, aceeași întrebare și aceeași regulă de verdict, pe un registru versionat.",
+      "keywords": [
+        "SAME KPI",
+        "evaluare multi-model",
+        "registru canonic",
+        "deterministic truth",
+        "ChatGPT",
+        "Claude",
+        "Gemini",
+        "Perplexity"
+      ],
+      "about": [
+        "AI-LENS",
+        "Multi-model evaluation"
+      ],
+      "mentions": [
+        "ChatGPT",
+        "Claude",
+        "Gemini",
+        "Perplexity"
+      ],
+      "faq": [
+        {
+          "q": "Ce înseamnă principiul SAME KPI?",
+          "a": "În aceeași categorie și versiune de taxonomie, fiecare model e evaluat prin același semnal, aceeași întrebare și aceeași regulă de verdict."
+        },
+        {
+          "q": "Ce se îngheață înaintea unui audit?",
+          "a": "registry_version, definiția semnalelor, criteriile, metoda, prompt_version și evidence snapshot."
+        },
+        {
+          "q": "Care sunt cele două straturi de verificare?",
+          "a": "Deterministic truth verifică direct ce există (HTTP, HTML, date structurate, fișiere, linkuri, API-uri), iar observația multi-model verifică ce găsește, înțelege, omite sau citează fiecare sistem AI."
+        },
+        {
+          "q": "De ce se păstrează răspunsul brut al fiecărui model?",
+          "a": "Modelele rulează separat, iar răspunsul brut se păstrează înainte de normalizare, ca observațiile să rămână independente și verificabile."
+        }
+      ]
+    },
+    "ai-lens-cadru-comun-web-om-web-ai-web-a2a": {
+      "description": "AI-LENS™ organizează observația pe trei dimensiuni: calea (WEB-OM, WEB-AI, WEB-A2A), categoria (SEO, AEO, GEO, AIO) și locul intervenției.",
+      "keywords": [
+        "AI-LENS",
+        "WEB-OM",
+        "WEB-AI",
+        "WEB-A2A",
+        "ON-SITE",
+        "ON-PAGE",
+        "OFF-PAGE",
+        "SEO",
+        "GEO"
+      ],
+      "about": [
+        "AI-LENS",
+        "WEB-OM",
+        "WEB-AI",
+        "WEB-A2A"
+      ],
+      "mentions": [
+        "SEO",
+        "AEO",
+        "GEO",
+        "AIO",
+        "AI Signals"
+      ],
+      "faq": [
+        {
+          "q": "Pe ce dimensiuni organizează AI-LENS observația?",
+          "a": "Cale × categorie × locul intervenției."
+        },
+        {
+          "q": "Ce poate controla direct proprietarul unui site?",
+          "a": "ON-SITE și ON-PAGE. OFF-PAGE depinde de surse externe și nu trebuie prezentat ca fiind controlabil prin simpla modificare a site-ului sau prin Edge."
+        },
+        {
+          "q": "Ce arată diferențele dintre modelele AI?",
+          "a": "Sunt date: arată unde reprezentarea firmei este robustă și unde depinde de mecanismul de retrieval sau de interpretare al unui anumit sistem."
+        }
+      ]
+    },
+    "ai-lens-daily-multi-model-observability": {
+      "description": "De la audit punctual la observare AI zilnică: aceeași metodă repetată, cu dovezi, istoric și validare umană înainte de publicare.",
+      "keywords": [
+        "observabilitate AI",
+        "audit zilnic",
+        "multi-model",
+        "dovezi",
+        "human-in-the-loop",
+        "BEFORE AFTER"
+      ],
+      "about": [
+        "AI-LENS",
+        "AI observability"
+      ],
+      "mentions": [
+        "ChatGPT",
+        "Claude",
+        "Gemini",
+        "Perplexity"
+      ],
+      "faq": [
+        {
+          "q": "Care e diferența dintre un audit punctual și observarea zilnică?",
+          "a": "Auditul punctual spune ce s-a văzut într-un moment; observabilitatea repetă aceeași metodă și construiește istoric."
+        },
+        {
+          "q": "Ce păstrează fiecare rulare zilnică?",
+          "a": "Un ID, targetul, versiunile taxonomiei, metodei și promptului, snapshotul de dovezi, modelele, erorile și rezultatele."
+        },
+        {
+          "q": "Când este validă o comparație BEFORE/AFTER?",
+          "a": "Numai dacă metoda, taxonomia, targetul și regulile de evaluare sunt compatibile."
+        },
+        {
+          "q": "Unde intervine omul?",
+          "a": "Rezultatele automate trec prin validare umană înainte de publicare: RUN → RAW EVIDENCE → AUTOMATED RESULTS → HUMAN VALIDATION → PUBLISHED RESULT."
+        }
+      ]
+    },
+    "verificare-robots-txt-google-ai-crawlers": {
+      "description": "Cum verifici robots.txt pentru Google și crawlerele AI: regula publicată nu înseamnă acces, indexare sau citare. Cinci niveluri de verificat.",
+      "keywords": [
+        "robots.txt",
+        "crawlere AI",
+        "Googlebot",
+        "indexare",
+        "WAF",
+        "Bot Management",
+        "verificare tehnică"
+      ],
+      "about": [
+        "robots.txt",
+        "Web crawling"
+      ],
+      "mentions": [
+        "Google",
+        "WAF",
+        "sitemap"
+      ],
+      "faq": [
+        {
+          "q": "robots.txt garantează că site-ul e indexat sau citat de AI?",
+          "a": "Nu. robots.txt este o declarație de acces pentru crawlere, nu o dovadă de indexare sau citare."
+        },
+        {
+          "q": "Ce niveluri trebuie separate la verificare?",
+          "a": "Regula publicată, accesul tehnic al crawlerului, respectarea regulii de către furnizor, ajungerea conținutului în index sau retrieval și folosirea ori citarea conținutului."
+        },
+        {
+          "q": "Ce se verifică concret?",
+          "a": "Statusul HTTP, sintaxa, User-agent, Allow/Disallow, sitemap, redirecturile, WAF și Bot Management, limitele de rată, challenge-urile, logurile disponibile și identitatea crawlerului."
+        }
+      ]
+    },
+    "llms-txt-geo-ai-agents": {
+      "description": "Cum configurezi llms.txt pentru GEO și agenți AI: ce conține, de ce trebuie să reflecte site-ul live și ce nu garantează.",
+      "keywords": [
+        "llms.txt",
+        "GEO",
+        "agenți AI",
+        "machine-readable",
+        "surse canonice",
+        "configurare tehnică"
+      ],
+      "about": [
+        "llms.txt",
+        "Generative Engine Optimization"
+      ],
+      "mentions": [
+        "agenți AI"
+      ],
+      "faq": [
+        {
+          "q": "La ce folosește llms.txt?",
+          "a": "Ca resursă machine-readable care prezintă poziționarea, paginile importante și regulile de interpretare ale site-ului; nu garantează indexarea sau citarea."
+        },
+        {
+          "q": "Ce poate conține llms.txt?",
+          "a": "Identitatea canonică, descrierea firmei, serviciile, paginile importante, negative scope, reguli de guvernanță, resurse machine-readable, contacte și surse de dovadă."
+        },
+        {
+          "q": "Care este riscul unui llms.txt vechi?",
+          "a": "Poate introduce contradicții, pentru că fișierul trebuie să reflecte site-ul live."
+        },
+        {
+          "q": "Ce valoare are llms.txt în GEO?",
+          "a": "Reduce ambiguitatea și indică sursele canonice."
+        }
+      ]
+    },
+    "geo-28-perplexity-scor-audit-ai": {
+      "description": "Cum se calculează și se verifică scorul GEO: acoperire PASS, scor ponderat și observația Perplexity, păstrate separat și legate de o versiune.",
+      "keywords": [
+        "scor GEO",
+        "Perplexity",
+        "audit AI",
+        "scor ponderat",
+        "PASS coverage",
+        "registru versionat"
+      ],
+      "about": [
+        "Generative Engine Optimization",
+        "AI audit scoring"
+      ],
+      "mentions": [
+        "Perplexity"
+      ],
+      "faq": [
+        {
+          "q": "Ce arată numărul de semnale PASS?",
+          "a": "Acoperirea, nu neapărat calitatea ponderată."
+        },
+        {
+          "q": "Cum se calculează scorul GEO ponderat?",
+          "a": "GEO = Σ(sᵢ × wᵢ) / Σ(wᵢ) pe semnalele evaluabile; N/A se exclude, iar UNKNOWN nu este FAIL."
+        },
+        {
+          "q": "Scorul GEO este același cu ce vede Perplexity?",
+          "a": "Nu. Perplexity este un observator extern: ce găsește, ce surse folosește, ce citează și ce omite. GEO SCORE ≠ PERPLEXITY SCORE."
+        },
+        {
+          "q": "De ce trebuie legată lista de 28 de semnale de o versiune?",
+          "a": "Pentru ca rezultatele să fie comparabile; orice listă de semnale trebuie legată de o versiune explicită a registrului."
+        }
+      ]
+    },
+    "daily-aio-audit-26-signals": {
+      "description": "DAILY AIO AUDIT: 26 de semnale verificate zilnic cu aceeași metodă, verdicte clare și dovezi păstrate pentru regresii și remediere.",
+      "keywords": [
+        "AIO",
+        "audit zilnic",
+        "26 semnale",
+        "verdict PASS FAIL",
+        "remediere",
+        "regresii"
+      ],
+      "about": [
+        "AI Optimization",
+        "AI audit"
+      ],
+      "mentions": [
+        "HTTP",
+        "canonical"
+      ],
+      "faq": [
+        {
+          "q": "Când devine AIO măsurabil?",
+          "a": "Atunci când aceleași semnale sunt verificate repetabil, cu aceeași metodă și cu dovezi păstrate."
+        },
+        {
+          "q": "De ce nu ajunge un HTTP 200?",
+          "a": "Resursa trebuie verificată complet: status, content-type, URL final, titlu, H1, canonical și conținutul așteptat."
+        },
+        {
+          "q": "Care e diferența dintre repository și live?",
+          "a": "Ce e în depozit nu e neapărat publicat, iar ce e publicat nu e neapărat verificat: REPOSITORY ≠ DEPLOYED ≠ LIVE ≠ VERIFIED."
+        },
+        {
+          "q": "Cum se face remedierea?",
+          "a": "PROBLEM → WHERE → ACTION → VERIFY, iar rezultatele păstrate permit diferențe T1→T2 și găsirea regresiilor."
+        }
+      ]
+    },
+    "ai-signals-perplexity-taxonomy-versioning": {
+      "description": "AI Signals: de ce taxonomia se îngheață înaintea auditului, cum se migrează între versiuni și de ce scorurile istorice nu se rescriu.",
+      "keywords": [
+        "AI Signals",
+        "taxonomie",
+        "versionare",
+        "registru",
+        "Perplexity",
+        "audit"
+      ],
+      "about": [
+        "AI Signals",
+        "Taxonomy versioning"
+      ],
+      "mentions": [
+        "Perplexity"
+      ],
+      "faq": [
+        {
+          "q": "Când poate începe corect un audit?",
+          "a": "Abia după ce taxonomia este înghețată: fiecare rulare declară AI_SIGNALS@VERSION_X = N și încarcă exact lista acelei versiuni."
+        },
+        {
+          "q": "Ce se întâmplă dacă numărul de semnale se schimbă între versiuni?",
+          "a": "Nu se inventează semnale pentru a păstra un total istoric; migrarea se marchează ca SAME, RENAMED, MERGED, SPLIT, MOVED, DEPRECATED sau NEW."
+        },
+        {
+          "q": "Se recalculează scorurile vechi?",
+          "a": "Nu. Scorurile istorice nu se rescriu retroactiv."
+        }
+      ]
+    },
+    "aio-inter-ai-daily-before-after": {
+      "description": "AIO INTER-AI: aceeași realitate digitală observată zilnic de ChatGPT, Claude, Gemini și Perplexity, cu protocol înghețat și metrici separate.",
+      "keywords": [
+        "AIO",
+        "INTER-AI",
+        "ChatGPT",
+        "Claude",
+        "Gemini",
+        "Perplexity",
+        "audit zilnic",
+        "BEFORE AFTER"
+      ],
+      "about": [
+        "AI Optimization",
+        "Multi-model observation"
+      ],
+      "mentions": [
+        "ChatGPT",
+        "Claude",
+        "Gemini",
+        "Perplexity"
+      ],
+      "faq": [
+        {
+          "q": "Ce măsoară AIO INTER-AI?",
+          "a": "Cum aceeași realitate digitală este observată de patru sisteme AI în timp."
+        },
+        {
+          "q": "Care e diferența dintre AIO determinist și INTER-AI?",
+          "a": "AIO determinist verifică ce există; INTER-AI verifică ce găsește, înțelege, folosește sau citează fiecare model. SITE TRUTH ≠ MODEL OBSERVATION."
+        },
+        {
+          "q": "Câte observații produc 20 de întrebări?",
+          "a": "20 de întrebări × 3 rulări × 4 platforme = 240 de observații, nu 240 de semnale."
+        },
+        {
+          "q": "Ce înseamnă dezacordul dintre modele?",
+          "a": "Este informație, nu eroare de eliminat."
+        }
+      ]
+    },
+    "aio-ai-optimization-26-signals": {
+      "description": "AIO — AI Optimization: cum pregătești un site ca sistemele AI să înțeleagă corect firma, cu 26 de semnale legate de un registru versionat.",
+      "keywords": [
+        "AIO",
+        "AI Optimization",
+        "26 semnale",
+        "machine-interpretable",
+        "RAG",
+        "LLM",
+        "date structurate"
+      ],
+      "about": [
+        "AI Optimization",
+        "Machine-readable content"
+      ],
+      "mentions": [
+        "Perplexity",
+        "ChatGPT",
+        "Gemini",
+        "Claude",
+        "RAG"
+      ],
+      "faq": [
+        {
+          "q": "Ce urmărește AIO — AI Optimization?",
+          "a": "Ca informația unui site să poată fi înțeleasă, procesată și utilizată de sisteme AI fără ca acestea să fie obligate să ghicească elementele esențiale."
+        },
+        {
+          "q": "Care este întrebarea de bază a AIO?",
+          "a": "Poate un sistem AI reconstrui corect ceea ce firma este, oferă, dovedește și permite?"
+        },
+        {
+          "q": "Mai multe fișiere pentru AI înseamnă un AIO mai bun?",
+          "a": "Nu. MORE FILES ≠ BETTER AIO; contează ca fișierele să fie valide, cu referințe corecte, conținut actual și dovezi valide."
+        },
+        {
+          "q": "De ce trebuie legată lista celor 26 de semnale de o versiune?",
+          "a": "Pentru ca rezultatele să fie comparabile; lista trebuie legată de registry_version."
+        }
+      ]
+    },
+    "blog-ai-knowledge-corpus": {
+      "description": "Blogul în era AI: de la content marketing la AI Knowledge Corpus — fiecare articol mărește corpusul public pe care oamenii și AI îl pot folosi.",
+      "keywords": [
+        "blog AI",
+        "AI Knowledge Corpus",
+        "content marketing",
+        "corpus public",
+        "ECBTAX",
+        "indexare",
+        "retrieval"
+      ],
+      "about": [
+        "AI Knowledge Corpus",
+        "Content marketing"
+      ],
+      "mentions": [
+        "ECBTAX",
+        "Google",
+        "agenți AI"
+      ],
+      "faq": [
+        {
+          "q": "Ce rol are blogul în era AI?",
+          "a": "Pe lângă content marketing și SEO, blogul poate deveni una dintre cele mai eficiente metode prin care o firmă își îmbogățește continuu corpusul informațional public."
+        },
+        {
+          "q": "Ce poate adăuga un articol la corpusul firmei?",
+          "a": "Informații, definiții, întrebări și răspunsuri, entități, proprietăți, relații, servicii, exemple, date, surse și dovezi."
+        },
+        {
+          "q": "Accesul unui crawler înseamnă citare în AI?",
+          "a": "Nu. CRAWLER ACCESS ≠ INDEXING ≠ RETRIEVAL ≠ CITATION ≠ RECOMMENDATION."
+        },
+        {
+          "q": "Mai multe articole înseamnă o reprezentare mai bună în AI?",
+          "a": "Nu automat. Conținutul trebuie să fie factual, actual, coerent, canonicalizat, structurat semantic, legat intern și susținut de surse unde e necesar."
+        }
+      ]
+    },
+    "test-repetabil-vizibilitate-ai": {
+      "description": "Cum verifici vizibilitatea firmei în AI cu un test repetabil: set de întrebări, mențiuni, citări, corectitudine și datele din Search Console.",
+      "keywords": [
+        "vizibilitate AI",
+        "test repetabil",
+        "rata de citare",
+        "rata de menționare",
+        "AI Overviews",
+        "ChatGPT Search",
+        "Perplexity",
+        "Search Console"
+      ],
+      "about": [
+        "AI visibility measurement"
+      ],
+      "mentions": [
+        "Google AI Overviews",
+        "AI Mode",
+        "ChatGPT Search",
+        "Perplexity",
+        "Google Search Console"
+      ],
+      "faq": [
+        {
+          "q": "Cum verifici corect vizibilitatea unei firme în AI?",
+          "a": "Printr-un test repetabil, nu printr-o singură căutare: urmărești dacă firma apare în răspunsuri, dacă AI-ul citează site-ul și dacă descrie corect oferta."
+        },
+        {
+          "q": "Ce întrebări intră în setul de test?",
+          "a": "15–30 de întrebări pe care clienții chiar le-ar pune: generale, locale, comparații, despre nevoi și de brand, cu accent pe întrebările fără numele firmei."
+        },
+        {
+          "q": "Ce notezi pentru fiecare întrebare?",
+          "a": "Mențiunea firmei, citarea, corectitudinea, poziția și contextul, concurenții și sursele, plus data, platforma și întrebarea."
+        },
+        {
+          "q": "Care e diferența dintre rata de menționare și rata de citare?",
+          "a": "Rata de menționare e procentul întrebărilor în care apare firma; rata de citare e procentul răspunsurilor cu link către site. Nu se combină: AI-ul poate menționa fără să citeze."
+        }
+      ]
+    },
+    "geo-gold-readiness-92-98-100-verified": {
+      "description": "GEO GOLD: de la 92/100 la 100/100 GEO Readiness verificat — diferența dintre readiness și performanță și ce spune cercetarea GEO.",
+      "keywords": [
+        "GEO GOLD",
+        "GEO Readiness",
+        "GEO Performance",
+        "Princeton",
+        "arXiv 2311.09735",
+        "proveniență",
+        "OpenTimestamps"
+      ],
+      "about": [
+        "Generative Engine Optimization",
+        "GEO Readiness"
+      ],
+      "mentions": [
+        "Pranjal Aggarwal",
+        "arXiv:2311.09735",
+        "DOI 10.1145/3637528.3671900"
+      ],
+      "faq": [
+        {
+          "q": "Care e diferența dintre GEO Readiness și GEO Performance?",
+          "a": "Readiness este ce se poate construi și verifica înainte de publicare; Performance este ce se observă după publicare în răspunsurile sistemelor AI externe."
+        },
+        {
+          "q": "Ce a adus pagina GEO de la 92/100 la 98/100?",
+          "a": "Completarea cu citate credibile și verificabile și cu proveniența academică explicită: sursa primară, autorii, identificatorul arXiv, DOI-ul și delimitarea față de metodologia AiVenture."
+        },
+        {
+          "q": "Cât poate crește vizibilitatea după cercetarea GEO?",
+          "a": "Lucrarea raportează o creștere de până la 40% în răspunsurile motoarelor generative; rezultatul nu este o garanție AiVenture și variază după domeniu și context."
+        },
+        {
+          "q": "Scorul 100/100 garantează citare sau trafic?",
+          "a": "Nu. Scorul descrie standardul intern de readiness și integritatea implementării, nu citare, ranking, trafic sau rezultat comercial."
+        }
+      ]
+    },
+    "audit-aio-aiventure-ce-functioneaza-ce-corectam": {
+      "description": "Auditul AIO al aiventure.ro din 27.09.2026: 26 de semnale evaluate, ce e bine implementat și ce trebuie sincronizat înainte de re-audit.",
+      "keywords": [
+        "audit AIO",
+        "aiventure.ro",
+        "26 semnale",
+        "sitemap",
+        "llms.txt",
+        "ai.json",
+        "re-audit"
+      ],
+      "about": [
+        "AI Optimization",
+        "AI audit"
+      ],
+      "mentions": [
+        "aiventure.ro",
+        "sitemap.xml",
+        "llms.txt",
+        "ai.json"
+      ],
+      "faq": [
+        {
+          "q": "Ce rezultat a avut auditul AIO din 27 septembrie 2026?",
+          "a": "Din 26 de semnale: 9 trecute, 8 parțial îndeplinite, 4 neîndeplinite și 5 imposibil de verificat direct; scorul strict este între 34,6% și 42,9%."
+        },
+        {
+          "q": "Ce era bine implementat?",
+          "a": "Accesul pentru crawlere AI, listele, FAQ-urile, rezumatul pentru sisteme AI, metadatele bogate și conținutul clar."
+        },
+        {
+          "q": "Ce trebuia îmbunătățit?",
+          "a": "Includerea consecventă a paginii /aio/ în sitemap.xml, ai.json, llms.txt și fișierele de mapare, versiune și dată de actualizare, și sincronizarea cifrelor despre semnale într-o singură sursă de adevăr."
+        }
+      ]
+    },
+    "geo-princeton-cum-creste-vizibilitatea-in-raspunsuri-ai": {
+      "description": "Studiul GEO (Princeton, KDD 2024): ce metode cresc vizibilitatea în răspunsurile AI — surse, citate, statistici — și de ce keyword stuffing nu merge.",
+      "keywords": [
+        "GEO",
+        "Generative Engine Optimization",
+        "studiu Princeton",
+        "KDD 2024",
+        "citări",
+        "statistici",
+        "keyword stuffing"
+      ],
+      "about": [
+        "Generative Engine Optimization"
+      ],
+      "mentions": [
+        "Princeton",
+        "KDD 2024",
+        "Perplexity",
+        "Aggarwal et al."
+      ],
+      "faq": [
+        {
+          "q": "Ce este GEO (Generative Engine Optimization)?",
+          "a": "Pregătirea conținutului pentru motoare care răspund cu texte sintetizate și citări, nu doar cu liste de linkuri."
+        },
+        {
+          "q": "Ce metode au funcționat cel mai bine în studiul GEO?",
+          "a": "Adăugarea de surse citabile, citate relevante, statistici și îmbunătățirea clarității textului; vizibilitatea a crescut cu până la aproximativ 40% în experimente."
+        },
+        {
+          "q": "Funcționează keyword stuffing pentru răspunsurile AI?",
+          "a": "Nu. A avut rezultate slabe și uneori mai proaste decât conținutul neoptimizat."
+        },
+        {
+          "q": "Garantează GEO citarea?",
+          "a": "Nu. Completează SEO și oferă o direcție practică pentru conținut credibil și verificabil, fără să garanteze citarea."
+        }
+      ]
+    },
+    "ce-inseamna-geo-readiness-100-100": {
+      "description": "Ce înseamnă GEO Readiness 100/100 la AiVenture: ce a fost verificat, ce nu garantează și cum se măsoară separat performanța GEO.",
+      "keywords": [
+        "GEO Readiness",
+        "100/100",
+        "GEO GOLD",
+        "OpenTimestamps",
+        "performanță GEO",
+        "BEFORE AFTER"
+      ],
+      "about": [
+        "GEO Readiness"
+      ],
+      "mentions": [
+        "OpenTimestamps",
+        "Google",
+        "Perplexity",
+        "ChatGPT",
+        "Gemini"
+      ],
+      "faq": [
+        {
+          "q": "Ce înseamnă GEO Readiness 100/100?",
+          "a": "Că pentru un artefact GEO înghețat au fost îndeplinite criteriile structurale, semantice, editoriale, de proveniență și de evidență din metodologia AiVenture."
+        },
+        {
+          "q": "Este 100/100 un scor de performanță în Google sau ChatGPT?",
+          "a": "Nu. Se referă la readiness în metodologia AiVenture, nu la performanța în Google, Perplexity, ChatGPT, Gemini sau alte produse AI."
+        },
+        {
+          "q": "Ce atestă OpenTimestamps?",
+          "a": "Existența digestului criptografic la un moment dat, nu eficiența comercială."
+        },
+        {
+          "q": "Cum se măsoară performanța GEO?",
+          "a": "Separat, după publicare, crawl sau indexare, prin testare controlată BEFORE–AFTER cu întrebări relevante."
+        }
+      ]
+    },
+    "ce-inseamna-aio-assessment-98-08-100": {
+      "description": "Evaluarea AIO 98,08/100 a AiVenture: cum s-a calculat pe 26 de semnale, ce acoperă, semnalul PARTIAL și limitele evaluării.",
+      "keywords": [
+        "evaluare AIO",
+        "98,08/100",
+        "26 semnale",
+        "Source Citation Quality",
+        "RRVI",
+        "readiness"
+      ],
+      "about": [
+        "AI Optimization",
+        "AI readiness assessment"
+      ],
+      "mentions": [
+        "Gemini",
+        "RRVI",
+        "OpenAI"
+      ],
+      "faq": [
+        {
+          "q": "Cum s-a calculat scorul AIO 98,08/100?",
+          "a": "1 punct pentru PASS, 0,5 pentru PARTIAL, 0 pentru FAIL: 25 PASS, 1 PARTIAL și 0 FAIL dau 25,5 din 26, adică 98,08%."
+        },
+        {
+          "q": "De ce un semnal a rămas PARTIAL?",
+          "a": "Source Citation Quality, pentru că un test Gemini a reconstruit RRVI cu o extindere diferită de definiția curentă: descoperirea a trecut, consistența semantică nu."
+        },
+        {
+          "q": "Este scorul o certificare OpenAI?",
+          "a": "Nu. Nu este certificare sau audit independent OpenAI, certificare juridică ori garanție de clasare, citare, trafic sau conversii; este un indicator de readiness."
+        }
+      ]
+    },
+    "prima-verificare-aio-chatgpt-aiventure-ro": {
+      "description": "Prima verificare AIO cu ChatGPT pe aiventure.ro (28.09.2026): ce funcționează, ce trebuie sincronizat și ce nu măsoară raportul.",
+      "keywords": [
+        "verificare AIO",
+        "ChatGPT",
+        "aiventure.ro",
+        "semnale AIO",
+        "sincronizare",
+        "re-audit"
+      ],
+      "about": [
+        "AI Optimization",
+        "AI audit"
+      ],
+      "mentions": [
+        "ChatGPT",
+        "aiventure.ro",
+        "Common Crawl"
+      ],
+      "faq": [
+        {
+          "q": "Ce rezultat a avut prima verificare AIO cu ChatGPT?",
+          "a": "Din 23 de semnale aplicabile, 19 au fost verificate: 7 PASS, 11 PARTIAL și 1 FAIL; alte 4 au rămas netestate."
+        },
+        {
+          "q": "Ce funcționa deja?",
+          "a": "Roboții ChatGPT erau permiși, cele 37 de adrese testate au răspuns HTTP 200, pagina AIO avea un rezumat identificabil, iar site-ul includea 400 de întrebări și răspunsuri."
+        },
+        {
+          "q": "Ce trebuia corectat?",
+          "a": "Fișiere pentru AI care descriau un homepage vechi, linkuri interne care duceau la homepage în loc de conținutul promis și headinguri, rezumate, sesiune și dată nesincronizate cu versiunea live."
+        },
+        {
+          "q": "Accesul robotului ChatGPT dovedește citarea?",
+          "a": "Nu. Accesul unui robot nu dovedește citare sau recomandare."
+        }
+      ]
+    },
+    "ce-face-aiventure-diferit-control-loop-crestere-digitala": {
+      "description": "Ce face AiVenture diferit: pornește de la motivul pentru care clienții au ales firma și rulează un control loop de testare și măsurare.",
+      "keywords": [
+        "AiVenture",
+        "control loop",
+        "creștere digitală",
+        "motive de cumpărare",
+        "SEO",
+        "AEO",
+        "GEO",
+        "AIO"
+      ],
+      "about": [
+        "AiVenture",
+        "Control loop"
+      ],
+      "mentions": [
+        "SEO",
+        "AEO",
+        "GEO",
+        "AIO"
+      ],
+      "faq": [
+        {
+          "q": "De unde pornește AiVenture, spre deosebire de alte servicii?",
+          "a": "Nu de la keywords sau prompturi, ci de la întrebarea: de ce au ales clienții existenți firma și nu alternativele?"
+        },
+        {
+          "q": "Ce este control loop-ul AiVenture?",
+          "a": "Înțelegerea valorii, publicarea reprezentării, testarea, măsurarea efectului, păstrarea dovezii, actualizarea modelului firmei și testarea din nou."
+        },
+        {
+          "q": "Ce rol au SEO, AEO, GEO și AIO în acest model?",
+          "a": "Sunt actuatoare ale unui sistem de învățare care transformă motivele reale de cumpărare în informație verificabilă."
+        }
+      ]
+    },
+    "instrumente-externe-audit-aeo-geo-aio-ai-seo": {
+      "description": "Instrumentele externe dintr-un audit AEO, GEO, AIO și AI-SEO: crawl tehnic, date first-party, validare schema, monitorizare AI și loguri.",
+      "keywords": [
+        "instrumente audit",
+        "Screaming Frog",
+        "Google Search Console",
+        "Bing Webmaster Tools",
+        "Rich Results Test",
+        "AI visibility",
+        "Ahrefs",
+        "Semrush"
+      ],
+      "about": [
+        "SEO audit tools",
+        "AI visibility monitoring"
+      ],
+      "mentions": [
+        "Screaming Frog",
+        "Sitebulb",
+        "Google Search Console",
+        "Bing Webmaster Tools",
+        "Rich Results Test",
+        "Schema Markup Validator",
+        "Ahrefs",
+        "Semrush",
+        "Brand24"
+      ],
+      "faq": [
+        {
+          "q": "Se poate face un audit complet cu un singur scor?",
+          "a": "Nu. Un audit complet combină crawl tehnic, date first-party, monitorizare AI și analiză off-page."
+        },
+        {
+          "q": "Ce instrumente se folosesc pentru crawl tehnic?",
+          "a": "Screaming Frog, Sitebulb sau un crawler propriu, pentru status HTTP, indexabilitate, canonical, robots, headinguri, linkuri, conținut și date structurate."
+        },
+        {
+          "q": "Cu ce se verifică schema și vizibilitatea în AI?",
+          "a": "Rich Results Test și Schema Markup Validator pentru markup; Ahrefs Brand Radar, Semrush AI Visibility, Peec, Otterly și Profound pentru mențiuni, citări și prompturi."
+        },
+        {
+          "q": "Ce arată logurile serverului sau CDN-ului?",
+          "a": "Accesul real al crawlerelor și resursele blocate."
+        }
+      ]
+    },
+    "prompt-a2a-audit-aio-live-26-semne": {
+      "description": "Prompt A2A pentru audit AIO live: 26 de semnale verificate pe pagini publicate, cu dovezi, scor reproducibil și comparație BEFORE/AFTER.",
+      "keywords": [
+        "prompt A2A",
+        "audit AIO",
+        "26 semnale",
+        "scor reproducibil",
+        "dovezi",
+        "BEFORE AFTER"
+      ],
+      "about": [
+        "AI Optimization",
+        "Agent-to-Agent audit"
+      ],
+      "mentions": [
+        "llms.txt",
+        "robots.txt",
+        "sitemap.xml"
+      ],
+      "faq": [
+        {
+          "q": "Ce face un audit AIO util?",
+          "a": "Este live, repetabil și bazat pe dovezi; fișierele pentru AI trebuie să descrie corect paginile publicate, nu doar să existe."
+        },
+        {
+          "q": "Cum se calculează scorul confirmat?",
+          "a": "PASS valorează un punct, PARTIAL și FAIL zero, UNKNOWN se raportează separat; scorul este PASS/26 × 100."
+        },
+        {
+          "q": "Când se pot compara BEFORE și AFTER?",
+          "a": "Numai cu aceeași metodă și dovezi păstrate; altfel delta este necalculabilă."
+        }
+      ]
+    },
+    "cum-se-calculeaza-scorul-geo-audit-ai": {
+      "description": "Cum se calculează corect scorul GEO într-un audit AI: medie ponderată a semnalelor evaluabile, reguli clare pentru PASS, PARTIAL și FAIL.",
+      "keywords": [
+        "scor GEO",
+        "audit AI",
+        "medie ponderată",
+        "ponderi semnale",
+        "PASS PARTIAL FAIL",
+        "3webobs"
+      ],
+      "about": [
+        "Generative Engine Optimization",
+        "AI audit scoring"
+      ],
+      "mentions": [
+        "3webobs.com",
+        "schema Organization",
+        "ai.json"
+      ],
+      "faq": [
+        {
+          "q": "Ce este scorul GEO?",
+          "a": "O medie ponderată a semnalelor măsurate; nu este un procent universal al vizibilității AI și nu prezice direct vânzările."
+        },
+        {
+          "q": "Cum se calculează?",
+          "a": "Suma punctajelor ponderate împărțită la suma ponderilor semnalelor evaluabile; semnalele not applicable se exclud din ambele."
+        },
+        {
+          "q": "Au toate semnalele aceeași pondere?",
+          "a": "Nu. De exemplu, datele structurate pentru graful entităților, schema Organization, ai.json și declarația de intenții au ponderi diferite în catalog."
+        },
+        {
+          "q": "Cum se tratează semnalele neverificabile?",
+          "a": "Nu se tratează automat ca FAIL, iar valoarea PARTIAL nu se inventează: e nevoie de o regulă numerică explicită."
+        }
+      ]
+    },
+    "cum-interpretezi-corect-scorul-audit-ai": {
+      "description": "Cum citești corect scorul dintr-un audit AI: ce a măsurat, ce nu, de ce 7 din 19 nu înseamnă 37% vizibilitate și când scorurile sunt comparabile.",
+      "keywords": [
+        "scor audit AI",
+        "interpretare scor",
+        "vizibilitate AI",
+        "comparabilitate",
+        "metodologie audit"
+      ],
+      "about": [
+        "AI audit scoring"
+      ],
+      "mentions": [
+        "ChatGPT"
+      ],
+      "faq": [
+        {
+          "q": "Ce arată un scor dintr-un audit AI?",
+          "a": "Ce a măsurat metodologia; nu este un procent universal al vizibilității în AI și nu prezice direct vânzările."
+        },
+        {
+          "q": "Ce înseamnă un rezultat de 7 din 19?",
+          "a": "Șapte condiții confirmate din 19 măsurate; nu înseamnă 37% vizibilitate în ChatGPT sau 37% șanse de recomandare. Rezultatele nemăsurate nu sunt eșecuri."
+        },
+        {
+          "q": "Când sunt comparabile două scoruri?",
+          "a": "Numai când păstrează rubricile, modelul, întrebările, limba, regiunea, rulările, probele și formula de calcul."
+        }
+      ]
+    },
+    "cat-costa-seo-aeo-geo-serviciile-ai": {
+      "description": "Cât costă SEO, AEO, GEO și serviciile AI în România, Europa de Vest și SUA: repere de buget și ce influențează prețul.",
+      "keywords": [
+        "preț SEO",
+        "cost GEO",
+        "cost AEO",
+        "AI-SEO",
+        "buget SEO România",
+        "servicii AI",
+        "agentic"
+      ],
+      "about": [
+        "SEO pricing",
+        "Generative Engine Optimization"
+      ],
+      "mentions": [
+        "România",
+        "Europa de Vest",
+        "SUA"
+      ],
+      "faq": [
+        {
+          "q": "Cât costă SEO clasic?",
+          "a": "Ca repere: aproximativ €300–€1.000 pe lună în România, €800–€2.500 în Europa de Vest și $500–$5.000 în SUA; prețul real depinde de site, concurență, numărul de pagini, conținut și livrabile."
+        },
+        {
+          "q": "Ce diferență e între AEO, GEO și AI-SEO?",
+          "a": "AEO organizează conținutul pentru întrebări și răspunsuri clare, GEO urmărește ca firma să fie folosită ca sursă în răspunsurile AI, iar AI-SEO combină SEO clasic cu măsurarea vizibilității în căutări AI."
+        },
+        {
+          "q": "Un software de optimizare înlocuiește serviciul?",
+          "a": "Nu. Instrumentul analizează, monitorizează sau sugerează, dar nu înlocuiește strategia, scrierea, implementarea, verificarea și responsabilitatea."
+        },
+        {
+          "q": "Trebuie facturate separat SEO, AEO și GEO?",
+          "a": "Nu, când includ aceeași muncă; o ofertă corectă se construiește pe livrabile clare."
+        }
+      ]
+    },
+    "implementare-web-ai-firma": {
+      "description": "Cum implementezi Web-AI pentru o firmă: ofertă clară, pagini utile, bază tehnică reparată și testare repetată, fără promisiuni de recomandare.",
+      "keywords": [
+        "Web-AI",
+        "implementare",
+        "ofertă clară",
+        "indexare",
+        "date structurate",
+        "llms.txt",
+        "testare AI"
+      ],
+      "about": [
+        "WEB-AI"
+      ],
+      "mentions": [
+        "Google",
+        "robots.txt",
+        "sitemap",
+        "llms.txt"
+      ],
+      "faq": [
+        {
+          "q": "Ce înseamnă Web-AI pentru o firmă?",
+          "a": "Nu un chatbot sau un fișier care garantează recomandări, ci o ofertă clară, accesibilă și verificabilă, testată apoi în ce privește reprezentarea ei."
+        },
+        {
+          "q": "Ce trebuie clarificat la fiecare serviciu?",
+          "a": "Publicul, problema, procesul, livrabilele, limitele, piața, termenele și dovezile."
+        },
+        {
+          "q": "Este llms.txt obligatoriu pentru funcțiile AI din Google?",
+          "a": "Nu. Poate fi auxiliar; baza rămâne indexarea, robots.txt, sitemap-ul, conținutul HTML și datele structurate conforme cu pagina."
+        },
+        {
+          "q": "Cum se testează rezultatul?",
+          "a": "Cu 10–20 de întrebări relevante, repetate, măsurând separat mențiunile, citările, acuratețea, traficul și cererile."
+        }
+      ]
+    },
+    "masurare-vizibilitate-ai-ghid": {
+      "description": "Cum măsori vizibilitatea firmei în AI Search: eșantion de întrebări, dovezi păstrate, indicatori separați și corelare cu datele proprii.",
+      "keywords": [
+        "măsurare vizibilitate AI",
+        "AI Search",
+        "rata de citare",
+        "rata de menționare",
+        "Search Console",
+        "protocol repetabil"
+      ],
+      "about": [
+        "AI visibility measurement"
+      ],
+      "mentions": [
+        "Google Search Console",
+        "OpenAI"
+      ],
+      "faq": [
+        {
+          "q": "Cum se măsoară vizibilitatea în AI Search?",
+          "a": "Cu un protocol repetabil, nu cu o singură conversație, separând mențiunea firmei, citarea site-ului, recomandarea explicită și acuratețea descrierii."
+        },
+        {
+          "q": "Ce eșantion de întrebări se folosește?",
+          "a": "15–30 de întrebări reale ale clienților, inclusiv fără numele firmei, notând limba, regiunea, platforma, întrebarea și data."
+        },
+        {
+          "q": "Un rezultat lipsă înseamnă eșec?",
+          "a": "Nu. Răspunsurile nemăsurate se raportează separat."
+        },
+        {
+          "q": "Cu ce se corelează rezultatele?",
+          "a": "Cu raportul generativ din Search Console, dacă e disponibil, și separat cu traficul din platformele AI, cererile și conversiile, repetând lunar același protocol."
+        }
+      ]
+    },
+    "optimizare-site-ai-search": {
+      "description": "Cum optimizezi un site pentru AI Search: SEO solid, acces verificat, ofertă clară, date structurate conforme și măsurare, fără trucuri AI.",
+      "keywords": [
+        "optimizare AI Search",
+        "AI Overviews",
+        "AI Mode",
+        "OAI-SearchBot",
+        "GPTBot",
+        "date structurate",
+        "Search Console"
+      ],
+      "about": [
+        "AI search optimization"
+      ],
+      "mentions": [
+        "Google AI Overviews",
+        "AI Mode",
+        "OAI-SearchBot",
+        "GPTBot",
+        "Google Search Console"
+      ],
+      "faq": [
+        {
+          "q": "Cere Google un markup special pentru AI Overviews sau AI Mode?",
+          "a": "Nu. Google nu cere markup special și nu garantează afișarea; se începe cu SEO solid, pagini accesibile și informații originale."
+        },
+        {
+          "q": "Ce trebuie verificat la acces?",
+          "a": "Indexarea în Search Console, robots.txt, noindex, CDN, linkurile interne, sitemap-ul și textul disponibil pe paginile importante."
+        },
+        {
+          "q": "Care e diferența dintre OAI-SearchBot și GPTBot?",
+          "a": "Pentru acces în căutarea ChatGPT, regulile pentru OAI-SearchBot se verifică separat de cele pentru GPTBot."
+        },
+        {
+          "q": "Vizibilitatea în AI înseamnă vânzări?",
+          "a": "Nu. Datele din Search Console se compară cu traficul, cererile și conversiile."
+        }
+      ]
+    },
+    "servicii-bugete-orientative-agent-ai": {
+      "description": "Servicii și bugete orientative pentru SEO, AEO, GEO, AIO, AI-SEO și agenți AI în România, UE de Vest și SUA, plus modelul agentic.",
+      "keywords": [
+        "bugete SEO",
+        "preț GEO",
+        "preț AEO",
+        "AIO",
+        "agenți AI",
+        "modelul agentic",
+        "A2A"
+      ],
+      "about": [
+        "SEO pricing",
+        "Agentic operations"
+      ],
+      "mentions": [
+        "România",
+        "UE de Vest",
+        "SUA",
+        "A2A"
+      ],
+      "faq": [
+        {
+          "q": "Care e diferența dintre modelul manual și cel agentic?",
+          "a": "În modelul manual specialistul intervine periodic, în limita orelor contractate; în modelul agentic monitorizarea poate funcționa 24/7, cu execuții autorizate, alerte și aprobare umană pentru excepții."
+        },
+        {
+          "q": "Garantează operarea agentică o economie?",
+          "a": "Nu. Poate reduce costul per acțiune repetitivă, dar economia se calculează pe același volum și aceleași livrabile; nu e garantat niciun procent."
+        },
+        {
+          "q": "Cât costă monitorizarea AEO sau AIO cu un instrument?",
+          "a": "Aproximativ $29–$399 pe lună, ceea ce nu echivalează cu serviciul unei agenții."
+        },
+        {
+          "q": "Cum se tarifează OFF-PAGE?",
+          "a": "Poate fi tarifat per pachet; un reper furnizat este aproximativ €129–€499 per pachet, cu publicarea și calitatea de verificat."
+        }
+      ]
+    },
+    "serviciu-b2b-agent-ready": {
+      "description": "Cum pregătești un serviciu B2B pentru agenți AI: ofertă versionată, reguli explicite, solicitare controlată și A2A doar când e necesar.",
+      "keywords": [
+        "Agent-Ready",
+        "serviciu B2B",
+        "agenți AI",
+        "A2A",
+        "Agent Card",
+        "contractul ofertei"
+      ],
+      "about": [
+        "Agent-to-Agent commerce",
+        "B2B services"
+      ],
+      "mentions": [
+        "A2A",
+        "Agent Card"
+      ],
+      "faq": [
+        {
+          "q": "Ce înseamnă un serviciu Agent-Ready?",
+          "a": "O ofertă clară, reguli explicite și un mod controlat de solicitare, nu vânzare autonomă."
+        },
+        {
+          "q": "Ce conține contractul ofertei?",
+          "a": "Versiunea serviciului, eligibilitatea, prețul sau calculul lui, termenul, excluderile, aprobările și dovada livrării; agentul nu inventează promisiuni sau excepții."
+        },
+        {
+          "q": "Cine aprobă angajamentele comerciale?",
+          "a": "Agentul poate califica și pregăti o solicitare, dar angajamentele se aprobă potrivit mandatului firmei."
+        },
+        {
+          "q": "Când se adaugă A2A?",
+          "a": "După ce solicitarea asistată de om e testată; protocolul A2A susține comunicarea dintre agenți, dar nu stabilește singur regulile comerciale."
+        }
+      ]
+    },
+    "site-gasit-in-google-si-in-ai": {
+      "description": "Cum construiești un site găsit și în Google, și în AI: pornești de la intenția clientului, folosești cuvintele lui și publici răspunsuri clare.",
+      "keywords": [
+        "SEO",
+        "GEO",
+        "intenție de căutare",
+        "cuvinte cheie",
+        "AI Overviews",
+        "site firmă",
+        "contabilitate SRL"
+      ],
+      "about": [
+        "Search intent",
+        "Generative Engine Optimization",
+        "SEO"
+      ],
+      "mentions": [
+        "Google",
+        "AI Overviews",
+        "ChatGPT"
+      ],
+      "faq": []
+    }
+  }
+}

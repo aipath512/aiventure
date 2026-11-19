@@ -1,6 +1,9 @@
 // AiVenture — middleware pe TOATE paginile aiventure.ro
-// v1.4.1 · 2026-11-19
+// v1.5 · 2026-11-19
 //
+// v1.5: STRAT DE ÎMBOGĂȚIRE /blog/imbogatire.json (descriere, cuvinte cheie, subiecte, întrebări-răspuns din text) — secțiune vizibilă
+//       „Întrebări frecvente” + FAQPage pereche, meta description/keywords, BlogPosting cu ~30 de proprietăți (keywords, about,
+//       mentions, abstract, speakable, timeRequired …); articolele vechi scrise ca text brut (## în <pre>) afișate ca HTML real.
 // v1.4.3: articol inexistent sau retras (status ≠ published în articles.json) -> 410 Gone, nu pagina principală.
 // v1.4.2: buton „📋 Copiază linkul articolului” sus, lângă autor și dată.
 // v1.4.1: sub autor, vizibil pe fiecare articol: „Publicat de AiVenture S.R.L. — firmă din București, România · CUI 51415878 · contact@5thelement.ai”;
@@ -86,6 +89,49 @@ async function loadArticles(context) {
   } catch (_) { return []; }
 }
 
+async function loadEnrich(context) {
+  try {
+    const u = new URL("/blog/imbogatire.json", context.request.url);
+    const r = context.env && context.env.ASSETS ? await context.env.ASSETS.fetch(u) : await fetch(u);
+    if (!r.ok) return {};
+    const d = await r.json();
+    return d.articole || {};
+  } catch (_) { return {}; }
+}
+
+// Markdown simplu (articole vechi publicate ca text brut în <pre>) -> HTML real (h2, h3, liste, tabele, îngroșat).
+function mdToHtml(md) {
+  const inl = (t) => esc(t).replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
+  const L = String(md).replace(/\r/g, "").split("\n");
+  const out = []; let para = [];
+  const flush = () => { if (para.length) { out.push(`<p>${inl(para.join(" "))}</p>`); para = []; } };
+  for (let i = 0; i < L.length; i++) {
+    const t = L[i].trim();
+    if (!t) { flush(); continue; }
+    let m;
+    if ((m = /^(#{2,4})\s+(.*)$/.exec(t))) { flush(); const n = m[1].length >= 3 ? 3 : 2; out.push(`<h${n}>${inl(m[2])}</h${n}>`); continue; }
+    if (/^\|.*\|$/.test(t)) {
+      flush(); const rows = [];
+      while (i < L.length && /^\|.*\|$/.test(L[i].trim())) { rows.push(L[i].trim()); i++; }
+      i--;
+      const cells = (r) => r.replace(/^\||\|$/g, "").split("|").map((c) => c.trim());
+      const data = rows.filter((r) => !/^\|?\s*:?-{2,}/.test(r)).map(cells); const head = data.shift() || [];
+      out.push(`<div class="tw"><table><thead><tr>${head.map((c) => `<th>${inl(c)}</th>`).join("")}</tr></thead><tbody>${data.map((r) => `<tr>${r.map((c) => `<td>${inl(c)}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`);
+      continue;
+    }
+    if (/^[-*]\s+/.test(t) || /^\d+[.)]\s+/.test(t)) {
+      flush(); const ord = /^\d/.test(t), re = ord ? /^\d+[.)]\s+/ : /^[-*]\s+/, items = [];
+      while (i < L.length && re.test(L[i].trim())) { items.push(L[i].trim().replace(re, "")); i++; }
+      i--;
+      out.push(`<${ord ? "ol" : "ul"}>${items.map((x) => `<li>${inl(x)}</li>`).join("")}</${ord ? "ol" : "ul"}>`);
+      continue;
+    }
+    para.push(t);
+  }
+  flush();
+  return out.join("\n");
+}
+
 const newest = (a, b) => ((b.published_at || b.published || "") + b.id).localeCompare((a.published_at || a.published || "") + a.id);
 const fmtDate = (a) => (a.published || "").split("-").reverse().join(".");
 const words = (s) => new Set(String(s || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").split(/[^a-z0-9]+/).filter((w) => w.length > 3));
@@ -139,6 +185,7 @@ const SITE_CSS = `<style>
 .aiv-by{font-size:14px;color:#b8bcc6;margin:6px 0 0}.aiv-cp{padding:4px 10px;border-radius:8px;border:1px solid #e7c86e;background:transparent;color:#e7c86e;font:600 13px system-ui,sans-serif;cursor:pointer}.aiv-cp:hover{background:#e7c86e;color:#090b10}.aiv-by a{color:#e7c86e}
 .aiv-pub{font-size:14px;color:#b8bcc6;margin:4px 0 0;padding:8px 12px;border-left:3px solid #e7c86e;background:#0d1016;border-radius:0 8px 8px 0}.aiv-pub a{color:#e7c86e}
 .aiv-toc{margin:22px 0;padding:12px 16px;border:1px solid #292d36;border-radius:10px;background:#0d1016;font-size:15px}.aiv-toc strong{display:block;margin-bottom:4px}.aiv-toc ol{margin:0;padding-left:20px}.aiv-toc a{color:#e7c86e}
+.aiv-faq{margin:40px 0 0;padding:18px;border:1px solid #292d36;border-radius:12px;background:#0d1016}.aiv-faq>h2{margin:0 0 8px}.aiv-faq details{border-top:1px solid #292d36;padding:10px 0}.aiv-faq summary{cursor:pointer;list-style:none}.aiv-faq summary h3{display:inline;font-size:17px;color:#e7c86e;margin:0}.aiv-faq p{margin:6px 0 0}
 .aiv-ftr{border-top:1px solid #292d36;margin-top:40px;padding:22px 18px;font-size:13px;color:#9298a4;text-align:center}.aiv-ftr a{color:#9298a4;margin:0 6px}
 </style>`;
 const BASE_CSS = `<style>*{box-sizing:border-box}body{margin:0;background:#090b10;color:#f5f5f5;font:17px/1.7 system-ui,-apple-system,Segoe UI,sans-serif}main{max-width:820px;margin:auto;padding:26px 18px 80px}a{color:#e7c86e;text-decoration:none}h1{font-size:clamp(32px,6vw,52px);line-height:1.08;margin:20px 0 12px}h2{margin-top:40px;line-height:1.2}</style>`;
@@ -171,6 +218,8 @@ function metaFamily(A, cur, url, title) {
   const d = esc(A.desc || title);
   add(/name=["']robots["']/i, `<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">`);
   add(/name=["']author["']/i, `<meta name="author" content="${AUTHOR_NAME}">`);
+  const kw = (A.keywords || []).join(", ");
+  if (kw) add(/name=["']keywords["']/i, `<meta name="keywords" content="${esc(kw)}">`);
   add(/rel=["']canonical["']/i, `<link rel="canonical" href="${url}">`);
   add(/hreflang=/i, `<link rel="alternate" hreflang="ro" href="${url}">`);
   add(/og:type/i, `<meta property="og:type" content="article">`);
@@ -210,8 +259,10 @@ function orgNode(I) {
     sameAs: [p.linkedin_firma, p.crunchbase, p.x, p.youtube, p.medium, "https://5thelement.ai/", SITE + "/"].filter(Boolean) };
 }
 
-function articleGraph(I, A, cur, url, title) {
+function articleGraph(I, A, cur, url, title, en = {}, faqList = []) {
   const pub = cur ? iso(cur.published_at || cur.published) : undefined;
+  const kws = (en.keywords && en.keywords.length ? en.keywords : (cur && cur.keywords) || []);
+  const thing = (n) => ({ "@type": "Thing", name: n });
   const graph = [
     { "@type": "WebSite", "@id": WEBSITE_ID, url: SITE + "/", name: "AiVenture", inLanguage: "ro-RO", publisher: { "@id": ORG_ID },
       potentialAction: { "@type": "SearchAction", target: { "@type": "EntryPoint", urlTemplate: SITE + "/blog/?q={search_term_string}" }, "query-input": "required name=search_term_string" } },
@@ -223,14 +274,21 @@ function articleGraph(I, A, cur, url, title) {
       isPartOf: { "@id": BLOG_ID }, author: { "@id": PERSON_ID }, publisher: { "@id": ORG_ID }, image: OG_IMAGE,
       datePublished: pub, dateModified: cur && cur.updated_at || pub, version: cur && cur.version || undefined, identifier: cur && cur.id || undefined,
       articleSection: cur && cur.category || undefined, wordCount: A.words || undefined,
+      abstract: A.desc || undefined, keywords: kws.length ? kws.join(", ") : undefined,
+      about: en.about && en.about.length ? en.about.map(thing) : undefined,
+      mentions: en.mentions && en.mentions.length ? en.mentions.map(thing) : undefined,
+      timeRequired: A.words ? `PT${Math.max(1, Math.round(A.words / 200))}M` : undefined,
+      dateCreated: pub, copyrightHolder: { "@id": ORG_ID }, copyrightYear: pub ? Number(String(pub).slice(0, 4)) : undefined,
+      isAccessibleForFree: true, thumbnailUrl: OG_IMAGE,
+      speakable: { "@type": "SpeakableSpecification", cssSelector: ["h1", ".aiv-faq"] },
       ...(cur && cur.sha256 ? { additionalProperty: { "@type": "PropertyValue", propertyID: "SHA-256", value: cur.sha256 } } : {}) },
     { "@type": "BreadcrumbList", "@id": url + "#breadcrumb", itemListElement: [
       { "@type": "ListItem", position: 1, name: "Acasă", item: SITE + "/" },
       { "@type": "ListItem", position: 2, name: "Blog", item: SITE + "/blog/" },
       { "@type": "ListItem", position: 3, name: title, item: url }] }
   ];
-  if (A.faq.length >= 2) graph.push({ "@type": "FAQPage", "@id": url + "#faq", isPartOf: { "@id": url + "#webpage" },
-    mainEntity: A.faq.map((x) => ({ "@type": "Question", name: x.q, acceptedAnswer: { "@type": "Answer", text: x.a } })) });
+  if (faqList.length >= 2) graph.push({ "@type": "FAQPage", "@id": url + "#faq", isPartOf: { "@id": url + "#webpage" },
+    mainEntity: faqList.map((x) => ({ "@type": "Question", name: x.q, acceptedAnswer: { "@type": "Answer", text: x.a } })) });
   return `<script type="application/ld+json">${JSON.stringify({ "@context": "https://schema.org", "@graph": graph }).replace(/</g, "\\u003c")}</script>`;
 }
 
@@ -285,8 +343,10 @@ export async function onRequest(context) {
 
   if (m) {
     try {
-      const html = await response.text();
-      const [I, all] = await Promise.all([loadIdentity(), loadArticles(context)]);
+      let html = await response.text();
+      const [I, all, EN] = await Promise.all([loadIdentity(), loadArticles(context), loadEnrich(context)]);
+      // articole vechi publicate ca text brut (## ...) într-un <pre>: afișate ca HTML real
+      html = html.replace(/<pre[^>]*>([\s\S]*?)<\/pre>/gi, (m, body) => (/^#{2,3}\s/m.test(body) ? mdToHtml(body.replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&amp;/g, "&")) : m));
       const slug = m[1], pageUrl = `${SITE}/blog/${slug}/`;
       const cur = all.find((a) => a.slug === slug);
       if (all.length && !cur) {
@@ -295,6 +355,12 @@ export async function onRequest(context) {
           { status: 410, headers: { "content-type": "text/html; charset=utf-8", "cache-control": "no-store" } });
       }
       const A = analyze(html);
+      const en = EN[slug] || {};
+      if (en.description) A.desc = en.description; else if (cur && cur.description && !A.desc) A.desc = cur.description;
+      A.keywords = en.keywords && en.keywords.length ? en.keywords : (cur && cur.keywords) || [];
+      const enFaq = (en.faq || []).filter((x) => x && x.q && x.a);
+      const faqList = enFaq.length ? enFaq : A.faq;
+      const faqHtml = enFaq.length ? `<section class="aiv-faq" id="intrebari-frecvente" aria-label="Întrebări frecvente"><h2>Întrebări frecvente</h2>${enFaq.map((x) => `<details open><summary><h3>${esc(x.q)}</h3></summary><p>${esc(x.a)}</p></details>`).join("")}</section>` : "";
       const title = (cur && cur.title) || A.h1 || "Articol";
       const blocks = articleBlocks(I, all, slug, pageUrl);
       const crumb = `<nav class="aiv-bc" aria-label="Fir de navigare"><a href="/">Acasă</a> › <a href="/blog/">Blog</a> › <span aria-current="page">${esc(title)}</span>${cur && cur.id ? ` · ${esc(cur.id)}` : ""}</nav>`;
@@ -303,14 +369,17 @@ export async function onRequest(context) {
         + `<p class="aiv-pub">Publicat de <strong>${esc(F.denumire_legala || "AiVenture S.R.L.")}</strong> — firmă din <strong>${esc(S.localitate || "București")}, România</strong> · <strong>CUI ${esc(F.cui || "51415878")}</strong> · <!--email_off--><a href="mailto:${esc(email)}">${esc(email)}</a><!--/email_off--></p>`;
       const toc = A.h2s.length >= 3 ? `<nav class="aiv-toc" aria-label="Cuprins"><strong>Cuprins</strong><ol>${A.h2s.map((t, i) => `<li><a href="#s${i + 1}">${esc(t)}</a></li>`).join("")}</ol></nav>` : "";
       let n = 0, crumbDone = false, h1Done = false;
+      const hasArticle = /<article[\s>]/i.test(html);
       const rw = new HTMLRewriter()
         .on('script[type="application/ld+json"]', { element(el) { el.remove(); } })
-        .on("head", { element(el) { el.append((A.hasStyle ? "" : BASE_CSS) + SITE_CSS + metaFamily(A, cur, pageUrl, title) + articleGraph(I, A, cur, pageUrl, title), { html: true }); } })
+        .on('meta[name="description"], meta[property="og:description"], meta[name="twitter:description"]', { element(el) { if (en.description) el.setAttribute("content", en.description); } })
+        .on("head", { element(el) { el.append((A.hasStyle ? "" : BASE_CSS) + SITE_CSS + metaFamily(A, cur, pageUrl, title) + articleGraph(I, A, cur, pageUrl, title, en, faqList), { html: true }); } })
         .on("body", { element(el) { el.prepend(header(), { html: true }); el.append(footer(I) + WIDGET, { html: true }); } })
         .on("div.crumb", { element(el) { if (!crumbDone) { el.replace(crumb, { html: true }); crumbDone = true; } } })
         .on("h1", { element(el) { if (!h1Done) { h1Done = true; if (!crumbDone) { el.before(crumb, { html: true }); crumbDone = true; } el.after(by + toc, { html: true }); } } })
         .on("main h2", { element(el) { n++; if (!el.getAttribute("id")) el.setAttribute("id", "s" + n); } })
-        .on("main", { element(el) { el.append(blocks, { html: true }); } });
+        .on("main", { element(el) { el.append((hasArticle ? "" : faqHtml) + blocks, { html: true }); } })
+        .on("article", { element(el) { if (faqHtml) el.append(faqHtml, { html: true }); } });
       const out = new Response(html, response);
       out.headers.delete("content-length");
       return rw.transform(out);
