@@ -1,6 +1,7 @@
 // AiVenture — middleware pe TOATE paginile aiventure.ro
 // v1.4.1 · 2026-11-19
 //
+// v1.4.3: articol inexistent sau retras (status ≠ published în articles.json) -> 410 Gone, nu pagina principală.
 // v1.4.2: buton „📋 Copiază linkul articolului” sus, lângă autor și dată.
 // v1.4.1: sub autor, vizibil pe fiecare articol: „Publicat de AiVenture S.R.L. — firmă din București, România · CUI 51415878 · contact@5thelement.ai”;
 //         schema: Organization cu CUI/EUID/ONRC + contactPoint, Person cu workLocation București.
@@ -288,6 +289,11 @@ export async function onRequest(context) {
       const [I, all] = await Promise.all([loadIdentity(), loadArticles(context)]);
       const slug = m[1], pageUrl = `${SITE}/blog/${slug}/`;
       const cur = all.find((a) => a.slug === slug);
+      if (all.length && !cur) {
+        // articol inexistent sau retras: 410 Gone (nu pagina principală cu 200), ca Google și AI să-l scoată din index
+        return new Response(`<!doctype html><html lang="ro"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>Articol indisponibil | AiVenture</title>${BASE_CSS}${SITE_CSS}</head><body>${header()}<main><h1>Articolul nu mai este disponibil</h1><p>Articolul a fost retras sau adresa nu există. <a href="/blog/">Vedeți toate articolele</a> sau căutați în blog din bara de sus.</p></main>${footer(I)}</body></html>`,
+          { status: 410, headers: { "content-type": "text/html; charset=utf-8", "cache-control": "no-store" } });
+      }
       const A = analyze(html);
       const title = (cur && cur.title) || A.h1 || "Articol";
       const blocks = articleBlocks(I, all, slug, pageUrl);
