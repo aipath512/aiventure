@@ -511,6 +511,38 @@
           "path": "/blog/cum-ajunge-site-ul-firmei-in-google-si-ai/"
         }
       ]
+    },
+    {
+      "id": "ART-000037",
+      "title": "De la chatbot simplu vs Top: cum alegi nivel potrivit de AI",
+      "seo_title": "De la chatbot simplu vs Top: cum alegi nivel potrivit de AI | AiVenture",
+      "description": "Autonomia, memoria, integrările reale și controlul deciziilor fac diferența dintre un simplu răspuns și un proces dus până la capăt.",
+      "keywords": [
+        "AI",
+        "Asistent AI",
+        "agent AI"
+      ],
+      "faq": 3,
+      "slug": "de-la-chatbot-simplu-vs-top-cum-alegi-nivel-potrivit-de-ai",
+      "category": "Asistent AI chatbot și agent AI",
+      "author": "Dan Ionescu",
+      "publisher": "AiVenture S.R.L.",
+      "published": "2026-11-19",
+      "published_at": "2026-11-19T17:26:57+02:00",
+      "version": "1.0",
+      "status": "published",
+      "canonical": "https://aiventure.ro/blog/de-la-chatbot-simplu-vs-top-cum-alegi-nivel-potrivit-de-ai/",
+      "sha256": "5fd005de2207c04b796f075bc22602c31cfee68dd2b00c6f3e1f2fc3aa964c25",
+      "ots_status": "PENDING",
+      "source": "pagina-de-scris",
+      "versions": [
+        {
+          "version": "1.0",
+          "at": "2026-11-19T17:26:57+02:00",
+          "sha256": "5fd005de2207c04b796f075bc22602c31cfee68dd2b00c6f3e1f2fc3aa964c25",
+          "path": "/blog/de-la-chatbot-simplu-vs-top-cum-alegi-nivel-potrivit-de-ai/"
+        }
+      ]
     }
   ]
 }
