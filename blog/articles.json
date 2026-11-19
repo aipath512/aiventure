@@ -407,6 +407,47 @@
           "path": "/blog/site-gasit-in-google-si-in-ai/"
         }
       ]
+    },
+    {
+      "id": "ART-000034",
+      "title": "Contabil pentru restaurant, construcții sau IT: cum te găsește AI-ul după intenție",
+      "seo_title": "Contabil găsit de AI: intenții vs. cuvinte cheie | AiVenture",
+      "description": "Restaurant, construcții sau IT: trei fondatori caută contabil în Google și în ChatGPT. Ce primește fiecare și cum trebuie construit site-ul ca să fie ales…",
+      "keywords": [
+        "contabil găsit de AI",
+        "site vizibil în ChatGPT",
+        "contabil pentru restaurant",
+        "contabil firmă construcții",
+        "contabil SRL IT clienți externi",
+        "optimizare pentru AI",
+        "vizibilitate AI",
+        "SEO și AI",
+        "GEO generative engine optimization",
+        "cum apare firma mea în ChatGPT",
+        "AI Overviews",
+        "optimizare site firmă de servicii"
+      ],
+      "faq": 15,
+      "slug": "contabil-gasit-de-ai-intentii-vs-cuvinte-cheie",
+      "category": "Vizibilitate AI",
+      "author": "AiVenture Team",
+      "publisher": "AiVenture S.R.L.",
+      "published": "2026-11-19",
+      "published_at": "2026-11-19T12:26:13+02:00",
+      "version": "1.0",
+      "status": "published",
+      "canonical": "https://aiventure.ro/blog/contabil-gasit-de-ai-intentii-vs-cuvinte-cheie/",
+      "sha256": "006032da36b54b9b40903403cb86d74c67ad58e8d30852b41b0ff381ae9c87a3",
+      "ots_status": "PENDING",
+      "source": "claude",
+      "versions": [
+        {
+          "version": "1.0",
+          "at": "2026-11-19T12:26:13+02:00",
+          "sha256": "006032da36b54b9b40903403cb86d74c67ad58e8d30852b41b0ff381ae9c87a3",
+          "path": "/blog/contabil-gasit-de-ai-intentii-vs-cuvinte-cheie/"
+        }
+      ]
     }
   ]
 }

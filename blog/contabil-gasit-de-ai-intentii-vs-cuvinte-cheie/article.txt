@@ -1,0 +1,68 @@
+<p>Metoda generală este descrisă în <a href="/blog/site-gasit-in-google-si-in-ai/">Cum construiești un site găsit și în Google, și în AI</a>. Aici o aplicăm pe un exemplu concret: un cabinet de contabilitate și trei fondatori diferiți.</p>
+<p><strong>Pe scurt:</strong> Pe Google, un site e găsit după cuvinte cheie, iar toată lumea primește aceeași listă de linkuri. În ChatGPT, Gemini, Claude, Perplexity, Google AI Overviews și AI Mode, site-ul e ales după intenție: utilizatorul primește un răspuns direct, sintetizat din paginile care răspund cel mai clar la situația lui. Ca să fie vizibil în ambele, un site are nevoie de cuvinte cheie pentru Google și de răspunsuri explicite la intenții pentru AI.</p>
+<h2>Care e diferența dintre SEO pe cuvinte cheie și optimizarea pentru AI?</h2>
+<p>SEO-ul clasic face ca o pagină să fie găsită când cineva tastează „contabil București”. Rezultatul e o listă de linkuri, aceeași pentru toți.</p>
+<p>Optimizarea pentru AI (numită și GEO, Generative Engine Optimization) face ca pagina să fie aleasă când cineva își descrie situația: „Am un SRL IT și caut contabil pentru clienți din străinătate.” Rezultatul e un singur răspuns, diferit pentru fiecare om.</p>
+<p>Pe scurt, Google răspunde la cuvinte, iar AI-ul răspunde la oameni.</p>
+<h2>Ce primește un fondator pe Google și ce primește în ChatGPT?</h2>
+<p>Pe Google, un site slab optimizat coboară în listă. În AI, un site fără răspuns la intenție dispare din răspuns. Iată trei fondatori care își deschid firma.</p>
+<h3>Fondator IT</h3>
+<div class="tw"><table><thead><tr><th></th><th>Google (cuvinte cheie)</th><th>AI (intenție)</th></tr></thead><tbody><tr><td>Ce scrie</td><td>„contabil București”</td><td>„Am un SRL IT și caut contabil pentru clienți din străinătate”</td></tr><tr><td>Ce primește</td><td>10 linkuri, aceleași pentru toți</td><td>Un răspuns direct, cu 2–3 cabinete recomandate</td></tr><tr><td>Ce trebuie să aibă site-ul</td><td>„contabil București” în titlu și text</td><td>O pagină despre facturare externă, VIES, valută și regimul de impozitare</td></tr><tr><td>Dacă lipsește</td><td>Apare mai jos în listă</td><td>Nu apare deloc</td></tr></tbody></table></div>
+<h3>Fondator de cabinet de contabilitate</h3>
+<div class="tw"><table><thead><tr><th></th><th>Google (cuvinte cheie)</th><th>AI (intenție)</th></tr></thead><tbody><tr><td>Ce scrie</td><td>„program contabilitate”</td><td>„Deschid un cabinet mic și caut un program cu e-Factura pentru 20 de clienți”</td></tr><tr><td>Ce primește</td><td>Liste de programe și reclame</td><td>O comparație cu 2–3 programe potrivite situației lui</td></tr><tr><td>Ce trebuie să aibă site-ul</td><td>„program contabilitate” în titlu</td><td>O pagină pentru cabinete mici, cu numărul de clienți, e-Factura și prețul</td></tr><tr><td>Dacă lipsește</td><td>Apare mai jos în listă</td><td>Nu apare deloc</td></tr></tbody></table></div>
+<h3>Fondator în construcții</h3>
+<div class="tw"><table><thead><tr><th></th><th>Google (cuvinte cheie)</th><th>AI (intenție)</th></tr></thead><tbody><tr><td>Ce scrie</td><td>„contabil firmă”</td><td>„Am o firmă de construcții și caut contabil”</td></tr><tr><td>Ce primește</td><td>Aceeași listă ca fondatorul IT</td><td>Un răspuns diferit de cel pentru IT</td></tr><tr><td>Ce trebuie să aibă site-ul</td><td>Cuvântul „contabil”</td><td>O pagină despre situații de lucrări, taxare inversă și subcontractori</td></tr><tr><td>Dacă lipsește</td><td>Apare mai jos în listă</td><td>Nu apare deloc</td></tr></tbody></table></div>
+<h2>De ce site-ul meu apare pe Google, dar nu în răspunsurile AI?</h2>
+<p>Pentru că nu răspunde clar la nicio intenție precisă.</p>
+<p>Exemplu: trei fondatori din București caută un contabil în AI.</p>
+<ul><li><strong>HoReCa:</strong> „Caut contabil pentru un restaurant nou.”</li><li><strong>Construcții:</strong> „Am o firmă de construcții și caut contabil.”</li><li><strong>IT:</strong> „Am un SRL IT și caut contabil pentru servicii către clienți din străinătate.”</li></ul>
+<p>Un cabinet care lucrează pentru toți trei, dar a scris pe site doar „servicii complete de contabilitate pentru IMM-uri”, apare pe Google. În AI însă nu are prioritate: răspunsul la intenția „restaurant” va veni de la cabinetul care a scris explicit despre restaurante.</p>
+<p>Pentru AI, o intenție fără răspuns pe site înseamnă că site-ul nu există pentru acea întrebare.</p>
+<h2>Ce înseamnă „firul Ariadnei” în căutarea cu AI?</h2>
+<p>În mitul grec, firul Ariadnei îl ajută pe Tezeu să iasă din labirint și să se întoarcă de unde a plecat. În căutarea cu AI, drumul arată așa:</p>
+<ol><li>Omul pleacă de la o intenție formulată în AI.</li><li>AI-ul caută pe web, citește mai multe site-uri și le compară.</li><li>Omul primește înapoi o sinteză, uneori cu un link spre sursă.</li></ol>
+<p>Firul se închide doar dacă pe drum a existat o pagină care răspunde exact la acea intenție.</p>
+<h2>Cum structurez site-ul unei firme de servicii ca să fie ales de AI?</h2>
+<p>Nu e nevoie de câte o pagină pentru fiecare întrebare posibilă. Paginile trebuie însă să fie mai precise decât era suficient pe Google: „contabilitate pentru IMM-uri” devine „contabilitate pentru IMM-uri: restaurante, firme de construcții, firme IT”.</p>
+<p>Structura recomandată pentru cabinetul din exemplu:</p>
+<ul><li><code>/</code> — pagina principală: cine sunteți, pentru cine lucrați, și trei intrări vizibile: HoReCa, Construcții, IT</li><li><code>/contabilitate-restaurant/</code></li><li><code>/contabilitate-firma-constructii/</code></li><li><code>/contabilitate-srl-it-clienti-externi/</code></li><li><code>/preturi/</code> și <code>/despre/</code></li></ul>
+<p>Fiecare pagină de segment conține patru elemente:</p>
+<ol><li><strong>Răspunsul direct, la început, în 2–3 fraze.</strong> De exemplu: „Ținem contabilitatea SRL-urilor IT din București care facturează clienți din UE și din afara UE: taxare inversă, VIES, încasări în valută, e-Factura.”</li><li><strong>Problemele specifice domeniului, numite cu termenii clientului:</strong> — restaurant: casă de marcat, rețetar, personal sezonier — construcții: situații de lucrări, taxare inversă, subcontractori — IT: facturare externă, valută, regim de impozitare</li><li><strong>Întrebări și răspunsuri reale</strong>, formulate cum le pune un fondator.</li><li><strong>Dovezi verificabile:</strong> prețuri, numărul de clienți din domeniu, membru CECCAR, adresă și contact. Cercetarea GEO de la Princeton a arătat că citările, statisticile și sursele cresc vizibilitatea în răspunsurile AI cu până la aproximativ 40%.</li></ol>
+<h2>Ce este Web-om și ce este Web-AI?</h2>
+<ul><li><strong>Web-om:</strong> omul caută cu cuvinte cheie, se uită la imagini, compară linkuri și decide singur.</li><li><strong>Web-AI:</strong> AI-ul caută în locul omului. Are nevoie de răspunsuri explicite la intenții, surse verificabile și date structurate Schema.org (<code>AccountingService</code>, <code>Service</code> cu publicul-țintă, <code>FAQPage</code>, zona deservită).</li></ul>
+<p>Schema.org ajută AI-ul să înțeleagă cine sunteți și pentru cine lucrați. Nu garantează însă că veți fi citați: decisiv rămâne textul clar care răspunde intenției.</p>
+<h2>Cum verific dacă AI-ul îmi găsește firma?</h2>
+<p>Printr-un test repetabil:</p>
+<ol><li><strong>Înainte:</strong> puneți aceleași 3–5 întrebări reale în ChatGPT, Gemini, Perplexity și Google AI Mode și notați dacă firma apare.</li><li><strong>Intervenție:</strong> publicați paginile de segment.</li><li><strong>După 2–4 săptămâni:</strong> puneți exact aceleași întrebări.</li><li><strong>Comparați:</strong> firma este menționată? Este citată ca sursă? Pentru care intenții?</li></ol>
+<p>Ce nu s-a schimbat se notează la fel de cinstit ca ce s-a schimbat.</p>
+<h2>Mai e nevoie de SEO dacă optimizez pentru AI?</h2>
+<p>Da. Fundația SEO rămâne, iar optimizarea pentru vizibilitatea în răspunsurile AI se construiește peste ea.</p>
+<p>Nevoia de a fi descoperit rămâne aceeași, dar tehnicile evoluează. Cuvintele cheie contează în continuare, ca expresii pe care oamenii chiar le folosesc. Valoarea paginii vine însă din răspunsul relevant pe care îl dă, nu din repetarea lor.</p>
+<div class="tw"><table><thead><tr><th>Strat</th><th>Ce urmărim</th><th>Exemple</th></tr></thead><tbody><tr><td>1. Fundația SEO</td><td>Site-ul și paginile lui să poată fi descoperite, înțelese și afișate în căutare</td><td>Pagini accesibile, titluri clare, expresii relevante, structură bună, linkuri interne, indexare</td></tr><tr><td>2. Vizibilitatea în AI Search</td><td>Oferta și informațiile firmei să fie recunoscute ca relevante pentru întrebări în limbaj natural</td><td>Răspunsuri explicite, situații concrete ale clienților, surse verificabile, informații actualizate și accesibile sistemelor AI</td></tr></tbody></table></div>
+<p>GEO, AEO și AIO sunt denumiri pentru practicile de optimizare a vizibilității în răspunsurile generate de AI. În practică, denumirile și limitele lor nu sunt folosite uniform, iar multe dintre măsuri se suprapun cu un SEO bun.</p>
+<h2>Cum poate fi găsit același articol pe căi diferite?</h2>
+<p>Un articol despre „contabilitate pentru un SRL IT cu clienți din străinătate” poate servi în același timp:</p>
+<ul><li>unei persoane care caută pe Google „contabil SRL IT clienți externi”;</li><li>unei persoane care întreabă ChatGPT: „Am un SRL IT și vreau să facturez un client din Franța. Ce trebuie să discut cu contabilul?”;</li><li>unui vizitator care deschide articolul direct, pe site;</li><li>asistentului AI al firmei, dacă informația validată este introdusă și în baza lui de cunoștințe.</li></ul>
+<p>Același conținut poate fi descoperit pe căi diferite, cu condiția să fie util, clar și accesibil.</p>
+<h2>Ce poate câștiga o firmă din vizibilitatea în AI?</h2>
+<p>În funcție de canal și de întrebare, rezultatul poate fi:</p>
+<ol><li>afișarea unui link în rezultatele Google;</li><li>citarea unui articol sau a unei pagini ca sursă într-un răspuns AI;</li><li>menționarea firmei, atunci când răspunsul caută furnizori potriviți;</li><li>vizita pe site, urmată de o întrebare, un mesaj sau o cerere de ofertă.</li></ol>
+<p>Este util să deosebim citarea unei surse de recomandarea firmei. Un sistem AI poate cita un articol pentru o informație fără să recomande explicit firma care l-a publicat.</p>
+<p>Obiectivul este ca oferta să poată fi găsită pe cât mai multe canale relevante: Google, AI Overviews, AI Mode, Gemini, ChatGPT, Claude, Perplexity, Grok. Nici SEO, nici GEO nu pot garanta însă prezența pe fiecare platformă, recomandarea sau traficul. Răspunsurile și sursele alese diferă după întrebare, context și sistem. De aceea, rezultatul se măsoară: cu etichete UTM pentru trafic și cu testul ÎNAINTE/DUPĂ pentru prezența în răspunsuri.</p>
+<p><strong>În concluzie:</strong> Web-AI pornește de la o fundație SEO solidă și o extinde cu informații structurate în jurul intențiilor clienților. Scopul este ca produsele, serviciile și expertiza firmei să poată fi descoperite atât în căutarea clasică, cât și în răspunsurile generate de AI, cu posibilitatea de a aduce omul înapoi la sursă: site-ul, pagina de serviciu sau articolul firmei.</p>
+<h2>Întrebări frecvente</h2>
+<p class="q"><strong>Cum fac ca firma mea să apară în ChatGPT?</strong></p>
+<p>Scrieți pe site răspunsuri explicite la întrebările reale ale clienților, pe segmente (de exemplu: restaurant, construcții, IT), cu dovezi verificabile și date Schema.org. Păstrați și SEO-ul clasic, pentru că AI-ul caută tot pe web.</p>
+<p class="q"><strong>Am nevoie de un site nou pentru AI?</strong></p>
+<p>Nu. Aveți nevoie de pagini mai precise pe segmente și de un strat de date structurate peste site-ul existent.</p>
+<p class="q"><strong>Schema.org garantează apariția în AI?</strong></p>
+<p>Nu. Ajută AI-ul să vă înțeleagă, dar decisiv este textul care răspunde clar intenției.</p>
+<p class="q"><strong>Mai e nevoie de SEO dacă optimizez pentru AI?</strong></p>
+<p>Da. SEO-ul este fundația care face paginile descoperibile. Vizibilitatea în AI se construiește peste el, cu răspunsuri explicite la intențiile clienților.</p>
+<p class="q"><strong>Dacă AI-ul îmi citează articolul, înseamnă că îmi recomandă firma?</strong></p>
+<p>Nu neapărat. Un sistem AI poate cita un articol pentru o informație fără să recomande explicit firma care l-a publicat.</p>
+<p class="q"><strong>Ce primește un fondator pe Google și ce primește în ChatGPT?</strong></p>
+<p>Pe Google, o listă de linkuri, aceeași pentru toți. În ChatGPT, un răspuns direct, diferit după situația lui.</p>
+<p class="q"><strong>În cât timp se vede efectul?</strong></p>
+<p>De obicei se măsoară după 2–4 săptămâni, cu aceleași întrebări puse înainte și după.</p>
+<p><strong>Vreți să știți dacă AI-ul vă găsește firma?</strong> Scrieți-ne pe WhatsApp la 40737123540 sau la contact@5thelement.ai.</p>
