@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated": "2026-10-01",
+  "updated": "2026-11-19",
   "articles": [
     {
       "id": "ART-000001",
@@ -385,6 +385,19 @@
       "version": "1.0",
       "status": "published",
       "canonical": "https://aiventure.ro/blog/serviciu-b2b-agent-ready/"
+    },
+    {
+      "id": "ART-000033",
+      "title": "Cum construiești un site găsit și în Google, și în AI",
+      "slug": "site-gasit-in-google-si-in-ai",
+      "category": "SEO · GEO · Intenție de căutare",
+      "author": "AiVenture",
+      "published": "2026-11-19",
+      "version": "1.0",
+      "status": "published",
+      "canonical": "https://aiventure.ro/blog/site-gasit-in-google-si-in-ai/",
+      "sha256": "16ebd8405b2272a4c88e449e103d995864a52946ccea4d8d9f89f3e38fac193c",
+      "ots_status": "NOT_TIMESTAMPED"
     }
   ]
 }
