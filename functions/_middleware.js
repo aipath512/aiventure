@@ -293,7 +293,7 @@ export async function onRequest(context) {
       const crumb = `<nav class="aiv-bc" aria-label="Fir de navigare"><a href="/">Acasă</a> › <a href="/blog/">Blog</a> › <span aria-current="page">${esc(title)}</span>${cur && cur.id ? ` · ${esc(cur.id)}` : ""}</nav>`;
       const F = I.firma || {}, S = F.sediu || {}, email = (I.contact || {}).email || "contact@5thelement.ai";
       const by = `<p class="aiv-by">de <a href="${AUTHOR_PATH}" rel="author">${AUTHOR_NAME}</a>${cur && (cur.published_at || cur.published) ? ` · <time datetime="${esc(cur.published_at || cur.published)}">${esc(fmtRo(cur))}</time>` : ""}${cur && cur.version ? ` · v${esc(cur.version)}` : ""}</p>`
-        + `<p class="aiv-pub">Publicat de <strong>${esc(F.denumire_legala || "AiVenture S.R.L.")}</strong> — firmă din <strong>${esc(S.localitate || "București")}, România</strong> · <strong>CUI ${esc(F.cui || "51415878")}</strong> · <a href="mailto:${esc(email)}">${esc(email)}</a></p>`;
+        + `<p class="aiv-pub">Publicat de <strong>${esc(F.denumire_legala || "AiVenture S.R.L.")}</strong> — firmă din <strong>${esc(S.localitate || "București")}, România</strong> · <strong>CUI ${esc(F.cui || "51415878")}</strong> · <!--email_off--><a href="mailto:${esc(email)}">${esc(email)}</a><!--/email_off--></p>`;
       const toc = A.h2s.length >= 3 ? `<nav class="aiv-toc" aria-label="Cuprins"><strong>Cuprins</strong><ol>${A.h2s.map((t, i) => `<li><a href="#s${i + 1}">${esc(t)}</a></li>`).join("")}</ol></nav>` : "";
       let n = 0, crumbDone = false, h1Done = false;
       const rw = new HTMLRewriter()
