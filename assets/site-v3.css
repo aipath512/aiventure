@@ -63,3 +63,10 @@ code{background:#f3f1eb;color:#111;padding:2px 5px;border-radius:4px}
 .v3-big{font-size:clamp(25px,3.6vw,42px);line-height:1.2;max-width:940px}
 @media(max-width:900px){.v3-three,.v3-offers,.v3-legal-grid,.v3-resource-grid,.v3-faq-grid{grid-template-columns:1fr}.v3-pipeline{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:620px){.v3-input{flex-direction:column}.v3-input button{padding:13px}.v3-pipeline{grid-template-columns:1fr}}
+
+/* Hero audience and sectors: one compact mobile-friendly message */
+.hero-audience{font-size:clamp(21px,3.2vw,34px);line-height:1.27;max-width:940px}
+.hero-audience-groups,.hero-audience-sectors{display:block}
+.hero-audience-groups{font-weight:650}
+.hero-audience-sectors{font-size:.62em;line-height:1.5;font-weight:400;margin-top:14px;color:#e4e5ec}
+@media(max-width:650px){.hero-audience{font-size:clamp(21px,5.2vw,28px);line-height:1.28}.hero-audience-sectors{font-size:.73em;margin-top:10px;line-height:1.45}}
