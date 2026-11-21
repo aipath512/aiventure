@@ -1,0 +1,28 @@
+<p>Întrebarea fundamentală este:</p>
+<p>„CINE caută, evaluează, decide și cumpără produsele sau serviciile unei firme în era AI?</p>
+<p>Timp de decenii, marketingul și vânzările B2B au pornit de la o premisă unică: la celălalt capăt al ecranului se află o persoană.</p>
+<p>Un om care tastează cuvinte-cheie în Google, deschide câteva tab-uri, citește broșuri PDF, cere o ofertă prin formular și ia o decizie.</p>
+<p>Astăzi, această premisă nu mai este completă.</p>
+<p>Întrebarea fundamentală pe care orice antreprenor sau director comercial trebuie să și-o pună este: „CINE caută, evaluează, decide și cumpără produsele sau serviciile unei firme în era AI?”</p>
+<p>Răspunsul impune împărțirea pieței în două categorii distincte de interlocutori:</p>
+<p>Clienți umani (Human-to-Business): persoane care caută, compară, decid și cumpără direct.</p>
+<p>Clienți agenți AI (Agent-to-Business / Agent-to-Agent): sisteme autonome care acționează în numele unor persoane sau organizații, în limitele unui mandat precis.</p>
+<p>Totuși, a observa această schimbare nu este suficient.</p>
+<p>Pentru a transforma noua realitate într-un sistem predictibil de generare de venituri, avem nevoie de o arhitectură comercială riguroasă.</p>
+<h2>Întrebări frecvente</h2>
+<h3>CINE caută?</h3>
+<h3>Om, agent AI sau un om asistat de un sistem AI</h3>
+<h3>CE caută și DE CE?</h3>
+<h3>Nevoia reală, problema de rezolvat, intenția și rezultatul dorit</h3>
+<h3>Google, ChatGPT, Gemini, Perplexity, site-uri web, rețele sociale, API-uri, platforme de agenți?</h3>
+<p>UNDE caută?</p>
+<h3>CUM caută și evaluează?</h3>
+<p>Cuvinte-cheie clasice, limbaj natural, criterii structurate de selecție, verificări automate</p>
+<h3>ÎN CE ETAPĂ se află?</h3>
+<p>TOF (descoperire) → MOF (evaluare) → BOF (decizie)</p>
+<h3>CINE decide și CINE este autorizat?</h3>
+<h3>Omul, organizația sau agentul delegat, strict în limitele mandatului</h3>
+<h3>CUM transformăm intenția în tranzacție?</h3>
+<p>Răspuns → interacțiune → ofertă → comandă → contract → plată</p>
+<h3>Cine are nevoia, cine caută și cine plătește?</h3>
+<p>O eroare frecventă în înțelegerea economiei bazate pe agenți este confundarea instrumentului de execuție cu titularul drepturilor și obligațiilor. Chiar dacă un agent AI negociază parametri tehnici sau verifică disponibilitatea unui stoc, el nu devine automat clientul juridic sau economic. Pentru o proiectare comercială corectă, trebuie să separăm trei roluri fundamentale. Agentul AI este, așadar, un nou actor comercial și un nou tip de interlocutor. El filtrează piața înainte ca decidentul uman să vadă măcar numele firmei tale. Dacă site-ul și datele tale nu sunt structurate pentru a fi înțelese și validate de acest agent, compania ta este eliminată din cursă încă din etapa de descoperire (TOF). Întrebarea centrală pentru AiVenture și ecosistemul său Pornind de la aceste premise, miza reală pentru orice afacere devine: „Cum facem ca o firmă să fie descoperită, înțeleasă, evaluată și aleasă atât de oameni, cât și de agenții AI, transformând intențiile lor în clienți și venituri?” Răspunsul nu stă într-un simplu plugin sau într-un chatbot izolat, ci într-o ADI (AI Delivery Infrastructure) — o infrastructură în care inteligența și datele validate sunt livrate la cerere, conectând cinci componente esențiale: 1. AI-LENS și 3WEBOBS (Vizibilitate și evaluare): Asigură faptul că firma poate fi descoperită și reconstruită cognitiv corect atât de motoarele de căutare clasice, cât și de modelele AI și agenții autonomi. 2. FirmsFinder (Inteligență economică): Identifică proactiv potențialii clienți și parteneri relevanți din piață, pe baza datelor economice reale și a profilurilor de compatibilitate. 3. Asistent AI + Memorie centralizată (Conversie): Transformă fiecare interacțiune — fie ea umană sau automată — în oportunități concrete, construind o memorie comercială continuă a companiei. 4. EU AI ACT READY / RRVI (Guvernanță și trasabilitate): Controlează, documentează și auditează interacțiunile și acțiunile AI, oferind dovezi verificabile (prin amprentare criptografică SHA-256 și ancorare temporală OTS) asupra conformității și mandatului de execuție. Două moduri de acces la aceeași piață În concluzie, nu ne confruntăm doar cu două categorii izolate de clienți. Avem în față două moduri de acces la aceeași piață — prin oameni și prin agenți AI. Ambele parcurg același traseu comercial (TOF → MOF → BOF), însă utilizează interfețe, dovezi și mecanisme de autorizare complet diferite. Firmele care vor domina piața în următorii ani sunt cele care construiesc o singură arhitectură comercială capabilă să răspundă fluent, verificabil și simultan ambelor lumi.</p>
