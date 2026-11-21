@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#08090c">
+<title>Cerințele clienților: cuvinte-cheie și intenții după CAEN | AiVenture</title>
+<meta name="description" content="Introdu CUI-ul și codurile CAEN pentru a explora exemple de căutări, întrebări și intenții ale potențialilor clienți ai firmei.">
+<link rel="canonical" href="https://aiventure.ro/cerinte/">
+<style>
+:root{color-scheme:dark;--bg:#08090c;--panel:#14151a;--border:#34353d;--white:#f7f7f8;--gray:#b5b7c1;--gold:#d5ac68}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--white);font:16px/1.55 system-ui,-apple-system,Segoe UI,sans-serif}a{color:var(--gold)}.wrap{width:min(1000px,calc(100% - 36px));margin:auto}header{border-bottom:1px solid var(--border);padding:18px 0}header a{font-size:24px;font-weight:800;color:var(--white);text-decoration:none}header a span{color:var(--gold)}main{padding:54px 0 84px}.eyebrow{font-size:13px;color:var(--gold);letter-spacing:.14em;font-weight:800}h1{font:clamp(38px,7vw,64px)/1.07 Georgia,serif;letter-spacing:-.03em;margin:15px 0 20px}h2{font-size:23px;line-height:1.2;margin:0 0 13px}p{margin:0 0 16px}.lead{font-size:clamp(18px,3vw,22px);color:var(--gray);max-width:760px}.panel{border:1px solid var(--border);border-radius:24px;background:var(--panel);padding:clamp(22px,4vw,35px);margin-top:30px}.cols{display:grid;grid-template-columns:1fr 1fr;gap:18px}label{display:block;font-weight:700;font-size:14px;margin:0 0 8px}input{width:100%;background:#090a0e;border:1px solid #60616a;border-radius:12px;padding:14px 15px;color:white;font:inherit}.hint,.muted{color:var(--gray)}.hint{font-size:13px;margin-top:6px}.button{border:0;background:var(--gold);color:#18120a;padding:14px 22px;border-radius:12px;font:800 17px system-ui;cursor:pointer}.action{margin-top:20px}.warning{color:#f2ce8e;min-height:1.6em}.results{display:none}.results.visible{display:block}.result-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:20px}.result{padding:22px;background:#0b0c10;border:1px solid var(--border);border-radius:17px}.result ul{margin:8px 0 0;padding-left:22px}.result li{margin:0 0 11px}.chip{display:inline-block;color:var(--gold);font-size:12px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;margin-bottom:9px}.note{font-size:13px;color:var(--gray);margin-top:18px}.followup{margin-top:32px}footer{border-top:1px solid var(--border);padding:24px 0;font-size:13px;color:var(--gray)}@media(max-width:650px){main{padding:37px 0 60px}.cols,.result-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><a href="/">AI<span>Venture</span></a></div></header>
+<main class="wrap">
+<div class="eyebrow">03 · CONVERTEȘTI · CERINȚELE CLIENȚILOR</div>
+<h1>Ce caută și ce întreabă potențialii tăi clienți?</h1>
+<p class="lead">Introdu CUI-ul și codurile CAEN ale firmei. Explorează exemple de cuvinte-cheie, întrebări și intenții de cumpărare pentru activitățile selectate.</p>
+<section class="panel" aria-labelledby="input-title">
+<h2 id="input-title">Profilul firmei</h2>
+<form id="requirements-form">
+<div class="cols"><div><label for="cui">CUI</label><input id="cui" name="cui" inputmode="numeric" pattern="[0-9]{2,10}" maxlength="10" placeholder="Ex.: 35136588" required><p class="hint">Identificator de referință. Nu efectuăm aici interogarea ONRC/ANAF.</p></div><div><label for="caen">Coduri CAEN</label><input id="caen" name="caen" placeholder="Ex.: 6920, 6210" required><p class="hint">Unul sau mai multe coduri de patru cifre, separate prin virgulă.</p></div></div>
+<div class="action"><button class="button" type="submit">Arată cerințele și intențiile</button></div>
+<p id="message" class="warning" role="status" aria-live="polite"></p>
+</form>
+</section>
+<section id="results" class="panel results" aria-labelledby="results-title">
+<div class="eyebrow">EXPLORARE ORIENTATIVĂ</div><h2 id="results-title">Căutări și întrebări posibile</h2>
+<p id="profile" class="muted"></p>
+<div class="result-grid"><div class="result"><span class="chip">Cuvinte-cheie</span><ul id="keywords"></ul></div><div class="result"><span class="chip">Intenții și întrebări</span><ul id="intents"></ul></div></div>
+<p class="note">Aceste exemple provin dintr-un catalog demonstrativ după CAEN. Nu sunt statistici de căutare, cereri reale, o analiză a concurenței sau un audit personalizat al CUI-ului introdus. Pentru codurile fără catalog specific sunt afișate exemple generale.</p>
+<p class="followup"><a class="button" style="display:inline-block;text-decoration:none" href="/audit/">Cere un audit personalizat</a></p>
+</section>
+<section class="panel"><h2>De la intenție la cerere comercială</h2><p class="muted">Cerințele clienților pot orienta paginile, răspunsurile AI și întrebările de calificare. Validăm informațiile firmei înainte de a le transforma în conținut sau în reguli pentru asistent.</p><a href="/audit/">Vezi cum începe auditul</a></section>
+</main>
+<footer><div class="wrap">AiVenture S.R.L. · CUI 51415878 · <a href="/contact/">Contact</a> · <a href="/legal/">Documente juridice</a></div></footer>
+<script>
+(function(){
+var data={
+'6920':{keywords:['contabilitate SRL preț lunar','servicii contabilitate firmă nouă','externalizare salarizare și HR','contabilitate TVA și e-Factura','consultant fiscal pentru IMM'],intents:['Cât costă contabilitatea pentru un SRL cu 5 angajați?','Ce documente trebuie să trimit lunar contabilului?','Mă puteți prelua de la alt contabil?','Oferiți și salarizare, D112 și REGES?','În cât timp pot primi o ofertă?']},
+'4322':{keywords:['instalator sanitar aproape de mine','reparație centrală termică','montaj aer condiționat preț','instalații termice și sanitare','intervenție urgentă țeavă spartă'],intents:['Puteți interveni astăzi în localitatea mea?','Cât costă montajul și ce include oferta?','Oferiți garanție pentru lucrare?','Aveți autorizările necesare lucrării?','Cum solicit o estimare sau o programare?']},
+'6210':{keywords:['dezvoltare software la comandă','aplicație web pentru firmă','automatizare procese de business','integrare API și sisteme','echipă dezvoltare software România'],intents:['Puteți construi o aplicație pentru procesul nostru?','Cum estimați bugetul și durata proiectului?','Puteți integra sistemele existente prin API?','Cine deține codul sursă și datele?','Ce mentenanță oferiți după lansare?']}
+};
+var generic={keywords:['servicii [activitate] [localitate]','ofertă și preț [serviciu]','furnizor [activitate] pentru firme','consultanță [activitate]','servicii [activitate] cu garanție'],intents:['Ce servicii oferiți pentru situația mea?','Care este prețul orientativ și ce include?','În ce localități lucrați?','Ce experiență și dovezi aveți?','Cum pot primi o ofertă?']};
+var form=document.getElementById('requirements-form');
+form.addEventListener('submit',function(e){
+e.preventDefault();var cui=document.getElementById('cui').value.trim();var raw=document.getElementById('caen').value;var codes=raw.split(/[;,\s]+/).map(function(x){return x.trim()}).filter(Boolean);
+var msg=document.getElementById('message');if(!/^\d{2,10}$/.test(cui)||!codes.length||codes.some(function(x){return !/^\d{4}$/.test(x)})){msg.textContent='Verifică CUI-ul (2–10 cifre) și codurile CAEN (câte 4 cifre).';return}
+msg.textContent='';var key=[],intent=[];codes.forEach(function(c){var item=data[c]||generic;item.keywords.forEach(function(x){if(!key.includes(x))key.push(x)});item.intents.forEach(function(x){if(!intent.includes(x))intent.push(x)})});
+function fill(id,values){var el=document.getElementById(id);el.textContent='';values.slice(0,15).forEach(function(v){var li=document.createElement('li');li.textContent=v;el.appendChild(li)})}
+fill('keywords',key);fill('intents',intent);document.getElementById('profile').textContent='CUI '+cui+' · CAEN '+codes.join(', ');var out=document.getElementById('results');out.classList.add('visible');out.scrollIntoView({behavior:'smooth',block:'start'});
+});
+})();
+</script>
+</body></html>
