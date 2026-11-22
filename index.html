@@ -45,8 +45,8 @@ body.light{--bg:#f6f5f3;--surface:#fff;--card:#fff;--line:#c9c8cd;--text:#121319
   .hero-differentiator{padding:11px 0}
   .hero-differentiator p{font-size:15px;line-height:1.38}
   .hero-cta-strip{padding:10px 0 18px}
-  .hero-cta-row{gap:8px}
-  .hero-cta-row a{min-height:48px}
+  .hero-cta-row{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+  .hero-cta-row a{min-height:76px;padding:10px 5px;font-size:clamp(11px,3.2vw,14px);line-height:1.25;border-radius:12px;white-space:normal}
 }
 </style></head><body>
 <header><div class="container head"><a href="#top" class="brand" aria-label="AiVenture — începutul paginii"><span class="mark">AI</span>AiVenture</a><button class="head-control theme-control" id="theme" type="button" aria-label="Comută tema">☀</button><label class="language-control"><span class="sr">Alege limba</span><select aria-label="Limba site-ului" id="lang"><option value="ro" selected>RO</option><option value="en">EN</option><option value="fr">FR</option></select></label><button class="head-control menu-control" id="menu" type="button" aria-controls="menu-panel" aria-expanded="false" aria-label="Deschide meniul">☰</button></div><nav class="menu-panel" id="menu-panel" aria-label="Navigație"><a href="./fii-gasit/">Fii găsit de clienți</a><a href="./gaseste-clienti/">Găsește clienți noi</a><a href="#rezultate">Cele două direcții</a><a href="#proces">Cum începem</a><a href="#dovada">Exemplu real</a><a href="https://aiventure.ro/geo/">GEO și AI Search</a><a href="https://aiventure.ro/servicii/">Servicii</a><a href="https://aiventure.ro/produse/">Produse și prețuri</a><a href="https://aiventure.ro/blog/">Blog</a><a href="https://aiventure.ro/contact/">Contact</a></nav></header>
