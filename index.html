@@ -59,6 +59,28 @@ body.light{--bg:#f6f5f3;--surface:#fff;--card:#fff;--line:#c9c8cd;--text:#121319
 .chat-dots i:nth-child(2){animation-delay:.16s}.chat-dots i:nth-child(3){animation-delay:.32s}
 @keyframes chat-dot-sway{0%,100%{transform:translateX(-2px)}50%{transform:translateX(2px)}}
 @media(prefers-reduced-motion:reduce){.chat-dots i{animation:none}}
+/* Consistent section rhythm: remove unused vertical gaps throughout the homepage. */
+section.content-section{padding:60px 0}
+.section-head{margin-bottom:26px}
+.action{padding:60px 0 66px}
+.closing{padding:38px 0 44px}
+@media(max-width:540px){
+  main section.content-section{padding:30px 0}
+  main .section-head{margin-bottom:19px}
+  main .section-head h2{margin:8px 0 12px}
+  main .soft-grid{gap:12px}
+  main .soft-card{padding:19px}
+  main .soft-card h3{margin:9px 0}
+  main .steps{gap:12px}
+  main .step{padding-top:14px}
+  main .step small{margin-bottom:9px}
+  main .cauta-photo-list{margin-bottom:16px}
+  main .cauta-photo-row{padding:14px 0}
+  main .offer-note{margin-top:12px}
+  main .action{padding:32px 0 36px}
+  main .closing{padding:28px 0 32px}
+  .footer{padding:24px 0 30px}
+}
 </style></head><body>
 <header><div class="container head"><a href="#top" class="brand" aria-label="AiVenture — începutul paginii"><span class="mark">AI</span>AiVenture</a><button class="head-control theme-control" id="theme" type="button" aria-label="Comută tema">☀</button><label class="language-control"><span class="sr">Alege limba</span><select aria-label="Limba site-ului" id="lang"><option value="ro" selected>RO</option><option value="en">EN</option><option value="fr">FR</option></select></label><button class="head-control menu-control" id="menu" type="button" aria-controls="menu-panel" aria-expanded="false" aria-label="Deschide meniul">☰</button></div><nav class="menu-panel" id="menu-panel" aria-label="Navigație"><a href="./fii-gasit/">Fii găsit de clienți</a><a href="./gaseste-clienti/">Găsește clienți noi</a><a href="#rezultate">Cele două direcții</a><a href="#proces">Cum începem</a><a href="#dovada">Exemplu real</a><a href="https://aiventure.ro/geo/">GEO și AI Search</a><a href="https://aiventure.ro/servicii/">Servicii</a><a href="https://aiventure.ro/produse/">Produse și prețuri</a><a href="https://aiventure.ro/blog/">Blog</a><a href="https://aiventure.ro/contact/">Contact</a></nav></header>
 <main id="top">
