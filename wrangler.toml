@@ -1,3 +1,9 @@
 name = "aiventure-ro"
 compatibility_date = "2026-08-01"
 pages_build_output_dir = "."
+
+# Lead-uri din formularul de verificare (/api/contact) si clicuri anonime (/api/clic)
+[[d1_databases]]
+binding = "DB"
+database_name = "aiventure-leads"
+database_id = "576bdffc-0530-4f69-8c01-72fc45f12cb0"
