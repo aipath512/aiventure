@@ -4,7 +4,7 @@
  * 1. Verifică site-ul dat: citește pagina principală și până la 4 pagini relevante
  *    (întrebări, prețuri, servicii, ofertă) și caută pasajele care răspund la întrebare.
  *    Verificare simplă, după cuvinte — nu folosește AI.
- * 2. Trimite întrebarea la ChatGPT, Claude, Gemini și Perplexity prin motorul AI-LENS
+ * 2. Trimite DOAR întrebarea (test orb: AI-ul nu primește numele firmei) la ChatGPT, Claude, Gemini și Perplexity prin motorul AI-LENS
  *    (ai-lens.eu/api/lens-market, cu cheile API configurate acolo) și transmite
  *    rezultatele pe măsură ce sosesc (NDJSON).
  *
@@ -105,7 +105,7 @@ export async function onRequestPost({ request }) {
       const send = o => c.enqueue(enc.encode(JSON.stringify(o) + '\n'));
       try {
         send({ type: 'start', query, name, url });
-        const market = fetch(MARKET_URL, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ client_intent: query, target_name: name || new URL(url).hostname, target_url: url || '' }) });
+        const market = fetch(MARKET_URL, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ client_intent: query, target_name: name || new URL(url).hostname, target_url: url || '', blind: true }) });
         if (url) { try { send({ type: 'site_check', ...(await siteCheck(url, query)) }); } catch (e) { send({ type: 'site_check', status: 'NOT_FETCHED', url, error: String(e?.message || e) }); } }
         else send({ type: 'site_check', status: 'NO_URL' });
         const r = await market;
