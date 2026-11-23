@@ -1,0 +1,13 @@
+{
+  "report_id": "RPT-ECBTAX-3WEBOBS-2026-11-23",
+  "subject": {
+    "name": "ECB TAX ACCOUNTING & HR SRL",
+    "url": "https://ecbtax.com/"
+  },
+  "date": "2026-11-23",
+  "result": "8,6 / 10",
+  "method": "Live fetch (HTTP 200) of ecbtax.com homepage, robots.txt, llms.txt, sitemap.xml, /.well-known/agent-card.json, /api/a2a (GET only)",
+  "homepage_html_sha256": "4b779a926c7066e96d1aaa86bed6bd500412efaaccc75ada85e5f30c100704bd",
+  "pdf_sha256": "454d736659ea53a9e25847ff2f9d67b8d7b61b5e2dfcaefad9c387ab9f5f782a",
+  "publisher": "AiVenture S.R.L."
+}

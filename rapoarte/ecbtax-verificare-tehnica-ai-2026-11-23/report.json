@@ -1,0 +1,13 @@
+{
+  "report_id": "RPT-ECBTAX-VERIFICARE-TEHNICA-AI-2026-11-23",
+  "subject": {
+    "name": "ECB TAX ACCOUNTING & HR SRL",
+    "url": "https://ecbtax.com/"
+  },
+  "date": "2026-11-23",
+  "result": "9,5 / 10 criterii îndeplinite",
+  "method": "Live fetch (HTTP 200) of ecbtax.com homepage, robots.txt, llms.txt, sitemap.xml",
+  "homepage_html_sha256": "4b779a926c7066e96d1aaa86bed6bd500412efaaccc75ada85e5f30c100704bd",
+  "pdf_sha256": "1aa5794839810293918ada570ed333c73a511fa4387cf6906e701f9a7320d171",
+  "publisher": "AiVenture S.R.L."
+}

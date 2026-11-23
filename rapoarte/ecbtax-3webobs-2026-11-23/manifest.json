@@ -1,0 +1,26 @@
+{
+  "schema": "aiventure.report.manifest.v1",
+  "report_id": "RPT-ECBTAX-3WEBOBS-2026-11-23",
+  "canonical_url": "https://aiventure.ro/rapoarte/ecbtax-3webobs-2026-11-23/",
+  "generated_at": "2026-11-23T08:50:00+02:00",
+  "artifacts": [
+    {
+      "path": "index.html"
+    },
+    {
+      "path": "report.json"
+    },
+    {
+      "path": "ecbtax-3webobs-2026-11-23.pdf",
+      "sha256": "454d736659ea53a9e25847ff2f9d67b8d7b61b5e2dfcaefad9c387ab9f5f782a"
+    },
+    {
+      "path": "ecbtax-3webobs-2026-11-23.pdf.ots",
+      "note": "OpenTimestamps; pending Bitcoin confirmation at publication"
+    },
+    {
+      "path": "sha256.txt"
+    }
+  ],
+  "evidence_rule": "Claim ≠ Proof. Hash verifies file integrity; it does not independently validate the report's substantive conclusions."
+}

@@ -1,0 +1,26 @@
+{
+  "schema": "aiventure.report.manifest.v1",
+  "report_id": "RPT-ECBTAX-VERIFICARE-TEHNICA-AI-2026-11-23",
+  "canonical_url": "https://aiventure.ro/rapoarte/ecbtax-verificare-tehnica-ai-2026-11-23/",
+  "generated_at": "2026-11-23T08:50:00+02:00",
+  "artifacts": [
+    {
+      "path": "index.html"
+    },
+    {
+      "path": "report.json"
+    },
+    {
+      "path": "ecbtax-verificare-tehnica-ai-2026-11-23.pdf",
+      "sha256": "1aa5794839810293918ada570ed333c73a511fa4387cf6906e701f9a7320d171"
+    },
+    {
+      "path": "ecbtax-verificare-tehnica-ai-2026-11-23.pdf.ots",
+      "note": "OpenTimestamps; pending Bitcoin confirmation at publication"
+    },
+    {
+      "path": "sha256.txt"
+    }
+  ],
+  "evidence_rule": "Claim ≠ Proof. Hash verifies file integrity; it does not independently validate the report's substantive conclusions."
+}
