@@ -1,15 +1,22 @@
 {
-  "name": "AiVenture Service Buyer Agent",
-  "description": "Buyer Agent pentru descoperirea, compararea și solicitarea controlată a serviciilor B2B Agent-Ready.",
+  "protocolVersion": "0.3.0",
+  "name": "AiVenture Seller Agent",
+  "description": "Agentul de vânzare al AiVenture S.R.L. (România). Răspunde agenților AI ai cumpărătorilor: prezintă oferta publică (verificare vizibilitate AI, FirmsFinder, START Site + Asistent AI, BUSINESS), dă prețurile publice și preia cereri de ofertă pe care le validează echipa. Nu inventează oferte, nu semnează și nu încasează.",
   "url": "https://aiventure.ro/api/a2a",
-  "version": "3.0",
+  "preferredTransport": "JSONRPC",
+  "version": "4.0",
+  "updated": "2026-11-24",
   "provider": {
     "organization": "AiVenture S.R.L.",
-    "url": "https://aiventure.ro/"
+    "url": "https://aiventure.ro/",
+    "cui": "51415878",
+    "country": "RO",
+    "email": "contact@5thelement.ai"
   },
   "capabilities": {
     "streaming": false,
-    "pushNotifications": false
+    "pushNotifications": false,
+    "stateTransitionHistory": false
   },
   "defaultInputModes": [
     "application/json",
@@ -21,26 +28,55 @@
   ],
   "skills": [
     {
-      "id": "discover-services",
-      "name": "Discover services",
-      "description": "Descoperă servicii B2B Agent-Ready."
+      "id": "discover",
+      "name": "Discover offer",
+      "description": "Lista produselor AiVenture cu prețuri publice și condiții.",
+      "tags": [
+        "oferta",
+        "preturi",
+        "ro"
+      ],
+      "examples": [
+        "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"discover\"}"
+      ]
     },
     {
-      "id": "compare-services",
-      "name": "Compare services",
-      "description": "Compară condiții publice și dovezi disponibile."
+      "id": "quote",
+      "name": "Get public quote",
+      "description": "Prețul public pentru un produs (verificare, firmsfinder, start). BUSINESS: la ofertă, cu aprobare umană.",
+      "tags": [
+        "pret"
+      ],
+      "examples": [
+        "{\"jsonrpc\":\"2.0\",\"id\":2,\"method\":\"quote\",\"params\":{\"product\":\"start\",\"billing\":\"annual\"}}"
+      ]
     },
     {
-      "id": "request-services",
-      "name": "Request services",
-      "description": "Inițiază cereri în limitele politicilor și RRVI."
+      "id": "request",
+      "name": "Request offer",
+      "description": "Lasă o cerere (produs, site sau CUI, e-mail sau telefon). Cererea ajunge la echipa AiVenture; nu creează nicio obligație.",
+      "tags": [
+        "cerere",
+        "lead"
+      ],
+      "examples": [
+        "{\"jsonrpc\":\"2.0\",\"id\":3,\"method\":\"request\",\"params\":{\"product\":\"verificare\",\"website\":\"firma.ro\",\"email\":\"nume@firma.ro\",\"buyer_agent\":\"ChatGPT\"}}"
+      ]
+    },
+    {
+      "id": "status",
+      "name": "Status and limits",
+      "description": "Ce poate și ce nu poate face acest agent.",
+      "tags": [
+        "guvernanta"
+      ]
     }
   ],
-  "humanInterface": "https://aiventure.ro/buyer-agent/",
-  "service": "https://aiventure.ro/service.json",
+  "humanInterface": "https://aiventure.ro/",
+  "llms": "https://aiventure.ro/llms.txt",
+  "offer": "https://aiventure.ro/ai.json",
   "governance": "https://aiventure.ro/governance.json",
   "policy": "https://aiventure.ro/policy.json",
-  "authority": "https://aiventure.ro/authority.json",
   "rrvi": "https://aiventure.ro/rrvi.json",
   "evidence": "https://aiventure.ro/evidence.json"
 }

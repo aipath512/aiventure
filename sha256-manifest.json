@@ -7,7 +7,7 @@
   "artifacts": [
     {
       "artifact": ".well-known/agent-card.json",
-      "sha256": "926096df9b05d752580571df678c82d5ea6c37adc3f5cbaef8325e79a09716f4",
+      "sha256": "23eda2e797e8f33d03788d4473a8d623153f8bf1426dd1ad02523e3fe09a86da",
       "sha256_file": "/artifacts/.well-known__agent-card.json.sha256",
       "ots_status": "NOT_REQUIRED"
     },
@@ -73,7 +73,7 @@
     },
     {
       "artifact": "agent-card.json",
-      "sha256": "926096df9b05d752580571df678c82d5ea6c37adc3f5cbaef8325e79a09716f4",
+      "sha256": "23eda2e797e8f33d03788d4473a8d623153f8bf1426dd1ad02523e3fe09a86da",
       "sha256_file": "/artifacts/agent-card.json.sha256",
       "ots_status": "NOT_REQUIRED"
     },
