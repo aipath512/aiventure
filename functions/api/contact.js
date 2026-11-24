@@ -96,7 +96,10 @@ export async function onRequestPost({ request, env }) {
     ts:       new Date().toISOString(),
   };
 
-  if (!validEmail(lead.email)) return fail('Adresa de email nu pare validă.');
+  // Cererea de demo (15 minute) poate veni doar cu telefon, fără e-mail.
+  const telefon = clean(data.telefon, 40);
+  const demoCuTelefon = lead.tip === 'demo-15-minute' && telefon.replace(/\D/g, '').length >= 9;
+  if (!validEmail(lead.email) && !demoCuTelefon) return fail('Adresa de e-mail nu pare validă.');
   if (!lead.website) return fail('Completează website-ul firmei.');
 
   let stored = false;
