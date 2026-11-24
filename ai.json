@@ -1,8 +1,8 @@
 {
   "schema": "AIVENTURE_AI_DISCOVERY",
-  "version": "5.7",
+  "version": "6.0",
   "session": "0003H",
-  "generated_at": "2026-09-14T21:35:00+03:00",
+  "generated_at": "2026-11-24T15:35:00+02:00",
   "canonical": "https://aiventure.ro/",
   "language": "ro",
   "organization": {
@@ -10,8 +10,8 @@
     "canonical_uri": "https://5thelement.ai/#organization",
     "legal_name": "AiVenture S.R.L.",
     "brand": "AiVenture",
-    "category": "Agent-Ready B2B Services",
-    "descriptor": "A2A Business Infrastructure",
+    "category": "Vizibilitate Google și AI · Prospectare B2B · Site + Asistent AI",
+    "descriptor": "Fii găsit. Găsește clienți. Crește cu Google și AI.",
     "contact": {
       "email": "contact@5thelement.ai",
       "phone": "+40 737 123 540",
@@ -19,12 +19,17 @@
     }
   },
   "positioning": {
-    "primary_category": "Agent-Ready B2B Services",
-    "descriptor": "A2A Business Infrastructure",
-    "headline": "Omul caută. AI-ul recomandă. Agentul acționează.",
-    "framework": "The Three Webs",
-    "promise": "Keep your website. Add the AI & Agent layer.",
-    "primary_object": "B2B service"
+    "primary_category": "Vizibilitate Google și AI, prospectare B2B și asistent AI pentru IMM-uri și firme de servicii din România",
+    "headline": "Fii găsit. Găsește clienți. Crește cu Google și AI.",
+    "promise": "Fii găsit de oameni și de sistemele AI. Găsește clienți prin date economice. Transformă conversațiile cu potențialii clienți în oportunități comerciale și cereri de ofertă.",
+    "audience": "IMM-uri și firme de servicii: contabilitate, avocatură, IT, marketing, construcții, audit",
+    "pillars": [
+      "FII GĂSIT — Google și AI (ChatGPT, Gemini, Claude, Perplexity)",
+      "GĂSEȘTE CLIENȚI — FirmsFinder, ~1,7 milioane firme din România",
+      "CREȘTE CU AI — site + asistent AI care pregătește cereri de ofertă"
+    ],
+    "framework": "The Three Webs (context)",
+    "express_line": "A2A: asistentul AI al cumpărătorului caută, compară și cere oferte; când sistemele sunt compatibile, asistentul AI al firmei răspunde din informații validate și pregătește cererea pentru echipă."
   },
   "primary_service": {
     "id": "E_SERVICE_AGENT_READY_B2B",
@@ -95,5 +100,38 @@
     "https://aiventure.ro/intrebari/",
     "https://aiventure.ro/faq-hub.html",
     "https://aiventure.ro/contact/"
+  ],
+  "homepage_version": "v3.49",
+  "offer": {
+    "currency": "EUR",
+    "vat": "excluded",
+    "items": [
+      {
+        "name": "Verificare vizibilitate AI",
+        "price": "0",
+        "note": "1 test / CUI; rezultat pe e-mail, de regulă în 24 de ore lucrătoare"
+      },
+      {
+        "name": "FirmsFinder",
+        "price": "3.99/lună sau 39.99/an",
+        "note": "căutare gratuită; export 1.000 firme/lună, căutări salvate, monitorizare săptămânală"
+      },
+      {
+        "name": "START — Site + Asistent AI",
+        "price": "10/lună sau 96/an",
+        "note": "tarif de lansare; prima săptămână gratuită; domeniu pe numele firmei la plata anuală"
+      },
+      {
+        "name": "BUSINESS",
+        "price": "la ofertă",
+        "note": "WhatsApp, e-mail, telefon, memorie multicanal, monitorizare AI, configurare asistată"
+      }
+    ]
+  },
+  "not_guaranteed": [
+    "poziția 1 în Google",
+    "citarea sau recomandarea de către un model AI",
+    "conformitatea juridică",
+    "răspunsuri AI fără erori"
   ]
 }

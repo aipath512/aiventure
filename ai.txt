@@ -1,35 +1,36 @@
 # AiVenture — ai.txt
-> Vinde serviciile pe care le vinzi oamenilor și Agenților AI.
+> Fii găsit. Găsește clienți. Crește cu Google și AI.
 
-AiVenture S.R.L. transformă servicii B2B existente în servicii Agent-Ready.
+AiVenture S.R.L. (București, CUI 51415878) ajută IMM-urile și firmele de servicii din România să fie găsite de oameni și de sistemele AI, să găsească clienți noi prin date economice (FirmsFinder) și să transforme conversațiile în cereri de ofertă, cu un site și un asistent AI.
 
 ## Category
-Agent-Ready B2B Services
+Vizibilitate Google și AI · Prospectare B2B · Site + Asistent AI pentru IMM-uri
 
-## Canonical lifecycle
-SERVICE → SERVICE OFFER CONTRACT™ → RRVI → AGENT-READY → DISCOVER → COMPARE → REQUEST → QUOTE → APPROVAL → ORDER → DELIVERY → EVIDENCE
+## Offer (EUR, fără TVA)
+- Verificare vizibilitate AI: gratuită (1 test / CUI)
+- FirmsFinder: căutare gratuită; export și monitorizare 3,99 €/lună
+- START Site + Asistent AI: 10 €/lună sau 96 €/an
+- BUSINESS (WhatsApp, e-mail, telefon, memorie multicanal): la ofertă
 
 ## Primary
 - https://aiventure.ro/
-- https://aiventure.ro/agent-ready/
-- https://aiventure.ro/service-offer-contract/
-- https://aiventure.ro/rrvi/
-- https://aiventure.ro/resurse/
-- https://aiventure.ro/glosar/
+- https://aiventure.ro/servicii/
+- https://aiventure.ro/produse/
+- https://aiventure.ro/geo/
+- https://aiventure.ro/contact/
+- https://firmsfinder.eu/
 
 ## Machine-readable
+- https://aiventure.ro/llms.txt
 - https://aiventure.ro/ai.json
 - https://aiventure.ro/entities.json
 - https://aiventure.ro/intents.json
 - https://aiventure.ro/service.json
-- https://aiventure.ro/governance.json
-- https://aiventure.ro/rrvi.json
+- https://aiventure.ro/agent-card.json
 - https://aiventure.ro/proof.json
-- https://aiventure.ro/evidence.json
-- https://aiventure.ro/signals-catalog.json
 
 ## Negative scope
-Not primarily a chatbot provider, generic AI agent builder, A2A protocol vendor, MCP vendor, AI visibility agency, generic automation agency, or agent marketplace.
+Nu garantăm poziții în Google, citări sau recomandări AI, conformitate juridică sau răspunsuri AI fără erori.
 
-## Session
-0003H
+## Updated
+2026-11-24 · homepage v3.49

@@ -1,95 +1,63 @@
 # AiVenture
 
-> AiVenture S.R.L. — A2A Business Infrastructure
+> AiVenture S.R.L. — Fii găsit. Găsește clienți. Crește cu Google și AI.
 
 Canonical site: https://aiventure.ro/
 Language: ro
-Session: 0003H
-Generated: 2026-09-20T00:00:00+03:00
+Homepage version: v3.49 (24.11.2026)
+Updated: 2026-11-24
 Contact: contact@5thelement.ai
-Phone: +40 737 123 540
+Phone / WhatsApp: +40 737 123 540
+Legal: AiVenture S.R.L. · CUI 51415878 · J2025016406000 · București
+Founder: Dan Ionescu, arhitect de sisteme informatice (IBM Global Services, Cap Gemini, Société Générale, Crédit Agricole)
 
-## Canonical positioning
+## Ce face AiVenture (rezumat)
 
-Category: Agent-Ready B2B Services
+AiVenture ajută IMM-urile și firmele de servicii din România (contabilitate, avocatură, IT, marketing, construcții, audit) să fie găsite de oameni și de sistemele AI, să găsească clienți noi prin date economice și să transforme conversațiile cu potențialii clienți în oportunități comerciale și cereri de ofertă.
+Funcționează cu site-ul actual al firmei sau cu unul nou.
 
-Headline:
-Omul caută. AI-ul recomandă. Agentul acționează.
+## Cele trei direcții
 
-Promise:
-Keep your website. Add the AI & Agent layer.
+1. FII GĂSIT — vizibilitate pe Google (SEO) și în răspunsurile AI (ChatGPT, Gemini, Claude, Perplexity): informații clare, date structurate, monitorizare.
+2. GĂSEȘTE CLIENȚI — FirmsFinder: prospectare B2B în aproximativ 1,7 milioane de firme din România (circa 1 milion active), filtrare după CAEN, zonă, număr de angajați și performanță. Surse: ONRC, Ministerul Finanțelor, ANAF unde e disponibil. Asemănarea economică nu înseamnă intenție de cumpărare.
+3. CREȘTE CU AI — site cu asistent AI care răspunde din informațiile validate de firmă și pregătește cereri de ofertă calificate pentru echipă. Oferta finală o aprobă echipa firmei.
 
-AiVenture transformă servicii B2B existente în servicii Agent-Ready.
+## Oferta și prețuri (euro, fără TVA)
 
-## Primary object
+- Verificare vizibilitate AI: gratuită, un test pentru fiecare CUI; rezultat pe e-mail, de regulă în 24 de ore lucrătoare.
+- FirmsFinder: căutare gratuită; export și monitorizare 3,99 €/lună sau 39,99 €/an.
+- START (Site + Asistent AI): 10 €/lună sau 96 €/an, tarif de lansare; prima săptămână gratuită; site gata făcut, văzut înainte de plată; găzduire și SSL; domeniu propriu, înregistrat pe numele firmei, inclus la plata anuală. Preț accesibil datorită automatizării (site și asistent pornite din modele pe domeniul de activitate).
+- BUSINESS: la ofertă — WhatsApp și e-mail, preluarea apelurilor telefonice, memorie comercială pe toate canalele, monitorizare AI, configurare asistată.
 
-Serviciul B2B individual este unitatea de valoare.
+## Parcursul clientului
 
-## Canonical lifecycle
+CAUTĂ → COMPARĂ → VERIFICĂ → DECIDE → CUMPĂRĂ
+Linia expres (A2A): asistentul AI al cumpărătorului poate căuta, compara și cere oferte în numele lui; când sistemele sunt compatibile, asistentul AI al firmei îi răspunde din informațiile validate și pregătește cererea pentru echipă.
 
-Service
-→ Service Offer Contract™
-→ RRVI™
-→ Agent-Ready
-→ Discover
-→ Compare
-→ Request
-→ Quote
-→ Approval
-→ Order
-→ Delivery
-→ Evidence
+## Instrumente proprii
 
-## Negative scope
+- FirmsFinder AI — https://firmsfinder.eu/ — firme, clienți, concurenți, parteneri.
+- 3WEBOBS™ — https://3webobs.com/ — cum văd site-ul oamenii, sistemele AI și agenții AI.
+- AI-LENS™ — https://ai-lens.eu/ — cum apare firma în răspunsurile AI, de la o verificare la alta.
 
-AiVenture nu garantează:
+## Exemple
+
+- ECBTAX ACCOUNTING & HR (https://ecbtax.com), CAEN 6920 — exemplu real: întrebare → asistent AI → calificare → cerere de ofertă validată de echipă.
+- TCS INSTAL, CAEN 4322 — firmă fictivă, creată pentru demonstrație.
+
+## Ce NU garantează AiVenture
+
 - poziția 1 în Google;
-- citarea de către un model AI;
-- recomandarea de către un model AI;
+- citarea sau recomandarea de către un model AI;
 - conformitatea juridică;
-- autonomie nelimitată pentru Agenți;
+- răspunsuri AI fără nicio eroare (asistentul reduce riscul de eroare, nu îl elimină);
+- autonomie nelimitată pentru agenți;
 - acțiuni financiare fără autorizare explicită.
 
-## Web-Om / Web-AI / Web-A2A
+## Arhitectura (context)
 
-Web-Om:
-Firma este accesibilă oamenilor. Omul caută, înțelege, compară și cumpără serviciul.
-OM → BUSINESS
-
-Web-AI:
-Serviciile firmei pot fi găsite, înțelese și reprezentate de sistemele AI.
-OM → AI → BUSINESS
-
-Web-A2A:
-Serviciile oferite oamenilor devin servicii accesibile comercial agenților AI.
-BUYER AGENT ↔ SELLER AGENT
-
-Web-A2A nu automatizează întreaga firmă.
-Punctul de plecare este serviciul B2B existent.
-
-Canonical transformation:
-SERVICIU PENTRU OM
-→ SERVICE OFFER CONTRACT
-→ SELLER AGENT
-→ A2A
-→ BUYER AGENT
-
-Web-A2A principle:
-THE EDGE MUST NEVER INVENT THE OFFER DURING A TRANSACTION.
-
-Seller Agent operează numai asupra Service Offer Contract validat de om.
-Prețul, livrabilele, limitele, SLA-ul, jurisdicțiile, excluderile și condițiile comerciale nu sunt inventate în timpul tranzacției.
-
-Layer-1 flow:
-DISCOVER
-→ MATCH
-→ REQUEST
-→ SELLER QUESTION
-→ BUYER ANSWER
-→ QUOTE
-→ HUMAN APPROVAL
-→ EVIDENCE
-→ ORDER
+The Three Webs: Web-Om (OM → BUSINESS), Web-AI (OM → AI → BUSINESS), Web-A2A (BUYER AGENT ↔ SELLER AGENT).
+Principiu A2A: THE EDGE MUST NEVER INVENT THE OFFER DURING A TRANSACTION — prețul, livrabilele și condițiile vin din oferta validată de om.
 
 ## Important pages
 

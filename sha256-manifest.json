@@ -91,13 +91,13 @@
     },
     {
       "artifact": "ai.json",
-      "sha256": "cf4b2a590b2236e079770f66a7521a2f8b555caaeb84912ac6956f977d8ce769",
+      "sha256": "920c0511d32a388430e74b69fa2d867c12a7880127190c524b494f0697f3ba77",
       "sha256_file": "/artifacts/ai.json.sha256",
       "ots_status": "NOT_REQUIRED"
     },
     {
       "artifact": "ai.txt",
-      "sha256": "c16e7c93a1b976a5cf27bb8b2718dd543c0ca3777b4c2407e13418235805b674",
+      "sha256": "653f9b228781f14a3a3e91124dabc6d446bfe89f2c556fd9ae24e60816691aab",
       "sha256_file": "/artifacts/ai.txt.sha256",
       "ots_status": "NOT_REQUIRED"
     },
@@ -997,7 +997,7 @@
     },
     {
       "artifact": "llms.txt",
-      "sha256": "f1456be422623c30eacb9153289a23351f572c203b11c0f28de79467e12f6b28",
+      "sha256": "f206965dc2b5da88097ecaf3ef90486eae49eef6d39916b9c389b0e69ede076d",
       "sha256_file": "/artifacts/llms.txt.sha256",
       "ots_status": "NOT_REQUIRED"
     },
