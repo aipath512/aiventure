@@ -1,4 +1,7 @@
 // AiVenture — middleware pe TOATE paginile aiventure.ro
+// v1.7 · 2026-11-24
+//
+// v1.7: pe telefon, fereastra de cookie-uri (gdpr.aiventure.ro) devine compactă și butoanele nu mai ies din ecran.
 // v1.6 · 2026-11-19
 //
 // v1.6: pe fiecare articol, sus, blocul complet de identitate a firmei (CUI, TVA, Reg. Com., EUID, CAEN, sediu, site-uri, email)
@@ -66,6 +69,8 @@ const WIDGET = `
 #aiv-contact-float svg{width:26px;height:26px}
 @media (max-width:600px){#aiv-contact-float{left:10px;bottom:12px;gap:8px}#aiv-contact-float a{width:46px;height:46px}#aiv-contact-float svg{width:23px;height:23px}}
 @media print{#aiv-contact-float{display:none}}
+/* v1.7: fereastra de cookie-uri pe telefon — butoanele nu mai ies din ecran, fereastra e mai compactă */
+@media (max-width:600px){#aiv-consent-banner{padding:14px 14px calc(14px + env(safe-area-inset-bottom,0px))!important;font-size:13px!important;line-height:1.45!important}#aiv-consent-banner>div{gap:10px!important}#aiv-consent-banner>div>div:first-child{min-width:0!important}#aiv-consent-banner>div>div:last-child{flex-shrink:1!important;width:100%!important;display:grid!important;grid-template-columns:1fr 1fr!important;gap:8px!important}#aiv-consent-banner>div>div:last-child button{width:100%!important;padding:11px 10px!important;font-size:14px!important;white-space:normal!important}#aiv-consent-banner>div>div:last-child button[data-act="accept"]{grid-column:1/-1!important}}
 </style>
 <div id="aiv-contact-float" aria-label="Contact AiVenture">
   <a class="aiv-wa" href="https://wa.me/40737123540" target="_blank" rel="noopener" aria-label="WhatsApp +40 737 123 540" title="WhatsApp +40 737 123 540">
