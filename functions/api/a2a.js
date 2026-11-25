@@ -14,7 +14,7 @@ const OFFER = {
       includes: ["Cum apare firma în Google și în răspunsurile AI", "Întrebările clienților la care site-ul nu răspunde", "Acțiunile recomandate, în ordinea importanței"],
       terms: "Gratuit, un test pentru fiecare CUI. Rezultat pe e-mail, de regulă în 24 de ore lucrătoare." },
     { id: "firmsfinder", name: "FirmsFinder", price: { monthly: 3.99, annual: 39.99 },
-      includes: ["Căutare gratuită în ~1,7 milioane de firme din România", "Export 1.000 de firme pe lună", "Căutări salvate", "Monitorizare săptămânală"],
+      includes: ["Căutare gratuită în ~1,3 milioane de firme active din România (ONRC, 2 septembrie 2026)", "Export 1.000 de firme pe lună", "Căutări salvate", "Monitorizare săptămânală"],
       terms: "Asemănarea economică nu înseamnă intenție de cumpărare.", url: "https://firmsfinder.eu/" },
     { id: "start", name: "START — Site + Asistent AI", price: { monthly: 10, annual: 96 },
       includes: ["Site gata făcut, văzut înainte de plată", "Asistent AI cu răspunsuri validate de firmă", "Găzduire și SSL", "Domeniu propriu, înregistrat pe numele firmei, la plata anuală"],

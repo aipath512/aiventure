@@ -19,7 +19,7 @@ Funcționează cu site-ul actual al firmei sau cu unul nou.
 ## Cele trei direcții
 
 1. FII GĂSIT — vizibilitate pe Google (SEO) și în răspunsurile AI (ChatGPT, Gemini, Claude, Perplexity): informații clare, date structurate, monitorizare.
-2. GĂSEȘTE CLIENȚI — FirmsFinder: prospectare B2B în aproximativ 1,7 milioane de firme din România (circa 1 milion active), filtrare după CAEN, zonă, număr de angajați și performanță. Surse: ONRC, Ministerul Finanțelor, ANAF unde e disponibil. Asemănarea economică nu înseamnă intenție de cumpărare.
+2. GĂSEȘTE CLIENȚI — FirmsFinder: prospectare B2B în circa 1,3 milioane de firme active din România (ONRC, setul din 2 septembrie 2026), filtrare după CAEN, zonă, număr de angajați și performanță. Surse: ONRC, Ministerul Finanțelor, ANAF unde e disponibil. Asemănarea economică nu înseamnă intenție de cumpărare.
 3. CREȘTE CU AI — site cu asistent AI care răspunde din informațiile validate de firmă și pregătește cereri de ofertă calificate pentru echipă. Oferta finală o aprobă echipa firmei.
 
 ## Oferta și prețuri (euro, fără TVA)
