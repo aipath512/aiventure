@@ -449,7 +449,7 @@ export async function onRequest(context) {
         .on('script[type="application/ld+json"]', { element(el) { el.remove(); } })
         .on('meta[name="description"], meta[property="og:description"], meta[name="twitter:description"]', { element(el) { if (en.description) el.setAttribute("content", en.description); } })
         .on("head", { element(el) { el.append((A.hasStyle ? "" : BASE_CSS) + SITE_CSS + metaFamily(A, cur, pageUrl, title) + articleGraph(I, A, cur, pageUrl, title, en, faqList), { html: true }); } })
-        .on("body", { element(el) { el.prepend(header(), { html: true }); el.append(footer(I) + WIDGET + ASSISTANT, { html: true }); } })
+        .on("body", { element(el) { el.prepend(header(), { html: true }); el.append(footer(I) + WIDGET + ASSISTANT + '<script defer src="/assets/aiventure-assistant-theme.js"></script>', { html: true }); } })
         .on("div.crumb", { element(el) { if (!crumbDone) { el.replace(crumb, { html: true }); crumbDone = true; } } })
         .on("h1", { element(el) { if (!h1Done) { h1Done = true; if (!crumbDone) { el.before(crumb, { html: true }); crumbDone = true; } el.after(by + toc, { html: true }); } } })
         .on("main h2", { element(el) { n++; if (!el.getAttribute("id")) el.setAttribute("id", "s" + n); } })
@@ -463,7 +463,7 @@ export async function onRequest(context) {
     }
   }
 
-  let rw = new HTMLRewriter().on("body", { element(el) { el.append(WIDGET + ASSISTANT, { html: true }); } });
+  let rw = new HTMLRewriter().on("body", { element(el) { el.append(WIDGET + ASSISTANT + '<script defer src="/assets/aiventure-assistant-theme.js"></script>', { html: true }); } });
   try {
     if (path === AUTHOR_PATH) {
       const [I, all] = await Promise.all([loadIdentity(), loadArticles(context)]);
