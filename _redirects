@@ -11,3 +11,37 @@
 /proof.json            /ai.json                301
 /autor/aiventure-team/   /autor/dan-ionescu/   301
 /autor/aiventure-team    /autor/dan-ionescu/   301
+
+# 2026-11-26 — linkuri moarte din auditul aiventure.ro (C1–C3): trimise spre paginile actuale v3.49
+/preturi                       /#oferta                301
+/preturi/                      /#oferta                301
+/oferta                        /#oferta                301
+/oferta/                       /#oferta                301
+/pentru-cine/*                 /use-cases/             301
+/pentru-cine                   /use-cases/             301
+/resurse/*                     /blog/                  301
+/resurse                       /blog/                  301
+/politica-confidentialitate/   /legal/                 301
+/politica-confidentialitate    /legal/                 301
+/cookies/                      /legal/                 301
+/cookies                       /legal/                 301
+/legal/a2a-terms/              /legal/                 301
+/eu-ai-act/                    /eu-ai-act-ready/       301
+/inovatii/                     /arhitectura/           301
+/service-offer-contract/       /termeni-si-conditii/   301
+/servicii-offer-contract/      /termeni-si-conditii/   301
+/servicii/service-offer-contract/ /termeni-si-conditii/ 301
+/servicii/seo/                 /seo/                   301
+/servicii/geo/                 /geo/                   301
+/servicii/aeo/                 /aeo/                   301
+/servicii/aio/                 /aio/                   301
+/servicii/a2a/                 /solutii/a2a/           301
+/servicii/ai-signals/          /ai-signals/            301
+/servicii/eu-ai-act/           /eu-ai-act-ready/       301
+/servicii/agent-ready-b2b/     /solutii/agent-ready/   301
+/servicii/agent-ready-implementation/ /solutii/agent-ready/ 301
+/servicii/evidence/            /dovezi/                301
+/servicii/ai-evidence/         /dovezi/                301
+/servicii/rrvi/                /dovezi/                301
+/servicii/rrvi-jurisdiction-packs/* /dovezi/           301
+/servicii/*                    /servicii/              301
