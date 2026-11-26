@@ -56,3 +56,4 @@
 /servicii/request-qualification/   /servicii/               301
 /servicii/master-context/          /servicii/               301
 /servicii/quote-order/             /servicii/               301
+/rrvi.json                     /ai.json                301
