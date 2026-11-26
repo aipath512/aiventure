@@ -78,6 +78,51 @@ const WIDGET = `
   </a>
 </div>`;
 
+// Componentă comună pentru toate paginile HTML. Dacă o pagină are deja bula
+// #chat-launcher (de ex. homepage), componenta globală este eliminată.
+// Aceasta reproduce panoul de ajutor existent; nu pretinde chat AI live.
+const ASSISTANT = `
+<style>
+#aiv-global-help{position:fixed;right:22px;bottom:calc(23px + env(safe-area-inset-bottom,0px));z-index:9998;font-family:system-ui,-apple-system,Segoe UI,sans-serif}
+#aiv-global-help *{box-sizing:border-box}
+#aiv-global-help-button{width:55px;height:55px;display:grid;place-items:center;border:1px solid #c6c7cb;border-radius:50%;background:#fff;color:#17171b;cursor:pointer;box-shadow:0 9px 28px #0007;position:relative}
+#aiv-global-help-button:after{content:"";position:absolute;width:12px;height:12px;right:6px;bottom:2px;background:#fff;transform:rotate(35deg);border-radius:2px}
+#aiv-global-help-dots{display:flex;gap:4px;align-items:center;position:relative;z-index:1}
+#aiv-global-help-dots i{width:5px;height:5px;background:#202027;border-radius:50%;display:block}
+#aiv-global-help-panel{display:none;position:absolute;right:0;bottom:72px;width:min(340px,calc(100vw - 32px));padding:21px;border:1px solid #51535d;border-radius:18px;background:#171920;color:#fff;box-shadow:0 16px 45px #000a}
+#aiv-global-help-panel[aria-hidden="false"]{display:block}
+#aiv-global-help-panel h2{font-size:20px;margin:0 0 10px;line-height:1.25;color:#fff}
+#aiv-global-help-panel p{font-size:16px;margin:0 0 12px;color:#ced0d9;line-height:1.45}
+#aiv-global-help-panel a{display:block;font-size:16px;line-height:1.35;color:#f4d5a4;text-decoration:none;border:1px solid #655640;background:#2c2929;padding:12px;border-radius:9px;margin-top:8px;font-weight:700}
+#aiv-global-help-panel a:hover,#aiv-global-help-panel a:focus-visible{background:#3f3833;color:#fff}
+#aiv-global-help-panel small{display:block;margin-top:14px;color:#bbc0cb;font-size:13px;line-height:1.4}
+@media(max-width:600px){#aiv-global-help{right:13px;bottom:calc(13px + env(safe-area-inset-bottom,0px))}#aiv-global-help-button{width:49px;height:49px}#aiv-global-help-panel{bottom:65px}}
+@media print{#aiv-global-help{display:none}}
+</style>
+<div id="aiv-global-help">
+ <aside id="aiv-global-help-panel" aria-label="Ajutor AiVenture" aria-hidden="true">
+  <h2>Cum te putem ajuta?</h2>
+  <p>Alege ce vrei să faci pentru firma ta.</p>
+  <a href="/#verifica">Verifică dacă firma este găsită</a>
+  <a href="https://firmsfinder.eu/">Găsește potențiali clienți</a>
+  <a href="/contact/">Discută cu AiVenture</a>
+  <small>Panou de ajutor. Chatul AI conversațional nu este conectat în această interfață.</small>
+ </aside>
+ <button id="aiv-global-help-button" type="button" aria-label="Deschide ajutorul AiVenture" aria-controls="aiv-global-help-panel" aria-expanded="false"><span id="aiv-global-help-dots" aria-hidden="true"><i></i><i></i><i></i></span></button>
+</div>
+<script>
+(function(){
+ const root=document.getElementById('aiv-global-help');
+ if(!root)return;
+ if(document.getElementById('chat-launcher')){root.remove();return;}
+ const btn=document.getElementById('aiv-global-help-button'), panel=document.getElementById('aiv-global-help-panel');
+ function toggle(force){const open=typeof force==='boolean'?force:btn.getAttribute('aria-expanded')!=='true';btn.setAttribute('aria-expanded',String(open));btn.setAttribute('aria-label',open?'Închide ajutorul AiVenture':'Deschide ajutorul AiVenture');panel.setAttribute('aria-hidden',String(!open));}
+ btn.addEventListener('click',()=>toggle());
+ document.addEventListener('keydown',e=>{if(e.key==='Escape')toggle(false)});
+ document.addEventListener('click',e=>{if(!root.contains(e.target))toggle(false)});
+})();
+</script>`;
+
 const esc = (s) => String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 
 async function loadIdentity() {
@@ -404,7 +449,7 @@ export async function onRequest(context) {
         .on('script[type="application/ld+json"]', { element(el) { el.remove(); } })
         .on('meta[name="description"], meta[property="og:description"], meta[name="twitter:description"]', { element(el) { if (en.description) el.setAttribute("content", en.description); } })
         .on("head", { element(el) { el.append((A.hasStyle ? "" : BASE_CSS) + SITE_CSS + metaFamily(A, cur, pageUrl, title) + articleGraph(I, A, cur, pageUrl, title, en, faqList), { html: true }); } })
-        .on("body", { element(el) { el.prepend(header(), { html: true }); el.append(footer(I) + WIDGET, { html: true }); } })
+        .on("body", { element(el) { el.prepend(header(), { html: true }); el.append(footer(I) + WIDGET + ASSISTANT, { html: true }); } })
         .on("div.crumb", { element(el) { if (!crumbDone) { el.replace(crumb, { html: true }); crumbDone = true; } } })
         .on("h1", { element(el) { if (!h1Done) { h1Done = true; if (!crumbDone) { el.before(crumb, { html: true }); crumbDone = true; } el.after(by + toc, { html: true }); } } })
         .on("main h2", { element(el) { n++; if (!el.getAttribute("id")) el.setAttribute("id", "s" + n); } })
@@ -418,7 +463,7 @@ export async function onRequest(context) {
     }
   }
 
-  let rw = new HTMLRewriter().on("body", { element(el) { el.append(WIDGET, { html: true }); } });
+  let rw = new HTMLRewriter().on("body", { element(el) { el.append(WIDGET + ASSISTANT, { html: true }); } });
   try {
     if (path === AUTHOR_PATH) {
       const [I, all] = await Promise.all([loadIdentity(), loadArticles(context)]);
