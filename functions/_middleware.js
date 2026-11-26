@@ -48,7 +48,7 @@ const IDENTITY_FALLBACK = {
     denumire_legala: "AiVenture S.R.L.", brand_operare: "5thelement.ai",
     cui: "51415878", cod_tva: "RO51415878", euid: "ROONRC.J2025016406000", nr_registrul_comertului: "J2025016406000",
     data_infiintare: "2025-03-07", caen_principal: "6210",
-    sediu: { strada: "Drumul Pădurea Pustnicul nr. 141C, Corp A, Etaj 2, Ap. 5", localitate: "București", sector: "Sector 1", cod_postal: "014044", tara: "RO" },
+    sediu: { strada: "Drumul Pădurea Pustnicu nr. 141C, Corp A, Etaj 2, Ap. 5", localitate: "București", sector: "Sector 1", cod_postal: "014044", tara: "RO" },
     fondator: { nume: "Dan Ionescu", orcid: "https://orcid.org/0009-0002-5498-1046", linkedin: "https://ro.linkedin.com/in/dan-ionesco-a856082a0" }
   },
   contact: { email: "contact@5thelement.ai", whatsapp: "https://api.whatsapp.com/send/?phone=40737123540" },
