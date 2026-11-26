@@ -157,4 +157,18 @@
 <p><strong>Redactat:</strong> 26.11.2026, 09:46 EET (București) · <strong>Versiune:</strong> SCARA SPEC v1.7 — referință arhitecturală, pilot operațional în dezvoltare.</p>
 <div class="signature"><p>© 2026 AiVenture S.R.L. · <a href="/">Acasă</a> · <a href="/contact/">Contact</a> · <a href="/termeni-si-conditii/">Termeni</a></p></div>
 </div></footer>
+<style>
+.chat-launcher{position:fixed;right:22px;bottom:calc(24px + env(safe-area-inset-bottom,0px));z-index:9999;width:55px;height:55px;border-radius:50%;border:1px solid #c6c7cb;background:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 9px 30px #0008;cursor:pointer}
+.chat-launcher:after{content:"";position:absolute;width:12px;height:12px;background:#fff;right:6px;bottom:2px;transform:rotate(35deg);border-radius:2px}
+.chat-dots{display:flex;gap:4px;z-index:1}.chat-dots i{display:block;width:5px;height:5px;border-radius:50%;background:#18191d}
+.chat-panel{position:fixed;right:22px;bottom:calc(90px + env(safe-area-inset-bottom,0px));z-index:9999;width:min(340px,calc(100vw - 32px));border-radius:19px;background:#171920;border:1px solid #535761;box-shadow:0 18px 50px #000a;padding:22px;display:none;color:#fff}
+.chat-panel.open{display:block}.chat-panel h2{font-size:20px;margin:0 0 10px;line-height:1.25}.chat-panel p{font-size:16px;color:#cdd0d8;margin:0 0 12px}.chat-panel a{display:block;padding:12px;margin-top:8px;border-radius:9px;background:#2c2929;border:1px solid #655640;color:#f4d5a4;text-decoration:none;font-size:16px;font-weight:700}.chat-panel small{display:block;margin-top:13px;font-size:13px;color:#bec2cd}
+@media(max-width:600px){.chat-launcher{right:13px;bottom:calc(13px + env(safe-area-inset-bottom,0px));width:49px;height:49px}.chat-panel{right:13px;bottom:calc(78px + env(safe-area-inset-bottom,0px))}}
+@media print{.chat-launcher,.chat-panel{display:none}}
+</style>
+<aside class="chat-panel" id="chat-panel" aria-label="Ajutor AiVenture"><h2>Cum te putem ajuta?</h2><p>Alege ce vrei să faci pentru firma ta.</p><a href="/#verifica">Verifică dacă firma este găsită</a><a href="https://firmsfinder.eu/">Găsește potențiali clienți</a><a href="/contact/">Discută cu AiVenture</a><small>Panou de ajutor · Chatul AI conversațional nu este conectat în această interfață.</small></aside>
+<button class="chat-launcher" id="chat-launcher" type="button" aria-label="Deschide ajutorul AiVenture" aria-controls="chat-panel" aria-expanded="false"><span class="chat-dots" aria-hidden="true"><i></i><i></i><i></i></span></button>
+<script>
+(function(){const btn=document.getElementById('chat-launcher'),panel=document.getElementById('chat-panel');function toggle(force){const open=typeof force==='boolean'?force:!panel.classList.contains('open');panel.classList.toggle('open',open);btn.setAttribute('aria-expanded',String(open));btn.setAttribute('aria-label',open?'Închide ajutorul AiVenture':'Deschide ajutorul AiVenture')}btn.addEventListener('click',()=>toggle());document.addEventListener('keydown',e=>{if(e.key==='Escape')toggle(false)});document.addEventListener('click',e=>{if(!panel.contains(e.target)&&!btn.contains(e.target))toggle(false)})})();
+</script>
 </body></html>
