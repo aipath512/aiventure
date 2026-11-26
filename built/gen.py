@@ -197,10 +197,9 @@ def graph(path, title, desc, faqs):
     # 4 ImageObject (logo)
     g.append({"@type":"ImageObject","@id":LOGO,"url":BASE+"/assets/logo.png","caption":"AiVenture"})
     # 5 WebSite
+    # The company verification form is not a site-wide search engine.
     g.append({"@type":"WebSite","@id":SITE,"url":BASE+"/","name":"AiVenture","inLanguage":"ro-RO",
-      "publisher":{"@id":ORG},
-      "potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint",
-        "urlTemplate":BASE+"/verifica/?domain={search_term_string}"},"query-input":"required name=search_term_string"}})
+      "publisher":{"@id":ORG}})
     # 6 WebPage
     g.append({"@type":"WebPage","@id":BASE+path+"#webpage","url":BASE+path,"name":title,
       "description":desc,"inLanguage":"ro-RO","isPartOf":{"@id":SITE},"about":{"@id":ORG},
