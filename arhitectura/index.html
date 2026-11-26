@@ -6,26 +6,26 @@
 <meta name="robots" content="index,follow">
 <meta name="theme-color" content="#090b10">
 <title>Arhitectura SCARA — Climatizarea automată multizonă firmă–piață | AiVenture</title>
-<meta name="description" content="Arhitectura SCARA SPEC v1.7: senzori interni și externi, limbajul pieței, intenții, încredere, regulator multizonă, control, învățare și pilotul ECBTAX.">
+<meta name="description" content="Arhitectura SCARA SPEC v2.1: senzori interni și externi, limbajul pieței, intenții, încredere, regulator multizonă, memorie, predicție, parcurs comercial și pilotul ECBTAX.">
 <link rel="canonical" href="https://aiventure.ro/arhitectura/">
-<meta property="og:type" content="article"><meta property="og:title" content="SCARA — Arhitectura relației firmă–piață"><meta property="og:description" content="De la semnalele pieței la ofertă, livrare și valoare verificabilă. SPEC v1.7."><meta property="og:url" content="https://aiventure.ro/arhitectura/">
+<meta property="og:type" content="article"><meta property="og:title" content="SCARA — Arhitectura relației firmă–piață"><meta property="og:description" content="De la semnalele pieței la ofertă, livrare și valoare verificabilă. SPEC v2.1."><meta property="og:url" content="https://aiventure.ro/arhitectura/">
 <link rel="icon" href="/favicon.ico">
 <style>
 :root{color-scheme:dark;--bg:#090b10;--panel:#121821;--edge:#354252;--ink:#f5f7fa;--muted:#bcc8d4;--gold:#dfbc7f;--teal:#79dfd1;--max:1100px}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.7 system-ui,-apple-system,Segoe UI,Arial,sans-serif}a{color:var(--teal);text-underline-offset:3px}a:hover{color:#fff}.wrap{width:min(var(--max),calc(100% - 36px));margin:auto}header{position:sticky;top:0;z-index:5;border-bottom:1px solid var(--edge);background:#090b10f2;backdrop-filter:blur(16px)}.nav{min-height:66px;display:flex;align-items:center;justify-content:space-between;gap:15px}.brand{color:#fff;font-weight:850;letter-spacing:.07em;text-decoration:none}.brand span{font-size:.65rem;color:var(--gold);display:block;letter-spacing:.18em}.navlinks{display:flex;gap:22px;align-items:center;flex-wrap:wrap}.navlinks a{font-size:.92rem;text-decoration:none;color:#e7e8e9}.hero{padding:82px 0 53px;border-bottom:1px solid var(--edge);background:radial-gradient(circle at 75% 18%,#16363b 0%,transparent 46%),radial-gradient(circle at 20% 95%,#292117 0%,transparent 45%)}.eyebrow{color:var(--gold);font-size:.83rem;letter-spacing:.12em;text-transform:uppercase;font-weight:800}h1{font-size:clamp(2.6rem,6vw,5rem);line-height:1.08;letter-spacing:-.055em;margin:14px 0 23px;max-width:900px}h2{font-size:clamp(1.8rem,3vw,2.7rem);line-height:1.18;letter-spacing:-.035em;margin:0 0 20px}h3{font-size:1.25rem;line-height:1.3;margin:23px 0 10px}.lead{font-size:clamp(1.13rem,2.1vw,1.42rem);max-width:850px;color:#e0e8ed}.meta{color:var(--muted);font-size:.95rem}.chips{display:flex;gap:9px;flex-wrap:wrap;margin-top:25px}.chip{border:1px solid #65717c;border-radius:99px;padding:5px 13px;color:#e7e8ec;font-size:.83rem}main section{padding:64px 0;border-bottom:1px solid var(--edge)}p{margin:0 0 18px}ul,ol{padding-left:1.6em}li{margin:6px 0}.plain{color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:17px}.card{border:1px solid var(--edge);background:var(--panel);border-radius:14px;padding:23px}.card h3{margin-top:0}.number{color:var(--gold);font-size:.8rem;font-weight:800;letter-spacing:.1em}.stat{display:flex;align-items:baseline;gap:12px}.stat strong{font-size:1.65rem;color:var(--teal)}.callout{background:#142126;border-left:4px solid var(--teal);padding:24px;border-radius:0 12px 12px 0;margin:26px 0}.warn{background:#282015;border-color:var(--gold)}.tablewrap{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:.94rem}th,td{padding:12px 14px;border-bottom:1px solid var(--edge);text-align:left;vertical-align:top}th{color:var(--gold);background:#19212b}td{color:#e1e8ec}.flow{display:flex;gap:8px;flex-wrap:wrap;margin:20px 0}.flow span{border:1px solid #5b7f81;padding:10px 12px;border-radius:9px;background:#152327;font-weight:700;font-size:.9rem}details{border:1px solid var(--edge);background:var(--panel);border-radius:12px;margin:12px 0;padding:3px 20px}summary{padding:16px 0;cursor:pointer;font-weight:750;color:#f0e6d1}details>div{padding:0 0 18px}code{color:#9ee4d9;overflow-wrap:anywhere}footer{padding:45px 0 80px;color:var(--muted)}.signature{border-top:1px solid var(--edge);margin-top:25px;padding-top:25px}nav.toc{display:flex;flex-wrap:wrap;gap:10px;margin:28px 0}nav.toc a{border:1px solid #4d5966;padding:7px 12px;border-radius:7px;text-decoration:none;color:#f0f5f7;font-size:.92rem}.tag{color:var(--gold);font-weight:700}.small{font-size:.86rem;color:var(--muted)}@media(max-width:720px){.grid{grid-template-columns:1fr}.navlinks{gap:12px}.navlinks a{font-size:.8rem}.hero{padding:57px 0 35px}main section{padding:44px 0}body{font-size:16px}.card{padding:19px}}
 </style>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"TechArticle","headline":"Arhitectura SCARA — Sistem de climatizare automată multizonă al relației firmă–piață","description":"Specificație conceptuală v1.7 și delimitarea stadiului pilotului ECBTAX.","datePublished":"2026-11-26","dateModified":"2026-11-26","inLanguage":"ro","author":{"@type":"Person","name":"Dan Ionescu","url":"https://orcid.org/0009-0002-5498-1046"},"publisher":{"@type":"Organization","name":"AiVenture S.R.L.","url":"https://aiventure.ro/","taxID":"51415878"},"mainEntityOfPage":"https://aiventure.ro/arhitectura/"}
+{"@context":"https://schema.org","@type":"TechArticle","headline":"Arhitectura SCARA — Sistem de climatizare automată multizonă al relației firmă–piață","description":"Specificație conceptuală v2.1 și delimitarea stadiului pilotului ECBTAX.","datePublished":"2026-11-26","dateModified":"2026-11-26","inLanguage":"ro","author":{"@type":"Person","name":"Dan Ionescu","url":"https://orcid.org/0009-0002-5498-1046"},"publisher":{"@type":"Organization","name":"AiVenture S.R.L.","url":"https://aiventure.ro/","taxID":"51415878"},"mainEntityOfPage":"https://aiventure.ro/arhitectura/"}
 </script>
 </head>
 <body>
 <header><div class="wrap nav"><a class="brand" href="/">SCARA <span>BY AIVENTURE</span></a><div class="navlinks"><a href="/">Acasă</a><a href="/three-webs/">3 Webs</a><a href="/dovezi/">Dovezi</a><a href="/contact/">Contact</a></div></div></header>
 <div class="hero"><div class="wrap">
-<div class="eyebrow">SPEC v1.7 · Arhitectură de referință · 26 noiembrie 2026</div>
-<h1>Climatizarea automată multizonă a relației dintre firmă și piață.</h1>
-<p class="lead">Un sistem care ascultă permanent piața, înțelege intențiile clienților, compară cererea cu oferta și capacitatea firmei, propune sau execută acțiuni autorizate și verifică dacă valoarea promisă a fost livrată.</p>
+<div class="eyebrow">SPEC v2.1 · Arhitectură de referință · 26 noiembrie 2026</div>
+<h1>Climatizarea predictivă, automată și multizonă a relației dintre firmă și piață.</h1>
+<p class="lead">Un sistem proiectat să observe, să memoreze și să anticipeze cererea, să acompanieze clientul de la aterizare până la tranzacție și livrare și să învețe din rezultate. Permanent. Non-stop. Automat — în limitele autorizate.</p>
 <p class="meta">Concepție și elaborare: Dan Ionescu și AiVenture S.R.L., în dialog de arhitectură asistat de ChatGPT. București, România. Acest document descrie un sistem proiectat; nu afirmă că toate componentele funcționează deja.</p>
 <div class="chips"><span class="chip">SEO · AEO · GEO · Web-AI</span><span class="chip">Senzori interni și externi</span><span class="chip">Control + Învățare</span><span class="chip">OWNER &gt; CUI &gt; Etalon &gt; VALIDAT</span><span class="chip">Pilot: ECBTAX.COM</span></div>
-<nav class="toc" aria-label="Cuprins"><a href="#esenta">Pe înțelesul firmei</a><a href="#fundatie">Fundația</a><a href="#senzori">Senzori</a><a href="#regulator">Regulator</a><a href="#registru">Registru</a><a href="#guvernanta">Control uman</a><a href="#pilot">ECBTAX real</a><a href="#surse">Surse</a></nav>
+<nav class="toc" aria-label="Cuprins"><a href="#esenta">Pe înțelesul firmei</a><a href="#fundatie">Fundația</a><a href="#senzori">Senzori</a><a href="#memorie">Memorie</a><a href="#predictie">Anticipare</a><a href="#parcurs">Tranzacție</a><a href="#regulator">Regulator</a><a href="#registru">Registru</a><a href="#guvernanta">Control uman</a><a href="#pilot">ECBTAX real</a><a href="#surse">Surse</a></nav>
 </div></div>
 <main>
 <section id="esenta"><div class="wrap">
@@ -69,7 +69,35 @@
 <div class="grid"><div class="card"><h3>Bucla de control</h3><p><strong>„Suntem aliniați acum?”</strong> Observă starea, decide în raport cu obiectivele aprobate și execută numai acțiunile permise.</p></div><div class="card"><h3>Bucla de învățare</h3><p><strong>„Regulile încă funcționează?”</strong> Compară rezultatul anticipat cu cel observat, investighează eficacitatea și propune modificarea ponderilor, pragurilor și regulilor.</p></div></div>
 <p>Regulatorul evită reacțiile la zgomot prin <strong>histerezis, perioade de stabilizare, praguri de încredere și limite de frecvență</strong>. O îmbunătățire după publicare este observație, nu dovadă automată de cauzalitate; când este posibil se compară zone similare sau experimente controlate.</p>
 </div></section>
-<section id="registru"><div class="wrap"><p class="eyebrow">05 · Memoria sistemului</p><h2>Registrul unic Nevoie–Intenție–Ofertă–Dovadă–Acțiune–Rezultat.</h2>
+<section id="memorie"><div class="wrap">
+<p class="eyebrow">05 · Memoria prezentului</p><h2>Memorăm prezentul pentru a putea anticipa viitorul.</h2>
+<p>Un sistem care vede doar ultima măsurătoare rămâne reactiv. SCARA este proiectat să păstreze <strong>fotografii periodice comparabile</strong> ale cererii pieței și ale activității firmei: aceeași sursă, regiune, metodă, perioadă și moment al observației. Datele noi se adaugă; cele vechi nu se suprascriu.</p>
+<div class="grid"><div class="card"><h3>Senzori externi</h3><p>Limbajul căutărilor, întrebările, interesul regional, schimbările de cerere, concurența și reputația. O observație Google Trends este interes relativ, nu volum absolut de vânzări.</p></div><div class="card"><h3>Senzori interni</h3><p>Search Console, formulare, asistent AI, CRM, capacitate, oferte, tranzacții, livrări și satisfacție — numai datele colectate legal și efectiv disponibile.</p></div></div>
+<p>Fiecare instantaneu păstrează sursa, zona, timpul, metoda, versiunea și referința conținutului. <strong>SHA-256</strong> permite verificarea integrității; <strong>OpenTimestamps</strong> poate dovedi ancorarea temporală după confirmare, nu adevărul informației.</p>
+<div class="callout"><strong>Memoria este pasul 1.</strong> Dintr-un istoric suficient și comparabil se pot estima tendințe și sezonalitate. Dacă istoricul propriu lipsește, SCARA declară prognoza insuficient calibrată, nu inventează certitudine.</div>
+</div></section>
+<section id="predictie"><div class="wrap">
+<p class="eyebrow">06 · De la Ford la TARS</p><h2>Anticiparea: pregătim firma înainte să crească cererea.</h2>
+<p>Scopul nu este să ghicim următorul șoc tehnologic. Scopul este să extragem din <strong>memoria pieței și a firmei</strong> evoluții probabile, decalaje dintre interes și solicitări, ferestre sezoniere și capacitatea necesară pentru a răspunde la timp.</p>
+<div class="grid"><div class="card"><h3>Control — prezent</h3><p>Suntem aliniați acum? Identificăm abateri și aplicăm acțiunile autorizate.</p></div><div class="card"><h3>Învățare — trecut</h3><p>Care reguli au funcționat? Comparăm efectele cu ipotezele înregistrate înaintea intervenției.</p></div><div class="card"><h3>Predicție — viitor</h3><p>Ce cerere este probabilă, unde, când și cu ce incertitudine? Pregătim conținutul, resursele și oferta din timp.</p></div><div class="card"><h3>Timp de reacție</h3><p>O prognoză devine utilă când orizontul de anticipare este cel puțin egal cu timpul necesar pregătirii, aprobării și execuției.</p></div></div>
+<p>Fiecare prognoză este datată, legată de datele și modelul folosite, exprimă incertitudinea și este verificată ulterior față de rezultatul real. O coincidență temporală nu este automat dovadă de cauzalitate.</p>
+</div></section>
+<section id="parcurs"><div class="wrap">
+<p class="eyebrow">07 · Lanțul comercial complet</p><h2>Aterizare → Traseu → Tranzacție → Livrare.</h2>
+<p>Clientul poate veni din proprie inițiativă — Google, AI, recomandare, acces direct — sau în urma unei inițiative a firmei: campanie, e-mail, mesaj sau agent. <strong>Indiferent de intrare, site-ul și asistentul AI trebuie să continue aceeași intenție</strong>, fără rupturi de sens, limbaj, etapă, ofertă ori limite.</p>
+<div class="flow" aria-label="Parcurs comercial"><span>Semnal și nevoie</span><span>Aterizare</span><span>Explorare / comparație</span><span>Dovezi și alegere</span><span>Ofertă și tranzacție</span><span>Livrare și feedback</span></div>
+<div class="tablewrap"><table><thead><tr><th>Etapă</th><th>Indicatorul de continuare</th><th>Rezultat verificabil</th></tr></thead><tbody>
+<tr><td>Află</td><td>Ce este, pentru cine, unde se aplică?</td><td>Răspuns relevant nevoii inițiale</td></tr>
+<tr><td>Compară</td><td>Opțiuni, factori de preț, diferențe și condiții</td><td>Alternativa înțeleasă corect</td></tr>
+<tr><td>Alege</td><td>Identitate, dovezi, disponibilitate verificată</td><td>Decizie informată, fără presiune artificială</td></tr>
+<tr><td>Acționează</td><td>Cere ofertă, programează, comandă sau contactează un specialist</td><td>Acțiune comercială permisă și trasabilă</td></tr>
+<tr><td>Primește</td><td>Confirmare, executare, suport și feedback</td><td>Valoare promisă versus valoare livrată</td></tr>
+</tbody></table></div>
+<p><strong>Două interfețe, o singură sursă canonică:</strong> paginile și asistentul AI trebuie să folosească aceeași ofertă reală, capacitate, dovezi, limite și reguli validate. Reperele vizuale și vocale, unde există, oferă următorul pas util. Contextul poate traversa canalele doar cu identificarea, consimțământul și temeiul legal necesare.</p>
+<div class="callout"><strong>Finalitatea economică:</strong> schimbul voluntar bani contra produs și/sau serviciu, urmat de livrarea valorii. SCARA urmărește nu doar clicurile, ci cereri relevante, costuri, marjă, tranzacții, satisfacție și relația în timp. Niciun asistent nu poate inventa prețuri, garanții sau disponibilitate.</div>
+<p>Funcționarea-țintă este <strong>permanentă, non-stop și automată</strong>: observație periodică, memorie, anticipare, control, acompaniere și învățare. Automatizarea operează doar în limitele delegate; promisiunile sensibile se supun regulii <strong>OWNER &gt; CUI &gt; Etalon &gt; VALIDAT</strong>. Nu declarăm că integrarea cap-la-cap este deja funcțională.</p>
+</div></section>
+<section id="registru"><div class="wrap"><p class="eyebrow">08 · Memoria și registrul unic</p><h2>Registrul unic Nevoie–Intenție–Ofertă–Dovadă–Acțiune–Rezultat.</h2>
 <p>Toate instrumentele scriu în același model logic de stare, cu identificatori, timp, proveniență și istoric de evenimente. Nu rescriem trecutul atunci când o regulă se schimbă.</p>
 <details open><summary>Modelul minim de date</summary><div><div class="tablewrap"><table><thead><tr><th>Entitate</th><th>Câmpuri obligatorii</th></tr></thead><tbody>
 <tr><td>Nevoie + intenție</td><td>CAEN, expresie, întrebare, zonă, perioadă, sursă, etapă, verb explicit/implicit, încredere</td></tr>
@@ -81,7 +109,7 @@
 </tbody></table></div></div></details>
 <details><summary>Ce înseamnă o decizie verificabilă</summary><div><p>Trebuie să poată răspunde la: ce senzor a declanșat observația, când și unde; ce se știa; ce obiectiv fusese stabilit; ce abatere și incertitudine existau; ce regulă și dovadă au fost aplicate; cine a autorizat; ce s-a schimbat; ce rezultat s-a măsurat și ce regulă a fost menținută, revizuită sau respinsă.</p><p>Stările se păstrează distinct: <strong>OBSERVAT · DERIVAT · PROPUS · VALIDAT · EXECUTAT · VERIFICAT</strong>.</p></div></details>
 </div></section>
-<section id="guvernanta"><div class="wrap"><p class="eyebrow">06 · Autoritate și control</p><h2>Automat unde este permis. Validat unde promisiunea contează.</h2>
+<section id="guvernanta"><div class="wrap"><p class="eyebrow">09 · Autoritate și control</p><h2>Automat unde este permis. Validat unde promisiunea contează.</h2>
 <p>Regula de guvernanță este <strong>OWNER &gt; CUI &gt; Etalon &gt; VALIDAT</strong>. Nu confundăm autonomie tehnică cu dreptul de a inventa sau schimba obligații comerciale.</p>
 <div class="tablewrap"><table><thead><tr><th>Nivel</th><th>Autonomie</th><th>Poartă de control</th></tr></thead><tbody>
 <tr><td>A0 · Observă</td><td>Colectează și păstrează semnalele.</td><td>Surse permise, proveniență.</td></tr>
@@ -93,7 +121,7 @@
 </tbody></table></div>
 <p>Nu declarăm succes fără rezultate măsurate. Nu declarăm autoritate doar din JSON-LD. Semnarea cu SHA-256 sau OpenTimestamps dovedește integritatea și existența temporală a unei versiuni, nu certifică exactitatea afirmațiilor sau performanța AI.</p>
 </div></section>
-<section id="pilot"><div class="wrap"><p class="eyebrow">07 · Pilot real · ECBTAX.COM</p><h2>CAEN 6920, București: contabilitate pentru SRL.</h2>
+<section id="pilot"><div class="wrap"><p class="eyebrow">10 · Pilot real · ECBTAX.COM</p><h2>CAEN 6920, București: contabilitate pentru SRL.</h2>
 <p>Primul perimetru ales în această arhitectură este <a href="https://ecbtax.com/">ECB TAX ACCOUNTING &amp; HR SRL</a> — <strong>CUI 35136588</strong>, București. Acesta este un exemplu <em>real de ofertă și conținut observat</em>, nu o demonstrație deja încheiată de creștere SEO sau comercială.</p>
 <div class="grid">
 <div class="card"><span class="number">OBSERVAT PE SITE</span><h3>Oferta</h3><p>Pagina principală prezintă contabilitate financiară pentru SRL, PFA și ONG, conformitate fiscală și salarizare. Serviciul este identificat în catalog ca AC-100.</p><p><a href="https://ecbtax.com/">Oferta și catalogul public ECBTAX</a></p></div>
@@ -116,11 +144,11 @@
 <div class="callout warn"><strong>Starea prototipului la redactare:</strong> schema locală SQLite și o înregistrare a ofertei observate au fost inițializate și testate. Bucla GSC + piață + aprobare + publicare + măsurare + învățare <strong>nu a fost executată complet</strong>. Nicio modificare pe ECBTAX nu este revendicată aici.</div>
 <p><a href="https://ecbtax.com/blog/ghid-contabilitate-srl/">Ghid contabilitate SRL</a> · <a href="https://ecbtax.com/blog/ghid-preturi-contabilitate/">Ghid prețuri și ofertare</a> · <a href="https://ecbtax.com/intrebari">Întrebări și răspunsuri</a></p>
 </div></section>
-<section id="validare"><div class="wrap"><p class="eyebrow">08 · Criteriul de succes</p><h2>Trei niveluri de demonstrație, fără promisiuni neprobate.</h2>
+<section id="validare"><div class="wrap"><p class="eyebrow">11 · Criteriul de succes</p><h2>Trei niveluri de demonstrație, fără promisiuni neprobate.</h2>
 <div class="grid"><div class="card"><h3>Funcțional</h3><p>Un semnal cu sursă devine o decizie explicabilă, validată, executată și reevaluată, cu jurnal complet.</p></div><div class="card"><h3>Operațional</h3><p>Mai multe cicluri sunt stabile, autorizate, reversibile, iar eșecurile sunt documentate și utilizate în învățare.</p></div><div class="card"><h3>Comercial</h3><p>Există rezultate relevante în contacte, oferte, contracte și valoare livrată, analizate cu limitele atribuirii cauzale.</p></div><div class="card"><h3>Extensibil</h3><p>După pilotul ECBTAX, aceeași structură poate fi aplicată altor servicii, orașe, CAEN-uri și canale, fără a inventa capabilități.</p></div></div>
 <p>O analiză „înainte–după” este utilă pentru monitorizare, însă nu demonstrează singură cauzalitatea. Unde există date, folosim zone comparabile, experimente sau metode explicite de inferență cauzală.</p>
 </div></section>
-<section id="surse"><div class="wrap"><p class="eyebrow">09 · Referințe și trasabilitate</p><h2>Surse oficiale, pagini publice și statutul dovezilor.</h2>
+<section id="surse"><div class="wrap"><p class="eyebrow">12 · Referințe și trasabilitate</p><h2>Surse oficiale, pagini publice și statutul dovezilor.</h2>
 <h3>Google și metode de observare</h3>
 <ol>
 <li><a href="https://developers.google.com/search/docs/fundamentals/creating-helpful-content">Google Search Central — conținut util, de încredere, E-E-A-T</a>.</li>
@@ -154,7 +182,7 @@
 <p>Autor și arhitect de sistem: <strong>Dan Ionescu</strong> · <a href="https://orcid.org/0009-0002-5498-1046">ORCID</a> · <a href="https://ro.linkedin.com/in/dan-ionesco-a856082a0">LinkedIn</a>.</p>
 <p>Editor și titular: <strong>AiVenture S.R.L.</strong> · CUI 51415878 · București, România.</p>
 <p>Asistență la elaborare: ChatGPT (OpenAI). Responsabilitatea publicării și validării afirmațiilor comerciale aparține editorului.</p>
-<p><strong>Redactat:</strong> 26.11.2026, 09:46 EET (București) · <strong>Versiune:</strong> SCARA SPEC v1.7 — referință arhitecturală, pilot operațional în dezvoltare.</p>
+<p><strong>Redactat:</strong> 26.11.2026, 09:46 EET (București) · <strong>Actualizat:</strong> 26.11.2026 · <strong>Versiune:</strong> SCARA SPEC v2.1 — referință arhitecturală, pilot operațional în dezvoltare.</p>
 <div class="signature"><p>© 2026 AiVenture S.R.L. · <a href="/">Acasă</a> · <a href="/contact/">Contact</a> · <a href="/termeni-si-conditii/">Termeni</a></p></div>
 </div></footer>
 <style>
