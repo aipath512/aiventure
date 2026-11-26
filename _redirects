@@ -44,4 +44,15 @@
 /servicii/ai-evidence/         /dovezi/                301
 /servicii/rrvi/                /dovezi/                301
 /servicii/rrvi-jurisdiction-packs/* /dovezi/           301
-/servicii/*                    /servicii/              301
+/servicii/consulting/              /servicii/               301
+/servicii/ai-perception/           /servicii/               301
+/servicii/ai-governance/           /servicii/               301
+/servicii/go-no-go/                /servicii/               301
+/servicii/custom-ai/               /servicii/               301
+/servicii/implementation/          /servicii/               301
+/servicii/ai-transformation/       /servicii/               301
+/servicii/agent-factory/           /servicii/               301
+/servicii/ai-infrastructure/       /servicii/               301
+/servicii/request-qualification/   /servicii/               301
+/servicii/master-context/          /servicii/               301
+/servicii/quote-order/             /servicii/               301
