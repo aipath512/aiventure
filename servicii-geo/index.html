@@ -31,6 +31,7 @@
   const f=document.getElementById('geo-form'),s=document.getElementById('geo-status'),b=f.querySelector('button[type="submit"]');
   const keys=['utm_source','utm_medium','utm_campaign','utm_content','utm_term'];
   const query=new URLSearchParams(location.search);
+  try{if(!sessionStorage.getItem('geo_first_landing'))sessionStorage.setItem('geo_first_landing',location.pathname)}catch(_){}
   const campaign={};
   for(const key of keys){
     const val=query.get(key);
@@ -43,7 +44,8 @@
     if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)){s.textContent='Completează o adresă de e-mail validă.';return}
     b.disabled=true;s.textContent='Trimitem cererea…';
     try{
-      const res=await fetch('/api/contact',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({website:v,email,tip:'cerere-servicii-geo',obiectiv:'Solicitare ofertă GEO',mesaj:f.elements.mesaj.value,companie_website:f.elements.companie_website.value,landing_page:location.pathname,...campaign})});
+      let firstLanding=location.pathname;try{firstLanding=sessionStorage.getItem('geo_first_landing')||firstLanding}catch(_){}
+      const res=await fetch('/api/contact',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({website:v,email,tip:'cerere-servicii-geo',obiectiv:'Solicitare ofertă GEO',mesaj:f.elements.mesaj.value,companie_website:f.elements.companie_website.value,landing_page:firstLanding,...campaign})});
       const data=await res.json();
       if(res.ok&&data.ok===true&&data.validated===true&&data.saved===true&&data.lead_id){
         try{sessionStorage.setItem('geo_confirmed_lead',data.lead_id)}catch(_){}
