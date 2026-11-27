@@ -16,7 +16,7 @@
         "name": "Verificare vizibilitate AI",
         "url": "https://aiventure.ro/#verifica",
         "seller": {
-          "@id": "https://aiventure.ro/#organization"
+          "@id": "https://5thelement.ai/#organization"
         },
         "description": "Diagnostic gratuit în Google și răspunsurile AI, întrebări fără răspuns și acțiuni recomandate; un test per CUI.",
         "availability": "https://schema.org/InStock",
@@ -48,7 +48,7 @@
         "name": "FirmsFinder — căutare",
         "url": "https://firmsfinder.eu/",
         "seller": {
-          "@id": "https://aiventure.ro/#organization"
+          "@id": "https://5thelement.ai/#organization"
         },
         "description": "Căutarea și filtrarea firmelor în datele publice sunt gratuite.",
         "availability": "https://schema.org/InStock",
@@ -75,7 +75,7 @@
         "name": "FirmsFinder — export și monitorizare lunar",
         "url": "https://firmsfinder.eu/",
         "seller": {
-          "@id": "https://aiventure.ro/#organization"
+          "@id": "https://5thelement.ai/#organization"
         },
         "description": "Export 1.000 firme/lună; căutări salvate; monitorizare săptămânală a firmelor selectate și firmelor noi din segmente; actualizări EU AI Act, DORA și NIS2 acolo unde sunt relevante. Căutarea este gratuită.",
         "availability": "https://schema.org/InStock",
@@ -104,7 +104,7 @@
         "name": "FirmsFinder — export și monitorizare anual",
         "url": "https://firmsfinder.eu/",
         "seller": {
-          "@id": "https://aiventure.ro/#organization"
+          "@id": "https://5thelement.ai/#organization"
         },
         "description": "Export 1.000 firme/lună; căutări salvate; monitorizare săptămânală și actualizări informative. 39,99 EUR/an + TVA față de 47,88 EUR/an la plata lunară.",
         "availability": "https://schema.org/InStock",
@@ -133,7 +133,7 @@
         "name": "Site + Asistent AI — probă gratuită 7 zile",
         "url": "https://aiventure.ro/contabili/",
         "seller": {
-          "@id": "https://aiventure.ro/#organization"
+          "@id": "https://5thelement.ai/#organization"
         },
         "description": "Prima săptămână gratuită. După 7 zile se emite factura; abonamentul continuă numai dacă este achitat. Fără taxă separată de creare.",
         "availability": "https://schema.org/InStock",
@@ -165,7 +165,7 @@
         "name": "Site + Asistent AI — lunar",
         "url": "https://aiventure.ro/contabili/",
         "seller": {
-          "@id": "https://aiventure.ro/#organization"
+          "@id": "https://5thelement.ai/#organization"
         },
         "description": "Site gata de văzut înainte de plată; asistent AI cu răspunsuri validate; hosting și SSL; fără taxă de creare. Oprire oricând la finalul perioadei plătite; export conținut 30 zile.",
         "availability": "https://schema.org/InStock",
@@ -194,7 +194,7 @@
         "name": "Site + Asistent AI — anual",
         "url": "https://aiventure.ro/contabili/",
         "seller": {
-          "@id": "https://aiventure.ro/#organization"
+          "@id": "https://5thelement.ai/#organization"
         },
         "description": "Site și asistent AI; hosting, SSL și domeniu propriu pe numele firmei inclus cât timp planul anual este activ; reducere 20% față de plata lunară; export conținut 30 zile la oprire.",
         "availability": "https://schema.org/InStock",
@@ -223,7 +223,7 @@
         "name": "3WEBOBS",
         "url": "https://aiventure.ro/produse/3webobs/",
         "seller": {
-          "@id": "https://aiventure.ro/#organization"
+          "@id": "https://5thelement.ai/#organization"
         },
         "description": "Audit Human Web, Web-AI și A2A Web pe baza semnalelor și dovezilor; tarif unic fără TVA.",
         "availability": "https://schema.org/InStock",
@@ -250,7 +250,7 @@
         "name": "AI-LENS",
         "url": "https://aiventure.ro/produse/ai-lens/",
         "seller": {
-          "@id": "https://aiventure.ro/#organization"
+          "@id": "https://5thelement.ai/#organization"
         },
         "description": "Monitorizarea modului în care sistemele AI înțeleg și prezintă firma și informațiile care lipsesc; abonament lunar fără TVA.",
         "availability": "https://schema.org/InStock",
@@ -279,7 +279,7 @@
         "name": "AI-READY INJECTOR — configurare",
         "url": "https://aiventure.ro/produse/ai-ready-injector/",
         "seller": {
-          "@id": "https://aiventure.ro/#organization"
+          "@id": "https://5thelement.ai/#organization"
         },
         "description": "Configurarea stratului AI-READY INJECTOR peste website-ul existent; fără TVA.",
         "availability": "https://schema.org/InStock",
@@ -306,7 +306,7 @@
         "name": "AI-READY INJECTOR — abonament",
         "url": "https://aiventure.ro/produse/ai-ready-injector/",
         "seller": {
-          "@id": "https://aiventure.ro/#organization"
+          "@id": "https://5thelement.ai/#organization"
         },
         "description": "Abonament lunar pentru operarea stratului AI-READY INJECTOR; fără TVA.",
         "availability": "https://schema.org/InStock",
@@ -335,7 +335,7 @@
         "name": "Web-Om",
         "url": "https://aiventure.ro/web-om/",
         "seller": {
-          "@id": "https://aiventure.ro/#organization"
+          "@id": "https://5thelement.ai/#organization"
         },
         "description": "Human Web pentru achiziția de clienți prin PULL (SEO/search visibility) și PUSH (activarea audienței, distribuție și outreach); abonament lunar fără TVA.",
         "availability": "https://schema.org/InStock",
@@ -364,7 +364,7 @@
         "name": "Web-AI",
         "url": "https://aiventure.ro/web-ai/",
         "seller": {
-          "@id": "https://aiventure.ro/#organization"
+          "@id": "https://5thelement.ai/#organization"
         },
         "description": "Web-AI pentru descoperirea, înțelegerea și utilizarea informațiilor și serviciilor firmei de către sisteme AI; abonament lunar fără TVA.",
         "availability": "https://schema.org/InStock",
@@ -393,7 +393,7 @@
         "name": "Web-A2A — de la",
         "url": "https://aiventure.ro/web-a2a/",
         "seller": {
-          "@id": "https://aiventure.ro/#organization"
+          "@id": "https://5thelement.ai/#organization"
         },
         "description": "Preț de pornire 990 EUR, plată unică, fără TVA; integrările extinse se ofertează separat.",
         "availability": "https://schema.org/InStock",
@@ -421,7 +421,7 @@
         "name": "AI KEY MAKER",
         "url": "https://aiventure.ro/ai-key-maker/",
         "seller": {
-          "@id": "https://aiventure.ro/#organization"
+          "@id": "https://5thelement.ai/#organization"
         },
         "description": "Definirea ofertei, limitelor și fluxului de cerere pentru interacțiunea controlată dintre agenți cumpărători și furnizori; plată unică fără TVA.",
         "availability": "https://schema.org/InStock",
@@ -448,7 +448,7 @@
         "name": "ECO TWINS B2B",
         "url": "https://aiventure.ro/gemeni-economici/",
         "seller": {
-          "@id": "https://aiventure.ro/#organization"
+          "@id": "https://5thelement.ai/#organization"
         },
         "description": "Identificarea firmelor cu profil economic asemănător clienților existenți pentru descoperirea oportunităților B2B; plată unică fără TVA.",
         "availability": "https://schema.org/InStock",
@@ -475,7 +475,7 @@
         "name": "BUSINESS — servicii și implementări personalizate",
         "url": "https://aiventure.ro/contact/",
         "seller": {
-          "@id": "https://aiventure.ro/#organization"
+          "@id": "https://5thelement.ai/#organization"
         },
         "description": "Pachet personalizat pentru conectare WhatsApp și e-mail, preluarea apelurilor telefonice, memorie comercială pe canale, monitorizare AI și configurare asistată. Prețul depinde de integrări și domeniul ales; se comunică după evaluare, înainte de contractare.",
         "availability": "https://schema.org/InStock",
