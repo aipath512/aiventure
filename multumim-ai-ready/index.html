@@ -63,5 +63,5 @@
 </div></footer>
 <script src="/assets/site.js"></script>
 <script>(function(){function b(e){try{navigator.sendBeacon("/api/clic",JSON.stringify({e:e,p:location.pathname}))}catch(_){}}document.addEventListener("click",function(ev){var a=ev.target.closest("[data-clic]");if(a)b(a.dataset.clic)})})();</script>
-<script>(function(){try{if(sessionStorage.getItem('av_lead')==='ai-ready'){sessionStorage.removeItem('av_lead');navigator.sendBeacon('/api/clic',JSON.stringify({e:'conversie_ai_ready',p:location.pathname+location.search}))}}catch(_){}})();</script>
+<script>(function(){try{var id=sessionStorage.getItem('av_lead_id');if(!id)return;sessionStorage.removeItem('av_lead_id');fetch('/api/conversie',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({lead_id:id}),keepalive:true})}catch(_){}})();</script>
 </body></html>
