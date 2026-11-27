@@ -22,8 +22,38 @@
 <section class="geo-shell geo-hero"><p class="geo-eyebrow">Ofertă · Servicii GEO</p><h1>Firma ta este găsită și înțeleasă corect în răspunsurile AI?</h1><p class="geo-lead">Verificăm ce informații despre firmă găsesc sistemele AI, corectăm ce poți controla pe site și măsurăm diferența înainte și după. Pentru firme B2B și furnizori de servicii din România.</p><div class="geo-actions"><a class="geo-button geo-button-primary" href="#cerere">Cere o evaluare GEO</a><a class="geo-button" href="https://wa.me/40737123540">Discută pe WhatsApp</a></div></section>
 <section class="geo-section"><div class="geo-shell"><h2>Ce primești</h2><div class="geo-grid"><article class="geo-card"><h3>1. Diagnostic</h3><p>Inventar al informațiilor publice, al ofertelor și al surselor care pot fi descoperite sau citate.</p></article><article class="geo-card"><h3>2. Recomandări prioritizate</h3><p>Identificăm lipsurile, contradicțiile și îmbunătățirile cu impact practic asupra clarității informațiilor.</p></article><article class="geo-card"><h3>3. Implementare</h3><p>Corectăm paginile și datele structurate agreate, fără să impunem refacerea întregului site.</p></article><article class="geo-card"><h3>4. Măsurare BEFORE / AFTER</h3><p>Reluăm întrebări comparabile și consemnăm mențiunile, citările și fidelitatea descrierilor AI.</p></article></div></div></section>
 <section class="geo-section"><div class="geo-shell"><h2>Pentru cine și cât costă</h2><p>Pentru IMM-uri și firme de servicii B2B: contabilitate, avocatură, IT, marketing, audit sau construcții. Dimensiunea intervenției diferă de la un site la altul.</p><p><strong>Preț:</strong> ofertă personalizată după evaluarea inițială și stabilirea livrabilelor. Nu cerem plată prin acest formular.</p><p class="geo-note">Nu garantăm poziții, citări sau recomandări într-un sistem AI terț. Putem verifica și documenta numai ceea ce măsurăm efectiv.</p><p><a href="/geo/" style="text-decoration:underline">Citește metodologia GEO și sursele de cercetare</a>.</p></div></section>
+<section class="geo-section"><div class="geo-shell"><h2>Exemplu real: ECBTAX</h2><p>În evaluarea publică din 23 noiembrie 2026, accesibilitatea tehnică AI a site-ului ECBTAX a primit 9,5/10, dar testul orb de recomandare spontană a arătat rezultate mult mai slabe. Această diferență este motivul pentru care măsurăm atât pregătirea surselor, cât și selecția lor efectivă de către AI.</p><p><a href="/rapoarte/ecbtax-verificare-tehnica-ai-2026-11-23/" style="text-decoration:underline">Vezi raportul tehnic ECBTAX</a>. Rezultatul reprezintă un caz documentat, nu o promisiune de performanță pentru altă firmă.</p><p><strong>Proces și durată:</strong> evaluare inițială, propunere cu livrabile și termen de execuție, implementare aprobată, apoi remăsurare. Durata și prețul sunt comunicate înainte de contractare, după analiza site-ului.</p></div></section>
 <section class="geo-section" id="cerere"><div class="geo-shell"><h2>Cere oferta GEO</h2><p>Spune-ne ce firmă vrei să verificăm și unde îți putem răspunde.</p><form class="geo-form" id="geo-form" novalidate><label for="geo-site">Site-ul firmei *</label><input id="geo-site" name="website" placeholder="exemplu.ro" required><label for="geo-email">E-mail *</label><input id="geo-email" name="email" type="email" autocomplete="email" placeholder="nume@firma.ro" required><label for="geo-mesaj">Ce vrei să îmbunătățești? (opțional)</label><textarea id="geo-mesaj" name="mesaj" maxlength="2000" placeholder="Ex.: firma mea nu apare la căutări despre servicii IT în București"></textarea><input class="geo-hidden" type="text" name="companie_website" tabindex="-1" autocomplete="off" aria-hidden="true"><div class="geo-actions"><button class="geo-button geo-button-primary" type="submit">Trimite cererea GEO</button></div><p class="geo-status" id="geo-status" role="status" aria-live="polite"></p><p class="geo-note">Prin trimitere confirmi că ai citit <a href="/legal/" style="text-decoration:underline">informațiile privind confidențialitatea</a>.</p></form></div></section>
 </main>
 <footer class="geo-footer"><div class="geo-shell">AiVenture S.R.L. · CUI 51415878 · <a href="/contact/">Contact</a> · <a href="/geo/">Ghid GEO</a></div></footer>
-<script>(function(){const f=document.getElementById('geo-form'),s=document.getElementById('geo-status'),b=f.querySelector('button[type="submit"]');f.addEventListener('submit',async e=>{e.preventDefault();const v=f.elements.website.value.trim(),email=f.elements.email.value.trim();if(!v){s.textContent='Completează site-ul firmei.';return}if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)){s.textContent='Completează o adresă de e-mail validă.';return}b.disabled=true;s.textContent='Trimitem cererea…';try{const res=await fetch('/api/contact',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({website:v,email,tip:'cerere-servicii-geo',obiectiv:'Solicitare ofertă GEO',mesaj:f.elements.mesaj.value,companie_website:f.elements.companie_website.value})});const data=await res.json();if(res.ok&&data.ok===true){location.assign('/multumim-geo/');return}s.textContent=data.error||'Cererea nu a putut fi înregistrată. Încearcă din nou.'}catch(_){s.textContent='Nu am putut trimite cererea. Încearcă din nou sau contactează-ne pe WhatsApp.'}b.disabled=false})})();</script>
+<script>
+(function(){
+  const f=document.getElementById('geo-form'),s=document.getElementById('geo-status'),b=f.querySelector('button[type="submit"]');
+  const keys=['utm_source','utm_medium','utm_campaign','utm_content','utm_term'];
+  const query=new URLSearchParams(location.search);
+  const campaign={};
+  for(const key of keys){
+    const val=query.get(key);
+    if(val){campaign[key]=val.slice(0,150);try{sessionStorage.setItem('geo_'+key,campaign[key])}catch(_){}}
+    else{try{campaign[key]=sessionStorage.getItem('geo_'+key)||''}catch(_){campaign[key]=''}}
+  }
+  f.addEventListener('submit',async e=>{
+    e.preventDefault();const v=f.elements.website.value.trim(),email=f.elements.email.value.trim();
+    if(!v){s.textContent='Completează site-ul firmei.';return}
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)){s.textContent='Completează o adresă de e-mail validă.';return}
+    b.disabled=true;s.textContent='Trimitem cererea…';
+    try{
+      const res=await fetch('/api/contact',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({website:v,email,tip:'cerere-servicii-geo',obiectiv:'Solicitare ofertă GEO',mesaj:f.elements.mesaj.value,companie_website:f.elements.companie_website.value,landing_page:location.pathname,...campaign})});
+      const data=await res.json();
+      if(res.ok&&data.ok===true&&data.validated===true&&data.saved===true&&data.lead_id){
+        try{sessionStorage.setItem('geo_confirmed_lead',data.lead_id)}catch(_){}
+        location.assign('/multumim-geo/');return;
+      }
+      if(res.ok&&data.notified===true){s.textContent='Solicitarea a fost notificată, dar salvarea în registru nu este confirmată. Nu retrimite imediat; contactează-ne dacă nu primești răspuns.'}
+      else{s.textContent=data.error||'Cererea nu a putut fi înregistrată. Încearcă din nou.'}
+    }catch(_){s.textContent='Nu am putut trimite cererea. Încearcă din nou sau contactează-ne pe WhatsApp.'}
+    b.disabled=false;
+  });
+})();
+</script>
 </body></html>

@@ -125,6 +125,12 @@ export async function onRequestPost({ request, env }) {
            id INTEGER PRIMARY KEY, website TEXT, email TEXT, tip TEXT,
            obiectiv TEXT, mesaj TEXT, ua TEXT, country TEXT,
            ts TEXT NOT NULL DEFAULT (datetime('now')))`).run();
+      // Adaugă coloanele noi și pe instalațiile cu tabela lead deja existentă.
+      const columns = new Set((await env.DB.prepare('PRAGMA table_info(lead)').all()).results.map(c => c.name));
+      for (const name of ['lead_uid', 'utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'landing_page']) {
+        if (!columns.has(name)) await env.DB.prepare(`ALTER TABLE lead ADD COLUMN ${name} TEXT`).run();
+      }
+      if (!columns.has('notified')) await env.DB.prepare('ALTER TABLE lead ADD COLUMN notified INTEGER DEFAULT 0').run();
       await env.DB.prepare(
         `INSERT INTO lead (website, email, tip, obiectiv, mesaj, ua, country, ts,
            lead_uid, utm_source, utm_medium, utm_campaign, utm_content, utm_term, landing_page)
@@ -138,6 +144,13 @@ export async function onRequestPost({ request, env }) {
     } catch (err) {
       stored = false;
     }
+  }
+
+  if (stored && lead.tip === 'cerere-servicii-geo') {
+    try {
+      await env.DB.prepare('CREATE TABLE IF NOT EXISTS conversie_geo (lead_uid TEXT PRIMARY KEY, ts TEXT NOT NULL)').run();
+      await env.DB.prepare('INSERT OR IGNORE INTO conversie_geo (lead_uid, ts) VALUES (?, ?)').bind(lead.lead_uid, lead.ts).run();
+    } catch (_) { /* cererea este salvată chiar dacă registrul de conversii e temporar indisponibil */ }
   }
 
   const notified = await notify(env, lead);
