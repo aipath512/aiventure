@@ -7,9 +7,9 @@
   "entity_id": "E_SOC_AGENT_READY_B2B_V1_0",
   "name": "Service Offer Contract™",
   "definition": "Sursa unică și versionată de adevăr comercial, operațional și machine-readable pentru o ofertă de servicii.",
-  "status": "DRAFT",
-  "offer_version": "1.0",
-  "updated_at": "2026-09-14T04:18:00+03:00",
+  "status": "ACTIVE",
+  "offer_version": "1.1",
+  "updated_at": "2026-11-27T15:38:00+02:00",
   "provider": {
     "id": "E_ORG_AIVENTURE",
     "name": "AiVenture S.R.L."
@@ -32,11 +32,11 @@
   },
   "commerce": {
     "price": null,
-    "pricing_rule": "NOT_PUBLISHED",
-    "currency": null,
-    "taxes": "TO_BE_DEFINED",
-    "payment_terms": "TO_BE_DEFINED",
-    "validity": "TO_BE_DEFINED"
+    "pricing_rule": "Each concrete service price is governed by the approved canonical pricing catalog.",
+    "currency": "EUR",
+    "taxes": "Prices exclude VAT; VAT is added where applicable.",
+    "catalog_uri": "https://aiventure.ro/pricing-catalog.json",
+    "validity": "Until superseded by a newer approved catalog version."
   },
   "capacity": {
     "availability": "NOT_PUBLISHED",
