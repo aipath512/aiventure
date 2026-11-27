@@ -6,11 +6,20 @@ AiVenture S.R.L. (București, CUI 51415878) ajută IMM-urile și firmele de serv
 ## Category
 Vizibilitate Google și AI · Prospectare B2B · Site + Asistent AI pentru IMM-uri
 
-## Offer (EUR, fără TVA)
-- Verificare vizibilitate AI: gratuită (1 test / CUI)
-- FirmsFinder: căutare gratuită; export și monitorizare 3,99 €/lună
-- START Site + Asistent AI: 10 €/lună sau 96 €/an
-- BUSINESS (WhatsApp, e-mail, telefon, memorie multicanal): la ofertă
+## Offer (EUR, without VAT)
+- AI visibility check: free (one test per company CUI)
+- FirmsFinder: free search; export and monitoring 3.99 EUR/month or 39.99 EUR/year
+- Site + AI Assistant: 10 EUR/month or 96 EUR/year
+- 3WEBOBS: 49 EUR one-time
+- AI-LENS: 19 EUR/month
+- Web-Om: 199 EUR/month
+- Web-AI: 249 EUR/month
+- Web-A2A: from 990 EUR one-time
+- AI READY INJECTOR: 290 EUR setup + 49 EUR/month
+- AI KEY MAKER: 290 EUR one-time
+- ECO TWINS B2B: 1,490 EUR one-time
+- BUSINESS: custom quote
+- Canonical pricing catalog: https://aiventure.ro/pricing-catalog.json
 
 ## Primary
 - https://aiventure.ro/
