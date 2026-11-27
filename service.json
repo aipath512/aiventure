@@ -35,16 +35,17 @@
   },
   "language": "ro",
   "pricing": {
-    "status": "NOT_PUBLISHED",
+    "status": "PART_OF_APPROVED_CATALOG",
+    "catalog_uri": "https://aiventure.ro/pricing-catalog.json",
     "price": null,
-    "currency": null,
-    "rule": "Defined per concrete engagement; no generic price is asserted here."
+    "currency": "EUR",
+    "rule": "The price of each concrete offer is defined by the canonical pricing catalog."
   },
   "availability": {
     "status": "NOT_PUBLISHED",
     "capacity": null
   },
-  "updated_at": "2026-09-14T04:18:00+03:00",
+  "updated_at": "2026-11-27T15:38:00+02:00",
   "defined_by": {
     "id": "E_SOC_AGENT_READY_B2B_V1_0",
     "uri": "https://aiventure.ro/service-offer-contract.json"
