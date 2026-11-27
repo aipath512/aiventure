@@ -4,8 +4,6 @@
   "@id": "https://aiventure.ro/pricing-catalog.json#catalog",
   "name": "Tarifar comercial oficial AiVenture",
   "url": "https://aiventure.ro/produse/",
-  "inLanguage": "ro-RO",
-  "dateModified": "2026-11-27",
   "description": "Catalog oficial de produse și servicii AiVenture. Toate prețurile numerice sunt în EUR, fără TVA. Prețurile personalizate sunt marcate la ofertă, fără sumă inventată.",
   "itemListElement": [
     {
