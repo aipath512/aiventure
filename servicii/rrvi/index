@@ -51,7 +51,7 @@ footer{padding:40px 0;background:#f7f7f4}.footergrid{display:grid;grid-template-
 
 <meta name="aiventure-session" content="0003H">
 <meta name="aiventure-build-timestamp" content="2026-09-14T06:11:00+03:00">
-</head><body>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Service","@id":"https://aiventure.ro/servicii/rrvi/#service","name":"RRVI","url":"https://aiventure.ro/servicii/rrvi/","provider":{"@id":"https://aiventure.ro/#organization"},"areaServed":{"@type":"Country","name":"România"},"offers":{"@type":"Offer","name":"RRVI","url":"https://aiventure.ro/servicii/rrvi/","seller":{"@id":"https://aiventure.ro/#organization"},"description":"Implementarea porții de verificare pentru reglementare, jurisdicție, permisiuni, autonomie și aprobări înainte de acțiuni sensibile. Prețul și livrabilele se stabilesc după evaluarea inițială și se comunică înainte de contractare.","itemOffered":{"@type":"Service","name":"RRVI"}}},{"@type":"OfferCatalog","@id":"https://aiventure.ro/servicii/rrvi/#official-offers","name":"Ofertă — RRVI","url":"https://aiventure.ro/servicii/rrvi/","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Offer","name":"RRVI","url":"https://aiventure.ro/servicii/rrvi/","seller":{"@id":"https://aiventure.ro/#organization"},"description":"Implementarea porții de verificare pentru reglementare, jurisdicție, permisiuni, autonomie și aprobări înainte de acțiuni sensibile. Prețul și livrabilele se stabilesc după evaluarea inițială și se comunică înainte de contractare.","itemOffered":{"@type":"Service","name":"RRVI"}}}]}]}</script></head><body>
 
 <!-- GLOBAL HEADER · SESSION 0003H -->
 <header id="aiv-global-header" style="background:#050505;color:#fff;border-bottom:1px solid #292929;">
