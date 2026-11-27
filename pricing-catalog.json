@@ -18,7 +18,7 @@
         "seller": {
           "@id": "https://5thelement.ai/#organization"
         },
-        "description": "Diagnostic gratuit în Google și răspunsurile AI, întrebări fără răspuns și acțiuni recomandate; un test per CUI.",
+        "description": "Verificare gratuită, fără card, un test pentru fiecare CUI. Analizăm cum apare firma în Google și în răspunsurile AI, identificăm întrebările clienților la care site-ul nu răspunde și recomandăm acțiuni prioritizate. Rezultatul este transmis pe e-mail, de regulă în 24 de ore lucrătoare.",
         "availability": "https://schema.org/InStock",
         "itemOffered": {
           "@type": "Service",
@@ -51,7 +51,7 @@
         "seller": {
           "@id": "https://5thelement.ai/#organization"
         },
-        "description": "Căutarea și filtrarea firmelor în datele publice sunt gratuite.",
+        "description": "Căutarea și filtrarea firmelor în datele publice sunt gratuite; exportul și monitorizarea sunt servicii plătite separate.",
         "availability": "https://schema.org/InStock",
         "itemOffered": {
           "@type": "Service",
@@ -139,7 +139,7 @@
         "seller": {
           "@id": "https://5thelement.ai/#organization"
         },
-        "description": "Prima săptămână gratuită. După 7 zile se emite factura; abonamentul continuă numai dacă este achitat. Fără taxă separată de creare.",
+        "description": "Prima săptămână este gratuită, fără taxă separată de creare. După 7 zile se emite factura; abonamentul continuă numai dacă este achitat.",
         "availability": "https://schema.org/InStock",
         "itemOffered": {
           "@type": "Service",
@@ -348,7 +348,7 @@
         "seller": {
           "@id": "https://5thelement.ai/#organization"
         },
-        "description": "Human Web pentru achiziția de clienți prin PULL (SEO/search visibility) și PUSH (activarea audienței, distribuție și outreach); abonament lunar fără TVA.",
+        "description": "Human Web pentru achiziția de clienți prin PULL și PUSH. PULL include Organic Search/SEO, Local SEO, Video Search, Social Search, Marketplace Search, Directory/Vertical Search, Image Search și Brand Search. PUSH include outbound, ABM, paid media, distribuție de conținut, social distribution, evenimente, parteneriate și trigger-based prospecting. Abonament 199 EUR/lună + TVA; configurările suplimentare se ofertează separat.",
         "availability": "https://schema.org/InStock",
         "itemOffered": {
           "@type": "Service",
@@ -378,7 +378,7 @@
         "seller": {
           "@id": "https://5thelement.ai/#organization"
         },
-        "description": "Web-AI pentru descoperirea, înțelegerea și utilizarea informațiilor și serviciilor firmei de către sisteme AI; abonament lunar fără TVA.",
+        "description": "Pregătește și structurează informația firmei pentru ca sistemele AI să poată descoperi, citi, înțelege, compara, verifica, cita și reprezenta corect oferta, serviciile, entitățile, diferențiatorii, intențiile și dovezile. Include reprezentare semantică unificată din lecturi AI multiple și identificarea inconsistențelor. Abonament 249 EUR/lună + TVA.",
         "availability": "https://schema.org/InStock",
         "itemOffered": {
           "@type": "Service",
@@ -408,7 +408,7 @@
         "seller": {
           "@id": "https://5thelement.ai/#organization"
         },
-        "description": "Preț de pornire 990 EUR, plată unică, fără TVA; integrările extinse se ofertează separat.",
+        "description": "Pregătirea serviciilor B2B existente pentru descoperire, evaluare și solicitare programatică de către agenți AI. Include Service Offer Contract, Buyer Agent, Seller Agent, cerere, ofertare, aprobare umană, evidence și comandă. Preț de pornire 990 EUR + TVA, plată unică; integrările extinse se ofertează separat.",
         "availability": "https://schema.org/InStock",
         "itemOffered": {
           "@type": "Service",
