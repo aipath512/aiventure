@@ -1,0 +1,138 @@
+{
+  "schema": "AIVENTURE_OFFICIAL_PRICING_CATALOG",
+  "version": "1.0",
+  "status": "APPROVED",
+  "effective_date": "2026-11-27",
+  "currency": "EUR",
+  "tax": "Prices exclude VAT; VAT is added where applicable.",
+  "source_of_truth": true,
+  "offers": [
+    {
+      "id": "AI_VISIBILITY_CHECK",
+      "name": "Verificare vizibilitate AI",
+      "price": 0,
+      "price_type": "free",
+      "unit": "per company CUI",
+      "display": "Gratuit",
+      "url": "https://aiventure.ro/#verifica"
+    },
+    {
+      "id": "FIRMSFINDER_MONTHLY",
+      "name": "FirmsFinder — export și monitorizare",
+      "price": 3.99,
+      "currency": "EUR",
+      "billing": "monthly",
+      "display": "3,99 €/lună",
+      "url": "https://firmsfinder.eu/"
+    },
+    {
+      "id": "FIRMSFINDER_ANNUAL",
+      "name": "FirmsFinder — export și monitorizare anual",
+      "price": 39.99,
+      "currency": "EUR",
+      "billing": "annual",
+      "display": "39,99 €/an",
+      "url": "https://firmsfinder.eu/"
+    },
+    {
+      "id": "SITE_AI_ASSISTANT_MONTHLY",
+      "name": "Site + Asistent AI",
+      "price": 10,
+      "currency": "EUR",
+      "billing": "monthly",
+      "display": "10 €/lună",
+      "url": "https://aiventure.ro/contabili/"
+    },
+    {
+      "id": "SITE_AI_ASSISTANT_ANNUAL",
+      "name": "Site + Asistent AI",
+      "price": 96,
+      "currency": "EUR",
+      "billing": "annual",
+      "display": "96 €/an",
+      "url": "https://aiventure.ro/contabili/"
+    },
+    {
+      "id": "3WEBOBS",
+      "name": "3WEBOBS",
+      "price": 49,
+      "currency": "EUR",
+      "billing": "one_time",
+      "display": "49 €",
+      "url": "https://aiventure.ro/produse/3webobs/"
+    },
+    {
+      "id": "AI_LENS",
+      "name": "AI-LENS",
+      "price": 19,
+      "currency": "EUR",
+      "billing": "monthly",
+      "display": "19 €/lună",
+      "url": "https://aiventure.ro/produse/ai-lens/"
+    },
+    {
+      "id": "WEB_OM",
+      "name": "Web-Om",
+      "price": 199,
+      "currency": "EUR",
+      "billing": "monthly",
+      "display": "199 €/lună",
+      "url": "https://aiventure.ro/web-om/"
+    },
+    {
+      "id": "WEB_AI",
+      "name": "Web-AI",
+      "price": 249,
+      "currency": "EUR",
+      "billing": "monthly",
+      "display": "249 €/lună",
+      "url": "https://aiventure.ro/web-ai/"
+    },
+    {
+      "id": "WEB_A2A",
+      "name": "Web-A2A",
+      "price": 990,
+      "currency": "EUR",
+      "billing": "from_one_time",
+      "display": "De la 990 €",
+      "url": "https://aiventure.ro/web-a2a/"
+    },
+    {
+      "id": "AI_READY_INJECTOR",
+      "name": "AI READY INJECTOR",
+      "setup_fee": 290,
+      "recurring_fee": 49,
+      "currency": "EUR",
+      "billing": "setup_plus_monthly",
+      "display": "290 € + 49 €/lună",
+      "url": "https://aiventure.ro/produse/ai-ready-injector/"
+    },
+    {
+      "id": "AI_KEY_MAKER",
+      "name": "AI KEY MAKER",
+      "price": 290,
+      "currency": "EUR",
+      "billing": "one_time",
+      "display": "290 €",
+      "url": "https://aiventure.ro/ai-key-maker/"
+    },
+    {
+      "id": "ECO_TWINS_B2B",
+      "name": "ECO TWINS B2B",
+      "price": 1490,
+      "currency": "EUR",
+      "billing": "one_time",
+      "display": "1.490 €",
+      "url": "https://aiventure.ro/gemeni-economici/"
+    },
+    {
+      "id": "BUSINESS",
+      "name": "BUSINESS",
+      "price": null,
+      "currency": "EUR",
+      "billing": "custom_quote",
+      "display": "La ofertă",
+      "url": "https://aiventure.ro/contact/"
+    }
+  ]
+}
