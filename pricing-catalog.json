@@ -1,138 +1,483 @@
 {
-  "schema": "AIVENTURE_OFFICIAL_PRICING_CATALOG",
-  "version": "1.0",
-  "status": "APPROVED",
-  "effective_date": "2026-11-27",
-  "currency": "EUR",
-  "tax": "Prices exclude VAT; VAT is added where applicable.",
-  "source_of_truth": true,
-  "offers": [
+  "@context": "https://schema.org",
+  "@type": "OfferCatalog",
+  "@id": "https://aiventure.ro/pricing-catalog.json#catalog",
+  "name": "Tarifar comercial oficial AiVenture",
+  "url": "https://aiventure.ro/produse/",
+  "inLanguage": "ro-RO",
+  "dateModified": "2026-11-27",
+  "description": "Catalog oficial de produse și servicii AiVenture. Toate prețurile numerice sunt în EUR, fără TVA. Prețurile personalizate sunt marcate la ofertă, fără sumă inventată.",
+  "itemListElement": [
     {
-      "id": "AI_VISIBILITY_CHECK",
-      "name": "Verificare vizibilitate AI",
-      "price": 0,
-      "price_type": "free",
-      "unit": "per company CUI",
-      "display": "Gratuit",
-      "url": "https://aiventure.ro/#verifica"
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@type": "Offer",
+        "name": "Verificare vizibilitate AI",
+        "url": "https://aiventure.ro/#verifica",
+        "seller": {
+          "@id": "https://aiventure.ro/#organization"
+        },
+        "description": "Diagnostic gratuit în Google și răspunsurile AI, întrebări fără răspuns și acțiuni recomandate; un test per CUI.",
+        "availability": "https://schema.org/InStock",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Verificare vizibilitate AI"
+        },
+        "price": 0,
+        "priceCurrency": "EUR",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": 0,
+          "priceCurrency": "EUR",
+          "valueAddedTaxIncluded": false,
+          "unitText": "per test"
+        },
+        "eligibleQuantity": {
+          "@type": "QuantitativeValue",
+          "value": 1,
+          "unitText": "test per CUI"
+        }
+      }
     },
     {
-      "id": "FIRMSFINDER_MONTHLY",
-      "name": "FirmsFinder — export și monitorizare",
-      "price": 3.99,
-      "currency": "EUR",
-      "billing": "monthly",
-      "display": "3,99 €/lună",
-      "url": "https://firmsfinder.eu/"
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@type": "Offer",
+        "name": "FirmsFinder — căutare",
+        "url": "https://firmsfinder.eu/",
+        "seller": {
+          "@id": "https://aiventure.ro/#organization"
+        },
+        "description": "Căutarea și filtrarea firmelor în datele publice sunt gratuite.",
+        "availability": "https://schema.org/InStock",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "FirmsFinder — căutare"
+        },
+        "price": 0,
+        "priceCurrency": "EUR",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": 0,
+          "priceCurrency": "EUR",
+          "valueAddedTaxIncluded": false,
+          "unitText": "căutare"
+        }
+      }
     },
     {
-      "id": "FIRMSFINDER_ANNUAL",
-      "name": "FirmsFinder — export și monitorizare anual",
-      "price": 39.99,
-      "currency": "EUR",
-      "billing": "annual",
-      "display": "39,99 €/an",
-      "url": "https://firmsfinder.eu/"
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@type": "Offer",
+        "name": "FirmsFinder — export și monitorizare lunar",
+        "url": "https://firmsfinder.eu/",
+        "seller": {
+          "@id": "https://aiventure.ro/#organization"
+        },
+        "description": "Export 1.000 firme/lună; căutări salvate; monitorizare săptămânală a firmelor selectate și firmelor noi din segmente; actualizări EU AI Act, DORA și NIS2 acolo unde sunt relevante. Căutarea este gratuită.",
+        "availability": "https://schema.org/InStock",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "FirmsFinder — export și monitorizare lunar"
+        },
+        "price": 3.99,
+        "priceCurrency": "EUR",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": 3.99,
+          "priceCurrency": "EUR",
+          "valueAddedTaxIncluded": false,
+          "unitText": "lună",
+          "billingDuration": 1,
+          "unitCode": "MON"
+        }
+      }
     },
     {
-      "id": "SITE_AI_ASSISTANT_MONTHLY",
-      "name": "Site + Asistent AI",
-      "price": 10,
-      "currency": "EUR",
-      "billing": "monthly",
-      "display": "10 €/lună",
-      "url": "https://aiventure.ro/contabili/"
+      "@type": "ListItem",
+      "position": 4,
+      "item": {
+        "@type": "Offer",
+        "name": "FirmsFinder — export și monitorizare anual",
+        "url": "https://firmsfinder.eu/",
+        "seller": {
+          "@id": "https://aiventure.ro/#organization"
+        },
+        "description": "Export 1.000 firme/lună; căutări salvate; monitorizare săptămânală și actualizări informative. 39,99 EUR/an + TVA față de 47,88 EUR/an la plata lunară.",
+        "availability": "https://schema.org/InStock",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "FirmsFinder — export și monitorizare anual"
+        },
+        "price": 39.99,
+        "priceCurrency": "EUR",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": 39.99,
+          "priceCurrency": "EUR",
+          "valueAddedTaxIncluded": false,
+          "unitText": "an",
+          "billingDuration": 1,
+          "unitCode": "ANN"
+        }
+      }
     },
     {
-      "id": "SITE_AI_ASSISTANT_ANNUAL",
-      "name": "Site + Asistent AI",
-      "price": 96,
-      "currency": "EUR",
-      "billing": "annual",
-      "display": "96 €/an",
-      "url": "https://aiventure.ro/contabili/"
+      "@type": "ListItem",
+      "position": 5,
+      "item": {
+        "@type": "Offer",
+        "name": "Site + Asistent AI — probă gratuită 7 zile",
+        "url": "https://aiventure.ro/contabili/",
+        "seller": {
+          "@id": "https://aiventure.ro/#organization"
+        },
+        "description": "Prima săptămână gratuită. După 7 zile se emite factura; abonamentul continuă numai dacă este achitat. Fără taxă separată de creare.",
+        "availability": "https://schema.org/InStock",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Site + Asistent AI — probă gratuită 7 zile"
+        },
+        "price": 0,
+        "priceCurrency": "EUR",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": 0,
+          "priceCurrency": "EUR",
+          "valueAddedTaxIncluded": false,
+          "unitText": "7 zile"
+        }
+      }
     },
     {
-      "id": "3WEBOBS",
-      "name": "3WEBOBS",
-      "price": 49,
-      "currency": "EUR",
-      "billing": "one_time",
-      "display": "49 €",
-      "url": "https://aiventure.ro/produse/3webobs/"
+      "@type": "ListItem",
+      "position": 6,
+      "item": {
+        "@type": "Offer",
+        "name": "Site + Asistent AI — lunar",
+        "url": "https://aiventure.ro/contabili/",
+        "seller": {
+          "@id": "https://aiventure.ro/#organization"
+        },
+        "description": "Site gata de văzut înainte de plată; asistent AI cu răspunsuri validate; hosting și SSL; fără taxă de creare. Oprire oricând la finalul perioadei plătite; export conținut 30 zile.",
+        "availability": "https://schema.org/InStock",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Site + Asistent AI — lunar"
+        },
+        "price": 10,
+        "priceCurrency": "EUR",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": 10,
+          "priceCurrency": "EUR",
+          "valueAddedTaxIncluded": false,
+          "unitText": "lună",
+          "billingDuration": 1,
+          "unitCode": "MON"
+        }
+      }
     },
     {
-      "id": "AI_LENS",
-      "name": "AI-LENS",
-      "price": 19,
-      "currency": "EUR",
-      "billing": "monthly",
-      "display": "19 €/lună",
-      "url": "https://aiventure.ro/produse/ai-lens/"
+      "@type": "ListItem",
+      "position": 7,
+      "item": {
+        "@type": "Offer",
+        "name": "Site + Asistent AI — anual",
+        "url": "https://aiventure.ro/contabili/",
+        "seller": {
+          "@id": "https://aiventure.ro/#organization"
+        },
+        "description": "Site și asistent AI; hosting, SSL și domeniu propriu pe numele firmei inclus cât timp planul anual este activ; reducere 20% față de plata lunară; export conținut 30 zile la oprire.",
+        "availability": "https://schema.org/InStock",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Site + Asistent AI — anual"
+        },
+        "price": 96,
+        "priceCurrency": "EUR",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": 96,
+          "priceCurrency": "EUR",
+          "valueAddedTaxIncluded": false,
+          "unitText": "an",
+          "billingDuration": 1,
+          "unitCode": "ANN"
+        }
+      }
     },
     {
-      "id": "WEB_OM",
-      "name": "Web-Om",
-      "price": 199,
-      "currency": "EUR",
-      "billing": "monthly",
-      "display": "199 €/lună",
-      "url": "https://aiventure.ro/web-om/"
+      "@type": "ListItem",
+      "position": 8,
+      "item": {
+        "@type": "Offer",
+        "name": "3WEBOBS",
+        "url": "https://aiventure.ro/produse/3webobs/",
+        "seller": {
+          "@id": "https://aiventure.ro/#organization"
+        },
+        "description": "Audit Human Web, Web-AI și A2A Web pe baza semnalelor și dovezilor; tarif unic fără TVA.",
+        "availability": "https://schema.org/InStock",
+        "itemOffered": {
+          "@type": "Product",
+          "name": "3WEBOBS"
+        },
+        "price": 49,
+        "priceCurrency": "EUR",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": 49,
+          "priceCurrency": "EUR",
+          "valueAddedTaxIncluded": false,
+          "unitText": "plată unică"
+        }
+      }
     },
     {
-      "id": "WEB_AI",
-      "name": "Web-AI",
-      "price": 249,
-      "currency": "EUR",
-      "billing": "monthly",
-      "display": "249 €/lună",
-      "url": "https://aiventure.ro/web-ai/"
+      "@type": "ListItem",
+      "position": 9,
+      "item": {
+        "@type": "Offer",
+        "name": "AI-LENS",
+        "url": "https://aiventure.ro/produse/ai-lens/",
+        "seller": {
+          "@id": "https://aiventure.ro/#organization"
+        },
+        "description": "Monitorizarea modului în care sistemele AI înțeleg și prezintă firma și informațiile care lipsesc; abonament lunar fără TVA.",
+        "availability": "https://schema.org/InStock",
+        "itemOffered": {
+          "@type": "Product",
+          "name": "AI-LENS"
+        },
+        "price": 19,
+        "priceCurrency": "EUR",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": 19,
+          "priceCurrency": "EUR",
+          "valueAddedTaxIncluded": false,
+          "unitText": "lună",
+          "billingDuration": 1,
+          "unitCode": "MON"
+        }
+      }
     },
     {
-      "id": "WEB_A2A",
-      "name": "Web-A2A",
-      "price": 990,
-      "currency": "EUR",
-      "billing": "from_one_time",
-      "display": "De la 990 €",
-      "url": "https://aiventure.ro/web-a2a/"
+      "@type": "ListItem",
+      "position": 10,
+      "item": {
+        "@type": "Offer",
+        "name": "AI-READY INJECTOR — configurare",
+        "url": "https://aiventure.ro/produse/ai-ready-injector/",
+        "seller": {
+          "@id": "https://aiventure.ro/#organization"
+        },
+        "description": "Configurarea stratului AI-READY INJECTOR peste website-ul existent; fără TVA.",
+        "availability": "https://schema.org/InStock",
+        "itemOffered": {
+          "@type": "Product",
+          "name": "AI-READY INJECTOR — configurare"
+        },
+        "price": 290,
+        "priceCurrency": "EUR",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": 290,
+          "priceCurrency": "EUR",
+          "valueAddedTaxIncluded": false,
+          "unitText": "plată unică"
+        }
+      }
     },
     {
-      "id": "AI_READY_INJECTOR",
-      "name": "AI READY INJECTOR",
-      "setup_fee": 290,
-      "recurring_fee": 49,
-      "currency": "EUR",
-      "billing": "setup_plus_monthly",
-      "display": "290 € + 49 €/lună",
-      "url": "https://aiventure.ro/produse/ai-ready-injector/"
+      "@type": "ListItem",
+      "position": 11,
+      "item": {
+        "@type": "Offer",
+        "name": "AI-READY INJECTOR — abonament",
+        "url": "https://aiventure.ro/produse/ai-ready-injector/",
+        "seller": {
+          "@id": "https://aiventure.ro/#organization"
+        },
+        "description": "Abonament lunar pentru operarea stratului AI-READY INJECTOR; fără TVA.",
+        "availability": "https://schema.org/InStock",
+        "itemOffered": {
+          "@type": "Product",
+          "name": "AI-READY INJECTOR — abonament"
+        },
+        "price": 49,
+        "priceCurrency": "EUR",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": 49,
+          "priceCurrency": "EUR",
+          "valueAddedTaxIncluded": false,
+          "unitText": "lună",
+          "billingDuration": 1,
+          "unitCode": "MON"
+        }
+      }
     },
     {
-      "id": "AI_KEY_MAKER",
-      "name": "AI KEY MAKER",
-      "price": 290,
-      "currency": "EUR",
-      "billing": "one_time",
-      "display": "290 €",
-      "url": "https://aiventure.ro/ai-key-maker/"
+      "@type": "ListItem",
+      "position": 12,
+      "item": {
+        "@type": "Offer",
+        "name": "Web-Om",
+        "url": "https://aiventure.ro/web-om/",
+        "seller": {
+          "@id": "https://aiventure.ro/#organization"
+        },
+        "description": "Human Web pentru achiziția de clienți prin PULL (SEO/search visibility) și PUSH (activarea audienței, distribuție și outreach); abonament lunar fără TVA.",
+        "availability": "https://schema.org/InStock",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Web-Om"
+        },
+        "price": 199,
+        "priceCurrency": "EUR",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": 199,
+          "priceCurrency": "EUR",
+          "valueAddedTaxIncluded": false,
+          "unitText": "lună",
+          "billingDuration": 1,
+          "unitCode": "MON"
+        }
+      }
     },
     {
-      "id": "ECO_TWINS_B2B",
-      "name": "ECO TWINS B2B",
-      "price": 1490,
-      "currency": "EUR",
-      "billing": "one_time",
-      "display": "1.490 €",
-      "url": "https://aiventure.ro/gemeni-economici/"
+      "@type": "ListItem",
+      "position": 13,
+      "item": {
+        "@type": "Offer",
+        "name": "Web-AI",
+        "url": "https://aiventure.ro/web-ai/",
+        "seller": {
+          "@id": "https://aiventure.ro/#organization"
+        },
+        "description": "Web-AI pentru descoperirea, înțelegerea și utilizarea informațiilor și serviciilor firmei de către sisteme AI; abonament lunar fără TVA.",
+        "availability": "https://schema.org/InStock",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Web-AI"
+        },
+        "price": 249,
+        "priceCurrency": "EUR",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": 249,
+          "priceCurrency": "EUR",
+          "valueAddedTaxIncluded": false,
+          "unitText": "lună",
+          "billingDuration": 1,
+          "unitCode": "MON"
+        }
+      }
     },
     {
-      "id": "BUSINESS",
-      "name": "BUSINESS",
-      "price": null,
-      "currency": "EUR",
-      "billing": "custom_quote",
-      "display": "La ofertă",
-      "url": "https://aiventure.ro/contact/"
+      "@type": "ListItem",
+      "position": 14,
+      "item": {
+        "@type": "Offer",
+        "name": "Web-A2A — de la",
+        "url": "https://aiventure.ro/web-a2a/",
+        "seller": {
+          "@id": "https://aiventure.ro/#organization"
+        },
+        "description": "Pregătirea serviciilor B2B pentru descoperire, evaluare și solicitare programatică de către agenți AI; preț de pornire, plată unică, fără TVA.",
+        "availability": "https://schema.org/InStock",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Web-A2A — de la"
+        },
+        "price": 990,
+        "priceCurrency": "EUR",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": 990,
+          "priceCurrency": "EUR",
+          "valueAddedTaxIncluded": false,
+          "unitText": "proiect"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 15,
+      "item": {
+        "@type": "Offer",
+        "name": "AI KEY MAKER",
+        "url": "https://aiventure.ro/ai-key-maker/",
+        "seller": {
+          "@id": "https://aiventure.ro/#organization"
+        },
+        "description": "Definirea ofertei, limitelor și fluxului de cerere pentru interacțiunea controlată dintre agenți cumpărători și furnizori; plată unică fără TVA.",
+        "availability": "https://schema.org/InStock",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "AI KEY MAKER"
+        },
+        "price": 290,
+        "priceCurrency": "EUR",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": 290,
+          "priceCurrency": "EUR",
+          "valueAddedTaxIncluded": false,
+          "unitText": "plată unică"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 16,
+      "item": {
+        "@type": "Offer",
+        "name": "ECO TWINS B2B",
+        "url": "https://aiventure.ro/gemeni-economici/",
+        "seller": {
+          "@id": "https://aiventure.ro/#organization"
+        },
+        "description": "Identificarea firmelor cu profil economic asemănător clienților existenți pentru descoperirea oportunităților B2B; plată unică fără TVA.",
+        "availability": "https://schema.org/InStock",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "ECO TWINS B2B"
+        },
+        "price": 1490,
+        "priceCurrency": "EUR",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": 1490,
+          "priceCurrency": "EUR",
+          "valueAddedTaxIncluded": false,
+          "unitText": "plată unică"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 17,
+      "item": {
+        "@type": "Offer",
+        "name": "BUSINESS — servicii și implementări personalizate",
+        "url": "https://aiventure.ro/contact/",
+        "seller": {
+          "@id": "https://aiventure.ro/#organization"
+        },
+        "description": "Pachet personalizat pentru conectare WhatsApp și e-mail, preluarea apelurilor telefonice, memorie comercială pe canale, monitorizare AI și configurare asistată. Prețul depinde de integrări și domeniul ales; se comunică după evaluare, înainte de contractare.",
+        "availability": "https://schema.org/InStock",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "BUSINESS — servicii și implementări personalizate"
+        }
+      }
     }
   ]
 }
