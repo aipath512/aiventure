@@ -22,12 +22,21 @@ Funcționează cu site-ul actual al firmei sau cu unul nou.
 2. GĂSEȘTE CLIENȚI — FirmsFinder: prospectare B2B în circa 1,3 milioane de firme active din România (ONRC, setul din 2 septembrie 2026), filtrare după CAEN, zonă, număr de angajați și performanță. Surse: ONRC, Ministerul Finanțelor, ANAF unde e disponibil. Asemănarea economică nu înseamnă intenție de cumpărare.
 3. CREȘTE CU AI — site cu asistent AI care răspunde din informațiile validate de firmă și pregătește cereri de ofertă calificate pentru echipă. Oferta finală o aprobă echipa firmei.
 
-## Oferta și prețuri (euro, fără TVA)
+## Oferta și prețuri (EUR, fără TVA)
 
-- Verificare vizibilitate AI: gratuită, un test pentru fiecare CUI; rezultat pe e-mail, de regulă în 24 de ore lucrătoare.
+- Verificare vizibilitate AI: gratuită, un test pentru fiecare CUI.
 - FirmsFinder: căutare gratuită; export și monitorizare 3,99 €/lună sau 39,99 €/an.
-- START (Site + Asistent AI): 10 €/lună sau 96 €/an, tarif de lansare; prima săptămână gratuită; site gata făcut, văzut înainte de plată; găzduire și SSL; domeniu propriu, înregistrat pe numele firmei, inclus la plata anuală. Preț accesibil datorită automatizării (site și asistent pornite din modele pe domeniul de activitate).
-- BUSINESS: la ofertă — WhatsApp și e-mail, preluarea apelurilor telefonice, memorie comercială pe toate canalele, monitorizare AI, configurare asistată.
+- Site + Asistent AI: 10 €/lună sau 96 €/an.
+- 3WEBOBS: 49 € (plată unică).
+- AI-LENS: 19 €/lună.
+- Web-Om: 199 €/lună.
+- Web-AI: 249 €/lună.
+- Web-A2A: de la 990 € (plată unică).
+- AI READY INJECTOR: 290 € configurare + 49 €/lună.
+- AI KEY MAKER: 290 € (plată unică).
+- ECO TWINS B2B: 1.490 € (plată unică).
+- BUSINESS: la ofertă.
+- Toate prețurile sunt în EUR, fără TVA. Catalogul canonic: https://aiventure.ro/pricing-catalog.json.
 
 ## Parcursul clientului
 
