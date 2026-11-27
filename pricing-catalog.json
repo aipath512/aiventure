@@ -149,6 +149,11 @@
           "priceCurrency": "EUR",
           "valueAddedTaxIncluded": false,
           "unitText": "7 zile"
+        },
+        "eligibleDuration": {
+          "@type": "QuantitativeValue",
+          "value": 7,
+          "unitText": "zile"
         }
       }
     },
@@ -390,7 +395,7 @@
         "seller": {
           "@id": "https://aiventure.ro/#organization"
         },
-        "description": "Pregătirea serviciilor B2B pentru descoperire, evaluare și solicitare programatică de către agenți AI; preț de pornire, plată unică, fără TVA.",
+        "description": "Preț de pornire 990 EUR, plată unică, fără TVA; integrările extinse se ofertează separat.",
         "availability": "https://schema.org/InStock",
         "itemOffered": {
           "@type": "Service",
@@ -403,7 +408,8 @@
           "price": 990,
           "priceCurrency": "EUR",
           "valueAddedTaxIncluded": false,
-          "unitText": "proiect"
+          "unitText": "proiect",
+          "minPrice": 990
         }
       }
     },
