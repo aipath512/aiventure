@@ -245,7 +245,49 @@ const SITE_CSS = `<style>
 const BASE_CSS = `<style>*{box-sizing:border-box}body{margin:0;background:#090b10;color:#f5f5f5;font:17px/1.7 system-ui,-apple-system,Segoe UI,sans-serif}main{max-width:820px;margin:auto;padding:26px 18px 80px}a{color:#e7c86e;text-decoration:none}h1{font-size:clamp(32px,6vw,52px);line-height:1.08;margin:20px 0 12px}h2{margin-top:40px;line-height:1.2}</style>`;
 
 const NAV = [["/", "Acasă"], ["/produse/", "Produse"], ["/servicii/", "Servicii"], ["/geo/", "GEO"], ["/blog/", "Blog"], ["/contact/", "Contact"]];
-const header = () => `<header class="aiv-hdr"><div class="w"><a class="brand" href="/">AiVenture <span>· A2A Business Infrastructure</span></a><nav aria-label="Navigare principală">${NAV.map(([u, t]) => `<a href="${u}">${t}</a>`).join("")}</nav><form action="/blog/" method="get" role="search"><input type="search" name="q" placeholder="🔎 Căutați în blog…" aria-label="Căutați în blog"></form></div></header>`;
+// Header unic: aceeași identitate vizuală și aceleași acțiuni ca pe homepage.
+// Stilurile sunt încapsulate pentru a nu schimba tipografia și layoutul paginilor vechi.
+const GLOBAL_HEADER_CSS = `<style id="aiv-global-header-style">
+.aiv-global-header{position:sticky;top:0;z-index:1000;width:100%;background:#08090cf2;border-bottom:1px solid #2e3037;backdrop-filter:blur(16px);font-family:system-ui,-apple-system,Segoe UI,sans-serif;color:#f4f4f6;line-height:1.2}
+.aiv-global-header *{box-sizing:border-box}
+.aiv-global-header .aiv-gh-row{width:min(1160px,calc(100% - 34px));min-height:80px;margin:auto;display:flex;align-items:center;gap:10px}
+.aiv-global-header .aiv-gh-brand{display:flex;align-items:center;gap:11px;margin-right:auto;color:#f4f4f6!important;text-decoration:none!important;font-size:27px;font-weight:800;letter-spacing:-1.2px;white-space:nowrap}
+.aiv-global-header .aiv-gh-mark{width:42px;height:42px;display:grid;place-items:center;border-radius:50%;background:#22b9a9;color:#032a2b;font-size:24px;letter-spacing:-1px}
+.aiv-global-header .aiv-gh-control{display:inline-flex;align-items:center;justify-content:center;height:40px;border:1px solid #3c3e47;border-radius:40px;background:#171920;color:#eee;cursor:pointer;font-family:inherit;line-height:1}
+.aiv-global-header .aiv-gh-theme{width:40px;font-size:23px}
+.aiv-global-header .aiv-gh-language{position:relative;margin:0}
+.aiv-global-header .aiv-gh-language select{appearance:none;width:65px;height:40px;padding:0 24px 0 13px;border:1px solid #3c3e47;border-radius:40px;background:#171920;color:#eee;font:650 17px system-ui,sans-serif;cursor:pointer}
+.aiv-global-header .aiv-gh-language:after{content:'⌄';position:absolute;pointer-events:none;right:9px;top:6px;font-size:23px}
+.aiv-global-header .aiv-gh-menu{width:44px;font-size:28px}
+.aiv-global-header .aiv-gh-panel{display:none;position:absolute;right:20px;top:calc(100% - 9px);width:min(320px,calc(100% - 40px));max-height:75vh;overflow:auto;padding:12px;border:1px solid #40424a;border-radius:16px;background:#15161c;box-shadow:0 22px 40px #0009}
+.aiv-global-header .aiv-gh-panel.open{display:grid}
+.aiv-global-header .aiv-gh-panel a{display:block;padding:13px 14px;border-radius:9px;color:#dcdde3!important;text-decoration:none!important;font:500 19px/1.3 system-ui,sans-serif}
+.aiv-global-header .aiv-gh-panel a:hover,.aiv-global-header .aiv-gh-panel a:focus-visible{background:#272a32;color:#fff!important}
+.aiv-global-header button:focus-visible,.aiv-global-header select:focus-visible,.aiv-global-header a:focus-visible{outline:2px solid #d4ac62;outline-offset:3px}
+@media(max-width:540px){.aiv-global-header .aiv-gh-row{min-height:67px}.aiv-global-header .aiv-gh-brand{font-size:24px}.aiv-global-header .aiv-gh-mark{width:36px;height:36px;font-size:21px}.aiv-global-header .aiv-gh-control,.aiv-global-header .aiv-gh-language select{height:36px}.aiv-global-header .aiv-gh-theme{width:36px}.aiv-global-header .aiv-gh-language select{width:61px}.aiv-global-header .aiv-gh-menu{width:39px}}
+@media(max-width:360px){.aiv-global-header .aiv-gh-row{gap:6px}.aiv-global-header .aiv-gh-brand{font-size:21px;gap:8px}.aiv-global-header .aiv-gh-mark{width:32px;height:32px;font-size:18px}.aiv-global-header .aiv-gh-theme{width:34px}.aiv-global-header .aiv-gh-menu{width:36px;font-size:24px}}
+</style>`;
+const GLOBAL_MENU = [
+  ["/#verifica","Verifică-ți firma"],["/#fii-gasit-intro","Fii găsit"],["/#cauta-intro","Găsește clienți"],
+  ["/#creste-cu-ai","Crește cu AI"],["/#dovada","Exemplu real"],["/#oferta","Oferta"],
+  ["/faq/","Întrebări"],["/intentii/","Intenții și cuvinte cheie"],["/geo/","GEO și AI Search"],
+  ["/three-webs/","3 Webs"],["/tools/","Tools"],["/arhitectura/","Arhitectura SCARA"],
+  ["/servicii/","Servicii"],["/produse/","Produse și prețuri"],["/dovezi/","Dovezi"],
+  ["/standard/","Standardul AiVenture"],["/blog/","Blog"],["/contact/","Contact"]
+];
+const header = () => `<header class="aiv-global-header" data-aiv-header="v1"><div class="aiv-gh-row"><a class="aiv-gh-brand" href="/"><span class="aiv-gh-mark" aria-hidden="true">AI</span>AiVenture</a><button class="aiv-gh-control aiv-gh-theme" type="button" aria-label="Comută tema">☀</button><label class="aiv-gh-language"><span class="sr" style="position:absolute;clip-path:inset(50%);width:1px;height:1px;overflow:hidden">Alege limba</span><select aria-label="Limba site-ului"><option value="ro">RO</option><option value="en">EN</option><option value="fr">FR</option></select></label><button class="aiv-gh-control aiv-gh-menu" type="button" aria-controls="aiv-global-menu" aria-expanded="false" aria-label="Deschide meniul">☰</button></div><nav class="aiv-gh-panel" id="aiv-global-menu" aria-label="Navigație">${GLOBAL_MENU.map(([u,t])=>`<a href="${u}">${t}</a>`).join("")}</nav></header>`;
+const GLOBAL_HEADER_SCRIPT = `<script id="aiv-global-header-script">(function(){
+const h=document.querySelector('.aiv-global-header');if(!h)return;
+const btn=h.querySelector('.aiv-gh-menu'),panel=h.querySelector('.aiv-gh-panel');
+function close(){panel.classList.remove('open');btn.setAttribute('aria-expanded','false');btn.setAttribute('aria-label','Deschide meniul')}
+btn.addEventListener('click',()=>{const open=panel.classList.toggle('open');btn.setAttribute('aria-expanded',String(open));btn.setAttribute('aria-label',open?'Închide meniul':'Deschide meniul')});
+panel.querySelectorAll('a').forEach(a=>a.addEventListener('click',close));
+document.addEventListener('keydown',e=>{if(e.key==='Escape')close()});
+document.addEventListener('click',e=>{if(!h.contains(e.target))close()});
+const theme=h.querySelector('.aiv-gh-theme');theme.addEventListener('click',()=>{const light=document.body.classList.toggle('light');theme.textContent=light?'☾':'☀';theme.setAttribute('aria-label',light?'Activează modul întunecat':'Activează modul luminos')});
+const lang=h.querySelector('select');const p=location.pathname;lang.value=p.startsWith('/en/')?'en':p.startsWith('/fr/')?'fr':'ro';
+lang.addEventListener('change',()=>{location.assign(lang.value==='ro'?'/':'/'+lang.value+'/')});
+})();</script>`;
 const footer = (I) => `<footer class="aiv-ftr">${esc((I.firma || {}).denumire_legala || "AiVenture S.R.L.")} · CUI ${esc((I.firma || {}).cui || "51415878")} · <a href="mailto:contact@5thelement.ai">contact@5thelement.ai</a> · <a href="https://wa.me/40737123540" rel="noopener">WhatsApp</a><br><a href="/produse/">Produse</a><a href="/servicii/">Servicii</a><a href="/blog/">Blog</a><a href="${AUTHOR_PATH}">Autor</a><a href="/contact/">Contact</a><a href="/legal/">Informații legale</a></footer>`;
 
 const strip = (h) => String(h || "").replace(/<[^>]+>/g, "").replace(/&nbsp;/g, " ").replace(/&amp;/g, "&").replace(/&quot;/g, '"').replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/\s+/g, " ").trim();
@@ -448,8 +490,8 @@ export async function onRequest(context) {
       const rw = new HTMLRewriter()
         .on('script[type="application/ld+json"]', { element(el) { el.remove(); } })
         .on('meta[name="description"], meta[property="og:description"], meta[name="twitter:description"]', { element(el) { if (en.description) el.setAttribute("content", en.description); } })
-        .on("head", { element(el) { el.append((A.hasStyle ? "" : BASE_CSS) + SITE_CSS + metaFamily(A, cur, pageUrl, title) + articleGraph(I, A, cur, pageUrl, title, en, faqList), { html: true }); } })
-        .on("body", { element(el) { el.prepend(header(), { html: true }); el.append(footer(I) + WIDGET + ASSISTANT + '<script defer src="/assets/aiventure-assistant-theme.js"></script>', { html: true }); } })
+        .on("head", { element(el) { el.append((A.hasStyle ? "" : BASE_CSS) + SITE_CSS + GLOBAL_HEADER_CSS + metaFamily(A, cur, pageUrl, title) + articleGraph(I, A, cur, pageUrl, title, en, faqList), { html: true }); } })
+        .on("body", { element(el) { el.prepend(header(), { html: true }); el.append(footer(I) + WIDGET + ASSISTANT + GLOBAL_HEADER_SCRIPT + '<script defer src="/assets/aiventure-assistant-theme.js"></script>', { html: true }); } })
         .on("div.crumb", { element(el) { if (!crumbDone) { el.replace(crumb, { html: true }); crumbDone = true; } } })
         .on("h1", { element(el) { if (!h1Done) { h1Done = true; if (!crumbDone) { el.before(crumb, { html: true }); crumbDone = true; } el.after(by + toc, { html: true }); } } })
         .on("main h2", { element(el) { n++; if (!el.getAttribute("id")) el.setAttribute("id", "s" + n); } })
@@ -463,7 +505,19 @@ export async function onRequest(context) {
     }
   }
 
-  let rw = new HTMLRewriter().on("body", { element(el) { el.append(WIDGET + ASSISTANT + '<script defer src="/assets/aiventure-assistant-theme.js"></script>', { html: true }); } });
+  // Homepage-ul este sursa vizuală de referință și își păstrează headerul nativ.
+  // Preview-urile, paginile tehnice și variantele de test nu primesc rescriere.
+  const globalHeaderEnabled = path !== "/" &&
+    !/(^|\/)(preview[^/]*|[^/]*-preview|test|sandbox)(\/|$)/i.test(path) &&
+    !/^\/(?:\.well-known|api|assets|_next|cdn-cgi)\//.test(path);
+  let rw = new HTMLRewriter();
+  if (globalHeaderEnabled) {
+    rw = rw
+      .on("head", { element(el) { el.append(GLOBAL_HEADER_CSS, { html: true }); } })
+      .on("body", { element(el) { el.prepend(header(), { html: true }); } })
+      .on("body > header", { element(el) { el.remove(); } });
+  }
+  rw = rw.on("body", { element(el) { el.append(WIDGET + ASSISTANT + (globalHeaderEnabled ? GLOBAL_HEADER_SCRIPT : "") + '<script defer src="/assets/aiventure-assistant-theme.js"></script>', { html: true }); } });
   try {
     if (path === AUTHOR_PATH) {
       const [I, all] = await Promise.all([loadIdentity(), loadArticles(context)]);
