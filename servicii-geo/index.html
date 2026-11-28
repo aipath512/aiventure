@@ -15,6 +15,22 @@
 :root{color-scheme:dark}html{scroll-behavior:smooth}body{margin:0;background:#101010;color:#f4f4f4;font:17px/1.65 system-ui,-apple-system,sans-serif}a{color:#e5c879}a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid #e5c879;outline-offset:3px}.shell{max-width:1120px;margin:auto;padding:0 22px}.top{border-bottom:1px solid #ffffff30;padding:17px 0}.top .shell{display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-size:23px;font-weight:800;text-decoration:none;color:#fff}.crumb{padding-top:20px;font-size:14px;color:#bfc3cc}.crumb a{color:#e5c879}.hero{padding:52px 0 48px}.eyebrow{font-size:13px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:#d6b75f}h1{font-size:clamp(37px,6vw,66px);line-height:1.12;margin:12px 0 22px;max-width:1000px}h2{font-size:clamp(27px,3.8vw,38px);line-height:1.2;margin:0 0 20px}h3{font-size:22px;line-height:1.3;margin:0 0 12px}.lead{font-size:clamp(18px,2.3vw,22px);max-width:840px}.section{padding:52px 0;border-top:1px solid #ffffff2b}.muted{color:#c3c5cb}.actions{display:flex;flex-wrap:wrap;gap:12px;margin:25px 0}.btn{display:inline-block;border:1px solid #c5a34b;border-radius:8px;padding:13px 21px;text-decoration:none;font-weight:700;background:transparent;color:#e5c879}.btn.primary{background:#c5a34b;color:#111}.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:19px}.card{border:1px solid #ffffff35;border-radius:12px;padding:25px;background:#1b1b1b}.card p{margin:9px 0}.number{color:#d4b86c;font-size:13px;font-weight:700;letter-spacing:.1em}.prices{display:grid;grid-template-columns:1fr 1fr;gap:12px;border-top:1px solid #ffffff35;padding-top:15px;margin-top:19px}.prices span{display:block;color:#c5c6cb;font-size:14px}.prices strong{display:block;font-size:21px;color:#fff}.note{font-size:15px;color:#c5c6cb}.form{max-width:690px}.form label{display:block;font-weight:700;margin:15px 0 5px}.form input,.form textarea,.form select{display:block;width:100%;box-sizing:border-box;border:1px solid #aaa;border-radius:8px;padding:13px;background:#fff;color:#111;font:inherit}.form textarea{min-height:115px}.form button{font:inherit;cursor:pointer}.hidden{position:absolute;left:-9999px;width:1px;height:1px}.faq{display:grid;gap:15px}.faq article{padding:18px 23px;background:#1b1b1b;border:1px solid #ffffff30;border-radius:9px}.faq h3{font-size:19px}.faq p{margin:0}.footer{border-top:1px solid #ffffff35;padding:30px 0;color:#c6c7cb}.footer a{margin-right:12px}.footer #aiventure-legal-strip{margin-top:20px}@media(max-width:720px){.cards{grid-template-columns:1fr}.hero{padding:38px 0}.prices strong{font-size:19px}.section{padding:37px 0}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 <style>
+/* Selector cu alegere multiplă, optimizat pentru atingere pe mobil. */
+.form .service-picker{margin:0 0 14px;position:relative}
+.form .service-picker summary{list-style:none;display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:54px;box-sizing:border-box;border:1px solid #aaa;border-radius:8px;padding:13px;background:#fff;color:#111;cursor:pointer;font:inherit}
+.form .service-picker summary::-webkit-details-marker{display:none}
+.form .service-picker summary::after{content:"";width:9px;height:9px;flex:0 0 9px;border-right:2px solid #333;border-bottom:2px solid #333;transform:rotate(45deg);margin-right:5px;margin-top:-5px}
+.form .service-picker[open] summary::after{transform:rotate(225deg);margin-top:5px}
+.form .service-picker summary:focus-visible{outline:3px solid #e5c879;outline-offset:3px}
+.form .service-options{margin-top:5px;background:#fff;color:#111;border:1px solid #aaa;border-radius:8px;max-height:350px;overflow-y:auto;overscroll-behavior:contain;padding:8px}
+.form .service-options label{display:flex;align-items:flex-start;gap:11px;padding:11px 7px;margin:0;font-weight:500;line-height:1.4;cursor:pointer;border-radius:5px}
+.form .service-options label+label{border-top:1px solid #ddd}
+.form .service-options label:has(input:checked){background:#fff3cd}
+.form .service-options input[type=checkbox]{display:block;flex:0 0 21px;width:21px;height:21px;margin:2px 0 0;accent-color:#8b691f}
+.form .service-options .recommendation{font-weight:700}
+.form select.service-enhanced{display:none}
+</style>
+<style>
 /* The external legal layer appends a large navigation block after page HTML.
    Keep the complete legal index on /legal/; never render that injected block here. */
 body #aiventure-legal-strip{display:none!important}
@@ -57,6 +73,62 @@ body #aiventure-legal-strip{display:none!important}
 <section class="section" id="cerere"><div class="shell"><h2>Cere oferta pentru serviciul ales</h2><p>Spune-ne site-ul și serviciul dorit. Confirmăm volumul, termenul, condițiile TVA și eventualele costuri de implementare sau mentenanță înainte de contractare.</p><form id="geo-form" class="form" novalidate><label for="geo-service">Serviciul dorit</label><select id="geo-service" name="serviciu"><option value="">Alege serviciul sau solicită recomandare</option><option>01 · Verificarea vizibilității Google și AI</option><option>02 · Audit complet GEO și SEO pentru AI</option><option>03 · Pregătirea site-ului pentru Google și AI</option><option>04 · Optimizarea tehnică a paginilor pentru AI</option><option>05 · Crearea unei pagini optimizate pentru răspunsurile AI</option><option>06 · Optimizarea identității firmei în surse externe</option><option>07 · Analiza concurenței în motoarele AI</option><option>08 · Monitorizarea vizibilității în motoarele AI</option><option>09 · Strategie GEO și SEO pentru AI</option><option>10 · Administrare și optimizare GEO lunară</option><option>11 · Optimizare SEO + GEO integrată</option></select><label for="geo-site">Site-ul firmei *</label><input id="geo-site" name="website" placeholder="exemplu.ro" required><label for="geo-email">E-mail *</label><input id="geo-email" name="email" type="email" autocomplete="email" placeholder="nume@firma.ro" required><label for="geo-mesaj">Detalii sau obiectiv (opțional)</label><textarea id="geo-mesaj" name="mesaj" maxlength="2000" placeholder="Ex.: Ce servicii caută clienții în ChatGPT?"></textarea><input class="hidden" type="text" name="companie_website" tabindex="-1" autocomplete="off" aria-hidden="true"><div class="actions"><button class="btn primary" type="submit">Trimite solicitarea</button><a class="btn" href="https://wa.me/40737123540">Discută pe WhatsApp</a></div><p role="status" aria-live="polite" id="geo-status"></p><p class="note">Prin trimitere confirmi că ai citit <a href="/legal/">informațiile privind confidențialitatea</a>. Nu se efectuează nicio plată prin acest formular.</p></form></div></section>
 </main>
 <footer class="footer"><div class="shell"><strong>AiVenture S.R.L. · CUI 51415878</strong> · <a href="/">Acasă</a><a href="/geo/">Ghidul GEO</a><a href="/contact/">Contact</a><a href="/legal/">Documente juridice</a></div></footer>
+<script>
+(function(){
+  const form=document.getElementById('geo-form');
+  const select=document.getElementById('geo-service');
+  if(!form||!select)return;
+  const picker=document.createElement('details');
+  picker.className='service-picker';
+  const summary=document.createElement('summary');
+  summary.textContent='Alege unul sau mai multe servicii';
+  summary.setAttribute('aria-label','Deschide lista serviciilor');
+  const options=document.createElement('div');
+  options.className='service-options';
+  const recommended=document.createElement('label');
+  recommended.className='recommendation';
+  const recommendCheck=document.createElement('input');
+  recommendCheck.type='checkbox';
+  const recommendText=document.createElement('span');
+  recommendText.textContent='Nu știu ce să aleg — solicit recomandare';
+  recommended.append(recommendCheck,recommendText);
+  options.append(recommended);
+  const choices=[];
+  for(const option of Array.from(select.options).slice(1)){
+    const label=document.createElement('label');
+    const checkbox=document.createElement('input');
+    checkbox.type='checkbox';
+    const name=document.createElement('span');
+    name.textContent=option.textContent;
+    label.append(checkbox,name);
+    options.append(label);
+    choices.push({checkbox,name:option.textContent});
+  }
+  function selectedServices(){return choices.filter(x=>x.checkbox.checked).map(x=>x.name)}
+  function refresh(){
+    const selected=selectedServices();
+    if(selected.length){summary.textContent=selected.length===1?selected[0]:selected.length+' servicii selectate';}
+    else{summary.textContent=recommendCheck.checked?'Solicit recomandare':'Alege unul sau mai multe servicii';}
+  }
+  recommendCheck.addEventListener('change',()=>{if(recommendCheck.checked)choices.forEach(x=>x.checkbox.checked=false);refresh()});
+  choices.forEach(x=>x.checkbox.addEventListener('change',()=>{if(x.checkbox.checked)recommendCheck.checked=false;refresh()}));
+  picker.append(summary,options);
+  select.before(picker);
+  select.classList.add('service-enhanced');
+  select.setAttribute('aria-hidden','true');
+  select.tabIndex=-1;
+  form.addEventListener('submit',()=>{
+    const names=selectedServices();
+    const value=names.join(' | ');
+    let combined=select.querySelector('option[data-combined]');
+    if(!combined){combined=document.createElement('option');combined.dataset.combined='true';select.append(combined)}
+    combined.value=value;
+    combined.textContent=value||'Solicitare recomandare';
+    select.value=value;
+  },{capture:true});
+  document.addEventListener('click',e=>{if(picker.open&&!picker.contains(e.target))picker.open=false});
+})();
+</script>
 <script>
 (function(){const f=document.getElementById('geo-form'),s=document.getElementById('geo-status'),b=f.querySelector('button[type="submit"]');const keys=['utm_source','utm_medium','utm_campaign','utm_content','utm_term'];const query=new URLSearchParams(location.search);try{if(!sessionStorage.getItem('geo_first_landing'))sessionStorage.setItem('geo_first_landing',location.pathname)}catch(_){}const campaign={};for(const key of keys){const val=query.get(key);if(val){campaign[key]=val.slice(0,150);try{sessionStorage.setItem('geo_'+key,campaign[key])}catch(_){}}else{try{campaign[key]=sessionStorage.getItem('geo_'+key)||''}catch(_){campaign[key]=''}}}
 f.addEventListener('submit',async e=>{e.preventDefault();const v=f.elements.website.value.trim(),email=f.elements.email.value.trim();if(!v){s.textContent='Completează site-ul firmei.';return}if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)){s.textContent='Completează o adresă de e-mail validă.';return}b.disabled=true;s.textContent='Trimitem solicitarea…';try{let firstLanding=location.pathname;try{firstLanding=sessionStorage.getItem('geo_first_landing')||firstLanding}catch(_){}const selected=f.elements.serviciu.value;const note=[selected?'Serviciu selectat: '+selected:'Solicitare recomandare serviciu GEO',f.elements.mesaj.value].filter(Boolean).join('\n');const res=await fetch('/api/contact',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({website:v,email,tip:'cerere-servicii-geo',obiectiv:selected||'Solicitare ofertă GEO',mesaj:note,companie_website:f.elements.companie_website.value,landing_page:firstLanding,...campaign})});const data=await res.json();if(res.ok&&data.ok===true&&data.validated===true&&data.saved===true&&data.lead_id){try{sessionStorage.setItem('geo_confirmed_lead',data.lead_id)}catch(_){}location.assign('/multumim-geo/');return}if(res.ok&&data.notified===true){s.textContent='Solicitarea a fost notificată, dar salvarea nu este confirmată. Nu retrimite imediat.'}else{s.textContent=data.error||'Cererea nu a putut fi înregistrată. Încearcă din nou.'}}catch(_){s.textContent='Nu am putut trimite cererea. Încearcă din nou sau contactează-ne pe WhatsApp.'}b.disabled=false})})();
