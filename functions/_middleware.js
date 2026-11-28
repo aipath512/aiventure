@@ -283,7 +283,7 @@ const GLOBAL_HEADER_CSS = `<style id="aiv-global-header-style">
 .aiv-nav-tree .aiv-nav-sub>a:hover{background:#292c34}
 .aiv-nav-tree .aiv-nav-sub-row{display:flex;gap:7px;align-items:center}
 .aiv-nav-tree .aiv-nav-sub-row>a{flex:1;min-width:0}
-.aiv-nav-tree .aiv-nav-sub-row button{font-size:18px}
+.aiv-nav-tree .aiv-nav-sub-row button{display:none;font-size:18px}
 .aiv-nav-tree .aiv-nav-tertiary{display:flex;gap:8px;flex-wrap:wrap;padding:2px 6px 9px}
 .aiv-nav-tree .aiv-nav-tertiary a{display:inline-flex;align-items:center;min-height:44px;padding:8px 11px;border:1px solid #4a3f2e;border-radius:8px;color:#eac98e!important;text-decoration:none!important;font-size:14px!important}
 .aiv-nav-tree .aiv-nav-resources{border-top:1px solid #41434b;padding-top:12px}
@@ -293,18 +293,27 @@ const GLOBAL_HEADER_CSS = `<style id="aiv-global-header-style">
 .aiv-nav-tree .aiv-nav-cta{display:block!important;text-align:center;background:#d4ac62!important;color:#15100a!important;border-radius:11px;padding:13px!important;font-size:16px!important;font-weight:800!important}
 .aiv-nav-tree .aiv-nav-fii .aiv-nav-subtree{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:14px}
 .aiv-nav-tree .aiv-nav-fii .aiv-nav-subtree .aiv-nav-sub{border-bottom:1px solid #333640;padding-bottom:3px}
+.aiv-nav-tree .aiv-nav-fii .aiv-nav-sub:nth-child(-n+5){grid-column:1}
+.aiv-nav-tree .aiv-nav-fii .aiv-nav-sub:nth-child(n+6){grid-column:2}
+.aiv-nav-tree .aiv-nav-fii .aiv-nav-sub:nth-child(6){grid-row:1}
+.aiv-nav-tree .aiv-nav-fii .aiv-nav-sub:nth-child(7){grid-row:2}
+.aiv-nav-tree .aiv-nav-fii .aiv-nav-sub:nth-child(8){grid-row:3}
+.aiv-nav-tree .aiv-nav-fii .aiv-nav-cta{grid-column:2;grid-row:4;align-self:start}
 .aiv-global-header .aiv-gh-panel:has(.aiv-nav-tree){width:min(850px,calc(100vw - 40px));max-height:min(76vh,760px);right:20px;top:calc(100% - 5px);padding:18px;overflow-y:auto}
 #menu-panel:has(.aiv-nav-tree){width:min(850px,calc(100vw - 40px));max-height:min(76vh,760px);overflow-y:auto;padding:18px}
 body.aiv-nav-locked{overflow:hidden}
 @media(max-width:700px){
-.aiv-global-header .aiv-gh-panel:has(.aiv-nav-tree),#menu-panel:has(.aiv-nav-tree){position:fixed;top:67px;left:0;right:0;width:100vw;max-width:none;height:calc(100dvh - 67px);max-height:none;border-radius:0;border-left:0;border-right:0;overflow-y:auto;overscroll-behavior:contain;padding:18px 17px 35px;background:#15161c}
+.aiv-global-header .aiv-gh-panel:has(.aiv-nav-tree),#menu-panel:has(.aiv-nav-tree){position:fixed;top:80px;left:0;right:0;width:100vw;max-width:none;height:calc(100dvh - 80px);max-height:none;border-radius:0;border-left:0;border-right:0;overflow-y:auto;overscroll-behavior:contain;padding:18px 17px 35px;background:#15161c}
 .aiv-nav-tree .aiv-nav-fii .aiv-nav-subtree{grid-template-columns:1fr}
+.aiv-nav-tree .aiv-nav-fii .aiv-nav-sub:nth-child(n){grid-column:auto;grid-row:auto}
+.aiv-nav-tree .aiv-nav-fii .aiv-nav-cta{grid-column:auto;grid-row:auto}
 .aiv-nav-tree .aiv-nav-tertiary{display:none;margin-left:12px}
 .aiv-nav-tree .aiv-nav-tertiary.is-open{display:flex}
+.aiv-nav-tree .aiv-nav-sub-row button{display:inline-flex;align-items:center;justify-content:center}
 .aiv-nav-tree .aiv-nav-resources>div{grid-template-columns:1fr}
 .aiv-nav-tree .aiv-nav-branch{padding:7px}
 }
-@media(max-width:540px){.aiv-global-header .aiv-gh-row{min-height:67px}.aiv-global-header .aiv-gh-brand{font-size:24px}.aiv-global-header .aiv-gh-mark{width:36px;height:36px;font-size:21px}.aiv-global-header .aiv-gh-control,.aiv-global-header .aiv-gh-language select{height:36px}.aiv-global-header .aiv-gh-theme{width:36px}.aiv-global-header .aiv-gh-language select{width:61px}.aiv-global-header .aiv-gh-menu{width:39px}}
+@media(max-width:540px){.aiv-global-header .aiv-gh-row{min-height:67px}.aiv-global-header .aiv-gh-brand{font-size:24px}.aiv-global-header .aiv-gh-mark{width:36px;height:36px;font-size:21px}.aiv-global-header .aiv-gh-control,.aiv-global-header .aiv-gh-language select{height:36px}.aiv-global-header .aiv-gh-theme{width:36px}.aiv-global-header .aiv-gh-language select{width:61px}.aiv-global-header .aiv-gh-menu{width:39px}.aiv-global-header .aiv-gh-panel:has(.aiv-nav-tree),#menu-panel:has(.aiv-nav-tree){top:67px;height:calc(100dvh - 67px)}}
 @media(max-width:360px){.aiv-global-header .aiv-gh-row{gap:6px}.aiv-global-header .aiv-gh-brand{font-size:21px;gap:8px}.aiv-global-header .aiv-gh-mark{width:32px;height:32px;font-size:18px}.aiv-global-header .aiv-gh-theme{width:34px}.aiv-global-header .aiv-gh-menu{width:36px;font-size:24px}}
 </style>`;
 // Sursa unică de navigație pentru ambele prezentări: mega-menu și drawer.
