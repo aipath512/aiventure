@@ -264,29 +264,102 @@ const GLOBAL_HEADER_CSS = `<style id="aiv-global-header-style">
 .aiv-global-header .aiv-gh-panel a{display:block;padding:13px 14px;border-radius:9px;color:#dcdde3!important;text-decoration:none!important;font:500 19px/1.3 system-ui,sans-serif}
 .aiv-global-header .aiv-gh-panel a:hover,.aiv-global-header .aiv-gh-panel a:focus-visible{background:#272a32;color:#fff!important}
 .aiv-global-header button:focus-visible,.aiv-global-header select:focus-visible,.aiv-global-header a:focus-visible{outline:2px solid #d4ac62;outline-offset:3px}
+/* Același arbore de navigație pe homepage și pe paginile injectate la Edge. */
+.aiv-gh-panel,#menu-panel:has(.aiv-nav-tree){color:#ececf0;font-family:system-ui,-apple-system,Segoe UI,sans-serif}
+.aiv-gh-panel .aiv-nav-tree,#menu-panel .aiv-nav-tree{display:grid;gap:14px}
+.aiv-nav-tree{font-size:16px;text-align:left}
+.aiv-nav-tree *{box-sizing:border-box}
+.aiv-nav-tree .aiv-nav-primary{display:grid;gap:8px}
+.aiv-nav-tree .aiv-nav-heading{display:flex;align-items:center;gap:8px;min-width:0}
+.aiv-nav-tree .aiv-nav-heading>a{flex:1;min-width:0;font-weight:800!important;color:#f6f4ee!important}
+.aiv-nav-tree button{font:inherit;cursor:pointer;border:1px solid #4b4e59;border-radius:10px;background:#202129;color:#f1f1f4;min-width:44px;min-height:44px}
+.aiv-nav-tree button[aria-expanded="true"]{border-color:#d4ac62;color:#e5bf7b}
+.aiv-nav-tree .aiv-nav-heading>a,.aiv-nav-tree .aiv-nav-sub>a,.aiv-nav-tree .aiv-nav-resources a{display:flex;align-items:center;min-height:44px;padding:10px 12px;border-radius:9px;text-decoration:none!important}
+.aiv-nav-tree .aiv-nav-branch{border:1px solid #393b46;border-radius:12px;padding:8px;background:#1a1b22}
+.aiv-nav-tree .aiv-nav-subtree{display:none;padding:12px 0 5px}
+.aiv-nav-tree .aiv-nav-subtree.is-open{display:grid;gap:10px}
+.aiv-nav-tree .aiv-nav-sub{min-width:0}
+.aiv-nav-tree .aiv-nav-sub>a{color:#e5e6ec!important;font-size:16px!important;font-weight:650!important}
+.aiv-nav-tree .aiv-nav-sub>a:hover{background:#292c34}
+.aiv-nav-tree .aiv-nav-sub-row{display:flex;gap:7px;align-items:center}
+.aiv-nav-tree .aiv-nav-sub-row>a{flex:1;min-width:0}
+.aiv-nav-tree .aiv-nav-sub-row button{font-size:18px}
+.aiv-nav-tree .aiv-nav-tertiary{display:flex;gap:8px;flex-wrap:wrap;padding:2px 6px 9px}
+.aiv-nav-tree .aiv-nav-tertiary a{display:inline-flex;align-items:center;min-height:44px;padding:8px 11px;border:1px solid #4a3f2e;border-radius:8px;color:#eac98e!important;text-decoration:none!important;font-size:14px!important}
+.aiv-nav-tree .aiv-nav-resources{border-top:1px solid #41434b;padding-top:12px}
+.aiv-nav-tree .aiv-nav-resources>strong{display:block;margin:0 8px 8px;color:#d7b779;font-size:13px;letter-spacing:.09em;text-transform:uppercase}
+.aiv-nav-tree .aiv-nav-resources>div{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px}
+.aiv-nav-tree .aiv-nav-resources a{font-size:14px!important;color:#c9cbd3!important}
+.aiv-nav-tree .aiv-nav-cta{display:block!important;text-align:center;background:#d4ac62!important;color:#15100a!important;border-radius:11px;padding:13px!important;font-size:16px!important;font-weight:800!important}
+.aiv-nav-tree .aiv-nav-fii .aiv-nav-subtree{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:14px}
+.aiv-nav-tree .aiv-nav-fii .aiv-nav-subtree .aiv-nav-sub{border-bottom:1px solid #333640;padding-bottom:3px}
+.aiv-global-header .aiv-gh-panel:has(.aiv-nav-tree){width:min(850px,calc(100vw - 40px));max-height:min(76vh,760px);right:20px;top:calc(100% - 5px);padding:18px;overflow-y:auto}
+#menu-panel:has(.aiv-nav-tree){width:min(850px,calc(100vw - 40px));max-height:min(76vh,760px);overflow-y:auto;padding:18px}
+body.aiv-nav-locked{overflow:hidden}
+@media(max-width:700px){
+.aiv-global-header .aiv-gh-panel:has(.aiv-nav-tree),#menu-panel:has(.aiv-nav-tree){position:fixed;top:67px;left:0;right:0;width:100vw;max-width:none;height:calc(100dvh - 67px);max-height:none;border-radius:0;border-left:0;border-right:0;overflow-y:auto;overscroll-behavior:contain;padding:18px 17px 35px;background:#15161c}
+.aiv-nav-tree .aiv-nav-fii .aiv-nav-subtree{grid-template-columns:1fr}
+.aiv-nav-tree .aiv-nav-tertiary{display:none;margin-left:12px}
+.aiv-nav-tree .aiv-nav-tertiary.is-open{display:flex}
+.aiv-nav-tree .aiv-nav-resources>div{grid-template-columns:1fr}
+.aiv-nav-tree .aiv-nav-branch{padding:7px}
+}
 @media(max-width:540px){.aiv-global-header .aiv-gh-row{min-height:67px}.aiv-global-header .aiv-gh-brand{font-size:24px}.aiv-global-header .aiv-gh-mark{width:36px;height:36px;font-size:21px}.aiv-global-header .aiv-gh-control,.aiv-global-header .aiv-gh-language select{height:36px}.aiv-global-header .aiv-gh-theme{width:36px}.aiv-global-header .aiv-gh-language select{width:61px}.aiv-global-header .aiv-gh-menu{width:39px}}
 @media(max-width:360px){.aiv-global-header .aiv-gh-row{gap:6px}.aiv-global-header .aiv-gh-brand{font-size:21px;gap:8px}.aiv-global-header .aiv-gh-mark{width:32px;height:32px;font-size:18px}.aiv-global-header .aiv-gh-theme{width:34px}.aiv-global-header .aiv-gh-menu{width:36px;font-size:24px}}
 </style>`;
+// Sursa unică de navigație pentru ambele prezentări: mega-menu și drawer.
 const GLOBAL_MENU = [
-  ["/#verifica","Verifică-ți firma"],["/#fii-gasit-intro","Fii găsit"],["/#cauta-intro","Găsește clienți"],
-  ["/#creste-cu-ai","Crește cu AI"],["/#dovada","Exemplu real"],["/#oferta","Oferta"],
-  ["/faq/","Întrebări"],["/intentii/","Intenții și cuvinte cheie"],["/geo/","GEO și AI Search"],
-  ["/three-webs/","3 Webs"],["/tools/","Tools"],["/arhitectura/","Arhitectura SCARA"],
-  ["/servicii/","Servicii"],["/produse/","Produse și prețuri"],["/dovezi/","Dovezi"],
-  ["/standard/","Standardul AiVenture"],["/blog/","Blog"],["/contact/","Contact"]
+  { id:"fii", title:"FII GĂSIT", href:"/#fii-gasit-intro", children:[
+    {title:"SEO · Google",href:"/seo/",group:"Motoare & AI Search",links:[["Educativ","/seo/"],["Servicii SEO","/servicii/seo/"]]},
+    {title:"GEO · AI Search",href:"/geo/",group:"Motoare & AI Search",links:[["GEO Educativ","/geo/"],["Servicii GEO","/servicii-geo/"]]},
+    {title:"AEO · Answers",href:"/aeo/",group:"Motoare & AI Search",links:[["Educativ","/aeo/"],["Servicii AEO","/servicii/aeo/"]]},
+    {title:"AI-SEO",href:"/seo/",group:"Motoare & AI Search",links:[["Ghid SEO","/seo/"],["Servicii SEO","/servicii/seo/"]]},
+    {title:"AIO",href:"/aio/",group:"Motoare & AI Search",links:[["Educativ","/aio/"],["Servicii AIO","/servicii/aio/"]]},
+    {title:"ON-SITE",href:"/seo/#faq",group:"Optimizare & autoritate"},
+    {title:"ON-PAGE",href:"/seo/#faq",group:"Optimizare & autoritate"},
+    {title:"OFF-PAGE",href:"/seo/#faq",group:"Optimizare & autoritate"}
+  ]},
+  {id:"gaseste",title:"GĂSEȘTE CLIENȚI",href:"/#cauta-intro",children:[
+    {title:"FirmsFinder",href:"https://firmsfinder.eu/"},{title:"Produse și prețuri",href:"/produse/"}
+  ]},
+  {id:"creste",title:"CREȘTE CU GOOGLE & AI",href:"/#creste-cu-ai",children:[
+    {title:"Web-Om",href:"/web-om/"},{title:"Web-AI",href:"/web-ai/"},{title:"Web-A2A",href:"/web-a2a/"},{title:"3 Webs",href:"/three-webs/"}
+  ]}
 ];
-const header = () => `<header class="aiv-global-header" data-aiv-header="v1"><div class="aiv-gh-row"><a class="aiv-gh-brand" href="/"><span class="aiv-gh-mark" aria-hidden="true">AI</span>AiVenture</a><button class="aiv-gh-control aiv-gh-theme" type="button" aria-label="Comută tema">☀</button><label class="aiv-gh-language"><span class="sr" style="position:absolute;clip-path:inset(50%);width:1px;height:1px;overflow:hidden">Alege limba</span><select aria-label="Limba site-ului"><option value="ro">RO</option><option value="en">EN</option><option value="fr">FR</option></select></label><button class="aiv-gh-control aiv-gh-menu" type="button" aria-controls="aiv-global-menu" aria-expanded="false" aria-label="Deschide meniul">☰</button></div><nav class="aiv-gh-panel" id="aiv-global-menu" aria-label="Navigație">${GLOBAL_MENU.map(([u,t])=>`<a href="${u}">${t}</a>`).join("")}</nav></header>`;
+const GLOBAL_RESOURCES = [
+  ["/eu-ai-act-ready/","EU AI Act"],["/arhitectura/","Arhitectură"],["/dovezi/","Dovezi"],
+  ["/viziune/","Viziune"],["/despre/","Despre"],["/faq/","FAQ"],["/legal/","Legale"],
+  ["/intentii/","Intenții și cuvinte-cheie"],["/tools/","Tools"],["/blog/","Blog"],["/contact/","Contact"]
+];
+const renderMenu = () => `<div class="aiv-nav-tree" data-aiv-menu="v2"><div class="aiv-nav-primary">${GLOBAL_MENU.map(g=>`
+<section class="aiv-nav-branch aiv-nav-${g.id}">
+<div class="aiv-nav-heading"><a href="${g.href}">${g.title}</a><button type="button" aria-expanded="false" aria-label="Extinde ${g.title}" aria-controls="aiv-sub-${g.id}" data-aiv-expand="aiv-sub-${g.id}">⌄</button></div>
+<div class="aiv-nav-subtree" id="aiv-sub-${g.id}">${g.children.map((c,i)=>`<div class="aiv-nav-sub" data-group="${c.group||""}"><div class="aiv-nav-sub-row"><a href="${c.href}">${g.id==="fii"?`${i+1}. `:""}${c.title}</a>${c.links?`<button type="button" aria-expanded="false" aria-label="Opțiuni ${c.title}" aria-controls="aiv-third-${g.id}-${i}" data-aiv-expand="aiv-third-${g.id}-${i}">⌄</button>`:""}</div>${c.links?`<div class="aiv-nav-tertiary" id="aiv-third-${g.id}-${i}">${c.links.map(([label,href])=>`<a href="${href}">${label}</a>`).join("")}</div>`:""}</div>`).join("")}
+${g.id==="fii"?'<a class="aiv-nav-cta" href="/#verifica">Cere testul gratuit</a>':""}</div></section>`).join("")}</div>
+<div class="aiv-nav-resources"><strong>Resurse & companie</strong><div>${GLOBAL_RESOURCES.map(([url,label])=>`<a href="${url}">${label}</a>`).join("")}</div></div></div>`;
+const header = () => `<header class="aiv-global-header" data-aiv-header="v2"><div class="aiv-gh-row"><a class="aiv-gh-brand" href="/"><span class="aiv-gh-mark" aria-hidden="true">AI</span>AiVenture</a><button class="aiv-gh-control aiv-gh-theme" type="button" aria-label="Comută tema">☀</button><label class="aiv-gh-language"><span class="sr" style="position:absolute;clip-path:inset(50%);width:1px;height:1px;overflow:hidden">Alege limba</span><select aria-label="Limba site-ului"><option value="ro">RO</option><option value="en">EN</option><option value="fr">FR</option></select></label><button class="aiv-gh-control aiv-gh-menu" type="button" aria-controls="aiv-global-menu" aria-expanded="false" aria-label="Deschide meniul">☰</button></div><nav class="aiv-gh-panel" id="aiv-global-menu" aria-label="Navigație">${renderMenu()}</nav></header>`;
 const GLOBAL_HEADER_SCRIPT = `<script id="aiv-global-header-script">(function(){
-const h=document.querySelector('.aiv-global-header');if(!h)return;
-const btn=h.querySelector('.aiv-gh-menu'),panel=h.querySelector('.aiv-gh-panel');
-function close(){panel.classList.remove('open');btn.setAttribute('aria-expanded','false');btn.setAttribute('aria-label','Deschide meniul')}
-btn.addEventListener('click',()=>{const open=panel.classList.toggle('open');btn.setAttribute('aria-expanded',String(open));btn.setAttribute('aria-label',open?'Închide meniul':'Deschide meniul')});
+const h=document.querySelector('.aiv-global-header');
+const panel=h?h.querySelector('.aiv-gh-panel'):document.querySelector('#menu-panel');
+const btn=h?h.querySelector('.aiv-gh-menu'):document.querySelector('#menu');
+if(!panel||!btn||!panel.querySelector('[data-aiv-menu]'))return;
+function sync(){document.body.classList.toggle('aiv-nav-locked',panel.classList.contains('open')&&matchMedia('(max-width:700px)').matches)}
+function close(){panel.classList.remove('open');btn.setAttribute('aria-expanded','false');btn.setAttribute('aria-label','Deschide meniul');sync()}
+if(h)btn.addEventListener('click',()=>{const open=panel.classList.toggle('open');btn.setAttribute('aria-expanded',String(open));btn.setAttribute('aria-label',open?'Închide meniul':'Deschide meniul');sync()});
+else btn.addEventListener('click',sync);
+panel.querySelectorAll('[data-aiv-expand]').forEach(b=>b.addEventListener('click',()=>{
+const content=document.getElementById(b.dataset.aivExpand);if(!content)return;
+const open=content.classList.toggle('is-open');b.setAttribute('aria-expanded',String(open));
+}));
 panel.querySelectorAll('a').forEach(a=>a.addEventListener('click',close));
 document.addEventListener('keydown',e=>{if(e.key==='Escape')close()});
-document.addEventListener('click',e=>{if(!h.contains(e.target))close()});
+document.addEventListener('click',e=>{if(!panel.contains(e.target)&&e.target!==btn&&!btn.contains(e.target))close()});
+window.addEventListener('resize',sync);
+if(h){
 const theme=h.querySelector('.aiv-gh-theme');theme.addEventListener('click',()=>{const light=document.body.classList.toggle('light');theme.textContent=light?'☾':'☀';theme.setAttribute('aria-label',light?'Activează modul întunecat':'Activează modul luminos')});
 const lang=h.querySelector('select');const p=location.pathname;lang.value=p.startsWith('/en/')?'en':p.startsWith('/fr/')?'fr':'ro';
 lang.addEventListener('change',()=>{location.assign(lang.value==='ro'?'/':'/'+lang.value+'/')});
+}
 })();</script>`;
 const footer = (I) => `<footer class="aiv-ftr">${esc((I.firma || {}).denumire_legala || "AiVenture S.R.L.")} · CUI ${esc((I.firma || {}).cui || "51415878")} · <a href="mailto:contact@5thelement.ai">contact@5thelement.ai</a> · <a href="https://wa.me/40737123540" rel="noopener">WhatsApp</a><br><a href="/produse/">Produse</a><a href="/servicii/">Servicii</a><a href="/blog/">Blog</a><a href="${AUTHOR_PATH}">Autor</a><a href="/contact/">Contact</a><a href="/legal/">Informații legale</a></footer>`;
 
@@ -516,8 +589,13 @@ export async function onRequest(context) {
       .on("head", { element(el) { el.append(GLOBAL_HEADER_CSS, { html: true }); } })
       .on("body", { element(el) { el.prepend(header(), { html: true }); } })
       .on("body > header", { element(el) { el.remove(); } });
+  } else if (path === "/") {
+    // Homepage: păstrăm intact headerul vizual, dar folosim EXACT același arbore de meniu.
+    rw = rw
+      .on("head", { element(el) { el.append(GLOBAL_HEADER_CSS, { html: true }); } })
+      .on("#menu-panel", { element(el) { el.setInnerContent(renderMenu(), { html: true }); } });
   }
-  rw = rw.on("body", { element(el) { el.append(WIDGET + ASSISTANT + (globalHeaderEnabled ? GLOBAL_HEADER_SCRIPT : "") + '<script defer src="/assets/aiventure-assistant-theme.js"></script>', { html: true }); } });
+  rw = rw.on("body", { element(el) { el.append(WIDGET + ASSISTANT + ((globalHeaderEnabled || path === "/") ? GLOBAL_HEADER_SCRIPT : "") + '<script defer src="/assets/aiventure-assistant-theme.js"></script>', { html: true }); } });
   try {
     if (path === AUTHOR_PATH) {
       const [I, all] = await Promise.all([loadIdentity(), loadArticles(context)]);
