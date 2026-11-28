@@ -32,6 +32,15 @@
 </main>
 <footer class="geo-footer"><div class="geo-shell">AiVenture S.R.L. · CUI 51415878 · <a href="/contact/">Contact</a> · <a href="/geo/">Ghid GEO</a></div></footer>
 <script>
+// The production legal-links layer can inject its strip before the end of <main>.
+// Keep that shared legal navigation intact, but place it after the commercial content.
+document.addEventListener('DOMContentLoaded', () => {
+  const legalStrip = document.getElementById('aiventure-legal-strip');
+  const footer = document.querySelector('footer.geo-footer');
+  if (legalStrip && footer && !footer.contains(legalStrip)) footer.appendChild(legalStrip);
+});
+</script>
+<script>
 (function(){
   const f=document.getElementById('geo-form'),s=document.getElementById('geo-status'),b=f.querySelector('button[type="submit"]');
   const keys=['utm_source','utm_medium','utm_campaign','utm_content','utm_term'];
